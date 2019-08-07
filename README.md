@@ -1,11 +1,11 @@
-Template Data Repo
-==================
+Warhammer Age of Sigmar: Warcry
+===============================
 
-[![GitHub release](https://img.shields.io/github/release/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/releases/latest)
-![Github commits (since latest release)](https://img.shields.io/github/commits-since/BSData/TemplateDataRepo/latest.svg?style=flat-square)
-[![Open Bug issues](https://img.shields.io/github/issues/bsdata/TemplateDataRepo/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/TemplateDataRepo/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![GitHub contributors](https://img.shields.io/github/contributors/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/graphs/contributors)
-![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/TemplateDataRepo.svg?style=flat-square)
+[![GitHub release](https://img.shields.io/github/release/BSData/warhammer-age-of-sigmar-warcry.svg?style=flat-square)](https://github.com/BSData/warhammer-age-of-sigmar-warcry/releases/latest)
+![Github commits (since latest release)](https://img.shields.io/github/commits-since/BSData/warhammer-age-of-sigmar-warcry/latest.svg?style=flat-square)
+[![Open Bug issues](https://img.shields.io/github/issues/bsdata/warhammer-age-of-sigmar-warcry/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/warhammer-age-of-sigmar-warcry/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+[![GitHub contributors](https://img.shields.io/github/contributors/BSData/warhammer-age-of-sigmar-warcry.svg?style=flat-square)](https://github.com/BSData/warhammer-age-of-sigmar-warcry/graphs/contributors)
+![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/warhammer-age-of-sigmar-warcry.svg?style=flat-square)
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/KqPVhds)
 
@@ -42,8 +42,8 @@ Great, thank you! Now, you have some options:
 * [BattleScribe Data on Appspot][]
 * [Getting Started wiki][]
 
-[Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/TemplateDataRepo
-[Open Issue directly]: https://github.com/BSData/TemplateDataRepo/issues
+[Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/warhammer-age-of-sigmar-warcry
+[Open Issue directly]: https://github.com/BSData/warhammer-age-of-sigmar-warcry/issues
 [BattleScribe homepage]: http://www.battlescribe.net/
 [BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
 [Getting Started wiki]: https://github.com/BSData/catalogue-development/wiki/Getting-Started#contributing
