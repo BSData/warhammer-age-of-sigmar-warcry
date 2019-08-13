@@ -90,7 +90,6 @@
         <categoryLink id="4b94-078f-e55f-78d2" name="Thrall" hidden="false" targetId="a032-0ba0-1821-c59d" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="baa4-7720-f220-f366" name="Matched Play" hidden="true"/>
   </forceEntries>
   <entryLinks>
     <entryLink id="86ef-2421-0626-361e" name="Raptoryz" hidden="false" collective="false" targetId="3894-dec2-f437-80ed" type="selectionEntry">
