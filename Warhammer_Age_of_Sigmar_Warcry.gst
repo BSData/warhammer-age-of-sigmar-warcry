@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="1" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="2" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -343,4 +343,27 @@
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="1b2d-b20b-59c9-5dd1" name="Agile" hidden="false"/>
+    <rule id="b502-b32e-a66e-dc50" name="Beast" hidden="false"/>
+    <rule id="f977-2711-0fba-31ab" name="Berserker" hidden="false"/>
+    <rule id="fda5-c71f-ad75-a72d" name="Brute" hidden="false"/>
+    <rule id="edb7-762d-cded-8f6a" name="Bulwark" hidden="false"/>
+    <rule id="952b-2da3-5d58-54bd" name="Champion" hidden="false"/>
+    <rule id="cee0-2efa-8078-072a" name="Chaotic Beast" hidden="false"/>
+    <rule id="904a-b9a0-eec8-37ed" name="Sentience" hidden="false"/>
+    <rule id="48fe-1895-1d69-fdfa" name="Destroyer" hidden="false"/>
+    <rule id="fa3f-ad9c-0d43-9acc" name="Elite" hidden="false"/>
+    <rule id="c1f9-b53d-6ec9-3652" name="Fly" hidden="false"/>
+    <rule id="e551-ce13-92b5-7593" name="Icon Bearer" hidden="false"/>
+    <rule id="815c-025e-32e1-86b6" name="Leader" hidden="false"/>
+    <rule id="80b5-cbcf-cffc-6fbf" name="Minion" hidden="false"/>
+    <rule id="e2d2-9a0a-219f-a0a6" name="Mystic" hidden="false"/>
+    <rule id="a26a-140e-bd5d-b72c" name="Scout" hidden="false"/>
+    <rule id="fb13-166d-a04e-1779" name="Trapper" hidden="false"/>
+    <rule id="9820-4384-0c29-1a2f" name="Warrior" hidden="false"/>
+    <rule id="7f5d-7ad1-2eeb-8bbb" name="Gargantuan" hidden="false"/>
+    <rule id="be40-507b-391a-9b21" name="Mount" hidden="false"/>
+    <rule id="efd1-711e-e4d0-fd23" name="Thrall" hidden="false"/>
+  </sharedRules>
 </gameSystem>
