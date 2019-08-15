@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="2" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="3" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -72,6 +72,14 @@
     <categoryEntry id="be2c-52c3-7e0a-cd08" name="Lesser Artefact" hidden="true"/>
     <categoryEntry id="6091-07b0-2561-94e4" name="Artefact of Power" page="" hidden="false"/>
     <categoryEntry id="ec9a-6e7c-49ab-169a" name="Faction: Nighthaunt" hidden="true"/>
+    <categoryEntry id="9e47-a549-feee-b1a6" name="Faction: Stormcast Eternals" hidden="false"/>
+    <categoryEntry id="299c-7cd9-97df-f427" name="Faction: Glomespite Gitz" hidden="false"/>
+    <categoryEntry id="22cb-2cdd-5a58-6f89" name="Faction: Idoneth Deepkin" hidden="false"/>
+    <categoryEntry id="33bb-718e-3630-6bf2" name="Faction: Flesh-eater Courts" hidden="false"/>
+    <categoryEntry id="cf33-b2ee-3270-68de" name="Faction: Ironjawz" hidden="false"/>
+    <categoryEntry id="9fed-4b84-71e8-2247" name="Faction: Bonsplitters" hidden="false"/>
+    <categoryEntry id="6952-60ac-78a0-b434" name="Faction: Legion of Nagash" hidden="false"/>
+    <categoryEntry id="d834-7a59-485b-0bd0" name="Faction: Daughters of Khaine" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
