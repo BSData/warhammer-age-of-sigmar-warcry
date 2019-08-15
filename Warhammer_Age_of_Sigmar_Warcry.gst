@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="1" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="2" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -32,36 +32,36 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="0600-c649-d723-9878" name="Agile" hidden="false"/>
-    <categoryEntry id="9e65-4c4f-1710-5eda" name="Beast" hidden="false"/>
-    <categoryEntry id="504d-d9a6-d53a-f756" name="Berserker" hidden="false"/>
-    <categoryEntry id="1a5f-39a9-6bfb-a39e" name="Brute" hidden="false"/>
-    <categoryEntry id="e250-737c-002f-8734" name="Bulwark" hidden="false"/>
-    <categoryEntry id="3963-7daa-918f-f967" name="Champion" hidden="false"/>
-    <categoryEntry id="ec0a-41bd-536d-52c3" name="Chaotic Beast" hidden="false"/>
-    <categoryEntry id="2f59-5bac-4ad2-9666" name="Sentience" hidden="false"/>
-    <categoryEntry id="bae7-393b-28ca-cd4b" name="Destroyer" hidden="false"/>
-    <categoryEntry id="4612-b433-ee05-d1fd" name="Elite" hidden="false"/>
-    <categoryEntry id="967d-cd09-6501-9d53" name="Fly" hidden="false"/>
-    <categoryEntry id="5984-b33a-b944-0c71" name="Icon Bearer" hidden="false"/>
+    <categoryEntry id="0600-c649-d723-9878" name="Agile" hidden="true"/>
+    <categoryEntry id="9e65-4c4f-1710-5eda" name="Beast" hidden="true"/>
+    <categoryEntry id="504d-d9a6-d53a-f756" name="Berserker" hidden="true"/>
+    <categoryEntry id="1a5f-39a9-6bfb-a39e" name="Brute" hidden="true"/>
+    <categoryEntry id="e250-737c-002f-8734" name="Bulwark" hidden="true"/>
+    <categoryEntry id="3963-7daa-918f-f967" name="Champion" hidden="true"/>
+    <categoryEntry id="ec0a-41bd-536d-52c3" name="Chaotic Beast" hidden="true"/>
+    <categoryEntry id="2f59-5bac-4ad2-9666" name="Sentience" hidden="true"/>
+    <categoryEntry id="bae7-393b-28ca-cd4b" name="Destroyer" hidden="true"/>
+    <categoryEntry id="4612-b433-ee05-d1fd" name="Elite" hidden="true"/>
+    <categoryEntry id="967d-cd09-6501-9d53" name="Fly" hidden="true"/>
+    <categoryEntry id="5984-b33a-b944-0c71" name="Icon Bearer" hidden="true"/>
     <categoryEntry id="4d50-0ab6-f937-3410" name="Leader" hidden="false"/>
-    <categoryEntry id="16a6-2b54-bd8b-f8e5" name="Minion" hidden="false"/>
-    <categoryEntry id="7873-95b3-6051-1762" name="Mystic" hidden="false"/>
-    <categoryEntry id="500f-c18d-7ff4-81ff" name="Scout" hidden="false"/>
-    <categoryEntry id="b742-c948-2301-f368" name="Trapper" hidden="false"/>
-    <categoryEntry id="596f-ef0a-d93e-64de" name="Warrior" hidden="false"/>
-    <categoryEntry id="6670-fde1-19bf-5ffe" name="Gargantuan" hidden="false"/>
-    <categoryEntry id="818c-a6d8-cbf5-a958" name="Mount" hidden="false"/>
+    <categoryEntry id="16a6-2b54-bd8b-f8e5" name="Minion" hidden="true"/>
+    <categoryEntry id="7873-95b3-6051-1762" name="Mystic" hidden="true"/>
+    <categoryEntry id="500f-c18d-7ff4-81ff" name="Scout" hidden="true"/>
+    <categoryEntry id="b742-c948-2301-f368" name="Trapper" hidden="true"/>
+    <categoryEntry id="596f-ef0a-d93e-64de" name="Warrior" hidden="true"/>
+    <categoryEntry id="6670-fde1-19bf-5ffe" name="Gargantuan" hidden="true"/>
+    <categoryEntry id="818c-a6d8-cbf5-a958" name="Mount" hidden="true"/>
     <categoryEntry id="a032-0ba0-1821-c59d" name="Thrall" hidden="false"/>
-    <categoryEntry id="706c-1f7c-01c4-519e" name="Faction: Iron Golems" hidden="false"/>
-    <categoryEntry id="a552-a981-e93e-f478" name="Faction: Untamed Beasts" hidden="false"/>
-    <categoryEntry id="65b3-d91b-60cf-f6ae" name="Faction: Corvus Cabal" hidden="false"/>
-    <categoryEntry id="294a-3573-091d-cfde" name="Faction: Cypher Lords" hidden="false"/>
-    <categoryEntry id="1182-7a5b-b218-8a4f" name="Faction: Scions of the Flame" hidden="false"/>
-    <categoryEntry id="5dde-c731-534f-e71b" name="Faction: Splintered Fang" hidden="false"/>
-    <categoryEntry id="0849-8752-a251-226a" name="Faction: The Unmade" hidden="false"/>
-    <categoryEntry id="04bd-2cce-f332-f47b" name="Faction: Spire Tyrants" hidden="false"/>
-    <categoryEntry id="5589-39f0-c780-63d3" name="Favoured Fighter" hidden="false"/>
+    <categoryEntry id="706c-1f7c-01c4-519e" name="Faction: Iron Golems" hidden="true"/>
+    <categoryEntry id="a552-a981-e93e-f478" name="Faction: Untamed Beasts" hidden="true"/>
+    <categoryEntry id="65b3-d91b-60cf-f6ae" name="Faction: Corvus Cabal" hidden="true"/>
+    <categoryEntry id="294a-3573-091d-cfde" name="Faction: Cypher Lords" hidden="true"/>
+    <categoryEntry id="1182-7a5b-b218-8a4f" name="Faction: Scions of the Flame" hidden="true"/>
+    <categoryEntry id="5dde-c731-534f-e71b" name="Faction: Splintered Fang" hidden="true"/>
+    <categoryEntry id="0849-8752-a251-226a" name="Faction: The Unmade" hidden="true"/>
+    <categoryEntry id="04bd-2cce-f332-f47b" name="Faction: Spire Tyrants" hidden="true"/>
+    <categoryEntry id="5589-39f0-c780-63d3" name="Favoured Fighter" hidden="true"/>
     <categoryEntry id="f2ce-030d-9971-73f0" name="Fighter" hidden="false"/>
     <categoryEntry id="38e4-7526-f8ee-1e00" name="Battle Group: Shield" hidden="false"/>
     <categoryEntry id="3fd5-a6ff-d6ce-2479" name="Battle Group: Hammer" hidden="false"/>
@@ -69,9 +69,9 @@
     <categoryEntry id="78c2-5a84-0a48-6175" name="Style: Matched" hidden="false"/>
     <categoryEntry id="c7be-d4a9-eb5b-8a2e" name="Style: Campaign" hidden="false"/>
     <categoryEntry id="e142-b624-d090-bcfb" name="Style: Open" hidden="false"/>
-    <categoryEntry id="be2c-52c3-7e0a-cd08" name="Lesser Artefact" hidden="false"/>
+    <categoryEntry id="be2c-52c3-7e0a-cd08" name="Lesser Artefact" hidden="true"/>
     <categoryEntry id="6091-07b0-2561-94e4" name="Artefact of Power" page="" hidden="false"/>
-    <categoryEntry id="ec9a-6e7c-49ab-169a" name="Faction: Nighthaunt" hidden="false"/>
+    <categoryEntry id="ec9a-6e7c-49ab-169a" name="Faction: Nighthaunt" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -92,12 +92,7 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="86ef-2421-0626-361e" name="Raptoryz" hidden="false" collective="false" targetId="3894-dec2-f437-80ed" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="f187-9fd8-a8f5-7535" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="979e-1c27-3e5f-1122" name="Thrall" hidden="false" targetId="a032-0ba0-1821-c59d" primary="true"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink id="86ef-2421-0626-361e" name="Raptoryz" hidden="false" collective="false" targetId="3894-dec2-f437-80ed" type="selectionEntry"/>
     <entryLink id="130c-dcbf-92fc-7a46" name="Fury" hidden="false" collective="false" targetId="ef27-a379-1c4f-beda" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
@@ -119,14 +114,49 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoGroups>
+        <infoGroup id="a128-6af7-71d3-c71f" name="Runemarks" hidden="false">
+          <infoLinks>
+            <infoLink id="f23b-6a1e-458b-6d45" name="Thrall" hidden="false" targetId="efd1-711e-e4d0-fd23" type="rule"/>
+            <infoLink id="c1c6-1f68-40b0-3b7f" name="Berserker" hidden="false" targetId="f977-2711-0fba-31ab" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink id="5264-f38a-be7e-2119" name="Berserker" hidden="false" targetId="504d-d9a6-d53a-f756" primary="false"/>
+        <categoryLink id="49f8-2a0e-2b33-7782" name="Thrall" hidden="false" targetId="a032-0ba0-1821-c59d" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ef27-a379-1c4f-beda" name="Fury" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="14cc-b5c4-260c-c4ed" name="Fury" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2bad-4e3f-4bf6-d191" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="c5b7-2e1b-fe89-75e6" name="Runemarks" hidden="false">
+          <infoLinks>
+            <infoLink id="7373-8616-bb10-9c48" name="Thrall" hidden="false" targetId="efd1-711e-e4d0-fd23" type="rule"/>
+            <infoLink id="d140-ddd5-f2ab-863d" name="Fly" hidden="false" targetId="c1f9-b53d-6ec9-3652" type="rule"/>
+            <infoLink id="4edc-eeba-7501-4ff1" name="Sentience" hidden="false" targetId="904a-b9a0-eec8-37ed" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink id="c90c-6153-edcb-23fc" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
         <categoryLink id="da41-92c8-1e8e-d7c5" name="Thrall" hidden="false" targetId="a032-0ba0-1821-c59d" primary="true"/>
@@ -343,4 +373,27 @@
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="1b2d-b20b-59c9-5dd1" name="Agile" hidden="false"/>
+    <rule id="b502-b32e-a66e-dc50" name="Beast" hidden="false"/>
+    <rule id="f977-2711-0fba-31ab" name="Berserker" hidden="false"/>
+    <rule id="fda5-c71f-ad75-a72d" name="Brute" hidden="false"/>
+    <rule id="edb7-762d-cded-8f6a" name="Bulwark" hidden="false"/>
+    <rule id="952b-2da3-5d58-54bd" name="Champion" hidden="false"/>
+    <rule id="cee0-2efa-8078-072a" name="Chaotic Beast" hidden="false"/>
+    <rule id="904a-b9a0-eec8-37ed" name="Sentience" hidden="false"/>
+    <rule id="48fe-1895-1d69-fdfa" name="Destroyer" hidden="false"/>
+    <rule id="fa3f-ad9c-0d43-9acc" name="Elite" hidden="false"/>
+    <rule id="c1f9-b53d-6ec9-3652" name="Fly" hidden="false"/>
+    <rule id="e551-ce13-92b5-7593" name="Icon Bearer" hidden="false"/>
+    <rule id="815c-025e-32e1-86b6" name="Leader" hidden="false"/>
+    <rule id="80b5-cbcf-cffc-6fbf" name="Minion" hidden="false"/>
+    <rule id="e2d2-9a0a-219f-a0a6" name="Mystic" hidden="false"/>
+    <rule id="a26a-140e-bd5d-b72c" name="Scout" hidden="false"/>
+    <rule id="fb13-166d-a04e-1779" name="Trapper" hidden="false"/>
+    <rule id="9820-4384-0c29-1a2f" name="Warrior" hidden="false"/>
+    <rule id="7f5d-7ad1-2eeb-8bbb" name="Gargantuan" hidden="false"/>
+    <rule id="be40-507b-391a-9b21" name="Mount" hidden="false"/>
+    <rule id="efd1-711e-e4d0-fd23" name="Thrall" hidden="false"/>
+  </sharedRules>
 </gameSystem>
