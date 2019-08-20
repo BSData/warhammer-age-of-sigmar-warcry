@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0eec-d494-3711-f7ae" name="Bonesplitters" revision="1" battleScribeVersion="2.02" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0eec-d494-3711-f7ae" name="Bonesplitters" revision="2" battleScribeVersion="2.02" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="0ec5-6898-16f8-ed63" name="Savage Big Stabbas" hidden="false" collective="false" targetId="111b-ca55-6310-c830" type="selectionEntry"/>
     <entryLink id="557f-4e9a-e2d9-a6c6" name="Savage Boss with Chompa and Bone Shield" hidden="false" collective="false" targetId="f84b-2362-40a4-81f1" type="selectionEntry"/>
@@ -11,6 +11,88 @@
     <entryLink id="7f6e-242e-d438-1bb1" name="Savage Orruk with Chompa and Bone Shield" hidden="false" collective="false" targetId="b9b9-84b2-f5fa-cada" type="selectionEntry"/>
     <entryLink id="9d4e-3571-dced-840f" name="Savage Orruk with Savage Stikka and Bone Shield" hidden="false" collective="false" targetId="6d73-e2dc-7ff3-a136" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="79ee-7be0-7821-3a7b" name="⚁ [Double] Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fed-4b84-71e8-2247" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>A fighter can only use this ability if there is a visable enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move.</description>
+    </rule>
+    <rule id="c449-b91c-d08c-688e" name="⚁ [Double] Toof Shiv" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fed-4b84-71e8-2247" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4612-b433-ee05-d1fd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6 allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="6d9c-22d2-8d31-17b0" name="⚁ [Double] Beast Spirit Ju-ju" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fed-4b84-71e8-2247" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7873-95b3-6051-1762" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Toughness characteristic of friendly fighteres while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="74f5-3159-ed78-939d" name="⚂ [Triple] Waaagh!" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fed-4b84-71e8-2247" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the value of this ability to the Move characteristic of friendly fighters within 6&quot; of this fighter when this fighter uses this ability, until the end of the battle round.</description>
+    </rule>
+    <rule id="a971-2c59-bff6-3e58" name="⚂ [Triple] Lodsa Arrows" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fed-4b84-71e8-2247" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Attacks characteristic of attack actiona mde by this fighter that target an enemy fighter more than 3&quot; away.</description>
+    </rule>
+    <rule id="b0f0-d7d4-7ce4-0162" name="⚃ [Quad] Rampaging Destroyer" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fed-4b84-71e8-2247" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, add 1 to the Attacks characteristic of attack actions made by this fighter. In addition, each time an enemy fighter is taken down by an attack action made by this fighter this activation, this fighter can make a bonus move action.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="6d73-e2dc-7ff3-a136" name="Savage Orruk with Savage Stikka and Bone Shield" hidden="false" collective="false" type="unit">
       <profiles>
