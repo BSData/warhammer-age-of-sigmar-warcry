@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="3" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="4" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -84,18 +84,30 @@
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8ad2-69ce-6f61-6759" type="min"/>
-        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2dd6-ea95-4d5d-9c5e" type="max"/>
+        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2a28-06a6-cbd3-84f6" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="851c-980c-8c57-7c5e" type="min"/>
       </constraints>
+      <infoGroups>
+        <infoGroup id="98ee-ccd5-991b-d961" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="eb0e-64ba-2568-8678" name="[Double] Rush" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Ability">
+              <characteristics>
+                <characteristic name="Runemark" typeId="df65-615b-2ee0-5fb9"/>
+                <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Add 1 to the Move characteristic of this fighter until the end of their activation</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
-        <categoryLink id="a057-471e-7e9d-84fc" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="false">
+        <categoryLink id="b68d-3533-2fb9-6b81" name="Thrall" hidden="false" targetId="a032-0ba0-1821-c59d" primary="false"/>
+        <categoryLink id="cc09-a311-7013-6e59" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+        <categoryLink id="c8e4-dd13-0d20-bf81" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4024-952f-3e90-0223" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5e2e-65fd-ef22-26fb" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8814-1427-4b05-7624" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="91d2-1775-19d0-8b68" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="17d1-4f66-deca-cbe1" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="4b94-078f-e55f-78d2" name="Thrall" hidden="false" targetId="a032-0ba0-1821-c59d" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -103,6 +115,30 @@
     <entryLink id="86ef-2421-0626-361e" name="Raptoryz" hidden="false" collective="false" targetId="3894-dec2-f437-80ed" type="selectionEntry"/>
     <entryLink id="130c-dcbf-92fc-7a46" name="Fury" hidden="false" collective="false" targetId="ef27-a379-1c4f-beda" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="f574-01e8-a7f3-ef39" name="⚁ [Double] Rush" hidden="false">
+      <description>Add 1 to the Move characteristic of this fighter until the end of their activation</description>
+    </rule>
+    <rule id="9806-9e74-bdee-04fb" name="⚂ [Triple] Inspiring Presence" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter that has not activated yet this battle round and that is within 6&quot; of this fighter. You can activate that fighter immediately after the activation of this fighter ends.</description>
+    </rule>
+    <rule id="7a9e-f73e-6952-cc73" name="⚁ [Double] Onslaught" hidden="false">
+      <description>Add 1 to the Attacks characteristic of attack actions made by this fighter until the end of their activation.</description>
+    </rule>
+    <rule id="e8bf-46d4-c8bc-103f" name="⚂ [Triple] Respite" hidden="false">
+      <description>A fighter cannot use this ability if they are within 1&quot; of any enemy fighters. Remove a number of damage points allocated to this fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="3ab2-db70-3462-b5f1" name="⚃ [Quad] Rampage" hidden="false">
+      <description>This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="3894-dec2-f437-80ed" name="Raptoryz" hidden="false" collective="false" type="model">
       <profiles>
