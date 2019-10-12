@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="4" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="5" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -77,7 +77,7 @@
     <categoryEntry id="22cb-2cdd-5a58-6f89" name="Faction: Idoneth Deepkin" hidden="true"/>
     <categoryEntry id="33bb-718e-3630-6bf2" name="Faction: Flesh-eater Courts" hidden="true"/>
     <categoryEntry id="cf33-b2ee-3270-68de" name="Faction: Ironjawz" hidden="true"/>
-    <categoryEntry id="9fed-4b84-71e8-2247" name="Faction: Bonsplitters" hidden="true"/>
+    <categoryEntry id="9fed-4b84-71e8-2247" name="Faction: Bonesplitterz" hidden="true"/>
     <categoryEntry id="6952-60ac-78a0-b434" name="Faction: Legion of Nagash" hidden="true"/>
     <categoryEntry id="d834-7a59-485b-0bd0" name="Faction: Daughters of Khaine" hidden="true"/>
   </categoryEntries>
