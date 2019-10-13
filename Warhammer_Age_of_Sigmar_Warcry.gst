@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="6" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="7" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -251,7 +251,7 @@
       <description>Pick a friendly fighter that has not activated yet this battle round and that is within 6&quot; of this fighter. You can activate that fighter immediately after the activation of this fighter ends.</description>
     </rule>
     <rule id="7a9e-f73e-6952-cc73" name="⚁ [Double] Onslaught" hidden="false">
-      <description>Add 1 to the Attacks characteristic of attack actions made by this fighter until the end of their activation.</description>
+      <description>Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less until the end of their activation.</description>
     </rule>
     <rule id="e8bf-46d4-c8bc-103f" name="⚂ [Triple] Respite" hidden="false">
       <description>A fighter cannot use this ability if they are within 1&quot; of any enemy fighters. Remove a number of damage points allocated to this fighter equal to the value of this ability.</description>
@@ -653,6 +653,9 @@
         <categoryLink id="4ecb-6d8d-9365-d132" name="Ally: Ironjawz" hidden="false" targetId="cdec-aee7-099d-9659" primary="false"/>
         <categoryLink id="016c-5c7c-7488-f7d6" name="Champion" hidden="false" targetId="3963-7daa-918f-f967" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="17dd-8a74-3348-a686" name="Magister" hidden="false" collective="false" import="true" type="model">
       <profiles>
