@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="9" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -137,15 +137,9 @@
     <categoryEntry id="a552-a981-e93e-f478" name="Faction: Untamed Beasts" hidden="true"/>
     <categoryEntry id="65b3-d91b-60cf-f6ae" name="Faction: Corvus Cabal" hidden="true"/>
     <categoryEntry id="294a-3573-091d-cfde" name="Faction: Cypher Lords" hidden="true"/>
-    <categoryEntry id="1182-7a5b-b218-8a4f" name="Faction: Scions of the Flame" hidden="true"/>
     <categoryEntry id="5dde-c731-534f-e71b" name="Faction: Splintered Fang" hidden="true"/>
     <categoryEntry id="0849-8752-a251-226a" name="Faction: The Unmade" hidden="true"/>
-    <categoryEntry id="04bd-2cce-f332-f47b" name="Faction: Spire Tyrants" hidden="true"/>
-    <categoryEntry id="5589-39f0-c780-63d3" name="Favoured Fighter" hidden="true"/>
     <categoryEntry id="f2ce-030d-9971-73f0" name="Fighter" hidden="false"/>
-    <categoryEntry id="78c2-5a84-0a48-6175" name="Style: Matched" hidden="false"/>
-    <categoryEntry id="c7be-d4a9-eb5b-8a2e" name="Style: Campaign" hidden="false"/>
-    <categoryEntry id="e142-b624-d090-bcfb" name="Style: Open" hidden="false"/>
     <categoryEntry id="be2c-52c3-7e0a-cd08" name="Artefact: Lesser" hidden="true"/>
     <categoryEntry id="6091-07b0-2561-94e4" name="Artefact: Power" page="" hidden="true"/>
     <categoryEntry id="ec9a-6e7c-49ab-169a" name="Faction: Nighthaunt" hidden="true"/>
@@ -157,9 +151,6 @@
     <categoryEntry id="9fed-4b84-71e8-2247" name="Faction: Bonesplitterz" hidden="true"/>
     <categoryEntry id="6952-60ac-78a0-b434" name="Faction: Legion of Nagash" hidden="true"/>
     <categoryEntry id="d834-7a59-485b-0bd0" name="Faction: Daughters of Khaine" hidden="true"/>
-    <categoryEntry id="fd89-dcfa-520a-f9ce" name="Faction: Beasts of Chaos" hidden="false"/>
-    <categoryEntry id="6d76-2825-caf6-e51e" name="Faction: Everchosen" hidden="false"/>
-    <categoryEntry id="cddd-0837-af68-2972" name="Faction: Stormcast Warrior Chamber" hidden="false"/>
     <categoryEntry id="e652-9188-d011-6288" name="Ally: Beasts of Chaos" hidden="false"/>
     <categoryEntry id="ec0e-2cc3-9d93-d5a6" name="Ally: Bonesplitterz" hidden="false"/>
     <categoryEntry id="c1c0-764c-4184-998b" name="Ally: Daughters of Khaine" hidden="false"/>
