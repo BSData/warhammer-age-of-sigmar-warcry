@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="98a8-13db-b704-3ef0" name="Gloomspite Gitz" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="98a8-13db-b704-3ef0" name="Gloomspite Gitz" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="4c5d-b4de-48b2-18aa" name="Boingrot Boss" hidden="false" collective="false" import="true" targetId="365a-0a87-394d-fa54" type="selectionEntry"/>
     <entryLink id="4e42-b45b-41d2-cdec" name="Boingrot Bounder" hidden="false" collective="false" import="true" targetId="fb7e-b0bb-41d4-d73b" type="selectionEntry"/>
@@ -23,6 +23,7 @@
     <entryLink id="7375-dad9-bc76-4aa6" name="Spiker" hidden="false" collective="false" import="true" targetId="5c49-e0c8-e835-0771" type="selectionEntry"/>
     <entryLink id="a4da-35e6-8126-b707" name="Warchanter" hidden="false" collective="false" import="true" targetId="099b-ae5f-e2a8-2777" type="selectionEntry"/>
     <entryLink id="5f4f-49f5-a7c5-97c3" name="Weirdnob Shaman" hidden="false" collective="false" import="true" targetId="a026-35e5-7880-462c" type="selectionEntry"/>
+    <entryLink id="403b-e702-a1e9-d368" name="Sneaky Snuffler" hidden="false" collective="false" import="true" targetId="7c6a-3574-d4d1-59f1" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="365a-0a87-394d-fa54" name="Boingrot Boss" hidden="false" collective="false" import="true" type="unit">
@@ -399,6 +400,32 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c6a-3574-d4d1-59f1" name="Sneaky Snuffler" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="cedb-2a16-65e8-d65a" name="Sneaky Snuffler" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc3d-d7a1-cb26-ffa4" name="Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e080-1882-9123-09dc" name="Faction: Glomespite Gitz" hidden="false" targetId="299c-7cd9-97df-f427" primary="false"/>
+        <categoryLink id="26a9-350a-b0f2-3cc3" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
