@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="733e-b677-de21-f3bb" name="Beasts of Chaos" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="733e-b677-de21-f3bb" name="Beasts of Chaos" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="26f0-f4b2-8eb0-2936" name="Bestigor" hidden="false" collective="false" import="true" targetId="727a-74dc-5858-7f0c" type="selectionEntry"/>
     <entryLink id="7c80-c630-ebc5-14dc" name="Bestigor Gouge-Horn" hidden="false" collective="false" import="true" targetId="aec0-7d73-03f8-bb14" type="selectionEntry"/>
@@ -9,6 +9,7 @@
     <entryLink id="a96b-0b6b-2d64-c9bb" name="Gor Foe-Render" hidden="false" collective="false" import="true" targetId="a324-c18f-98fe-b93c" type="selectionEntry"/>
     <entryLink id="35b2-d41a-bf72-ca16" name="Ungor" hidden="false" collective="false" import="true" targetId="0683-3fdb-9a3d-09f8" type="selectionEntry"/>
     <entryLink id="530a-032b-9471-09a6" name="Ungor Halfhorn" hidden="false" collective="false" import="true" targetId="5852-b86f-b881-e44c" type="selectionEntry"/>
+    <entryLink id="b194-1a0e-1c88-cd30" name="Dragon Ogor" hidden="false" collective="false" import="true" targetId="6c57-8e68-dc95-abd7" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5852-b86f-b881-e44c" name="Ungor Halfhorn" hidden="false" collective="false" import="true" type="model">
@@ -81,6 +82,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0683-3fdb-9a3d-09f8" name="Ungor" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -174,6 +178,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="727a-74dc-5858-7f0c" name="Bestigor" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -263,6 +270,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3482-1e99-a549-6754" name="Bullgor Great Axe" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -275,6 +285,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -339,6 +352,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="dea7-0e34-9e4b-4be4" name="Gor" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -399,6 +415,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a324-c18f-98fe-b93c" name="Gor Foe-Render" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -424,6 +443,67 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6c57-8e68-dc95-abd7" name="Dragon Ogor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="43f7-c8d7-27ef-7b7a" name="Dragon Ogor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="edae-5cad-e1f9-d7bd" name="Faction: Beasts of Chaos" hidden="false" targetId="646e-a78d-e32a-9e30" primary="false"/>
+        <categoryLink id="e794-aeb9-7542-bd11" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="c483-5cd9-e9ee-3e76" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7d0f-efc0-6d8a-b9af" name="Profile" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntries>
+            <selectionEntry id="1bc3-d037-f59d-7612" name="Draconic Crusher" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="7f84-84e8-2fbe-c2a6" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="2a98-db69-6415-f81b" name="Draconic War-glaive" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c64d-4e97-94a6-c7ad" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="0049-63af-d6aa-e011" name="Paired Ancient Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1d5e-b492-2ebd-2689" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
