@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="10" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="11" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -195,6 +195,15 @@
         <rule id="ef30-188f-6c62-197b" name="Terrifying" hidden="false"/>
       </rules>
     </categoryEntry>
+    <categoryEntry id="4cd7-efbc-6c04-e0a4" name="Faction: Ogor Mawtribes" hidden="false"/>
+    <categoryEntry id="1f8d-00b7-339d-2242" name="Faction: Skaven" hidden="false"/>
+    <categoryEntry id="646e-a78d-e32a-9e30" name="Faction: Beasts of Chaos" hidden="false"/>
+    <categoryEntry id="45ae-bed2-2395-835c" name="Faction: Disciples of Tzeentch Arcanites" hidden="false"/>
+    <categoryEntry id="fd0e-1b06-56e8-9396" name="Faction: Disciples of Tzeentch Daemons" hidden="false"/>
+    <categoryEntry id="dc6c-a123-2387-e0e3" name="Faction: Ossiarch Bonereapers" hidden="false"/>
+    <categoryEntry id="6b04-9114-8f8f-b3b8" name="Faction: Kharadron Overlords" hidden="false"/>
+    <categoryEntry id="9be5-0947-13b7-ee13" name="Faction: Slaves to Darkness" hidden="false"/>
+    <categoryEntry id="4362-4307-bc10-c953" name="Faction: Stormcast Warrior Chamber" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
