@@ -1,193 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ee7d-03e8-aac4-1e23" name="Kharadron Overlords" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ee7d-03e8-aac4-1e23" name="Kharadron Overlords" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="c56f-6d43-f898-329d" name="Arkanaut Company Captain" hidden="false" collective="false" import="true" targetId="f561-0227-a10d-0025" type="selectionEntry"/>
+    <entryLink id="ba18-927a-1423-05e0" name="Arkanaut" hidden="false" collective="false" import="true" targetId="145c-26bc-5420-6481" type="selectionEntry"/>
+    <entryLink id="943b-8bd8-03e5-f340" name="Grundstok Gunnery Sergeant" hidden="false" collective="false" import="true" targetId="6cc8-2d39-6be2-4d3d" type="selectionEntry"/>
+    <entryLink id="b220-de8a-8761-3125" name="Grundstok Thunderer" hidden="false" collective="false" import="true" targetId="f2d1-efd7-6b67-0728" type="selectionEntry"/>
+    <entryLink id="7fe3-4ff1-467c-1761" name="Endrinriggers" hidden="false" collective="false" import="true" targetId="e73e-0371-1508-d0df" type="selectionEntry"/>
+    <entryLink id="59ae-2d42-660f-1de2" name="Endrinrigger Mizzenmaster" hidden="false" collective="false" import="true" targetId="143c-9ff6-b7ea-8d40" type="selectionEntry"/>
+    <entryLink id="03fc-0701-c501-bace" name="Skyrigger" hidden="false" collective="false" import="true" targetId="852a-75eb-a2dd-8a27" type="selectionEntry"/>
+    <entryLink id="21ec-565b-5ede-b583" name="Skywarden Custodian" hidden="false" collective="false" import="true" targetId="6001-8096-6ebd-83fe" type="selectionEntry"/>
+  </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="852a-75eb-a2dd-8a27" name="Skyrigger" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="852a-75eb-a2dd-8a27" name="Skywarden" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="838a-c582-f386-efcb" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="abc9-59fc-0404-dbe6" name="Faction: Kharadron Overlords" hidden="false" targetId="6b04-9114-8f8f-b3b8" primary="false"/>
         <categoryLink id="3f4d-6afc-44c8-767e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="bd97-d13f-8e52-6ccc" name="Trapper" hidden="false" targetId="b742-c948-2301-f368" primary="false"/>
+        <categoryLink id="d41d-514f-f69f-5467" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6a37-cdf4-24b1-e6ae" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="9b11-e60b-0052-b977">
+        <selectionEntryGroup id="6a37-cdf4-24b1-e6ae" name="Profile" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df56-cd5a-84b0-3691" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e0-d328-2c7c-b745" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="283d-8706-298d-1955" name="Rapid-fire Rivet Gun and Aethermatic Saw" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="290b-1224-520d-b786" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="eb43-76e1-df9d-4f5f" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9f84-ae73-ea94-0c55" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="d0df-f594-e2fd-df6c" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="fd19-ee92-562f-d697" name="Aethermatic Volley Gun" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="2653-1f1f-fdc4-f0dc" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="8241-8223-0e51-e58e" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">6</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="15cc-bfcf-eabe-93f2" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="1d67-0102-01b9-b32e" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b010-13f6-8551-2b41" name="Skyhook" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="0c5f-053c-792d-3909" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="d5cc-792e-c2fc-574b" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="6c2d-2b53-e3b9-9905" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="a6a4-3458-3f78-613b" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6819-18f9-18b7-d98c" name="Drill Launcher" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="7430-461d-e3f8-0de6" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7a7f-edc6-5d04-7866" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="b922-361a-d8c4-0fb8" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="c1c9-2d92-f99b-8b93" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9b11-e60b-0052-b977" name="Grapnel Launcher" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="9621-b173-0608-06a4" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="0bb3-8f8e-1397-270a" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="bed6-119d-255e-4267" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="b48c-085c-174a-ccac" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-                <categoryLink id="e07a-4796-58ad-13ef" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="e888-e0d1-823d-f5c1" name="Vulcaniser Pistol and Skypike" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="2d8e-3fa1-62f8-f5bd" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="8c0e-f0e6-8884-951e" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
@@ -205,23 +53,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="8cc9-8723-9ec0-b1e2" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-                <categoryLink id="5136-f520-b8fb-e6ca" name="Trapper" hidden="false" targetId="b742-c948-2301-f368" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4c29-57c7-7c4d-bca4" name="Aethermatic Volley Gun (Trapper)" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="4c29-57c7-7c4d-bca4" name="Aethermatic Volley Gun" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="f2e6-6f19-5274-b59c" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="17d9-1a87-980a-d6c8" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
@@ -239,23 +76,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="9e92-2a2f-9a96-f39f" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-                <categoryLink id="6ba4-8668-c351-db6d" name="Trapper" hidden="false" targetId="b742-c948-2301-f368" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="358a-1025-637a-c663" name="Skyhook (Trapper)" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="358a-1025-637a-c663" name="Skyhook" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="058d-ea66-054d-cc43" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="e548-c783-38b7-cc34" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
@@ -273,23 +99,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="4172-1fe4-5781-c674" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-                <categoryLink id="0852-ae3a-1545-50c0" name="Trapper" hidden="false" targetId="b742-c948-2301-f368" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3908-4735-ca8a-ccd6" name="Drill Launcher (Trapper)" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="3908-4735-ca8a-ccd6" name="Drill Launcher" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="dc97-4430-96d4-bdbd" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="cc5b-68cd-02de-9a6f" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
@@ -307,23 +122,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="a856-34b3-7a27-2e86" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-                <categoryLink id="2dab-546a-9275-bfac" name="Trapper" hidden="false" targetId="b742-c948-2301-f368" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bac4-60c6-9af7-d72c" name="Grapnel Launcher (Trapper)" page="" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="bac4-60c6-9af7-d72c" name="Grapnel Launcher" page="" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="3d9d-5dd5-27ef-2348" name="Skyrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="e685-be07-b5ed-2b5e" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
@@ -342,9 +146,7 @@
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="38bf-c977-2e80-a9c8" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
                 <categoryLink id="78b6-fca1-84b6-c441" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
-                <categoryLink id="4284-554d-b6ca-8860" name="Trapper" hidden="false" targetId="b742-c948-2301-f368" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
@@ -353,8 +155,20 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="145c-26bc-5420-6481" name="Arkanaut Company" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="145c-26bc-5420-6481" name="Arkanaut" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9541-c904-f7e5-8262" name="Arkanaut" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="2000-d3a7-8f10-884b" name="Faction: Kharadron Overlords" hidden="false" targetId="6b04-9114-8f8f-b3b8" primary="false"/>
         <categoryLink id="6f7f-b0b5-a669-359e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
@@ -368,13 +182,6 @@
           <selectionEntries>
             <selectionEntry id="e781-ca94-8fe6-513b" name="Privateer Pistol and Arkanaut Cutter" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="2f8b-0bcf-f3df-12d0" name="Arkanaut" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="2347-19df-2674-4d6a" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
@@ -398,13 +205,6 @@
             </selectionEntry>
             <selectionEntry id="4360-3057-0d18-8d43" name="Aethermatic Volley Gun" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="a7cc-c837-4340-92a4" name="Arkanaut" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="9b1b-6a52-aa67-58be" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
@@ -428,13 +228,6 @@
             </selectionEntry>
             <selectionEntry id="088a-2327-906c-04be" name="Light Skyhook" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="d052-0ddb-18a4-0b6e" name="Arkanaut" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="8da1-b1f9-302d-1b11" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
@@ -458,13 +251,6 @@
             </selectionEntry>
             <selectionEntry id="c059-8ee2-5f1e-a27a" name="Skypike" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="d04a-b4be-88a3-0825" name="Arkanaut" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="408b-4b1d-59da-41bb" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
@@ -481,11 +267,24 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f2d1-efd7-6b67-0728" name="Grundstok Thunderer" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ad66-0f3b-6d0e-bb4a" name="Grundstok Thunderer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="e915-c7c3-d644-ede5" name="Faction: Kharadron Overlords" hidden="false" targetId="6b04-9114-8f8f-b3b8" primary="false"/>
         <categoryLink id="0b78-0e77-758d-c0bb" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="4baa-603f-bc04-4001" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ab38-92be-9a1c-828f" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="8dc5-e647-1d29-222f">
@@ -496,13 +295,6 @@
           <selectionEntries>
             <selectionEntry id="8dc5-e647-1d29-222f" name="Aethershot Rifle" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="b4ee-6411-53ab-772d" name="Grundstok Thunderer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="de39-9c07-285d-add3" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
@@ -520,22 +312,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="e0de-82fb-b4e5-4a2e" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3ed1-b120-5b9f-9998" name="Aetheric Fumigator" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="8aec-3e72-4aca-790a" name="Grundstok Thunderer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="efab-f48b-47a3-14b3" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6</characteristic>
@@ -545,22 +327,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="569a-a83a-591e-b570" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="491d-3b33-5c11-5a08" name="Decksweeper" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="0745-c95e-418a-359a" name="Grundstok Thunderer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="b152-a5d2-ab6c-93e8" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
@@ -578,22 +350,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="8dfe-0eaf-f84d-edf9" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2353-b5fd-4ff6-ca5d" name="Grundstok Mortar" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="fe35-ea5b-200d-a930" name="Grundstok Thunderer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="a6d2-3e54-2e20-76b7" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
@@ -611,22 +373,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="a1a8-8cd4-b491-5fe2" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a2b3-f778-e65e-bb6b" name="Aethercannon" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="1d47-0592-7159-8411" name="Grundstok Thunderer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="6017-49fe-3791-afa4" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
@@ -644,9 +396,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="7817-0cbf-bfae-7845" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
               </costs>
@@ -654,8 +403,11 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="f561-0227-a10d-0025" name="Company Captain" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f561-0227-a10d-0025" name="Arkanaut Company Captain" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="cc1d-a4b0-4c90-7714" name="Arkanaut Captain" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -689,7 +441,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6cc8-2d39-6be2-4d3d" name="Grundstok Sergeant" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6cc8-2d39-6be2-4d3d" name="Grundstok Gunnery Sergeant" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="b2c7-02ac-3018-2948" name="Gunnery Sergeant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -725,9 +477,9 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="143c-9ff6-b7ea-8d40" name="Mizzenmaster" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="143c-9ff6-b7ea-8d40" name="Endrinrigger Mizzenmaster" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="49a0-4ffd-8aee-dbd6" name="Skyrigger Captain" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="49a0-4ffd-8aee-dbd6" name="Endrinrigger Mizzenmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
@@ -794,6 +546,153 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e73e-0371-1508-d0df" name="Endrinrigger" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4c0b-f6ab-494d-4ae4" name="Endrinriggers" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3b75-fd29-036b-5998" name="Faction: Kharadron Overlords" hidden="false" targetId="6b04-9114-8f8f-b3b8" primary="false"/>
+        <categoryLink id="65d4-12f9-770e-86c2" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="baa4-21b9-068b-36f5" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5c24-2b40-3997-0fa3" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89c5-df2c-a422-9655" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5728-c067-e38d-9870" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4656-8d9a-9e92-112d" name="Rapid-fire Rivet Gun and Aethermatic Saw" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="8af6-03cb-8f96-9382" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="3020-89db-8095-8658" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7c6d-b9df-6d14-3197" name="Aethermatic Volley Gun" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="e878-c8c0-ac7d-213a" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">6</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="1d6c-ef0c-e2bf-c829" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f6dc-dc50-9a18-0354" name="Skyhook" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="b65a-6729-00cf-2a52" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="44eb-38c5-7684-4236" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f2b-19e2-6c79-104f" name="Drill Launcher" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="ec72-f3d1-ea9d-834e" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="55de-4bc0-4bd5-e896" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6b0b-7805-488a-4f2c" name="Grapnel Launcher" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="7e4c-26c3-523f-7535" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="875d-12d6-85b3-b073" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="02d4-ff59-9aab-49ae" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
