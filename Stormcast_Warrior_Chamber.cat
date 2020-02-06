@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="369c-035e-3988-af8e" name="Stormcast Warrior Chamber" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="369c-035e-3988-af8e" name="Stormcast Warrior Chamber" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="e411-1096-ee46-8eea" name="Liberator" hidden="false" collective="false" import="true" targetId="4e97-df96-2f32-9cdb" type="selectionEntry"/>
+    <entryLink id="3b1a-6497-a2f9-90c3" name="Judicator" hidden="false" collective="false" import="true" targetId="a4f9-1a9f-35a0-eaae" type="selectionEntry"/>
+    <entryLink id="5c52-2e42-6e45-6302" name="Judicator Prime" hidden="false" collective="false" import="true" targetId="f3d1-49f7-7d02-3a61" type="selectionEntry"/>
+    <entryLink id="1888-100b-3377-2fa2" name="Liberator Prime" hidden="false" collective="false" import="true" targetId="7070-e16a-addf-b8d3" type="selectionEntry"/>
+    <entryLink id="cd40-52b2-c587-4ba1" name="Paladin" hidden="false" collective="false" import="true" targetId="e39e-d5bb-4ad2-720a" type="selectionEntry"/>
+    <entryLink id="41ee-2f02-11c5-c913" name="Paladin Prime" hidden="false" collective="false" import="true" targetId="e8b5-cfb3-c23e-385c" type="selectionEntry"/>
+    <entryLink id="1fe2-2e61-dbfc-3ffe" name="Prosecutor" hidden="false" collective="false" import="true" targetId="9153-9acd-ded5-3661" type="selectionEntry"/>
+    <entryLink id="afd5-9014-7895-9e5e" name="Prosecutor Prime" hidden="false" collective="false" import="true" targetId="dad1-3d29-602f-da77" type="selectionEntry"/>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4e97-df96-2f32-9cdb" name="Liberator" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="5cd3-7391-2d74-6cb3" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="4e43-a820-e6f0-2b87" name="Faction: Stormcast Warrior Chamber" hidden="false" targetId="4362-4307-bc10-c953" primary="false"/>
+        <categoryLink id="0c69-29d4-a1d5-389a" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e2d9-27d0-6782-82f6" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa21-706d-fc36-7453">
@@ -23,17 +34,10 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="37a6-8f94-9531-747b" name="Liberator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="11da-d504-9df2-1e47" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-              </categoryLinks>
+              <infoLinks>
+                <infoLink id="a462-89c2-fb91-51fc" name="Liberator" hidden="false" targetId="a2ee-4f8c-9165-3ad6" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
               </costs>
@@ -48,17 +52,10 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="54df-d5b4-e42f-908c" name="Liberator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="f12e-0dd1-599c-a76c" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-              </categoryLinks>
+              <infoLinks>
+                <infoLink id="a5cf-f4f5-8a4e-6421" name="Liberator" hidden="false" targetId="a2ee-4f8c-9165-3ad6" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
               </costs>
@@ -73,17 +70,10 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="ed20-9052-57cb-7c24" name="Liberator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="97f0-96cd-7d7a-9c8e" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-              </categoryLinks>
+              <infoLinks>
+                <infoLink id="06a4-1ff5-17c3-f2d2" name="Liberator" hidden="false" targetId="a2ee-4f8c-9165-3ad6" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
               </costs>
@@ -98,17 +88,10 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="a47c-1f2a-4784-1a83" name="Liberator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="e8bf-b55f-6b3e-f694" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-              </categoryLinks>
+              <infoLinks>
+                <infoLink id="2aeb-d22f-8d96-401d" name="Liberator" hidden="false" targetId="a2ee-4f8c-9165-3ad6" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
               </costs>
@@ -123,16 +106,11 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="84ad-aefa-3017-7fae" name="Liberator with Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="3f8c-e2f6-dbc7-a783" name="Liberator with Shield" hidden="false" targetId="3ebd-7ee6-1b59-20d8" type="profile"/>
+              </infoLinks>
               <categoryLinks>
-                <categoryLink id="682c-ad51-cb7f-0899" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
                 <categoryLink id="a1ac-f67e-e536-d686" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
               </categoryLinks>
               <costs>
@@ -149,16 +127,11 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="88c7-12a6-6843-be94" name="Liberator with Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="84df-bb57-1f00-3b93" name="Liberator with Shield" hidden="false" targetId="3ebd-7ee6-1b59-20d8" type="profile"/>
+              </infoLinks>
               <categoryLinks>
-                <categoryLink id="f8a2-b977-3bfc-b86b" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
                 <categoryLink id="bfc5-9138-c549-5720" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
               </categoryLinks>
               <costs>
@@ -173,9 +146,20 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7070-e16a-addf-b8d3" name="Liberator Prime" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f476-47a2-ce0e-4dcf" name="Liberator Prime with Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="5dec-774f-6066-e7aa" name="Faction: Stormcast Warrior Chamber" hidden="false" targetId="4362-4307-bc10-c953" primary="false"/>
         <categoryLink id="6f94-ea0d-ad26-fcd5" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="386c-6d99-1a15-a7aa" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
+        <categoryLink id="4c1e-12c6-05c1-48a5" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="bf7b-f20c-e9ea-7a28" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="1b34-d19a-d01b-185f">
@@ -186,13 +170,6 @@
           <selectionEntries>
             <selectionEntry id="1b34-d19a-d01b-185f" name="Warblade and Shield" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="cf7f-d442-818e-4627" name="Liberator Prime with Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="b0cc-4896-f0eb-8e31" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
@@ -202,10 +179,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="cbea-f9ef-151c-7bfc" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
-                <categoryLink id="8831-8776-d7a0-be71" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
               </costs>
@@ -220,18 +193,7 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="af8c-7479-f605-5d79" name="Liberator Prime with Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="b156-5882-15ff-ea8b" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-                <categoryLink id="1b74-0140-be3e-cc68" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
               </costs>
@@ -244,6 +206,15 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a4f9-1a9f-35a0-eaae" name="Judicator" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="071e-f265-1176-254a" name="Judicator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="2b05-2de2-985c-0494" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="eb69-4482-e805-12d7" name="Faction: Stormcast Warrior Chamber" hidden="false" targetId="4362-4307-bc10-c953" primary="false"/>
@@ -257,13 +228,6 @@
           <selectionEntries>
             <selectionEntry id="bec9-11ec-1bc1-605b" name="Skybolt Bow" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="ff5d-a46e-02b1-9c5d" name="Judicator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="f541-1f86-3db9-1a7c" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
@@ -287,13 +251,6 @@
             </selectionEntry>
             <selectionEntry id="2c08-8bea-1971-3f79" name="Boltstorm Crossbow" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="2b68-0638-5bba-5f02" name="Judicator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="3595-d66c-1cbb-6b8e" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
@@ -317,13 +274,6 @@
             </selectionEntry>
             <selectionEntry id="bad1-637a-3f18-dafa" name="Thunderbolt Crossbow" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="b81c-4e98-7c63-47b6" name="Judicator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="76a4-e694-4b41-b39c" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6-15</characteristic>
@@ -347,13 +297,6 @@
             </selectionEntry>
             <selectionEntry id="86a6-ee0d-198c-bb5c" name="Shockbolt Bow" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="7c85-3023-3d55-a644" name="Judicator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="ac26-cb9c-e29a-ad91" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
@@ -383,6 +326,15 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f3d1-49f7-7d02-3a61" name="Judicator Prime" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="42b2-839e-57ee-3582" name="Judicator Prime" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="4b04-44f8-46e0-4335" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
         <categoryLink id="8a02-4da4-6246-ea99" name="Faction: Stormcast Warrior Chamber" hidden="false" targetId="4362-4307-bc10-c953" primary="false"/>
@@ -396,13 +348,6 @@
           <selectionEntries>
             <selectionEntry id="145c-ac99-4f25-6c30" name="Skybolt Bow" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="11c1-5732-c00a-de46" name="Judicator Prime" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="b5cf-2c19-5a21-564d" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
@@ -426,13 +371,6 @@
             </selectionEntry>
             <selectionEntry id="bab2-b339-d0aa-2b00" name="Boltstorm Crossbow" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="89d6-a5c6-b7fd-2c84" name="Judicator Prime" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="dec3-da6e-9859-5401" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
@@ -457,11 +395,24 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e39e-d5bb-4ad2-720a" name="Paladin" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="a3ad-6476-e648-1181" name="Paladin" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="3296-6c40-6ead-e4ea" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="271c-e6c6-dd2d-e527" name="Faction: Stormcast Warrior Chamber" hidden="false" targetId="4362-4307-bc10-c953" primary="false"/>
+        <categoryLink id="f947-99c5-5955-f07d" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="aa2d-4bf1-f515-fc31" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="51c3-efd9-ec0e-1248">
@@ -472,13 +423,6 @@
           <selectionEntries>
             <selectionEntry id="51c3-efd9-ec0e-1248" name="Protector" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="323b-f37d-8404-abfc" name="Paladin" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="898d-f2a9-7082-68ad" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
@@ -488,22 +432,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="ac6e-9ebb-30c1-72c9" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="21ec-9d49-5ad9-88bd" name="Retributor" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="67dd-9d75-c968-ee25" name="Paladin" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="3b70-306e-7cff-7085" name="Hammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
@@ -513,22 +447,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="58ad-9ca4-497c-a19f" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7d0f-a4b2-b4f5-de96" name="Decimator" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="52b3-e93a-13f0-8e64" name="Paladin" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="e5ac-92c7-b199-4bd9" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
@@ -538,22 +462,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="8664-010b-cd9f-ee8a" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e462-4099-0ce1-46d2" name="Starsoul Mace" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="1862-55e9-19a8-3789" name="Paladin" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="9638-889d-d7e5-cba2" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
@@ -563,9 +477,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="cc26-5e8b-824f-5168" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
               </costs>
@@ -573,11 +484,24 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e8b5-cfb3-c23e-385c" name="Paladin Prime" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ec46-eade-c560-10f1" name="Paladin Prime" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="e7b3-0d48-8eeb-a8ea" name="Faction: Stormcast Warrior Chamber" hidden="false" targetId="4362-4307-bc10-c953" primary="false"/>
         <categoryLink id="2cb5-0ded-cdaa-eb2f" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="0350-4596-ad6e-abdf" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6e04-9397-c352-0ca6" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="3984-7e33-8391-3246">
@@ -604,22 +528,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="0bb0-8172-c6c4-8df1" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="99b4-52d6-4ec5-c9fa" name="Retributor Prime" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="f297-7207-93d3-37ea" name="Paladin Prime" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="7d2a-2e11-8e3d-79ab" name="Hammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
@@ -629,9 +543,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="85f4-a4a7-106e-dbe2" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
               </costs>
@@ -654,9 +565,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="48cb-c29a-800e-93ce" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
               </costs>
@@ -664,11 +572,15 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9153-9acd-ded5-3661" name="Prosecutor" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="85c0-1c2b-c350-aa94" name="Faction: Stormcast Warrior Chamber" hidden="false" targetId="4362-4307-bc10-c953" primary="false"/>
         <categoryLink id="dd02-56bd-b484-1fca" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="a10a-6cc9-731e-c1dd" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c654-4b78-c2e7-4664" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5b0-5ba6-e80c-ff06">
@@ -695,9 +607,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="8252-538a-972c-1ce7" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
               </costs>
@@ -720,9 +629,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="a856-b25e-ba9f-d16d" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
               </costs>
@@ -745,9 +651,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="afaf-c728-8e1a-7986" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
               </costs>
@@ -778,9 +681,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="94f0-4c18-6b2a-e0e1" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
               </costs>
@@ -813,7 +713,6 @@
               </profiles>
               <categoryLinks>
                 <categoryLink id="7b03-8466-3b8c-ac71" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
-                <categoryLink id="b621-aa12-827a-5217" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
@@ -847,7 +746,6 @@
               </profiles>
               <categoryLinks>
                 <categoryLink id="c15b-aaae-3c3a-050b" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
-                <categoryLink id="43f2-a8d1-e9f8-e492" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
@@ -856,14 +754,18 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="dad1-3d29-602f-da77" name="Prosecutor Prime" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="20ad-d9cd-f215-f524" name="Faction: Stormcast Warrior Chamber" hidden="false" targetId="4362-4307-bc10-c953" primary="false"/>
         <categoryLink id="dc59-0328-a653-9136" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="936f-0d60-65a6-6191" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e487-4eb3-d597-1acc" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e487-4eb3-d597-1acc" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="0627-d19c-8882-8cdc">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beef-37de-dd54-f62d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f826-9688-53e4-8134" type="min"/>
@@ -895,9 +797,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="f357-0b8d-3af9-6e6a" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="280.0"/>
               </costs>
@@ -930,7 +829,6 @@
               </profiles>
               <categoryLinks>
                 <categoryLink id="2667-2dde-194c-64ea" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
-                <categoryLink id="56e2-3ec8-d8bc-7890" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="300.0"/>
@@ -939,6 +837,25 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="a2ee-4f8c-9165-3ad6" name="Liberator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+      <characteristics>
+        <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+        <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+        <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3ebd-7ee6-1b59-20d8" name="Liberator with Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+      <characteristics>
+        <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+        <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+        <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
