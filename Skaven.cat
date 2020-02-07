@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="9c93-2200-a39e-de22" name="Skaven" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="4e29-ebea-1c4b-1922" name="Bringer-of-the-Word" hidden="false" collective="false" import="true" targetId="3289-1f00-9f66-59eb" type="selectionEntry"/>
+    <entryLink id="fb9e-e30f-2dc4-81b0" name="Clanrat" hidden="false" collective="false" import="true" targetId="9c8a-bbfd-1a51-78b9" type="selectionEntry"/>
+    <entryLink id="f8de-682c-a6d3-e6c1" name="Clanrat Clawleader" hidden="false" collective="false" import="true" targetId="cabb-05f0-8877-2898" type="selectionEntry"/>
+    <entryLink id="7045-a026-71ff-714a" name="Giant Rat" hidden="false" collective="false" import="true" targetId="4906-3836-cf48-912a" type="selectionEntry"/>
+    <entryLink id="bb06-36e0-32b8-0ea7" name="Gutter Runner" hidden="false" collective="false" import="true" targetId="5834-cd67-60e0-e2ca" type="selectionEntry"/>
+    <entryLink id="406b-03bb-7c5e-c40c" name="Packmaster" hidden="false" collective="false" import="true" targetId="c204-b25f-ed72-700e" type="selectionEntry"/>
+    <entryLink id="7ac6-88f4-4ee2-cc63" name="Plague Monk" hidden="false" collective="false" import="true" targetId="fc7e-1f17-508d-848c" type="selectionEntry"/>
+    <entryLink id="2eb6-3ce8-1047-260f" name="Rat Ogor" hidden="false" collective="false" import="true" targetId="0405-9ce3-4131-e631" type="selectionEntry"/>
+    <entryLink id="1c45-642c-03a2-b970" name="Stormfiend" hidden="false" collective="false" import="true" targetId="acf7-98bf-ee1f-8431" type="selectionEntry"/>
+    <entryLink id="74db-79e2-1407-e51c" name="Stormvermin" hidden="false" collective="false" import="true" targetId="8349-35d6-8bef-ffdb" type="selectionEntry"/>
+    <entryLink id="a238-25e5-43e0-e7ac" name="Stormvermin Fangleader" hidden="false" collective="false" import="true" targetId="eaeb-9393-3b5d-f5fb" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="acf7-98bf-ee1f-8431" name="Stormfiend" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="5c57-d3fc-2bc0-e754" name="Stormfiend" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5af2-d906-483a-b9b1" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
+        <categoryLink id="b6de-83ad-4466-66d3" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="8de0-922a-84cf-4ee6" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="794a-68c0-3c82-6fd4" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="7403-1c46-4e76-4e6b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f557-9565-c927-c39e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73b4-e69d-b963-891a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7403-1c46-4e76-4e6b" name="Grinderfists" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="5b5e-f619-093e-a0f8" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3de8-cb41-e51d-e73e" name="Doomflayer Gauntlets" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="f0d6-2749-8205-7a79" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3b9f-3436-ee75-fb06" name="Shock Gauntlets" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="bf5b-22c5-b984-2223" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/10</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1072-3807-c89e-e5f2" name="Ratling Cannons" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="b02a-0952-92cf-c473" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="a917-7992-3529-feed" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="285.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cd2e-6929-a5e4-700e" name="Windlaunchers" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="58b1-f4cf-d8b3-eb40" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="3856-342a-8626-5846" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="aa65-f4e4-309e-44a9" name="Warpfire Projectors" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="60ba-9540-45fb-e6f9" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="4a4f-aa62-9b7c-6076" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-8</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="3289-1f00-9f66-59eb" name="Bringer-of-the-Word" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d0af-a641-2c83-d591" name="Bringer-of-the-Word" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e124-e0bf-2a1b-f2ed" name="Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ae32-e365-24ab-1748" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="0f7a-7eff-bb04-66b2" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="4553-916c-504a-fef1" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
+        <categoryLink id="b440-e1dc-740b-5c46" name="Priest" hidden="false" targetId="2712-3a5f-e744-cdc8" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc7e-1f17-508d-848c" name="Plague Monk" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ffd9-a4f7-32d3-bcc0" name="Plague Monk" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="47fe-dde4-4f91-fe49" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="e493-c048-0bae-4d8a" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="2ea6-d6a6-d819-d85e" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="faae-b3e5-e4d6-587a" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5387-bf9d-cddc-8a57" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="853b-a4d4-17b8-9fc3" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ff62-ac6c-4b66-6fc3" name="Woe-stave and Foetid Blade" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="b5ff-742f-d808-43f7" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0ce9-33a5-3231-ae2b" name="Pair of Foetid Blades" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="6482-06d4-4c80-d503" name="Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="eaeb-9393-3b5d-f5fb" name="Stormvermin Fangleader" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e87c-71f6-19fc-e9ff" name="Stormvermin Fangleader" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a82a-cd69-9f1d-728a" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="69ec-4e10-a82d-c623" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="50f2-d454-b9e4-2917" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8349-35d6-8bef-ffdb" name="Stormvermin" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="0e10-8082-fbd3-555e" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="135f-df07-2568-6538" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="f805-5b4a-30fa-4669" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="285c-6085-534d-5434" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="9071-c23d-1e1f-e62b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db06-f139-1b2b-f66c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf0c-aefb-cb3c-15eb" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9071-c23d-1e1f-e62b" name="Rusty Halberd" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="c647-300e-dbe1-8e6a" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="8666-b684-c08c-9128" name="Stormvermin" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c67e-be4e-9f9b-c0af" name="Rusty Halberd and Clanshield" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="6083-9f2f-4b4e-fd18" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="7096-831e-d9b8-5ad9" name="Stormvermin with Clanshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="cabb-05f0-8877-2898" name="Clanrat Clawleader" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="0c11-55d4-1eac-41a4" name="Clanrat Clawleader" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e75b-fe49-b191-db5b" name="Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e38d-762c-0ec7-079c" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="3c3b-945d-c3b7-b843" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="29d1-0e04-bcff-adf0" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c8a-bbfd-1a51-78b9" name="Clanrat" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ee9c-ff8b-5386-3c45" name="Clanrat" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cb75-2502-4f8d-d9c5" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="9b66-8caf-096c-fb6a" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="c795-9b26-49ba-c878" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1dd0-b92d-f06d-e06f" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="b0ee-74b2-f0c1-ddbc">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ea3-90a5-2845-90c0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ec5-e5b8-cdad-8d3d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b0ee-74b2-f0c1-ddbc" name="Rusty Spear and Clanshield" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="cb7b-47ea-abf7-ea54" name="Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5ed3-0fb4-d1ab-44f7" name="Rusty Blade and Clanshield" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="54ec-ea8f-6305-4037" name="Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="0405-9ce3-4131-e631" name="Rat Ogor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e4a5-8424-d1fa-ee78" name="Rat Ogor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">40</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9b09-c91a-63d1-2711" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="421d-3423-c94d-9847" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="c7ff-ed56-1daa-73e1" name="Brute" hidden="false" targetId="1a5f-39a9-6bfb-a39e" primary="false"/>
+        <categoryLink id="8e75-58ce-a446-4f80" name="Beast" hidden="false" targetId="9e65-4c4f-1710-5eda" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f1c4-b772-7457-c2b5" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="847e-ff9c-bc98-f0ef" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1a8-bb0a-c168-2792" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dac9-3aaf-334a-a5a9" name="Warpfire Gun" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="a888-6387-31ff-e559" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="f154-ebd2-9002-30b9" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-8</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f97e-5523-606a-d091" name="Tearing Claws" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="d4d3-f723-f6b9-bbd2" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="c204-b25f-ed72-700e" name="Packmaster" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6df8-1242-2875-3152" name="Packmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa8b-95ef-c278-d5a4" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a971-a68e-f293-ab63" name="Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="20e6-b805-858a-e452" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="2708-b9de-c614-1cd8" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="ff8b-436f-ad9d-4c92" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
+        <categoryLink id="de1e-f80d-54ba-70fd" name="Frenzied" hidden="false" targetId="db8a-903d-5a81-7b2f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4906-3836-cf48-912a" name="Giant Rat" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="af6f-6878-7196-e20f" name="Giant Rat" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="873b-0315-d4d1-0f3a" name="Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2bba-3ea2-24f7-ad66" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="3ee1-2ffc-d8b1-350f" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="0b09-3588-a3aa-5270" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
+        <categoryLink id="8e7e-42c8-a3a2-02b6" name="Beast" hidden="false" targetId="9e65-4c4f-1710-5eda" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5834-cd67-60e0-e2ca" name="Gutter Runner" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="06ea-113e-9e76-6426" name="Gutter Runner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2cc4-5be5-9aca-9f6d" name="Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="424e-cd01-77db-7f24" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c51f-c3d3-d7bc-0520" name="Faction: Skaven" hidden="false" targetId="1f8d-00b7-339d-2242" primary="false"/>
+        <categoryLink id="46db-4ae9-4bc8-0f46" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="66b3-94bf-dfd1-f6f5" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
