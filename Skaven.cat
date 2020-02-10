@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c93-2200-a39e-de22" name="Skaven" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c93-2200-a39e-de22" name="Skaven" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="4e29-ebea-1c4b-1922" name="Bringer-of-the-Word" hidden="false" collective="false" import="true" targetId="3289-1f00-9f66-59eb" type="selectionEntry"/>
     <entryLink id="fb9e-e30f-2dc4-81b0" name="Clanrat" hidden="false" collective="false" import="true" targetId="9c8a-bbfd-1a51-78b9" type="selectionEntry"/>
@@ -13,6 +13,92 @@
     <entryLink id="74db-79e2-1407-e51c" name="Stormvermin" hidden="false" collective="false" import="true" targetId="8349-35d6-8bef-ffdb" type="selectionEntry"/>
     <entryLink id="a238-25e5-43e0-e7ac" name="Stormvermin Fangleader" hidden="false" collective="false" import="true" targetId="eaeb-9393-3b5d-f5fb" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="0625-1fec-c96a-20ea" name="⚃ [Quad] Recite from the Book of Woes" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2712-3a5f-e744-cdc8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f8d-00b7-339d-2242" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="e13a-8d83-1153-1f63" name="⚂ [Triple] Lead from the Back" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f8d-00b7-339d-2242" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="1839-7781-de45-10d8" name="⚂ [Triple] Crushing Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a5f-39a9-6bfb-a39e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f8d-00b7-339d-2242" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="9b09-f956-612c-b5de" name="⚁ [Double] Scurry Away" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0600-c649-d723-9878" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f8d-00b7-339d-2242" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="6aad-979e-7962-45d7" name="⚁ [Double] Hired Bodyguard" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4612-b433-ee05-d1fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f8d-00b7-339d-2242" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="53a7-80f3-0ebd-1f2a" name="⚁ [Double] Crack the Whip" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="db8a-903d-5a81-7b2f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f8d-00b7-339d-2242" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="acf7-98bf-ee1f-8431" name="Stormfiend" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -153,6 +239,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3289-1f00-9f66-59eb" name="Bringer-of-the-Word" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -237,6 +326,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="eaeb-9393-3b5d-f5fb" name="Stormvermin Fangleader" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -324,6 +416,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cabb-05f0-8877-2898" name="Clanrat Clawleader" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -407,6 +502,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0405-9ce3-4131-e631" name="Rat Ogor" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -472,6 +570,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c204-b25f-ed72-700e" name="Packmaster" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -537,9 +638,9 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5834-cd67-60e0-e2ca" name="Gutter Runner" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5834-cd67-60e0-e2ca" name="Night Runner" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="06ea-113e-9e76-6426" name="Gutter Runner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="06ea-113e-9e76-6426" name="Night Runner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
