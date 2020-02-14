@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="11" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="12" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -204,6 +204,15 @@
     <categoryEntry id="6b04-9114-8f8f-b3b8" name="Faction: Kharadron Overlords" hidden="false"/>
     <categoryEntry id="9be5-0947-13b7-ee13" name="Faction: Slaves to Darkness" hidden="false"/>
     <categoryEntry id="4362-4307-bc10-c953" name="Faction: Stormcast Warrior Chamber" hidden="false"/>
+    <categoryEntry id="82b3-3e04-31c1-1ec2" name="Faction: Stormcast Sacrosanct Chamber" hidden="false"/>
+    <categoryEntry id="6a52-1624-a4c6-3d90" name="Faction: Seraphon" hidden="false"/>
+    <categoryEntry id="8779-c4a3-47fc-f841" name="Faction: Sylvaneth" hidden="false"/>
+    <categoryEntry id="aeb3-c4e6-f3cc-63fd" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false"/>
+    <categoryEntry id="42f6-9955-2f4f-b32d" name="Faction: Maggotkin of Nurgle Daemons" hidden="false"/>
+    <categoryEntry id="553a-1ed5-50fc-69cc" name="Faction: " hidden="false"/>
+    <categoryEntry id="742c-ce2c-4844-31ac" name="Faction: Hedonites of Slaanesh" hidden="false"/>
+    <categoryEntry id="ad5e-8c65-ce33-0494" name="Faction: Blades of Khorne Daemons" hidden="false"/>
+    <categoryEntry id="afd2-a5d2-cffc-3df9" name="Faction: Blades of Khorne Bloodbound" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
