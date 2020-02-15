@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e383-b36f-ff8a-bdb0" name="Ironjawz" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e383-b36f-ff8a-bdb0" name="Ironjawz" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ab2a-3360-6a1e-0dde" name="Ardboy Boss with Orruk-forged Choppa and Smasha" hidden="false" collective="false" import="true" targetId="e35e-fed3-5825-2030" type="selectionEntry"/>
     <entryLink id="57b4-0686-b744-5a66" name="Ardboy with Orruk-forged Big Choppa" hidden="false" collective="false" import="true" targetId="6faf-5698-2620-8f3a" type="selectionEntry"/>
@@ -22,6 +22,96 @@
     <entryLink id="f42c-c761-d3c4-856a" name="Warchanter" hidden="false" collective="false" import="true" targetId="099b-ae5f-e2a8-2777" type="selectionEntry"/>
     <entryLink id="82e8-36fe-cba8-ee02" name="Weirdnob Shaman" hidden="false" collective="false" import="true" targetId="a026-35e5-7880-462c" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="e162-29d8-0935-06af" name="⚂ [Triple] Waaagh!" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf33-b2ee-3270-68de" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the value of this ability to the Move characteristic of friendly fighters within 6&quot; of this fighter when this fighter uses this ability, until the end of the battle round.</description>
+    </rule>
+    <rule id="f89e-33c1-56f0-8d34" name="⚁ [Double] Charge!" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf33-b2ee-3270-68de" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
+    </rule>
+    <rule id="7733-fda9-4fbf-17f0" name="⚂ [Triple] Da Grab an’ Bash" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf33-b2ee-3270-68de" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="504d-d9a6-d53a-f756" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions. In addition, on a 6, this fighter can make a bonus attack action against that enemy fighter.</description>
+    </rule>
+    <rule id="51ca-70a7-7313-7356" name="⚃ [Quad] Rampaging Destroyer" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf33-b2ee-3270-68de" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter’s activation, add 1 to the Attacks characteristic of attack actions made by this fighter. In addition, each time an enemy fighter is taken down by an attack action made by this fighter this activation, this fighter can make a bonus move action.</description>
+    </rule>
+    <rule id="d9cd-96d9-9516-67d5" name="⚁ [Double] Shield Bash" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf33-b2ee-3270-68de" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e250-737c-002f-8734" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>After this fighter’s next move action this activation, pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 4-5, allocate 1 damage point to that fighter. On a 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="eb3d-7a3c-c6bd-69a8" name="⚁ [Double] Duff Up Da Big Thing:" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf33-b2ee-3270-68de" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a5f-39a9-6bfb-a39e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter’s activation, add 2 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less and that target an enemy fighter with a Wounds characteristic of 15 or more.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e952-7a9a-71fa-d337" name="Brute Boss with Boss Klaw and Brute Smasha" hidden="false" collective="false" import="true" type="unit">
       <profiles>

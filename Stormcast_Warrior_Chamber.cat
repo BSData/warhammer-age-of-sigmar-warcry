@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="369c-035e-3988-af8e" name="Stormcast Warrior Chamber" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="369c-035e-3988-af8e" name="Stormcast Warrior Chamber" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e411-1096-ee46-8eea" name="Liberator" hidden="false" collective="false" import="true" targetId="4e97-df96-2f32-9cdb" type="selectionEntry"/>
     <entryLink id="3b1a-6497-a2f9-90c3" name="Judicator" hidden="false" collective="false" import="true" targetId="a4f9-1a9f-35a0-eaae" type="selectionEntry"/>
@@ -10,6 +10,97 @@
     <entryLink id="1fe2-2e61-dbfc-3ffe" name="Prosecutor" hidden="false" collective="false" import="true" targetId="9153-9acd-ded5-3661" type="selectionEntry"/>
     <entryLink id="afd5-9014-7895-9e5e" name="Prosecutor Prime" hidden="false" collective="false" import="true" targetId="dad1-3d29-602f-da77" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="5f81-c773-0871-dda9" name="⚁ [Double] Sigmarite Shield Bash" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4362-4307-bc10-c953" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e250-737c-002f-8734" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="455e-5564-41d2-766f" name="⚂ [Triple] Staunch Defender" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4362-4307-bc10-c953" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Toughness characteristic of friendly fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="058d-6427-9437-521c" name="⚁ [Double] Lay Low the Tyrants" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4362-4307-bc10-c953" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, add 2 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less and that target an enemy fighter with a Wounds characteristic of 15 or more.</description>
+    </rule>
+    <rule id="3715-c394-eb68-e0a5" name="⚂ [Triple] Wings of Divine Life" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4362-4307-bc10-c953" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="967d-cd09-6501-9d53" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the value of this ability to the Move characteristics of this fighter for the next move action they make this activation.</description>
+    </rule>
+    <rule id="b1df-be19-d340-9e41" name="⚃ [Quad] Earth-shattering Blow" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4362-4307-bc10-c953" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a5f-39a9-6bfb-a39e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus attack action. In addition, add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from that attack action.</description>
+    </rule>
+    <rule id="c7cb-9c7e-2f73-5ed1" name="⚁ [Double] Furious Avengers" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4362-4307-bc10-c953" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is another friendly fighter within 6&quot; of this fighter with 1 or more damage points allocated to them. This fighter makes a bonus move.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="4e97-df96-2f32-9cdb" name="Liberator" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e6a3-a595-afb6-98aa" name="Legions of Nagash" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e6a3-a595-afb6-98aa" name="Legions of Nagash" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5604-3f54-b2d2-0b29" name="Necromancer" hidden="false" collective="false" import="true" targetId="949e-c53e-d510-a36c" type="selectionEntry"/>
     <entryLink id="f6bd-d5fa-5c5b-23be" name="Skeleton Champion" hidden="false" collective="false" import="true" targetId="b845-e123-8708-4dc5" type="selectionEntry"/>
@@ -17,6 +17,97 @@
     <entryLink id="fefd-2a27-8da8-9c19" name="Tomb Banshee" hidden="false" collective="false" import="true" targetId="6d6c-8c57-120e-2b6d" type="selectionEntry"/>
     <entryLink id="bf0b-5f1c-d2e5-045d" name="Wight King" hidden="false" collective="false" import="true" targetId="a8ca-98a0-ea9b-b340" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="e21d-07e7-e5db-1e0d" name="⚃ [Quad] Vanhel’s Danse Macabre" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6952-60ac-78a0-b434" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A number of visible friendly fighters equal to the value of this ability that are within 6&quot; of this fighter can each make a bonus move action or a bonus attack action (some can make bonus move actions and others bonus attack actions).</description>
+    </rule>
+    <rule id="7037-6bb3-5ee3-071d" name="⚂ [Triple] Summon Undead" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6952-60ac-78a0-b434" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter that has been taken down. Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter. The fighter set up on the battlefield no longer counts as being taken down. Remove a number of damage points allocated to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="3795-a23c-f15c-1132" name="⚂ [Triple] Necrotic Siphon" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6952-60ac-78a0-b434" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7873-95b3-6051-1762" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible friendly fighter within 6&quot; of this fighter. Allocate a number of damage points to that fighter equal to value of this ability. Then, remove a number of damage points from this fighter equal to double the value of this ability.</description>
+    </rule>
+    <rule id="395e-3ef4-cc4a-f543" name="⚁ [Double] Cursed Weapon" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6952-60ac-78a0-b434" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4612-b433-ee05-d1fd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter’s activation, add 1 to the damage points allocated by hits and critical hits from attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="a3ec-9f85-79f9-229e" name="⚁ [Double] Chosen Champion" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6952-60ac-78a0-b434" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3963-7daa-918f-f967" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can only use this ability if they are within 6&quot; of a visible friendly fighter with the Leader runemark. Add 1 to the Attacks and Strength characteristics of attack actions made by this fighter this activation.</description>
+    </rule>
+    <rule id="09b1-6b96-9b42-6129" name="⚁ [Double] Shambling Horde" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6952-60ac-78a0-b434" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus move action of a number of inches equal to half the value of this ability (rounding up).</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="949e-c53e-d510-a36c" name="Necromancer" hidden="false" collective="false" import="true" type="unit">
       <profiles>
