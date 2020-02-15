@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="471f-f5a7-5e3a-f682" name="Sylvaneth" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <rules>
+    <rule id="62e0-5b5b-02cb-18ff" name="⚁ [Double] Trample Underfoot" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8779-c4a3-47fc-f841" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3963-7daa-918f-f967" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter with 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damage point to that fighter.</description>
+    </rule>
+    <rule id="09cd-9eda-e255-99d0" name="⚁ [Double] Shrieking Terror" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8779-c4a3-47fc-f841" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2a1d-fc05-e659-e8da" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within a number of inches this fighter equal to the value of this abilit and roll a dice. On a 3+, until the end of the battle round that fighter cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="f995-2c4f-0b03-4079" name="⚂ [Triple] Enrap..." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8779-c4a3-47fc-f841" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="500f-c18d-7ff4-81ff" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="a2e0-d55d-da94-0c68" name="⚂ [Triple] Walk t...." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8779-c4a3-47fc-f841" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="9b2e-e9fa-e491-04bd" name="⚃ [Quad] Envoy..." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8779-c4a3-47fc-f841" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="7e5f-4710-3320-f4b4" name="⚁ [Double] Draw from the Spirit-song" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8779-c4a3-47fc-f841" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Remove a number of damage points allocated to this fighter equal to half the value of this ability (rounding up).</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="3f1b-03ba-fe58-c3da" name="Kurnoth Hunter" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="aeec-8b84-73b8-0402" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
+        <categoryLink id="ee8b-3132-6ed8-cb4a" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ae7d-bd78-173e-b670" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfb8-a5f9-b233-21c4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4095-b769-2968-3ff7" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4637-c3a0-a9ce-ec6a" name="Kurnoth Greatbow" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="61bd-3fba-ca65-291f" name="Kurnoth Greatsword" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f30-64c2-12fb-63aa" name="Kurnoth Scythe" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9026-ba51-0603-efdd" name="Kurnoth Huntermaster" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="3a64-0fd1-8937-1405" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
+        <categoryLink id="7d73-928f-fa51-efde" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9474-f254-f39d-d6e7" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f2-0bef-794d-03ee" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7825-fa07-89b5-48c4" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="66c6-2bd2-282c-2a46" name="Kurnoth Greatbow" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="09eb-148a-bb78-4a80" name="Kurnoth Greatsword" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="02be-e9e2-feee-3355" name="Kurnoth Scythe" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17cd-e1a8-c08d-c97c" name="Dryads" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="d8c6-06b1-887c-fc5a" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
+        <categoryLink id="e01b-400c-597f-a630" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6e95-1e64-ab92-ddf8" name="Dryad Branch Nymph" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="1f84-6c1e-4a3d-4c1c" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
+        <categoryLink id="8480-fe37-7328-4aca" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4746-e4aa-06f7-9290" name="Tree-Revenant Scion" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="ece9-95b7-afb9-d2d9" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
+        <categoryLink id="873b-dcbc-671f-d1b1" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d361-4481-fbc0-c23b" name="Tree-Revenant" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="0c0f-607f-1c17-c61f" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
+        <categoryLink id="8ee9-dd18-13b9-c1fa" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71c9-a3b4-8ff4-8f66" name="Spite-Revenant" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="112b-de83-020f-ebc6" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
+        <categoryLink id="a0bf-8da0-fa7d-e593" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="76f6-0ad3-4257-92c1" name="Spite-Revenant Shadestalker" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="b4a9-55f5-fd51-64ce" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
+        <categoryLink id="13de-c16f-db3f-a3f4" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
