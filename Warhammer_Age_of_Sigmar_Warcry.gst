@@ -260,6 +260,20 @@
     <rule id="3ab2-db70-3462-b5f1" name="⚃ [Quad] Rampage" hidden="false">
       <description>This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
     </rule>
+    <rule id="bcb5-92bb-e766-280d" name="template" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b04-9114-8f8f-b3b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ae-bed2-2395-835c" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="3894-dec2-f437-80ed" name="Raptoryz" hidden="false" collective="false" import="true" type="model">

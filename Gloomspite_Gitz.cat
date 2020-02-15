@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="98a8-13db-b704-3ef0" name="Gloomspite Gitz" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="98a8-13db-b704-3ef0" name="Gloomspite Gitz" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="4c5d-b4de-48b2-18aa" name="Boingrot Boss" hidden="false" collective="false" import="true" targetId="365a-0a87-394d-fa54" type="selectionEntry"/>
     <entryLink id="4e42-b45b-41d2-cdec" name="Boingrot Bounder" hidden="false" collective="false" import="true" targetId="fb7e-b0bb-41d4-d73b" type="selectionEntry"/>
@@ -25,6 +25,96 @@
     <entryLink id="5f4f-49f5-a7c5-97c3" name="Weirdnob Shaman" hidden="false" collective="false" import="true" targetId="a026-35e5-7880-462c" type="selectionEntry"/>
     <entryLink id="403b-e702-a1e9-d368" name="Sneaky Snuffler" hidden="false" collective="false" import="true" targetId="7c6a-3574-d4d1-59f1" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="e56f-b483-8ac3-0129" name="⚁ [Double] Barbed Net" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="299c-7cd9-97df-f427" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b742-c948-2301-f368" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a dice. On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="7b8b-db7f-4408-8d8b" name="⚂ [Triple] Boing! Boing! Boing!" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="299c-7cd9-97df-f427" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4612-b433-ee05-d1fd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="1cbe-be7b-72ca-e596" name="⚂ [Triple] Stab ’Em Good" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="299c-7cd9-97df-f427" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="6044-0631-6087-ebe9" name="⚂ [Triple] Go Dat Way!" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="299c-7cd9-97df-f427" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0600-c649-d723-9878" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus move action.</description>
+    </rule>
+    <rule id="a92f-d1aa-8470-5769" name="⚃ [Quad] Sneaky Stab" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="299c-7cd9-97df-f427" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. In addition, if the fighter targeted by that attack action is within 1&quot; of this fighter, add the value of this ability to the damage points allocated by hits and critical hits from that attack action.</description>
+    </rule>
+    <rule id="3c0e-b3fc-b66c-f1a2" name="⚁ [Double] Backstabbing Mob" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="299c-7cd9-97df-f427" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible friendly fighter within 1&quot; of them. Until the end of this fighter’s activation, add 1 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="365a-0a87-394d-fa54" name="Boingrot Boss" hidden="false" collective="false" import="true" type="unit">
       <profiles>

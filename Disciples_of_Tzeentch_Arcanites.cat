@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ec1b-70c8-283c-c891" name="Disciples of Tzeentch: Arcanites" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ec1b-70c8-283c-c891" name="Disciples of Tzeentch: Arcanites" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b067-7acb-4a31-1e12" name="Faction: Disciples of Tzeentch" hidden="false"/>
   </categoryEntries>
@@ -11,6 +11,97 @@
     <entryLink id="a0f5-9660-0d2d-1015" name="Tzaangor Enlightened" hidden="false" collective="false" import="true" targetId="a5be-8286-32d4-f8c1" type="selectionEntry"/>
     <entryLink id="b3f8-f19b-ffa4-2a1a" name="Tzaangor Enlightened Aviarch" hidden="false" collective="false" import="true" targetId="43be-4900-1c9a-284e" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="23d9-49ce-fe20-2b6d" name="⚁ [Double] Vulcharc" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ae-bed2-2395-835c" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="500f-c18d-7ff4-81ff" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round, that fighter cannot make disengage actions.</description>
+    </rule>
+    <rule id="43aa-f3c0-4f3f-6fdb" name="⚁ [Double] Vicious Beak" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ae-bed2-2395-835c" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a5f-39a9-6bfb-a39e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damage point to that fighter.</description>
+    </rule>
+    <rule id="0f15-4f4d-9da6-0679" name="⚂ [Triple] Guided by the Past" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ae-bed2-2395-835c" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less and that targets an enemy fighter that has activated this battle round.</description>
+    </rule>
+    <rule id="1fd2-2517-35c9-2152" name="⚂ [Triple] Master of Destiny" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ae-bed2-2395-835c" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add the value of this ability to the value of other abilities (to a maximum of 6) used by friendly fighters within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="4414-e374-0678-69ca" name="⚃ [Quad] Guided by the Future" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ae-bed2-2395-835c" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="db8a-903d-5a81-7b2f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from the next attack action made by this fighter this activation that targets an enemy fighter that has not activated this battle round.</description>
+    </rule>
+    <rule id="a943-4852-f6c5-ed76" name="⚁ [Double] Uttered Words of Arcane Power" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ae-bed2-2395-835c" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Attacks and Strength characteristics of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="0a38-4a84-8576-4701" name="Tzaangor" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -105,6 +196,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3145-5c34-d671-66ad" name="Kairic Acolytes" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -207,6 +301,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="952a-83cb-daa1-0c3a" name="Kairic Adept" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -368,6 +465,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="43be-4900-1c9a-284e" name="Tzaangor Enlightened Aviarch" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -469,6 +569,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

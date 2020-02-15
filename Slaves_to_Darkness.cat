@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c14-883d-fcbd-7224" name="Slaves to Darkness" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c14-883d-fcbd-7224" name="Slaves to Darkness" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="16bf-fe3f-6eba-ab50" name="Aspiring Champion" hidden="false" collective="false" import="true" targetId="8296-eaf4-0190-c601" type="selectionEntry"/>
     <entryLink id="e4a2-feb2-00c3-ec9e" name="Chaos Chosen" hidden="false" collective="false" import="true" targetId="329f-44d6-c90d-2896" type="selectionEntry"/>
@@ -10,6 +10,97 @@
     <entryLink id="f84d-ae39-0ac5-2bf7" name="Marauder Chieftain" hidden="false" collective="false" import="true" targetId="43da-2e50-3bea-5c07" type="selectionEntry"/>
     <entryLink id="b6a7-40d6-8dc7-e870" name="Marauder Horseman" hidden="false" collective="false" import="true" targetId="9eb8-e4d8-ded5-9372" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="dd73-3266-0918-05dc" name="⚃ [Quad] Lead the Slaughter" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9be5-0947-13b7-ee13" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add half the value of this ability (rounding up) to the attacks characteristic of attack actions made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="b4a4-9387-3a70-5e0a" name="⚂ [Triple] Champion of Darkness" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9be5-0947-13b7-ee13" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+    </rule>
+    <rule id="d279-4618-71de-6272" name="⚂ [Triple] Trampling Hooves" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9be5-0947-13b7-ee13" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="818c-a6d8-cbf5-a958" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="a14e-06f7-19a8-cff9" name="⚁ [Double] Shield Ram" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9be5-0947-13b7-ee13" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e250-737c-002f-8734" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 4-5 allocate 1 damage point to that fighter. On a 6 allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="afc0-5d65-fa43-4d0e" name="⚁ [Double] Throw Javelin" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9be5-0947-13b7-ee13" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="500f-c18d-7ff4-81ff" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability</description>
+    </rule>
+    <rule id="ed1c-6026-8d60-c09b" name="⚁ [Double] Imbued with Dark Power" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9be5-0947-13b7-ee13" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, add the value of this ability to the strength characteristic of attack actions made by this fighter that have a range characteristic of 3 or less.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="5e0f-6530-3751-3d25" name="Horsemaster" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -123,6 +214,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8296-eaf4-0190-c601" name="Aspiring Champion" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -209,6 +303,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e25c-e84a-d835-a6e7" name="Exalted Champion" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -352,6 +449,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

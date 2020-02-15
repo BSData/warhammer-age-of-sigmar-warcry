@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="733e-b677-de21-f3bb" name="Beasts of Chaos" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="733e-b677-de21-f3bb" name="Beasts of Chaos" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="26f0-f4b2-8eb0-2936" name="Bestigor" hidden="false" collective="false" import="true" targetId="727a-74dc-5858-7f0c" type="selectionEntry"/>
     <entryLink id="7c80-c630-ebc5-14dc" name="Bestigor Gouge-Horn" hidden="false" collective="false" import="true" targetId="aec0-7d73-03f8-bb14" type="selectionEntry"/>
@@ -11,6 +11,97 @@
     <entryLink id="530a-032b-9471-09a6" name="Ungor Halfhorn" hidden="false" collective="false" import="true" targetId="5852-b86f-b881-e44c" type="selectionEntry"/>
     <entryLink id="b194-1a0e-1c88-cd30" name="Dragon Ogor" hidden="false" collective="false" import="true" targetId="6c57-8e68-dc95-abd7" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="6ea6-6a23-dc06-d1ed" name="⚁ [Double] Brayherd Ambush" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="646e-a78d-e32a-9e30" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if it is the first battle round. This fighter can make a bonus move action a number of inches equal to the value of this ability.</description>
+    </rule>
+    <rule id="2543-891b-c05b-fdd9" name="⚂ [Triple] Volley of Arrows" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="646e-a78d-e32a-9e30" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="500f-c18d-7ff4-81ff" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Attacks characteristics of attack actions made by this fighter this activation that target an enemy fighter more than 3&quot; away.</description>
+    </rule>
+    <rule id="05ad-6807-abf0-3054" name="⚃ [Quad] Bring Down the Storm" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="646e-a78d-e32a-9e30" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick 1 visible enemy fighter within 20&quot; of this fighter and roll 1 dice. On a 2+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="f4e8-084d-582a-f22e" name="⚂ [Triple]  Bestial Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="646e-a78d-e32a-9e30" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="39c0-db9e-bfe6-99b2" name="⚁ [Double] Bloodgorge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="646e-a78d-e32a-9e30" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a5f-39a9-6bfb-a39e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been take down by an attack action made by them this activation. Remove a number of damage points allocated to this fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="3db8-117b-730a-5d8c" name="⚁ [Double] Rip, Gore and Tear!" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="646e-a78d-e32a-9e30" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been take down by an ttack action made by them this activation. This fighter makes a bonus move action or bonus attack action.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="5852-b86f-b881-e44c" name="Ungor Halfhorn" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -474,6 +565,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2a98-db69-6415-f81b" name="Draconic War-glaive" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -486,6 +580,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0049-63af-d6aa-e011" name="Paired Ancient Weapons" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -498,8 +595,14 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>

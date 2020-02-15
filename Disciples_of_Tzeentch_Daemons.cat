@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8b42-84ca-672b-a29c" name="Disciples of Tzeentch: Daemons" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8b42-84ca-672b-a29c" name="Disciples of Tzeentch: Daemons" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="13a4-f09d-7255-d8b3" name="Faction: Disciples of Tzeentch" hidden="false"/>
   </categoryEntries>
@@ -12,6 +12,97 @@
     <entryLink id="2e12-9d07-4db2-cf5d" name="Pink Horror" hidden="false" collective="false" import="true" targetId="53b2-ca96-0bac-19d9" type="selectionEntry"/>
     <entryLink id="ff4b-9ab9-c3d5-9671" name="Screamer of Tzeentch" hidden="false" collective="false" import="true" targetId="5bc2-d95b-72ef-25ce" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="a956-8f80-a727-e35b" name="⚁ [Double] Locus of Sorcery" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd0e-1b06-56e8-9396" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Strength characteristics of the next attack action made by this fighter this activation that has a range characteristic of 3 or more.</description>
+    </rule>
+    <rule id="c28d-a15c-dc7a-c859" name="⚂ [Triple] Latching Bite" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd0e-1b06-56e8-9396" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0600-c649-d723-9878" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the value of this ability to the Strength characteristic of the next attack action made by this fighter this activation. In addition, the target fighter cannoy make move or disengage actions until the end of the battle round.</description>
+    </rule>
+    <rule id="6b0a-d197-14ec-e95f" name="⚂ [Triple] Master of Destiny" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd0e-1b06-56e8-9396" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add the value of this ability to the value of other abilities (to a maximum of 6) used by friendly fighters within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="7829-a83a-7dc9-0f99" name="⚁ [Double] Split Again" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd0e-1b06-56e8-9396" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they have 1 or more damage points allocated to them. Set up 1 new fighter with the Disciples of Tzeentch Daemons runemark with the Minion runemark on the battlefield within 3&quot; of this fighter. Then, this fighter is taken down. In a campaign battle, do not make an injry roll for this fighter.</description>
+    </rule>
+    <rule id="124d-0e9f-a8cc-f80c" name="⚃ [Quad] Capricious Warpflame" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd0e-1b06-56e8-9396" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="504d-d9a6-d53a-f756" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
+    </rule>
+    <rule id="0751-e1ad-23a9-60dd" name="⚁ [Double] Split" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd0e-1b06-56e8-9396" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4612-b433-ee05-d1fd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they have 1 or more damage points allocated to them. Set up 2 new fighters with the Disciples of Tzeentch: Daemons runemark and the Warrior runemark on the battlefield within 3&quot; of this fighter. Then, this fighter is taken down. In a campaign battle, do no make an injury roll for this fighter.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="3657-0a73-da79-1232" name="Blue Horror" hidden="false" collective="false" import="true" type="model">
       <profiles>

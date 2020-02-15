@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aee6-e756-8a26-8a7b" name="Ogor Mawtribes" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aee6-e756-8a26-8a7b" name="Ogor Mawtribes" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5d30-fe60-58d2-7532" name="Crusher" hidden="false" collective="false" import="true" targetId="0563-f436-e6f2-503e" type="selectionEntry"/>
     <entryLink id="e649-d1ef-c2ab-f4eb" name="Glutton" hidden="false" collective="false" import="true" targetId="a7de-7784-9d77-22a6" type="selectionEntry"/>
@@ -9,6 +9,98 @@
     <entryLink id="5ba7-d1c7-93d9-14ce" name="Leadbelcher" hidden="false" collective="false" import="true" targetId="bd77-bae4-27cc-652f" type="selectionEntry"/>
     <entryLink id="98ad-1533-37c9-d1ea" name="Thunderfist" hidden="false" collective="false" import="true" targetId="9fe7-bcb9-76a7-a1e1" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="fbb3-c6d5-d93c-086e" name="⚃ [Quad] Thunderous Blast of Hot Metal" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd7-efbc-6c04-e0a4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Attacks and strength characteristics of the next attack action made by this fighter this activation that targets an enemy fighter more than 3&quot; away.</description>
+    </rule>
+    <rule id="5465-a5b3-2197-fe1f" name="⚂ [Triple] Sneaky Traps" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd7-efbc-6c04-e0a4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b742-c948-2301-f368" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, each time an enemy fighter finishes a move action within 3&quot; of this fighter that fighter suffers impact damage.</description>
+    </rule>
+    <rule id="f74e-90bd-8a4b-c35a" name="⚂ [Triple] Bullcharge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd7-efbc-6c04-e0a4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a5f-39a9-6bfb-a39e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="b750-dc7d-ccdf-e560" name="⚁ [Double] Ironfist" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd7-efbc-6c04-e0a4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e250-737c-002f-8734" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter with 1&quot; of this fighter and roll 2 dice. For each 4-5, allocate 1 damage point to that fighter. for each 6 allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="b599-5736-e483-4549" name="⚁ [Double] Might Makes Right" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd7-efbc-6c04-e0a4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use the ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
+    </rule>
+    <rule id="4f06-03fd-078e-3d7e" name="⚁ [Double] On the Mawpath" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd7-efbc-6c04-e0a4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a5f-39a9-6bfb-a39e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="0ae9-70a1-83dc-e82f" name="Irongut" hidden="false" collective="false" import="true" type="model">
       <profiles>
