@@ -1,77 +1,202 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0624-cb15-b0e5-ff95" name="Seraphon" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0624-cb15-b0e5-ff95" name="Seraphon" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <rules>
+    <rule id="3d78-4977-b37d-9e95" name="⚁ [Double] Cold-blooded Commander" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or bonus attack action.</description>
+    </rule>
+    <rule id="04fb-4154-6877-3f7b" name="⚁ [Double] Voracious Appetite" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damange point to that fighter.</description>
+    </rule>
+    <rule id="521e-eb55-349a-d2f6" name="⚂ [Triple] Rain M..." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="db8a-903d-5a81-7b2f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="2cbd-181b-1321-7fe9" name="⚂ [Triple] Tearing..." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="4b37-799d-14fa-d5e8" name="⚃ [Quad] Wrath..." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="3d5c-ed5d-625f-db73" name="⚁ [Double] Nimble Retreat" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they are within 1&quot; of an enemy fighter. This fighter makes a bonus disengage action.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="f3c1-592d-4b0b-077b" name="Skink" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="9e8d-619e-0d9a-97c6" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="5e5c-dd8b-6572-869e" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b676-e00e-35b6-bd4c" name="Skink Alpha" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="30a3-42b9-6f52-5b8e" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="b430-06ec-ec9f-3d8d" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1884-53b3-588d-5b96" name="Saurus Warrior" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="7ec8-b408-dc97-c738" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="afaf-e068-92c0-6a59" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e073-a10c-681f-c857" name="Saurus Alpha Talon" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="557a-a9a1-0d1f-5a71" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="4504-48b2-fdb2-f9ac" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ddbe-5de9-a4e6-5d6b" name="Saurus Knight" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="fcac-966b-f5e5-9104" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="afd3-51a3-e8b1-cf7a" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ff67-c633-9587-0105" name="Saurus Alpha Knight" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="429e-755d-0cca-42fe" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="274f-d6d2-04d0-6564" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7925-7e1b-7181-2b52" name="Saurus Guard" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="0e2d-197b-9d38-b990" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="3f22-4f3a-555e-ea7f" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="32e2-1cfe-c1e3-fcfe" name="Saurus Alpha Guardian" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="8148-5ca6-0329-1ea2" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="4b61-0de7-50b5-d59b" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a12a-0b6e-0a03-0d30" name="Ripperdactyl Rider Alpha " hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="b06d-a839-9c79-1612" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="d0f5-0e04-d428-f363" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a050-02b9-cabc-cae9" name="Terradon Rider Alpha" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="5770-58b6-3eff-d477" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="ae2c-cee3-6243-16ae" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="98f5-9221-ad8f-1784" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="13b9-23fe-d130-32ab" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="e653-d2ae-6c9b-e816" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c37b-8ef7-b443-5eda" name="Terradon Rider" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="7ecd-1d63-25cf-d5e0" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
         <categoryLink id="09c6-ebe9-b2dd-6919" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8ab7-9752-ec64-3693" name="Maggotkin of Nurgle: Rotbringers" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8ab7-9752-ec64-3693" name="Maggotkin of Nurgle: Rotbringers" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <rules>
+    <rule id="7e79-61f9-ba78-e979" name="⚁ [Double] Venomous Sting" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 2+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="ef1d-21a6-2f15-16e9" name="⚁ [Double] Toll of the Sonorous Tocsin" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3963-7daa-918f-f967" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the move characteristic of move actions made by friendly fighters that start within 5&quot; of this fighter.</description>
+    </rule>
+    <rule id="6c0a-0b6b-d2f0-eda0" name="⚂ [Triple] Blight..." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5984-b33a-b944-0c71" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="8b1d-1e1f-61ea-c3d8" name="⚂ [Triple] Grand..." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="9116-ce5d-df23-d837" name="⚃ [Quad] Unnatrual...." hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="a4ee-4165-0a93-1fb3" name="⚁ [Double] Virulent Discharge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damage point to that fighter.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="f893-e2c0-41d4-a794" name="Pusgoyle Blightlords" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -7,6 +94,9 @@
         <categoryLink id="617d-790c-51dd-9a38" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="c49d-1566-c4d0-bf03" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9608-b506-1699-a837" name="Pusgoyle Lord of Afflicition" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -14,18 +104,27 @@
         <categoryLink id="bc69-a19c-31b7-7b95" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
         <categoryLink id="bf68-6486-4f7b-3ae6" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f6be-fc0a-46ae-24b4" name="Putrid Blightking" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="8764-fa64-1576-7f07" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false" targetId="aeb3-c4e6-f3cc-63fd" primary="false"/>
         <categoryLink id="1a86-bf97-b78d-812a" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1e8a-ba4d-edfa-e4ae" name="Putrid Blightlord" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="f3a2-2799-d36b-95a4" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false" targetId="aeb3-c4e6-f3cc-63fd" primary="false"/>
         <categoryLink id="9599-370c-6f6a-0935" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
