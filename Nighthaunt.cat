@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4347-8ecd-7dd8-c70a" name="Nighthaunt" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4347-8ecd-7dd8-c70a" name="Nighthaunt" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="03b6-13d6-f62a-2286" name="Chainrasp" hidden="false" collective="false" import="true" targetId="92c7-40a4-5d28-a464" type="selectionEntry"/>
     <entryLink id="31dc-8b1f-38bb-a365" name="Dreadwarden" hidden="false" collective="false" import="true" targetId="5227-3324-7270-3de0" type="selectionEntry"/>
@@ -17,6 +17,94 @@
     <entryLink id="af6b-727c-2a53-1678" name="Abhorrant Ghoul King" hidden="false" collective="false" import="true" targetId="055d-a4b1-f206-2cca" type="selectionEntry"/>
     <entryLink id="a976-c795-9dbe-272f" name="Myrmourn Banshee" hidden="false" collective="false" import="true" targetId="685d-02b7-e569-7d12" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="0cd4-877c-2f4f-b988" name="⚁ [Double] Soul-marked Prey" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec9a-6e7c-49ab-169a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4612-b433-ee05-d1fd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 3&quot; of this fighter with 1 or more damage points allocated to them. Until the end of the battle round, add 1 to the Strength characteristic of attack actions made by friendly fighters that target that fighter. A fighter cannot be picked to be the target of this ability more than once per battle round.</description>
+    </rule>
+    <rule id="5297-a208-f94f-8635" name="⚁ [Double] Chilling Horde" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16a6-2b54-bd8b-f8e5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec9a-6e7c-49ab-169a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible friendly fighter with the Minion
+runemark within 3&quot; of them. Add 1 to the Attacks and Strength characteristics of attack actions made by this fighter until the end of their activation</description>
+    </rule>
+    <rule id="df01-af5b-c48c-4576" name="⚁ [Double] Aura of Dread" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec9a-6e7c-49ab-169a" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within a number of inches of this fighter equal to the value of this ability. Until the end of the battle round, subtract 1 from the Strength characteristic (to a minimum of 1) of attack actions made by that fighter. A fighter can only be targeted once per battle round by this ability.</description>
+    </rule>
+    <rule id="3438-5fb3-6774-d8d7" name="⚂ [Triple] Frightful Touch" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec9a-6e7c-49ab-169a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter’s activation, count each hit from attack actions made by them as a critical hit instead.</description>
+    </rule>
+    <rule id="2ce5-efc3-f5be-a89a" name="⚂ [Triple] Spectral Summon" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec9a-6e7c-49ab-169a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter that has been taken down. Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter. The fighter set up on the battlefield no longer counts as being taken down. Remove a number of damage points allocated to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="fec4-d5b6-dc1f-98ca" name="⚃ [Quad] Reaped Like Corn" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4612-b433-ee05-d1fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec9a-6e7c-49ab-169a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="9882-626a-d736-a2dd" name="Spirit Host" hidden="false" collective="false" import="true" type="unit">
       <profiles>

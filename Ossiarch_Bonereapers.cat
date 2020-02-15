@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="497e-cceb-4805-44ec" name="Ossiarch Bonereapers" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="497e-cceb-4805-44ec" name="Ossiarch Bonereapers" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a038-0d36-58ec-dc0a" name="Faction: Ossiarch Bonereapers" hidden="false"/>
   </categoryEntries>
@@ -10,6 +10,97 @@
     <entryLink id="0ea2-d970-d103-894f" name="Mortek Guard Hekatos" hidden="false" collective="false" import="true" targetId="f991-0f9a-0b8f-5d91" type="selectionEntry"/>
     <entryLink id="3a2b-aaff-f969-d88d" name="Necropolis Stalkers" hidden="false" collective="false" import="true" targetId="7523-1b82-1e80-27a5" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="a187-24df-7ab7-7f61" name="⚃ [Quad] Blade-strike Aspect" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the value of this ability to the Attacks characteristic of attack actions made by this fighter this activation.</description>
+    </rule>
+    <rule id="0301-bdbb-50d5-2024" name="⚂ [Triple] Unstoppable Advance" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Move characteristic of friendly fighters that are in the same battle group as this fighter.</description>
+    </rule>
+    <rule id="7662-359f-399f-77f5" name="⚂ [Triple] Deathrider Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability</description>
+    </rule>
+    <rule id="cf7e-f8ab-05be-df66" name="⚁ [Double] Hunt and Kill" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
+    </rule>
+    <rule id="72c4-005e-bff6-9955" name="⚁ [Double] Form Shield Wall" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e250-737c-002f-8734" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the toughness characteristic of this fighter. In addition , until the end of the battle round add 1 to the toughness characteristic of friendly fighters with the Bulwark runemark while they are within 3&quot; of this fighter</description>
+    </rule>
+    <rule id="a4f6-d8e0-b419-7058" name="⚁ [Double] Nadirite Weapon" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the damage points allocated by each hit and critical hit from attack actions made by this fighter this activation that have a range characteristic of 3 or less.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e00e-b915-46dc-32f3" name="Kavalos Deathriders" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -45,6 +136,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3b2c-1c56-4b48-7d10" name="Nadirite Spear" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -57,6 +151,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -120,6 +217,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e010-ab59-8d81-6588" name="Mortek Guard" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -208,6 +308,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f991-0f9a-0b8f-5d91" name="Mortek Guard Hekatos" hidden="false" collective="false" import="true" type="model">
       <profiles>
