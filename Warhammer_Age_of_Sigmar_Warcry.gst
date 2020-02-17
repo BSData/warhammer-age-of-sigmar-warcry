@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="12" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="13" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -213,6 +213,7 @@
     <categoryEntry id="742c-ce2c-4844-31ac" name="Faction: Hedonites of Slaanesh" hidden="false"/>
     <categoryEntry id="ad5e-8c65-ce33-0494" name="Faction: Blades of Khorne Daemons" hidden="false"/>
     <categoryEntry id="afd2-a5d2-cffc-3df9" name="Faction: Blades of Khorne Bloodbound" hidden="false"/>
+    <categoryEntry id="11e7-19ea-7072-8e44" name="Faction: Fyreslayers" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
