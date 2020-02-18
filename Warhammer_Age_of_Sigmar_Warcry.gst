@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="14" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="15" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -166,7 +166,7 @@
     <categoryEntry id="1734-e039-49f3-1388" name="Ally: Slaves to Darkness" hidden="false"/>
     <categoryEntry id="ff50-001f-b0fe-fe61" name="Ally: Stormcast Vanguard Chamber" hidden="false"/>
     <categoryEntry id="367f-2bf2-a282-c191" name="Ally: Stormcast Warrior Chamber" hidden="false"/>
-    <categoryEntry id="6766-393c-7c44-176d" name="Ally: Tzeentch" hidden="false"/>
+    <categoryEntry id="6766-393c-7c44-176d" name="Ally: Disciples of Tzeentch" hidden="false"/>
     <categoryEntry id="c2de-1520-8af2-adcb" name="Ally" hidden="false">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4d7-96fe-cba5-ac18" type="max"/>
@@ -248,6 +248,58 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <entryLinks>
+    <entryLink id="08fe-924d-741e-26ad" name="Abhorrant Ghoul King" hidden="false" collective="false" import="true" targetId="055d-a4b1-f206-2cca" type="selectionEntry"/>
+    <entryLink id="befe-7f3b-1b34-f79c" name="Aspiring Deathbringer" hidden="false" collective="false" import="true" targetId="d371-3325-8d9c-b31a" type="selectionEntry"/>
+    <entryLink id="f9d9-8778-10d7-dac3" name="Boggleye" hidden="false" collective="false" import="true" targetId="a59b-a44a-4f86-699f" type="selectionEntry"/>
+    <entryLink id="4ed6-d6e2-459a-56fd" name="Brewgit" hidden="false" collective="false" import="true" targetId="ae64-5fda-dc5b-1eaa" type="selectionEntry"/>
+    <entryLink id="0b56-4979-2996-f13f" name="Cairn Wraith" hidden="false" collective="false" import="true" targetId="c14f-70d0-204b-75e5" type="selectionEntry"/>
+    <entryLink id="931a-d3ad-4068-4806" name="Chaos Sorcerer Lord" hidden="false" collective="false" import="true" targetId="6eb1-b9d0-b4c1-8d32" type="selectionEntry"/>
+    <entryLink id="ba0c-c3d5-81ce-6628" name="Chaos Lord" hidden="false" collective="false" import="true" targetId="5f51-8b86-6a97-ff2f" type="selectionEntry"/>
+    <entryLink id="c1a1-9276-3691-3b7c" name="Clawlord" hidden="false" collective="false" import="true" targetId="9d73-4aa4-2661-e29e" type="selectionEntry"/>
+    <entryLink id="2448-c34a-6702-a8a5" name="Darkoath Chieftain" hidden="false" collective="false" import="true" targetId="0203-75a9-9dd5-f149" type="selectionEntry"/>
+    <entryLink id="f24b-519f-45da-2b67" name="Darkoath Warqueen" hidden="false" collective="false" import="true" targetId="82be-c7e9-c470-2b8b" type="selectionEntry"/>
+    <entryLink id="f76b-8ae1-6ca9-fef4" name="Exalted Deathbringer With Impaling Spear" hidden="false" collective="false" import="true" targetId="91b3-a963-d5ff-c9f3" type="selectionEntry"/>
+    <entryLink id="b4da-bbd5-cf5e-5acb" name="Exalted Deathbringer With Ruinous Axe" hidden="false" collective="false" import="true" targetId="f934-6e6d-ad03-f3fb" type="selectionEntry"/>
+    <entryLink id="1b29-ac9a-562f-c294" name="Fungoid Cave-Shaman" hidden="false" collective="false" import="true" targetId="6638-0f22-c126-7f21" type="selectionEntry"/>
+    <entryLink id="e8b1-271b-691c-2495" name="Gaunt Summoner" hidden="false" collective="false" import="true" targetId="a749-a604-9211-929e" type="selectionEntry"/>
+    <entryLink id="55e0-0faf-0276-daee" name="Gaunt Summoner On Disc" hidden="false" collective="false" import="true" targetId="530b-9dc2-ebf4-aee3" type="selectionEntry"/>
+    <entryLink id="df6a-69fd-3680-c021" name="Great Bray-Shaman" hidden="false" collective="false" import="true" targetId="a911-34ec-ff95-f192" type="selectionEntry"/>
+    <entryLink id="4124-c9da-69bb-1988" name="Grey Seer" hidden="false" collective="false" import="true" targetId="609f-ea12-2d35-df2c" type="selectionEntry"/>
+    <entryLink id="3192-89fb-95d7-850a" name="Hag Queen" hidden="false" collective="false" import="true" targetId="c3db-eacf-eaf8-0d47" type="selectionEntry"/>
+    <entryLink id="e7e5-e662-2b15-b202" name="Knight Of Shrouds" hidden="false" collective="false" import="true" targetId="e04b-b197-7453-20ec" type="selectionEntry"/>
+    <entryLink id="9300-0f90-0115-0324" name="Knight-Heraldor" hidden="false" collective="false" import="true" targetId="e08d-4085-134a-3780" type="selectionEntry"/>
+    <entryLink id="71d0-12dd-db0c-4782" name="Knight-Questor" hidden="false" collective="false" import="true" targetId="5c25-7f51-4542-dab8" type="selectionEntry"/>
+    <entryLink id="629d-3d69-b883-36d9" name="Knight-Vexillor" hidden="false" collective="false" import="true" targetId="ca69-1039-b781-8ce5" type="selectionEntry"/>
+    <entryLink id="51d2-6eef-40e4-f034" name="Lone Necromancer" hidden="false" collective="false" import="true" targetId="7212-cf61-e1b3-1f88" type="selectionEntry"/>
+    <entryLink id="a782-c1a3-4e0e-3d3b" name="Loonboss" hidden="false" collective="false" import="true" targetId="7933-39ed-b2f4-d5b9" type="selectionEntry"/>
+    <entryLink id="87d3-697a-f4a2-1f02" name="Lord Executioner" hidden="false" collective="false" import="true" targetId="de9b-4297-7670-9c3f" type="selectionEntry"/>
+    <entryLink id="abd0-b935-7067-2e97" name="Lord Of Blights" hidden="false" collective="false" import="true" targetId="8ec0-f084-73c4-cc96" type="selectionEntry"/>
+    <entryLink id="a818-aaee-5bf4-9ad0" name="Lord Of Plagues" hidden="false" collective="false" import="true" targetId="c943-5732-531b-4506" type="selectionEntry"/>
+    <entryLink id="6ba3-06d8-6531-314e" name="Lord-Castellant" hidden="false" collective="false" import="true" targetId="296f-8bbe-79f7-8050" type="selectionEntry"/>
+    <entryLink id="84e9-89cd-d86c-89a9" name="Lord-Celestant" hidden="false" collective="false" import="true" targetId="c963-b866-39cf-81aa" type="selectionEntry"/>
+    <entryLink id="9d00-1000-79d7-6a3b" name="Lord-Veritant" hidden="false" collective="false" import="true" targetId="be28-13dd-2162-3854" type="selectionEntry"/>
+    <entryLink id="895a-6b7d-15c6-1dcf" name="Magister" hidden="false" collective="false" import="true" targetId="17dd-8a74-3348-a686" type="selectionEntry"/>
+    <entryLink id="2ba3-ebd5-52dd-2b01" name="Megaboss" hidden="false" collective="false" import="true" targetId="55ba-4bd6-63b6-ed2b" type="selectionEntry"/>
+    <entryLink id="0e59-c103-cb27-a198" name="Ogroid Thaumaturge" hidden="false" collective="false" import="true" targetId="f724-2567-0b9a-0db5" type="selectionEntry"/>
+    <entryLink id="a20b-f133-69b9-a1ec" name="Savage Big Boss" hidden="false" collective="false" import="true" targetId="4add-c741-0349-08fc" type="selectionEntry"/>
+    <entryLink id="356d-043e-ee87-766d" name="Scaremonger" hidden="false" collective="false" import="true" targetId="885a-74b4-aaa2-2287" type="selectionEntry"/>
+    <entryLink id="1f2c-5a0b-398d-5a5b" name="Shroommancer" hidden="false" collective="false" import="true" targetId="7f1a-997a-2a6c-be1e" type="selectionEntry"/>
+    <entryLink id="1ebb-37bf-4dbc-1a80" name="Skullgrinder" hidden="false" collective="false" import="true" targetId="485b-ff09-00bb-9025" type="selectionEntry"/>
+    <entryLink id="26a4-63d5-934e-0fc7" name="Slaughter Queen" hidden="false" collective="false" import="true" targetId="2bf1-be45-fa68-7895" type="selectionEntry"/>
+    <entryLink id="a23a-f05f-bcd1-6fef" name="Slaughterpriest With Bloodbathed Axe" hidden="false" collective="false" import="true" targetId="6f6e-97e8-e50a-4c63" type="selectionEntry"/>
+    <entryLink id="cf58-edcd-5227-b0ea" name="Slaughterpriest With Hammer And Hackblade" hidden="false" collective="false" import="true" targetId="3582-2fdc-f702-d671" type="selectionEntry"/>
+    <entryLink id="0e37-dd14-8da4-4f6a" name="Soulrender" hidden="false" collective="false" import="true" targetId="2e48-9d20-128f-60f3" type="selectionEntry"/>
+    <entryLink id="92d1-172f-313d-f39a" name="Soulscryer" hidden="false" collective="false" import="true" targetId="4826-f0ce-4f02-12d3" type="selectionEntry"/>
+    <entryLink id="cf88-16c4-d0f1-e7a6" name="Spiker" hidden="false" collective="false" import="true" targetId="5c49-e0c8-e835-0771" type="selectionEntry"/>
+    <entryLink id="45d7-c8c1-d406-8553" name="Spirit Torment" hidden="false" collective="false" import="true" targetId="86b2-4183-660a-c16d" type="selectionEntry"/>
+    <entryLink id="5218-3f0c-f54e-8a27" name="Tidecaster" hidden="false" collective="false" import="true" targetId="c2d8-2d76-848b-3e96" type="selectionEntry"/>
+    <entryLink id="90fe-6642-2ae7-b78e" name="Tomb Banshee" hidden="false" collective="false" import="true" targetId="6d6c-8c57-120e-2b6d" type="selectionEntry"/>
+    <entryLink id="daa3-9a35-b4b1-4d20" name="Tzaangor Shaman" hidden="false" collective="false" import="true" targetId="1114-5ac8-1999-af3d" type="selectionEntry"/>
+    <entryLink id="963d-1da4-3dcf-8259" name="Warchanter" hidden="false" collective="false" import="true" targetId="099b-ae5f-e2a8-2777" type="selectionEntry"/>
+    <entryLink id="94cb-ddcd-e58d-5986" name="Weirdnob Shaman" hidden="false" collective="false" import="true" targetId="a026-35e5-7880-462c" type="selectionEntry"/>
+    <entryLink id="4ebe-6b18-0ef7-dace" name="Wight King" hidden="false" collective="false" import="true" targetId="a8ca-98a0-ea9b-b340" type="selectionEntry"/>
+  </entryLinks>
   <rules>
     <rule id="f574-01e8-a7f3-ef39" name="⚁ [Double] Rush" hidden="false">
       <description>Add 1 to the Move characteristic of this fighter until the end of their activation</description>
@@ -287,7 +339,7 @@
     </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="3894-dec2-f437-80ed" name="Raptoryz" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3894-dec2-f437-80ed" name="Raptoryz" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="c2d1-b9c3-bdfe-2f17" name="Raptoryz" page="" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -314,7 +366,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ef27-a379-1c4f-beda" name="Fury" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ef27-a379-1c4f-beda" name="Fury" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="14cc-b5c4-260c-c4ed" name="Fury" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -342,7 +394,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="055d-a4b1-f206-2cca" name="Abhorrant Ghoul King" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="055d-a4b1-f206-2cca" name="Abhorrant Ghoul King" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="44a8-af54-5f5d-7387" name="Abhorrant Ghoul King" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -369,7 +434,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d371-3325-8d9c-b31a" name="Aspiring Deathbringer" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="d371-3325-8d9c-b31a" name="Aspiring Deathbringer" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c511-016a-a21b-a281" name="Aspiring Deathbringer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -396,7 +478,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a59b-a44a-4f86-699f" name="Boggleye" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a59b-a44a-4f86-699f" name="Boggleye" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e1a8-2401-0890-c48e" name="Boggleye" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -423,7 +518,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ae64-5fda-dc5b-1eaa" name="Brewgit" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ae64-5fda-dc5b-1eaa" name="Brewgit" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9712-14bf-507a-356e" name="Brewgit" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -450,7 +558,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c14f-70d0-204b-75e5" name="Cairn Wraith" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c14f-70d0-204b-75e5" name="Cairn Wraith" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="6ec9-370a-b652-e675" name="Cairn Wraith" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -478,7 +599,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1114-5ac8-1999-af3d" name="Tzaangor Shaman" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="1114-5ac8-1999-af3d" name="Tzaangor Shaman" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="584e-672c-d015-c9a7" name="Tzaangor Shaman" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -505,15 +643,29 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="acaa-5424-38a5-9c71" name="New CategoryLink" hidden="false" targetId="c2de-1520-8af2-adcb" primary="true"/>
         <categoryLink id="98ed-10ce-8252-5134" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
         <categoryLink id="188a-a15d-afc8-fbd6" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
+        <categoryLink id="515e-6d63-3a51-bef6" name="New CategoryLink" hidden="false" targetId="c2de-1520-8af2-adcb" primary="true"/>
+        <categoryLink id="d806-5721-ca50-3555" name="Ally: Disciples of Tzeentch" hidden="false" targetId="6766-393c-7c44-176d" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="099b-ae5f-e2a8-2777" name="Warchanter" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="099b-ae5f-e2a8-2777" name="Warchanter" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="0645-d9b3-346d-a922" name="Warchanter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -540,7 +692,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7f1a-997a-2a6c-be1e" name="Shroommancer" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7f1a-997a-2a6c-be1e" name="Shroommancer" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1093-468f-73b7-4ec2" name="Shroommancer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -567,7 +732,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="885a-74b4-aaa2-2287" name="Scaremonger" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="885a-74b4-aaa2-2287" name="Scaremonger" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3cd1-9223-c2af-3841" name="Scaremonger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -594,7 +772,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4add-c741-0349-08fc" name="Savage Big Boss" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4add-c741-0349-08fc" name="Savage Big Boss" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="6d65-3d6e-10cb-0c44" name="Savage Big Boss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -621,7 +812,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f724-2567-0b9a-0db5" name="Ogroid Thaumaturge" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f724-2567-0b9a-0db5" name="Ogroid Thaumaturge" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9b10-2c4f-23f7-3f60" name="Ogroid Thaumaturge" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -656,7 +864,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55ba-4bd6-63b6-ed2b" name="Megaboss" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="55ba-4bd6-63b6-ed2b" name="Megaboss" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7660-c310-4684-c5dd" name="Megaboss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -683,7 +904,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="17dd-8a74-3348-a686" name="Magister" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="17dd-8a74-3348-a686" name="Magister" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="bb0b-91c2-0d5b-2dfd" name="Magister" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -717,7 +955,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="be28-13dd-2162-3854" name="Lord-Veritant" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="be28-13dd-2162-3854" name="Lord-Veritant" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="624e-ed3c-4395-e540" name="Lord-Veritant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -744,7 +996,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c963-b866-39cf-81aa" name="Lord-Celestant" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c963-b866-39cf-81aa" name="Lord-Celestant" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3c74-901c-0244-03bb" name="Lord-Celestant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -771,7 +1037,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="296f-8bbe-79f7-8050" name="Lord-Castellant" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="296f-8bbe-79f7-8050" name="Lord-Castellant" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c42e-9c54-9cf1-a9f3" name="Lord-Castellant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -798,7 +1078,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c943-5732-531b-4506" name="Lord Of Plagues" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c943-5732-531b-4506" name="Lord Of Plagues" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="808e-6bc4-d4bc-e8ef" name="Lord Of Plagues" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -825,7 +1122,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8ec0-f084-73c4-cc96" name="Lord Of Blights" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8ec0-f084-73c4-cc96" name="Lord Of Blights" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9e22-4bbb-10a0-aba3" name="Lord Of Blights" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -852,7 +1166,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="de9b-4297-7670-9c3f" name="Lord Executioner" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="de9b-4297-7670-9c3f" name="Lord Executioner" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="117a-c0ea-501d-6292" name="Lord Executioner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -880,7 +1207,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7933-39ed-b2f4-d5b9" name="Loonboss" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7933-39ed-b2f4-d5b9" name="Loonboss" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4710-3f01-61ee-98cc" name="Loonboss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -907,7 +1247,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7212-cf61-e1b3-1f88" name="Lone Necromancer" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7212-cf61-e1b3-1f88" name="Lone Necromancer" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3b0d-4d56-198e-cac4" name="Lone Necromancer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -942,7 +1295,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ca69-1039-b781-8ce5" name="Knight-Vexillor" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ca69-1039-b781-8ce5" name="Knight-Vexillor" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9809-1119-d79b-1dac" name="Knight-Vexillor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -969,7 +1336,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5c25-7f51-4542-dab8" name="Knight-Questor" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5c25-7f51-4542-dab8" name="Knight-Questor" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e40e-d16c-9178-17cd" name="Knight-Questor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -996,7 +1377,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e08d-4085-134a-3780" name="Knight-Heraldor" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e08d-4085-134a-3780" name="Knight-Heraldor" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="aff4-aaed-7fd8-7988" name="Knight-Heraldor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1023,7 +1418,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e04b-b197-7453-20ec" name="Knight Of Shrouds" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e04b-b197-7453-20ec" name="Knight Of Shrouds" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7bce-b2f2-e86f-71e3" name="Knight Of Shrouds" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1051,7 +1459,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c3db-eacf-eaf8-0d47" name="Hag Queen" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c3db-eacf-eaf8-0d47" name="Hag Queen" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="8d11-df1e-d12a-dab3" name="Hag Queen" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1078,7 +1500,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="609f-ea12-2d35-df2c" name="Grey Seer" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="609f-ea12-2d35-df2c" name="Grey Seer" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2d6e-4057-5947-0631" name="Grey Seer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1113,7 +1552,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a911-34ec-ff95-f192" name="Great Bray-Shaman" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a911-34ec-ff95-f192" name="Great Bray-Shaman" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c53b-58c1-8a8b-23e1" name="Great Bray-Shaman" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1148,7 +1604,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="530b-9dc2-ebf4-aee3" name="Gaunt Summoner On Disc" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="530b-9dc2-ebf4-aee3" name="Gaunt Summoner On Disc" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7f4d-5f94-9143-ebdb" name="Gaunt Summoner On Disc" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1184,7 +1657,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a749-a604-9211-929e" name="Gaunt Summoner" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a749-a604-9211-929e" name="Gaunt Summoner" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c718-3355-d858-3fbc" name="Gaunt Summoner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1219,7 +1709,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6638-0f22-c126-7f21" name="Fungoid Cave-Shaman" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6638-0f22-c126-7f21" name="Fungoid Cave-Shaman" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1274-17f9-be9c-ce00" name="Fungoid Cave-Shaman" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1246,7 +1749,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f934-6e6d-ad03-f3fb" name="Exalted Deathbringer With Ruinous Axe" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f934-6e6d-ad03-f3fb" name="Exalted Deathbringer With Ruinous Axe" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="479b-7265-bee9-a1c5" name="Exalted Deathbringer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1273,7 +1793,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="91b3-a963-d5ff-c9f3" name="Exalted Deathbringer With Impaling Spear" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="91b3-a963-d5ff-c9f3" name="Exalted Deathbringer With Impaling Spear" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="5af0-c266-84d0-63f4" name="Exalted Deathbringer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1300,7 +1837,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="82be-c7e9-c470-2b8b" name="Darkoath Warqueen" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="82be-c7e9-c470-2b8b" name="Darkoath Warqueen" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d075-a772-9eec-05e7" name="Darkoath Warqueen" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1327,7 +1881,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0203-75a9-9dd5-f149" name="Darkoath Chieftain" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0203-75a9-9dd5-f149" name="Darkoath Chieftain" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e779-bfcb-3577-8f36" name="Darkoath Chieftain" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1354,7 +1925,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9d73-4aa4-2661-e29e" name="Clawlord" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="9d73-4aa4-2661-e29e" name="Clawlord" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="cd66-652a-52cc-ea5c" name="Clawlord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1381,7 +1969,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6eb1-b9d0-b4c1-8d32" name="Chaos Sorcerer Lord" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6eb1-b9d0-b4c1-8d32" name="Chaos Sorcerer Lord" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="23d4-61f9-2388-3cde" name="Chaos Sorcerer Lord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1416,7 +2021,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5f51-8b86-6a97-ff2f" name="Chaos Lord" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5f51-8b86-6a97-ff2f" name="Chaos Lord" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f789-a704-e7c6-a1c1" name="Chaos Lord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1444,7 +2066,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6d6c-8c57-120e-2b6d" name="Tomb Banshee" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6d6c-8c57-120e-2b6d" name="Tomb Banshee" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="946f-3a6e-b09b-557a" name="Tomb Banshee" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1480,7 +2115,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a8ca-98a0-ea9b-b340" name="Wight King" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a8ca-98a0-ea9b-b340" name="Wight King" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2c07-8af1-1d2f-f0a1" name="Wight King" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1507,7 +2155,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c2d8-2d76-848b-3e96" name="Tidecaster" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c2d8-2d76-848b-3e96" name="Tidecaster" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="8530-ce06-5fb4-1006" name="Tidecaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1542,7 +2204,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4826-f0ce-4f02-12d3" name="Soulscryer" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4826-f0ce-4f02-12d3" name="Soulscryer" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="51ef-180d-d445-f914" name="Soulscryer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1569,7 +2245,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86b2-4183-660a-c16d" name="Spirit Torment" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="86b2-4183-660a-c16d" name="Spirit Torment" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="21c7-7a9f-6c27-3492" name="Spirit Torment" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1597,7 +2286,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2e48-9d20-128f-60f3" name="Soulrender" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="2e48-9d20-128f-60f3" name="Soulrender" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ab59-45d2-d44d-ca91" name="Soulrender" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1632,7 +2335,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5c49-e0c8-e835-0771" name="Spiker" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5c49-e0c8-e835-0771" name="Spiker" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9604-bc72-02f3-43d7" name="Spiker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1658,7 +2374,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3582-2fdc-f702-d671" name="Slaughterpriest With Hammer And Hackblade" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3582-2fdc-f702-d671" name="Slaughterpriest With Hammer And Hackblade" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="a84f-f377-296a-4464" name="Slaughterpriest" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1693,7 +2426,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6f6e-97e8-e50a-4c63" name="Slaughterpriest With Bloodbathed Axe" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6f6e-97e8-e50a-4c63" name="Slaughterpriest With Bloodbathed Axe" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="8730-af61-63aa-7d82" name="Slaughterpriest" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1720,7 +2470,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2bf1-be45-fa68-7895" name="Slaughter Queen" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="2bf1-be45-fa68-7895" name="Slaughter Queen" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9124-e2d5-3815-69e9" name="Slaughter Queen" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1747,7 +2511,24 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="485b-ff09-00bb-9025" name="Skullgrinder" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="485b-ff09-00bb-9025" name="Skullgrinder" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="aafb-0a4d-83d3-467a" name="Skullgrinder" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1774,7 +2555,20 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a026-35e5-7880-462c" name="Weirdnob Shaman" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a026-35e5-7880-462c" name="Weirdnob Shaman" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ef70-e7fd-f3db-700a" name="Weirdnob Shaman" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
