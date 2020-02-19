@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="471f-f5a7-5e3a-f682" name="Sylvaneth" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="471f-f5a7-5e3a-f682" name="Sylvaneth" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3ac1-3f63-cf02-f4f2" name="Dryad Branch Nymph" hidden="false" collective="false" import="true" targetId="6e95-1e64-ab92-ddf8" type="selectionEntry"/>
     <entryLink id="f36e-5304-38b5-4935" name="Dryads" hidden="false" collective="false" import="true" targetId="17cd-e1a8-c08d-c97c" type="selectionEntry"/>
@@ -101,7 +101,7 @@
   <sharedSelectionEntries>
     <selectionEntry id="3f1b-03ba-fe58-c3da" name="Kurnoth Hunter" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="b93b-d3bd-99d1-f72f" name="Kurnoth Hunter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="7370-c4c5-966c-8256" name="Kurnoth Hunter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
@@ -113,6 +113,7 @@
         <categoryLink id="aeec-8b84-73b8-0402" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
         <categoryLink id="ee8b-3132-6ed8-cb4a" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="40c5-7934-e646-6239" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
+        <categoryLink id="dbc5-ebf8-fbce-1dda" name="Champion" hidden="false" targetId="3963-7daa-918f-f967" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ae7d-bd78-173e-b670" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="4637-c3a0-a9ce-ec6a">
@@ -145,13 +146,33 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="61bd-3fba-ca65-291f" name="Kurnoth Greatsword" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="cf28-4523-fd21-9b37" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7f30-64c2-12fb-63aa" name="Kurnoth Scythe" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="0dcf-2858-e782-f9b7" name="Scythe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -162,9 +183,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9026-ba51-0603-efdd" name="Kurnoth Huntermaster" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f1dd-c076-aa13-a799" name="Kurnoth Huntermaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="3a64-0fd1-8937-1405" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
         <categoryLink id="7d73-928f-fa51-efde" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="fc93-c1fa-c078-2cdf" name="Champion" hidden="false" targetId="3963-7daa-918f-f967" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9474-f254-f39d-d6e7" name="Profile" hidden="false" collective="false" import="true">
@@ -174,18 +205,56 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="66c6-2bd2-282c-2a46" name="Kurnoth Greatbow" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="0bca-50ab-83da-3a32" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="62a9-4004-9cb5-ef57" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="09eb-148a-bb78-4a80" name="Kurnoth Greatsword" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="542f-9a37-559a-1abd" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="02be-e9e2-feee-3355" name="Kurnoth Scythe" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4245-0f69-0b6f-affd" name="Scythe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -196,57 +265,165 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="17cd-e1a8-c08d-c97c" name="Dryads" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="a8d6-bc74-fb3b-7e27" name="Dryads" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c4d1-ab03-3da8-2f4e" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="d8c6-06b1-887c-fc5a" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
         <categoryLink id="e01b-400c-597f-a630" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="eaba-8b8f-2e44-9b70" name="Scout" hidden="false" targetId="500f-c18d-7ff4-81ff" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6e95-1e64-ab92-ddf8" name="Dryad Branch Nymph" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="0ed3-e96b-567f-b25c" name="Dryad Branch Nymph" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0220-9d9a-cbb6-3cb8" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="1f84-6c1e-4a3d-4c1c" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
         <categoryLink id="8480-fe37-7328-4aca" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="a14d-fa68-b5ab-e834" name="Scout" hidden="false" targetId="500f-c18d-7ff4-81ff" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4746-e4aa-06f7-9290" name="Tree-Revenant Scion" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="de85-76bc-77f5-1b38" name="Tree-Revenant Scion" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="29d7-5017-c696-fa8d" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="ece9-95b7-afb9-d2d9" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
         <categoryLink id="873b-dcbc-671f-d1b1" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="c83b-9744-51a1-a718" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d361-4481-fbc0-c23b" name="Tree-Revenant" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="1cd2-609f-151c-16d1" name="Tree-Revenant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="488d-46c4-cfa7-c5fb" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="0c0f-607f-1c17-c61f" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
         <categoryLink id="8ee9-dd18-13b9-c1fa" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="ec86-d348-80ee-a849" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="71c9-a3b4-8ff4-8f66" name="Spite-Revenant" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="2572-595a-26c8-7d41" name="Spite-Revenant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="708e-06dc-99fd-fd7d" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="112b-de83-020f-ebc6" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
         <categoryLink id="a0bf-8da0-fa7d-e593" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="3d8e-9a52-556d-5972" name="Terrifying" hidden="false" targetId="2a1d-fc05-e659-e8da" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="76f6-0ad3-4257-92c1" name="Spite-Revenant Shadestalker" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4eff-eb2c-c8ed-96bf" name="Spite-Revenant Shadestalker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f553-d433-87f1-475c" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="b4a9-55f5-fd51-64ce" name="Faction: Sylvaneth" hidden="false" targetId="8779-c4a3-47fc-f841" primary="false"/>
         <categoryLink id="13de-c16f-db3f-a3f4" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+        <categoryLink id="0234-191a-55bd-5769" name="Terrifying" hidden="false" targetId="2a1d-fc05-e659-e8da" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
