@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8ab7-9752-ec64-3693" name="Maggotkin of Nurgle: Rotbringers" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8ab7-9752-ec64-3693" name="Maggotkin of Nurgle: Rotbringers" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="1aa9-93a6-da04-521f" name="Pusgoyle Blightlord" hidden="false" collective="false" import="true" targetId="f893-e2c0-41d4-a794" type="selectionEntry"/>
+    <entryLink id="1fc0-edf5-a33e-0487" name="Putrid Blightking" hidden="false" collective="false" import="true" targetId="1e8a-ba4d-edfa-e4ae" type="selectionEntry"/>
+    <entryLink id="9db0-132f-28a3-208a" name="Putrid Blightking Blightlord" hidden="false" collective="false" import="true" targetId="9608-b506-1699-a837" type="selectionEntry"/>
+  </entryLinks>
   <rules>
     <rule id="7e79-61f9-ba78-e979" name="⚁ [Double] Venomous Sting" hidden="true">
       <modifiers>
@@ -7,8 +12,8 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -22,8 +27,8 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3963-7daa-918f-f967" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3963-7daa-918f-f967" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -31,46 +36,49 @@
       </modifiers>
       <description>Until the end of the battle round, add 1 to the move characteristic of move actions made by friendly fighters that start within 5&quot; of this fighter.</description>
     </rule>
-    <rule id="6c0a-0b6b-d2f0-eda0" name="⚂ [Triple] Blight..." hidden="true">
+    <rule id="6c0a-0b6b-d2f0-eda0" name="⚂ [Triple] Blight Icon" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5984-b33a-b944-0c71" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5984-b33a-b944-0c71" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <description>Until the end of the battle round, add 1 to the Toughness characteristic of friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
-    <rule id="8b1d-1e1f-61ea-c3d8" name="⚂ [Triple] Grand..." hidden="true">
+    <rule id="8b1d-1e1f-61ea-c3d8" name="⚂ [Triple] Grandfather&apos;s Blessing" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <description>Until the end of the battle round, add 1 to the Strength characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
-    <rule id="9116-ce5d-df23-d837" name="⚃ [Quad] Unnatrual...." hidden="true">
+    <rule id="9116-ce5d-df23-d837" name="⚃ [Quad] Unnatrual Regeneration" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <description>A fighter cannot use this ability if they are within 1&quot; of any enemy fighters. Remove a number of damage points allocated to this fighter equal to double the value of this ability.</description>
     </rule>
     <rule id="a4ee-4165-0a93-1fb3" name="⚁ [Double] Virulent Discharge" hidden="true">
       <modifiers>
@@ -78,7 +86,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aeb3-c4e6-f3cc-63fd" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -88,36 +96,16 @@
     </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="f893-e2c0-41d4-a794" name="Pusgoyle Blightlords" hidden="false" collective="false" import="true" type="model">
-      <categoryLinks>
-        <categoryLink id="7901-2590-c91a-cb53" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false" targetId="aeb3-c4e6-f3cc-63fd" primary="false"/>
-        <categoryLink id="617d-790c-51dd-9a38" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="c49d-1566-c4d0-bf03" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9608-b506-1699-a837" name="Pusgoyle Lord of Afflicition" hidden="false" collective="false" import="true" type="model">
-      <categoryLinks>
-        <categoryLink id="c7e4-71f4-3717-d46f" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false" targetId="aeb3-c4e6-f3cc-63fd" primary="false"/>
-        <categoryLink id="bc69-a19c-31b7-7b95" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-        <categoryLink id="bf68-6486-4f7b-3ae6" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1e8a-ba4d-edfa-e4ae" name="Putrid Blightlord" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f893-e2c0-41d4-a794" name="Pusgoyle Blightlord" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="58b2-18fc-0e76-9b67" name="Putrid Blightlord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="981c-ce52-00fa-7860" name="Pusgoyle Blightlord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">40</characteristic>
           </characteristics>
         </profile>
-        <profile id="1037-d97f-71b4-4281" name="Scythe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="4fe8-6d53-7ba1-1b4d" name="Scythe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
@@ -127,10 +115,116 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="f3a2-2799-d36b-95a4" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false" targetId="aeb3-c4e6-f3cc-63fd" primary="false"/>
-        <categoryLink id="9599-370c-6f6a-0935" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="b4ad-6f20-dcce-addc" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
+        <categoryLink id="7901-2590-c91a-cb53" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false" targetId="aeb3-c4e6-f3cc-63fd" primary="false"/>
+        <categoryLink id="617d-790c-51dd-9a38" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="c49d-1566-c4d0-bf03" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
+        <categoryLink id="8242-f40e-0583-2882" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9608-b506-1699-a837" name="Putrid Blightking Blightlord" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="2187-c8ea-99d5-1867" name="Putrid Blightking Blightlord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1c0-005f-aafa-f9b0" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c7e4-71f4-3717-d46f" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false" targetId="aeb3-c4e6-f3cc-63fd" primary="false"/>
+        <categoryLink id="bf68-6486-4f7b-3ae6" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1e8a-ba4d-edfa-e4ae" name="Putrid Blightking" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="58b2-18fc-0e76-9b67" name="Putrid Blightking" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f3a2-2799-d36b-95a4" name="Faction: Maggotkin of Nurgle Rotbringers" hidden="false" targetId="aeb3-c4e6-f3cc-63fd" primary="false"/>
+        <categoryLink id="3b56-9599-859d-c2db" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2d33-8bdf-77d7-6f7a" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="a773-dd0f-c9d3-f0be">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c27d-fc35-5935-8bc9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a0d-263a-e5ec-8f16" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a773-dd0f-c9d3-f0be" name="Blight Axe" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4c67-db29-b515-45a0" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="03af-40ed-714d-7d50" name="Icon Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="b5cb-b55f-9e93-9f02" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="7173-c0be-0458-77d2" name="Icon Bearer" hidden="false" targetId="5984-b33a-b944-0c71" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="471a-c4fb-a4b3-f6a5" name="Blight Flail" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ea40-0e9b-059f-e111" name="Reach" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="f26f-93f6-d485-057b" name="Champion" hidden="false" targetId="3963-7daa-918f-f967" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
