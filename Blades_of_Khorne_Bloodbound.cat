@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8bc9-81dc-18c5-632d" name="Blades of Khorne: Bloodbound" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8bc9-81dc-18c5-632d" name="Blades of Khorne: Bloodbound" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="9b42-867e-8c09-37c7" name="Blood Warrior" hidden="false" collective="false" import="true" targetId="4b11-f968-6472-109f" type="selectionEntry"/>
     <entryLink id="5512-5bf7-4b70-43ac" name="Blood Warrior Champion" hidden="false" collective="false" import="true" targetId="1579-cc22-977c-b6d0" type="selectionEntry"/>
@@ -8,7 +8,7 @@
     <entryLink id="79d2-55e1-7911-a350" name="Khorgorath" hidden="false" collective="false" import="true" targetId="6fe9-49bb-8552-1cb4" type="selectionEntry"/>
     <entryLink id="8d5f-453a-9221-9acf" name="Skullreaper" hidden="false" collective="false" import="true" targetId="8a76-aee2-167e-401d" type="selectionEntry"/>
     <entryLink id="018c-c8f3-4c7e-3a2f" name="Skullseeker" hidden="false" collective="false" import="true" targetId="ce7f-d65b-0a19-55f8" type="selectionEntry"/>
-    <entryLink id="f108-6439-e183-b530" name="Wrathmaster" hidden="false" collective="false" import="true" targetId="c520-455b-af05-dfb9" type="selectionEntry"/>
+    <entryLink id="f108-6439-e183-b530" name="Wrathmaster" hidden="false" collective="false" import="true" targetId="a865-766d-8aef-1cf7" type="selectionEntry"/>
     <entryLink id="1204-805e-6680-78cb" name="Wrathmonger" hidden="false" collective="false" import="true" targetId="7e76-b28d-d2cd-2f44" type="selectionEntry"/>
   </entryLinks>
   <rules>
@@ -42,7 +42,7 @@
       </modifiers>
       <description>Pick a visible enemy fighter with 6&quot; of this fighter and roll 2 dice. For each 4-5, allocate 1 damage point to that fighter. For each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
     </rule>
-    <rule id="467f-2818-5575-c013" name="⚂ [Triple] Lord o..." hidden="true">
+    <rule id="467f-2818-5575-c013" name="⚂ [Triple] Lord of Skulls" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -55,8 +55,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
-    <rule id="46e7-f181-5670-9054" name="⚂ [Triple] Daemo..." hidden="true">
+    <rule id="46e7-f181-5670-9054" name="⚂ [Triple] Daemon-forged Weapons" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -69,8 +70,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <description>Until the end of this fighter&apos;s activation, add half the value of this ability (rounding up) to the damage points allocated by critical hits from attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
     </rule>
-    <rule id="1865-c084-cf8b-7a12" name="⚃ [Quad] Blood-" hidden="true">
+    <rule id="1865-c084-cf8b-7a12" name="⚃ [Quad] Blood-fuelled Assasult" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -83,6 +85,7 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. In addition, until the end of this fighter&apos;s activation, add half the value of this ability (rounding up) to the Strength characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
     </rule>
     <rule id="1be0-b2f4-bedc-048c" name="⚁ [Double] Blood for the Blood God" hidden="true">
       <modifiers>
@@ -96,11 +99,11 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or bonus attack actino.</description>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="c520-455b-af05-dfb9" name="Wrathmaster" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a865-766d-8aef-1cf7" name="Wrathmaster" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="1321-dd1a-7ebd-bdd4" name="Wrathmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -109,23 +112,37 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
-        <profile id="24dc-debd-a3d8-9d9c" name="Reach" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">6</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="71bb-f1cf-c1a5-24fa" name="Faction: Blades of Khorne Bloodbound" hidden="false" targetId="afd2-a5d2-cffc-3df9" primary="false"/>
         <categoryLink id="f9bf-900a-6768-bf0c" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
         <categoryLink id="9253-7b19-7e8a-6624" name="Frenzied" hidden="false" targetId="db8a-903d-5a81-7b2f" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="baf8-de23-4747-b904" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="dee6-85a9-adab-e5de">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb4-0a20-f23f-fe38" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffe5-b556-505a-e61a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dee6-85a9-adab-e5de" name="Wrath-flail" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="45ae-ee63-015a-69e3" name="Wrath-flail" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">6</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="7e76-b28d-d2cd-2f44" name="Wrathmonger" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -136,23 +153,37 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
-        <profile id="a3cf-a4ec-09bb-4c85" name="Reach" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="9f4d-fe85-9021-cf15" name="Faction: Blades of Khorne Bloodbound" hidden="false" targetId="afd2-a5d2-cffc-3df9" primary="false"/>
         <categoryLink id="ee5f-505b-c6c9-c66e" name="Frenzied" hidden="false" targetId="db8a-903d-5a81-7b2f" primary="false"/>
         <categoryLink id="1df2-f04d-16b5-cb94" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="943d-704c-416b-94ab" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="c90d-136d-8e02-0755">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7083-87c0-c242-a7e1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d71c-cb74-0ed0-0f07" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c90d-136d-8e02-0755" name="Wrath-flail" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="dbf2-c7cb-0f64-214b" name="Wrath-flail" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="ce7f-d65b-0a19-55f8" name="Skullseeker" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -163,23 +194,37 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
-        <profile id="6db1-774f-756d-4306" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="136b-4a81-4bae-24ee" name="Faction: Blades of Khorne Bloodbound" hidden="false" targetId="afd2-a5d2-cffc-3df9" primary="false"/>
         <categoryLink id="7b08-e893-abbc-b01d" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
         <categoryLink id="4d8b-2420-fe4d-9567" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1a7d-2240-87af-65c7" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="48d3-088e-0632-8f9a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d782-1cf1-12db-4692" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d27-fb82-0500-5e94" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="48d3-088e-0632-8f9a" name="Daemonblade" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="6b54-96ba-bf59-9ed8" name="Daemonblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="8a76-aee2-167e-401d" name="Skullreaper" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -190,23 +235,37 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
-        <profile id="07a4-5e49-e135-c176" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="78f8-2f9d-7ef4-0fc4" name="Faction: Blades of Khorne Bloodbound" hidden="false" targetId="afd2-a5d2-cffc-3df9" primary="false"/>
         <categoryLink id="5159-cecf-2f99-4106" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
         <categoryLink id="c67e-7c6a-8ee1-bed5" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="562c-432e-e26a-389a" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="68df-9429-745d-f3d2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccd4-3fb1-f3af-c3ca" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dbc-ebde-2cba-2125" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="68df-9429-745d-f3d2" name="Gore-slick Blade" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="cf4f-afde-4e02-fd52" name="Gore-slick Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="1579-cc22-977c-b6d0" name="Blood Warrior Champion" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -217,23 +276,37 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
-        <profile id="946a-e496-424b-5b41" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="b725-8c5b-b42e-95c8" name="Faction: Blades of Khorne Bloodbound" hidden="false" targetId="afd2-a5d2-cffc-3df9" primary="false"/>
         <categoryLink id="4af3-a866-dee4-e300" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
         <categoryLink id="9284-f834-d375-7657" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="62f8-99b8-287a-a37e" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a9b-bc3a-72b9-0ee0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c43-abb6-421f-dae1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="446a-76ae-4a8d-66c5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6a9b-bc3a-72b9-0ee0" name="Goreaxe and Gorefist" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="dcfa-0fe1-4af3-c680" name="Goreaxe and Gorefist" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="4b11-f968-6472-109f" name="Blood Warrior" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -258,7 +331,7 @@
           <selectionEntries>
             <selectionEntry id="3814-7e72-eb33-8d50" name="Goreglaive" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="368b-7050-484c-c97e" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="1611-68b5-6d85-d705" name="Goreglaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
@@ -273,7 +346,7 @@
             </selectionEntry>
             <selectionEntry id="641b-8c6a-541a-6f16" name="Pair of Goreaxes" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="3cdf-3403-bca5-6170" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="c33e-b971-1f1a-80b0" name="Pair of Goreaxes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
@@ -288,11 +361,11 @@
             </selectionEntry>
             <selectionEntry id="7af6-e0a1-8a96-95a8" name="Goreaxe and Gorefist" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="5c18-da69-05ed-467f" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="34e2-ba34-0c70-073d" name="Goreaxe and Gorefist" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">34</characteristic>
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
@@ -320,22 +393,36 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
           </characteristics>
         </profile>
-        <profile id="05a7-ac85-a9ab-a661" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="0524-2318-55e9-f165" name="Faction: Blades of Khorne Bloodbound" hidden="false" targetId="afd2-a5d2-cffc-3df9" primary="false"/>
         <categoryLink id="b851-27d5-adc5-0ec9" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
       </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3627-f2c4-67b1-3805" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b35-95ca-a90c-f700">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4cd-5fed-85b1-1eb4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d6f-b129-23d1-4f49" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0b35-95ca-a90c-f700" name="Meatripper Axe" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="e428-bc9c-46da-b050" name="Meatripper Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="6be9-3bc9-27cf-e1af" name="Bloodreaver" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -360,7 +447,7 @@
           <selectionEntries>
             <selectionEntry id="ef78-28c0-fe34-1e8d" name="Meatripper Axe" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="eea0-e3f7-38c2-9e09" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="eea0-e3f7-38c2-9e09" name="Meatripper Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
@@ -375,7 +462,7 @@
             </selectionEntry>
             <selectionEntry id="8956-dbc3-a670-1f8e" name="Reaver Blades" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="8a5b-702f-4e4a-1924" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="8a5b-702f-4e4a-1924" name="Reaver Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
@@ -404,23 +491,37 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
           </characteristics>
         </profile>
-        <profile id="03bf-4a85-1aeb-c1da" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="7f91-10c3-ba09-c825" name="Faction: Blades of Khorne Bloodbound" hidden="false" targetId="afd2-a5d2-cffc-3df9" primary="false"/>
         <categoryLink id="5ead-7fc5-3369-abdd" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="00d7-0244-2bcf-2bed" name="Beast" hidden="false" targetId="9e65-4c4f-1710-5eda" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8e8e-617e-3447-a82a" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="9396-ba9f-2796-a4df">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a9-8b91-3820-34b6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f3-eaeb-e13e-2b42" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9396-ba9f-2796-a4df" name="Claws and Fangs" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="ef1c-35dd-66fd-1c16" name="Claws and Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
