@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="16" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="22" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
   </costTypes>
@@ -304,11 +304,11 @@
     <rule id="f574-01e8-a7f3-ef39" name="⚁ [Double] Rush" hidden="false">
       <description>Add 1 to the Move characteristic of this fighter until the end of their activation</description>
     </rule>
-    <rule id="9806-9e74-bdee-04fb" name="⚂ [Triple] Inspiring Presence" hidden="false">
+    <rule id="9806-9e74-bdee-04fb" name="⚂ [Triple] Inspiring Presence" hidden="true">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="lessThan"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
