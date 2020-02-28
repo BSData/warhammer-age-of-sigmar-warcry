@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d9af-d49b-af09-32b5" name="Untamed Beasts" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d9af-d49b-af09-32b5" name="Untamed Beasts" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="9e4c-9abf-3c1d-b8d4" name="Preytaker with Fanged Axe" hidden="false" collective="false" import="true" targetId="da3a-9ec9-2170-8c57" type="selectionEntry"/>
     <entryLink id="18b0-6761-8825-a0b9" name="Beastspeaker" hidden="false" collective="false" import="true" targetId="261a-0560-6af2-fdc3" type="selectionEntry"/>
@@ -11,6 +11,96 @@
     <entryLink id="00b6-d537-2237-8b50" name="Fury" hidden="false" collective="false" import="true" targetId="ef27-a379-1c4f-beda" type="selectionEntry"/>
     <entryLink id="deb5-00fa-0eed-ce14" name="Raptoryz" hidden="false" collective="false" import="true" targetId="3894-dec2-f437-80ed" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="d7d1-63cd-6df3-1a8d" name="⚁ [Double] Savage Fury" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a552-a981-e93e-f478" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Move chracteristic of this fighter for the next move action they make this activation, and add 1 to the Attacks characteristic of the next attack action they make this activation.</description>
+    </rule>
+    <rule id="0cd5-3cab-a112-be14" name="⚁ [Double] Beastmaster" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a552-a981-e93e-f478" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0600-c649-d723-9878" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible friendly fighter with the Beast runemakr within 4&quot; of this fighter. That fighter makes a bonus attack action.</description>
+    </rule>
+    <rule id="1ebb-2b70-f428-31dd" name="⚁ [Double] All-out Attack" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a552-a981-e93e-f478" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or bonus attack action.</description>
+    </rule>
+    <rule id="9798-6541-5e10-3eaa" name="⚂ [Triple] Harpoon Snag" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a552-a981-e93e-f478" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a5f-39a9-6bfb-a39e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus attack action. After that attack action, the fighter targeted by that attack action makes a bonus move action directly towards this fighter, as if they were jumping, a number of inches equal to the value of this ability.</description>
+    </rule>
+    <rule id="f307-c14a-efd8-a5f3" name="⚂ [Triple] Pounce" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a552-a981-e93e-f478" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e65-4c4f-1710-5eda" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="2f71-499e-6054-51a6" name="⚃ [Quad] Unleash the Beast" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a552-a981-e93e-f478" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks and Strength characteristic of attack actions made by this fighter that have a Ranger characteristic of 3 or less.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="0019-d408-251e-3d69" name="Heart-eater" hidden="false" collective="false" import="true" type="unit">
       <profiles>
