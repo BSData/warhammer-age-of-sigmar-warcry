@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="733e-b677-de21-f3bb" name="Beasts of Chaos" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="733e-b677-de21-f3bb" name="Beasts of Chaos" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="26f0-f4b2-8eb0-2936" name="Bestigor" hidden="false" collective="false" import="true" targetId="727a-74dc-5858-7f0c" type="selectionEntry"/>
     <entryLink id="7c80-c630-ebc5-14dc" name="Bestigor Gouge-Horn" hidden="false" collective="false" import="true" targetId="aec0-7d73-03f8-bb14" type="selectionEntry"/>
@@ -553,6 +553,10 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7d0f-efc0-6d8a-b9af" name="Profile" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89dc-f355-46b8-8a79" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3cc-dabc-12e7-c276" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="1bc3-d037-f59d-7612" name="Draconic Crusher" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
