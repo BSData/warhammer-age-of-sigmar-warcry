@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="27" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="28" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -2876,6 +2876,168 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8416-fb1e-0538-5683" name="Formorid Crusher" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4297-895d-6f8a-bf89" name="Formorid Crusher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d90a-2941-fe39-7ea0" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3c20-c4b5-c524-60f3" name="New CategoryLink" hidden="false" targetId="c2de-1520-8af2-adcb" primary="true"/>
+        <categoryLink id="c041-11c7-6727-90d6" name="Faction: Chaotic Beast" hidden="false" targetId="ec0a-41bd-536d-52c3" primary="false"/>
+        <categoryLink id="ac66-8f38-4100-d802" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc6a-5376-482f-6e07" name="Mindstealer Sphiranx" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9096-0bf0-dee5-f9cb" name="Mindstealer Sphiranx" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">40</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="31d0-3964-5ac7-dc7e" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="47df-62c5-8d62-bf12" name="New CategoryLink" hidden="false" targetId="c2de-1520-8af2-adcb" primary="true"/>
+        <categoryLink id="5a22-c365-79e2-4ad4" name="Faction: Chaotic Beast" hidden="false" targetId="ec0a-41bd-536d-52c3" primary="false"/>
+        <categoryLink id="3d42-e60b-e11a-5158" name="Mystic" hidden="false" targetId="7873-95b3-6051-1762" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f1d3-6088-5fde-2ec9" name="Ogroid Myrmidon" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="d139-f020-00b3-fa0d" name="Ogroid Myrmidon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ae3-18ec-3006-2fd1" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="09eb-64af-8154-00bf" name="New CategoryLink" hidden="false" targetId="c2de-1520-8af2-adcb" primary="true"/>
+        <categoryLink id="13bd-d60d-69cc-a80e" name="Faction: Chaotic Beast" hidden="false" targetId="ec0a-41bd-536d-52c3" primary="false"/>
+        <categoryLink id="d9c3-4a92-a515-0516" name="Champion" hidden="false" targetId="3963-7daa-918f-f967" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="295.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
