@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="26" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="27" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
-    <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0"/>
+    <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="7bf1-ad0a-0d19-6565" name="Model">
@@ -215,6 +215,7 @@
     <categoryEntry id="afd2-a5d2-cffc-3df9" name="Faction: Blades of Khorne Bloodbound" hidden="false"/>
     <categoryEntry id="11e7-19ea-7072-8e44" name="Faction: Fyreslayers" hidden="false"/>
     <categoryEntry id="f8cf-40e5-5710-7155" name="Faction: Spire Tyrants" hidden="false"/>
+    <categoryEntry id="ecf7-df65-fa69-f28d" name="Faction: Lumineth Realm-lords" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
