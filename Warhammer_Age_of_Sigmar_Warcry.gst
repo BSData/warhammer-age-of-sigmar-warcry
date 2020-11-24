@@ -300,6 +300,9 @@
     <entryLink id="963d-1da4-3dcf-8259" name="Warchanter" hidden="false" collective="false" import="true" targetId="099b-ae5f-e2a8-2777" type="selectionEntry"/>
     <entryLink id="94cb-ddcd-e58d-5986" name="Weirdnob Shaman" hidden="false" collective="false" import="true" targetId="a026-35e5-7880-462c" type="selectionEntry"/>
     <entryLink id="4ebe-6b18-0ef7-dace" name="Wight King" hidden="false" collective="false" import="true" targetId="a8ca-98a0-ea9b-b340" type="selectionEntry"/>
+    <entryLink id="17e8-d38a-ff0e-5c05" name="Ogroid Myrmidon" hidden="false" collective="false" import="true" targetId="f1d3-6088-5fde-2ec9" type="selectionEntry"/>
+    <entryLink id="01e8-6100-c2b5-b015" name="Formorid Crusher" hidden="false" collective="false" import="true" targetId="8416-fb1e-0538-5683" type="selectionEntry"/>
+    <entryLink id="5dbd-ef91-5deb-9ad3" name="Mindstealer Sphiranx" hidden="false" collective="false" import="true" targetId="cc6a-5376-482f-6e07" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="f574-01e8-a7f3-ef39" name="⚁ [Double] Rush" hidden="false">
