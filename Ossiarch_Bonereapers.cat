@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="497e-cceb-4805-44ec" name="Ossiarch Bonereapers" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <categoryEntries>
-    <categoryEntry id="a038-0d36-58ec-dc0a" name="Faction: Ossiarch Bonereapers" hidden="false"/>
-  </categoryEntries>
+<catalogue id="497e-cceb-4805-44ec" name="Ossiarch Bonereapers" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink id="6ef6-99ff-73d9-1cf1" name="Kavalos Deathriders" hidden="false" collective="false" import="true" targetId="e00e-b915-46dc-32f3" type="selectionEntry"/>
-    <entryLink id="850a-aa0d-2bb0-cb64" name="Kavalos Deathriders Hekatos" hidden="false" collective="false" import="true" targetId="533f-c7b6-b887-131c" type="selectionEntry"/>
-    <entryLink id="e6df-887c-b237-2b6d" name="Mortek Guard" hidden="false" collective="false" import="true" targetId="e010-ab59-8d81-6588" type="selectionEntry"/>
-    <entryLink id="0ea2-d970-d103-894f" name="Mortek Guard Hekatos" hidden="false" collective="false" import="true" targetId="f991-0f9a-0b8f-5d91" type="selectionEntry"/>
-    <entryLink id="3a2b-aaff-f969-d88d" name="Necropolis Stalkers" hidden="false" collective="false" import="true" targetId="7523-1b82-1e80-27a5" type="selectionEntry"/>
+    <entryLink id="5f05-f377-b225-564b" name="Immortis Guard" hidden="false" collective="false" import="true" targetId="b960-23fa-1bbd-09e9" type="selectionEntry"/>
+    <entryLink id="10ac-e9f6-b59a-43ec" name="Kavalos Deathriders" hidden="false" collective="false" import="true" targetId="e00e-b915-46dc-32f3" type="selectionEntry"/>
+    <entryLink id="a101-b61e-594e-de79" name="Morghast Archai" hidden="false" collective="false" import="true" targetId="5ca0-42cf-2e35-c646" type="selectionEntry"/>
+    <entryLink id="9f81-f6e3-2475-3513" name="Morghast Harbinger" hidden="false" collective="false" import="true" targetId="697f-b9c6-0313-12d9" type="selectionEntry"/>
+    <entryLink id="d85f-8382-270c-723c" name="Mortek Guard" hidden="false" collective="false" import="true" targetId="e010-ab59-8d81-6588" type="selectionEntry"/>
+    <entryLink id="7e3a-31a9-fa26-eb88" name="Necropolis Stalkers" hidden="false" collective="false" import="true" targetId="7523-1b82-1e80-27a5" type="selectionEntry"/>
   </entryLinks>
   <rules>
-    <rule id="a187-24df-7ab7-7f61" name="⚃ [Quad] Blade-strike Aspect" hidden="true">
+    <rule id="5bd7-ee61-3a66-7288" name="⚁ [Double] Nadirite Weapon" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the damage points allocated by each hit and critical hit from attack actions made by this fighter this activation that have a range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="43fd-59b6-6c92-cfa0" name="⚁ [Double] Form Shieldwall" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Toughness characteristic of this fighter. In addition, until the end of the battle round, add 1 to the Toughness characteristic of friendly fighters with the Bulwark runemark while they are within 3” of this fighter.</description>
+    </rule>
+    <rule id="8847-0496-c9dc-709a" name="⚁ [Double] Hunt and Kill" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible enemy fighter within 6” of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
+    </rule>
+    <rule id="aa04-a5f9-8570-cb57" name="⚂ [Triple] Deathrider Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1” of an enemy fighter, pick a visible enemy fighter within 1” of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="c15f-1874-8ced-84d4" name="⚂ [Triple] Unbridled Ferocity" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus move action.</description>
+    </rule>
+    <rule id="bfaf-2af2-5f5a-2d36" name="⚃ [Quad] Blade-strike Aspect" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -26,14 +98,46 @@
       </modifiers>
       <description>Add the value of this ability to the Attacks characteristic of attack actions made by this fighter this activation.</description>
     </rule>
-    <rule id="0301-bdbb-50d5-2024" name="⚂ [Triple] Unstoppable Advance" hidden="true">
+    <rule id="11a8-08b8-4c3b-cb8c" name="⚁ [Double] Endless Duty" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
+    </rule>
+    <rule id="3907-01b1-a0b2-b83f" name="⚂ [Triple] Soul-guide" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 3” of this fighter.</description>
+    </rule>
+    <rule id="b26d-c88d-ca59-0848" name="⚂ [Triple] Unstoppable Advance" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -41,64 +145,37 @@
       </modifiers>
       <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Move characteristic of friendly fighters that are in the same battle group as this fighter.</description>
     </rule>
-    <rule id="7662-359f-399f-77f5" name="⚂ [Triple] Deathrider Charge" hidden="true">
+    <rule id="0a68-bb4e-7598-937b" name="⚂ [Triple] The Boneshaper&apos;s Art" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability</description>
+      <description>Remove up to 1 damage point allocated to each friendly fighter within 6” of this fighter.</description>
     </rule>
-    <rule id="cf7e-f8ab-05be-df66" name="⚁ [Double] Hunt and Kill" hidden="true">
+    <rule id="b49f-269d-92dd-2ac9" name="⚃ [Quad] Soulreaper Scythe" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43f7-edd3-8c0b-f80f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
-    </rule>
-    <rule id="72c4-005e-bff6-9955" name="⚁ [Double] Form Shield Wall" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e250-737c-002f-8734" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, add 1 to the toughness characteristic of this fighter. In addition , until the end of the battle round add 1 to the toughness characteristic of friendly fighters with the Bulwark runemark while they are within 3&quot; of this fighter</description>
-    </rule>
-    <rule id="a4f6-d8e0-b419-7058" name="⚁ [Double] Nadirite Weapon" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc6c-a123-2387-e0e3" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Add 1 to the damage points allocated by each hit and critical hit from attack actions made by this fighter this activation that have a range characteristic of 3 or less.</description>
+      <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3” of this fighter.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -113,10 +190,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="a9b3-c8e2-cd62-3a20" name="Faction: Ossiarch Bonereapers" hidden="false" targetId="a038-0d36-58ec-dc0a" primary="false"/>
         <categoryLink id="f615-1794-2b7c-c5fa" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="5038-2456-6fe3-a11d" name="Mount" hidden="false" targetId="818c-a6d8-cbf5-a958" primary="false"/>
-        <categoryLink id="0044-c91f-6d19-8a31" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b009-8644-e47f-bbe3" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="8fc5-daab-8809-5ae7">
@@ -127,7 +201,7 @@
           <selectionEntries>
             <selectionEntry id="8fc5-daab-8809-5ae7" name="Nadirite Blade" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="bd09-57a7-1a61-8fa6" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="bd09-57a7-1a61-8fa6" name="Nadirite Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
@@ -142,7 +216,7 @@
             </selectionEntry>
             <selectionEntry id="3b2c-1c56-4b48-7d10" name="Nadirite Spear" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="9c77-c82e-8e0e-90e9" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="9c77-c82e-8e0e-90e9" name="Nadirite Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
@@ -158,6 +232,15 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4ffa-9d49-af50-dc3a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="62d0-4b8f-f644-cbd4" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+            <entryLink id="02d9-62e8-35f8-12ca" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="43f7-edd3-8c0b-f80f" type="selectionEntry"/>
+            <entryLink id="4119-e6d0-dcf7-d5a4" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
@@ -173,9 +256,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="5189-2dd5-6d5b-8335" name="Faction: Ossiarch Bonereapers" hidden="false" targetId="a038-0d36-58ec-dc0a" primary="false"/>
         <categoryLink id="9398-55d9-4567-5cf0" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="a82f-6935-d1d5-99d9" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d65e-561f-d004-b012" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6af-4e73-2320-cb7d">
@@ -186,7 +267,7 @@
           <selectionEntries>
             <selectionEntry id="6a50-afcb-ab7c-4be9" name="Dread Falchions" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="a4ad-2fff-f5a9-9d41" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="a4ad-2fff-f5a9-9d41" name="Dread Falchions" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
@@ -199,9 +280,9 @@
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a6af-4e73-2320-cb7d" name="Spirit Blades and Nadirite Daggers" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a6af-4e73-2320-cb7d" name="Spirit Blades" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="fa4e-9430-fa4b-03cf" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="fa4e-9430-fa4b-03cf" name="Spirit Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
@@ -217,13 +298,20 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7704-a204-1ed3-b970" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="1daa-93ab-5f93-5d37" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
+            <entryLink id="1e17-014d-ab11-e8b6" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="43f7-edd3-8c0b-f80f" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e010-ab59-8d81-6588" name="Mortek Guard" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
-        <categoryLink id="8a8b-e670-0366-8c00" name="Faction: Ossiarch Bonereapers" hidden="false" targetId="a038-0d36-58ec-dc0a" primary="false"/>
         <categoryLink id="ad59-ccf1-6a3f-4a5d" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -233,9 +321,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b19-8aaf-8a31-c1f1" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3b52-2abc-3d5b-ca83" name="Nadirite Blade" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="3b52-2abc-3d5b-ca83" name="with Nadirite Blade" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="0fba-9ce6-0d91-5cb1" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="0fba-9ce6-0d91-5cb1" name="Nadirite Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
@@ -243,7 +331,7 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="8b8b-b366-0ccc-eb51" name="Mortek Guard with Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                <profile id="8b8b-b366-0ccc-eb51" name="Mortek Guard With Nadirite Weapon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
                     <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
                     <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
@@ -251,16 +339,16 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="2487-3239-5a33-b7bb" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
-              </categoryLinks>
+              <entryLinks>
+                <entryLink id="8138-2662-2023-02fb" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ca10-353d-ecb9-ad23" name="Nadirite Spear" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="ca10-353d-ecb9-ad23" name="with Nadirite Spear" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="c4a9-a8a2-8dd8-b25b" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="c4a9-a8a2-8dd8-b25b" name="Nadirite Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
@@ -268,7 +356,7 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="53b6-3762-58e9-bfab" name="Mortek Guard with Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                <profile id="3749-9b2b-d7f6-1870" name="Mortek Guard With Nadirite Weapon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
                     <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
                     <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
@@ -276,16 +364,16 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="1416-01d8-e9fc-c528" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
-              </categoryLinks>
+              <entryLinks>
+                <entryLink id="e39f-6d28-04c7-dbf3" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="288a-3358-ad0a-c257" name="Soulcleaver Greatblade" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="288a-3358-ad0a-c257" name="with Soulcleaver Greatblade" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="9133-0068-fbe4-9431" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="9133-0068-fbe4-9431" name="Soulcleaver Greatblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
@@ -293,7 +381,7 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="946b-9fd1-8c08-58eb" name="Mortek Guard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                <profile id="946b-9fd1-8c08-58eb" name="Mortek Guard with Soulcleaver Greatblade" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
                     <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
                     <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
@@ -308,64 +396,175 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ce78-f6c0-5632-daae" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="a1aa-5c9b-922f-2f19" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="43f7-edd3-8c0b-f80f" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f991-0f9a-0b8f-5d91" name="Mortek Guard Hekatos" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5ca0-42cf-2e35-c646" name="Morghast Archai" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="3097-55d9-7767-1996" name="Mortek Guard Hekatos" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="3b02-b1a8-428a-503d" name="Morghast Archai" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="dcd6-ac1b-3539-c664" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="8504-918c-85fb-7de7" name="Faction: Ossiarch Bonereapers" hidden="false" targetId="a038-0d36-58ec-dc0a" primary="false"/>
-        <categoryLink id="2595-6953-5d2e-fe43" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="df0a-9e1f-1932-19dc" name="Bulwark" hidden="false" targetId="e250-737c-002f-8734" primary="false"/>
+        <categoryLink id="7689-6d4d-9108-c153" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="baea-8e95-5564-196b" name="Profile" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="a7a2-3d59-f2d3-f920" name="with Spirit Halberd" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="d9a0-32be-6ab7-13b0" name="Spirit Halberd" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="58b5-276b-dd36-37fb" name="with Spirit Swords" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="b160-c630-5e8d-be4e" name="Spirit Swords" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c9e3-723a-f852-ba4a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="0847-88ca-0932-bd0f" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="a6c1-65e7-9da0-20f2" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="43f7-edd3-8c0b-f80f" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="533f-c7b6-b887-131c" name="Kavalos Deathriders Hekatos" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b960-23fa-1bbd-09e9" name="Immortis Guard" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="7408-73f9-2c5d-bec2" name="Kavalos Deathriders Hekatos" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="0071-ed16-e6fd-d137" name="Immortis Guard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
-        <profile id="bdca-824f-17d2-ab03" name="Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="426b-2686-f5b4-c731" name="Dread Halberd" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="85ab-3e27-c89f-2f8f" name="Faction: Ossiarch Bonereapers" hidden="false" targetId="a038-0d36-58ec-dc0a" primary="false"/>
-        <categoryLink id="d17e-810c-501e-53d7" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="ac4b-b3f7-807d-e4b7" name="Mount" hidden="false" targetId="818c-a6d8-cbf5-a958" primary="false"/>
-        <categoryLink id="21df-41e2-940e-3fa5" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
+        <categoryLink id="06ec-f7b0-397b-9ebf" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="6e0b-ce08-f036-c905" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="7b42-b66e-5d20-de94" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+            <entryLink id="1295-3555-e3f4-ad3a" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="43f7-edd3-8c0b-f80f" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="697f-b9c6-0313-12d9" name="Morghast Harbinger" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f2ec-bf22-d8f5-3cb4" name="Morghast Harbinger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c05d-d0fc-1f09-5d46" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ad48-62db-f7ff-91ac" name="Profile" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="acb8-4f82-9db8-2653" name="with Spirit Halberd" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f3be-0a35-75f1-4be3" name="Spirit Halberd" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e1a5-b77a-a422-6c33" name="with Spirit Swords" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="7b9c-f8eb-0d1e-4ee3" name="Spirit Swords" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1494-e740-7154-cddb" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="f921-71c4-a088-2843" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="43f7-edd3-8c0b-f80f" type="selectionEntry"/>
+            <entryLink id="12ae-7c56-d3fb-9cc5" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
+            <entryLink id="173c-6a28-5227-1450" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="bda9-f2b7-543b-59fe" name="Bringers of Death" targetId="d158-7b6e-593d-e30b" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
