@@ -1,93 +1,147 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fae-5c7e-e77c-4d26" name="Flesh-eater Courts" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fae-5c7e-e77c-4d26" name="Flesh-eater Courts" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="dbd4-4deb-04f1-c6ab" name="Crypt Flayer" hidden="false" collective="false" import="true" targetId="af17-452d-7fc8-05d8" type="selectionEntry"/>
-    <entryLink id="d4e3-1916-f7e4-1aee" name="Crypt Ghast" hidden="false" collective="false" import="true" targetId="dd66-c040-8de4-0fff" type="selectionEntry"/>
     <entryLink id="58aa-540d-5f7b-2552" name="Crypt Ghoul" hidden="false" collective="false" import="true" targetId="a47f-1b7f-85cf-7501" type="selectionEntry"/>
-    <entryLink id="79fd-4b2f-79fd-a411" name="Crypt Haunter" hidden="false" collective="false" import="true" targetId="acb0-03fd-b55d-6ae7" type="selectionEntry"/>
     <entryLink id="f5fe-1dc7-8107-cba9" name="Crypt Horror" hidden="false" collective="false" import="true" targetId="0d25-5594-1a4b-60dc" type="selectionEntry"/>
-    <entryLink id="5ef4-8ea7-492c-da92" name="Crypt Infernal" hidden="false" collective="false" import="true" targetId="48b3-56a4-3681-c7a4" type="selectionEntry"/>
   </entryLinks>
   <rules>
-    <rule id="0142-5a73-07f7-df13" name="⚁ [Double] Chosen of the King" hidden="true">
+    <rule id="35fe-5fe8-19bd-e008" name=" ⚁ [Double] Chosen of the King" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33bb-718e-3630-6bf2" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4612-b433-ee05-d1fd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>A fighter can use this abiltiy only if they are within 6&quot; of a visible friendly fighter with the leader runemark. Until the end of this fighters activation, add 2 to the attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+      <description>A fighter can use this abiltiy only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. Until the end of this fighters activation, add 2 to the attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.
+⠀</description>
     </rule>
-    <rule id="fd15-d8bc-0d0c-cdbf" name="⚁ [Double] Skewering Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33bb-718e-3630-6bf2" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0600-c649-d723-9878" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Add 1 to the Stregnth characteristic of the next attack action made by this fighter this activation that has a range characteristic of 3 or less. In addition, if that attack action scores a critical hit, until the end of the battle round, the target fighter cannot make move actions or disengage actions.</description>
-    </rule>
-    <rule id="a8d9-6938-38ff-0613" name="⚂ [Triple] Bringer of Death" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33bb-718e-3630-6bf2" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Add the value of this ability to the move characteristic of friendly fighters within 6&quot; of this fighter when this fighter uses this abiltiy, until the end of the battle round.</description>
-    </rule>
-    <rule id="8a77-a83a-29af-3a0a" name="⚁ [Double] Feeding Frenzy" hidden="true">
+    <rule id="f08c-46c9-781f-4475" name=" ⚁ [Double] Feeding Frenzy" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33bb-718e-3630-6bf2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Remove a number of damage points from this fighter equal to the value of this ability.</description>
+      <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Remove a number of damage points from this fighter equal to the value of this ability.
+⠀</description>
     </rule>
-    <rule id="4c0f-4172-4917-9a1e" name="⚂ [Triple] Death Scream" hidden="true">
+    <rule id="b40e-fdb0-c281-01c2" name=" ⚁ [Double] Skewering Strike" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33bb-718e-3630-6bf2" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0600-c649-d723-9878" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Roll 1 dice for each visible enemy fighter within 8&quot; of this fighter. On a 5, allocate 1 damge point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+      <description>Add 1 to the Stregnth characteristic of the next attack action made by this fighter this activation that has a range characteristic of 3 or less. In addition, if that attack action scores a critical hit, until the end of the battle round, the target fighter cannot make move actions or disengage actions.
+⠀</description>
     </rule>
-    <rule id="1d14-08c3-5be4-1950" name="⚃ [Quad] The Royal Hunt" hidden="true">
+    <rule id="477e-3358-a68c-badd" name=" ⚂ [Triple] Death Scream" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll 1 dice for each visible enemy fighter within 8&quot; of this fighter. On a 5, allocate 1 damge point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.
+⠀</description>
+    </rule>
+    <rule id="97d8-19ff-6769-4ea9" name=" ⚃ [Quad] The Royal Hunt" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33bb-718e-3630-6bf2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. In addition, add 1 to the attacks characteristic of that attack action if this fighter is within 1&quot; of a visible friendly fighter.</description>
+      <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. In addition, add 1 to the attacks characteristic of that attack action if this fighter is within 1&quot; of a visible friendly fighter.
+⠀</description>
+    </rule>
+    <rule id="add3-51ee-3b51-e13a" name=" ⚁ [Double] Unnatural Vitality" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Remove a number of damage points from this fighter equal to the value of this ability.
+⠀</description>
+    </rule>
+    <rule id="1272-a5bc-20a9-e4f0" name=" ⚂ [Triple] Bringer of Death" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the value of this ability to the Move characteristic of friendly fighters within 6&quot; of this fighter when this fighter uses this ability, until the end of the battle round.
+⠀</description>
+    </rule>
+    <rule id="9335-0bc3-7ba2-c888" name=" ⚂ [Triple] Stir of Black Hunger" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range charactertistic of 3 or less made by visible friendly fighters while they are within 9&quot; of this fighter.
+⠀</description>
+    </rule>
+    <rule id="a7ea-32fd-0f7e-f77c" name=" ⚂ [Triple] Terrifying Frenzy" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="963d-7869-b16b-e3ec" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.
+⠀</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -110,44 +164,10 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="a18d-de5f-cdfa-54f1" name="Faction: Flesh-eater Courts" hidden="false" targetId="33bb-718e-3630-6bf2" primary="false"/>
         <categoryLink id="130b-81f4-c5a1-1348" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="55.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="dd66-c040-8de4-0fff" name="Crypt Ghast" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="c04f-4c2c-bacf-97c6" name="Crypt Ghast" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c6ad-70ee-804c-21b5" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoGroups>
-        <infoGroup id="8381-319d-0341-288c" name="Runemark" hidden="false">
-          <infoLinks>
-            <infoLink id="1374-d473-3c16-8323" name="Leader" hidden="false" targetId="815c-025e-32e1-86b6" type="rule"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
-      <categoryLinks>
-        <categoryLink id="08c9-9715-fd8c-8519" name="Faction: Flesh-eater Courts" hidden="false" targetId="33bb-718e-3630-6bf2" primary="false"/>
-        <categoryLink id="48c2-9c00-642c-c1f6" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d25-5594-1a4b-60dc" name="Crypt Horror" hidden="false" collective="false" import="true" type="unit">
@@ -159,7 +179,7 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
-        <profile id="a319-7296-4763-1a25" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="a319-7296-4763-1a25" name="Septic Talons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
@@ -168,16 +188,7 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoGroups>
-        <infoGroup id="e9e1-9ee0-cbea-b015" name="Runemark" hidden="false">
-          <infoLinks>
-            <infoLink id="aecf-de92-e06d-f249" name="Elite" hidden="false" targetId="fa3f-ad9c-0d43-9acc" type="rule"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
       <categoryLinks>
-        <categoryLink id="8340-ceed-abfc-c98d" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
-        <categoryLink id="a62e-e349-3c70-e40a" name="Faction: Flesh-eater Courts" hidden="false" targetId="33bb-718e-3630-6bf2" primary="false"/>
         <categoryLink id="2984-e8c3-327a-d0f1" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <costs>
@@ -193,7 +204,7 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
-        <profile id="15ff-3460-3f0c-d737" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="15ff-3460-3f0c-d737" name="Piercing Talons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
@@ -202,95 +213,15 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoGroups>
-        <infoGroup id="700a-cf40-0e1f-903a" name="Runemark" hidden="false">
-          <infoLinks>
-            <infoLink id="7437-3084-083b-2567" name="Agile" hidden="false" targetId="1b2d-b20b-59c9-5dd1" type="rule"/>
-            <infoLink id="a63f-4dd9-3500-410d" name="Fly" hidden="false" targetId="c1f9-b53d-6ec9-3652" type="rule"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
       <categoryLinks>
-        <categoryLink id="806b-de13-1f22-8036" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
-        <categoryLink id="c8a4-bf6f-621d-3c31" name="Faction: Flesh-eater Courts" hidden="false" targetId="33bb-718e-3630-6bf2" primary="false"/>
         <categoryLink id="fd2b-3486-a67f-ec4b" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="2d3f-88e1-c05b-6602" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="acb0-03fd-b55d-6ae7" name="Crypt Haunter" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="23b3-59bc-e1a2-9e76" name="Crypt Haunter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">40</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5c71-f890-c0aa-542b" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoGroups>
-        <infoGroup id="e9fb-4da9-e89f-5db3" name="Runemark" hidden="false">
-          <infoLinks>
-            <infoLink id="f907-97cb-58b4-4cce" name="Elite" hidden="false" targetId="fa3f-ad9c-0d43-9acc" type="rule"/>
-            <infoLink id="e766-870d-2620-a0ad" name="Leader" hidden="false" targetId="815c-025e-32e1-86b6" type="rule"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
-      <categoryLinks>
-        <categoryLink id="6967-8d6c-5ada-de8d" name="Elite" hidden="false" targetId="4612-b433-ee05-d1fd" primary="false"/>
-        <categoryLink id="c5a5-fdf6-a41b-6a38" name="Faction: Flesh-eater Courts" hidden="false" targetId="33bb-718e-3630-6bf2" primary="false"/>
-        <categoryLink id="2db1-2ee5-80e8-a131" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="48b3-56a4-3681-c7a4" name="Crypt Infernal" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="d7ab-b092-62ac-17f3" name="Crypt Infernal" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">40</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6298-475d-4238-c44f" name="Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoGroups>
-        <infoGroup id="b04f-7580-ed39-7c44" name="Runemark" hidden="false">
-          <infoLinks>
-            <infoLink id="a6bb-efd3-3068-d913" name="Agile" hidden="false" targetId="1b2d-b20b-59c9-5dd1" type="rule"/>
-            <infoLink id="ebe7-5467-8797-09ea" name="Leader" hidden="false" targetId="815c-025e-32e1-86b6" type="rule"/>
-            <infoLink id="646f-e7ff-e501-5d71" name="Fly" hidden="false" targetId="c1f9-b53d-6ec9-3652" type="rule"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
-      <categoryLinks>
-        <categoryLink id="1306-fe62-ce5c-f360" name="Agile" hidden="false" targetId="0600-c649-d723-9878" primary="false"/>
-        <categoryLink id="ce76-14bc-497a-aae3" name="Faction: Flesh-eater Courts" hidden="false" targetId="33bb-718e-3630-6bf2" primary="false"/>
-        <categoryLink id="e3bf-357e-b835-0b08" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-        <categoryLink id="b830-2433-e23d-e969" name="Leader" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="300.0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="f909-e16c-31bc-a689" name="Bringers of Death" targetId="d158-7b6e-593d-e30b" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
