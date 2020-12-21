@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="cd90-6863-ac10-6491" name="Death - Monsters and Thrall" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="8e3b-a938-6659-64e8" name="Bat Swarm" hidden="false" collective="false" import="true" targetId="0c61-80be-1634-1136" type="selectionEntry"/>
+    <entryLink id="c0e7-fb8d-a281-811c" name="Dire Wolf" hidden="false" collective="false" import="true" targetId="5430-5b09-6da9-b810" type="selectionEntry"/>
+    <entryLink id="e487-0255-14c8-b631" name="Fell Bat" hidden="false" collective="false" import="true" targetId="bc6d-71bd-d851-7a8d" type="selectionEntry"/>
+    <entryLink id="194e-f714-c20d-7195" name="Terrorgheist" hidden="false" collective="false" import="true" targetId="149f-50e6-22e8-5bc8" type="selectionEntry"/>
+    <entryLink id="807e-0291-1a39-4f01" name="Zombie Dragon" hidden="false" collective="false" import="true" targetId="4dde-4733-71c8-84fc" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="3b53-94b4-4ff8-4c8c" name="⚁ [Double] Blood Suckers" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7467-1d3f-5f2b-d92f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter with 1&quot; of this fighter. Allocate D6 damage points to that fighter. Then, you can remove a number of damage points from this fighter equal to the roll.</description>
+    </rule>
+    <rule id="d2fb-56d5-6805-f3c0" name="⚁ [Double] Slavering Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7467-1d3f-5f2b-d92f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
+    </rule>
+    <rule id="2065-28ab-9c63-3800" name="⚂ [Triple] Scent of Gore" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7467-1d3f-5f2b-d92f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible enemy fighter within 1&quot; of them that has 5 or more damage points allocated to them. This fighter makes a bonus attack action.</description>
+    </rule>
+    <rule id="cc26-3142-97e5-026c" name="⚁ [Double] Swooping Dive" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adbe-d031-0874-83cb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+    </rule>
+    <rule id="02ef-e08f-6fa7-3abe" name="⚂ [Triple] Death Scream" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adbe-d031-0874-83cb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll 1 dice for each visible enemy fighter within 8&quot; of this fighter. On a 5, allocate 1 damage point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+    </rule>
+    <rule id="fb0f-9161-d381-5d12" name="⚃ [Quad] Infested with Bats" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adbe-d031-0874-83cb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can only use this ability if 10 or more damage points have been allocated to them. Allocate a number of damage points to all visible enemy fighters within 3&quot; of this fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="c015-b5aa-e3f4-c5fd" name="⚁ [Double] Swooping Dive" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adbe-d031-0874-83cb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+    </rule>
+    <rule id="1f33-6599-b629-261c" name="⚂ [Triple] Sword-like Claws" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adbe-d031-0874-83cb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="a277-3050-2445-240a" name="⚃ [Quad] Pestilent Breath" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adbe-d031-0874-83cb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a dice for that fighter and each other fighter within 3&quot; of that fighter. On a 2-5 allocate a number of damage points to the fighter being rolled for equal to the value of this ability. On a 6, allocate a number of damage points to the fighter being rolled for equal to double the value of this ability.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="0986-18ac-7a0d-db82" name=" -----Below Are Death Specific Runemarks-----" hidden="true" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1667-99b1-21c5-c8c5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c1-b3cc-ab06-bb79" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7467-1d3f-5f2b-d92f" name=" Death" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b6-8881-5d04-8b78" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa9f-1a6a-a6ff-c341" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="adbe-d031-0874-83cb" name=" Monsters of Death" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a8-f248-598e-bad6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9630-8907-5bb2-0a4e" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c61-80be-1634-1136" name="Bat Swarm" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="bb1a-f49c-bd34-a881" name="Bat Swarm" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a408-f8cb-7ed3-147d" name="Razor Sharp Teeth" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f1aa-4cee-55b0-37aa" name="New CategoryLink" hidden="false" targetId="aadf-5830-72a8-d164" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0cd1-0e8d-3744-af78" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="866e-cfb2-a93f-719e" name=" Death" hidden="false" collective="false" import="true" targetId="7467-1d3f-5f2b-d92f" type="selectionEntry"/>
+            <entryLink id="6466-36a6-46e5-f93a" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
+            <entryLink id="9a0f-6976-d6d6-8022" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="cdde-400a-d6bf-c2f7" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5430-5b09-6da9-b810" name="Dire Wolf" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6d2a-726f-62fa-b9eb" name="Dire Wolf" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2f7c-2d26-6842-68ab" name="Rotting Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="15f5-a8cc-da7f-e25d" name="New CategoryLink" hidden="false" targetId="aadf-5830-72a8-d164" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4025-2762-4566-8abe" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="2183-94b3-d412-0806" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
+            <entryLink id="7c5b-48cb-671a-2689" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
+            <entryLink id="290b-7471-f445-3f5d" name=" Death" hidden="false" collective="false" import="true" targetId="7467-1d3f-5f2b-d92f" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc6d-71bd-d851-7a8d" name="Fell Bat" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b489-0b3b-dbf7-baa6" name="Fell Bat" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5eab-07dc-5a1f-48b0" name="Elongated Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4819-97d4-7b5f-04b6" name="New CategoryLink" hidden="false" targetId="aadf-5830-72a8-d164" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="393b-de3c-217b-325e" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9c46-db75-71c2-2acb" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
+            <entryLink id="ca69-9520-feef-b793" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
+            <entryLink id="37f0-ffde-3653-7def" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="6633-f5da-c1b6-3ff6" name=" Death" hidden="false" collective="false" import="true" targetId="7467-1d3f-5f2b-d92f" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="149f-50e6-22e8-5bc8" name="Terrorgheist" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7618-08b7-8825-906f" name="Terrorgheist" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">✹</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">50</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7078-4ae2-1d82-ddc1" name="Fanged Maw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">✹/✹</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="be62-c3fd-5771-32e2" name="Damage Table" hidden="false">
+          <profiles>
+            <profile id="7324-74b7-89c2-64f0" name="00-10" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">12</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0275-3c6d-c525-a101" name="11-20" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">10</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d553-d98e-5fde-b837" name="21-30" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">8</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4fe4-30cf-b4cc-764c" name="31-40" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">6</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">2/4</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4cc3-bb50-c2a5-d169" name="41-49" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">4</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">1/2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="ae49-a368-2cbc-88be" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="18de-447c-329f-8582" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="f029-f57c-0cf5-8ac4" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="ae60-9508-8871-eb3d" name=" Monsters of Death" hidden="false" collective="false" import="true" targetId="adbe-d031-0874-83cb" type="selectionEntry"/>
+            <entryLink id="e760-a226-037e-c46d" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
+            <entryLink id="2a9d-8342-34f3-c285" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="350.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4dde-4733-71c8-84fc" name="Zombie Dragon" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e94e-cef1-e1b0-26a0" name="Zombie Dragon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">✹</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">50</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="49a9-23cc-16e7-2945" name="Snapping Maw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">✹/✹</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="5206-522e-70c1-840c" name="Damage Table" hidden="false">
+          <profiles>
+            <profile id="917e-9608-3ab8-f67f" name="00-10" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">12</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="b4af-f0ae-8732-2260" name="11-20" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">10</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="dd73-69d2-c643-9476" name="21-30" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">8</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d6b5-a37e-4165-91bf" name="31-40" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">6</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">2/4</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7d80-fca1-2df0-a54c" name="41-49" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">4</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">1/2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="a4ba-045e-6d2a-f296" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a5cf-52fb-5257-d426" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="56ff-2942-a973-5dc8" name=" Monsters of Death" hidden="false" collective="false" import="true" targetId="adbe-d031-0874-83cb" type="selectionEntry"/>
+            <entryLink id="3f31-3dbe-84c6-b77a" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
+            <entryLink id="38dc-75a5-17dd-aa7c" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="d01f-96a6-acd1-0ee9" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="360.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
