@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="cfcb-75c3-fbab-5305" name="Destruction - Monsters and Thrall" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="880a-807a-5ce0-b5eb" name="Aleguzzler Gargant" hidden="false" collective="false" import="true" targetId="dceb-17a9-0b8f-2ca7" type="selectionEntry"/>
+    <entryLink id="7349-73ad-f3d8-566a" name="Dankhold Troggoth" hidden="false" collective="false" import="true" targetId="b4ef-48db-ef3c-a050" type="selectionEntry"/>
+    <entryLink id="5ab6-1164-9ef3-7ca4" name="Fellwater Troggoth" hidden="false" collective="false" import="true" targetId="4f4a-3efe-0670-138d" type="selectionEntry"/>
+    <entryLink id="7d3e-1300-2007-26ee" name="Rockgut Troggoth" hidden="false" collective="false" import="true" targetId="fb36-a236-fb2f-0a00" type="selectionEntry"/>
+    <entryLink id="ab08-cd23-eaee-b858" name="Skitterstrand Arachnarok" hidden="false" collective="false" import="true" targetId="a1c8-3551-ff1b-12a8" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="fd83-2e02-c301-973e" name=" -----Below Are Destruction Specific Runemarks-----" hidden="true" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9504-df97-ee2b-7d10" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b8d-fe7d-14ac-18a4" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="870d-f73d-b0aa-f59f" name=" Monsters of Destruction" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fad-a110-2654-3ff7" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb87-3de3-e93c-affc" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dceb-17a9-0b8f-2ca7" name="Aleguzzler Gargant" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9679-7e7f-26b4-7ed7" name="Aleguzzler Gargant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">✹</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">50</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="83af-5fcd-1c1e-82f4" name="Massive Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">✹/✹</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="e543-c57d-f932-6d12" name="Damage Table" hidden="false">
+          <profiles>
+            <profile id="7287-1bd6-cea2-0712" name="0-10" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">6</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2618-d6f5-088a-848d" name="11-20" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">5</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2df2-e475-98ef-488f" name="21-30" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">4</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4845-ba22-55fa-695b" name="31-40" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">3</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/4</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ebf9-cf02-5b99-d03b" name="41-49" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">2</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">2/4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="6581-ea99-11dc-0f05" name="Aleguzzler Abilities" hidden="false" targetId="9394-f59e-e35e-8f32" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8610-2b1a-00dd-ef31" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e103-1468-0e45-f0e2" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="99c7-c3a0-79d9-57ee" name=" Monsters of Destruction" hidden="false" collective="false" import="true" targetId="870d-f73d-b0aa-f59f" type="selectionEntry"/>
+            <entryLink id="f76f-5404-ac60-8341" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+            <entryLink id="db5f-1dc8-1091-753a" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="305.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a1c8-3551-ff1b-12a8" name="Skitterstrand Arachnarok" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="2d8f-1c1f-af54-6fcf" name="Skitterstrand Arachnarok" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">✹</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">55</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="01d5-0c51-ebe2-d7d4" name="Monstrous Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">✹/✹</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="6a16-7eb0-7066-3900" name="Damage Table" hidden="false">
+          <profiles>
+            <profile id="2aaa-493e-a85d-8045" name="0-10" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">6</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e6e5-f4ba-8316-bdd5" name="11-20" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd"/>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f"/>
+              </characteristics>
+            </profile>
+            <profile id="fc5a-191d-1291-cc7f" name="21-30" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd"/>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f"/>
+              </characteristics>
+            </profile>
+            <profile id="abee-d799-3593-9b62" name="31-40" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd"/>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f"/>
+              </characteristics>
+            </profile>
+            <profile id="f5e1-fb1c-06c2-2e4b" name="41-54" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd"/>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="fdfc-31cc-bd39-4a43" name="Skitterstrand Arachnarok Abilities" hidden="false" targetId="4028-b8e0-15e5-ff65" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="54dc-f230-04f3-82a1" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5b0b-684b-2923-bc7d" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="96ab-a1d5-2dfc-1c05" name=" Monsters of Destruction" hidden="false" collective="false" import="true" targetId="870d-f73d-b0aa-f59f" type="selectionEntry"/>
+            <entryLink id="4510-b78a-c533-d646" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
+            <entryLink id="72f1-f3e7-de77-537e" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="325.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="250a-b51a-9e31-4205" name=" Destruction" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f4-d54d-3e7f-d2f5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe28-c5c8-4c2e-b9e8" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b4ef-48db-ef3c-a050" name="Dankhold Troggoth" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8430-759c-5a9a-f5fe" name="Boulder Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">✹/✹</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e534-9758-c354-807a" name="Dankhold Troggoth" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">✹</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">48</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="f647-f40c-0576-f7da" name="Damage Table" hidden="false">
+          <profiles>
+            <profile id="4e75-e710-0633-d440" name="0-10" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">5</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ced2-1c27-4283-87b0" name="11-20" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">5</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aae8-3b16-4d5d-290f" name="21-30" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">4</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="fccc-d82b-228c-7b44" name="31-40" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">4</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/4</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="48e7-518e-6161-4039" name="41-47" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">3</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">2/4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="f95a-4f8f-c559-4911" name="Dankhold Troggoth Abilities" hidden="false" targetId="1966-f1fa-2c89-1090" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6217-67bc-9f90-c042" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="74ae-cfad-d642-43ff" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="6e2a-e2b5-5c71-2efe" name=" Destruction" hidden="false" collective="false" import="true" targetId="250a-b51a-9e31-4205" type="selectionEntry"/>
+            <entryLink id="14b5-8a0d-4004-44f3" name=" Ferocious" hidden="false" collective="false" import="true" targetId="8b52-047b-c9e1-3386" type="selectionEntry"/>
+            <entryLink id="849b-e5bf-0d07-0fce" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="285.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f4a-3efe-0670-138d" name="Fellwater Troggoth" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7f70-1111-77bb-8a7e" name="Fellwater Troggoth" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">28</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7471-47f9-793f-6b0c" name="Creek Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5267-579c-684a-7e65" name="Destruction Thrall Abilities" hidden="false" targetId="9d0c-0961-18f8-ac6d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="052f-e506-440c-ec98" name="New CategoryLink" hidden="false" targetId="aadf-5830-72a8-d164" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1320-9e7b-ec3e-2c01" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9b12-9371-13a1-d076" name=" Destruction" hidden="false" collective="false" import="true" targetId="250a-b51a-9e31-4205" type="selectionEntry"/>
+            <entryLink id="156d-0fbd-5128-1618" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
+            <entryLink id="53e6-8fdf-b5c5-b45c" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fb36-a236-fb2f-0a00" name="Rockgut Troggoth" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="bc6f-0429-9f74-7e12" name="Rockgut Troggoth" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">28</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf60-fecb-f685-5d84" name="Massive Stone Maul" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="85c7-173c-5630-a341" name="Destruction Thrall Abilities" hidden="false" targetId="9d0c-0961-18f8-ac6d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2e5c-d208-345f-bcb3" name="New CategoryLink" hidden="false" targetId="aadf-5830-72a8-d164" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3fba-271a-a45b-3539" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="0323-7589-d778-37be" name=" Destruction" hidden="false" collective="false" import="true" targetId="250a-b51a-9e31-4205" type="selectionEntry"/>
+            <entryLink id="540f-e150-1a1f-2850" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+            <entryLink id="384e-ef9d-2bff-7f84" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="9394-f59e-e35e-8f32" name="Aleguzzler Abilities" hidden="false">
+      <rules>
+        <rule id="55ae-99d5-270b-b6aa" name="⚁ [Double] Druken Stagger" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a number of dice equal to the value of this ability. For each 1-2, subtract 1 from this fighter’s Move characteristic until the end of this fighter’s activation. For each 3+, add 1 to this fighter’s Move characteristic until the end of this fighter’s activation
+⠀</description>
+        </rule>
+        <rule id="ad6b-35c1-fd42-0a6a" name="⚂ [Triple] Mighty Kick" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1” of an enemy fighter, pick a visible enemy fighter within 1” of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.
+⠀</description>
+        </rule>
+        <rule id="f09c-b2c9-92e1-d986" name="⚃ [Quad] Vicious &apos;Eadbutt" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 1” of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate a number of damage points to that fighter equal to the value of this ability.
+⠀</description>
+        </rule>
+      </rules>
+    </infoGroup>
+    <infoGroup id="4028-b8e0-15e5-ff65" name="Skitterstrand Arachnarok Abilities" hidden="false">
+      <rules>
+        <rule id="b3b1-dcec-f404-bf80" name="⚁ [Double] Wall Crawler" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter’s activation, do not count the vertical distance moved when this fighter is climbing.
+⠀</description>
+        </rule>
+        <rule id="3995-5035-7f98-4821" name="⚂ [Triple] Paralysing Venom" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter’s activation, after each attack action made by this fighter, roll a dice. On a 2+, until the end of the battle round, the target of that attack action cannot make move actions or disengage actions.
+⠀</description>
+        </rule>
+        <rule id="e36c-734b-17b2-0155" name="⚃ [Quad] Dragged Victim" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter within 1” of this fighter. Remove that fighter from the battlefield and set them up within 1” of this fighter. Then this fighter makes a bonus attack action against that fighter.
+⠀</description>
+        </rule>
+      </rules>
+    </infoGroup>
+    <infoGroup id="9d0c-0961-18f8-ac6d" name="Destruction Thrall Abilities" hidden="false">
+      <rules>
+        <rule id="f718-db1d-6a1f-c08b" name="⚁ [Double] Noxious Vomit" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="250a-b51a-9e31-4205" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a number of dice equal to the value of this ability. For each 4+, pick 1 visible enemy fighter within 6” of this fighter. Allocate D3 damage points to that fighter.
+⠀</description>
+        </rule>
+        <rule id="57f4-66a7-50c2-e89c" name="⚁ [Double] Troggoth Regrowth" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="250a-b51a-9e31-4205" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Remove a number of damage points from this fighter equal to the value of this ability.
+⠀</description>
+        </rule>
+      </rules>
+    </infoGroup>
+    <infoGroup id="1966-f1fa-2c89-1090" name="Dankhold Troggoth Abilities" hidden="false">
+      <rules>
+        <rule id="f04c-bc38-080e-97bf" name="⚁ [Double] Squiggly-beast Followers" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a dice for each visible enemy fighter within 3” of this fighter. If the roll is less than or equal to the value of this ability, allocate 1 damage point to the fighter being rolled for.
+⠀</description>
+        </rule>
+        <rule id="365f-9372-a6aa-c920" name="⚁ [Double] Troggoth Regrowth" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Remove a number of damage points from this fighter equal to the value of this ability.
+⠀</description>
+        </rule>
+        <rule id="7cf3-8974-30e3-9408" name="⚂ [Triple] Crushing Grip" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick 1 visible enemy fighter within 1” of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 2 damage points to that fighter.
+⠀</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
+</catalogue>

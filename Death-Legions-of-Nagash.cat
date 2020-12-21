@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e6a3-a595-afb6-98aa" name="Legions of Nagash" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e6a3-a595-afb6-98aa" name="Death - Legions of Nagash" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="0a7a-c447-f469-77a4" name="Skeleton Warrior" hidden="false" collective="false" import="true" targetId="8502-ac42-f751-3114" type="selectionEntry"/>
     <entryLink id="ab1a-e3a7-eef0-b18e" name="Skeleton Champion" hidden="false" collective="false" import="true" targetId="b845-e123-8708-4dc5" type="selectionEntry"/>
@@ -10,145 +10,32 @@
     <entryLink id="a079-b166-c1e3-dc2c" name="Vargheist" hidden="false" collective="false" import="true" targetId="a795-52ab-bea7-0d26" type="selectionEntry"/>
     <entryLink id="43bf-4b66-d6af-4fa1" name="Blood Knight" hidden="false" collective="false" import="true" targetId="e15b-d7c2-9fc6-b761" type="selectionEntry"/>
     <entryLink id="72e4-5804-40e3-5821" name="Zombie" hidden="false" collective="false" import="true" targetId="1de9-e86f-c94e-514c" type="selectionEntry"/>
+    <entryLink id="3050-805b-445a-b9bb" name="Kastellan" hidden="false" collective="false" import="true" targetId="9482-96c5-d89f-df60" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dbf8-bc26-d642-5c14" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0fa5-a5b2-8e20-65f8" name="Necromancer" hidden="false" collective="false" import="true" targetId="f8cc-45fe-e5c0-ed19" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c1ad-a3a3-d1c8-a8e1" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b991-acd2-9d2e-03fd" name="Vampire Lord" hidden="false" collective="false" import="true" targetId="8a38-9456-82bd-82f1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e8a4-6900-414b-6c4a" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="962e-acb6-fba2-b262" name="Vargoyle" hidden="false" collective="false" import="true" targetId="cbee-8755-2d19-c3e8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a2ec-a88c-c3bb-29e3" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e047-8f3d-2bbe-04fc" name="Wight King" hidden="false" collective="false" import="true" targetId="b924-efab-58dd-2944" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4fc4-fa45-a8e3-69f6" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
-  <rules>
-    <rule id="e21d-07e7-e5db-1e0d" name="⚃ [Quad] Vanhel’s Danse Macabre" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A number of visible friendly fighters equal to the value of this ability that are within 6&quot; of this fighter can each make a bonus move action or a bonus attack action (some can make bonus move actions and others bonus attack actions).</description>
-    </rule>
-    <rule id="7037-6bb3-5ee3-071d" name="⚂ [Triple] Summon Undead" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter that has been taken down. Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter. The fighter set up on the battlefield no longer counts as being taken down. Remove a number of damage points allocated to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="3795-a23c-f15c-1132" name="⚂ [Triple] Necrotic Siphon" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible friendly fighter within 6&quot; of this fighter. Allocate a number of damage points to that fighter equal to value of this ability. Then, remove a number of damage points from this fighter equal to double the value of this ability.</description>
-    </rule>
-    <rule id="395e-3ef4-cc4a-f543" name="⚁ [Double] Cursed Weapon" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter’s activation, add 1 to the damage points allocated by hits and critical hits from attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
-    </rule>
-    <rule id="a3ec-9f85-79f9-229e" name="⚁ [Double] Chosen Champion" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can only use this ability if they are within 6&quot; of a visible friendly fighter with the Leader runemark. Add 1 to the Attacks and Strength characteristics of attack actions made by this fighter this activation.</description>
-    </rule>
-    <rule id="09b1-6b96-9b42-6129" name="⚁ [Double] Shambling Horde" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus move action of a number of inches equal to half the value of this ability (rounding up).</description>
-    </rule>
-    <rule id="bc3c-86f7-54eb-c6a8" name="⚂ [Triple] Blood-maddened Feeding Frenzy" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
-    </rule>
-    <rule id="805f-3dba-81ae-7d58" name="⚂ [Triple] Thirst for Blood" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. You can remove a number of damage points equal to the value of this ability from this fighter.</description>
-    </rule>
-    <rule id="ac37-3907-9c48-7fe1" name="⚃ [Quad] Deathly Charge" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4082-2408-4a29-431a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f03-c585-1ede-64c6" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action with 1&quot; of an enemy fighter, pick 1 visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that enemy fighter equal to the value of this ability.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="b845-e123-8708-4dc5" name="Skeleton Champion" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -172,10 +59,10 @@
         <categoryLink id="b0e3-c2ba-45ef-4f08" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="309d-0cdc-addd-09ad" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="309d-0cdc-addd-09ad" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="6cfc-6038-523e-0c53" name=" Champion" hidden="false" collective="false" import="true" targetId="2da4-597a-7aab-a5d8" type="selectionEntry"/>
-            <entryLink id="e435-07f6-f423-599b" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
+            <entryLink id="e435-07f6-f423-599b" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -237,9 +124,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="80f7-2bad-18be-a3c4" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="80f7-2bad-18be-a3c4" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
-            <entryLink id="6220-78d8-145b-125e" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
+            <entryLink id="56d6-99d4-cbb8-75af" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -269,11 +156,11 @@
         <categoryLink id="3a02-769f-47bd-36c3" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8a17-d771-a8d8-0295" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="8a17-d771-a8d8-0295" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="1c52-fe89-d653-a2b7" name=" Champion" hidden="false" collective="false" import="true" targetId="2da4-597a-7aab-a5d8" type="selectionEntry"/>
-            <entryLink id="927a-533d-b3ee-a06f" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
             <entryLink id="3a00-1587-0236-e9c9" name=" Elite" hidden="false" collective="false" import="true" targetId="f907-d5f0-c688-5596" type="selectionEntry"/>
+            <entryLink id="d758-c0d6-bb23-7f99" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -340,10 +227,10 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="78e2-b90e-3c81-55b5" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="78e2-b90e-3c81-55b5" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="fe5d-2d26-1a2d-2cdf" name=" Elite" hidden="false" collective="false" import="true" targetId="f907-d5f0-c688-5596" type="selectionEntry"/>
-            <entryLink id="3a79-2d6e-e58f-49a1" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
+            <entryLink id="8ed9-4d14-03cb-ddd8" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -370,11 +257,11 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="b623-ec23-78b8-f766" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="b623-ec23-78b8-f766" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="ff5c-e577-244c-9813" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
-            <entryLink id="a077-e473-b79e-7d0e" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
             <entryLink id="d73d-7e48-de78-aa97" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
+            <entryLink id="8a6b-e43f-bae1-8117" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -401,11 +288,11 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="7be1-7016-acb2-a01b" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="7be1-7016-acb2-a01b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="699b-f707-98ec-b46a" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
-            <entryLink id="9112-66a7-7eb0-f280" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
             <entryLink id="072e-7d38-5201-51af" name=" Ferocious" hidden="false" collective="false" import="true" targetId="8b52-047b-c9e1-3386" type="selectionEntry"/>
+            <entryLink id="4960-3d06-8a5c-7776" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -435,9 +322,9 @@
         <categoryLink id="665d-22b6-f48b-7773" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fc3b-f745-f585-03ad" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="fc3b-f745-f585-03ad" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
-            <entryLink id="bac8-8b03-c158-988b" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
+            <entryLink id="fcb2-4b31-9abf-d538" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -467,11 +354,11 @@
         <categoryLink id="a660-8b44-5536-182a" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9f74-2ab7-cb13-af5a" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="9f74-2ab7-cb13-af5a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="2a71-b89f-5a20-d365" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
-            <entryLink id="55bf-7fe5-fb9a-21a4" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
             <entryLink id="28d1-7882-29d2-54d0" name=" Champion" hidden="false" collective="false" import="true" targetId="2da4-597a-7aab-a5d8" type="selectionEntry"/>
+            <entryLink id="42e3-dace-096d-d477" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -501,10 +388,10 @@
         <categoryLink id="be86-2f0c-6307-d75d" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0e2d-256c-3ae4-071e" name="Runemarks" hidden="false" collective="false" import="true" targetId="6a16-c531-5d7e-1bf9" type="selectionEntryGroup">
+        <entryLink id="0e2d-256c-3ae4-071e" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="8c4e-837d-6564-d373" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
-            <entryLink id="d269-642d-d04b-0f9b" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="4082-2408-4a29-431a" type="selectionEntry"/>
+            <entryLink id="5d96-1789-5bce-c3a1" name=" Legions of Nagash" hidden="false" collective="false" import="true" targetId="1160-6e5f-fd22-e017" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -515,5 +402,9 @@
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink id="75f2-c25a-37c6-0f1a" name="Bringers of Death" targetId="d158-7b6e-593d-e30b" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="0711-440d-9ad3-0ab3" name="Death - Legions of Nagash - Leaders &amp; Abilities" targetId="c14c-25b6-29c2-7999" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="54ed-79bc-c007-f4ed" name="Death - Flesh-eater Courts - Leaders &amp; Abilities" targetId="cf05-61ad-1a74-2e9d" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="aea6-c792-7784-c2c8" name="Death - Nighthaunt - Leaders &amp; Abilities" targetId="ca25-8654-18e2-80ee" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="4a1e-da5d-fbd1-59e3" name="Death - Ossiarch Bonereapers - Leaders &amp; Abilities" targetId="5d26-1f23-e0cf-7fd1" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
