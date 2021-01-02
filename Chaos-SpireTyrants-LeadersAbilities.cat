@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e2b2-b639-6904-7f45" name="Chaos - Spire Tyrants - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="b3bb-104c-a716-07cf" name="Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="e683-4281-bd93-ab23" name="⚁ [Double] Gladiator&apos;s Net" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll 1 dice. On a 3+, that fighter cannot make move actions or disengage actions this battle round.</description>
+    </rule>
+    <rule id="3ddb-0d96-a75d-652c" name="⚁ [Double] Pit Fighter" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false"/>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter can make a bonus move action or a bonus attack action.</description>
+    </rule>
+    <rule id="ff3e-1d60-785a-7750" name="⚁ [Double] Shield Ram" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action, pick a visible enemy fighter within 1&quot; of this fighter and roll 1 dice. On a 4-5, allocate 1 damage point to that fighter. On a 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="9fb4-bf4a-04f8-463d" name="⚂ [Triple] Champion of the Warpits" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attack characteristic of attack actions made by visible enemy friendly fighters within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="02bb-631f-1a27-65c0" name="⚂ [Triple] Readied Stance" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Toughness characteristic of this fighter.</description>
+    </rule>
+    <rule id="cd77-a3c1-2e3d-ccaa" name="⚃ [Quad] Brutal Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll 1 dice. On a 3-4, allocate a number of damage points to that fighter equal to the value of this ability. On a 5-6, allocate a number of damage points to that fighter equal to double the value of this ability.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="8e60-89e1-0ef5-f4d8" name=" Spire Tyrants" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e019-6df4-fdc0-7e70" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4bc-a9bd-3f1b-37d2" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bad5-b298-a63e-84ef" name="Pit Champion" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="08df-3556-2d69-7655" name="Pit Champion" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3bb5-13a6-4e47-268d" name="Champion&apos;s Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="35e3-0c85-a917-ea79" name="Champion&apos;s Flail" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="bbd6-33cf-c354-4022" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="2400-1098-fb1c-dff4" name=" Spire Tyrants" hidden="false" collective="false" import="true" targetId="8e60-89e1-0ef5-f4d8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

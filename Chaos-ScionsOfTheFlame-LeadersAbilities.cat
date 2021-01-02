@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="cacd-96e0-fd5f-f570" name="Chaos - Scions of the Flame - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="18b9-a7f9-2f11-f31b" name="Blazing Lord" hidden="false" collective="false" import="true" targetId="6f5e-e759-b0fe-ddf3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="c1a9-ecf9-2a1e-b242" name=" Scions of the Flame" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2a-fbad-710f-d2f5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b529-bf15-cae2-4532" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f5e-e759-b0fe-ddf3" name="Blazing Lord" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="5a04-ffa2-869b-a923" name="Blazing Lord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="af5e-fb40-7bb0-0025" name="Blazing Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="407d-5967-a3e6-c3be" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="a88d-1d16-1f4e-3573" name=" Scions of the Flame" hidden="false" collective="false" import="true" targetId="c1a9-ecf9-2a1e-b242" type="selectionEntry"/>
+            <entryLink id="fcd1-f70c-1b53-de05" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="c8da-22a9-5b37-39af" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

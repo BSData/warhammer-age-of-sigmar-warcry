@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="2620-3d07-db7f-a9c3" name="Trueblood" hidden="false" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="2521-e8e9-fc07-cafb" name="⚁ [Double] Ensnaring Net" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 3&quot; of this fighter. Until the end of the battle round, that enemy fighter cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="0848-39bc-6392-6617" name="⚁ [Double] Fanged Buckler" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to the fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="168e-f729-5fc6-f409" name="⚁ [Double] Poisoned Weapon" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the Strength characteristic of attack actions made by this fighter count as being higher than the target&apos;s Toughness characteristic.</description>
+    </rule>
+    <rule id="fdaa-2f2b-7ce6-b588" name="⚂ [Triple] Relentless Killer" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use tis ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus attack action.</description>
+    </rule>
+    <rule id="955c-92f5-ce4e-a49f" name="⚂ [Triple] Snake Charmer" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action.</description>
+    </rule>
+    <rule id="e136-dd5d-8b85-c55c" name="⚃ [Quad] Paralysing Venom" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, add the value of this ability to the damage points allocated by cirtical hits from the attack actions made by this fighter, and after each attack action made by this fighter, roll a dice. On a 5-6, until the end of the battle round the target fighter cannot make move actions or disengage actions.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="6f05-2073-9ce2-f486" name=" Splintered Fang" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7a8-55be-73da-6c20" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a04-6ca8-1514-3053" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e1ee-3979-d517-cd72" name="Trueblood" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e3a4-a366-a127-47d9" name="Trueblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6458-634b-6a44-60dd" name="Trueblood Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="18ee-48d3-c5e0-1e20" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="5b8a-9551-b4aa-1dff" name=" Splintered Fang" hidden="false" collective="false" import="true" targetId="6f05-2073-9ce2-f486" type="selectionEntry"/>
+            <entryLink id="295e-070c-00fb-4dad" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

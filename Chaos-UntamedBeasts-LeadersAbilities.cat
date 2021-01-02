@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="cf03-91c9-9a61-033b" name="Heart-eater" hidden="false" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="d3f3-b404-f5a4-486f" name="⚁ [Double] All-out Attack" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or bonus attack action.</description>
+    </rule>
+    <rule id="d6fe-3ff8-2377-c48e" name="⚁ [Double] Beastmaster" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible friendly fighter with the Beast runemakr within 4&quot; of this fighter. That fighter makes a bonus attack action.</description>
+    </rule>
+    <rule id="6575-d0d2-efab-1247" name="⚁ [Double] Savage Fury" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Move chracteristic of this fighter for the next move action they make this activation, and add 1 to the Attacks characteristic of the next attack action they make this activation.</description>
+    </rule>
+    <rule id="6e29-be17-a350-8532" name="⚂ [Triple] Harpoon Snag" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus attack action. After that attack action, the fighter targeted by that attack action makes a bonus move action directly towards this fighter, as if they were jumping, a number of inches equal to the value of this ability.</description>
+    </rule>
+    <rule id="f443-f0f7-99ea-4c8c" name="⚂ [Triple] Pounce" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="91f7-72e1-20b6-a8e4" name="⚃ [Quad] Unleash the Beast" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks and Strength characteristic of attack actions made by this fighter that have a Ranger characteristic of 3 or less.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="ac73-08a5-d40f-f17f" name=" Untamed Beasts" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9102-3cac-42d8-b2d7" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3af-47dd-ba80-8c90" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ce06-d39d-9e4d-655f" name="Heart-eater" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="6064-6bfd-a676-5acf" name="Heart-eater" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d39e-6d96-3535-49c8" name="Heart-eater Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="f31e-fac8-8dcc-dc03" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="5ce4-1228-41d5-a303" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="6d2e-e5fc-52f0-2e13" name=" Untamed Beasts" hidden="false" collective="false" import="true" targetId="ac73-08a5-d40f-f17f" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

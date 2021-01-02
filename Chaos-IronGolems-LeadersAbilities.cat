@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="3159-79eb-657a-183a" name="Chaos - Iron Golems - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="1e44-6174-d49f-a4d6" name="Dominar" hidden="false" collective="false" import="true" targetId="7876-4740-b001-6d38" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="25c5-50e7-34b5-c54e" name="⚁ [Double] Lead with Strength" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken own by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
+    </rule>
+    <rule id="75b0-3203-7dc8-a8bc" name="⚁ [Double] Spine-crushing Blow" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the value of this ability to the Strength characteristic of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="3c96-b48b-2069-ec03" name="⚁ [Double] Throw Bolas" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of a 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="bed2-6dcf-8296-25ab" name="⚂ [Triple] Living Battering Ram" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="15c3-032a-089c-c974" name="⚂ [Triple] Stand Defiant" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Toughness characteristic of friendly fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="aea4-3eda-2cf8-f700" name="⚃ [Quad] Whirlwind of Death" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate a number of damage point to all visible enemy fighters within 3&quot; of this fighter equal to the value of this ability.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="9792-49be-c38f-a7aa" name=" Iron Golems" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93f8-c067-a1c1-a482" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0a2-82ad-a28b-8c3f" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7876-4740-b001-6d38" name="Dominar" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b791-11fa-9e19-fd3d" name="Dominar" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4cb5-2583-696a-6f5b" name="Dominar Legion Weapon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="0c39-b62c-ef2b-5e38" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="67f5-4c97-ff52-0f00" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+            <entryLink id="d774-7bfb-4a43-1cdf" name=" Iron Golems" hidden="false" collective="false" import="true" targetId="9792-49be-c38f-a7aa" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

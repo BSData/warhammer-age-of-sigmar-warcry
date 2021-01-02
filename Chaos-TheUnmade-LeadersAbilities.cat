@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="539c-4240-de44-47a2" name="Blissful One" hidden="false" collective="false" import="true" targetId="46b1-88e8-371e-e832" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="1924-4611-1786-afb0" name="⚁ [Double] Barbed Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, if any attack action made by this fighter scores any hits or critical hits, subtract 1 from the Toughness characteristic (to a minimum of 1) of the target fighter until the end of the battle round.</description>
+    </rule>
+    <rule id="8b94-68c9-880b-d11b" name="⚁ [Double] Chain Garrotte" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick an enemy fighter within 5&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="6fcd-47f2-f222-0f63" name="⚁ [Double] Nightmarish Visage" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick an enemy fighter within a number of inches of this fighter equal to the value of this ability and roll a dice. On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="0754-9eb7-53da-4e67" name="⚂ [Triple] Flaying Frenzy" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter. On a 3-4, allocate 1 damage point to the fighter being rolled for.On a 5-6, allocate a number of damage points ot the fighter being rolled for equal to the value of this ability.</description>
+    </rule>
+    <rule id="4859-78c5-451c-f1ec" name="⚂ [Triple] Vessel of Torment" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+    </rule>
+    <rule id="1b43-bb00-62ce-2964" name="⚃ [Quad] Gift of Agony" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus attack action. Add 1 to the Strength characteristics of that attack action if this fighter has any damage points allocated to them.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="40d5-3504-9a35-5bef" name=" The Unmade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7528-9db4-6c6c-71df" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa7f-a8ce-6b72-4ddd" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="46b1-88e8-371e-e832" name="Blissful One" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="bf2a-e463-3a6c-5ab6" name="Nightmare Sickles" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6002-7ee2-b4a4-214b" name="Blissful One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="36ff-8c6d-b5fb-6424" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="c6c1-a53a-24ea-7a2b" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="2c79-67aa-272a-7194" name=" The Unmade" hidden="false" collective="false" import="true" targetId="40d5-3504-9a35-5bef" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

@@ -403,4 +403,14 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="cfa0-ed89-dc32-1e75" name="Runemarks" hidden="false" collective="false" import="true"/>
   </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="dd17-5f25-3a66-0d5a" name="Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
+        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+        <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d9e1-8075-c6ae-7f95" name="Chaos - Cypher Lords - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="9f8d-6eae-199d-5f9e" name="Thrallmaster" hidden="false" collective="false" import="true" targetId="70db-8d8e-f47e-1438" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="203a-6e83-6cf1-c4c0" name="⚁ [Double] Acrobatic Leap" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false"/>
+      </modifiers>
+      <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;.</description>
+    </rule>
+    <rule id="79e5-dfdd-0272-9795" name="⚁ [Double] Low Sweeping Blow" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll 1 dice for each visible enemy fighter within 2&quot; of this fighter. On a 4-5, allocate 1 damage point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+    </rule>
+    <rule id="bde2-9453-35f1-c3e4" name="⚁ [Double] Throwing Stars and Chakrams" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false"/>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="758f-77b7-cb3f-d697" name="⚂ [Triple] Shadowy Recall" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter with the Minion runemark that is within 12&quot; of this fighter. Remove that fighter from the battlefield and then immediately set them up anywhere on the battlefield within a number of inches of this fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="e17c-c0ca-ad47-e1e0" name="⚂ [Triple] Shattered Gloom Globe" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of the attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="5bd8-af32-8a3a-69f6" name="⚃ [Quad] Spinning Somersault Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false"/>
+      </modifiers>
+      <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;. In addition, this fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="c9c9-4a59-c145-6f2c" name=" Cypher Lords" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b77-55dc-fa2e-d87a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9e6-4191-a2ec-3694" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="70db-8d8e-f47e-1438" name="Thrallmaster" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="6a2a-efdd-afab-8076" name="Thrallmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="05d8-b8e9-bb3c-88f1" name="Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="8afa-6646-4aec-f898" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="7c64-2dbd-af60-ec14" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="74b3-5779-e8ab-d474" name=" Cypher Lords" hidden="false" collective="false" import="true" targetId="c9c9-4a59-c145-6f2c" type="selectionEntry"/>
+            <entryLink id="a4a9-2538-c933-f7ff" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
