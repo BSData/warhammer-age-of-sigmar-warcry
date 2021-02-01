@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="3da7-5571-9064-9a44" name="Order - Khainite Shadowstalkers - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="e3c1-0697-9124-ae4e" name="Shroud Queen" hidden="false" collective="false" import="true" targetId="a2b1-27bd-fff6-7dfb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="3afb-c4b4-2b84-cb68" name=" Khainite Shadowstalkers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="887f-7195-055a-a7c8" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bd3-2c9e-8460-b6ca" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a2b1-27bd-fff6-7dfb" name="Shroud Queen" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="fdc9-5a1c-834a-3cf5" name="Shroud Queen" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3188-9f86-acb7-9431" name="Cursed Missiles" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">4</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0ee2-5459-484e-3fc1" name="Umbral Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="ffbe-8410-13f2-c343" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="ddbb-a804-17bd-6a03" name=" Khainite Shadowstalkers" hidden="false" collective="false" import="true" targetId="3afb-c4b4-2b84-cb68" type="selectionEntry"/>
+            <entryLink id="604d-8df6-2a04-01d6" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="721f-c1f2-aa50-2215" name="Umbral Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+        <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

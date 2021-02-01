@@ -1,133 +1,158 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0624-cb15-b0e5-ff95" name="Seraphon" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0624-cb15-b0e5-ff95" name="Order - Seraphon" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink id="b7fe-8a05-0c52-5795" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" targetId="98f5-9221-ad8f-1784" type="selectionEntry"/>
-    <entryLink id="f140-1de9-b4d4-ee7f" name="Ripperdactyl Rider Alpha " hidden="false" collective="false" import="true" targetId="a12a-0b6e-0a03-0d30" type="selectionEntry"/>
-    <entryLink id="79db-a788-0a03-96d5" name="Saurus Alpha Guardian" hidden="false" collective="false" import="true" targetId="32e2-1cfe-c1e3-fcfe" type="selectionEntry"/>
-    <entryLink id="cf68-0f1d-289d-12b4" name="Saurus Alpha Knight" hidden="false" collective="false" import="true" targetId="ff67-c633-9587-0105" type="selectionEntry"/>
-    <entryLink id="7fee-a818-a6fa-b37b" name="Saurus Alpha Talon" hidden="false" collective="false" import="true" targetId="e073-a10c-681f-c857" type="selectionEntry"/>
-    <entryLink id="3c26-7f7d-caff-9914" name="Saurus Guard" hidden="false" collective="false" import="true" targetId="7925-7e1b-7181-2b52" type="selectionEntry"/>
-    <entryLink id="d97c-9d42-dad0-b1b5" name="Saurus Knight" hidden="false" collective="false" import="true" targetId="ddbe-5de9-a4e6-5d6b" type="selectionEntry"/>
-    <entryLink id="e4c1-dd00-e067-7fc3" name="Saurus Warrior" hidden="false" collective="false" import="true" targetId="1884-53b3-588d-5b96" type="selectionEntry"/>
-    <entryLink id="09aa-6eb5-8a1c-68c1" name="Skink" hidden="false" collective="false" import="true" targetId="f3c1-592d-4b0b-077b" type="selectionEntry"/>
-    <entryLink id="6116-ce54-d835-4b43" name="Skink Alpha" hidden="false" collective="false" import="true" targetId="b676-e00e-35b6-bd4c" type="selectionEntry"/>
-    <entryLink id="845b-15b9-bdf8-f9c3" name="Terradon Rider" hidden="false" collective="false" import="true" targetId="c37b-8ef7-b443-5eda" type="selectionEntry"/>
-    <entryLink id="c341-1179-0366-d87e" name="Terradon Rider Alpha" hidden="false" collective="false" import="true" targetId="a050-02b9-cabc-cae9" type="selectionEntry"/>
-  </entryLinks>
-  <rules>
-    <rule id="3d78-4977-b37d-9e95" name="⚁ [Double] Cold-blooded Commander" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d50-0ab6-f937-3410" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or bonus attack action.</description>
-    </rule>
-    <rule id="04fb-4154-6877-3f7b" name="⚁ [Double] Voracious Appetite" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bae7-393b-28ca-cd4b" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damange point to that fighter.</description>
-    </rule>
-    <rule id="521e-eb55-349a-d2f6" name="⚂ [Triple] Rain Meteoric Barrage" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db8a-903d-5a81-7b2f" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="2cbd-181b-1321-7fe9" name="⚂ [Triple] Tearing Bite" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="596f-ef0a-d93e-64de" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Add the value of his ability to the damage points allocated by each hit or critical hit from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
-    </rule>
-    <rule id="4b37-799d-14fa-d5e8" name="⚃ [Quad] Wrath of the Old Ones" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks and Strength charateristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
-    </rule>
-    <rule id="3d5c-ed5d-625f-db73" name="⚁ [Double] Nimble Retreat" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a52-1624-a4c6-3d90" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if they are within 1&quot; of an enemy fighter. This fighter makes a bonus disengage action.</description>
-    </rule>
-  </rules>
-  <sharedSelectionEntries>
-    <selectionEntry id="f3c1-592d-4b0b-077b" name="Skink" hidden="false" collective="false" import="true" type="model">
+    <entryLink id="10d5-dc71-9780-d8b3" name="Kroxigor" hidden="false" collective="false" import="true" targetId="52f7-e364-0eaf-c89a" type="selectionEntry"/>
+    <entryLink id="79cc-7f93-729b-f611" name="Razordon" hidden="false" collective="false" import="true" targetId="51e0-5525-2cb8-9234" type="selectionEntry"/>
+    <entryLink id="467a-a524-dec4-7317" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" targetId="0e0b-460c-a2ab-5049" type="selectionEntry"/>
+    <entryLink id="8d4d-e1c6-8988-2910" name="Saurus Guard" hidden="false" collective="false" import="true" targetId="21e7-0222-5382-3b42" type="selectionEntry"/>
+    <entryLink id="2025-7fb8-f346-313d" name="Salamander" hidden="false" collective="false" import="true" targetId="d181-4cba-436c-18de" type="selectionEntry"/>
+    <entryLink id="a1e8-b7c9-e576-c36f" name="Saurus Knight" hidden="false" collective="false" import="true" targetId="8593-cd65-37cc-2ee3" type="selectionEntry"/>
+    <entryLink id="4c1c-2146-1459-fbae" name="Saurus Warrior" hidden="false" collective="false" import="true" targetId="5902-179d-b13d-2201" type="selectionEntry"/>
+    <entryLink id="7478-3b1e-e6a5-359d" name="Terradon Rider" hidden="false" collective="false" import="true" targetId="5034-371c-a10b-59aa" type="selectionEntry"/>
+    <entryLink id="a59c-57ce-38b5-a72f" name="Skink Handler" hidden="false" collective="false" import="true" targetId="5ba5-d396-7e00-191a" type="selectionEntry"/>
+    <entryLink id="33e7-ea14-136b-7ee6" name="Ripperdactyl Chief" hidden="false" collective="false" import="true" targetId="9147-e090-4937-63ce" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="9e8d-619e-0d9a-97c6" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="5e5c-dd8b-6572-869e" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="6276-0862-5265-c675" name="Minion" hidden="false" targetId="16a6-2b54-bd8b-f8e5" primary="false"/>
+        <categoryLink id="b34c-725f-8ef5-24b0" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e2ca-71dc-ac30-d48c" name="Ripperdactyl Rider Alpha" hidden="false" collective="false" import="true" targetId="df28-7e92-93b3-10a1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6552-a7db-d02e-63e3" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="01db-c777-2ee8-84ee" name="Saurus Astrolith Bearer" hidden="false" collective="false" import="true" targetId="a4cd-02c2-1697-9f3f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="decb-e117-0afb-b384" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="724f-8d51-f0a0-aab1" name="Saurus Eternity Warden" hidden="false" collective="false" import="true" targetId="1638-cfb7-6387-db41" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f8c7-63d4-422d-5ec6" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f3cc-7484-40cc-e516" name="Saurus Guard Alpha" hidden="false" collective="false" import="true" targetId="e338-ffaa-41e6-29aa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8efe-81f4-ff90-73c0" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="848c-52e7-e9a4-7c2a" name="Saurus Knight Alpha" hidden="false" collective="false" import="true" targetId="0077-99ed-f7e7-8354" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1abd-b744-6132-5567" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ec38-fb09-2328-3352" name="Saurus Oldblood" hidden="false" collective="false" import="true" targetId="9df7-b6e3-dcad-eb25" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="29de-cd3a-8a8a-691f" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3338-66ce-77d6-5946" name="Saurus Scar-veteran on Cold One" hidden="false" collective="false" import="true" targetId="fba8-6c28-6d34-b193" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6d60-59f8-aa8d-bf5c" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="571a-fa9d-18fd-efba" name="Saurus Sunblood" hidden="false" collective="false" import="true" targetId="8849-0c9c-52b1-14be" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="95a7-9d9e-e11c-2ae1" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e9ac-6057-ba8c-aae5" name="Saurus Warrior Alpha" hidden="false" collective="false" import="true" targetId="992e-6730-3c5b-d1e3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3e12-94cf-9824-756d" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="290a-03fe-f565-a2e4" name="Skink Priest" hidden="false" collective="false" import="true" targetId="077d-1570-fddb-f018" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a259-49a9-a269-680a" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="456d-5767-43c1-cf8d" name="Skink Starpriest" hidden="false" collective="false" import="true" targetId="2939-bdd5-82c3-1d01" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="643a-2d64-e90a-ac7f" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="72b7-4254-4ab4-fe3c" name="Skink Starseer" hidden="false" collective="false" import="true" targetId="356e-260d-cf65-2851" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0f96-0762-a077-17cd" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="aa56-3198-486d-8457" name="Slann Starmaster" hidden="false" collective="false" import="true" targetId="85e6-79cd-73e9-1602" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4336-0975-483a-b578" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c545-c59e-4bfa-ba81" name="Terradon Chief" hidden="false" collective="false" import="true" targetId="de0b-2669-6d8d-ee33" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0c55-41f4-8b23-bce0" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cfc2-ff01-fb07-ad62" name="Terradon Rider Alpha" hidden="false" collective="false" import="true" targetId="48f7-1537-070c-fdb0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0eff-b3a1-4abd-35ff" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e93b-04df-a92b-1257" name="Skink" hidden="false" collective="false" import="true" targetId="3cca-0457-25d8-f223" type="selectionEntry"/>
+    <entryLink id="ce22-2b4b-239a-c6e0" name="Skink Alpha" hidden="false" collective="false" import="true" targetId="9c4a-1df9-69b0-af6d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="66e7-3c7b-13cd-8ac8" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="3cca-0457-25d8-f223" name="Skink" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Meteoric Javelin and Star-buckler">
+          <conditions>
+            <condition field="selections" scope="3cca-0457-25d8-f223" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd39-28c5-bab4-79fc" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Boltspitter and Moonstone Club">
+          <conditions>
+            <condition field="selections" scope="3cca-0457-25d8-f223" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a99b-35dd-5cac-6338" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Moonstone Club and Star-buckler">
+          <conditions>
+            <condition field="selections" scope="3cca-0457-25d8-f223" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce62-944a-e1d7-9a62" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="9ba4-dfe6-ddac-a532" name="Skink" hidden="false" targetId="2290-ede0-38dc-d681" type="profile">
+          <modifiers>
+            <modifier type="set" field="68cf-bb2c-bce1-e83e" value="3">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cca-0457-25d8-f223" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce62-944a-e1d7-9a62" type="atLeast"/>
+                    <condition field="selections" scope="3cca-0457-25d8-f223" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd39-28c5-bab4-79fc" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ccc5-f4fe-283e-39a2" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cea1-7b5c-02db-559d" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea1d-4da7-b75f-5a6b">
+        <selectionEntryGroup id="233a-bee7-f4ec-2db8" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce62-944a-e1d7-9a62">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d9c-2199-28e8-08a5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a0-c779-e88b-9dac" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ec-b953-6d2c-36be" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac7-c827-cfed-c021" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3a2e-ff92-e22d-0c7b" name="Metoric Javelin and Star-buckler" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ce62-944a-e1d7-9a62" name="with Moonstone Club and Star-buckler" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="04fc-5905-df09-818d" name="Moonstone Club" hidden="false" targetId="2c24-141f-4201-60e8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fd39-28c5-bab4-79fc" name="with Meteoric Javelin and Star-buckler" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="8596-2590-1d30-1015" name="Skink with Star-buckler" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="0a8a-b292-e26b-5b0a" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="fe96-12c9-d30c-9297" name="Meteoric Javelin" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">1</characteristic>
@@ -135,7 +160,7 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="4b65-1778-017d-69bd" name="Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="431b-8dd3-7636-fc89" name="Celestite Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
@@ -145,19 +170,12 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9ed4-b0d8-c76e-9810" name="Boltspitter and Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a99b-35dd-5cac-6338" name="with Boltspitter and Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="6900-8607-06c0-5d6a" name="Skink" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="3124-d6be-e2c0-0d35" name="Ranged" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="cd5c-337b-4c74-146a" name="Boltspitter" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">12</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
@@ -165,78 +183,176 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="f817-1500-ea94-357b" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="bda0-18e0-8058-8a4d" name="Moonstone Club" hidden="false" targetId="2c24-141f-4201-60e8" type="profile"/>
+              </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ea1d-4da7-b75f-5a6b" name="Moonstone Club and Star Buckler" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="80cf-90ea-3f85-ae2e" name="Skink with Star-buckler" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="dca6-28f6-b8d2-76c7" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7285-f668-ff07-1ccd" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="371c-5a8f-2d7f-200c" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+            <entryLink id="5fc7-412f-6ee1-959e" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b676-e00e-35b6-bd4c" name="Skink Alpha" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5034-371c-a10b-59aa" name="Terradon Rider" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Starstrike Javelin">
+          <conditions>
+            <condition field="selections" scope="5034-371c-a10b-59aa" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3af0-93f5-9c4b-43d0" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Sunleech Bolas">
+          <conditions>
+            <condition field="selections" scope="5034-371c-a10b-59aa" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c7dd-1794-c719-92b7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
-        <profile id="7e6b-b541-33ce-3776" name="Skink Alpha" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="f58c-da3d-1cd2-ccbd" name="Terradon Rider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">12</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="72bb-e8db-463d-829c" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="30a3-42b9-6f52-5b8e" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="b430-06ec-ec9f-3d8d" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="67b4-83e2-fff5-5afd" name="Minion" hidden="false" targetId="16a6-2b54-bd8b-f8e5" primary="false"/>
+        <categoryLink id="0555-50b1-9ee0-d314" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="52bf-8c76-87d2-fbd7" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="c7dd-1794-c719-92b7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18a7-0d8b-43fb-e06d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c264-e98d-135f-3a87" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c7dd-1794-c719-92b7" name="with Sunleech Bolas" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="df57-3852-55eb-533e" name="Sunleech Bolas" hidden="false" targetId="05c8-c87b-f3ec-0e90" type="profile"/>
+                <infoLink id="a31f-52bf-816a-ff4a" name="Razor-sharp Jaw" hidden="false" targetId="f46c-ac51-edfa-2331" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3af0-93f5-9c4b-43d0" name="with Starstrike Javelin" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="5fff-ec73-a845-7716" name="Starstrike Javelin" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="39e1-9207-453c-bdff" name="Razor-sharp Jaw" hidden="false" targetId="f46c-ac51-edfa-2331" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b225-7d68-fa20-6347" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="aa5d-80d3-b617-cb8c" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="c4c7-b92a-7b86-6a43" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="5bfb-e464-a649-d78b" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1884-53b3-588d-5b96" name="Saurus Warrior" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0e0b-460c-a2ab-5049" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="9e22-234b-22ca-c6a6" name="Saurus Warrior" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="f2c5-f449-f72f-3e51" name="Ripperdactyl Rider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5e32-0867-fd98-2274" name="Tearing Jaws" hidden="false" targetId="74c1-39bf-cc85-e12c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="05a0-6874-a53d-9401" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e41e-a9bf-fd84-92e9" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="4fd9-00ec-cf85-3412" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="aa35-45a5-2b33-d39f" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="0a81-16a2-f40f-be18" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="21e7-0222-5382-3b42" name="Saurus Guard" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7507-cec0-1e97-8101" name="Saurus Guard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8e89-6710-9640-b3d5" name="Celestite Polearm" hidden="false" targetId="8452-3765-f91a-cf91" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d5d0-490b-b5d3-8209" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6783-75c4-2ca1-39fd" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="214a-9bb9-f5da-d618" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="c88d-cc00-4a17-938e" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5902-179d-b13d-2201" name="Saurus Warrior" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Celestite Spear">
+          <conditions>
+            <condition field="selections" scope="5902-179d-b13d-2201" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05de-4ddb-4c43-1657" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Celestite Club">
+          <conditions>
+            <condition field="selections" scope="5902-179d-b13d-2201" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84d8-ae27-e090-b2b1" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="06ca-ac96-12e2-73cc" name="Saurus Warrior" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
@@ -245,19 +361,26 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="7ec8-b408-dc97-c738" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="afaf-e068-92c0-6a59" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="2b0d-6b80-abc6-3e41" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="84fb-c9a1-b277-0964" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e53-9905-f59c-8807">
+        <selectionEntryGroup id="3431-b418-84dc-0ad2" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="84d8-ae27-e090-b2b1">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83e9-43f0-b56b-cf4b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8e3-0899-9adc-d4b3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b64-4eba-e96d-2b45" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39cd-23f8-e020-06ec" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c7c7-eb54-eb84-1ab3" name="Celestite Spear" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="84d8-ae27-e090-b2b1" name="with Celestite Club" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="be13-ad36-e2ec-7071" name="Celestite Club" hidden="false" targetId="e19b-65f5-cfe7-ca11" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="05de-4ddb-4c43-1657" name="with Celestite Spear" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="0c18-cede-196f-6a07" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="f81a-7ebf-eb4c-30aa" name="Celestite Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
@@ -270,58 +393,36 @@
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9e53-9905-f59c-8807" name="Celestite Club" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="42b6-bbe6-ab69-f29b" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="de51-1e45-8cc5-4d30" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="80ff-068f-b7b4-16a9" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+            <entryLink id="601e-88f5-b214-3b84" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e073-a10c-681f-c857" name="Saurus Alpha Talon" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8593-cd65-37cc-2ee3" name="Saurus Knight" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Celestite Blade">
+          <conditions>
+            <condition field="selections" scope="8593-cd65-37cc-2ee3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7876-4f52-a674-6f68" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Celestite Warspear">
+          <conditions>
+            <condition field="selections" scope="8593-cd65-37cc-2ee3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92a4-06b7-8a13-75c8" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
-        <profile id="54fb-14a0-c1a1-b028" name="Saurus Alpha Talon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="19a6-0025-3042-a1e4" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d"/>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="557a-a9a1-0d1f-5a71" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="4504-48b2-fdb2-f9ac" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="2e1e-3923-e270-fab3" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ddbe-5de9-a4e6-5d6b" name="Saurus Knight" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="4651-959e-c20f-5770" name="Saurus Knight" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="6731-8fbb-dcda-07d2" name="Saurus Knight" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
@@ -330,21 +431,18 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="fcac-966b-f5e5-9104" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="afd3-51a3-e8b1-cf7a" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="0b05-ae97-66c7-8403" name="Mount" hidden="false" targetId="818c-a6d8-cbf5-a958" primary="false"/>
-        <categoryLink id="4c78-be5c-0133-1949" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
+        <categoryLink id="6746-fc74-445f-2cb7" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7b3b-8e51-efe6-e83b" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a1c-5c05-5f7b-2bfc">
+        <selectionEntryGroup id="1b8f-943b-3069-f2ad" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="7876-4f52-a674-6f68">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9034-9969-746c-573c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ade-0872-5fb9-e07f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ec3-e7ab-d9da-afa6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aca-6347-c90b-ee4e" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c5a5-da75-c26c-2f63" name="Celestite Lance" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="92a4-06b7-8a13-75c8" name="with Celestite Warspear" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="c2bc-f06b-d083-87b2" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="4a60-5c0a-2b64-f759" name="Celestite Warspear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
@@ -357,17 +455,10 @@
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4a1c-5c05-5f7b-2bfc" name="Celestite Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c9bb-78c9-6f9e-3adc" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+            <selectionEntry id="7876-4f52-a674-6f68" name="with Celestite Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="f3d2-9c89-a5e4-cb7f" name="Celestite Blade" hidden="false" targetId="86a9-bcf6-f294-6bf6" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
@@ -375,259 +466,162 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="343a-1f61-f234-5b47" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="345b-0c98-a09d-eb86" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="dbdd-67fa-185e-64bb" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+            <entryLink id="6914-431c-03ff-5e32" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ff67-c633-9587-0105" name="Saurus Alpha Knight" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="52f7-e364-0eaf-c89a" name="Kroxigor" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="9e46-f7a9-35c2-ffc8" name="Saurus Alpha Knight" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="24b4-cc0c-b3f4-fe3f" name="Kroxigor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">32</characteristic>
           </characteristics>
         </profile>
-        <profile id="8330-2a0b-cab2-4bfc" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="e2c2-4263-82a8-9a49" name="Drakebite Maul" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6
+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="429e-755d-0cca-42fe" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="274f-d6d2-04d0-6564" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="b0ad-3cf7-4801-4890" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-        <categoryLink id="72cf-b1b5-ada7-c9b1" name="Mount" hidden="false" targetId="818c-a6d8-cbf5-a958" primary="false"/>
+        <categoryLink id="92a8-5f56-d2d9-5b66" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="4394-8624-ffff-696a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="161c-cbcf-c021-553e" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="c60c-a34c-13d6-c9b0" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7925-7e1b-7181-2b52" name="Saurus Guard" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5ba5-d396-7e00-191a" name="Skink Handler" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="a040-60f1-edce-db07" name="Saurus Guard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e38b-7cc3-1a4a-1433" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="5f49-0e6f-fe54-a6dc" name="Celestite Goad" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="0e2d-197b-9d38-b990" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="3f22-4f3a-555e-ea7f" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="f896-4554-2c36-9a11" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="32e2-1cfe-c1e3-fcfe" name="Saurus Alpha Guardian" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="a002-e14a-6c70-040a" name="Saurus Alpha Guardian" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5c8c-0d94-c1e8-405f" name="Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="8148-5ca6-0329-1ea2" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="4b61-0de7-50b5-d59b" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="f5ff-9f23-9611-7ed1" name="Warrior" hidden="false" targetId="596f-ef0a-d93e-64de" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a12a-0b6e-0a03-0d30" name="Ripperdactyl Rider Alpha " hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="4e64-2599-0888-d64e" name="Ripperdactyl Rider Alpha " hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="bf46-78ca-5eb5-ec00" name="Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="b06d-a839-9c79-1612" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="d0f5-0e04-d428-f363" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="e6de-3e59-bd43-a23a" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
-        <categoryLink id="7ceb-e8c3-c652-0c04" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a050-02b9-cabc-cae9" name="Terradon Rider Alpha" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="d21a-5d41-0de6-e97d" name="Terradon Rider Alpha" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">12</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="476b-90e4-66cc-fb32" name="Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="42fa-bb4e-1072-4db1" name="Reach" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="8c08-38ce-c0e7-947c" name="Skink" hidden="false" targetId="2290-ede0-38dc-d681" type="profile"/>
+      </infoLinks>
       <categoryLinks>
-        <categoryLink id="5770-58b6-3eff-d477" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="ae2c-cee3-6243-16ae" name="New CategoryLink" hidden="false" targetId="4d50-0ab6-f937-3410" primary="true"/>
-        <categoryLink id="01e0-7a9c-7760-53e8" name="Frenzied" hidden="false" targetId="db8a-903d-5a81-7b2f" primary="false"/>
-        <categoryLink id="98e7-ec49-508d-f344" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
+        <categoryLink id="e820-f69e-34cf-7bcd" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="08dc-dd7b-cd8e-3e6c" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8145-3fbc-97d6-c39e" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="b676-a372-0722-37a8" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+            <entryLink id="392e-a4ff-5b30-94cc" name=" Trapper" hidden="false" collective="false" import="true" targetId="dd95-1c17-a923-4487" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="98f5-9221-ad8f-1784" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="d181-4cba-436c-18de" name="Salamander" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="89ef-6787-7d31-b4b3" name="Ripperdactyl Rider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="7d36-255e-1730-6e0e" name="Salamander" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f113-50f4-c41e-820b" name="Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="13b9-23fe-d130-32ab" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="e653-d2ae-6c9b-e816" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="ac5b-276e-a33f-2297" name="Destroyer" hidden="false" targetId="bae7-393b-28ca-cd4b" primary="false"/>
-        <categoryLink id="c2ba-b4f6-0930-67f4" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c37b-8ef7-b443-5eda" name="Terradon Rider" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="da4b-14fd-9df9-acf5" name="Terradon Rider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">12</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="17f2-ba4e-7281-737d" name="Stream of Fire" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">7</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="7ecd-1d63-25cf-d5e0" name="Faction: Seraphon" hidden="false" targetId="6a52-1624-a4c6-3d90" primary="false"/>
-        <categoryLink id="09c6-ebe9-b2dd-6919" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="0429-4590-2d3d-c282" name="Fly" hidden="false" targetId="967d-cd09-6501-9d53" primary="false"/>
-        <categoryLink id="bbc0-3d4b-62a0-9693" name="Frenzied" hidden="false" targetId="db8a-903d-5a81-7b2f" primary="false"/>
+        <categoryLink id="8ef0-edc0-dcd8-8515" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4252-cb63-41da-af25" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="69dd-b04a-832a-426b">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2864-1c12-a182-da40" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bdb-0c13-2d7a-3945" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="69dd-b04a-832a-426b" name="Sunleech Bolas" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="37d4-c0e2-3ae2-d761" name="Reach" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="a184-e014-cb9d-6bfd" name="Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4d4d-53c1-7456-0c74" name="Starstrike Javelin" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="111d-c196-bd2b-163a" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="abdc-4836-3137-fb15" name="Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a648-7a73-839d-10c6" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="2059-5d52-0b83-11e9" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="2b58-cda6-687a-8f28" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="51e0-5525-2cb8-9234" name="Razordon" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ea22-e8cf-f9bc-0032" name="Razordon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320d-4d56-546a-4f80" name="Volley of Spikes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">12</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a306-e104-0312-21a2" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c373-c716-a5ba-a07c" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="298d-b0a5-92de-8fda" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="4094-b571-39cd-fc4a" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="2290-ede0-38dc-d681" name="Skink" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+      <characteristics>
+        <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+        <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+        <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink id="941b-a50f-bd96-7aa5" name="Order - Seraphon - Leaders &amp; Abilities" targetId="dc67-9928-1654-d38a" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="b691-1b6a-fdcd-289b" name="Order - Sentinels of Order" targetId="847f-9e09-b8ed-e556" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
