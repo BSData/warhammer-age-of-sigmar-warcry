@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e383-b36f-ff8a-bdb0" name="Destruction - Ironjawz" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e383-b36f-ff8a-bdb0" name="Destruction - Ironjawz" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="08c3-8761-e3f0-1edb" name="Gore-Grunta Boss" hidden="false" collective="false" import="true" targetId="c7e6-3418-b8e6-0084" type="selectionEntry">
       <categoryLinks>
@@ -37,8 +37,20 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8115-b175-4311-6b75" name="Orruk Gore-Grunta" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Jagged Gore-hacka">
+          <conditions>
+            <condition field="selections" scope="8115-b175-4311-6b75" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9ed-5897-b743-3911" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Pig-iron Choppa">
+          <conditions>
+            <condition field="selections" scope="8115-b175-4311-6b75" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c866-8c4f-141d-b5e2" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
-        <profile id="b4a2-bfd0-1098-1cb6" name="Gore-Grunta Boss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="b4a2-bfd0-1098-1cb6" name="Orruk Gore-Grunta" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
@@ -103,12 +115,29 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="637a-76a7-3322-86a6" name="Orruk Brute" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Gore-choppa">
+          <conditions>
+            <condition field="selections" scope="637a-76a7-3322-86a6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf66-bad5-2e41-3269" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Jagged Gore-hacka">
+          <conditions>
+            <condition field="selections" scope="637a-76a7-3322-86a6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b3-5c7f-9d89-953e" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Pair of Brute Choppas">
+          <conditions>
+            <condition field="selections" scope="637a-76a7-3322-86a6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7da8-f07a-b995-7027" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
-        <profile id="f328-5091-4363-83d9" name="Brute Boss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="f328-5091-4363-83d9" name="Orruk Brute" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -116,7 +145,7 @@
         <categoryLink id="2390-8f92-21e5-c095" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ffa2-5404-f3a5-c6ab" name="Profiles" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ffa2-5404-f3a5-c6ab" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="20b3-5c7f-9d89-953e">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b4-35ed-63af-1890" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d1b-205a-caf4-a461" type="max"/>
@@ -149,7 +178,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cf66-bad5-2e41-3269" name="with Gore-choppa" hidden="false" collective="false" import="true" type="upgrade">
@@ -164,7 +193,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -183,11 +212,28 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d99e-1b43-1be3-42e5" name="Orruk Ardboy" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Ardboy Big Choppa">
+          <conditions>
+            <condition field="selections" scope="d99e-1b43-1be3-42e5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d613-a6eb-a535-911d" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Ardboy Choppas">
+          <conditions>
+            <condition field="selections" scope="d99e-1b43-1be3-42e5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="34b9-0014-8b3d-7e0b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Ardboy Choppa and Orruk-forged Shield">
+          <conditions>
+            <condition field="selections" scope="d99e-1b43-1be3-42e5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46f5-881a-43ab-104d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="f9e2-be83-8e15-7d99" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8f6d-865d-40f3-3449" name="Profiles" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8f6d-865d-40f3-3449" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="34b9-0014-8b3d-7e0b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5d4-78b5-ff38-a9e7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="665e-b41c-6b3d-ca58" type="max"/>
@@ -279,9 +325,6 @@
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink id="602a-cc09-748c-6bb9" name="Destruction - Ironjawz - Leaders &amp; Abilities" targetId="801b-086b-5917-1b23" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="5137-d32a-4c31-d269" name="Destruction - Monsters and Thrall" targetId="cfcb-75c3-fbab-5305" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="4ef1-efdd-aafc-98da" name="Destruction - Bonesplitterz - Leaders &amp; Abilities" targetId="129d-bc58-2263-7706" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="4f10-ccff-76ca-bb82" name="Destruction - Gloomspite Gitz - Leaders &amp; Abilities" targetId="9551-9b76-5ee4-5caa" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="4858-4dd0-c04b-8044" name="Destruction - Ogor Mawtribes - Leaders &amp; Abilities" targetId="9e73-1b18-7f12-0282" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="e399-d1c2-fda5-a6b4" name="Destruction - Harbingers of Destruction" targetId="35d4-3d5e-28be-2f57" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

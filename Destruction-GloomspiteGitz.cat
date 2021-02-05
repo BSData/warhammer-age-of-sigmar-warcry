@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="98a8-13db-b704-3ef0" name="Destruction - Gloomspite Gitz" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="98a8-13db-b704-3ef0" name="Destruction - Gloomspite Gitz" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="02ca-646f-2fe6-657a" name="Boingrot Bounder" hidden="false" collective="false" import="true" targetId="fb7e-b0bb-41d4-d73b" type="selectionEntry"/>
     <entryLink id="8bfa-99a8-45d7-a8ce" name="Cave Squig" hidden="false" collective="false" import="true" targetId="75c4-47bd-972e-4c9c" type="selectionEntry"/>
@@ -236,11 +236,54 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f2f3-64f4-c697-3113" name="Stabba" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Stabba and Moon Shield">
+          <conditions>
+            <condition field="selections" scope="f2f3-64f4-c697-3113" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e28a-d5ea-3570-c2a9" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Barbed Net">
+          <conditions>
+            <condition field="selections" scope="f2f3-64f4-c697-3113" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a01f-b955-cf71-c289" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Pokin&apos; Spear and Moon Shield">
+          <conditions>
+            <condition field="selections" scope="f2f3-64f4-c697-3113" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f99-5cbb-705d-e006" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f3e3-0047-c99b-4fb8" name="Stabba" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <modifiers>
+            <modifier type="set" field="68cf-bb2c-bce1-e83e" value="3">
+              <conditions>
+                <condition field="selections" scope="f2f3-64f4-c697-3113" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a01f-b955-cf71-c289" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="68cf-bb2c-bce1-e83e" value="4">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="f2f3-64f4-c697-3113" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e28a-d5ea-3570-c2a9" type="atLeast"/>
+                    <condition field="selections" scope="f2f3-64f4-c697-3113" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f99-5cbb-705d-e006" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e"/>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="37b6-1c14-4a35-e079" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2050-4028-16b6-c6a6" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2050-4028-16b6-c6a6" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="a01f-b955-cf71-c289">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac13-258c-64d7-abd0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaa9-1ec0-63bc-353c" type="min"/>
@@ -248,13 +291,6 @@
           <selectionEntries>
             <selectionEntry id="e28a-d5ea-3570-c2a9" name="with Stabba and Moon Shield" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="e00b-249d-379c-f000" name="Stabba with Moon Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="4d82-eaf2-e523-70fc" name="Stabba" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
@@ -265,18 +301,11 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="25.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0f99-5cbb-705d-e006" name="with Pokin&apos; Spear and Moon Shield" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="856e-68bd-1b82-11a8" name="Stabba with Moon Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="c985-b660-03c7-4e3d" name="Pokin&apos; Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
@@ -287,18 +316,11 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="25.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a01f-b955-cf71-c289" name="with Barbed Net" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="f0cd-0b85-b75a-2097" name="Stabba with Barbed Net" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-                  <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-                  </characteristics>
-                </profile>
                 <profile id="b9f9-8a3e-4d4e-11d8" name="Slitta" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
@@ -311,9 +333,6 @@
               <entryLinks>
                 <entryLink id="9247-5d0a-d1a4-ae16" name=" Trapper" hidden="false" collective="false" import="true" targetId="dd95-1c17-a923-4487" type="selectionEntry"/>
               </entryLinks>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="45.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -326,7 +345,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="45.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7c6a-3574-d4d1-59f1" name="Sneaky Snuffler" hidden="false" collective="false" import="true" type="model">
@@ -405,5 +424,6 @@
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink id="fd61-328f-f01c-82e1" name="Destruction - Gloomspite Gitz - Leaders &amp; Abilities" targetId="9551-9b76-5ee4-5caa" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="bb50-0cf4-2147-49ed" name="Destruction - Harbingers of Destruction" targetId="35d4-3d5e-28be-2f57" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
