@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c93-2200-a39e-de22" name="Chaos - Skaven" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c93-2200-a39e-de22" name="Chaos - Skaven" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="8f45-0f1b-941f-d284" name="Stormfiend" hidden="false" collective="false" import="true" targetId="acf7-98bf-ee1f-8431" type="selectionEntry"/>
     <entryLink id="bf9c-afda-94fd-e88b" name="Skryre Acolyte" hidden="false" collective="false" import="true" targetId="47d7-c313-4103-d2d1" type="selectionEntry"/>
@@ -280,6 +280,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8349-35d6-8bef-ffdb" name="Stormvermin" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -421,6 +424,13 @@
           </characteristics>
         </profile>
         <profile id="a844-37af-809f-0238" name="Tearing Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <modifiers>
+            <modifier type="set" field="60cf-9920-ff5d-032d" value="2">
+              <conditions>
+                <condition field="selections" scope="0405-9ce3-4131-e631" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dac9-3aaf-334a-a5a9" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
