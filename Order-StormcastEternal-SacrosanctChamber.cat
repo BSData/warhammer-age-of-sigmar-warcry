@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b32c-06a3-ce2e-8cd7" name="Order - Stormcast Eternal - Sacrosanct Chamber" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b32c-06a3-ce2e-8cd7" name="Order - Stormcast Eternal - Sacrosanct Chamber" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="18fb-7392-ac02-1445" name="Castigator" hidden="false" collective="false" import="true" targetId="2efb-6f00-3258-385e" type="selectionEntry"/>
     <entryLink id="d8b2-cfbc-d6b8-3710" name="Evocator" hidden="false" collective="false" import="true" targetId="7ed3-b2ac-9fdf-deb0" type="selectionEntry"/>
@@ -180,27 +180,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="235a-04a0-90b3-79e3" name="Sequitor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="68cf-bb2c-bce1-e83e" value="5">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="eb46-88fb-bd7b-e21f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d511-eb34-0dd4-8530" type="atLeast"/>
-                    <condition field="selections" scope="eb46-88fb-bd7b-e21f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d1d-8042-e9f7-f706" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="8a83-c13a-dc88-bceb" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
@@ -221,23 +200,54 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="004d-d1c8-f9be-d2c8" name="Sequitor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d511-eb34-0dd4-8530" name="with Stormsmite Maul and Stormshield" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="073d-e0de-8503-97b0" name="Sequitor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="d7d6-b63e-ef69-a6d3" name="Stormsmite Maul" hidden="false" targetId="56e2-b961-787d-f43e" type="profile"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink id="3fc0-343e-2857-91ee" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0d1d-8042-e9f7-f706" name="with Tempest Blade and Stormshield" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="cc47-4d36-9437-44a3" name="Sequitor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="405b-ece2-2b7f-5250" name="Tempest Blade" hidden="false" targetId="93b1-c5c1-3306-e11b" type="profile"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink id="6f04-5cf3-1afe-f827" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
@@ -332,7 +342,7 @@
         <entryLink id="630c-abf9-6543-dc6a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="b096-97ad-2073-6242" name=" Stormcast Eternal Sacrosanct Chamber" hidden="false" collective="false" import="true" targetId="4702-646d-ff6b-28fe" type="selectionEntry"/>
-            <entryLink id="280e-d12c-ceeb-6c85" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
+            <entryLink id="280e-d12c-ceeb-6c85" name=" Ferocious" hidden="false" collective="false" import="true" targetId="8b52-047b-c9e1-3386" type="selectionEntry"/>
             <entryLink id="61d0-6d59-cbb9-8626" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
           </entryLinks>
         </entryLink>

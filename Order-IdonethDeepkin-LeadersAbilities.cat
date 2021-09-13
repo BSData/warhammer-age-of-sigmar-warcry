@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="79ed-0d82-87ac-387a" name="Order - Idoneth Deepkin - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="79ed-0d82-87ac-387a" name="Order - Idoneth Deepkin - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="833e-bcf6-8c22-fac0" name="Akhelian Ishlaen Guard Lochian Prince" hidden="false" collective="false" import="true" targetId="6de6-ce8b-a858-0aad" type="selectionEntry">
       <modifiers>
@@ -260,7 +260,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
           </characteristics>
         </profile>
         <profile id="aeb1-0316-7dc6-820f" name="Finger Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -392,8 +392,20 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ec9b-b75f-ba68-e7a5" name="Namarti Reaver Icon Bearer" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d487-b2ae-aad6-8029" name="Namarti Reaver Icon Bearer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="4350-4522-9a82-1ba1" name="Whisperbow" hidden="false" targetId="d59e-42f9-ead8-981c" type="profile">
           <modifierGroups>
@@ -415,8 +427,7 @@
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3259-3274-b2a5-d0f1" type="atLeast"/>
               </conditions>
               <modifiers>
-                <modifier type="set" field="446b-a910-1596-123b" value="1/4"/>
-                <modifier type="set" field="60cf-9920-ff5d-032d" value="3"/>
+                <modifier type="set" field="4591-7140-62c7-f2f1" value="4"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -431,6 +442,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -471,7 +485,7 @@
         <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
         <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
         <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+        <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
