@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b0a9-060c-28d4-d0bb" name="Chaos - Hedonites of Slaanesh - Daemons - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b0a9-060c-28d4-d0bb" name="Chaos - Hedonites of Slaanesh - Daemons - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="8776-fc7d-3614-ddf1" name="Allurer" hidden="false" collective="false" import="true" targetId="e548-b443-ffb0-9311" type="selectionEntry">
       <modifiers>
@@ -122,23 +122,126 @@
     </entryLink>
   </entryLinks>
   <rules>
-    <rule id="cc9c-763f-80ee-50c4" name="⚁ [Double] Crushing Grip" hidden="true">
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 2+, until the end of this battle round, that fighter cannoy make move actions or disengage actions.</description>
+    <rule id="cc9c-763f-80ee-50c4" name="⚁ [Double] Discordant Disruption" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a5b-2568-ee67-9484" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
     </rule>
     <rule id="e1c6-07f9-0a43-9c25" name="⚁ [Double] Lithe and Swift" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a5b-2568-ee67-9484" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
     </rule>
     <rule id="116a-38a7-a70b-bcbb" name="⚁ [Double] Sadistic Killers" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a5b-2568-ee67-9484" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Add 1 to the damage point allocated by each hit or critical hit from attack actions made by this fighter this activation that have a Range characteristic of 3 or less.</description>
     </rule>
-    <rule id="af73-795f-d1ff-7800" name="⚂ [Triple] Impaling Strike" hidden="true">
-      <description>Until the end of this fighter&apos;s activation, the next time this fighter finished a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    <rule id="af73-795f-d1ff-7800" name="⚂ [Triple] Mirror of Absorption" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a5b-2568-ee67-9484" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter that has not activated this battle round that is within 9&quot; of this fighter.  That fighter is said to have activated.</description>
     </rule>
     <rule id="73aa-1913-570f-7a36" name="⚂ [Triple] Locus of Excruciation" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a5b-2568-ee67-9484" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, add 1 to the Strength characteristics of attack actions that have a Range characteristic of 3 of less made by friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
     <rule id="570b-55c3-6f64-cf9f" name="⚃ [Quad] Deadly Venom" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a5b-2568-ee67-9484" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the ned of this fighter&apos;s activation, add half the value of this ability (rounding up) to the damage points allocated by critical hits from attack actions made by this fighter. In addition, after each attack action made by this fighter, roll a dice. On a 5_, until the end of this battle round, the target fighter cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="980c-cecd-28ec-8d7d" name="⚁ [Double] Crushing Grip" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a5b-2568-ee67-9484" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 2+, until the end of this battle round, that fighter cannoy make move actions or disengage actions.</description>
+    </rule>
+    <rule id="961f-d92e-6112-0bd8" name="⚂ [Triple] Impaling Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a5b-2568-ee67-9484" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finished a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>

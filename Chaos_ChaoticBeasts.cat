@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6f6f-a348-e87b-3017" name="Chaos - Chaotic Beasts" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6f6f-a348-e87b-3017" name="Chaos - Chaotic Beasts" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="95c2-9eea-71b9-87c5" name="Chaos Gargant" hidden="false" collective="false" import="true" targetId="08f6-dfe6-74f5-3508" type="selectionEntry"/>
     <entryLink id="4062-a808-5f05-2846" name="Chaos Spawn" hidden="false" collective="false" import="true" targetId="e0db-8797-3701-90be" type="selectionEntry"/>
@@ -17,6 +17,602 @@
     <entryLink id="3208-a868-7202-8efe" name="Razorgor" hidden="false" collective="false" import="true" targetId="79fc-c805-c488-26bf" type="selectionEntry"/>
     <entryLink id="7e82-8ea2-021d-67fe" name="Slaughterbrute" hidden="false" collective="false" import="true" targetId="cae2-0823-209b-069e" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="24e7-f87b-5a5d-9c7a" name="⚁ [Double] Hurl Masonry" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they are within 1&quot; of an obstacle.  Pick an enemy fighter within 8&quot; of this fighter and roll a dice.  On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocated a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="de63-255a-a0ec-6c27" name="⚁ [Double] Tail Whip" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a dice.  For each 4-5, allocate 1 damage point to that fighter.  For each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="f26c-e004-93a3-e8f5" name="⚁ [Double] Telepathic Threatening" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within a number of inches of this fighter equal to the value of this ability and roll a dice.  On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="9909-d32f-acfa-abf4" name="⚁ [Double] Drunken Stagger" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a number of dice equal to the value of this ability.  For each roll of 1-2, subtract 1 from this fighter&apos;s Move characteristic until the end of this fighter&apos;s activation.  For each roll of 3+, add 1 to this fighters Move characteristic until the end of this fighter&apos;s activation.</description>
+    </rule>
+    <rule id="edf0-f41e-7cea-61a9" name="⚁ [Double] Mighty Jaws" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 3+, allocate 1 damage point to that fighter.</description>
+    </rule>
+    <rule id="0984-f77e-fe59-11d1" name="⚁ [Double] Monstrous Reach" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, do not count the vertical distance when measuring the range for attack actions made by this fighter.</description>
+    </rule>
+    <rule id="499a-65e9-7834-6053" name="⚁ [Triple] Leonine Roar" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate a number of damage points to all visible enemy fighters within 4&quot; of this fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="92e1-dac6-30e5-1751" name="⚁ [Triple] Drag and Maul" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter.  Remove that fighter from the battlefield and set them up within 1&quot; of this fighter.  Then, roll a number of dice equal to the value of this ability.  For each 4+, allocate 3 damage points to that fighter.</description>
+    </rule>
+    <rule id="2cb8-21f3-e975-517a" name="⚁ [Triple] Arcane Fury" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, add the value of this ability to the damage points allocated by each critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="7fbc-a60b-fa11-0ac2" name="⚁ [Triple] Rampaging Charge" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="7c6a-2bde-e161-74b4" name="⚁ [Triple] Dominate Mind" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 3-4, allocate 1 damage point to that fighter.  For each 5-6, allocate 3f damage points to that fighter.
+</description>
+    </rule>
+    <rule id="4117-b526-5cc4-503e" name="⚁ [Triple] Mighty Kick" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.
+</description>
+    </rule>
+    <rule id="2058-d49b-2188-9d0f" name="⚁ [Quad] Draconic Head&apos;s Fiery Breath" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="5106-99b9-2fe6-8f9c" name="⚁ [Quad] Bloody Trophy" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them  this activation.  The player controlling this fighter immediately gains 1 wild dice that can be used in the hero phase of the next battle round.</description>
+    </rule>
+    <rule id="b795-3524-e0af-c32b" name="⚁ [Quad] Demolishing Rampage" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a terrain piece within 1&quot; of this fighter.  In an order of your choice, place each objective, treasure token and fighter that is on that terrain feature, and on any other terrain feature that is on that terrain feature, on the battlefield floor in a location of your choice as close as possible horizontally to its current location.  then, in an order of your choice, each fighter placed on the battlefield in this manner suffers impact damage.  Then, remove the terrain feature(s)</description>
+    </rule>
+    <rule id="b228-127a-885e-326f" name="⚁ [Quad] Blood Marshal" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter within 4&quot; of this fighter.  Allocate 1 damage point to that fighter.  if that fighter is not taken down,  they can make a bonus attack action that has a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="7021-7f97-6513-fe25" name="⚁ [Quad] Charm" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick an enemy fighter within a number of inches of this fighter equal to the value of this ability.  That fighter cannot activate this battle round.</description>
+    </rule>
+    <rule id="36a1-68ae-62c4-9205" name="⚁ [Quad] Vicious &apos;Eadbutt" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="7507-c8db-96c5-6693" name="⚁ [Quad] Beast Unbound" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus attack action or a bonus move action.</description>
+    </rule>
+    <rule id="4e86-0dd6-bd96-9ac0" name="⚁ [Triple] Fomoroid&apos;s Rampaging Charge" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="b7e6-a4f6-f5c7-6f97" name="⚁ [Double] Berserk" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can only use this ability if 20 or more damage points have been allocated to them.  Add half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="1f3e-120f-7736-47ba" name="⚁ [Triple] Slavering Maw" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 3+, allocate 3 damage points to that fighter.  </description>
+    </rule>
+    <rule id="0f20-f378-6b57-a407" name="⚁ [Double] Rip and Tear Masonry" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter can use this ability only if they are within 1&quot; of an obstacle.  If this fighter is empty-handed, they are no longer empty-handed.</description>
+    </rule>
+    <rule id="b90d-b86c-e455-3533" name="⚁ [Double] Maw Tentacles" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter.  That enemy fighter makes a bonus move action directly towards this fighter, as if they were jumping, a number of inches equal to the value of this ability.  When doing so, they can move away from enemy fighters within 1&quot; at the start of that move action.</description>
+    </rule>
+    <rule id="56ad-ed20-717d-3f48" name="⚁ [Double] Roaring Charge" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+    </rule>
+    <rule id="cc48-cba1-304a-aabe" name="⚁ [Quad] Soul-eater" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a dice for each enemy fighter within 6&quot; of this fighter.  On a 4+, allocate 3 damage points to the fighter being rolled for and remove 3 damage points from this fighter.</description>
+    </rule>
+    <rule id="7b8c-ff2f-f653-9e85" name="⚁ [Quad] Ravenous Bloodgreed" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter can make a bonus move action a number of inches equal to the value of this ability.  Then, this fighter can make a bonus attack action.</description>
+    </rule>
+    <rule id="3a5a-1272-4a1d-fa63" name="⚁ [Quad] Too Horrible to Die" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, after each attack action with a Range characteristic of 3 or less that targets this fighter, roll 3 dice.  For each 5+, allocate 3 damage points to the fighter that made the attack action.</description>
+    </rule>
+    <rule id="7fce-04d3-1aec-9045" name="⚁ [Triple] Hurl Boulder" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter can use this ability only if they are not empty-handed.  Pick a visible enemy fighter within 15&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each roll of 4+, allocate 5 damage points to tha fighter.  After using this ability, this fighter is said to be empty-handed.</description>
+    </rule>
+    <rule id="10e4-c1f1-4b3c-5159" name="⚁ [Triple] Mutant Regeneration" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a number of dice equal to the value of this ability.  For each 4+, remove 3 damage points allocated to this fighter.</description>
+    </rule>
+    <rule id="67c9-4470-3a0a-7faa" name="⚁ [Quad] Aura of Mutation" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate a number of damage points equal to half the value of this ability (rounding up) to all visible enemy fighters within 3&quot; of this fighter.  In addition, roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 6, that fighter cannot activate this battle round.</description>
+    </rule>
+    <rule id="eaec-d3be-3723-17e9" name="⚁ [Double] Regenerating Monstrosity" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a number of dice equal to the value of this ability.  For each 4+, remove 3 damage points allocated to this fighter.</description>
+    </rule>
+    <rule id="c6a0-0136-7bfc-a469" name="⚁ [Double] Outrunner of Chaos" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+    </rule>
+    <rule id="b532-aaf5-f259-43bf" name="⚁ [Triple] Avalanche of Flesh" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="8572-3c61-b2c7-dd46" name="⚁ [Triple] Cower" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdf8-4940-a2eb-d3f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, count each critical hit from attack actions that target this fighter as a hit instead.</description>
+    </rule>
+    <rule id="e33d-16d4-5624-0d02" name="⚁ [Triple] Crazed Flock" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, for each other friendly fighter within 3&quot; of this fighter that has the same runemarks as this fighter, add 1 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="51f2-724b-0cbf-ac49" name="⚁ [Triple] Writhing Tentacles" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="e9b9-b61d-4dba-3c22" name="⚁ [Triple] Uncontrollable Stampede" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d557-7c5b-5126-4e8a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="5da3-79be-6a7d-2f4c" name="⚁ [Triple] Writhing Tentacles" hidden="false">
+      <description>Add the value of this ability to the Attacks characteristic of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="3d89-3710-4586-8a07" name=" -----Below Are Chaos Specific Runemarks-----" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
@@ -85,7 +681,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">✹</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">60</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">50</characteristic>
           </characteristics>
         </profile>
         <profile id="b75d-c67d-1843-ee88" name="Mauling Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">

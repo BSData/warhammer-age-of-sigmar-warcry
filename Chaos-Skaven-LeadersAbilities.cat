@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a636-8332-75fc-8a73" name="Chaos - Skaven - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a636-8332-75fc-8a73" name="Chaos - Skaven - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1681-c737-b70e-6d06" name="Clawleader" hidden="false" collective="false" import="true" targetId="fad4-f3b1-61d1-a447" type="selectionEntry">
       <modifiers>
@@ -171,22 +171,172 @@
     </entryLink>
   </entryLinks>
   <rules>
-    <rule id="6a43-8b2b-6fda-5e6f" name="⚁ [Double] Crack the Whip" hidden="true">
-      <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action that has a Range characteristic of 3 or less.</description>
+    <rule id="6a43-8b2b-6fda-5e6f" name="⚁ [Double] Consume Warpstone Token" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a number of dice equal to the value of this ability.  For each roll of 1, allocate 1 damage point to this fighter.  For each roll of 4+, add 1 to the damage points allocated to enemy fighters by each hit or critical hit from the next attack action made by this fighter this activation that has a range characteristic of 3 or more.</description>
     </rule>
     <rule id="d6d4-1ea8-d36d-e315" name="⚁ [Double] Hired Bodyguard" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, friendly fighters with the Leader runemark cannot be targeted while they are within 1&quot; of this fighter</description>
     </rule>
     <rule id="2c6a-24de-86e3-96a7" name="⚁ [Double] Scurry Away" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if they are within 3&quot; of an enemy fighter. Roll a dice. On a 4+, this fighter makes a bonus disengage action.</description>
     </rule>
-    <rule id="b431-03ba-4f82-4a9d" name="⚂ [Triple] Crushing Charge" hidden="true">
-      <description>Until the end of this fighter&apos;s activation the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    <rule id="b431-03ba-4f82-4a9d" name="⚂ [Triple] Poisonous Fumes" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 3+, allocate a number of damage points equal to half the value of this ability (roudning up) to that fighter.</description>
     </rule>
     <rule id="3b40-1bfb-723b-ec07" name="⚂ [Triple] Lead From The Back" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by other friendly fighters while they are within 3&quot; of this fighter.</description>
     </rule>
-    <rule id="ba35-198a-2a23-7845" name="⚃ [Quad] Recite from the Book of Woes" hidden="true">
+    <rule id="ba35-198a-2a23-7845" name="⚃ [Quad] Expend Warpstone Spark Canister" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus attack action.  In addition, add half the value of this ability (rounding up) to the damage points allocated by each hit and critical hit from that action.</description>
+    </rule>
+    <rule id="ad68-a123-6374-e3bf" name="⚁ [Double] Warp Lightning" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a number of visible enemy fighters equal to the value of this ability.  The first fighter picked must be within 6&quot; of this fighter, and each subsequent fighter picked must be within 3&quot; of a fighter that has already been picked.  The same fighter cannot be picked more than once.  Allocate 1 damage point to each fighter picked.</description>
+    </rule>
+    <rule id="f264-e21c-dea8-b438" name="⚁ [Double] Crack the Whip" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action that has a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="b7b2-d063-480a-f819" name="⚂ [Triple] Running Death" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus move action or bonus disengage action.  In addition, until the end of this fighter&apos;s activation, add 1 to the damage points allocated by the critical hits from attack actions made by this fighter.</description>
+    </rule>
+    <rule id="58f7-8a4d-a455-6533" name="⚂ [Triple] Crushing Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="084b-1aef-69d9-b261" name="⚃ [Quad] Recite from the Book of Woes" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f58d-4233-7f4a-1313" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the abttle round, enemy fighters cannot use abilities while they are within 3&quot; of this fighter</description>
     </rule>
   </rules>
@@ -249,7 +399,7 @@
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/6</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -555,7 +705,7 @@
               <modifiers>
                 <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
                 <modifier type="set" field="4591-7140-62c7-f2f1" value="4"/>
-                <modifier type="set" field="e85b-c9e0-0d39-7786" value="1"/>
+                <modifier type="set" field="e85b-c9e0-0d39-7786" value="2"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -654,6 +804,8 @@
           <entryLinks>
             <entryLink id="b78a-61e6-c378-73bf" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
             <entryLink id="b488-497e-7fd2-32e8" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
+            <entryLink id="42bd-c30a-5538-43e3" name=" Priest" hidden="false" collective="false" import="true" targetId="f58d-4233-7f4a-1313" type="selectionEntry"/>
+            <entryLink id="3c88-d772-381f-1bf1" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>

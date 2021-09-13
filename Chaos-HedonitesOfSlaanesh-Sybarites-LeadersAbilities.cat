@@ -1,5 +1,154 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8cea-0c8e-1151-fc7d" name=" Chaos - Hedonites of Slaanesh - Sybarites - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8cea-0c8e-1151-fc7d" name=" Chaos - Hedonites of Slaanesh - Sybarites - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="a25e-09be-04e9-672e" name="Blissbarb Archer High Tempter" hidden="false" collective="false" import="true" targetId="f700-dd84-1ce5-5cbd" type="selectionEntry"/>
+    <entryLink id="c31f-3bc6-f7eb-0e96" name="Blissbarb Seeker High Tempter" hidden="false" collective="false" import="true" targetId="9e18-402c-c048-5362" type="selectionEntry"/>
+    <entryLink id="08cb-eaab-7fdb-2ff0" name="Hellreaver with Claw-spear" hidden="false" collective="false" import="true" targetId="cb5b-63e1-7f62-4b87" type="selectionEntry"/>
+    <entryLink id="9ba9-7ff2-d56f-3256" name="Lord of Pain" hidden="false" collective="false" import="true" targetId="baad-0fbc-fce7-5ac5" type="selectionEntry"/>
+    <entryLink id="99a0-102a-6c1a-c32b" name="Myrmidesh Painmaster" hidden="false" collective="false" import="true" targetId="cfa6-a2a1-8e1b-8196" type="selectionEntry"/>
+    <entryLink id="0fba-6ed9-45ac-7c2a" name="Shardspeaker" hidden="false" collective="false" import="true" targetId="6fe0-5239-474f-3c02" type="selectionEntry"/>
+    <entryLink id="a058-925a-56d0-3ac5" name="Slaangor Slake-horn" hidden="false" collective="false" import="true" targetId="5eeb-90cb-0132-5269" type="selectionEntry"/>
+    <entryLink id="ae00-ffd2-732b-22e9" name="Slickblade Hunter-seeker" hidden="false" collective="false" import="true" targetId="c894-032c-7007-f120" type="selectionEntry"/>
+    <entryLink id="52b4-7a6a-5424-3b43" name="Symbaresh Egopomp" hidden="false" collective="false" import="true" targetId="2b66-1970-ceaa-8b59" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="aec2-49b8-e0fb-27b7" name="⚁ [Double] Unrivaled Velocity" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+    </rule>
+    <rule id="2d23-de90-7188-2f2a" name="⚁ [Triple] Impaling Strike" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="cf5e-795a-bc62-e122" name="⚁ [Triple] Slaves to Impulse" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them.  This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
+    </rule>
+    <rule id="674c-2024-6618-219c" name="⚁ [Triple] Paragon of Depravity" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle  round, add the value of this ability to the Strength characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="3d23-0437-353a-3b35" name="⚁ [Quad] Ego-driven Excess" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter can make a bonus move action or a bonus attack action.  In addition, each time a fighter is taken down by an attack action made by this fighter this activation, this fighter can make a further bonus move action or bonus attack action.</description>
+    </rule>
+    <rule id="74ef-ca86-9465-e477" name="⚁ [Triple] Tendrils of Unnatural Smoke" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="972e-7079-f6a9-af07" name="⚁ [Triple] Dance of the Wailing Blade" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the damage points allocated by each hit and critical hit from attack actions made by this fighter this activation that have a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="f8de-e7ec-f885-8658" name="⚁ [Double] Violence and Excess" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation.  This fighter makes a bonus move action or a bonus attack action.</description>
+    </rule>
+    <rule id="f441-2cfb-1e77-773c" name="⚁ [Triple] Volley of Tearing Blades" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-3b08-7875-01c7" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that targets an enemy fighter more than 3&quot; away.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="bd46-3b08-7875-01c7" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -8,6 +157,335 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6fe0-5239-474f-3c02" name="Shardspeaker" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="22b4-5eaa-013a-c42f" name="Shardspeaker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7775-994f-d1c8-f653" name="Hate Staff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="edec-e870-91ea-43fb" name="Arcane Bolt" hidden="false" targetId="dd17-5f25-3a66-0d5a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="aba3-7e9a-f39d-234d" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a0df-a27d-55ee-aa7a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="2c80-8e5d-a665-d04e" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="8002-6b1b-39f5-b8fc" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
+            <entryLink id="8237-69ab-4815-c237" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="baad-0fbc-fce7-5ac5" name="Lord of Pain" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b09b-fdd8-0143-81de" name="Lord of Pain" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9288-4868-c254-7340" name="Soulpiercer Mace" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8600-a39a-8414-b013" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4c2d-b7e8-30a5-dfae" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8535-3014-ef33-4a58" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="0554-f432-474e-2f55" name=" Champion" hidden="false" collective="false" import="true" targetId="2da4-597a-7aab-a5d8" type="selectionEntry"/>
+            <entryLink id="a457-ea10-43d6-9273" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb5b-63e1-7f62-4b87" name="Hellreaver with Claw-spear" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="552d-6473-5072-d3ea" name="Hellreaver with Claw-spear" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0691-0492-8435-dc96" name="Claw-spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4a91-a2ac-4b9e-60a6" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f0d2-969c-3fa8-0502" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d342-dc9a-2c3d-40ff" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="ea65-0d1b-84a7-2efe" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
+            <entryLink id="2629-ebf7-23f8-7255" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
+            <entryLink id="1d02-73c3-b6b7-3a95" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f700-dd84-1ce5-5cbd" name="Blissbarb Archer High Tempter" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c492-4373-839c-375d" name="Blissbarb Archer High Tempter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22fb-d462-d8d3-2f2d" name="Blissbarb Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8096-cfe6-219d-4dfc" name="Sybarite Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9f17-35f7-24c2-f20c" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="27b2-1930-4666-c843" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="df93-cbf7-41d6-48f1" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="0f05-7bbb-f020-1207" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+            <entryLink id="95f5-1168-7af7-6585" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5eeb-90cb-0132-5269" name="Slaangor Slake-horn" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="69a8-111a-52ad-6d5a" name="Slaangor Slake-horn" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0c01-42fe-b53c-3248" name="Razor-sharp Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4a4a-fa1c-aca4-f179" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="dcb4-b521-79e1-3105" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="19a7-a612-e889-6ef7" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="4c3d-4908-9949-f2fd" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="0622-e3d1-e35e-027c" name=" Ferocious" hidden="false" collective="false" import="true" targetId="8b52-047b-c9e1-3386" type="selectionEntry"/>
+            <entryLink id="066f-2e54-db92-00b0" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cfa6-a2a1-8e1b-8196" name="Myrmidesh Painmaster" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8eb9-e5ea-fe1c-63be" name="Myrmidesh Painmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a0d1-7f20-104f-5411" name="Wicked Scimitar" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0fcb-4d1b-e0b0-f586" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5a8c-3057-af31-b5e1" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e4db-65c9-d692-e20d" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="e28b-dcc9-dd5b-1e82" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+            <entryLink id="f37f-f6f3-f0ce-552e" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c894-032c-7007-f120" name="Slickblade Hunter-seeker" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b8aa-1a16-0922-a7ba" name="Slickblade Hunter-seeker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ea19-f905-70af-fdbe" name="Slickblade Glaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b057-b2de-447d-6988" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2cd7-093d-e8c6-84eb" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d017-2c22-d84c-4630" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="2491-c16d-0f3b-447a" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
+            <entryLink id="3ffa-8e38-16b9-7fa8" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
+            <entryLink id="2a5c-a6f8-3cc0-52b0" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b66-1970-ceaa-8b59" name="Symbaresh Egopomp" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f9d1-62f2-1a5b-65be" name="Symbaresh Egopomp" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="05ed-7298-2dcb-644b" name="Merciless Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="906a-379b-1b57-f380" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="791c-4a17-4019-116a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="c155-3732-fb5f-9650" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="326d-d9e0-8854-8285" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
+            <entryLink id="61f9-9808-2bbb-262f" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e18-402c-c048-5362" name="Blissbarb Seeker High Tempter" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="fde7-ca89-3770-4933" name="Blissbarb Seeker High Tempter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc59-9b0b-c54b-2e75" name="Blissbarb Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bc82-6c49-ddc9-2183" name="Sybarite Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3f85-cb2b-7cbf-adff" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="def7-cf0d-fb5f-1624" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="478a-ff6e-060f-34d1" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="6f09-ceb7-99c8-c29b" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
+            <entryLink id="e43a-db8e-26a9-7406" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+            <entryLink id="a3ce-1ddb-f67e-3c85" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

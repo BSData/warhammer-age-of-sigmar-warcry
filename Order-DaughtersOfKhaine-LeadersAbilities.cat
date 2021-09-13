@@ -157,23 +157,156 @@
     </entryLink>
   </entryLinks>
   <rules>
-    <rule id="8e63-59da-48ae-18df" name="⚃ [Quad] Death on the Wind" hidden="true">
-      <description>This figher makes a bonus move action. Then, they can make a bonus attack action. In addition, add 1 to the Strength characteristic of that attack action if the fighter finished the move action 6&quot; or more from their starting position.</description>
+    <rule id="8e63-59da-48ae-18df" name="⚃ [Quad] Orgy of Slaughter" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add half the value of this ability (rounding up)  to the damage points allocated to enemy fighters by each hit and critical hit from attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 8&quot; of this fighter.</description>
     </rule>
     <rule id="8eee-3792-02f8-e6d7" name="⚂ [Triple] Slaughter&apos;s Strength" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of this fighter&apos;s activation, add the value of this ability to the Strength characteristic of attack actions made by this fighter that have a Range of 3 or less.</description>
     </rule>
     <rule id="ef1b-47ea-f74a-e07f" name="⚂ [Triple] Sacrifice to Khaine" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of attack actionsthat have a range of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
-    <rule id="54e2-3e9b-01bc-6de8" name="⚂ [Triple] Heartseekers" hidden="true">
-      <description>If the next attack action made by this fighter this activation scores one or more critical hits, and the target fighter is more than 3&quot; away, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    <rule id="54e2-3e9b-01bc-6de8" name="⚂ [Triple] Doomfire Bolt" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f03-c585-1ede-64c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate 2 damage point to that fighter</description>
     </rule>
     <rule id="b1ee-8897-f208-5d42" name="⚁ [Double] Turned to Crystal" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of a 4-5, allocate 1 damage point to that fighter. For each roll of a 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
     </rule>
-    <rule id="5242-bed5-0db0-dcc8" name="⚁ [Double] Bathe In Blood" hidden="true">
+    <rule id="5242-bed5-0db0-dcc8" name="⚁ [Double] Witchbrew" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f58d-4233-7f4a-1313" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible friendly fighter within 3&quot; of this fighter. Until the end of the battle  round, add the value of this ability to the Strength characteristic of the next attack action made by that fighter that have a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="588c-108f-751a-3652" name="⚁ [Double] Bathe In Blood" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if they are within 3&quot; of a visible enemy fighter with 1 or more damage points allocated to them. Until the end of this fighter&apos;s activation, add 1 to the Attacks and Strength characteristics of attack actions made by this fighter.</description>
+    </rule>
+    <rule id="7f14-ac80-fe68-99ef" name="⚂ [Triple] Bloodwrack Stare" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within a number of inches of this fighter equal to the value of this ability and roll 2 dice.  If either dice rolls a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.  In addition, for each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="9c52-f384-48fe-6933" name="⚂ [Triple] Heartseekers" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>If the next attack action made by this fighter this activation scores one or more critical hits, and the target fighter is more than 3&quot; away, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="de34-f478-eee0-5203" name="⚃ [Quad] Death on the Wind" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This figher makes a bonus move action. Then, they can make a bonus attack action. In addition, add 1 to the Strength characteristic of that attack action if the fighter finished the move action 6&quot; or more from their starting position.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>

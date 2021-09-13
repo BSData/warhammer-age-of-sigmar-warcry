@@ -143,22 +143,186 @@
     </entryLink>
   </entryLinks>
   <rules>
-    <rule id="7bb0-dd66-7545-932f" name="⚁ [Double] Encase in Molten Rock" hidden="true">
-      <description>Until the end of this fighter&apos;s activation, the next time this fighter makes an attack action, subtract half the value of this ability (rounding up) from the Move characteristic of the target fighter (to a minimum of 1) until the end of the battle round</description>
+    <rule id="7bb0-dd66-7545-932f" name="⚁ [Double] Volcano&apos;s Call" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f58d-4233-7f4a-1313" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter on the battlefield floor within 12&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4-5, allocate 1 damage point to that fighter.  For each 6, allocate 3 damage points to that fighter.</description>
     </rule>
     <rule id="a44c-b65d-eb04-b82a" name="⚁ [Double] Fyresteel Throwing Axe" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each 4-5, allocate 1 damage point to that fighter. For each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
     </rule>
     <rule id="d726-e12b-d9a1-5dc0" name="⚁ [Double] Relentless Zeal" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Add 3 to the Move characteristic of the next move action made by this fighter this activation.</description>
     </rule>
-    <rule id="53e3-c7e6-f248-300b" name="⚂ [Triple] Duty Unto Death" hidden="true">
-      <description>A fighter can use this ability only if they have 5 or more damage points allocated to them. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+    <rule id="53e3-c7e6-f248-300b" name="⚂ [Triple] Icon of Grimnir" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="38b1-f499-b603-c4f6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add half the value of this ability (rounding up)  to the Toughness characteristic of visible friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
-    <rule id="603e-a5b6-ec77-7016" name="⚂ [Triple] Honour Our Oath" hidden="true">
+    <rule id="603e-a5b6-ec77-7016" name="⚂ [Triple] Honour Our Oaths" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack ation made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
-    <rule id="680e-765a-d438-1d34" name="⚃ [Quad] Unleash Runic Fury" hidden="true">
+    <rule id="680e-765a-d438-1d34" name="⚃ [Quad] Battle Fury" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add the value of this ability to the Move characteristic of this fighter.  In addition,  this fighter makes a bonus move action.  Then, they can make a bonus attack action.</description>
+    </rule>
+    <rule id="3e25-cf1d-5cf5-a1e2" name="⚁ [Double] Runic Empowerment" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible friendly fighter within 3&quot; of this fighter.  Until the end of the battle  round, add the value of this ability to the Strength characteristic of the next attack action made by that fighter that has a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="e0ce-20c3-a3db-9cd2" name="⚁ [Double] Lodge Leader" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle  round, add 1 to the Strength characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="d37a-25b9-b2a8-b189" name="⚁ [Double] Encase in Molten Rock" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter makes an attack action, subtract half the value of this ability (rounding up) from the Move characteristic of the target fighter (to a minimum of 1) until the end of the battle round</description>
+    </rule>
+    <rule id="163a-f109-3fbf-44d0" name="⚂ [Triple] Slingshield Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter and roll a dice.  On a 2+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="0a3e-64a8-8da7-2485" name="⚂ [Triple] Duty Unto Death" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they have 5 or more damage points allocated to them. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+    </rule>
+    <rule id="1a8f-bee3-e074-eb2f" name="⚃ [Quad] Unleash Runic Fury" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of this fighter&apos;s activation, add the value of this ability to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
     </rule>
   </rules>

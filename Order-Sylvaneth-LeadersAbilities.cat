@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0312-6eb9-dc4a-0fb7" name="Order - Sylvaneth - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0312-6eb9-dc4a-0fb7" name="Order - Sylvaneth - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="0878-218e-09c4-a760" name="Arch-Revenant" hidden="false" collective="false" import="true" targetId="5ce8-22eb-9827-a4ab" type="selectionEntry">
       <modifiers>
@@ -102,22 +102,157 @@
   </entryLinks>
   <rules>
     <rule id="35e5-7019-d026-c2ee" name="⚁ [Double] Draw from the Spirit-song" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Remove a number of damage points allocated to this fighter equal to half the value of this ability (rounding up).</description>
     </rule>
-    <rule id="9190-582b-59ff-7eba" name="⚁ [Double] Shrieking Terror" hidden="true">
-      <description>Pick a visible enemy fighter within a number of inches this fighter equal to the value of this abilit and roll a dice. On a 3+, until the end of the battle round that fighter cannot make move actions or disengage actions.</description>
+    <rule id="9190-582b-59ff-7eba" name="⚁ [Double] Zephyrite&apos;s Tail Pincers" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice.  For each 3-4, allocate 1 damage point to that fighter.  For each 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
     </rule>
     <rule id="1d15-e5cd-a148-1191" name="⚁ [Double] Trample Underfoot" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick a visible enemy fighter with 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damage point to that fighter.</description>
     </rule>
-    <rule id="fcd3-2695-31f1-424a" name="⚂ [Triple] Enrapturing Song" hidden="true">
-      <description>Pick a visible enemy fighter within a number of inches of this fighter equal to the value of this ability. Until the end of the battle round, add 1 to Attacks characteristic of attackactions mage by friendly fighters with both the Sylvaneth runemark and the Scout runemark that target that fighter.</description>
+    <rule id="fcd3-2695-31f1-424a" name="⚂ [Triple] Blessing of the Forest" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Remove 1 damage point allocated to each friendly fighter within 6&quot; of this fighter.</description>
     </rule>
-    <rule id="ec42-615e-7018-2804" name="⚂ [Triple] Walk the Spirit Path" hidden="true">
+    <rule id="ec42-615e-7018-2804" name="⚂ [Triple] Walk the Spirit Paths" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Remove this fighter from the battlefield and set them up anywhere on the battlefield floor more than 5&quot; from any enemy fighter.</description>
     </rule>
     <rule id="3ae2-53b8-2ab1-500b" name="⚃ [Quad] Envoy of the Everqueen" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Toughness and Strength characteristics of friendly fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="5f66-248d-2832-bfc6" name="⚁ [Double] Shrieking Terror" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within a number of inches this fighter equal to the value of this abilit and roll a dice. On a 3+, until the end of the battle round that fighter cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="43eb-9361-a62f-ece6" name="⚁ [Double] Swarm of Spites" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate 1 damage point to that fighter.</description>
+    </rule>
+    <rule id="d26f-2f1e-6aec-1d10" name="⚂ [Triple] Call to Battle" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 3&quot; of this fighter.</description>
+    </rule>
+    <rule id="159c-34e4-3023-be6b" name="⚂ [Triple] Enrapturing Song" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="239e-0d1d-fb6a-d7fc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within a number of inches of this fighter equal to the value of this ability. Until the end of the battle round, add 1 to Attacks characteristic of attackactions mage by friendly fighters with both the Sylvaneth runemark and the Scout runemark that target that fighter.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -225,6 +360,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="fb6e-0603-aa86-3997" name="with Kurnoth Scythe" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7178-41fb-d97d-27a5" name="Order - Kharadron Overlords - Leaders &amp; Abilities" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7178-41fb-d97d-27a5" name="Order - Kharadron Overlords - Leaders &amp; Abilities" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5e93-4053-cfc9-293c" name="Aether-khemist" hidden="false" collective="false" import="true" targetId="1a4a-c05d-7bd7-6cb4" type="selectionEntry">
       <modifiers>
@@ -129,22 +129,156 @@
     </entryLink>
   </entryLinks>
   <rules>
-    <rule id="ba56-7309-ce63-cf41" name="⚁ [Double] Ancestral Fortitude" hidden="true">
-      <description>Until the end of the battle round, add 1 to the toughness characteristic of this fighter.</description>
+    <rule id="ba56-7309-ce63-cf41" name="⚁ [Double] Supercharged Endrinharness" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Strength and Attacks characteristics of attack actions made by this fighter this activation that have a Range characteristic of 3 or less.</description>
     </rule>
     <rule id="4cc7-0d53-5d55-32e1" name="⚁ [Double] Grapnel Launcher" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if they are more than 3&quot; from any enemy fighters. Pick a point on an obstacle within 20&quot; of this fighter. Remove this fighter from the battlefield and then immediately set them up on the battlefield within 3&quot; of the point picked.</description>
     </rule>
     <rule id="b6d9-144a-e640-2478" name="⚁ [Double] Harrying Drillbill" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round that fighter cannot make disengage actions.</description>
     </rule>
-    <rule id="f20c-ca41-eee9-e647" name="⚂ [Triple] Fight for Profit" hidden="true">
-      <description>Until the end of the battle round, add 1 to the attacks characteristic of attack actions made by friendly fighters within 6&quot; of this fighter. If this fighter is carrying treasure or is within 3&quot; of an objective, add 2 to the attacks characteristic instead.</description>
+    <rule id="f20c-ca41-eee9-e647" name="⚂ [Triple] Master the Skies" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9488-26b8-09dc-98f7" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the damage points allocated by each hit and critical hit from attack actions made by this fighter this activation that target enemy fighters with the Fly runemark.</description>
     </rule>
     <rule id="788a-e103-d366-b504" name="⚂ [Triple] Keep Your Distance" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if they are within 3&quot; of an enemy fighter. This fighter makes a bonus disengage action.</description>
     </rule>
-    <rule id="fa51-78fc-1a79-8260" name="⚃ [Quad] Timed Charges" hidden="true">
+    <rule id="fa51-78fc-1a79-8260" name="⚃ [Quad] Aetherstorm" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter anywhere on the battlefield and roll a number of dice equal to the value of this ability.  For each 2+, allocate 3 damage point to that fighter.</description>
+    </rule>
+    <rule id="0cc1-384b-ecd8-c6e7" name="⚁ [Double] Ancestral Fortitude" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the toughness characteristic of this fighter.</description>
+    </rule>
+    <rule id="51ed-60e6-cf88-176a" name="⚂ [Triple] Atmospheric Isolation" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="f3e3-8489-97a5-6f95" name="⚂ [Triple] Fight for Profit" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the attacks characteristic of attack actions made by friendly fighters within 6&quot; of this fighter. If this fighter is carrying treasure or is within 3&quot; of an objective, add 2 to the attacks characteristic instead.</description>
+    </rule>
+    <rule id="4db9-fc0d-8700-9416" name="⚃ [Quad] Timed Charges" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if they are within 3&quot; of an enemy fighter. Allocate a number of damage points equal of the value of this ability to enemy fighters within 1&quot; of this fighter. Then, this fighter makes a bonus disengage action.</description>
     </rule>
   </rules>

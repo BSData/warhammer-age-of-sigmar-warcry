@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="fdcb-ae8a-c33d-e1d3" name="Order - Monsters &amp; Thrall" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="fca1-c751-e211-0dd7" name="Kharibdyss" hidden="false" collective="false" import="true" targetId="294b-ca80-45c3-470c" type="selectionEntry"/>
+    <entryLink id="b27e-f0a8-86a8-5339" name="War Hydra" hidden="false" collective="false" import="true" targetId="da66-9b31-c014-89b0" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="041c-15de-b76c-4f4d" name="⚁ [Triple] Fiery Breath" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll a dice for that fighter and each other fighter within 3&quot; of that fighter.  On a 3+, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+    </rule>
+    <rule id="f728-87aa-9de7-8f81" name="⚁ [Double] Monstrous Reach" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, do not count the vertical distance when measuring the range for attack actions made by this fighter.</description>
+    </rule>
+    <rule id="557f-a267-b144-b629" name="⚁ [Double] Quick with the Lash" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up)  to the Move characteristic of this fighter for the next move action they make this activation.</description>
+    </rule>
+    <rule id="72fc-c9e1-908d-5736" name="⚁ [Quad] Spiked Tail" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate a number of damage points to all visible enemy fighters within 3&quot; of this fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="86f8-c702-29a6-5967" name="⚁ [Triple] Drag and Maul" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter.  Remove that fighter from the battlefield and set them up within 1&quot; of this fighter.  Then, roll a number of dice equal to the value of this ability.  For each 4+, allocate 3 damage points to that fighter.</description>
+    </rule>
+    <rule id="dc4c-dea7-7fbe-a4b3" name="⚁ [Triple] Abyssal Howl" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a dice for each enemy fighter within a number of inches of this fighter equal to the value of the ability.  On a 3+, until the end of the battle round, the fighter being rolled for cannot make move actions or disengage actions.</description>
+    </rule>
+    <rule id="f0ca-60c8-613f-255c" name="⚁ [Quad] Demolishing Rampage" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a terrain piece within 1&quot; of this fighter.  In an order of your choice, place each objective, treasure token and fighter that is on that terrain feature, and on any other terrain feature that is on that terrain feature, on the battlefield floor in a location of your choice as close as possible horizontally to its current location.  then, in an order of your choice, each fighter placed on the battlefield in this manner suffers impact damage.  Then, remove the terrain feature(s).</description>
+    </rule>
+    <rule id="8970-9ff6-9ecf-6e82" name="⚁ [Quad] Sever One Head, Another Takes Its Place" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Remove a number of damage points allocated to this fighter equal to double the value of this ability.</description>
+    </rule>
+    <rule id="29c7-9e52-7c9f-f4c5" name="⚁ [Double] Quick with the Lash" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d74a-8333-c64e-1e0b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up)  to the Move characteristic of this fighter for the next move action they make this activation.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="9c6f-fdcb-6776-4751" name=" Order" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ece-5c7a-1090-ae3b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc5-1bf1-9d57-8e59" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d74a-8333-c64e-1e0b" name=" Monsters of Order" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d56e-554b-9484-8326" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97df-bae1-9023-d29d" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da66-9b31-c014-89b0" name="War Hydra" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="fdcd-f2f2-1f4f-b1a5" name="War Hydra" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">✹</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">50</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e03c-4302-41c2-63ce" name="Razor-sharp Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">✹ / ✹</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="0d4d-8dfb-0b6d-9b5e" name="Damage Table" hidden="false">
+          <profiles>
+            <profile id="6d4d-34a6-1433-6ac2" name="31-40" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">3</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">2/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="1071-07d8-c985-7167" name="21-30" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">4</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="8588-c282-a244-e1d4" name="0-10" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">6</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="f62b-4b94-dd00-bed8" name="11-20" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">5</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="23ac-954b-dc0d-ce99" name="41-49" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">2</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">2/4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="ce05-d09b-4dae-8067" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0881-5e77-73e7-b53c" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="81f7-5367-6ebc-5de1" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
+            <entryLink id="6826-22a2-f57a-acb9" name=" Monsters of Order" hidden="false" collective="false" import="true" targetId="d74a-8333-c64e-1e0b" type="selectionEntry"/>
+            <entryLink id="25d4-522c-c232-5d81" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="315.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="294b-ca80-45c3-470c" name="Kharibdyss" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="a003-f68c-c588-7ce8" name="Kharibdyss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">✹</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">50</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c21b-ad53-4205-49bd" name="Fanged Tentacles" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">✹ / ✹</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="d495-b6f1-f50e-293f" name="Damage Table" hidden="false">
+          <profiles>
+            <profile id="d52e-1838-ed08-035c" name="31-40" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">3</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">2/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="df8b-2d66-26db-17d5" name="11-20" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">5</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2939-8cd6-830b-742e" name="21-30" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">4</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">3/6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="1b44-aff0-a3bb-946d" name="41-49" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">2</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">2/4</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="f227-fb75-75e0-e3ec" name="0-10" hidden="false" typeId="575c-b39f-7b5a-ea68" typeName="Damage Points Allocated">
+              <characteristics>
+                <characteristic name="Move" typeId="d86c-8efd-c0fc-becd">6</characteristic>
+                <characteristic name="Damage" typeId="a830-e875-cf90-385f">4/8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="74ea-4ba1-ee85-0f62" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ebd0-fdfa-22ed-06e3" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="944b-8ab6-02a2-25e7" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
+            <entryLink id="6560-788a-896b-c23a" name=" Monsters of Order" hidden="false" collective="false" import="true" targetId="d74a-8333-c64e-1e0b" type="selectionEntry"/>
+            <entryLink id="7db2-7617-346c-a67a" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="315.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

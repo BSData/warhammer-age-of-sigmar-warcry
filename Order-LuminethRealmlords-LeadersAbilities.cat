@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="48b0-c69d-9fa7-f0ea" name="Order - Lumineth Realm-lords - Leaders &amp; Abilities" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="48b0-c69d-9fa7-f0ea" name="Order - Lumineth Realm-lords - Leaders &amp; Abilities" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="71f5-d35e-7e8b-4157" name="Alarith Stonemage" hidden="false" collective="false" import="true" targetId="317f-e737-ab75-f432" type="selectionEntry">
       <modifiers>
@@ -185,26 +185,191 @@
     </entryLink>
   </entryLinks>
   <rules>
-    <rule id="73b9-79dc-761e-0ad8" name="⚁ [Double] Moonfire Flask" hidden="true">
-      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each 4-5, allocate 1 damage point to that fighter. For each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    <rule id="73b9-79dc-761e-0ad8" name="⚁ [Double] Go Where the Wind Blows" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
     </rule>
     <rule id="ae78-2d5a-e151-e865" name="⚁ [Double] Mountain Stance" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, subtract 1 from the damage points allocated by each hit and critical hit from attack actions that target this fighter.</description>
     </rule>
     <rule id="f849-1cdf-3957-3d88" name="⚁ [Double] Sharp-eyed Scryhawk" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round, add 1 to the attacks characteristic of attack actions that target that fighter.</description>
     </rule>
     <rule id="6367-20dc-8e8a-3a38" name="⚁ [Double] Shining Company" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if there are 2 or more other friendly fighters with both the Lumineth Realm-lords faction runemark and the Warrior runemark within 1&quot; of this fighter. Until the end of the battle round, subtract 1 from the Attacks characteristic of attack actions that target friendly fighters within 1&quot; of this fighter.</description>
     </rule>
-    <rule id="b3ca-d3d3-6a85-78b9" name="⚂ [Triple] Emotional Transference" hidden="true">
-      <description>Pick 1 visible friendly fighter within 12&quot; of this fighter that has 1 or more damage points allocated to them. Then, pick 1 visible enemy fighter within 12&quot; of this fighter. Roll a number of dice equal to the number of damage points allocated to that friendly fighter. For each 4+, allocate 1 damage point to that enemy fighter.</description>
+    <rule id="b3ca-d3d3-6a85-78b9" name="⚂ [Triple] Move Like the Wind" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, this fighter can finish disengage actions within 1&quot; of enemy fighters.</description>
     </rule>
-    <rule id="94c4-41c3-56e7-e2c9" name="⚃ [Quad] Gravitic Redirection" hidden="true">
-      <description>Allocate D3 damage points to all visible enemy fighters within 6&quot; of this fighter (roll for each fighter). In addition, until the end of the battle round, halve the Move characteristic of all fighters that are within 6&quot; of this fighter when this fighter uses this ability.</description>
+    <rule id="94c4-41c3-56e7-e2c9" name="⚃ [Quad] Perfect Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus action.  in addition, add the value of this ability to the damage points allocated by each critical hit from that attack action.</description>
     </rule>
     <rule id="eb93-400d-57ef-be1b" name="⚂ [Triple] Lances of the Dawn" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f03-c585-1ede-64c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick 1 visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that enemy fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="c39a-dbd8-65e8-cb22" name="⚁ [Double] Lone Agent" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there are no other friendly fighters within 6&quot; of this fighter.  this fighter makes a bonus move action.</description>
+    </rule>
+    <rule id="e698-e510-fe9d-ded5" name="⚁ [Double] Moonfire Flask" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each 4-5, allocate 1 damage point to that fighter. For each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="331d-3af3-37ca-a898" name="⚂ [Triple] Emotional Transference" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick 1 visible friendly fighter within 12&quot; of this fighter that has 1 or more damage points allocated to them. Then, pick 1 visible enemy fighter within 12&quot; of this fighter. Roll a number of dice equal to the number of damage points allocated to that friendly fighter. For each 4+, allocate 1 damage point to that enemy fighter.</description>
+    </rule>
+    <rule id="12ee-e0a5-9fed-7d61" name="⚂ [Triple] Realmscribe" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a point on the battlefield within 9&quot; of this fighter and place a special token there.  Until the end of the battle round, subtract 1 from the damage points allocated by each critical hit from attack actions that target friendly fighters while they are within 6&quot; of the centre of that token.</description>
+    </rule>
+    <rule id="8767-a3cd-80ff-897a" name="⚃ [Quad] Gravitic Redirection" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate D3 damage points to all visible enemy fighters within 6&quot; of this fighter (roll for each fighter). In addition, until the end of the battle round, halve the Move characteristic of all fighters that are within 6&quot; of this fighter when this fighter uses this ability.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -395,6 +560,7 @@
           <entryLinks>
             <entryLink id="4c01-cfed-3d0f-fa50" name=" Lumineth Realm-lords" hidden="false" collective="false" import="true" targetId="002b-ecb4-29dc-bce6" type="selectionEntry"/>
             <entryLink id="1c63-4216-4e0b-7bf7" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+            <entryLink id="7fe7-fa1c-aa23-79f0" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>

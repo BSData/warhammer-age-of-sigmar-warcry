@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf05-61ad-1a74-2e9d" name="Death - Flesh-eater Courts - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf05-61ad-1a74-2e9d" name="Death - Flesh-eater Courts - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="80ce-70c8-4b8b-b345" name="Abhorrant Archregent" hidden="false" collective="false" import="true" targetId="699f-0eba-7468-76ca" type="selectionEntry">
       <modifiers>
@@ -130,38 +130,147 @@
   </entryLinks>
   <rules>
     <rule id="e00f-5bfa-e7b4-2d15" name="⚁ [Double] Unnatural Vitality" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Remove a number of damage points from this fighter equal to the value of this ability.
 ⠀</description>
     </rule>
     <rule id="ab44-842e-fc1e-de08" name="⚂ [Triple] Bringer of Death" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Add the value of this ability to the Move characteristic of friendly fighters within 6&quot; of this fighter when this fighter uses this ability, until the end of the battle round.
 ⠀</description>
     </rule>
     <rule id="20c5-6ffc-1d6e-72c0" name="⚂ [Triple] Stir of Black Hunger" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range charactertistic of 3 or less made by visible friendly fighters while they are within 9&quot; of this fighter.
 ⠀</description>
     </rule>
     <rule id="15a2-751f-a0a2-f791" name="⚂ [Triple] Terrifying Frenzy" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Add the half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.
 ⠀</description>
     </rule>
     <rule id="4490-209a-a937-9dda" name="⚁ [Double] Chosen of the King" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this abiltiy only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. Until the end of this fighters activation, add 2 to the attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.
 ⠀</description>
     </rule>
     <rule id="1d33-4dbc-27ee-5a5d" name="⚁ [Double] Feeding Frenzy" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Remove a number of damage points from this fighter equal to the value of this ability.
 ⠀</description>
     </rule>
     <rule id="b293-3a48-5c6e-6e0c" name="⚁ [Double] Skewering Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Add 1 to the Stregnth characteristic of the next attack action made by this fighter this activation that has a range characteristic of 3 or less. In addition, if that attack action scores a critical hit, until the end of the battle round, the target fighter cannot make move actions or disengage actions.
 ⠀</description>
     </rule>
     <rule id="3a0e-0895-808a-6322" name="⚂ [Triple] Death Scream" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Roll 1 dice for each visible enemy fighter within 8&quot; of this fighter. On a 5, allocate 1 damge point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.
 ⠀</description>
     </rule>
     <rule id="f013-8afe-af0b-201c" name="⚃ [Quad] The Royal Hunt" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778a-d3ee-21c4-f7f4" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. In addition, add 1 to the attacks characteristic of that attack action if this fighter is within 1&quot; of a visible friendly fighter.
 ⠀</description>
     </rule>
