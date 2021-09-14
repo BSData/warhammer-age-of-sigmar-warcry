@@ -118,11 +118,11 @@
       <description>Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less until the end of their activation.
 ⠀</description>
     </rule>
-    <rule id="a9e3-c5bd-646d-b0e8" name=" ⚀ ⚁ ⚂ Universal Abiltiies ⚂ ⚁ ⚀" hidden="false">
+    <rule id="a9e3-c5bd-646d-b0e8" name=" ---- Universal Abiltiies ----" hidden="false">
       <description>⠀
 ⠀</description>
     </rule>
-    <rule id="23d7-2de0-452e-ec4b" name=" ⚅ ⚄ ⚃ Faction Abiltiies ⚃ ⚄ ⚅" hidden="false">
+    <rule id="23d7-2de0-452e-ec4b" name="⚅----Ally/Hero Abiltiies ----⚅" hidden="false">
       <description>⠀
 ⠀</description>
     </rule>
