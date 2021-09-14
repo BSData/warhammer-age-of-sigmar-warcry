@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fa9-8ff9-b985-4c2d" name="Order - Stormcast Eternal - Sacrosanct Chamber - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fa9-8ff9-b985-4c2d" name="Order - Stormcast Eternal - Sacrosanct Chamber - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="51d4-e4aa-be56-3863" name="Castigator-Prime" hidden="false" collective="false" import="true" targetId="d89d-07d8-ff38-66d9" type="selectionEntry">
       <modifiers>
@@ -144,21 +144,154 @@
   </entryLinks>
   <rules>
     <rule id="c00b-83eb-f437-acb7" name="⚁ [Double] Channelled Empowerment" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of this fighter&apos;s activation, add the value of this ability to the Strength characteristic of the next attack action made by this fighter that has a Ranger characteristic of 3 or less.</description>
     </rule>
     <rule id="0074-6f62-3ae8-0b69" name="⚁ [Double] Cleanse the Realm of Taint" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
     </rule>
-    <rule id="0e0d-0b78-57d0-32f9" name="⚁ [Double] Summon Celestial Lightning" hidden="true">
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damage point to the enemy fighter.</description>
+    <rule id="0e0d-0b78-57d0-32f9" name="⚁ [Double] Meteoric Slam" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, add 1 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
     </rule>
-    <rule id="8ffc-3942-621c-d2c8" name="⚂ [Triple] Burst of Celestial Lightning" hidden="true">
-      <description>Add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from the next attack action made by this fighter this activation that targets an enemy fighter more than 3&quot; away.</description>
+    <rule id="8ffc-3942-621c-d2c8" name="⚂ [Triple] Darting Attack" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c07-fa6a-0279-0c91" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter makes a bonus attack action.  Then, they can make a bonus disengage action.</description>
     </rule>
     <rule id="9777-0603-b93e-4189" name="⚂ [Triple] Soul-shield Channelling" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, add the value of this ability ot the Toughness  characteristic of this fighter.</description>
     </rule>
-    <rule id="cfc1-78be-9d96-bce9" name="⚃ [Quad] Open the Redemption Cache" hidden="true">
+    <rule id="cfc1-78be-9d96-bce9" name="⚃ [Quad] Thunderous Pounce" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="4ace-bb7a-9663-0f9f" name="⚁ [Double] Summon Celestial Lightning" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damage point to the enemy fighter.</description>
+    </rule>
+    <rule id="a2d2-d0fa-3761-37fd" name="⚂ [Triple] Shatter Spirit Flask" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
+    </rule>
+    <rule id="207a-bbb4-da18-c3d0" name="⚂ [Triple] Burst of Celestial Lightning" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from the next attack action made by this fighter this activation that targets an enemy fighter more than 3&quot; away.</description>
+    </rule>
+    <rule id="0493-6b07-6e98-fa1d" name="⚃ [Quad] Open the Redemption Cache" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
     </rule>
   </rules>
@@ -337,7 +470,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7198-b3a0-616c-3818" name="with Paired Astral Hammers" hidden="false" collective="false" import="true" type="upgrade">
@@ -351,6 +484,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -364,9 +500,6 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="e0ec-0c05-e28c-e528" name="Knight-Incantor" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -457,6 +590,9 @@
                   </modifierGroups>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d475-20b2-5258-c7c9" name="with Grandstave" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -470,6 +606,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -498,7 +637,15 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="e75c-169b-f0d9-0e09" name="Heavy Stock" hidden="false" targetId="17fd-dc9d-b2d6-5990" type="profile"/>
+        <infoLink id="e75c-169b-f0d9-0e09" name="Heavy Stock" hidden="false" targetId="17fd-dc9d-b2d6-5990" type="profile">
+          <modifiers>
+            <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d89d-07d8-ff38-66d9" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="4061-a095-347a-ae67" name="Thunderhead Greatbow" hidden="false" targetId="ac2f-1fee-c6c8-7f39" type="profile"/>
       </infoLinks>
       <entryLinks>
@@ -543,6 +690,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5f1f-4ec4-6bda-0e2e" name="with Stormsmite Maul and Soulshield" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -556,6 +706,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4802-c63b-b365-cbba" name="with Redemption Cache" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -573,7 +726,7 @@
                 <entryLink id="4045-e382-1a0c-08f2" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -588,9 +741,6 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="0727-faf6-add0-df7e" name="Evocator-Prime on Celestial Dracoline" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -637,6 +787,9 @@
                   </modifierGroups>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ea4e-1d56-69ed-e7bf" name="with Grandstave" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -655,7 +808,7 @@
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="10.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="295.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -666,14 +819,11 @@
           <entryLinks>
             <entryLink id="414c-00aa-4b07-23cc" name=" Stormcast Eternal Sacrosanct Chamber" hidden="false" collective="false" import="true" targetId="4702-646d-ff6b-28fe" type="selectionEntry"/>
             <entryLink id="f9e3-99c1-ed83-d0e8" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="4eeb-6bf0-c397-ae16" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
+            <entryLink id="4eeb-6bf0-c397-ae16" name=" Ferocious" hidden="false" collective="false" import="true" targetId="8b52-047b-c9e1-3386" type="selectionEntry"/>
             <entryLink id="5994-7a5e-e342-483e" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="285.0"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -720,7 +870,7 @@
     <profile id="17fd-dc9d-b2d6-5990" name="Heavy Stock" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
         <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
         <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
       </characteristics>

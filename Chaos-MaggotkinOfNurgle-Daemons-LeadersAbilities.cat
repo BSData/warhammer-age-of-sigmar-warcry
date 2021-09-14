@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e75a-3403-7d9b-d386" name="Chaos - Maggotkin of Nurgle - Daemons - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e75a-3403-7d9b-d386" name="Chaos - Maggotkin of Nurgle - Daemons - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="b3ca-4aed-5c64-a9aa" name="Plaguebringer" hidden="false" collective="false" import="true" targetId="d151-27ad-6f6a-4ecf" type="selectionEntry">
       <modifiers>
@@ -73,22 +73,141 @@
     </entryLink>
   </entryLinks>
   <rules>
-    <rule id="b9b2-301a-0702-efea" name="⚁ [Double] Acidic Slime Trail" hidden="true">
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter. This fighter makes a bonus disengage action. Then, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    <rule id="b9b2-301a-0702-efea" name="⚁ [Double] Jolly Gutpipes" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Move characteristic of move actions made by friendly fighters that start within 6&quot; of this fighter.</description>
     </rule>
     <rule id="a146-2867-6a39-1a78" name="⚁ [Double] Disgustingly Resilent" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Roll a number of dice equal to the value of this ability. For each 4+, remove 1 damage point allocated to this fighter.</description>
     </rule>
     <rule id="c117-fe19-5c38-ab9d" name="⚁ [Double] Venomous Sting" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll ... On a 2+, until the end of this battle round, that fighter cannot make move actions or disengage actions.</description>
     </rule>
-    <rule id="1166-2879-752b-3762" name="⚂ [Triple] Cloud of Flies" hidden="true">
-      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target this fighter.</description>
+    <rule id="1166-2879-752b-3762" name="⚂ [Triple] Menacing Overseer" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 9&quot; of this fighter.</description>
     </rule>
     <rule id="1e69-a95a-b8b1-bb01" name="⚂ [Triple] Grandfather&apos;s Blessing" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, add 1 to the Strength characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
-    <rule id="9624-6a92-ca28-3417" name="⚃ [Quad] Endless Swarm" hidden="true">
+    <rule id="9624-6a92-ca28-3417" name="⚃ [Quad] Disgusting Sneeze" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 2+, allocate 2 damage points to that fighter.</description>
+    </rule>
+    <rule id="e2d2-52e0-b9ea-2a2a" name="⚁ [Double] Acidic Slime Trail" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter. This fighter makes a bonus disengage action. Then, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="7e32-5793-9c30-1332" name="⚂ [Triple] Cloud of Flies" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target this fighter.</description>
+    </rule>
+    <rule id="39cf-6fd0-0e05-089b" name="⚃ [Quad] Endless Swarm" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceae-d869-5146-6477" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Remove a number of damage points allocated to this fighter equal to double the value of this ability.</description>
     </rule>
   </rules>
@@ -156,7 +275,7 @@
           <entryLinks>
             <entryLink id="1150-f429-aa20-3ea8" name=" Maggotkin of Nurgle Daemons" hidden="false" collective="false" import="true" targetId="ceae-d869-5146-6477" type="selectionEntry"/>
             <entryLink id="460a-14cc-0201-4bff" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
-            <entryLink id="8034-c0b3-e679-1d52" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
+            <entryLink id="8034-c0b3-e679-1d52" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
             <entryLink id="9a43-630b-2bbf-b48a" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>

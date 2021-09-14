@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c14c-25b6-29c2-7999" name="Death - Legions of Nagash - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c14c-25b6-29c2-7999" name="Death - Legions of Nagash - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ee6d-3d89-0240-2ed5" name="Kastellan" hidden="false" collective="false" import="true" targetId="9482-96c5-d89f-df60" type="selectionEntry">
       <modifiers>
@@ -74,42 +74,164 @@
   </entryLinks>
   <rules>
     <rule id="ca58-cac1-79fc-d63d" name="⚁ [Double] Chosen Champion" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can only use this ability if they are within 6&quot; of a visible friendly fighter with the Leader runemark. Add 1 to the Attacks and Strength characteristics of attack actions made by this fighter this activation.
 ⠀</description>
     </rule>
     <rule id="ea27-76b3-2cbe-d0c0" name="⚁ [Double] Cursed Weapon" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f907-d5f0-c688-5596" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of this fighter’s activation, add 1 to the damage points allocated by hits and critical hits from attack actions made by this fighter that have a Range characteristic of 3 or less.
 ⠀</description>
     </rule>
     <rule id="9434-3141-1469-fa05" name="⚁ [Double] Shambling Horde" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus move action of a number of inches equal to half the value of this ability (rounding up).
 ⠀</description>
     </rule>
     <rule id="bc2d-1281-eb6b-7e81" name="⚂ [Triple] Blood-maddened Feeding Frenzy" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.
 ⠀</description>
     </rule>
     <rule id="226e-5cb1-669e-38ae" name="⚂ [Triple] Thirst for Blood" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. You can remove a number of damage points equal to the value of this ability from this fighter.
 ⠀</description>
     </rule>
     <rule id="57e8-44ac-3355-c488" name="⚃ [Quad] Deathly Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f03-c585-1ede-64c6" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action with 1&quot; of an enemy fighter, pick 1 visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that enemy fighter equal to the value of this ability.
 ⠀</description>
     </rule>
     <rule id="46ef-47ec-ec57-a5cf" name="⚃ [Quad] Vanhel’s Danse Macabre" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A number of visible friendly fighters equal to the value of this ability that are within 6&quot; of this fighter can each make a bonus move action or a bonus attack action (some can make bonus move actions and others bonus attack actions).
 ⠀</description>
     </rule>
     <rule id="c5c0-2e95-cb34-012f" name="⚂ [Triple] Summon Undead" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick a friendly fighter that has been taken down. Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter. The fighter set up on the battlefield no longer counts as being taken down. Remove a number of damage points allocated to that fighter equal to the value of this ability.
 ⠀</description>
     </rule>
     <rule id="278d-a810-40c5-bd7a" name="⚂ [Triple] Necrotic Siphon" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick a visible friendly fighter within 6&quot; of this fighter. Allocate a number of damage points to that fighter equal to value of this ability. Then, remove a number of damage points from this fighter equal to double the value of this ability.
 ⠀</description>
     </rule>
     <rule id="5e63-d3a0-3103-2a13" name="⚁ [Double] Beheading Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1160-6e5f-fd22-e017" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Add half the value of this ability (rounding up) tot he number of damage points allocated by each critical hit from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.
 ⠀</description>
     </rule>

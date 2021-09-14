@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6937-4d88-5447-4e34" name="Chaos - Blades of Khorne - Daemons - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6937-4d88-5447-4e34" name="Chaos - Blades of Khorne - Daemons - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="68b7-819b-c1b6-2c3d" name="Bloodhunter" hidden="false" collective="false" import="true" targetId="50af-0851-86e0-42c6" type="selectionEntry">
       <modifiers>
@@ -60,21 +60,92 @@
   </entryLinks>
   <rules>
     <rule id="b1a8-f29c-56b6-3652" name="⚁ [Double] Blood for the Blood God" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86c0-4b83-48ae-26cb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activiation. This fighter makes a bonus move action or a bonus attack action.</description>
     </rule>
     <rule id="3ccf-7012-2d25-6bf8" name="⚁ [Double] Decapitating Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86c0-4b83-48ae-26cb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Add half the value of this ability (rounding up) to the damage points allocated by critical hits for the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
     </rule>
     <rule id="7745-c27a-e067-e3bb" name="⚁ [Double] Hungry for Flesh" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86c0-4b83-48ae-26cb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that action.</description>
     </rule>
     <rule id="5131-f2f3-5258-58a9" name="⚂ [Triple] Locus of Fury" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86c0-4b83-48ae-26cb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
     </rule>
     <rule id="7e56-6da6-e46e-a1d5" name="⚂ [Triple] Murderous Charge" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86c0-4b83-48ae-26cb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action with 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
     </rule>
     <rule id="85a9-f1b6-618b-3ee2" name="⚃ [Quad] Burning Roar" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86c0-4b83-48ae-26cb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 2+, allocate 2 damage points to the fighter.</description>
     </rule>
   </rules>
