@@ -125,23 +125,25 @@
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="2000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00fd-8510-5cfd-67a0" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="a1a8-adea-08e9-b3ef" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+	          <categoryLink id="e236-6bab-45e7-dadd" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a290-04ae-6126-0037" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c17-c507-690d-a3a5" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d25-9dd2-1047-5dcc" type="max"/>
           </constraints>
-        </categoryLink>
-        <categoryLink id="d991-9f84-0e81-9ea1" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+        </categoryLink>	
+		<categoryLink id="d991-9f84-0e81-9ea1" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
         <categoryLink id="3025-0b3b-9476-8223" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="746e-f161-824a-1d61" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e236-6bab-45e7-dadd" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+        <categoryLink id="a1a8-adea-08e9-b3ef" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c17-c507-690d-a3a5" type="min"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d25-9dd2-1047-5dcc" type="max"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a290-04ae-6126-0037" type="max"/>
           </constraints>
         </categoryLink>
+
+	
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
@@ -173,23 +175,26 @@
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b7-1439-9736-8056" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="b379-4a42-2c4d-11ae" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f972-5fd3-06ae-6bdc" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="2377-2d5d-138d-5546" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58f5-1fbc-791b-d2d3" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="c5d2-95ec-5b7d-32c2" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+	          <categoryLink id="c5d2-95ec-5b7d-32c2" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9306-d299-2f5c-7e39" type="max"/>
           </constraints>
         </categoryLink>
+		        <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+				        <categoryLink id="2377-2d5d-138d-5546" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58f5-1fbc-791b-d2d3" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b379-4a42-2c4d-11ae" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f972-5fd3-06ae-6bdc" type="max"/>
+          </constraints>
+        </categoryLink>
+
+
+
       </categoryLinks>
     </forceEntry>
     <forceEntry id="1a63-49ca-3699-5767" name="Pit Fights [2-Players, 2 Warbands each]" hidden="false">
@@ -221,23 +226,28 @@
         <constraint field="820d-9f65-fcb1-d476" scope="force" value="250.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b29-a65d-a2f7-c104" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="afba-7746-1915-ffe1" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bfe2-5809-b269-b61d" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="22a0-1b29-e80a-36dc" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="8a5b-a702-3417-54f9" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1528-ddc9-1e90-2c4e" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="c66d-3230-ee4c-9a65" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+
+	  <categoryLink id="c66d-3230-ee4c-9a65" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1e22-4767-72b2-bd72" type="min"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5206-90b8-d5df-b64a" type="max"/>
           </constraints>
         </categoryLink>
+		
+        <categoryLink id="22a0-1b29-e80a-36dc" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+		
+        <categoryLink id="8a5b-a702-3417-54f9" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1528-ddc9-1e90-2c4e" type="max"/>
+          </constraints>
+        </categoryLink>
+		
+		<categoryLink id="afba-7746-1915-ffe1" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bfe2-5809-b269-b61d" type="max"/>
+          </constraints>
+        </categoryLink>
+
       </categoryLinks>
     </forceEntry>
     <forceEntry id="0738-b6fd-56d7-29dc" name="Triumph &amp; Treachery [2-Players, 2 Warbands each]" hidden="false">
@@ -269,23 +279,30 @@
         <constraint field="820d-9f65-fcb1-d476" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab5e-4d84-2ee7-4799" type="max"/>
       </constraints>
       <categoryLinks>
+	  
         <categoryLink id="a7da-14bd-08ac-e3eb" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9328-c6a6-12e8-52b1" type="min"/>
             <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e2b-eb82-ab92-b934" type="max"/>
           </constraints>
         </categoryLink>
+		
         <categoryLink id="d703-39d2-e96e-cd12" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+		
+		<categoryLink id="9a60-0fa3-a727-0f60" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a8d-915b-27f4-3418" type="max"/>
+          </constraints>
+        </categoryLink>
+		
         <categoryLink id="a912-2fc6-5801-7cf8" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e56d-744b-ed43-6b52" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="9a60-0fa3-a727-0f60" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a8d-915b-27f4-3418" type="max"/>
-          </constraints>
-        </categoryLink>
+		
+
+		
       </categoryLinks>
     </forceEntry>
   </forceEntries>
