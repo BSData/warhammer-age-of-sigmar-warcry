@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="31" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="32" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -82,17 +82,17 @@
           </constraints>
         </categoryLink>
         <categoryLink id="cc09-a311-7013-6e59" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+        <categoryLink id="8ef5-6034-f03f-b95e" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5737-b82e-d9f2-7509" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="8459-b0e5-21c1-5fca" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca12-cd0c-f085-1eaf" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="e96a-4ba9-a4f3-9277" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
-        <categoryLink id="8ef5-6034-f03f-b95e" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5737-b82e-d9f2-7509" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="6a6a-fcf5-2a74-ef67" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false"/>
       </categoryLinks>
     </forceEntry>
