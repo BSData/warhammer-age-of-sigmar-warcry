@@ -1711,9 +1711,22 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8777-49b2-ad42-c5da" name="Choose a City" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e7d-e14c-7db1-1133" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="1cab-10eb-c121-e454" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e7d-e14c-7db1-1133" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed35-19bb-a7c1-ad76" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b37-5ea4-5bc2-09d6" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cab-10eb-c121-e454" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="4a6e-980b-d4ca-788f" name="Cities" hidden="false" collective="false" import="true">
