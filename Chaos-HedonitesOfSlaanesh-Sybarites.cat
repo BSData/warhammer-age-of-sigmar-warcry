@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6625-1cfe-fa02-d633" name=" Chaos - Hedonites of Slaanesh - Sybarites" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6625-1cfe-fa02-d633" name=" Chaos - Hedonites of Slaanesh - Sybarites" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="2926-fbdd-2a53-5903" name="Blissbarb Archer" hidden="false" collective="false" import="true" targetId="e7f3-ce85-3697-d713" type="selectionEntry"/>
     <entryLink id="f839-9177-5067-6ebf" name="Blissbarb Seeker" hidden="false" collective="false" import="true" targetId="7301-11c2-eaf7-536c" type="selectionEntry"/>
@@ -323,6 +323,15 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6ad8-5139-2de6-1251" name="Symbaresh Twinsoul" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="17bb-dc17-310f-7dce" name="Symbaresh Twinsoul" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="3754-55b1-4deb-a6f5" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
@@ -332,15 +341,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5fb-cfa8-fdf2-1e01" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f0e-73f2-13c5-e6c6" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="5051-0748-8f43-aa0f" name="Symbaresh Twinsoul" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-              <characteristics>
-                <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <selectionEntries>
             <selectionEntry id="728b-e53c-4dd1-c46a" name="with Sinful Cleaver" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>

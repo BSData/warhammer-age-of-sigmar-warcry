@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b706-8178-73d8-57d0" name="Destruction - Kruleboyz" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b706-8178-73d8-57d0" name="Destruction - Kruleboyz" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="cf08-e7d6-63dc-412f" name="Gutrippa" hidden="false" collective="false" import="true" targetId="7632-505e-1353-37c1" type="selectionEntry"/>
     <entryLink id="f731-239f-e6c6-7d69" name="Stab-grot" hidden="false" collective="false" import="true" targetId="e480-6421-c5bf-8402" type="selectionEntry"/>
@@ -35,6 +35,15 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7632-505e-1353-37c1" name="Gutrippa" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="54a7-0081-ba10-8bad" name="Gutrippa" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="f3b5-9b8d-e432-a801" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
@@ -44,15 +53,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc73-dc57-8ade-46d4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8010-10bb-218e-5b32" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="6955-395a-fd9e-e3c0" name="Gutrippa" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-              <characteristics>
-                <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-                <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-                <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <selectionEntries>
             <selectionEntry id="2dbf-14cf-02fd-4e33" name="Wicked Hakka" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -67,6 +67,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
+                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="330b-3c57-fb97-01cf" name="Wicked Stikka" hidden="false" collective="false" import="true" type="upgrade">
@@ -82,6 +84,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
+                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
+                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -97,6 +101,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
+        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c414-cab9-db24-7506" name="Hobgrot Boss" hidden="false" collective="false" import="true" type="model">
@@ -139,6 +145,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
+        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
+        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d938-84e3-736e-7e08" name="Hobgrot Slitta" hidden="false" collective="false" import="true" type="model">
@@ -180,6 +188,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
+        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7ba6-8ebb-6917-69f1" name="Man-skewer Boltboy" hidden="false" collective="false" import="true" type="model">
@@ -222,6 +232,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
+        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e480-6421-c5bf-8402" name="Stab-grot" hidden="false" collective="false" import="true" type="model">
@@ -255,6 +267,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
+        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1e00-1f6c-c768-14bf" name="Pot-grot" hidden="false" collective="false" import="true" type="model">
@@ -288,6 +302,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="35.0"/>
+        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
+        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
