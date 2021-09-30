@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="13ca-35a1-4b48-5b4c" name="Chaos - Corvus Cabal" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="13ca-35a1-4b48-5b4c" name="Chaos - Corvus Cabal" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a587-7adb-53d0-4c76" name="Cabalist" hidden="false" collective="false" import="true" targetId="1819-c7d5-d391-78df" type="selectionEntry"/>
     <entryLink id="d818-afe9-7bc4-5de3" name="Shrike Talon" hidden="false" collective="false" import="true" targetId="5987-761f-a551-728d" type="selectionEntry"/>
@@ -42,8 +42,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c621-c821-ec85-7e88" name="Spire Stalker" hidden="false" collective="false" import="true" type="model">
@@ -77,11 +75,26 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1819-c7d5-d391-78df" name="Cabalist" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Spear">
+          <conditions>
+            <condition field="selections" scope="1819-c7d5-d391-78df" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1481-a0a6-2ffd-f18b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Dagger">
+          <conditions>
+            <condition field="selections" scope="1819-c7d5-d391-78df" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0aa7-f973-aff9-46db" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Familiar">
+          <conditions>
+            <condition field="selections" scope="1819-c7d5-d391-78df" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fafd-a221-c578-3da7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c889-66b1-c596-06f3" name="Cabalist" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -120,8 +133,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1481-a0a6-2ffd-f18b" name="with Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -140,8 +151,6 @@
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0aa7-f973-aff9-46db" name="with Dagger" hidden="false" collective="false" import="true" type="upgrade">
@@ -157,8 +166,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -172,9 +179,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

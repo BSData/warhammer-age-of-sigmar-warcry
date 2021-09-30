@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1a20-692a-e9f0-9f1b" name="Chaos - Spire Tyrants" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1a20-692a-e9f0-9f1b" name="Chaos - Spire Tyrants" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1649-3ebc-db9e-16e4" name="Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
       <categoryLinks>
@@ -14,6 +14,23 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2d0f-25fd-694b-52a7" name="Pit Fighter" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Punch Dagger">
+          <conditions>
+            <condition field="selections" scope="2d0f-25fd-694b-52a7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c21-5a2b-7217-0313" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Net">
+          <conditions>
+            <condition field="selections" scope="2d0f-25fd-694b-52a7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92c9-5026-12b1-c69c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Spear">
+          <conditions>
+            <condition field="selections" scope="2d0f-25fd-694b-52a7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="991a-3c56-632d-046f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="628c-3495-3f7e-2403" name="Pit Fighter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -97,6 +114,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="57c4-e3a8-19dd-5c3e" name="Frenzied Rager" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -198,6 +218,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c134-f417-900d-15d2" name="Pit Veteran" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Dual Weapons">
+          <conditions>
+            <condition field="selections" scope="c134-f417-900d-15d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0506-2f11-7582-79b1" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Shield">
+          <conditions>
+            <condition field="selections" scope="c134-f417-900d-15d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf99-a693-c98c-6eb8" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="65de-6a6a-b1da-828b" name="Pit Veteran" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <modifiers>
@@ -274,6 +306,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>

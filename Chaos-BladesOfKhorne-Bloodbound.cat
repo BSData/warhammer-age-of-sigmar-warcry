@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8bc9-81dc-18c5-632d" name="Chaos - Blades of Khorne - Bloodbound" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8bc9-81dc-18c5-632d" name="Chaos - Blades of Khorne - Bloodbound" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="9b42-867e-8c09-37c7" name="Blood Warrior" hidden="false" collective="false" import="true" targetId="4b11-f968-6472-109f" type="selectionEntry"/>
     <entryLink id="22d1-76b9-90f2-f249" name="Bloodreaver" hidden="false" collective="false" import="true" targetId="6be9-3bc9-27cf-e1af" type="selectionEntry"/>
@@ -142,6 +142,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4b11-f968-6472-109f" name="Blood Warrior" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Pair of Goreaxes">
+          <conditions>
+            <condition field="selections" scope="4b11-f968-6472-109f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641b-8c6a-541a-6f16" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Goreaxe and Gorefist">
+          <conditions>
+            <condition field="selections" scope="4b11-f968-6472-109f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7af6-e0a1-8a96-95a8" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Goreglaive">
+          <conditions>
+            <condition field="selections" scope="4b11-f968-6472-109f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3814-7e72-eb33-8d50" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2bb9-b2da-478d-dfdf" name="Blood Warrior" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -219,8 +236,23 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6be9-3bc9-27cf-e1af" name="Bloodreaver" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Meatripper Axe">
+          <conditions>
+            <condition field="selections" scope="6be9-3bc9-27cf-e1af" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef78-28c0-fe34-1e8d" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Reaver Blades">
+          <conditions>
+            <condition field="selections" scope="6be9-3bc9-27cf-e1af" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8956-dbc3-a670-1f8e" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f32f-5106-ce99-9869" name="Bloodreaver" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -318,6 +350,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c3f3-0c22-7df3-2a5b" name="Mighty Skullcrusher" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Bloodglaive">
+          <conditions>
+            <condition field="selections" scope="c3f3-0c22-7df3-2a5b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1143-b7ba-c72e-a0fe" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Ensorcelled Axe">
+          <conditions>
+            <condition field="selections" scope="c3f3-0c22-7df3-2a5b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="060d-732d-65b1-986f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e306-d532-54d8-cb82" name="Mighty Skullcrusher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -378,6 +422,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="12e8-7b75-07be-6e3f" name="Flesh Hound" hidden="false" collective="false" import="true" type="model">
       <profiles>

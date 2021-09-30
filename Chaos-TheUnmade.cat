@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e027-a563-d05c-d0bd" name="Chaos - The Unmade" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e027-a563-d05c-d0bd" name="Chaos - The Unmade" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="acd2-8754-6980-b27e" name="Ascended One" hidden="false" collective="false" import="true" targetId="6dbe-f04b-3f21-313f" type="selectionEntry"/>
     <entryLink id="dac7-b662-c3d5-0cf2" name="Awakened One with Brutal Polearm" hidden="false" collective="false" import="true" targetId="fa69-1962-8fac-5dc8" type="selectionEntry"/>
@@ -78,6 +78,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="fa69-1962-8fac-5dc8" name="Awakened One" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Flail">
+          <conditions>
+            <condition field="selections" scope="fa69-1962-8fac-5dc8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d6f6-a2c5-626e-0d57" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Brutal Polearm">
+          <conditions>
+            <condition field="selections" scope="fa69-1962-8fac-5dc8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="247f-3f72-5401-471e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f7a8-2016-33da-0ddb" name="Awakened One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -145,6 +157,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>

@@ -56,6 +56,18 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1c52-8c23-cbdb-ef90" name="Hellstrider" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Claw-spear">
+          <conditions>
+            <condition field="selections" scope="1c52-8c23-cbdb-ef90" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e3cd-5ff1-cdfc-0a19" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Hellscourge">
+          <conditions>
+            <condition field="selections" scope="1c52-8c23-cbdb-ef90" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a539-d6fb-69bf-708d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f27a-2d45-cf03-e19a" name="Hellstrider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -91,8 +103,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a539-d6fb-69bf-708d" name="with Hellscourge" hidden="false" collective="false" import="true" type="upgrade">
@@ -108,8 +118,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -125,8 +133,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e7f3-ce85-3697-d713" name="Blissbarb Archer" hidden="false" collective="false" import="true" type="model">
@@ -168,8 +174,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="99ff-4046-a9c6-1ee2" name="Slaangor Fiendblood" hidden="false" collective="false" import="true" type="model">
@@ -203,8 +207,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7301-11c2-eaf7-536c" name="Blissbarb Seeker" hidden="false" collective="false" import="true" type="model">
@@ -247,8 +249,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0b49-520e-b857-a525" name="Myrmidesh Painbringer" hidden="false" collective="false" import="true" type="model">
@@ -282,8 +282,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e8f-8aed-249d-dcd3" name="Slickblade Seeker" hidden="false" collective="false" import="true" type="model">
@@ -318,11 +316,26 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6ad8-5139-2de6-1251" name="Symbaresh Twinsoul" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Sinful Cleaver">
+          <conditions>
+            <condition field="selections" scope="6ad8-5139-2de6-1251" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="728b-e53c-4dd1-c46a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Merciless Blades">
+          <conditions>
+            <condition field="selections" scope="6ad8-5139-2de6-1251" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddcd-9031-fe11-3df6" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Excruciator Lash">
+          <conditions>
+            <condition field="selections" scope="6ad8-5139-2de6-1251" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a18d-779c-bb2a-b714" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="17bb-dc17-310f-7dce" name="Symbaresh Twinsoul" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -355,8 +368,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ddcd-9031-fe11-3df6" name="with Merciless Blades" hidden="false" collective="false" import="true" type="upgrade">
@@ -372,8 +383,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a18d-779c-bb2a-b714" name="with Excruciator Lash" hidden="false" collective="false" import="true" type="upgrade">
@@ -389,8 +398,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -405,9 +412,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

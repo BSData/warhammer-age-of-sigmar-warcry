@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d9af-d49b-af09-32b5" name="Chaos - Untamed Beasts" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d9af-d49b-af09-32b5" name="Chaos - Untamed Beasts" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="9e4c-9abf-3c1d-b8d4" name="Preytaker" hidden="false" collective="false" import="true" targetId="da3a-9ec9-2170-8c57" type="selectionEntry"/>
     <entryLink id="18b0-6761-8825-a0b9" name="Beastspeaker" hidden="false" collective="false" import="true" targetId="261a-0560-6af2-fdc3" type="selectionEntry"/>
@@ -52,8 +52,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="261a-0560-6af2-fdc3" name="Beastspeaker" hidden="false" collective="false" import="true" type="model">
@@ -95,8 +93,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="75c0-4da1-0b74-4992" name="Rocktusk Prowler" hidden="false" collective="false" import="true" type="model">
@@ -130,11 +126,21 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da3a-9ec9-2170-8c57" name="Preytaker" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Sawtooth Blade">
+          <conditions>
+            <condition field="selections" scope="da3a-9ec9-2170-8c57" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c04-2039-c1d0-6f63" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Fanged Axe">
+          <conditions>
+            <condition field="selections" scope="da3a-9ec9-2170-8c57" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2089-f9df-42a1-23bf" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3a93-626b-14c2-11f5" name="Preytaker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -166,9 +172,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8c04-2039-c1d0-6f63" name="with Sawtooth Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -184,8 +188,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -200,8 +202,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c7ca-b6ad-de94-be05" name="Plains-runner" hidden="false" collective="false" import="true" type="model">
@@ -234,8 +234,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="55.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

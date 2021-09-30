@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7021-2d1f-bc51-3d1a" name="Chaos - Cypher Lords" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7021-2d1f-bc51-3d1a" name="Chaos - Cypher Lords" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="0d67-9a7a-04b6-7b48" name="Luminate" hidden="false" collective="false" import="true" targetId="24cf-cb4d-9f96-8240" type="selectionEntry"/>
     <entryLink id="1fe7-eb37-be3f-5dc0" name="Mindbound" hidden="false" collective="false" import="true" targetId="c720-c47e-d160-808a" type="selectionEntry"/>
@@ -12,6 +12,18 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c720-c47e-d160-808a" name="Mindbound" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Double-bladed Sword">
+          <conditions>
+            <condition field="selections" scope="c720-c47e-d160-808a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cbd4-c714-6bc3-a479" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Sword">
+          <conditions>
+            <condition field="selections" scope="c720-c47e-d160-808a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1da1-fc3d-8916-5273" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="fd7d-5015-05b8-b392" name="Mindbound" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -47,8 +59,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1da1-fc3d-8916-5273" name="with Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -64,8 +74,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -80,12 +88,22 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="78ff-4163-3050-5ddd" name="Mirrorblade" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Glaive">
+          <conditions>
+            <condition field="selections" scope="78ff-4163-3050-5ddd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b3f0-ea86-83af-769f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Duelling Swords">
+          <conditions>
+            <condition field="selections" scope="78ff-4163-3050-5ddd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3df4-2a1d-c416-668b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d145-4a21-8a12-b4e5" name="Mirrorblade" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -121,8 +139,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3df4-2a1d-c416-668b" name="with Duelling Swords" hidden="false" collective="false" import="true" type="upgrade">
@@ -138,8 +154,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -155,8 +169,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="24cf-cb4d-9f96-8240" name="Luminate" hidden="false" collective="false" import="true" type="model">
@@ -190,8 +202,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="733e-b677-de21-f3bb" name="Chaos - Beasts of Chaos" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="733e-b677-de21-f3bb" name="Chaos - Beasts of Chaos" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6bcd-a136-e21e-0ea4" name="Beastlord" hidden="false" collective="false" import="true" targetId="6f12-5bdf-edcf-5738" type="selectionEntry">
       <categoryLinks>
@@ -62,6 +62,18 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0683-3fdb-9a3d-09f8" name="Ungor" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Gnarled Shortspear and Half-shield">
+          <conditions>
+            <condition field="selections" scope="0683-3fdb-9a3d-09f8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a35-8133-16ba-7ef9" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Ungor Blade and Half-shield">
+          <conditions>
+            <condition field="selections" scope="0683-3fdb-9a3d-09f8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c8-308d-00bb-2f14" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7c00-bfd3-0bfe-721f" name="Ungor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -121,6 +133,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="727a-74dc-5858-7f0c" name="Bestigor" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -156,6 +171,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a0fc-39ca-018c-8d18" name="Bullgor" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Bullgor Axe and Bullshield">
+          <conditions>
+            <condition field="selections" scope="a0fc-39ca-018c-8d18" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0604-a4c5-38ce-4281" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Bullgor Great Axe">
+          <conditions>
+            <condition field="selections" scope="a0fc-39ca-018c-8d18" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3482-1e99-a549-6754" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Paired Bullgor Axes">
+          <conditions>
+            <condition field="selections" scope="a0fc-39ca-018c-8d18" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e899-31b0-8f91-25cb" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="93ba-3507-1c09-6023" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
@@ -206,6 +238,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0604-a4c5-38ce-4281" name="with Bullgor Axe and Bullshield" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -225,6 +260,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -242,6 +280,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="dea7-0e34-9e4b-4be4" name="Gor" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Paired Gor Blades">
+          <conditions>
+            <condition field="selections" scope="dea7-0e34-9e4b-4be4" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05ea-4ddc-10d5-67da" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Gor Blade and Beastshield">
+          <conditions>
+            <condition field="selections" scope="dea7-0e34-9e4b-4be4" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9283-5d3d-3030-5728" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="45fc-13b6-44f0-03cc" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
@@ -306,8 +356,28 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6c57-8e68-dc95-abd7" name="Dragon Ogor" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Draconic War-glaive">
+          <conditions>
+            <condition field="selections" scope="6c57-8e68-dc95-abd7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4141-71ba-e75b-71a0" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Draconic Crusher">
+          <conditions>
+            <condition field="selections" scope="6c57-8e68-dc95-abd7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f6b3-66c8-7dc6-e7e5" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Paired Ancient Weapons">
+          <conditions>
+            <condition field="selections" scope="6c57-8e68-dc95-abd7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e84-ada2-7ddd-01a6" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="43f7-c8d7-27ef-7b7a" name="Dragon Ogor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
