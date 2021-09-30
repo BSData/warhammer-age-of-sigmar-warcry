@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8ab7-9752-ec64-3693" name="Chaos - Maggotkin of Nurgle - Rotbringers" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8ab7-9752-ec64-3693" name="Chaos - Maggotkin of Nurgle - Rotbringers" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1aa9-93a6-da04-521f" name="Pusgoyle Blightlord" hidden="false" collective="false" import="true" targetId="f893-e2c0-41d4-a794" type="selectionEntry"/>
     <entryLink id="1fc0-edf5-a33e-0487" name="Putrid Blightking" hidden="false" collective="false" import="true" targetId="1e8a-ba4d-edfa-e4ae" type="selectionEntry"/>
@@ -70,6 +70,28 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1e8a-ba4d-edfa-e4ae" name="Putrid Blightking" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Filth-encrusted Shield">
+          <conditions>
+            <condition field="selections" scope="1e8a-ba4d-edfa-e4ae" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a773-dd0f-c9d3-f0be" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Sonorous Tocsin">
+          <conditions>
+            <condition field="selections" scope="1e8a-ba4d-edfa-e4ae" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="471a-c4fb-a4b3-f6a5" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Blighted Weapon">
+          <conditions>
+            <condition field="selections" scope="1e8a-ba4d-edfa-e4ae" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cca-b2c1-85e5-9a24" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="Icon Bearer">
+          <conditions>
+            <condition field="selections" scope="1e8a-ba4d-edfa-e4ae" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03af-40ed-714d-7d50" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="58b2-18fc-0e76-9b67" name="Putrid Blightking" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <modifiers>
@@ -172,6 +194,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
