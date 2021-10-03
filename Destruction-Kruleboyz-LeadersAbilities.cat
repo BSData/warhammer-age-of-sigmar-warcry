@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7a64-ab46-8e4b-d424" name="Destruction - Kruleboyz - Leaders &amp; Abilities " revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7a64-ab46-8e4b-d424" name="Destruction - Kruleboyz - Leaders &amp; Abilities " revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="47e4-cd34-79d1-5398" name="Killaboss" hidden="false" collective="false" import="true" targetId="a2e9-39a1-4fd7-be51" type="selectionEntry">
       <modifiers>
@@ -223,8 +223,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1766-45b8-b5bc-4a60" name="Boltboy Boss" hidden="false" collective="false" import="true" type="model">
@@ -265,11 +263,21 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0a86-6740-036d-86e2" name="Gutrippa Boss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Mace and Sword">
+          <conditions>
+            <condition field="selections" scope="0a86-6740-036d-86e2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73da-5ad8-3462-ea80" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Wicked Stikka">
+          <conditions>
+            <condition field="selections" scope="0a86-6740-036d-86e2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c491-d41a-a244-78d2" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup id="0f61-b41f-85fc-f94c" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="c491-d41a-a244-78d2">
           <constraints>
@@ -297,8 +305,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="73da-5ad8-3462-ea80" name="with Mace and Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -321,8 +327,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -339,8 +343,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e25a-67df-d5d6-2ca0" name="Swampcalla Shaman" hidden="false" collective="false" import="true" type="model">
@@ -381,8 +383,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7559-f0e7-d65c-a4aa" name="Murknob with Belcha-Banna" hidden="false" collective="false" import="true" type="model">
@@ -415,8 +415,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a2e9-39a1-4fd7-be51" name="Killaboss" hidden="false" collective="false" import="true" type="model">
@@ -462,8 +460,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="78ee-315d-b568-69ea" name="with Boss-Hacka" hidden="false" collective="false" import="true" type="upgrade">
@@ -489,8 +485,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -506,9 +500,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

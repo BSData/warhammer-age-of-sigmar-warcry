@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0eec-d494-3711-f7ae" name="Destruction - Bonesplitterz" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0eec-d494-3711-f7ae" name="Destruction - Bonesplitterz" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="999e-f54b-8b99-4941" name="Maniak Weirdnob" hidden="false" collective="false" import="true" targetId="8ea4-35f4-804b-6b84" type="selectionEntry">
       <categoryLinks>
@@ -55,6 +55,18 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d5cc-5dc8-d518-93ce" name="Savage Orruk Morboy" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="name" value="Savage Orruk Morboy">
+          <conditions>
+            <condition field="selections" scope="d5cc-5dc8-d518-93ce" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a984-8e07-c089-94f0" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="Bone Totem Bearer">
+          <conditions>
+            <condition field="selections" scope="d5cc-5dc8-d518-93ce" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0252-8488-6688-c657" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9dd5-a8e3-ff0b-2c62" name="Savage Orruk Morboy" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -89,9 +101,7 @@
                 <entryLink id="6086-a627-0545-7323" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a984-8e07-c089-94f0" name="Savage Orruk Morboy" hidden="false" collective="false" import="true" type="upgrade">
@@ -109,9 +119,7 @@
                 <entryLink id="6e10-06cc-4caf-8f32" name=" Elite" hidden="false" collective="false" import="true" targetId="f907-d5f0-c688-5596" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -126,8 +134,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4142-b7a9-de1b-41f7" name="Savage Orruk Arrowboy" hidden="false" collective="false" import="true" type="model">
@@ -169,11 +175,21 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3249-7708-19de-3997" name="Savage Orruk" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Chompa and Bone Shield">
+          <conditions>
+            <condition field="selections" scope="3249-7708-19de-3997" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="13c2-f51f-06b7-dc76" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Savage Stikka and Bone Shield">
+          <conditions>
+            <condition field="selections" scope="3249-7708-19de-3997" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e25f-776b-a5c5-96b2" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="b6c2-b8cc-fb49-7c62" name="Savage Orruk" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -193,7 +209,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c3f-28e5-c1db-0172" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="13c2-f51f-06b7-dc76" name="with Compa and Bone Shield" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="13c2-f51f-06b7-dc76" name="with Chompa and Bone Shield" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="5d5f-0c0f-1543-044c" name="Chompa" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -206,8 +222,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e25f-776b-a5c5-96b2" name="with Savage Stikka and Bone Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -223,8 +237,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -239,8 +251,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7dd6-3d73-ff5b-2261" name="Savage Boarboy Maniak" hidden="false" collective="false" import="true" type="model">
@@ -275,8 +285,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a85-236c-4bc7-38a4" name="Savage Big Stabbas" hidden="false" collective="false" import="true" type="model">
@@ -309,11 +317,26 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="27ac-d8b3-92d4-53ad" name="Savage Boarboy" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Savage Stikka">
+          <conditions>
+            <condition field="selections" scope="27ac-d8b3-92d4-53ad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="731f-a2be-7e7d-0245" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Chompa">
+          <conditions>
+            <condition field="selections" scope="27ac-d8b3-92d4-53ad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cca6-1ab5-3f2c-0cdf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="Bone Totem Bearer">
+          <conditions>
+            <condition field="selections" scope="27ac-d8b3-92d4-53ad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b61-404f-749c-d22b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="297e-48f8-6301-871c" name="Savage Boarboy" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -346,8 +369,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cca6-1ab5-3f2c-0cdf" name="with Chompa" hidden="false" collective="false" import="true" type="upgrade">
@@ -363,8 +384,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7b61-404f-749c-d22b" name="Bone Totem Bearer" hidden="false" collective="false" import="true" type="upgrade">
@@ -383,8 +402,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -394,14 +411,12 @@
         <entryLink id="0493-f2bd-c2a7-b203" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="f683-f2aa-5f79-0db4" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
-            <entryLink id="6750-84cc-e453-91fa" name=" Bonespliterz" hidden="false" collective="false" import="true" targetId="245b-2857-eaf4-d1ba" type="selectionEntry"/>
+            <entryLink id="6750-84cc-e453-91fa" name=" Bonesplitterz" hidden="false" collective="false" import="true" targetId="245b-2857-eaf4-d1ba" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

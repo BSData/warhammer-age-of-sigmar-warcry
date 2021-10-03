@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="801b-086b-5917-1b23" name="Destruction - Ironjawz - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="801b-086b-5917-1b23" name="Destruction - Ironjawz - Leaders &amp; Abilities" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5542-738d-0de6-5bb2" name="Ardboy Boss with Ardboy Choppas" hidden="false" collective="false" import="true" targetId="e37a-27fc-c2d6-3616" type="selectionEntry">
       <modifiers>
@@ -323,6 +323,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5c9d-eeb5-0ece-c9b5" name="Brute Boss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Boss Choppa">
+          <conditions>
+            <condition field="selections" scope="5c9d-eeb5-0ece-c9b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f91-5b7c-e312-837f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Boss Klaw and Brute Smasha">
+          <conditions>
+            <condition field="selections" scope="5c9d-eeb5-0ece-c9b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a33-bae2-76c8-83b6" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="59ea-16e0-1f8d-3615" name="Brute Boss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -389,6 +401,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c7e6-3418-b8e6-0084" name="Gore-Grunta Boss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Jagged Gore-hacka">
+          <conditions>
+            <condition field="selections" scope="c7e6-3418-b8e6-0084" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a1e-e58b-22cf-16b8" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Pig-iron Choppa">
+          <conditions>
+            <condition field="selections" scope="c7e6-3418-b8e6-0084" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b760-f1bc-b830-74f1" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="a056-3d56-5b94-ad4a" name="Gore-Grunta Boss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a9eb-039a-63b1-0fe5" name="Chaos - Beasts of Chaos - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a9eb-039a-63b1-0fe5" name="Chaos - Beasts of Chaos - Leaders &amp; Abilities" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="984a-eed6-46d2-d832" name="Beastlord" hidden="false" collective="false" import="true" targetId="6f12-5bdf-edcf-5738" type="selectionEntry">
       <modifiers>
@@ -600,6 +600,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5e94-93ab-a645-556a" name="Bloodkine" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Paired Bullgor Axes">
+          <conditions>
+            <condition field="selections" scope="5e94-93ab-a645-556a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c70b-92b3-7c4d-d0bf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Bullgor Axe and Bullshield">
+          <conditions>
+            <condition field="selections" scope="5e94-93ab-a645-556a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b8b-708e-ca9a-bc2b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Bullgro Great Axe">
+          <conditions>
+            <condition field="selections" scope="5e94-93ab-a645-556a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8469-9fb4-5eaf-d547" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup id="473b-033e-b373-50c2" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b8b-708e-ca9a-bc2b">
           <constraints>

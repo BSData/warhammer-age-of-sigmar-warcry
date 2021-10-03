@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3940-ebb7-57c3-0edc" name="Order - Stormcast Eternals - Thunderstrike Stormcasts" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3940-ebb7-57c3-0edc" name="Order - Stormcast Eternals - Thunderstrike Stormcasts" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="f5d6-a3a0-8bec-e7b8" name="Vanquisher" hidden="false" collective="false" import="true" targetId="26e0-6a29-409f-976e" type="selectionEntry"/>
     <entryLink id="e6e7-2375-a103-d0ff" name="Gryph-hound" hidden="false" collective="false" import="true" targetId="8cb7-e786-b91e-68fc" type="selectionEntry"/>
@@ -192,6 +192,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="cdbe-9e89-d987-250c" name="Annihilator" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Meteoric Hammer">
+          <conditions>
+            <condition field="selections" scope="cdbe-9e89-d987-250c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d09c-ec7d-e60a-d7ce" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Grandhammer">
+          <conditions>
+            <condition field="selections" scope="cdbe-9e89-d987-250c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f83-61f9-beea-c6f9" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="cc2d-1444-780b-4f0b" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>

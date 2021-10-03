@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2b27-a80e-7375-c2f5" name="Order - Cities of Sigmar" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2b27-a80e-7375-c2f5" name="Order - Cities of Sigmar" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ff5b-0dbe-913b-f411" name="Wildwood Ranger" hidden="false" collective="false" import="true" targetId="4bc4-5f95-de19-38f6" type="selectionEntry"/>
     <entryLink id="8351-66cf-9234-d6a0" name="Wild Rider" hidden="false" collective="false" import="true" targetId="8dd0-9dab-1d3a-af92" type="selectionEntry"/>
@@ -234,8 +234,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cc23-9ca0-ed23-8d9c" name="Bleaksword" hidden="false" collective="false" import="true" type="model">
@@ -270,8 +268,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="05ed-aea3-88bb-b448" name="Executioner" hidden="false" collective="false" import="true" type="model">
@@ -306,8 +302,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9318-815e-29a0-953e" name="Darkshard" hidden="false" collective="false" import="true" type="model">
@@ -350,8 +344,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62e0-033d-85cd-4c16" name="Black Guard" hidden="false" collective="false" import="true" type="model">
@@ -385,8 +377,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e09-5ade-dbb6-73b2" name="Drakespawn Knight" hidden="false" collective="false" import="true" type="model">
@@ -422,11 +412,26 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b2a6-60cc-ee8e-e762" name="Freeguild Guard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Freeguild Halberd">
+          <conditions>
+            <condition field="selections" scope="b2a6-60cc-ee8e-e762" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8350-2899-b639-1950" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Freeguild Sword and Shield">
+          <conditions>
+            <condition field="selections" scope="b2a6-60cc-ee8e-e762" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e12-6cc1-ca01-266e" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Freeguild Spear">
+          <conditions>
+            <condition field="selections" scope="b2a6-60cc-ee8e-e762" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c848-aea3-e126-34ca" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9e49-8eae-f588-af7c" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
@@ -457,8 +462,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c848-aea3-e126-34ca" name="with Freeguild Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -481,8 +484,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7e12-6cc1-ca01-266e" name="with Freeguild Sword and Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -508,8 +509,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -525,8 +524,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="70f4-ff50-8c5f-330e" name="Freeguild Greatsword" hidden="false" collective="false" import="true" type="model">
@@ -561,8 +558,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d2fa-3d24-0c58-a3d0" name="Freeguild Handgunner" hidden="false" collective="false" import="true" type="model">
@@ -605,8 +600,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d72f-e7ee-1a21-b918" name="Freeguild Crossbowman" hidden="false" collective="false" import="true" type="model">
@@ -649,8 +642,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d8d7-34de-eca4-8cd5" name="Freeguild Pistolier" hidden="false" collective="false" import="true" type="model">
@@ -686,8 +677,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e0ba-7ad5-b32d-7f1f" name="Freeguild Outrider" hidden="false" collective="false" import="true" type="model">
@@ -731,8 +720,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a44-9b3f-39b0-9432" name="Demigryph Knight" hidden="false" collective="false" import="true" type="model">
@@ -768,8 +755,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3af4-1279-8666-8fd5" name="Flagellant" hidden="false" collective="false" import="true" type="model">
@@ -803,8 +788,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74e1-0403-9b60-9482" name="Ironbreaker" hidden="false" collective="false" import="true" type="model">
@@ -839,8 +822,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a6fa-2e5a-929d-51f4" name="Hammerer" hidden="false" collective="false" import="true" type="model">
@@ -875,8 +856,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5e8d-da05-fc3e-b810" name="Irondrake" hidden="false" collective="false" import="true" type="model">
@@ -919,8 +898,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3e4f-91fd-6d3e-d711" name="Gyrocopter" hidden="false" collective="false" import="true" type="model">
@@ -963,8 +940,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc29-2f8a-c70f-0d41" name="Gyrobomber" hidden="false" collective="false" import="true" type="model">
@@ -1007,11 +982,21 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19cb-2aa6-7d05-3ee1" name="Longbeard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Ancestral Weapon and Gromril Shield">
+          <conditions>
+            <condition field="selections" scope="19cb-2aa6-7d05-3ee1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09f0-7274-4147-c500" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Ancestral Great Axe">
+          <conditions>
+            <condition field="selections" scope="19cb-2aa6-7d05-3ee1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f6b-b205-4e16-9851" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="088b-35a2-1657-6cf4" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
@@ -1045,8 +1030,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="09f0-7274-4147-c500" name="with Ancestral Weapon and Gromril Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -1072,8 +1055,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1088,9 +1069,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9647-d62a-5b5f-11b5" name="Shadow Warrior" hidden="false" collective="false" import="true" type="model">
@@ -1133,8 +1112,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a9c-4cce-2fb2-ca3c" name="Dark Rider" hidden="false" collective="false" import="true" type="model">
@@ -1178,8 +1155,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="55b0-038e-9601-ce52" name="Phoenix Guard" hidden="false" collective="false" import="true" type="model">
@@ -1213,11 +1188,21 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7600-cbdc-2489-133f" name="Black Ark Corsair" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Vicious Blade and Repeater Handbow">
+          <conditions>
+            <condition field="selections" scope="7600-cbdc-2489-133f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0490-e0b9-e83d-1c7a" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Vicious Blade and Wicked Cutlass">
+          <conditions>
+            <condition field="selections" scope="7600-cbdc-2489-133f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="815e-de16-4368-1fee" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f8b1-d55d-184a-31df" name="Black Ark Corsair" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -1250,8 +1235,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0490-e0b9-e83d-1c7a" name="with Vicious Blade and Repeater Handbow" hidden="false" collective="false" import="true" type="upgrade">
@@ -1278,8 +1261,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-                <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-                <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1294,9 +1275,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ceff-4c00-c231-c53a" name="Eternal Guard" hidden="false" collective="false" import="true" type="model">
@@ -1331,8 +1310,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4bc4-5f95-de19-38f6" name="Wildwood Ranger" hidden="false" collective="false" import="true" type="model">
@@ -1367,8 +1344,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8dd0-9dab-1d3a-af92" name="Wild Rider" hidden="false" collective="false" import="true" type="model">
@@ -1404,8 +1379,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6c58-d3a2-2b61-30b2" name="Sister of the Thorn" hidden="false" collective="false" import="true" type="model">
@@ -1440,8 +1413,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4e50-385a-6c19-cdd3" name="Sister of the Watch" hidden="false" collective="false" import="true" type="model">
@@ -1484,8 +1455,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-        <cost name="Territories" typeId="8d26-7925-9eed-01b3" value="0.0"/>
-        <cost name="Glory" typeId="4d1d-67c0-ad17-3c7f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

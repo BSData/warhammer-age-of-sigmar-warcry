@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fa9-8ff9-b985-4c2d" name="Order - Stormcast Eternal - Sacrosanct Chamber - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fa9-8ff9-b985-4c2d" name="Order - Stormcast Eternal - Sacrosanct Chamber - Leaders &amp; Abilities" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="51d4-e4aa-be56-3863" name="Castigator-Prime" hidden="false" collective="false" import="true" targetId="d89d-07d8-ff38-66d9" type="selectionEntry">
       <modifiers>
@@ -500,6 +500,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e0ec-0c05-e28c-e528" name="Knight-Incantor" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -662,6 +665,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a515-8259-191e-b4bc" name="Sequitor-Prime" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Stormspite Maul and Soulshield">
+          <conditions>
+            <condition field="selections" scope="a515-8259-191e-b4bc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f1f-4ec4-6bda-0e2e" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Tempest Blade and Soulshield">
+          <conditions>
+            <condition field="selections" scope="a515-8259-191e-b4bc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5866-a343-3875-7971" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Redemption Cache">
+          <conditions>
+            <condition field="selections" scope="a515-8259-191e-b4bc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4802-c63b-b365-cbba" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3e0e-0f2f-d0e1-826f" name="Sequitor-Prime" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -741,6 +761,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0727-faf6-add0-df7e" name="Evocator-Prime on Celestial Dracoline" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -824,6 +847,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
