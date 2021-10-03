@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3940-ebb7-57c3-0edc" name="Order - Stormcast Eternals - Thunderstrike Stormcasts" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3940-ebb7-57c3-0edc" name="Order - Stormcast Eternals - Thunderstrike Stormcasts" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="f5d6-a3a0-8bec-e7b8" name="Vanquisher" hidden="false" collective="false" import="true" targetId="26e0-6a29-409f-976e" type="selectionEntry"/>
     <entryLink id="e6e7-2375-a103-d0ff" name="Gryph-hound" hidden="false" collective="false" import="true" targetId="8cb7-e786-b91e-68fc" type="selectionEntry"/>
@@ -92,6 +92,7 @@
         <entryLink id="003a-e2a2-5df0-2f0a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="e78e-e6ad-b228-cf2a" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
+            <entryLink id="9752-b165-443c-f0c7" name="Stormcast Eternal Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -121,7 +122,11 @@
         <categoryLink id="a190-6c6f-bdee-a26e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="71c8-b403-be8f-e834" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup"/>
+        <entryLink id="71c8-b403-be8f-e834" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="2353-01ba-88f1-1833" name="Stormcast Eternal Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
@@ -152,6 +157,7 @@
         <entryLink id="b8bc-4f80-c6d4-b002" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="414f-6431-32e3-bc03" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
+            <entryLink id="5ef7-166d-8de8-1da7" name="Stormcast Eternal Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -184,6 +190,7 @@
         <entryLink id="dcb5-4b4c-76c9-54ea" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="09de-1c38-c550-064f" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
+            <entryLink id="ad80-7bc5-560e-6437" name="Stormcast Eternal Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -214,7 +221,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2da-9180-e127-528d" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8f83-61f9-beea-c6f9" name="with Grandhammer" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="8f83-61f9-beea-c6f9" name="with Grandhammer" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="5f5f-9dc6-a7a3-24c9" name="Meteoric Grandhammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -236,7 +243,7 @@
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d09c-ec7d-e60a-d7ce" name="with Meteoric Hammer" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="d09c-ec7d-e60a-d7ce" name="with Meteoric Hammer" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="fa31-b4c6-7b7b-8191" name="Meteoric Hammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -264,7 +271,8 @@
       <entryLinks>
         <entryLink id="0e4e-83dc-8847-8c9e" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
-            <entryLink id="77d2-cbde-a6f7-5859" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
+            <entryLink id="77d2-cbde-a6f7-5859" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+            <entryLink id="a77c-aeb7-f1a8-06b6" name="Stormcast Eternal Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -297,6 +305,7 @@
         <entryLink id="1add-5aa7-9369-9b76" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="093d-92ca-0023-a9f0" name=" Elite" hidden="false" collective="false" import="true" targetId="f907-d5f0-c688-5596" type="selectionEntry"/>
+            <entryLink id="00d6-7de2-ef99-8621" name="Stormcast Eternal Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>

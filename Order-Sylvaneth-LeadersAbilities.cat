@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0312-6eb9-dc4a-0fb7" name="Order - Sylvaneth - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0312-6eb9-dc4a-0fb7" name="Order - Sylvaneth - Leaders &amp; Abilities" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="0878-218e-09c4-a760" name="Arch-Revenant" hidden="false" collective="false" import="true" targetId="5ce8-22eb-9827-a4ab" type="selectionEntry">
       <modifiers>
@@ -392,6 +392,9 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2122-4eb8-c2b8-31de" name="Branchwraith" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -546,22 +549,15 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
           </characteristics>
         </profile>
+        <profile id="4327-e70a-9deb-8561" name="Wracking Talons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="3b98-7e62-34ab-6d3e" name="Wracking Talons" hidden="false" targetId="5135-345a-764e-6867" type="profile">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e53-f1a6-3cf1-c7ac" type="atLeast"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
-                <modifier type="set" field="446b-a910-1596-123b" value="2/4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
-      </infoLinks>
       <entryLinks>
         <entryLink id="47db-7d74-d2a2-444b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>

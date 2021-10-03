@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7442-8d51-0f84-ab10" name="Order - Stormcast Eternal - Warrior Chamber - Leaders &amp; Abilities" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7442-8d51-0f84-ab10" name="Order - Stormcast Eternal - Warrior Chamber - Leaders &amp; Abilities" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fda6-6faa-a2b4-6593" name="Decimator-Prime" hidden="false" collective="false" import="true" targetId="10bd-b526-5a20-a202" type="selectionEntry">
       <modifiers>
@@ -471,7 +471,7 @@
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
           </characteristics>
         </profile>
@@ -560,22 +560,15 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
+        <profile id="4ed9-f3b9-e71b-f098" name="Warblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="9634-9866-0832-8b59" name="Warblade" hidden="false" targetId="b602-d2db-5567-8d46" type="profile">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4bb7-bfd3-b475-76b2" type="atLeast"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
-                <modifier type="set" field="446b-a910-1596-123b" value="2/5"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
-      </infoLinks>
       <entryLinks>
         <entryLink id="2a03-9cf6-f8ae-720f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
@@ -598,22 +591,15 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
+        <profile id="b214-9271-2617-1048" name="Warhammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="0bfc-3ddd-7257-858a" name="Warhammer" hidden="false" targetId="536b-679c-a436-27f4" type="profile">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9440-5362-2d5b-03c8" type="atLeast"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="4591-7140-62c7-f2f1" value="4"/>
-                <modifier type="set" field="60cf-9920-ff5d-032d" value="3"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
-      </infoLinks>
       <entryLinks>
         <entryLink id="eb76-7f06-3568-c4c4" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
@@ -672,6 +658,9 @@
                   </modifierGroups>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="48f0-7ac1-8b2d-51b1" name="with Warhammer and Sigmarite Shield" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -898,16 +887,17 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="c280-1efc-18e0-73a7" name="with Paired Celestial Hammers" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="a32e-59ab-0c11-1c81" name="Paired Celestial Hammers" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
-                <infoLink id="800b-f713-9525-688f" name="Paired Celestial Hammer" hidden="false" targetId="8987-f507-8672-b37f" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="60cf-9920-ff5d-032d" value="5">
-                      <conditions>
-                        <condition field="selections" scope="c280-1efc-18e0-73a7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c280-1efc-18e0-73a7" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
                 <infoLink id="5b2b-b40f-f627-3838" name="Thrown Paired Celestial Hammer" hidden="false" targetId="14b7-ff4e-69f4-0dd1" type="profile"/>
               </infoLinks>
               <costs>
