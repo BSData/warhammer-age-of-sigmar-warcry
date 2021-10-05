@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="46f8-e2a4-c896-82db" name="Order - Cities of Sigmar - Leaders &amp; Abilities" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="46f8-e2a4-c896-82db" name="Order - Cities of Sigmar - Leaders &amp; Abilities" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="decb-b4ae-d72f-1922" name="Anointed" hidden="false" collective="false" import="true" targetId="925f-e829-227e-7c8a" type="selectionEntry">
       <modifiers>
@@ -1722,29 +1722,16 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8777-49b2-ad42-c5da" name="Choose a City" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e7d-e14c-7db1-1133" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="1cab-10eb-c121-e454" value="1.0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e7d-e14c-7db1-1133" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="8777-49b2-ad42-c5da" name="Choose a City" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed35-19bb-a7c1-ad76" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b37-5ea4-5bc2-09d6" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cab-10eb-c121-e454" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="4a6e-980b-d4ca-788f" name="Cities" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bfc-06e2-3860-a44d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e1-015a-0e79-e674" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11d3-7552-c104-a7dc" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="1b6a-9a3a-ba34-2446" name="Anvilgard" hidden="false" collective="false" import="true" type="upgrade">
