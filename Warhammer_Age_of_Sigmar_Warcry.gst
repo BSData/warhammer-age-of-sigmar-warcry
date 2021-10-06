@@ -107,52 +107,47 @@
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
       <modifierGroups>
         <modifierGroup>
-          <comment>CoS Relationship</comment>
-          <modifiers>
-            <modifier type="increment" field="a612-cfde-504b-b8d6" value="1.0">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="1eab-7954-84eb-7178" value="0.0">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="a612-cfde-504b-b8d6" value="0.0">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup>
           <comment>Narrative Options Relationship</comment>
           <modifiers>
-            <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
-              </conditions>
+            <modifier type="increment" field="a612-cfde-504b-b8d6" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="7213-2079-c1bf-ab1d" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="7213-2079-c1bf-ab1d" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="a612-cfde-504b-b8d6" value="0.0">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="a612-cfde-504b-b8d6" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="1eab-7954-84eb-7178" value="0.0">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578d-e141-c905-4efe" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </modifierGroup>
@@ -245,6 +240,51 @@
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup>
+          <comment>CoS Relationship</comment>
+          <modifiers>
+            <modifier type="increment" field="a612-cfde-504b-b8d6" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="7213-2079-c1bf-ab1d" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="7213-2079-c1bf-ab1d" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="a612-cfde-504b-b8d6" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <constraints>
         <constraint field="selections" scope="roster" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eab-7954-84eb-7178" type="max"/>
@@ -255,6 +295,12 @@
         <constraint field="selections" scope="force" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7213-2079-c1bf-ab1d" type="max"/>
       </constraints>
       <categoryLinks>
+        <categoryLink id="6167-9314-b82b-737d" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3def-010b-811e-64ad" type="max"/>
+            <constraint field="6cf9-0827-bfe2-824a" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0529-6988-81a1-8231" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="e236-6bab-45e7-dadd" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c17-c507-690d-a3a5" type="min"/>
@@ -516,12 +562,6 @@
           </constraints>
         </categoryLink>
         <categoryLink id="2cd0-557e-0202-662d" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
-        <categoryLink id="6167-9314-b82b-737d" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3def-010b-811e-64ad" type="max"/>
-            <constraint field="6cf9-0827-bfe2-824a" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0529-6988-81a1-8231" type="max"/>
-          </constraints>
-        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
@@ -1032,8 +1072,7 @@
           </categoryLinks>
           <costs>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="-100.0"/>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="-100.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b188-f905-02be-fd21" name="+1 Ally/Hero" hidden="false" collective="false" import="true" type="upgrade">
@@ -1098,9 +1137,8 @@
             <categoryLink id="c5a7-d389-597f-c8a0" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="-50.0"/>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-1.0"/>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="-50.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0dc8-16ee-2970-7503" name="Additional Search Roll" hidden="false" collective="false" import="true" type="upgrade">
