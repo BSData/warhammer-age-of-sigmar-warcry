@@ -104,7 +104,7 @@
         <categoryLink id="6a6a-fcf5-2a74-ef67" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
+    <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play (2 Forces of same faction runemark req.)" hidden="false">
       <modifierGroups>
         <modifierGroup>
           <comment>Narrative Options Relationship</comment>
@@ -1054,7 +1054,7 @@
         <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="578d-e141-c905-4efe" name="Narrative Options " hidden="false" collective="true" import="true" type="unit">
+    <selectionEntry id="578d-e141-c905-4efe" name="Narrative Options (Required)" hidden="false" collective="true" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="2109-44c1-8c46-ea4f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b6-ba89-23ee-b63f" type="min"/>
         <constraint field="selections" scope="2109-44c1-8c46-ea4f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e038-5dad-f92e-0392" type="max"/>
