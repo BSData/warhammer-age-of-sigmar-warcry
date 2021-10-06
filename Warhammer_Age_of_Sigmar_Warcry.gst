@@ -1054,7 +1054,7 @@
         <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="578d-e141-c905-4efe" name="Narrative Options " hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="578d-e141-c905-4efe" name="Narrative Options " hidden="false" collective="true" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="2109-44c1-8c46-ea4f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b6-ba89-23ee-b63f" type="min"/>
         <constraint field="selections" scope="2109-44c1-8c46-ea4f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e038-5dad-f92e-0392" type="max"/>
@@ -1073,6 +1073,7 @@
           <costs>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="-100.0"/>
+            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b188-f905-02be-fd21" name="+1 Ally/Hero" hidden="false" collective="false" import="true" type="upgrade">
@@ -1139,6 +1140,7 @@
           <costs>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-1.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="-50.0"/>
+            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0dc8-16ee-2970-7503" name="Additional Search Roll" hidden="false" collective="false" import="true" type="upgrade">
