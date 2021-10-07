@@ -3,7 +3,7 @@
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="8096-c20e-edc8-1a25" name="Glory" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="6cf9-0827-bfe2-824a" name="Territories" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="6cf9-0827-bfe2-824a" name="T" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="7bf1-ad0a-0d19-6565" name="Model">
@@ -758,7 +758,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f70-c4ef-9eb9-f16f" name=" Ally" hidden="false" collective="false" import="true" type="upgrade">
@@ -769,7 +769,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4992-8710-6244-a9b8" name=" Leader" hidden="false" collective="false" import="true" type="upgrade">
@@ -780,7 +780,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d40e-db86-36c7-f7c6" name=" Agile" hidden="false" collective="false" import="true" type="upgrade">
@@ -791,7 +791,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2c07-fa6a-0279-0c91" name=" Beast" hidden="false" collective="false" import="true" type="upgrade">
@@ -802,7 +802,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d3a-0293-108e-0fdd" name=" Berserker" hidden="false" collective="false" import="true" type="upgrade">
@@ -813,7 +813,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e53-802d-d855-d3f2" name=" Brute" hidden="false" collective="false" import="true" type="upgrade">
@@ -824,7 +824,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c26f-4300-fb59-c645" name=" Bulwark" hidden="false" collective="false" import="true" type="upgrade">
@@ -835,7 +835,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2da4-597a-7aab-a5d8" name=" Champion" hidden="false" collective="false" import="true" type="upgrade">
@@ -846,7 +846,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ac09-2c36-a1a2-920b" name=" Destroyer" hidden="false" collective="false" import="true" type="upgrade">
@@ -857,7 +857,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f907-d5f0-c688-5596" name=" Elite" hidden="false" collective="false" import="true" type="upgrade">
@@ -868,7 +868,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8b52-047b-c9e1-3386" name=" Ferocious" hidden="false" collective="false" import="true" type="upgrade">
@@ -879,7 +879,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9488-26b8-09dc-98f7" name=" Fly" hidden="false" collective="false" import="true" type="upgrade">
@@ -890,7 +890,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0510-be9d-1e15-64f3" name=" Frenzied" hidden="false" collective="false" import="true" type="upgrade">
@@ -901,7 +901,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f309-c6a9-6f7d-a3f8" name=" Gargantuan" hidden="false" collective="false" import="true" type="upgrade">
@@ -912,7 +912,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="38b1-f499-b603-c4f6" name=" Icon Bearer" hidden="false" collective="false" import="true" type="upgrade">
@@ -923,7 +923,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f03-c585-1ede-64c6" name=" Mount" hidden="false" collective="false" import="true" type="upgrade">
@@ -934,7 +934,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="71d5-d154-4b90-841e" name=" Mystic" hidden="false" collective="false" import="true" type="upgrade">
@@ -945,7 +945,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f58d-4233-7f4a-1313" name=" Priest" hidden="false" collective="false" import="true" type="upgrade">
@@ -956,7 +956,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7507-ed71-37d4-12b6" name=" Scout" hidden="false" collective="false" import="true" type="upgrade">
@@ -967,7 +967,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fdf8-4940-a2eb-d3f4" name=" Sentience" hidden="false" collective="false" import="true" type="upgrade">
@@ -978,7 +978,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="841a-a982-1fe2-94eb" name=" Terrifying" hidden="false" collective="false" import="true" type="upgrade">
@@ -989,7 +989,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="231e-509a-2ced-f559" name=" Thrall" hidden="false" collective="false" import="true" type="upgrade">
@@ -1000,7 +1000,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dd95-1c17-a923-4487" name=" Trapper" hidden="false" collective="false" import="true" type="upgrade">
@@ -1011,7 +1011,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47ac-9fa2-ed46-d6db" name=" Warrior" hidden="false" collective="false" import="true" type="upgrade">
@@ -1022,7 +1022,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3202-546a-969f-fdf5" name=" Hero" hidden="false" collective="false" import="true" type="upgrade">
@@ -1033,7 +1033,7 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7b9-055c-eaaf-fec5" name=" Minion" hidden="false" collective="false" import="true" type="upgrade">
@@ -1044,14 +1044,14 @@
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a18f-3460-d9bf-8c05" name=" -----Below Are Universal Runemarks-----" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="578d-e141-c905-4efe" name="Narrative Options (Required)" hidden="false" collective="true" import="true" type="unit">
@@ -1073,7 +1073,7 @@
           <costs>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="-100.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b188-f905-02be-fd21" name="+1 Ally/Hero" hidden="false" collective="false" import="true" type="upgrade">
@@ -1125,7 +1125,7 @@
             <categoryLink id="e2b0-70d8-1039-78a2" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
@@ -1140,7 +1140,7 @@
           <costs>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-1.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="-50.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0dc8-16ee-2970-7503" name="Additional Search Roll" hidden="false" collective="false" import="true" type="upgrade">
@@ -1152,7 +1152,7 @@
           </categoryLinks>
           <costs>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="3.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1165,7 +1165,7 @@
           </categoryLinks>
           <costs>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-10.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="1.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="1.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1178,13 +1178,13 @@
           </categoryLinks>
           <costs>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="1.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
@@ -1197,21 +1197,21 @@
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="64c6-d403-7042-e030" name="Hammer" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e248-3b1d-439c-21ba" name="Dagger" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1225,21 +1225,21 @@
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ad0a-f854-f1a5-debe" name="Level 2" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="aa86-eed6-116f-d189" name="Level 3" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-            <cost name="Territories" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+            <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
