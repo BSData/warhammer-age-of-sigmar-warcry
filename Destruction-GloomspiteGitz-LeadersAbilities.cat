@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9551-9b76-5ee4-5caa" name="Destruction - Gloomspite Gitz - Leaders &amp; Abilities" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9551-9b76-5ee4-5caa" name="Destruction - Gloomspite Gitz - Leaders &amp; Abilities" revision="7" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink id="543d-42e4-fd7d-5a0d" name="Brewgit" hidden="false" collective="false" import="true" targetId="5852-f0a5-039c-9b41" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="f2ce-030d-9971-73f0">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
     <entryLink id="7d90-f8c2-31f8-61ad" name="Bounder Boss" hidden="false" collective="false" import="true" targetId="5afa-3ad6-559e-7d82" type="selectionEntry">
       <modifiers>
         <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
@@ -193,6 +179,20 @@
         <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
           <conditions>
             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="b962-1401-19e0-c12c" name="Brewgit" hidden="false" collective="false" import="true" targetId="5852-f0a5-039c-9b41" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="f2ce-030d-9971-73f0">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -449,6 +449,8 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="130e-c578-a81d-e0b0" name="Boggleye" hidden="false" collective="false" import="true" type="model">
@@ -469,6 +471,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="eac6-1bb3-6d45-0498" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="bad6-5906-0680-49fc" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
@@ -480,6 +485,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5afa-3ad6-559e-7d82" name="Bounder Boss" hidden="false" collective="false" import="true" type="model">
@@ -512,6 +519,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5852-f0a5-039c-9b41" name="Brewgit" hidden="false" collective="false" import="true" type="model">
@@ -532,6 +541,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="fc86-ffd4-b949-6197" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="4513-a2b7-1e9e-ff22" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
@@ -543,6 +555,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f708-5755-9195-1518" name="Fungoid Cave-Shaman" hidden="false" collective="false" import="true" type="model">
@@ -582,6 +596,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7cb6-b38d-eefc-651d" name="Loonboss" hidden="false" collective="false" import="true" type="model">
@@ -613,6 +629,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1900-6065-e61b-0e85" name="Loonboss on Giant Cave Squig" hidden="false" collective="false" import="true" type="model">
@@ -645,6 +663,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="275.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9092-2924-6ee0-a4ab" name="Moonclan Boss" hidden="false" collective="false" import="true" type="model">
@@ -675,6 +695,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8fa7-f3c7-22e2-0a49" name="Scaremonger" hidden="false" collective="false" import="true" type="model">
@@ -695,6 +717,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="69d6-fa35-b17c-2a9e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="6456-52f3-12c6-4e60" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
@@ -706,6 +731,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b937-ba9c-5f9f-0ce8" name="Scuttleboss" hidden="false" collective="false" import="true" type="model">
@@ -737,6 +764,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="83fe-63e6-ce06-de77" name="Shroommancer" hidden="false" collective="false" import="true" type="model">
@@ -757,6 +786,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="eb41-8e74-b81e-b7e4" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="010a-0b98-34c3-08ee" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
@@ -768,6 +800,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7624-b783-3aa8-852f" name="Spider Rider Boss" hidden="false" collective="false" import="true" type="model">
@@ -807,9 +841,11 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8170-5b50-ba72-8061" name="Spiker" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="8170-5b50-ba72-8061" name="Spiker" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="6662-515c-7485-2fb1" name="Spiker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -827,6 +863,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="8de1-acd6-c570-284d" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="e5ca-c444-13d4-fb6f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
@@ -838,6 +877,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="306d-8cda-2ef0-7cf8" name="Squig Hopper Boss" hidden="false" collective="false" import="true" type="model">
@@ -870,6 +911,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3661-3980-6358-9941" name="Webspinner Shaman" hidden="false" collective="false" import="true" type="model">
@@ -909,6 +952,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
+        <cost name="T" typeId="6cf9-0827-bfe2-824a" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
