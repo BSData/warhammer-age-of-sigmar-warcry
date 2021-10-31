@@ -252,55 +252,10 @@
             <modifierGroup>
               <comment>increase roster max 50</comment>
               <modifiers>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="400.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="450.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="500.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
-                  </conditions>
+                  <repeats>
+                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed3b-f3ff-7285-d37a" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </modifierGroup>
@@ -308,54 +263,9 @@
               <comment>increase roster max 100</comment>
               <modifiers>
                 <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="800.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="1000.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="900.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="400.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="600.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="500.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="700.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
-                  </conditions>
+                  <repeats>
+                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10ff-25f8-d133-5fc1" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </modifierGroup>
@@ -368,705 +278,165 @@
                     <modifierGroup>
                       <comment>desolate ruins and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="75.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
+                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="25.0">
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e791-f37d-0901-c258" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="25.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="175.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="125.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="25.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="75.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="175.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="125.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a39-4861-5908-73e9" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Forgotten Spire, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0751-a5d4-8329-7bd3" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Hidden Catacombs, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2830-089f-c858-3bd8" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Ruined Stronghold, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Sealed Tomb, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4304-5379-cd34-5cd6" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Abandoned Foundry, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Eerie Quarter and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3999-bef4-d36c-c23d" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="25.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="75.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="175.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="125.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75aa-4c5f-cc29-440d" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Gore Pit, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Steelwrought Shrine, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c425-a590-56bf-5127" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Surgical Complex, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75e7-f48f-6295-2560" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Ancient Palace and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
+                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa99-272d-6ec2-fd80" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e43a-4345-69ec-a227" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
-                      <comment>Gore Pit, no upgrade</comment>
+                      <comment>Cultic Sanctuary, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Entrance to the Deep Dark, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d91-9377-5504-e7ed" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Sage&apos;s Lair, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba98-cabd-a00d-885c" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Silent Marketplace, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c6-828a-fac4-e1f5" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
@@ -1078,705 +448,165 @@
                     <modifierGroup>
                       <comment>desolate ruins and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="75.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25.0">
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e791-f37d-0901-c258" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="175.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="125.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e791-f37d-0901-c258" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="75.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="175.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="125.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a39-4861-5908-73e9" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a39-4861-5908-73e9" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Forgotten Spire, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0751-a5d4-8329-7bd3" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0751-a5d4-8329-7bd3" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Hidden Catacombs, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2830-089f-c858-3bd8" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2830-089f-c858-3bd8" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Ruined Stronghold, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd7-181b-f6ff-42a1" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Sealed Tomb, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4304-5379-cd34-5cd6" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4304-5379-cd34-5cd6" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Abandoned Foundry, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae29-bfa1-a88a-58ec" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Eerie Quarter and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3999-bef4-d36c-c23d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3999-bef4-d36c-c23d" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="75.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="175.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="125.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75aa-4c5f-cc29-440d" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75aa-4c5f-cc29-440d" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Gore Pit, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b42a-580f-7cde-7257" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Steelwrought Shrine, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c425-a590-56bf-5127" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c425-a590-56bf-5127" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Surgical Complex, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="75e7-f48f-6295-2560" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75e7-f48f-6295-2560" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Ancient Palace and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa99-272d-6ec2-fd80" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa99-272d-6ec2-fd80" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e43a-4345-69ec-a227" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e43a-4345-69ec-a227" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
-                      <comment>Gore Pit, no upgrade</comment>
+                      <comment>Cultic Sanctuary, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4adf-5b5f-ccdf-14c6" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Entrance to the Deep Dark, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d91-9377-5504-e7ed" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d91-9377-5504-e7ed" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Sage&apos;s Lair, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ba98-cabd-a00d-885c" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba98-cabd-a00d-885c" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
                     <modifierGroup>
                       <comment>Silent Marketplace, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="300.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="200.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="150.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
                         <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="350.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="250.0">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9c6-828a-fac4-e1f5" type="equalTo"/>
-                          </conditions>
+                          <repeats>
+                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c6-828a-fac4-e1f5" repeats="1" roundUp="false"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </modifierGroup>
@@ -2549,7 +1379,7 @@
             <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7579-db4e-0dd6-4537" name="Territories Dominated" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7579-db4e-0dd6-4537" name="Dominated Territories" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="a8e5-1b07-c226-925c" value="15.0">
               <comment>soroth kor territory limit</comment>
@@ -3269,7 +2099,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
       </costs>
     </selectionEntry>
     <selectionEntry id="a70b-e4d5-34c8-fcd3" name="-Beasts of Chaos" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>These runemarks are used in each faction to tell the roster which artefacts and command traits for Narrative Play need to be show, and when.</comment>
+      <comment>provides access to faction-specific narrative items &amp; more. used instead of &quot;Primary-catalogue instance of&quot;</comment>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbd2-8e91-62d7-87d2" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe7e-ecbb-39a7-314f" type="min"/>
@@ -3690,6 +2520,46 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="41cd-31ca-ff1a-dca2" name="--Chaos" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="608b-3bf8-b29d-56c6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da37-3ed8-6734-0e00" type="min"/>
+      </constraints>
+      <costs>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="421b-cba9-b6b6-0e40" name="--Death" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8992-1f16-328c-be9b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e5a-9d92-fd0d-9d5b" type="min"/>
+      </constraints>
+      <costs>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b296-b920-ad0c-747e" name="--Destruction" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b11d-3566-a32a-79e5" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="344d-9568-4e2e-5c10" type="min"/>
+      </constraints>
+      <costs>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="553d-df06-b4dd-06ed" name="--Order" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e20b-3ebf-61cc-1d4d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba6f-3013-905d-25d6" type="min"/>
+      </constraints>
+      <costs>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f0b6-b408-7bdf-e0d3" name="Battle Group" hidden="true" collective="false" import="true" defaultSelectionEntryId="fdf0-ef17-53f1-0993">
@@ -3798,7 +2668,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3818,7 +2688,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3838,7 +2708,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3858,7 +2728,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3878,7 +2748,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3898,7 +2768,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3918,7 +2788,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3938,7 +2808,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3958,7 +2828,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3978,7 +2848,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3998,7 +2868,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4018,7 +2888,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4038,7 +2908,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4058,7 +2928,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4078,7 +2948,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4098,7 +2968,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4118,7 +2988,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4138,7 +3008,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4158,7 +3028,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4178,7 +3048,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4198,7 +3068,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4218,7 +3088,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4238,7 +3108,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4258,7 +3128,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4278,7 +3148,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4298,7 +3168,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4318,7 +3188,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4338,7 +3208,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4358,7 +3228,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4378,7 +3248,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4398,7 +3268,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4418,7 +3288,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4438,7 +3308,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4458,7 +3328,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4478,7 +3348,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4498,7 +3368,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4518,7 +3388,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4538,7 +3408,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4558,7 +3428,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4578,7 +3448,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4598,7 +3468,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4618,7 +3488,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4638,7 +3508,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4658,7 +3528,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4678,7 +3548,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4698,7 +3568,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4718,7 +3588,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4738,7 +3608,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4758,7 +3628,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4778,7 +3648,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4798,7 +3668,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4818,7 +3688,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4838,7 +3708,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4858,7 +3728,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4878,7 +3748,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4898,7 +3768,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4918,7 +3788,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4938,7 +3808,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4958,7 +3828,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4978,7 +3848,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4998,7 +3868,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5018,7 +3888,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5038,7 +3908,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5058,7 +3928,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5078,7 +3948,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5098,7 +3968,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5118,7 +3988,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5138,7 +4008,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5158,7 +4028,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5178,7 +4048,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5198,7 +4068,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5218,7 +4088,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32c-06a3-ce2e-8cd7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5240,8 +4110,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5265,8 +4135,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5290,8 +4160,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5313,7 +4183,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee7d-03e8-aac4-1e23" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5333,7 +4203,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0624-cb15-b0e5-ff95" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5353,7 +4223,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee7d-03e8-aac4-1e23" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5373,7 +4243,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aee6-e756-8a26-8a7b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5393,7 +4263,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aee6-e756-8a26-8a7b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5413,7 +4283,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aee6-e756-8a26-8a7b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5433,7 +4303,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="497e-cceb-4805-44ec" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5453,7 +4323,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="497e-cceb-4805-44ec" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5473,7 +4343,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="497e-cceb-4805-44ec" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5493,7 +4363,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5513,7 +4383,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5533,7 +4403,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5553,7 +4423,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32c-06a3-ce2e-8cd7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5573,7 +4443,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32c-06a3-ce2e-8cd7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5593,7 +4463,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="471f-f5a7-5e3a-f682" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5613,7 +4483,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="471f-f5a7-5e3a-f682" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5633,7 +4503,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="471f-f5a7-5e3a-f682" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5653,7 +4523,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfe5-8431-8f0e-59bf" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5673,7 +4543,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfe5-8431-8f0e-59bf" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5693,7 +4563,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfe5-8431-8f0e-59bf" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5713,7 +4583,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5733,7 +4603,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5753,7 +4623,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5773,7 +4643,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5793,7 +4663,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5813,7 +4683,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5833,7 +4703,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5853,7 +4723,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5873,7 +4743,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5895,8 +4765,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5920,8 +4790,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5945,8 +4815,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5970,8 +4840,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5995,8 +4865,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -6020,8 +4890,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -6043,7 +4913,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6063,7 +4933,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0624-cb15-b0e5-ff95" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6083,7 +4953,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0624-cb15-b0e5-ff95" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6103,7 +4973,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6123,7 +4993,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6143,7 +5013,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6163,7 +5033,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6183,7 +5053,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6203,7 +5073,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6223,7 +5093,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6243,7 +5113,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6263,7 +5133,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6283,7 +5153,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6303,7 +5173,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6323,7 +5193,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6343,7 +5213,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6363,7 +5233,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6428,7 +5298,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6448,7 +5318,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6468,7 +5338,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6488,7 +5358,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6508,7 +5378,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6528,7 +5398,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6548,7 +5418,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6568,7 +5438,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6588,7 +5458,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6608,7 +5478,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6628,7 +5498,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6648,7 +5518,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6668,7 +5538,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6688,7 +5558,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6708,7 +5578,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6728,7 +5598,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6748,7 +5618,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6768,7 +5638,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6788,7 +5658,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6808,7 +5678,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6848,7 +5718,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6868,7 +5738,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6888,7 +5758,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6908,7 +5778,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6928,7 +5798,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6948,7 +5818,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6968,7 +5838,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6988,7 +5858,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7008,7 +5878,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7028,7 +5898,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7048,7 +5918,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7068,7 +5938,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7088,7 +5958,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7108,7 +5978,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7128,7 +5998,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7148,7 +6018,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7168,7 +6038,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7188,7 +6058,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7208,7 +6078,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7228,7 +6098,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7248,7 +6118,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7268,7 +6138,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7288,7 +6158,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7308,7 +6178,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7328,7 +6198,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7348,7 +6218,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7368,7 +6238,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7388,7 +6258,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7408,7 +6278,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7428,7 +6298,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7448,7 +6318,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7468,7 +6338,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7488,7 +6358,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7508,7 +6378,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7528,7 +6398,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7548,7 +6418,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7568,7 +6438,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7584,31 +6454,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7abc-0c64-488d-aa57" name="The Bilious Decanter" hidden="true" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="e055-2740-1b6d-dc44" name="The Bilious Decanter" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, until  the end of the battle round, add 3 to the Attacks and Strength characteristics of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="1200-6da0-3da2-7350" name="Iron Skull Helm" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7628,7 +6478,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7648,7 +6498,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e383-b36f-ff8a-bdb0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7668,7 +6518,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7688,7 +6538,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7708,7 +6558,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7728,7 +6578,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7748,7 +6598,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7768,7 +6618,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7788,7 +6638,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6a3-a595-afb6-98aa" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7808,7 +6658,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7828,7 +6678,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0624-cb15-b0e5-ff95" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7848,7 +6698,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0624-cb15-b0e5-ff95" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7870,8 +6720,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -7895,8 +6745,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -7920,8 +6770,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b42-84ca-672b-a29c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -7943,7 +6793,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee7d-03e8-aac4-1e23" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7963,7 +6813,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee7d-03e8-aac4-1e23" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7983,7 +6833,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee7d-03e8-aac4-1e23" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8003,7 +6853,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aee6-e756-8a26-8a7b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8023,7 +6873,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aee6-e756-8a26-8a7b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8043,7 +6893,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aee6-e756-8a26-8a7b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8063,7 +6913,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="497e-cceb-4805-44ec" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8083,7 +6933,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="497e-cceb-4805-44ec" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8099,31 +6949,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b138-1a18-0300-550f" name="Grave-sand Plate" hidden="true" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="497e-cceb-4805-44ec" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="177d-f0fa-b4ab-bdcc" name="Grave-sand Plate" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the Strength characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 3&quot; of the bearer.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="0876-261c-4e3c-4a95" name="Icon of Undivided Glory" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c14-883d-fcbd-7224" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8143,7 +6973,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0624-cb15-b0e5-ff95" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8163,7 +6993,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8183,7 +7013,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8203,7 +7033,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8223,7 +7053,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32c-06a3-ce2e-8cd7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8243,7 +7073,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32c-06a3-ce2e-8cd7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8263,7 +7093,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32c-06a3-ce2e-8cd7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8283,7 +7113,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="471f-f5a7-5e3a-f682" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8303,7 +7133,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="471f-f5a7-5e3a-f682" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8323,7 +7153,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="471f-f5a7-5e3a-f682" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8343,7 +7173,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfe5-8431-8f0e-59bf" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8363,7 +7193,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfe5-8431-8f0e-59bf" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8383,7 +7213,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfe5-8431-8f0e-59bf" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8403,7 +7233,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8423,7 +7253,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8443,7 +7273,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8463,7 +7293,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8483,7 +7313,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8503,7 +7333,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8523,7 +7353,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8543,7 +7373,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8563,7 +7393,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8585,8 +7415,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -8610,8 +7440,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -8635,8 +7465,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -8660,8 +7490,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -8685,8 +7515,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -8710,8 +7540,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -8733,7 +7563,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8753,7 +7583,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8773,7 +7603,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8793,7 +7623,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8813,7 +7643,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8833,7 +7663,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8853,7 +7683,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8873,7 +7703,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8893,7 +7723,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8913,7 +7743,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8933,7 +7763,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8953,7 +7783,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8973,7 +7803,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8993,7 +7823,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70cb-ea60-447b-ee54" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9013,7 +7843,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9033,7 +7863,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9041,6 +7871,46 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <profile id="66e8-bb41-3d72-f929" name="Drakeblood Tattoos" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the damage points allocated by each hit and critical hit (to a minimum of 1) from attack actions that target the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="caed-e50c-db67-470d" name="The Bilious Decanter" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="04f9-7fb7-96b4-0ef6" name="The Bilious Decanter" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action. If they do so, until the end of the battle round, add 3 to the Attacks and Strength characteristics of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e455-0957-3a58-0829" name="Grave-sand Plate" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c0f1-1b71-ff55-87c2" name="Grave-sand Plate" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the Strength characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 3&quot; of the bearer.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9946,7 +8816,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32c-06a3-ce2e-8cd7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9966,7 +8836,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="471f-f5a7-5e3a-f682" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9986,7 +8856,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfe5-8431-8f0e-59bf" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10006,7 +8876,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10026,7 +8896,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="369c-035e-3988-af8e" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10046,7 +8916,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c93-2200-a39e-de22" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10068,8 +8938,8 @@ TRIAL OF CHAMPIONS</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-70c8-283c-c891" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b3a7-1206-c007-9fd9" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10091,7 +8961,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee7d-03e8-aac4-1e23" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10113,8 +8983,8 @@ TRIAL OF CHAMPIONS</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bc9-81dc-18c5-632d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5968-7952-8a30-2838" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10136,7 +9006,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5199-9be4-edc2-5c3b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10158,8 +9028,8 @@ TRIAL OF CHAMPIONS</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ab7-9752-ec64-3693" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-feae-a695-5d0e" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10181,7 +9051,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0624-cb15-b0e5-ff95" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10201,7 +9071,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10221,7 +9091,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10241,7 +9111,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10261,7 +9131,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10281,7 +9151,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10301,7 +9171,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10321,7 +9191,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10341,7 +9211,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7021-2d1f-bc51-3d1a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10361,7 +9231,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10381,7 +9251,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10401,7 +9271,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10421,7 +9291,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10441,7 +9311,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b91-0957-db30-93e7" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10461,7 +9331,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a20-692a-e9f0-9f1b" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10481,7 +9351,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4347-8ecd-7dd8-c70a" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10503,7 +9373,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60e6-0f2c-d052-85f6" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10523,7 +9393,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98a8-13db-b704-3ef0" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10545,7 +9415,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf4-8b1a-c2c2-3323" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10565,7 +9435,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fae-5c7e-e77c-4d26" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10585,7 +9455,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f44-f391-b62b-5849" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10605,7 +9475,7 @@ TRIAL OF CHAMPIONS</characteristic>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eec-d494-3711-f7ae" type="instanceOf"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -11276,6 +10146,326 @@ TRIAL OF CHAMPIONS</characteristic>
                 <profile id="3119-b8e8-c8ea-af5e" name="Slaver&apos;s Bane" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
                   <characteristics>
                     <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">At the start of the battle, before the hero phase of the first battle round, roll a number of dice equal to the number of dominated territories your opponent&apos;s warband has.  For each 4+, you receive 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3149-b6c3-1bf7-ec31" name="Whispers of Demise" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9b81-a6e2-d9c4-cd7b" name="Whispers of Demise" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Hit rolls for attack actions made by this fighter that target an enemy leader score a critical hit on a 5-6.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="93aa-3383-302c-18e4" name="Precise and Thorough" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9167-1399-ae30-6bd9" name="Precise and Thorough" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Hit rolls for attack actions made by this fighter that have a Range characteristic of 3 or less score a critical hit on a 5-6.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="48b5-eee6-27ec-a5c6" name="Favour of the Dragon God" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b1c2-5d21-22e6-ebed" name="Favour of the Dragon God" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">During the aftermath sequence, when rolling for destiny levels, this fighter gains a destiny level on a 4+.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cdd5-2927-f436-f017" name="Abyssal Horror" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c486-ac03-511d-6e64" name="Abyssal Horror" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Each  time an enemy fighter within 3&quot; of this fighter uses an ability, roll a dice.  If the roll is equal to or higher than the value of that ability, the ability cannot be used and the ability dice used for it are discarded.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6c00-9948-a5ac-aa48" name="Terminal Blow" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="461c-28e2-f2de-9bd8" name="Terminal Blow" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 5 to the damage points allcoated by  each critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ba3f-3fee-d8f3-4f1f" name="Corruptor&apos;s Gifts" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="09e2-0719-0200-de7a" name="Corruptor&apos;s Gifts" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle,  this fighter can use this command trait as an action.  If they do so, pick a visible enemy fighter within 9&quot; of this fighter.  Allocate 2D6 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5407-54cd-e118-39f4" name="Overlord of Ruin" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="334f-3a4c-df90-503f" name="Overlord of Ruin" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">At the start of each battle round, before the hero phase begins, roll a number of dice equal to number of territories this fighter&apos;s warband dominates.  For each 6, you gain 1 wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="783b-52b0-b448-3df8" name="Fearsome Destroyer" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0618-4596-6056-bb39" name="Fearsome Destroyer" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, this fighter can use this command trait to make a bonus move action or a bonus attack action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="923e-07a4-2d02-bbf4" name="A Score to Settle" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="222c-5761-0262-407e" name="A Score to Settle" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add the number of the current battle round (to a maximum of 3) to the damage points allocated by each hit and critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6071-b06a-4bb3-022a" name="Shadow Form" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6b5b-3e4e-49e9-e314" name="Shadow Form" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">This fighter is not visible to enemy fighters more than 9&quot; away.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="adad-e6cf-d108-3e21" name="Champion of Battle" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="37f1-44ff-4ef3-539d" name="Champion of Battle" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 2 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1201-24f3-391b-54e5" name="Speaker to the Savage" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9326-b62c-bb5c-fde5" name="Speaker to the Savage" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you automatically pass bestial intellect rolls when you activate a chaotic beast within 12&quot; of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fa7d-34bf-30a9-2ea8" name="Scarred and Bloodied" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0556-0430-f99c-e3f7" name="Scarred and Bloodied" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Until the end of the battle, each time an enemy fighter is taken down by an attack action made by this fighter, add 1 to the Toughness characteristic of this fighter and remove D3 damage points allocated to this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4888-a05e-8280-2333" name="Glowy Green Aura" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="2a3e-7191-91bc-7e83" name="Glowy Green Aura" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 5 to the Wounds characteristic of this fighter.  In addition, add 1 to the Toughness characteristic of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b62b-5eab-654e-4a2f" name="Topple the Mighty" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3bfe-e40a-5a14-2e32" name="Topple the Mighty" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 2 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less and that target an enemy fighter with the Leader runemark or the Gargantuan runemark.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f279-ccff-36b6-9e59" name="Brutish Bravado" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5615-5137-25e4-d3ae" name="Brutish Bravado" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, this fighter can use this command trait to make a bonus move action or a bonus attack action.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12313,6 +11503,967 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="74c9-0eda-7fd2-532e" name="Dread Favour" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4709-d7eb-87ee-5fa9" name="Dread Favour" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">During the aftermath sequence, when rolling for destiny levels, this fighter gains a destiny level on a 5+.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="003f-f02c-0ed1-77cf" name="Dark Charisma" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="618c-dcc2-b36f-5a0e" name="Dark Charisma" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">This fighter can use the &quot;Inspiring Presence&quot; ability as a [Double] instead of a [Triple].  In addition, they can use this ability even if they do not have a Leader runemark.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ec8b-3645-3700-38ac" name="Ruinous Duellist" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="94c6-8f3a-fa05-59b0" name="Ruinous Duellist" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">While there is only 1 enemy fighter within 3&quot; of this fighter, add 2 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1f37-f720-184c-660a" name="A Nose for Trouble" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9127-96d2-9ac6-9bae" name="A Nose for Trouble" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Subtract 1 (to a minimum of 1) from the damage points allocated to this fighter by each hit and critical hit from attack actions made by enemy fighters.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f912-52d5-69f9-40c4" name="Bolstered by Corruption" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4779-5e84-f5c6-0abf" name="Bolstered by Corruption" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Toughness characteristic of this fighter. In addition, any rule that subtracts from a fighter&apos;s Toughness characteristic has no effect on this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3b9b-b41e-e14c-b7d4" name="Insidious Schemer" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="bca7-67b5-ca0d-7de9" name="Insidious Schemer" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7bca-6a26-7a9d-a43b" name="Artisan of Obliteration" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="da6d-2404-690e-2669" name="Artisan of Obliteration" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the damage points allocated to enemy fighters by each hit and critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ba6a-2297-5272-7d2e" name="Master of Dark Rituals" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c868-2186-8540-0c5c" name="Master of Dark Rituals" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Each time this fighter takes down an enemy fighter, you gain 1 additional wild dice that can be used in the hero phase of the next battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b2a6-fe1b-0e88-83cc" name="Carnage Eternal" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9536-7c3e-77ff-12fd" name="Carnage Eternal" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Each time this fighter takes down an enemy fighter, you can remove D3 damage points allocated to this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2f98-54aa-30ef-52d1" name="Hack and Slash" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7b94-56d0-98da-7e9f" name="Hack and Slash" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="41ea-c257-1193-140a" name="Unnatural Vitality" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="dbb6-93c2-86e2-5fb3" name="Unnatural Vitality" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 5 to the Wounds characteristic of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7edb-c082-a4db-5a75" name="Lord of Dominion" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1544-27ce-12b3-9778" name="Lord of Dominion" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">The Strength characteristic of attack actions made by this fighter cound as being higher than the target&apos;s Toughness characteristic unless the target has the Leader runemark or Gargantuan runemark.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="98d8-44d2-c397-f3fb" name="Grand Null" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="fbd1-7676-149c-e38c" name="Grand Null" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Subtract 3 from the damage points allocated to this fighter (to a minimum of 1) from attack actions that have the Blast runemark.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a8f1-192a-15fb-6814" name="Inescapable" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="485a-699a-e060-8003" name="Inescapable" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Move characteristic of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b4aa-4256-24d6-f1da" name="Red Fury" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b7c0-add5-801d-5a08" name="Red Fury" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e3e0-f9fc-fabc-9bc2" name="Ancient Tactician" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="2b5c-0f24-8e84-d5f0" name="Ancient Tactician" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, the bearer can use the Inspiring Presence ability without using any ability dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="069a-66c6-d6ed-964d" name="Master of the Black Arts" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="703d-4f11-7c12-2fd2" name="Master of the Black Arts" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">When this fighter makes a wait action, you can remove D6 damage points allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a1a2-2be4-ea81-63ee" name="The Weakness of Life" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="eb1a-8a7d-6328-18ef" name="The Weakness of Life" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 2 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less and target an enemy fighter with 5 or more damage points allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="eb83-4690-e024-98e1" name="Dark Aristocracy" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b655-c4ed-1bad-d3d7" name="Dark Aristocracy" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 2 to the damage points allocated to enemy fighters by each hit and critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less and target a fighter that has activated this battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="964a-b46a-bffd-bcee" name="Bump in the Night" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="417b-98e5-580f-02f7" name="Bump in the Night" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target this fighter.
+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ba97-10e2-93a0-e257" name="Empowered by Demise" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3df6-b419-4b91-7662" name="Empowered by Demise" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Each time an enemy fighter not from a Death warband is taken down by an attack action made by this fighter that has a Range characteristic of 3 or less, you can remove D3 damage points from this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="78c4-3315-082f-f25c" name="Deathless" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a8dd-1581-983c-46eb" name="Deathless" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">After a campaign battle, you can make a destiny roll for this fighter even if they were taken down during the battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ed51-d8c5-2f10-8528" name="A Bone to Pick" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0e1c-fa93-08de-75f2" name="A Bone to Pick" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 2 to the Attacks characteristic of attack actions made by this fighter that target an enemy figther who has targeted  them with an attack action this battle</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e5c2-965d-67d4-5801" name="Fear Itself" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b55e-0837-e9f1-1a77" name="Fear Itself" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2480-62de-4165-b1eb" name="Nowhere to Hide" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="bf5d-37cb-2700-4091" name="Nowhere to Hide" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Enemy fighters cannot receive the benefit of cover when they are targeted by an attack action made by this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f248-d644-c81d-9074" name="Terrible Show-off" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="57d9-0323-8825-1142" name="Terrible Show-off" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Roll a dice each time an enemy fighter is taken down by an attack action made by this fighter.  On a 4+, you gain 1 additional wild dice at the start of the next hero phase this battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="02d5-5ae8-7219-eb06" name="Innovative" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1845-d750-c467-4f8b" name="Innovative" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you can make 1 additional search roll on a lesser artefacts table during the aftermath sequence of the battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e51e-2889-6a98-8953" name="Idiot Savant" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="da5c-7a56-c7b5-6e58" name="Idiot Savant" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 3 to the value of abilities used by this fighter (to a maximum of 6).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="96ff-ed52-42a7-a916" name="Master Forager" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="f2ef-eb48-17d9-2e18" name="Master Forager" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you can make 1 additional search roll on a lesser artefacts table during the aftermath sequence of each campaign battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="623f-e8c7-3d3d-ee46" name="Fight Another Day" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="f462-0ee5-df7c-d9de" name="Fight Another Day" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Each time this fighter is targeted by an attack action, roll a dice.  On a 4+, you can pick a friendly fighter within 1&quot; of this fighter to be the target of that attack action instead.  That fighter is treated as being within range of the weapon being used.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3870-73a3-a53f-fcec" name="Love What He Does" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e545-cf2d-780b-7ec1" name="Love What He Does" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 3 to the damage points allocated by critical hits from attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e3b2-2d0b-d568-aa8e" name="A Proper Brainbox" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4149-b409-678f-a211" name="A Proper Brainbox" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="44ce-dae6-e644-ac8e" name="Guts and Glory" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e106-e469-97cb-2658" name="Guts and Glory" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Each time an enemy fighter is taken down within 1&quot; of this fighter, you can remove D6 damage points allocated to this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c148-4840-8ab6-47f5" name="Seeing Red" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3368-5063-2430-624b" name="Seeing Red" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">While this fighter has 5 or more damage pints allocated to them, add 2 to the damage points allocated by each hit and critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f63b-1202-7fad-ce87" name="Notorious Bully" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="09b2-7e3a-7c76-e81b" name="Notorious Bully" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.  If all warbands in the battle have the same number of dominated territories, add 2 to the Attacks characteristic instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bf3c-5f6f-1810-a415" name="Lone Wolf" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="956a-1565-c1fc-1ec5" name="Lone Wolf" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">The &quot;Desperate Last Stand&quot; rule (Core book, pg 40) applies to this fighter while there are no friendly fighters within 3&quot; of them and there are any enemy fighters within 3&quot; of them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9fa0-063a-e5f3-e630" name="Just a Scratch" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d337-2ec8-060d-e033" name="Just a Scratch" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Subtract 1 from the damage points allocated to this fighter by each hit and critical hit from attack actions made by enemy fighters that are more than 3&quot; away.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d3af-f076-b277-7a3f" name="Extremely Pragmatic" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d791-d328-2e83-68d3" name="Extremely Pragmatic" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b3af-7555-c025-3391" name="Vengeful Rampage" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="99b0-9709-5b32-b0c5" name="Vengeful Rampage" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 2 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less and that target an enemy fighteer that made an attack action that targeted this fighter this battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7baa-a918-d3b0-5cc6" name="Chosen Soul" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1c6d-033f-3d78-09f2" name="Chosen Soul" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, at the start of the combat phase, yo ucan declare that the gods are watching this fighter.  If you do so, until the end of the battle round, count each critical hit scored from attack actions that target this fighter as hit instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c8e9-9fd1-1986-ac57" name="Holy Might" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0d9a-7e2d-fa17-1094" name="Holy Might" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the damage points allocated by each hit and critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2ddd-6289-421c-cfa8" name="Roaring Firebrand" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d01c-f411-7b0d-2bdf" name="Roaring Firebrand" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Strength characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 3&quot; of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fba5-6e2b-99cf-0de9" name="Eager to Impress" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d1ab-80ec-20bf-9ee1" name="Eager to Impress" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">At the start of each hero phase, if this fighter is included in your warband, is on the battlefield and has 5 or more damage points allocated to them, you gain 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="24d4-342a-cdd5-fc5d" name="Back from the Brink" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="67ef-d995-e8fc-f1bc" name="Back from the Brink" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">While this fighter has 5 or more damage points allocated to them, add 2 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2f4c-5a1f-0bec-24bb" name="Genuinely Altruistic" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6705-8add-a2b6-969d" name="Genuinely Altruistic" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">While this fighter is within 3&quot; of another friendly fighter  that has 1 or more damage points allocated to them, add 2 to the damage points allocated to enemy fighters by each hit and critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="455e-22d3-6ebf-0dcb" name="Patient Tracker" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="21b6-66d6-0d7d-f123" name="Patient Tracker" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, in the third battle round or later, this fighter can make a bonus attack action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="988c-807b-352b-4d77" name="A Mercenary Outlook" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="89c7-a198-d40b-5228" name="A Mercenary Outlook" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband and on the battlefield, the value of abilities used by allies in your warband is always 6 (regardless of any other modifiers).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="728d-cd0f-16de-2ae6" name="Last Gasp" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b549-3020-2983-0cfb" name="Last Gasp" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">When this fighter is taken down, before the model is removed from play, pick 1 visible enemy fighter within 1&quot; of this fighter and roll 2 dice.  For each 4+, allocate 5 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="7e76-4ef1-f16f-f8bc" name="Challenge Battle Artefacts" hidden="true" collective="false" import="true">
@@ -12593,6 +12744,349 @@ TRIAL OF CHAMPIONS</characteristic>
                 <profile id="d10b-ab4b-c802-1854" name="Forge-Tyrant&apos;s Boon" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Strength characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9404-627c-9541-cbf1" name="Blade of the Deathless Order" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4d52-4e20-4b5d-0a3b" name="Blade of the Deathless Order" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact to make a bonus attack action, or to remove D6 damage points allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1f5b-1e7d-8a69-a7ad" name="Tortured Soulgem" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d545-258d-5bbf-2408" name="Tortured Soulgem" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as a bonus action.  If they do so, pick 1 visible enemy fighter within 6&quot; of the bearer and roll a dice.  On a 4+, that fighter cannot activate this battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c3b0-68e0-415f-9c05" name="The Wand of Grasping Bone" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="2752-1e7a-a129-e9d1" name="The Wand of Grasping Bone" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, pick a friendly fighter that has been taken down.  Set up that fighter once more on the battlefield wholly within 3&quot; of the bearer.  The fighter set up on the battlefield no longer counts as being taken down.  Remove 2D6 damage points allocated to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c61b-fa79-0846-e7b9" name="Fetters of the Oubliette" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="dd0e-8a78-4aa9-45b6" name="Fetters of the Oubliette" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as a bonus action.  If they do so, pick 1 visible enemy fighter within 1&quot; of the bearer and roll a dice.  On a 2+, until the end of the battle, that fighter cannot move actions or disengage actions while this fighter is within 1&quot; of them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9dd0-bff5-ec4f-efa3" name="Relic of the Barrows" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7624-ca58-5d9e-2552" name="Relic of the Barrows" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.
+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5359-82e9-9fe8-fa53" name="Axe of Unmaking" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0ba2-cc7f-70d1-0455" name="Axe of Unmaking" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Roll a dice each time an enemy fighter is taken down by an attack action made by the bearer that has a Range characteristic of 3 or less.  On a 6, the bearer can immediately make a bonus move action or a bonus attack action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="42b6-f8e4-2baa-b640" name="Desecrated Meteoric Mail" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c04c-37cc-7f94-c57c" name="Desecrated Meteoric Mail" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the damage points allocated by each hit and critical hit from attack actions that target the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6598-7743-fd1c-68c7" name="Ulguan Duskbauble" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="025c-c0a1-397d-456b" name="Ulguan Duskbauble" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="20e3-17ee-89f2-3c9e" name="Loonatic Lantern" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="229d-a80a-e606-6b67" name="Loonatic Lantern" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is in your warband, you can re-roll 1 search roll on the lesser artefacts table in the aftermath sequence after each campaign battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4280-93c2-495e-b5e2" name="Crown of the Barrows" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c2c2-582c-782c-361b" name="Crown of the Barrows" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, pick a friendly fighter that has been taken down.  Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter.  The fighter set up on the battlefield no longer counts as being taken down.  Remove 2D6 damage points allocated to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8e4e-7661-a960-fbf8" name="Da Snotsnork Speshul" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7bd7-0602-3c91-55a1" name="Da Snotsnork Speshul" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time the bearer makes a wait action, roll a dice.  On a 1, allocate D3 damage points to the bearer.  On a 2+, pick either the Move, Toughness or Wounds characteristic of the bearer.  Add D3 to that characteristic until the end of the battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="647f-5d1e-0a32-5e44" name="Krusha&apos;s Cleaver" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b6da-3b77-13af-3ec1" name="Krusha&apos;s Cleaver" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks and Strength characteristics of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4b73-a318-d7ed-16ea" name="Super Glowy Golden Rune" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ecac-0716-b257-7e5f" name="Super Glowy Golden Rune" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">The bearer can use the following ability once per battle:
+
+[Double] Activate the Rune:  This fighter makes a bonus attack action that has a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d6e2-4e1c-4a7e-bfe7" name="Barkflesh Charm" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="8730-7c78-326c-3bac" name="Barkflesh Charm" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Toughness characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1e2b-19a3-46d2-e20e" name="Stormcaller Amulet" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="79b2-fd87-2c4e-9d3d" name="Stormcaller Amulet" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, pick 1 visible enemy fighter within 20&quot; of the bearer and roll a dice.  On a 2+, allocate a number of damage points to that fighter equal to the roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1877-9153-7070-684b" name="Grimbolsson&apos;s Augmented Aetherseek Acquisitor" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4eef-62bb-adbc-5943" name="Grimbolsson&apos;s Augmented Aetherseek Acquisitor" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, you can make 1 additional search roll on the lesser artifacts table during the aftermath sequence of each campaign battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f476-d47c-63b4-4b61" name="Tyrant&apos;s End" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="479a-7c72-7d51-b762" name="Tyrant&apos;s End" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less and that target an enemy fighter with the Leader runemark.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13526,6 +14020,966 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="5ba4-9726-7034-1a17" name="Fragment of the Nine" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4575-8335-aa59-dd57" name="Fragment of the Nine" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, remove 2D6 damage points allocated to the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1b6f-3414-9146-5552" name="Soulharvest Sickle" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="8f25-5b34-cb48-27bb" name="Soulharvest Sickle" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="256c-0add-e34c-ade2" name="Gravesand Bauble" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9c92-627f-0cbf-f02b" name="Gravesand Bauble" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less. In addition, each time the bearer makes a wait action, you can remove 1 damage point allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="46e4-0a3f-abbf-908d" name="Goblet of Vitae" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d6b4-4c33-3279-83ca" name="Goblet of Vitae" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time an enemy fighter not from a Death warband is taken down by an attack action made by the bearer that has a Range characteristic of 3 or less, you gain 1 wild dice which can be used from the next hero phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="222c-db9d-eb71-acf7" name="Hourglass of Lost Moments" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0e95-f18e-b337-02a0" name="Hourglass of Lost Moments" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact to make a bonus move action or bonus attack action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c67-2d66-4cfb-4655" name="The Judgement Rope" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7c38-ee6d-22bc-8705" name="The Judgement Rope" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">After each attack action made by the bearer that has a Range characteristic of 3 or less, the target suffers impact damage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f007-a4e1-c5c3-7a4c" name="Helm of the Black Winds" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="516b-dc4c-2cec-1997" name="Helm of the Black Winds" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Move characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b366-a959-6645-1af7" name="Blade of the Fallen Slayer" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="52e7-5243-86d9-a43b" name="Blade of the Fallen Slayer" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fb02-cdc6-088b-9e45" name="Skullshard Sceptre" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0682-57d6-50c7-101c" name="Skullshard Sceptre" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="df39-5965-c5e0-f235" name="The Bale Chimes" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6954-279b-0251-9baf" name="The Bale Chimes" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the Toughness characteristic (to a minimum of 1) of enemy fighters while they are within 6&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1588-52e1-5f37-baa7" name="Chillblade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="cd09-f60a-2050-3f26" name="Chillblade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">After each attack action made by the bearer that has a Range characteristic of 3 or less, roll a dice.  On a 2+, until the end of the battle round, the target fighter cannot make move actions or disengage actions.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7dac-7d01-0dd9-9aad" name="Shadeglass Dagger" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6fd5-efee-aa30-a6e0" name="Shadeglass Dagger" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">The Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less always counts as being highter than the target&apos;s Toughness characteristic.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="300a-a5db-2694-0429" name="Wyldbark Crown" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="20d5-60ee-0cd7-7297" name="Wyldbark Crown" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Strength characteristic of attack actions mthat have a Range charcteristic of 3 or less made by friendly fighters while they are within 9&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="71d6-cf73-0545-9d13" name="Souleater Venom" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="fd25-50bb-75dd-08df" name="Souleater Venom" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time an attack action made by the bearer that has a Range characteristic of 3 or less scores any critical hits, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by the target fighter until the end of the battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4e82-dade-6f2b-66e3" name="Raptoryx-feather Charm" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d5cb-f04c-fd75-c70f" name="Raptoryx-feather Charm" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Move characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="38d7-809d-6c6f-fe80" name="Cuirass of the Slaughtering Brute" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ab61-6111-54df-e44b" name="Cuirass of the Slaughtering Brute" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time the bearer finishes a move action, visible enemy fighters within 1&quot; of them suffer impact damage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3bb0-aad0-95fc-61fd" name="Oblivion Mantle" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a273-a4fb-8e8d-0b81" name="Oblivion Mantle" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the first time the bearer is taken down by an attack action, they are not taken down.  Instead, you can remove D6 damage points that remain to be allocated from that attack action are discarded.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ebfb-4c7d-e082-5bc5" name="Daemonic Familiar" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7d19-65d9-8473-42d9" name="Daemonic Familiar" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each  time the bearer finishes an attack action, visible enemy fighters within 1&quot; of them suffer impact damage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="019f-9817-ca29-e50d" name="Rustblessed Blade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="890f-f289-a861-5052" name="Rustblessed Blade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If an attack action made by the bearer that has a Range characteristic of 3 or less scores any critical hits, subtract 5 from target fighter&apos;s Toughness characteristic (to a minimum of 1) until the end of the battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f0cd-f342-911e-f4e1" name="Cowl of Living Night" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4774-0b8b-7d4f-1b87" name="Cowl of Living Night" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1f28-2ca2-9458-fc67" name="Vial of Mysteries" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="bcb4-38ea-819b-9dfa" name="Vial of Mysteries" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Roll a dice when a fighter is given this artefact.  On a 1-3, add 5 to the Wounds characteristic of that fighter.  On a 4+, add 1 to the Move characteristic of that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1314-e06d-7765-fb8a" name="Staff of Dark Dreaming" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0e46-42b1-3d0d-6928" name="Staff of Dark Dreaming" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If an attack action made by the bearer that has a Range characteristic of 3 or less scores any critical hits, roll a dice.  On a 4+, the target fighter cannot be picked to activate in that battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="adb5-3ee6-a8a7-a6e4" name="Fleshhunt Familiar" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="f248-2d17-a081-8ed3" name="Fleshhunt Familiar" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Enemy fighters cannot receive the benefit of cover when they are targeted by an attack action made by the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4e38-8b54-7121-0e8a" name="Varanite Warblade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="79dc-270b-8718-0e65" name="Varanite Warblade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If an attack action made by the bearer that has a Range characteristic of 3 or less scores any critical hits, halve the Move characteristic of the target fighter until the end of the battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ed80-e2f9-d1cd-12e2" name="Syari Trueblade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a9de-c230-ee6f-a225" name="Syari Trueblade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="601b-422e-1d7c-cb1a" name="Shard of the Mountain" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6d70-a4df-66b9-7f09" name="Shard of the Mountain" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6b62-7cbb-cf29-a553" name="Aetherquartz Diadem" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4c3b-b3ac-e552-03c1" name="Aetherquartz Diadem" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as a bonus action.  If they do so, until the end of their activation, add 2 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bd16-2f1f-57eb-9caf" name="Axe of Endless Glory" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ab3f-44c7-4819-4132" name="Axe of Endless Glory" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">After each attack action mae by the bearer that has a Range characteristic of 3 or less, you can remove 1 damage point allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8611-c5b9-183d-be31" name="Blade of Spiteful Reflection" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="2591-73fa-d823-3154" name="Blade of Spiteful Reflection" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">The Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less count as being highter than the target&apos;s Toughness characteristic.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a396-8df2-81ef-c583" name="Avaricious Stave" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="979e-3745-aeee-e6ae" name="Avaricious Stave" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the start of the battle round, if the bearer is within 3&quot; of another fighter that bears an artefact of power, you gain 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6ee4-a531-5510-08f6" name="Deed-marked Buckler" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d931-66c4-9595-3b7d" name="Deed-marked Buckler" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Toughness characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e958-0c06-073c-b241" name="Da Wollopa" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ecce-0c6b-12d8-379e" name="Da Wollopa" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the Strength characteristic of an attack action made by the bearer is higher than the target&apos;s Toughness characteristic, that attack action scores a critical hit on a 5+.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9a2e-a91d-9447-7cea" name="Unfortunate Mascot" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e99a-c4ae-a413-acf3" name="Unfortunate Mascot" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the value of abilities used by enemy fighters (to a minimum of 1) while they are within 9&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3550-3c90-2373-8aba" name="Squigbone Torc" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="8b58-426a-cd6f-1525" name="Squigbone Torc" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Double] Bounding Leap: This fighter can fly as part of the next move actions they make this activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ecce-e1b6-60a3-ddbb" name="Carving Blade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="8234-39ba-25e8-6ef1" name="Carving Blade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 2 to the Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="20ea-c28d-2542-ae8e" name="The Savage Crown" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5271-0e81-c3ec-b466" name="The Savage Crown" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, you automatically pass bestial intellect rolls when you activate a chaotic beast within 6&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fcc7-0d4b-10c6-2520" name="Beast-soul Idol" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d222-a4ca-77b2-86c9" name="Beast-soul Idol" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  if they do so, subtract 1 from the Attacks characteristic of attack actions made by enemy fighters while they are within 12&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7036-11c4-fd0d-f10b" name="Raptoryx-feather Headdress" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1986-9a56-1098-d7f6" name="Raptoryx-feather Headdress" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Move characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e132-a9ab-cefc-de2e" name="Da Godrock" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="08bd-01f8-8310-ac7a" name="Da Godrock" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, at the start of the hero phase of the first battle round, roll a dice.  On a 1-3, add 1 to the Toughness characteristic of the bearer until the end of the battle.  on a 4+, you gain 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e1f0-b3d9-0017-c93e" name="Beast-bone Cleaver" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5bdf-7290-2501-8cc6" name="Beast-bone Cleaver" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="32a4-7826-6205-4769" name="Supply of Blood Grog" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a4b1-dcc5-5e97-df2b" name="Supply of Blood Grog" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use the &quot;Onslaught&quot; ability without needing or using any ability dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="586d-3e7b-092e-eb3d" name="Desecrated Flag" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="677b-23d6-1dec-2f7e" name="Desecrated Flag" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the value of abilities used by visible friendly fighters (to a maximum of 6) while they are within 6&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1ce9-4124-ffe5-5081" name="Best Boss Hat" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="06c4-e71b-1408-5ca2" name="Best Boss Hat" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bb7e-ced8-9903-d34d" name="Mask of Serenity" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="91bd-5bc2-f797-6e0d" name="Mask of Serenity" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by visible enemy fighters while they are within 3&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8aec-641b-f871-0d8e" name="Purified Spatha" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c31c-6d12-0bf2-7fcd" name="Purified Spatha" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="99f4-0410-8b31-1a78" name="Starwater Vial" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3cc0-2e94-975b-2d1f" name="Starwater Vial" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, pick 1 visible enemy fighter within 6&quot; of the bearer and roll 4 dice.  for each 3+, allocate 3 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6823-5487-beb0-47de" name="Boots of the Zenithal Spirit" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9e66-b4cc-eaee-49ff" name="Boots of the Zenithal Spirit" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the move characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="04fb-9c11-dfcc-6b13" name="Paragon Longblade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a8cd-0b96-52f5-49e4" name="Paragon Longblade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer has made a move action this activation, add 2 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="b931-cae3-13df-fab4" name="Spoils of Victory (Fated Quests: Artefacts)" hidden="true" collective="false" import="true">
@@ -13957,6 +15411,327 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="ba90-465d-537c-3b2a" name="Crown of the Abhorrant Acolyte" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="50f7-a153-13f1-d19d" name="Crown of the Abhorrant Acolyte" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Roll a dice each time an enemy fighter within 3&quot; of the bearer makes an attack action.  On a 1-3, subtract 3 from the Attacks characteristic (to a minimum of 1), from that attack action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="91a6-7c1e-0036-30f3" name="Blade of Unhallowed Conquest" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="fe48-319d-c035-1a71" name="Blade of Unhallowed Conquest" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks and Strength characteristics of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b120-f9c0-7f4a-0684" name="The Nulahmian Entreaty" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="aab7-403e-75e5-cd8d" name="The Nulahmian Entreaty" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 2 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.
+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e870-1efc-1a0a-d030" name="Khirar&apos;s Soulstave" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ee74-b4ae-eb25-cf51" name="Khirar&apos;s Soulstave" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time an enemy fighter not from a Death warband is taken down by an attack action made by the bearer that has a Range characteristic of 3 or less, you can remove a number of damage points allocated to the bearer equal to the Wounds characteristic of that enemy fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b87a-5921-b342-bc7e" name="Cursed Athame" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5f87-e17d-3264-2fc9" name="Cursed Athame" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time the bearer takes down an enemy fighter, you can remove D6 damage points allocated to the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="095b-d802-0848-9ebb" name="Blade of the Stonefire Curse" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3701-84d9-895d-255e" name="Blade of the Stonefire Curse" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 2 from the damage points allocated by each hit and critical hit (to a minimum of 1) from attack actions that target the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3b4c-f361-7e24-d61c" name="The Shadowfang" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5818-e193-5817-27cd" name="The Shadowfang" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, this fighter can use this artefact as a bonus action.  If they do so, roll a dice.  Then you can remove the fighter from the battlefield and immediately set them up anywhere on the battlefield more than a number of inches of any enemy fighters equal to the roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bdf7-a464-d1fc-b08c" name="Daemonmaw Shield" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="22b5-87b6-cc8b-ffe4" name="Daemonmaw Shield" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as a bonus action.  If they do so, pick 1 visible enemy fighter within 9&quot; of them and roll a dice.  On a 2+, that fighter cannot make move actions or disengage actions until the end of the battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a287-f924-d9f7-1e6c" name="Refined Aetherquartz" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1d9d-cbe5-3628-9a58" name="Refined Aetherquartz" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">The bearer can use this artefact once per activation to make a bonus move action.  However, until the end of the battle, each time they do so after the first, allocate D6 damage points to the bearer before they make the bonus move action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6ea9-da91-a7e1-631e" name="Rocktusk Warhelm" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4aec-25a6-4488-5772" name="Rocktusk Warhelm" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 5 to the Wounds characteristic of the bearer. In addition, add 1 to the Move characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="218a-e96d-857b-5109" name="The Golem&apos;s Regard" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="fd1c-c45e-a5f0-ce93" name="The Golem&apos;s Regard" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 2 to the damage points allocated by each hit or critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less and that target an enemy fighter with a Wounds characteristic of 10 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8d9b-0962-4ea4-05e0" name="Wozgobba&apos;s Staff" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b897-84fb-35e1-c1ed" name="Wozgobba&apos;s Staff" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Quad] Mighty Detonation:  Pick a visible enemy fighter within 12&quot; of this figther and roll a dice.  Allocate D6 damage points to each fighter within a number of inches of that fighter equal to the dice roll.  Roll a dice for each.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2cc4-095b-33ad-8143" name="Blade of the True Boss" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="47c4-a145-041e-d488" name="Blade of the True Boss" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 2 to the Attacks and Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less while the bearer is within 1&quot; of a friendly fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8377-0b07-24fa-de63" name="Rune-marked Grimoire" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="23ca-f526-7116-8692" name="Rune-marked Grimoire" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, add 3 to the value of abiltiies used by friendly fighters (to a maximum of 6) while they are within 12&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="362e-ddeb-09b5-ac18" name="Blade of the Scourging" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="bcb9-28f9-c046-024c" name="Blade of the Scourging" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time the bearer makes an attack action that has a Range characteristic of 3 or less, after that attack action has been resolved, roll a dice for each visible enemy fighter within 3&quot; of the bearer.  On a 2+, allocate 1 damage point to the fighter being rolled for.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1682-1f7b-2623-edf8" name="Amulet of the Profane Future" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a683-32cb-3bfa-fb3a" name="Amulet of the Profane Future" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, you begin the battle with 2 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="2e40-ba91-3bf8-f060" name="Challenge Battle Lesser Artifacts" hidden="true" collective="false" import="true">
@@ -13986,38 +15761,16 @@ TRIAL OF CHAMPIONS</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e05-37dc-575f-10ab" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="893c-1e0b-efc1-1ba7" name="The Fires of Axranathos" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="893c-1e0b-efc1-1ba7" name="The Fires of Axranathos" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="ae02-8814-6d07-7364" name="The Fires of Axranathos" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, add 1 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less</characteristic>
                   </characteristics>
@@ -14028,38 +15781,16 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5a85-3539-26c1-47ef" name="Weeping Doomstars" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5a85-3539-26c1-47ef" name="Weeping Doomstars" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="212f-241b-59f6-ba2a" name="Weeping Doomstars" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, pick a visible enemy fighter within 9&quot; of the bearer and roll a dice. On a 3+, allocate D6 damage points to that fighter.</characteristic>
                   </characteristics>
@@ -14070,38 +15801,16 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9666-5404-9718-0e0e" name="Carngrad Blackbrew" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="9666-5404-9718-0e0e" name="Carngrad Blackbrew" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="cf1b-ec5e-9e98-9f7a" name="Carngrad Blackbrew" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consuraable]: The bearer can use this lesser artefact as a bonus action only if they have not used an ability this activation. If they do so, the bearercan use the Onslaught ability without needing or using any ability dice.</characteristic>
                   </characteristics>
@@ -14112,38 +15821,16 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="84e0-d497-11fd-76e5" name="Elixir of the Manic" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="84e0-d497-11fd-76e5" name="Elixir of the Manic" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="5fdb-2b55-7fd4-42a6" name="Elixir of the Manic" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action only if they have not used an ability this activation. If they do so, the bearer can use the Rush ability without needing or using any ability dice.</characteristic>
                   </characteristics>
@@ -14154,38 +15841,16 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="77f0-ffe3-688c-2927" name="Bullgor Heart" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="77f0-ffe3-688c-2927" name="Bullgor Heart" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="18ce-3917-5097-e849" name="Bullgor Heart" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, add 1 to the Attacks and Strength characteristics of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -14196,38 +15861,16 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dbfe-e743-4cb3-86f2" name="Warpstone Accelerants" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="dbfe-e743-4cb3-86f2" name="Warpstone Accelerants" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="c68b-bfad-0237-3769" name="Warpstone Accelerants" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, the value of the next ability used by the bearer this activation is 6 (regardless of any other modifiers).</characteristic>
                   </characteristics>
@@ -14238,38 +15881,16 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3c0b-f5e5-bea6-bcc3" name="Vials of the Wailing Blade" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3c0b-f5e5-bea6-bcc3" name="Vials of the Wailing Blade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="7257-fc4a-4e1c-4694" name="Vials of the Wailing Blade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser
 artefact as a bonus action. If they do so, add 2 to
@@ -14283,38 +15904,16 @@ made by the bearer this activation.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3f22-3766-67a5-dd50" name="Semi-sentient Weapons" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3f22-3766-67a5-dd50" name="Semi-sentient Weapons" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="ee62-51e3-8700-034c" name="Semi-sentient Weapons" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: At the start of the battle, if the bearer is included in your warband, roll a D3. Until the end of the battle, add the value of the roll to the Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -14325,38 +15924,16 @@ made by the bearer this activation.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="94db-7696-95fc-7a15" name="Abandoned Container of Varanite" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="94db-7696-95fc-7a15" name="Abandoned Container of Varanite" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="8133-3e58-e94d-4ea6" name="Abandoned Container of Varanite" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Instant]: You earn 2D6 glory points.</characteristic>
                   </characteristics>
@@ -14367,38 +15944,16 @@ made by the bearer this activation.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f5f2-f5b1-6f4d-90b6" name="Trophies of the Arena" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f5f2-f5b1-6f4d-90b6" name="Trophies of the Arena" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="dbe5-057a-f74c-d653" name="Trophies of the Arena" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: During the aftermath sequence, when rolling for destiny levels, the bearer gains a destiny level on a 5+.</characteristic>
                   </characteristics>
@@ -14409,38 +15964,16 @@ made by the bearer this activation.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3548-a78b-b77d-d576" name="Soulroil Slime" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3548-a78b-b77d-d576" name="Soulroil Slime" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="9220-afab-8b20-a592" name="Soulroil Slime" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, you can remove 2D6 damage points allocated to them. In addition, add 1 to the Toughness characteristic of the bearer until the end of the battle.</characteristic>
                   </characteristics>
@@ -14451,38 +15984,16 @@ made by the bearer this activation.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dcca-7f6e-3bef-5b5f" name="Venom of the Coiling Ones" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="dcca-7f6e-3bef-5b5f" name="Venom of the Coiling Ones" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="7e08-4bdb-cdc6-a5a5" name="Venom of the Coiling Ones" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, add 2 to the damage points allocated by each critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -14493,38 +16004,16 @@ made by the bearer this activation.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f90f-a3ac-8bc8-5aef" name="Skryre Timesparker" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f90f-a3ac-8bc8-5aef" name="Skryre Timesparker" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="d572-bf28-2f98-c9d3" name="Skryre Timesparker" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action only if they have not used an ability this activation. If they do so, the bearer can use the &apos;Rampage&apos; ability without needing or using any ability dice.</characteristic>
                   </characteristics>
@@ -14535,38 +16024,16 @@ made by the bearer this activation.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="85be-0d35-277d-6054" name="The Eye of the Gods" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="85be-0d35-277d-6054" name="The Eye of the Gods" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="3922-ce5c-d408-6f15" name="The Eye of the Gods" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: If the bearer is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
                   </characteristics>
@@ -14577,38 +16044,16 @@ made by the bearer this activation.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e358-bb4c-4651-1d01" name="Raw Spawnflesh" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e358-bb4c-4651-1d01" name="Raw Spawnflesh" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="62dd-282a-3c0e-a92e" name="Raw Spawnflesh" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, roll a dice. Until the end of the battle, the Toughness characteristic of the bearer is equal to the value of the roll. In addition, remove a number of damage
 points allocated to the bearer equal to double the value of the roll.</characteristic>
@@ -14620,38 +16065,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ad51-1632-551d-456a" name="Karkadrak Scale Anklet" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ad51-1632-551d-456a" name="Karkadrak Scale Anklet" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="b2fe-c827-f513-403b" name="Karkadrak Scale Anklet" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Once per battle, the first time the bearer finishes a move action within 1&quot; of an enemy fighter, the bearer can immediately make a bonus attack action.</characteristic>
                   </characteristics>
@@ -14662,38 +16085,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="51fc-9c9d-7fb7-2007" name="Rustcharm Ring" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="51fc-9c9d-7fb7-2007" name="Rustcharm Ring" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="d415-311a-42c3-08bb" name="Rustcharm Ring" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Subtract 1 from the Strength characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 6 of the bearer.</characteristic>
                   </characteristics>
@@ -14704,38 +16105,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cc8d-a553-82a3-d48f" name="Balefire Candles" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="cc8d-a553-82a3-d48f" name="Balefire Candles" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41cd-31ca-ff1a-dca2" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="d794-0f7a-3760-f25c" name="Balefire Candles" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f90d-0a36-6104-26c2" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-c9ca-cd85-8cb1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="103e-bd01-7ab5-05ce" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a70b-e4d5-34c8-fcd3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ffb-8cb2-7861-e268" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6100-8700-1afb-2a6d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0d-85f4-0907-5413" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5044-bbe2-7943-c694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43c9-94bb-7063-07e4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8979-b9be-4c5f-dabf" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a4-2193-9694-b26b" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e67-a8ce-ecba-fafa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb2d-f84e-f43b-178c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed4d-60ca-8c50-8611" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a771-efe6-1a22-41e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e2-548f-00d2-7de7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774c-744e-2ced-eed3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="430c-106a-76ca-e3c3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b89-c41e-7bb3-8cdc" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, you gain 1 additional wild dice at the start of the next hero phase this battle.</characteristic>
                   </characteristics>
@@ -14746,32 +16125,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="150f-c95d-2351-5e55" name="Draught of Float" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="150f-c95d-2351-5e55" name="Draught of Float" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="f5b3-da5b-c8a0-04de" name="Draught of Float" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, the bearer can fly when making move actions until the end of their activation; however, when flyi ng, they cannot move vertically upwards more than 3&quot;.</characteristic>
                   </characteristics>
@@ -14782,32 +16145,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3c21-9a99-f5f1-5285" name="Forge-ash of Grungni" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3c21-9a99-f5f1-5285" name="Forge-ash of Grungni" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4632-1a43-1b61-2428" name="Forge-ash of Grungni" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, add 2 to the Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -14818,32 +16165,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9cc8-9a53-d849-3f82" name="Allopex Eye" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="9cc8-9a53-d849-3f82" name="Allopex Eye" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="ed6c-de0c-8d59-c2a3" name="Allopex Eye" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, they automatically receive the benefit of cover when they are targeted by an attack action.</characteristic>
                   </characteristics>
@@ -14854,32 +16185,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6795-9267-9ee9-e0b8" name="Stone of Zephyrs" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6795-9267-9ee9-e0b8" name="Stone of Zephyrs" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="ab9d-e65e-35d3-e047" name="Stone of Zephyrs" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, add 2 to the Move characteristic of the bearer for the next move action they make this activation.</characteristic>
                   </characteristics>
@@ -14890,32 +16205,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="29ba-81bc-035c-ba75" name="Stranglebriar Seedling" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="29ba-81bc-035c-ba75" name="Stranglebriar Seedling" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="cf89-c2b9-fba7-5118" name="Stranglebriar Seedling" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumablej: The bearer can use this lesser artefact as a bonus action. If they do so, pick 1 visible enemy fighter within 6&quot; of the bearer and roll a dice. On a 4+, that fighter cannot make move actions or disengage actions until the end of the battle round.</characteristic>
                   </characteristics>
@@ -14926,32 +16225,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f9c2-e2fa-5b26-d19a" name="Sacred Starwater" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f9c2-e2fa-5b26-d19a" name="Sacred Starwater" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="c8f6-d51a-2bed-29f3" name="Sacred Starwater" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, the next attack action made by the bearer this activation scores a critical hit on a 5+.</characteristic>
                   </characteristics>
@@ -14962,32 +16245,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a30e-32e0-00b5-1b3f" name="The Barak-Mhornar Surprise" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a30e-32e0-00b5-1b3f" name="The Barak-Mhornar Surprise" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="fa93-f3b9-b21f-5eef" name="The Barak-Mhornar Surprise" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, they can make a bonus disengage action.</characteristic>
                   </characteristics>
@@ -14998,32 +16265,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="804a-41aa-a09c-f087" name="Asphyxian Strangle-grenage" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="804a-41aa-a09c-f087" name="Asphyxian Strangle-grenage" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="f643-2a65-afa9-12b8" name="Asphyxian Strangle-grenage" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 6&quot; of the bearer.</characteristic>
                   </characteristics>
@@ -15034,32 +16285,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b477-0942-cea1-4b4e" name="Glimmering" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b477-0942-cea1-4b4e" name="Glimmering" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="01f7-ef73-3622-d29b" name="Glimmering" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action If they do so, you gain 1 additional wild dice at the start of the next hero phase this battle.</characteristic>
                   </characteristics>
@@ -15070,32 +16305,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1944-7853-5f9a-d072" name="Starforged Torc" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1944-7853-5f9a-d072" name="Starforged Torc" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="9e6e-fa60-549c-ff36" name="Starforged Torc" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Add 1 to the Move characteristic of the bearer.</characteristic>
                   </characteristics>
@@ -15106,32 +16325,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="88d2-e072-0610-b4d2" name="Relics of the Saints" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="88d2-e072-0610-b4d2" name="Relics of the Saints" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="cca3-cc80-7dde-edf9" name="Relics of the Saints" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Instant]: You earn 2D6 glory points.</characteristic>
                   </characteristics>
@@ -15142,32 +16345,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2018-7bd9-9916-5a51" name="Gryph-feather Adornment" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2018-7bd9-9916-5a51" name="Gryph-feather Adornment" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="f9b6-e65f-8a5f-e3ed" name="Gryph-feather Adornment" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: The bearer can finish disengage actions within 1&quot; of enemy fighters.</characteristic>
                   </characteristics>
@@ -15178,32 +16365,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b683-cd8c-3dee-1a71" name="Vial of Darkwater" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b683-cd8c-3dee-1a71" name="Vial of Darkwater" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="cc91-96bc-3e63-e677" name="Vial of Darkwater" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, you can remove 2D6 damage points allocated to them. In addition, add 1 to the Toughness characteristic of the bearer until the end of the battle.</characteristic>
                   </characteristics>
@@ -15214,32 +16385,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0e91-74d3-664b-1453" name="Essence of Deepmare Horn" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0e91-74d3-664b-1453" name="Essence of Deepmare Horn" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="8b9d-4a3d-4990-8301" name="Essence of Deepmare Horn" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle, attack actions made by the bearer that have a Range characteristic of 3 or less score a critical hit on a 5+.</characteristic>
                   </characteristics>
@@ -15250,32 +16405,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="327b-6b56-3654-fc3b" name="Bugman&apos;s XXXXXX" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="327b-6b56-3654-fc3b" name="Bugman&apos;s XXXXXX" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="744a-4532-2acf-1ac2" name="Bugman&apos;s XXXXXX" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, you can remove 2D6 damage points allocated to them.  Then, the bearer can make a bonus move action or a bonus attack action.</characteristic>
                   </characteristics>
@@ -15286,32 +16425,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0727-8b5e-6eb9-dad4" name="Whitefire Crystal" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0727-8b5e-6eb9-dad4" name="Whitefire Crystal" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="293d-bb23-4066-f411" name="Whitefire Crystal" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Add 2 to the Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -15322,32 +16445,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5f00-a9fd-6884-62e2" name="Icon of the Ur-Phoenix" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5f00-a9fd-6884-62e2" name="Icon of the Ur-Phoenix" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4f5a-49ef-9188-4efa" name="Icon of the Ur-Phoenix" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: When the bearer is picked to activate, you can remove D3 damage points allocated to them.</characteristic>
                   </characteristics>
@@ -15358,32 +16465,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bd74-8711-0969-0418" name="Tears of Dracothion" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bd74-8711-0969-0418" name="Tears of Dracothion" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="553d-df06-b4dd-06ed" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="8d18-f8ad-8bd9-ff06" name="Tears of Dracothion" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fb8-a129-d30e-eaca" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d1c-0dd3-8ec0-53aa" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b50-c010-c4ed-fea3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ee-0f29-55ef-3694" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dd3-032d-4e07-84c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e97-86c2-2cb1-68e3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9eae-16ea-179a-f5d3" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf88-d9dc-76dc-e2cc" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cc7-dcdb-9c11-53d4" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c97-e762-9665-d82d" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4a9-66d9-a092-68c7" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d59-2353-4d44-1305" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15b-3042-b6ad-cdd7" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: If the bearer is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
                   </characteristics>
@@ -15394,24 +16485,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8b1c-5381-d8c2-2a38" name="Shadeglass Dart" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8b1c-5381-d8c2-2a38" name="Shadeglass Dart" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="62b8-fcb9-0493-9865" name="Shadeglass Dart" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, pick a visible enemy fighter within 9&quot; of the bearer and roll a dice. On a 4+, allocate D6 damage points to that fighter.</characteristic>
                   </characteristics>
@@ -15422,24 +16505,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b1e7-9412-868d-27c9" name="Witchlight Lantern" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b1e7-9412-868d-27c9" name="Witchlight Lantern" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="bd5f-b171-4a5e-12ed" name="Witchlight Lantern" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: When the bearer is picked to activate, you can remove 1 damage point allocated to each friendly fighter within 6&quot; of the bearer.</characteristic>
                   </characteristics>
@@ -15450,24 +16525,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="77c5-b5bb-46f9-23ee" name="Balemoon Cloak" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="77c5-b5bb-46f9-23ee" name="Balemoon Cloak" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="ba27-61ac-f9f6-e1a9" name="Balemoon Cloak" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: The bearer can move through any part of a terrain feature, but they cannot end a move action with any part of them within a terrain feature.</characteristic>
                   </characteristics>
@@ -15478,24 +16545,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f5a3-be55-5e73-033c" name="Nadirite Lodestone" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f5a3-be55-5e73-033c" name="Nadirite Lodestone" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="c9a7-bbeb-9536-e1d2" name="Nadirite Lodestone" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Add 1 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -15506,24 +16565,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b7bd-230e-1b39-ab98" name="Shard of Night" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b7bd-230e-1b39-ab98" name="Shard of Night" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4785-0cb8-9130-308a" name="Shard of Night" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle round, they cannot be targeted by attack actions made by enemy fighters while they are more than 9&quot; from the bearer.</characteristic>
                   </characteristics>
@@ -15534,24 +16585,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="eb98-f3fc-42d0-3374" name="Watcher Skull" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="eb98-f3fc-42d0-3374" name="Watcher Skull" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="a513-a4d1-ad52-ea9e" name="Watcher Skull" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: the bearer can use this lesser artefact as a bonus action. If they do so, you gain 1 additional wild dice at the start of the next hero phase this battle.</characteristic>
                   </characteristics>
@@ -15562,24 +16605,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ff20-3ab6-ab09-84f8" name="Scroll of Command" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ff20-3ab6-ab09-84f8" name="Scroll of Command" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="790e-2302-eacf-162b" name="Scroll of Command" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action only if they have not used an ability this activation. If they do so, the bearer can use the &apos;Inspiring Presence&apos; ability without needing or using any ability dice and without needing the Leader runemark.</characteristic>
                   </characteristics>
@@ -15590,24 +16625,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bbcb-9fd8-4f53-bdf1" name="Grave-sand Gem" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bbcb-9fd8-4f53-bdf1" name="Grave-sand Gem" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="21f6-b3c8-68cc-79fb" name="Grave-sand Gem" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Add 1 to the Wounds characteristic of the bearer.</characteristic>
                   </characteristics>
@@ -15618,24 +16645,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b7a9-29c2-b48c-1d8a" name="Damaged Soultrap Gem" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b7a9-29c2-b48c-1d8a" name="Damaged Soultrap Gem" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="2b9c-bb2f-bf07-f2d7" name="Damaged Soultrap Gem" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Instant]: You earn 2D6 glory points.</characteristic>
                   </characteristics>
@@ -15646,24 +16665,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6dd5-2d15-d69b-a139" name="Wailing Tocsin" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6dd5-2d15-d69b-a139" name="Wailing Tocsin" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="53e4-c77a-2df0-eb3f" name="Wailing Tocsin" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Add 1 to the Move characteristic of the bearer.</characteristic>
                   </characteristics>
@@ -15674,24 +16685,16 @@ points allocated to the bearer equal to double the value of the roll.</character
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6ea9-55aa-2c78-8a52" name="Scroll of Morbid Summonation" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6ea9-55aa-2c78-8a52" name="Scroll of Morbid Summonation" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="51f4-133a-0983-876e" name="Scroll of Morbid Summonation" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, pick a friendly fighter on the battlefield that does not have the Leader runemark. Remove that fighter.
 from the battlefield and then immediately set them
@@ -15705,24 +16708,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="df98-0505-8875-e631" name="Scroll of Abasoth&apos;s Withering" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="df98-0505-8875-e631" name="Scroll of Abasoth&apos;s Withering" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="dd3a-aa15-08df-3253" name="Scroll of Abasoth&apos;s Withering" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If you do so, pick a visible enemy fighter within 12&quot; of the bearer. Subtract 1 from the Toughness characteristic of that fighter (to a minimum of 1) until the end of the battle round.</characteristic>
                   </characteristics>
@@ -15733,24 +16728,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f1b5-218f-bbe4-daf4" name="Gallowbark Splinters" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f1b5-218f-bbe4-daf4" name="Gallowbark Splinters" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4927-a519-97cf-0562" name="Gallowbark Splinters" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, attack actions made by the bearer that have a Range characteristic of 3 or less score a critical hit on a 5+.</characteristic>
                   </characteristics>
@@ -15761,24 +16748,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0d21-d80c-ee75-eb2c" name="Scroll of Dark Impetus" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0d21-d80c-ee75-eb2c" name="Scroll of Dark Impetus" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="ed1c-bf2e-a8c2-f7a3" name="Scroll of Dark Impetus" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle round, add I to the Move characteristic of friendly fighters within 6&quot; of the bearer.</characteristic>
                   </characteristics>
@@ -15789,24 +16768,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2f04-bf1d-8ae8-9b08" name="Faneway Crystal" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2f04-bf1d-8ae8-9b08" name="Faneway Crystal" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="c631-428c-05ee-eeb6" name="Faneway Crystal" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, remove the bearer from the battlefield and then immediately set them up anywhere on the battlefield more than 5&quot; from all enemy fighters.</characteristic>
                   </characteristics>
@@ -15817,24 +16788,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5ec3-42bc-7be1-e1cf" name="Corpsebloom" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5ec3-42bc-7be1-e1cf" name="Corpsebloom" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="f2e0-2c01-5190-cf17" name="Corpsebloom" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle, add 1 to the damage points allocated by each critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -15845,24 +16808,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2e88-3c11-3512-9abe" name="Breath of the Grave" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2e88-3c11-3512-9abe" name="Breath of the Grave" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="2077-e215-f892-9623" name="Breath of the Grave" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle round, add 1 to the Strength characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of the bearer.</characteristic>
                   </characteristics>
@@ -15873,24 +16828,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f269-2004-adf0-b8a4" name="Chalice of Gore" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f269-2004-adf0-b8a4" name="Chalice of Gore" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="421b-cba9-b6b6-0e40" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4bf3-db20-0f6b-5304" name="Chalice of Gore" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2842-8b8f-457d-79f8" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e10-978a-158f-fed0" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ec0-2d08-903b-ecf1" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f26d-26fe-57af-da64" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc71-38ed-ad27-e7d0" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, add 2 to the Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -15901,24 +16848,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b8b0-3d63-04b1-57b7" name="Squiggly Mascot" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b8b0-3d63-04b1-57b7" name="Squiggly Mascot" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="bf89-3522-5f84-014b" name="Squiggly Mascot" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, you can remove D3 damage points allocated to them.</characteristic>
                   </characteristics>
@@ -15929,24 +16868,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1514-1994-f959-e989" name="Arachnarok Webs" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1514-1994-f959-e989" name="Arachnarok Webs" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="7132-fc7d-b891-2c29" name="Arachnarok Webs" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, do not count the vertical distance moved when the bearer is climbing.</characteristic>
                   </characteristics>
@@ -15957,24 +16888,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7fea-1916-d1ee-9f2c" name="Troggoth Guts" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7fea-1916-d1ee-9f2c" name="Troggoth Guts" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="49ef-a0ff-cea3-6d69" name="Troggoth Guts" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, roll a dice. Until the end of the battle, the Toughness characteristic of the bearer is equal to the value of the roll.</characteristic>
                   </characteristics>
@@ -15985,24 +16908,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6196-4758-8240-e5cc" name="Gift of the Sun-eater" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6196-4758-8240-e5cc" name="Gift of the Sun-eater" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="68b2-e2d8-8ade-4fb2" name="Gift of the Sun-eater" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, add 1 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -16013,24 +16928,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e1cf-3fa4-22c1-425a" name="Grunta&apos;s Heart" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e1cf-3fa4-22c1-425a" name="Grunta&apos;s Heart" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="2709-5356-ba1a-d7b4" name="Grunta&apos;s Heart" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle, add 1 to the Move and Toughness characteristics of the bearer.</characteristic>
                   </characteristics>
@@ -16041,24 +16948,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3976-ef1e-db6c-191c" name="Blubbergrub Secretions" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3976-ef1e-db6c-191c" name="Blubbergrub Secretions" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="8103-5f9b-71e5-fc38" name="Blubbergrub Secretions" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, you can remove D6 damage points allocated to them. In addition, until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 3&quot; of the bearer.</characteristic>
                   </characteristics>
@@ -16069,24 +16968,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="950b-261c-68b1-f62a" name="Mawbroth" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="950b-261c-68b1-f62a" name="Mawbroth" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="84ee-bd99-599b-a145" name="Mawbroth" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: the bearer can use this lesser artefact as a bonus action. If they do so, until the end of their activation, the next time an enemy fighter is taken down by an attack action made by the bearer that has a Range characteristic of 3 or less, you can remove 2D6 damage points allocated to the bearer.</characteristic>
                   </characteristics>
@@ -16097,24 +16988,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8d14-b55e-49d9-bc35" name="Spiteshroom Puffcap" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8d14-b55e-49d9-bc35" name="Spiteshroom Puffcap" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="9ae1-fe0e-429a-3eca" name="Spiteshroom Puffcap" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle round, subtract 1 from the Strength characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 6&quot; of the bearer.</characteristic>
                   </characteristics>
@@ -16125,24 +17008,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d8f2-21d7-7971-b723" name="Battle Brew" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d8f2-21d7-7971-b723" name="Battle Brew" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="c735-f84a-1fba-3780" name="Battle Brew" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, roll a dice. Until the end of the battle round, the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less is equal to the value of the roll.</characteristic>
                   </characteristics>
@@ -16153,24 +17028,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="27f8-d024-4997-f054" name="Critter Pipes" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="27f8-d024-4997-f054" name="Critter Pipes" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="865b-bef5-7995-08f8" name="Critter Pipes" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: If the bearer is included in your warband, you automatically pass bestial intellect rolls when you activate a chaotic beast within 6&quot; of the bearer.</characteristic>
                   </characteristics>
@@ -16181,24 +17048,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fbcd-e6d6-9f4a-4aa0" name="Fresh Bottles" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fbcd-e6d6-9f4a-4aa0" name="Fresh Bottles" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="83b9-cf2b-f252-ea02" name="Fresh Bottles" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Instant]: You earn 2D6 glory points.</characteristic>
                   </characteristics>
@@ -16209,24 +17068,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f65b-0d26-5107-dc6a" name="Burnin&apos; Tattooz" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f65b-0d26-5107-dc6a" name="Burnin&apos; Tattooz" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="3871-3593-48e3-20e5" name="Burnin&apos; Tattooz" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: Enemy fighters that finish a move action within 1&quot; of the bearer suffer impact damage.</characteristic>
                   </characteristics>
@@ -16237,24 +17088,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4cde-99c8-de60-b647" name="Yhetee&apos;s Blood" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4cde-99c8-de60-b647" name="Yhetee&apos;s Blood" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="724c-7754-9107-5713" name="Yhetee&apos;s Blood" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, until the end of the battle round, count each critical hit scored from attack actions that target the bearer as a hit instead</characteristic>
                   </characteristics>
@@ -16265,24 +17108,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f8dd-bbef-0f5d-c51d" name="Shrapnel Blast-keg" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f8dd-bbef-0f5d-c51d" name="Shrapnel Blast-keg" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="de1e-270b-026f-7455" name="Shrapnel Blast-keg" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, pick a visible enemy fighter within 9&quot; of the bearer and roll a dice for each fighter within 3&quot; of that enemy fighter. On a 4+, allocate D6 damage points to the fighter being rolled for.</characteristic>
                   </characteristics>
@@ -16293,24 +17128,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cf0e-a6ab-4bbf-c6c5" name="Bugman&apos;s XXXXXX" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="cf0e-a6ab-4bbf-c6c5" name="Bugman&apos;s XXXXXX" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="f462-3024-d6d6-1798" name="Bugman&apos;s XXXXXX" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Consumable]: The bearer can use this lesser artefact as a bonus action. If they do so, you can remove 2D6 damage points allocated to them. Then, the bearer can make a bonus move action or a bonus attack action.</characteristic>
                   </characteristics>
@@ -16321,24 +17148,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="db79-cd3f-a387-587f" name="Amberbone Torc" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="db79-cd3f-a387-587f" name="Amberbone Torc" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="11e3-0d2f-2bfd-97cb" name="Amberbone Torc" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: If the bearer has made a move action this activation, add 2 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
@@ -16349,24 +17168,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="415c-cd1a-934e-fed1" name="Icon of the Evil Sun" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="415c-cd1a-934e-fed1" name="Icon of the Evil Sun" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="19b0-5023-c3bc-9391" name="Icon of the Evil Sun" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Add 2 to the Move characteristic of the bearer unless a twist card with either the Climate runemark or the Magical Phenomena runemark is in play.</characteristic>
                   </characteristics>
@@ -16377,24 +17188,16 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="64a3-b884-885c-a698" name="Badloon Bossfungus" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="64a3-b884-885c-a698" name="Badloon Bossfungus" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b296-b920-ad0c-747e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="b8b8-1da6-c9bb-7aa0" name="Badloon Bossfungus" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a751-a8c8-baf2-dc6c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcc8-ab2f-34e5-1612" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5fc-cad2-8073-b202" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="049b-59c3-1e4a-7a4c" type="greaterThan"/>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5e1-ea1a-6c86-7b0a" type="greaterThan"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">[Perishable]: Attack actions made by the bearer that have a Range characteristic of 3 or less score a critical hit on a 5+.</characteristic>
                   </characteristics>
