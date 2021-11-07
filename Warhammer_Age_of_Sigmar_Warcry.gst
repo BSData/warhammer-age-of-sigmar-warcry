@@ -17234,7 +17234,7 @@ from all enemy fighters.</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cd6c-8120-1d6b-6287" name="Reserve Force" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="cd6c-8120-1d6b-6287" name="Reserve Force (removes cost)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7898-894b-d3a7-9a22" type="max"/>
               </constraints>
