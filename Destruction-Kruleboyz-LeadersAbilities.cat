@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7a64-ab46-8e4b-d424" name="Destruction - Kruleboyz - Leaders &amp; Abilities " revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7a64-ab46-8e4b-d424" name="Destruction - Kruleboyz - Leaders &amp; Abilities " revision="7" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="47e4-cd34-79d1-5398" name="Killaboss" hidden="false" collective="false" import="true" targetId="a2e9-39a1-4fd7-be51" type="selectionEntry">
       <modifiers>
@@ -231,6 +231,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1766-45b8-b5bc-4a60" name="Boltboy Boss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="637c-3fab-531d-84c9" name="Boltboy Boss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -282,6 +289,11 @@
         <modifier type="append" field="name" value="with Wicked Stikka">
           <conditions>
             <condition field="selections" scope="0a86-6740-036d-86e2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c491-d41a-a244-78d2" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -357,6 +369,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e25a-67df-d5d6-2ca0" name="Swampcalla Shaman" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c0c6-cca3-5d3e-a693" name="Swampcalla Shaman" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -399,6 +418,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7559-f0e7-d65c-a4aa" name="Murknob with Belcha-Banna" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9493-8319-b248-8b7e" name="Murknob" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -442,6 +468,11 @@
         <modifier type="append" field="name" value="on Great Gnashtoof">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7de3-ea34-d6a9-c06d" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

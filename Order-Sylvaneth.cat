@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="471f-f5a7-5e3a-f682" name="Order - Sylvaneth" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="471f-f5a7-5e3a-f682" name="Order - Sylvaneth" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="2217-b294-938a-5b18" name="Dryads" hidden="false" collective="false" import="true" targetId="17cd-e1a8-c08d-c97c" type="selectionEntry"/>
     <entryLink id="cc8a-6b71-1bad-04a8" name="Spite-Revenant" hidden="false" collective="false" import="true" targetId="71c9-a3b4-8ff4-8f66" type="selectionEntry"/>
@@ -57,6 +57,11 @@
         <modifier type="append" field="name" value="with Kurnoth Scythe">
           <conditions>
             <condition field="selections" scope="3f1b-03ba-fe58-c3da" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f30-64c2-12fb-63aa" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -125,6 +130,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="17cd-e1a8-c08d-c97c" name="Dryads" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="a8d6-bc74-fb3b-7e27" name="Dryads" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -155,6 +167,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d361-4481-fbc0-c23b" name="Tree-Revenant" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1cd2-609f-151c-16d1" name="Tree-Revenant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -185,6 +204,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="71c9-a3b4-8ff4-8f66" name="Spite-Revenant" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2572-595a-26c8-7d41" name="Spite-Revenant" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

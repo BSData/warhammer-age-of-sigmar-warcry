@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e027-a563-d05c-d0bd" name="Chaos - The Unmade" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e027-a563-d05c-d0bd" name="Chaos - The Unmade" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="acd2-8754-6980-b27e" name="Ascended One" hidden="false" collective="false" import="true" targetId="6dbe-f04b-3f21-313f" type="selectionEntry"/>
     <entryLink id="dac7-b662-c3d5-0cf2" name="Awakened One with Brutal Polearm" hidden="false" collective="false" import="true" targetId="fa69-1962-8fac-5dc8" type="selectionEntry"/>
@@ -12,6 +12,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6dbe-f04b-3f21-313f" name="Ascended One" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d560-8bb2-c109-122e" name="Ascended One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -47,6 +54,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="dedb-4700-3519-02a1" name="Joyous One" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="0ddd-64f4-acc9-84e7" name="Joyous One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -91,6 +105,11 @@
         <modifier type="append" field="name" value="with Brutal Polearm">
           <conditions>
             <condition field="selections" scope="fa69-1962-8fac-5dc8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="247f-3f72-5401-471e" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

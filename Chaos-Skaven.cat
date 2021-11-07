@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c93-2200-a39e-de22" name="Chaos - Skaven" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c93-2200-a39e-de22" name="Chaos - Skaven" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="8f45-0f1b-941f-d284" name="Stormfiend" hidden="false" collective="false" import="true" targetId="acf7-98bf-ee1f-8431" type="selectionEntry"/>
     <entryLink id="bf9c-afda-94fd-e88b" name="Skryre Acolyte" hidden="false" collective="false" import="true" targetId="47d7-c313-4103-d2d1" type="selectionEntry"/>
@@ -107,6 +107,11 @@
         <modifier type="append" field="name" value="with Warpfire Projectors">
           <conditions>
             <condition field="selections" scope="acf7-98bf-ee1f-8431" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa65-f4e4-309e-44a9" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -268,6 +273,11 @@
             <condition field="selections" scope="fc7e-1f17-508d-848c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ce9-33a5-3231-ae2b" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="ffd9-a4f7-32d3-bcc0" name="Plague Monk" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -357,6 +367,11 @@
             <condition field="selections" scope="8349-35d6-8bef-ffdb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c67e-be4e-9f9b-c0af" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="b218-1fa4-ab24-8134" name="Stormvermin" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -431,6 +446,11 @@
             <condition field="selections" scope="9c8a-bbfd-1a51-78b9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0ee-74b2-f0c1-ddbc" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="ee9c-ff8b-5386-3c45" name="Clanrat" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -498,6 +518,11 @@
         <modifier type="append" field="name" value="with Warpfire Gun">
           <conditions>
             <condition field="selections" scope="0405-9ce3-4131-e631" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dac9-3aaf-334a-a5a9" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -569,6 +594,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c204-b25f-ed72-700e" name="Packmaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="6df8-1242-2875-3152" name="Packmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -608,6 +640,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4906-3836-cf48-912a" name="Giant Rat" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="af6f-6878-7196-e20f" name="Giant Rat" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -644,6 +683,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5834-cd67-60e0-e2ca" name="Gutter Runner" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="06ea-113e-9e76-6426" name="Gutter Runner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -682,6 +728,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="47d7-c313-4103-d2d1" name="Skryre Acolyte" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="68f5-7909-ba4b-cc80" name="Skryre Acolyte" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -721,6 +774,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="726d-7d4a-25ed-e072" name="Warplock Jezzail" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e236-dfcd-53aa-22bc" name="Warplock Jezzail" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -759,6 +819,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4331-e6bf-a9ec-25da" name="Night Runner" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9cd0-fae2-83ff-29fe" name="Night Runner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -790,6 +857,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3fb1-6ac6-cd45-7682" name="Warpfire Thrower" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="27f1-2f37-60db-247d" name="Warpfire Thrower" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -825,6 +899,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7ba4-4845-e03d-6786" name="Doom-Flayer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="0679-0d5a-a79b-8cd4" name="Doom-Flayer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -861,6 +942,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="14f0-1fb4-2264-49e6" name="Warp-Grinder" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2e18-5b89-207c-6573" name="Warp-Grinder" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aee6-e756-8a26-8a7b" name="Destruction - Ogor Mawtribes" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aee6-e756-8a26-8a7b" name="Destruction - Ogor Mawtribes" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5153-640d-85ad-b80e" name="Mournfang Pack" hidden="false" collective="false" import="true" targetId="3964-a920-5a3b-28a8" type="selectionEntry"/>
     <entryLink id="7c4e-91e1-6c44-0368" name="Frost Sabre" hidden="false" collective="false" import="true" targetId="c075-00dd-7095-9fb6" type="selectionEntry"/>
@@ -62,6 +62,11 @@
         <modifier type="append" field="name" value="with Culling Club and Ironfist">
           <conditions>
             <condition field="selections" scope="3964-a920-5a3b-28a8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84a6-e0ac-2f3e-9a2b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -149,6 +154,11 @@
             <condition field="selections" scope="4de7-c699-96ad-aa85" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="42ea-894a-65e8-f3d6" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="09dd-3f07-65a2-9577" name="Ogor Glutton" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -222,6 +232,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5b8f-d820-70f5-1149" name="Maneater" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e3ec-7ff2-ebd7-ffb9" name="Maneater" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -265,6 +282,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f945-23c9-6e14-99a8" name="Irongut" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e4fd-2893-ad98-e54c" name="Irongut" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -300,6 +324,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c075-00dd-7095-9fb6" name="Frost Sabre" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="6215-88b8-a8f5-dd44" name="Frost Sabre" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -335,6 +366,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3428-14f5-f634-7460" name="Leadbelcher" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ee3d-03f4-cb57-72b4" name="Leadbelcher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -379,6 +417,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="52b2-7089-7606-cc89" name="Icefall Yhetee" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="baed-04b7-5e4c-f7ce" name="Icefall Yhetee" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -414,6 +459,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="24da-34be-e1cd-7e82" name="Gnoblar" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d0a8-6a84-d528-6b56" name="Gnoblar" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -449,6 +501,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b390-7758-5b67-cad4" name="Gorger" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1f25-d6b5-8497-3d22" name="Gorger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

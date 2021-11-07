@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="98a8-13db-b704-3ef0" name="Destruction - Gloomspite Gitz" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="98a8-13db-b704-3ef0" name="Destruction - Gloomspite Gitz" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="02ca-646f-2fe6-657a" name="Boingrot Bounder" hidden="false" collective="false" import="true" targetId="fb7e-b0bb-41d4-d73b" type="selectionEntry"/>
     <entryLink id="8bfa-99a8-45d7-a8ce" name="Cave Squig" hidden="false" collective="false" import="true" targetId="75c4-47bd-972e-4c9c" type="selectionEntry"/>
@@ -57,6 +57,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fb7e-b0bb-41d4-d73b" name="Boingrot Bounder" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d87c-58eb-2537-d5e8" name="Boingrot Bounder" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -93,6 +100,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4bb6-be0c-9e24-df4c" name="Squig Hopper" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="eaac-9368-55fc-f245" name="Squig Hopper" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -129,6 +143,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c54f-654a-9769-dab0" name="Squig Herder" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1a2f-bb1a-d551-80cd" name="Squig Herder" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -164,6 +185,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="75c4-47bd-972e-4c9c" name="Cave Squig" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1f39-5fb7-b0bd-2d74" name="Cave Squig" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -199,6 +227,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e664-c157-8111-1b4d" name="Shoota" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d188-d4a8-d846-183a" name="Shoota" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -255,6 +290,11 @@
         <modifier type="append" field="name" value="with Pokin&apos; Spear and Moon Shield">
           <conditions>
             <condition field="selections" scope="f2f3-64f4-c697-3113" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f99-5cbb-705d-e006" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -362,6 +402,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7c6a-3574-d4d1-59f1" name="Sneaky Snuffler" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3957-78dc-b383-5fb1" name="Sneaky Snuffler" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -396,6 +443,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c338-5ffb-9de1-ad9c" name="Spider Rider" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="0069-4a94-4676-34aa" name="Spider Rider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

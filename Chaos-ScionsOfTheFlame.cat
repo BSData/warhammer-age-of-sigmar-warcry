@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b91-0957-db30-93e7" name="Chaos - Scions of the Flame" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0b91-0957-db30-93e7" name="Chaos - Scions of the Flame" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="8fdd-4c79-924e-c3e8" name="Fireborn" hidden="false" collective="false" import="true" targetId="d18c-bf89-3f90-dc6e" type="selectionEntry"/>
     <entryLink id="9777-e92e-961b-5bfe" name="Initiate" hidden="false" collective="false" import="true" targetId="78c4-17d8-e0c7-56cc" type="selectionEntry"/>
@@ -14,6 +14,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0dbc-2074-e783-21d2" name="Brazen Champion" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2850-c9d5-7ee3-5f4b" name="Brazen Champion" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -68,6 +75,11 @@
         <modifier type="append" field="name" value="with Hooked Axe">
           <conditions>
             <condition field="selections" scope="78c4-17d8-e0c7-56cc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="deb5-647e-215a-635e" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -177,6 +189,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="43fe-1064-b682-1085" name="Immolator" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="999f-a5e4-2d7d-cc1a" name="Immolator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -212,6 +231,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="10b0-2c19-2529-c9e3" name="Inferno Priest" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="5047-aaf8-4e28-6394" name="Inferno Priest" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -264,6 +290,11 @@
         <modifier type="append" field="name" value="with Sunblade and Kris">
           <conditions>
             <condition field="selections" scope="d18c-bf89-3f90-dc6e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f4b5-cb58-5e5f-862c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

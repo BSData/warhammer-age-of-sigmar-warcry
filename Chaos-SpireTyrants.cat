@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1a20-692a-e9f0-9f1b" name="Chaos - Spire Tyrants" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1a20-692a-e9f0-9f1b" name="Chaos - Spire Tyrants" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1649-3ebc-db9e-16e4" name="Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
       <categoryLinks>
@@ -28,6 +28,11 @@
         <modifier type="append" field="name" value="with Spear">
           <conditions>
             <condition field="selections" scope="2d0f-25fd-694b-52a7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="991a-3c56-632d-046f" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -124,6 +129,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="57c4-e3a8-19dd-5c3e" name="Frenzied Rager" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="8fda-558a-ec33-5245" name="Frenzied Rager" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -159,6 +171,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1cb8-1a92-9f57-4f89" name="Bestigor Destroyer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="58c5-5667-fba3-5485" name="Bestigor Destroyer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -194,6 +213,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f2d3-25f2-c9f5-bb99" name="Headclaimer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="5205-c1fc-ddf1-e310" name="Headclaimer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -238,6 +264,11 @@
         <modifier type="append" field="name" value="with Shield">
           <conditions>
             <condition field="selections" scope="c134-f417-900d-15d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf99-a693-c98c-6eb8" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

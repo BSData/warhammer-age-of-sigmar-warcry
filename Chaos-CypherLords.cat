@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7021-2d1f-bc51-3d1a" name="Chaos - Cypher Lords" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7021-2d1f-bc51-3d1a" name="Chaos - Cypher Lords" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="0d67-9a7a-04b6-7b48" name="Luminate" hidden="false" collective="false" import="true" targetId="24cf-cb4d-9f96-8240" type="selectionEntry"/>
     <entryLink id="1fe7-eb37-be3f-5dc0" name="Mindbound" hidden="false" collective="false" import="true" targetId="c720-c47e-d160-808a" type="selectionEntry"/>
@@ -21,6 +21,11 @@
         <modifier type="append" field="name" value="with Sword">
           <conditions>
             <condition field="selections" scope="c720-c47e-d160-808a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1da1-fc3d-8916-5273" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -106,6 +111,11 @@
             <condition field="selections" scope="78ff-4163-3050-5ddd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3df4-2a1d-c416-668b" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="d145-4a21-8a12-b4e5" name="Mirrorblade" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -178,6 +188,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="24cf-cb4d-9f96-8240" name="Luminate" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="5e83-f2a1-5a17-9884" name="Luminate" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

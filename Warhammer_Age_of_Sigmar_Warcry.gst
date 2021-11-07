@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="36" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="37" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="8096-c20e-edc8-1a25" name="Glory" defaultCostLimit="-1.0" hidden="false"/>
@@ -56,6 +56,7 @@
     <categoryEntry id="5ed1-bb68-7a31-b173" name="Heroes" hidden="false"/>
     <categoryEntry id="e4b3-72a5-ca73-8c72" name="Narrative Options" hidden="false"/>
     <categoryEntry id="82fd-8251-2413-feb8" name="Bladeborn Fighters" hidden="false"/>
+    <categoryEntry id="2ee8-8d63-66d0-df8e" name="Reserves" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -124,7 +125,7 @@
         <categoryLink id="6a6a-fcf5-2a74-ef67" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play (2 Forces of same faction runemark req.)" hidden="false">
+    <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
       <modifierGroups>
         <modifierGroup>
           <comment>Narrative Options Relationship</comment>
@@ -139,7 +140,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="7213-2079-c1bf-ab1d" value="1.0">
+            <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -149,7 +150,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="7213-2079-c1bf-ab1d" value="0.0">
+            <modifier type="increment" field="1eab-7954-84eb-7178" value="0.0">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -240,19 +241,9 @@
           <comment>roster max alteration (territories &amp; soroth kor)</comment>
           <modifierGroups>
             <modifierGroup>
-              <comment>soroth kor point limit</comment>
-              <modifiers>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1000.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
               <comment>increase roster max 50</comment>
               <modifiers>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
+                <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
                   <repeats>
                     <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed3b-f3ff-7285-d37a" repeats="1" roundUp="false"/>
                   </repeats>
@@ -262,7 +253,7 @@
             <modifierGroup>
               <comment>increase roster max 100</comment>
               <modifiers>
-                <modifier type="increment" field="31a0-f87a-3324-7fa5" value="100.0">
+                <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
                   <repeats>
                     <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10ff-25f8-d133-5fc1" repeats="1" roundUp="false"/>
                   </repeats>
@@ -272,176 +263,6 @@
             <modifierGroup>
               <comment>ALL soroth kor territory modifiers</comment>
               <modifierGroups>
-                <modifierGroup>
-                  <comment>FORCE soroth kor territories</comment>
-                  <modifierGroups>
-                    <modifierGroup>
-                      <comment>desolate ruins and upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="25.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e791-f37d-0901-c258" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="25.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a39-4861-5908-73e9" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Forgotten Spire, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0751-a5d4-8329-7bd3" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Hidden Catacombs, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2830-089f-c858-3bd8" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Ruined Stronghold, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Sealed Tomb, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4304-5379-cd34-5cd6" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Abandoned Foundry, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Eerie Quarter and upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3999-bef4-d36c-c23d" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="25.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75aa-4c5f-cc29-440d" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Gore Pit, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Steelwrought Shrine, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c425-a590-56bf-5127" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Surgical Complex, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75e7-f48f-6295-2560" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Ancient Palace and upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa99-272d-6ec2-fd80" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e43a-4345-69ec-a227" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Cultic Sanctuary, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Entrance to the Deep Dark, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d91-9377-5504-e7ed" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Sage&apos;s Lair, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba98-cabd-a00d-885c" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup>
-                      <comment>Silent Marketplace, no upgrade</comment>
-                      <modifiers>
-                        <modifier type="increment" field="31a0-f87a-3324-7fa5" value="50.0">
-                          <repeats>
-                            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c6-828a-fac4-e1f5" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </modifierGroup>
                 <modifierGroup>
                   <comment>ROSTER soroth kor territories</comment>
                   <modifierGroups>
@@ -620,11 +441,7 @@
       <constraints>
         <constraint field="selections" scope="roster" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eab-7954-84eb-7178" type="max"/>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a612-cfde-504b-b8d6" type="min"/>
-        <constraint field="820d-9f65-fcb1-d476" scope="roster" value="2000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00fd-8510-5cfd-67a0" type="max"/>
-        <constraint field="forces" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e501-719b-534e-7598" type="min"/>
-        <constraint field="forces" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dc5-f404-0085-6c32" type="max"/>
-        <constraint field="selections" scope="force" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7213-2079-c1bf-ab1d" type="max"/>
-        <constraint field="820d-9f65-fcb1-d476" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="31a0-f87a-3324-7fa5" type="max"/>
+        <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00fd-8510-5cfd-67a0" type="max"/>
         <constraint field="8096-c20e-edc8-1a25" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8153-1787-93d6-fb7a" type="min"/>
       </constraints>
       <categoryLinks>
@@ -2591,7 +2408,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="cfa0-ed89-dc32-1e75" name="Runemarks" hidden="false" collective="false" import="true"/>
-    <selectionEntryGroup id="39cc-5d3d-bedf-93c9" name="Campaign Options" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="39cc-5d3d-bedf-93c9" name="Campaign Options" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2109-44c1-8c46-ea4f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c476-11b0-d91c-d44b" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="true"/>
       </categoryLinks>
@@ -8391,7 +8215,7 @@ TRIAL OF CHAMPIONS</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="889a-7179-d9ce-8969" name="-Enable Model Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="889a-7179-d9ce-8969" name="-Model Upgrades" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="e427-dd60-77b0-0c62" name="Fated Quest Rewards" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -17388,6 +17212,35 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6d44-30d3-31a1-4325" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" defaultSelectionEntryId="f17f-e7f3-d2bf-9972">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e44-cff9-4847-73c4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f17f-e7f3-d2bf-9972" name="Mustered Force" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f3e-6257-6914-30f7" type="max"/>
+                <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="56c9-908c-8b9c-56bc" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cd6c-8120-1d6b-6287" name="Reserve Force" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7898-894b-d3a7-9a22" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="5fa7-0e1f-73f2-934d" name="Reserves" hidden="false" targetId="2ee8-8d63-66d0-df8e" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>

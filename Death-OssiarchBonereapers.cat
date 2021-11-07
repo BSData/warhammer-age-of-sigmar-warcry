@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="497e-cceb-4805-44ec" name="Death - Ossiarch Bonereapers" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="497e-cceb-4805-44ec" name="Death - Ossiarch Bonereapers" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5f05-f377-b225-564b" name="Immortis Guard" hidden="false" collective="false" import="true" targetId="b960-23fa-1bbd-09e9" type="selectionEntry"/>
     <entryLink id="10ac-e9f6-b59a-43ec" name="Kavalos Deathriders" hidden="false" collective="false" import="true" targetId="e00e-b915-46dc-32f3" type="selectionEntry"/>
@@ -49,6 +49,11 @@
         <modifier type="append" field="name" value="with Nadirite Blade">
           <conditions>
             <condition field="selections" scope="e00e-b915-46dc-32f3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8fc5-daab-8809-5ae7" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -131,6 +136,11 @@
         <modifier type="append" field="name" value="with Dread Falchions">
           <conditions>
             <condition field="selections" scope="7523-1b82-1e80-27a5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a50-afcb-ab7c-4be9" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -217,6 +227,11 @@
         <modifier type="append" field="name" value="with Nadirite Blade">
           <conditions>
             <condition field="selections" scope="e010-ab59-8d81-6588" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3b52-2abc-3d5b-ca83" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -333,6 +348,11 @@
             <condition field="selections" scope="5ca0-42cf-2e35-c646" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="58b5-276b-dd36-37fb" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="3b02-b1a8-428a-503d" name="Morghast Archai" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -403,6 +423,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b960-23fa-1bbd-09e9" name="Immortis Guard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="0071-ed16-e6fd-d137" name="Immortis Guard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -447,6 +474,11 @@
         <modifier type="append" field="name" value="with Spirit Halberd">
           <conditions>
             <condition field="selections" scope="697f-b9c6-0313-12d9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="acb8-4f82-9db8-2653" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

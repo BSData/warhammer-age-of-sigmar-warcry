@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d4ed-da7f-40b6-26ce" name="Death - Soulblight Gravelords" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d4ed-da7f-40b6-26ce" name="Death - Soulblight Gravelords" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e525-ef94-86e7-0f3f" name="Blood Knight" hidden="false" collective="false" import="true" targetId="8785-4250-be05-d102" type="selectionEntry"/>
     <entryLink id="0d5f-359f-2392-69ad" name="Kosargi Nightguard" hidden="false" collective="false" import="true" targetId="5eb0-4058-9012-0a03" type="selectionEntry"/>
@@ -41,6 +41,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8676-1008-e1b0-fc47" name="Vyrkos Blood-born" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4f05-91a4-b5c2-4a43" name="Vyrkos Blood-born" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -76,6 +83,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a174-c03d-27e6-0e5d" name="Vargskyr" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4837-6062-aad8-5394" name="Vargskyr" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -111,6 +125,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5eb0-4058-9012-0a03" name="Kosargi Nightguard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4cb6-01a7-c257-a571" name="Kosargi Nightguard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -145,6 +166,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0d92-ed17-5349-a854" name="Vargheist" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="befc-865f-1371-3941" name="Vargheist" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -190,6 +218,11 @@
         <modifier type="append" field="name" value="with Templar Blade">
           <conditions>
             <condition field="selections" scope="8785-4250-be05-d102" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24b6-4e43-8c32-772f" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -263,6 +296,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b84e-ab3c-ca73-011f" name="Hell Knight" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9d70-692c-59a7-961e" name="Hell Knight" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -299,6 +339,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d8ce-6fab-ad4f-5a59" name="Black Knight" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="24c5-3821-88ff-d8ed" name="Black Knight" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -334,6 +381,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4d1b-1798-3721-d4e7" name="Seneschal" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2bfa-b1e3-5401-8614" name="Seneschal" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -379,6 +433,11 @@
         <modifier type="append" field="name" value="with Wight Blade and Crypt Shield">
           <conditions>
             <condition field="selections" scope="9444-fc91-616c-c00c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7624-9757-0922-3734" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -456,6 +515,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d8b8-f40c-2f2b-088e" name="Skeleton Champion" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e520-8586-1bd5-5d05" name="Skeleton Champion" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -501,6 +567,11 @@
         <modifier type="append" field="name" value="with Ancient Spear">
           <conditions>
             <condition field="selections" scope="12cf-1fb4-d1e6-9a23" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1982-b42f-75b8-6c74" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -573,6 +644,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="21c1-43e1-9969-c317" name="Deadwalker Zombie" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d5ab-78b7-4819-d9c6" name="Deadwalker Zombie" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

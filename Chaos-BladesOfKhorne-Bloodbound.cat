@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8bc9-81dc-18c5-632d" name="Chaos - Blades of Khorne - Bloodbound" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8bc9-81dc-18c5-632d" name="Chaos - Blades of Khorne - Bloodbound" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="9b42-867e-8c09-37c7" name="Blood Warrior" hidden="false" collective="false" import="true" targetId="4b11-f968-6472-109f" type="selectionEntry"/>
     <entryLink id="22d1-76b9-90f2-f249" name="Bloodreaver" hidden="false" collective="false" import="true" targetId="6be9-3bc9-27cf-e1af" type="selectionEntry"/>
@@ -77,6 +77,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7e76-b28d-d2cd-2f44" name="Wrathmonger" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="8a22-c4ae-9e51-4be2" name="Wrathmonger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -112,6 +119,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8a76-aee2-167e-401d" name="Skullreaper" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f139-d597-8d13-f0e0" name="Skullreaper" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -161,6 +175,11 @@
         <modifier type="append" field="name" value="with Goreglaive">
           <conditions>
             <condition field="selections" scope="4b11-f968-6472-109f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3814-7e72-eb33-8d50" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -262,6 +281,11 @@
             <condition field="selections" scope="6be9-3bc9-27cf-e1af" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8956-dbc3-a670-1f8e" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="f32f-5106-ce99-9869" name="Bloodreaver" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -320,10 +344,10 @@
       <entryLinks>
         <entryLink id="9f37-102b-9779-54ad" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
-            <entryLink id="dfc0-db96-49f1-d96d" name=" Blades of  Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
+            <entryLink id="dfc0-db96-49f1-d96d" name=" Blades of Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="181a-9c7c-774a-63c5" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="181a-9c7c-774a-63c5" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
@@ -331,6 +355,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6fe9-49bb-8552-1cb4" name="Khorgorath" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="51b0-81d3-2ab0-8f5c" name="Khorgorath" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -375,6 +406,11 @@
         <modifier type="append" field="name" value="with Ensorcelled Axe">
           <conditions>
             <condition field="selections" scope="c3f3-0c22-7df3-2a5b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="060d-732d-65b1-986f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -447,6 +483,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="12e8-7b75-07be-6e3f" name="Flesh Hound" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4f47-998c-0fc7-cfc5" name="Flesh Hound" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

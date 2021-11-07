@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c14-883d-fcbd-7224" name="Chaos - Slaves to Darkness" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c14-883d-fcbd-7224" name="Chaos - Slaves to Darkness" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e413-6152-217c-ad8d" name="Aspiring Champion" hidden="false" collective="false" import="true" targetId="200a-8c00-6128-4959" type="selectionEntry">
       <categoryLinks>
@@ -90,6 +90,11 @@
         <modifier type="append" field="name" value="with Axe and Shield">
           <conditions>
             <condition field="selections" scope="9eb8-e4d8-ded5-9372" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="600c-1458-0307-5ae6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -212,6 +217,11 @@
         <modifier type="append" field="name" value="with Chaos Hand Weapon and Runeshield">
           <conditions>
             <condition field="selections" scope="0725-d6b0-94cf-0e2b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2c62-d16a-e63f-e712" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -340,6 +350,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="329f-44d6-c90d-2896" name="Chaos Chosen" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="8ac7-57c2-111d-5a30" name="Chaos Greataxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
@@ -384,6 +401,11 @@
         <modifier type="append" field="name" value="with Barbarian Flail">
           <conditions>
             <condition field="selections" scope="efb4-6ad6-7cf6-a490" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd26-665f-c218-3a25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -472,6 +494,11 @@
         <modifier type="append" field="name" value="with Ensorcelled Weapon and Chaos Runeshield">
           <conditions>
             <condition field="selections" scope="f846-5423-983c-875e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ece-d414-8ecc-213b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

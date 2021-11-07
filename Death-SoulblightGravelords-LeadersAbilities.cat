@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e18a-14c5-6c36-8d80" name="Death - Soulblight Gravelords - Leaders &amp; Abilities" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e18a-14c5-6c36-8d80" name="Death - Soulblight Gravelords - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="8a75-9413-f646-dad4" name="Vampire Lord" hidden="false" collective="false" import="true" targetId="5fce-38f5-9d35-e8cf" type="selectionEntry">
       <modifiers>
@@ -260,6 +260,13 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       </costs>
     </selectionEntry>
     <selectionEntry id="5fce-38f5-9d35-e8cf" name="Vampire Lord" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4957-f494-7447-7c18" name="Vampire Lord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -294,6 +301,13 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       </costs>
     </selectionEntry>
     <selectionEntry id="695d-2d61-e0e7-3ce3" name="Necromancer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="6804-aa57-e187-c2e1" name="Necromancer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -344,6 +358,11 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
         <modifier type="append" field="name" value="on Skeletal Steed">
           <conditions>
             <condition field="selections" scope="a290-4371-7a96-c3db" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4a7-f227-4519-3919" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -430,6 +449,13 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       </costs>
     </selectionEntry>
     <selectionEntry id="969f-a7fc-14dc-c34a" name="Vargoyle" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="eabd-64d6-5ef7-37bc" name="Vargoyle" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -464,6 +490,13 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       </costs>
     </selectionEntry>
     <selectionEntry id="f0e3-b99e-0953-42d8" name="Kastellan" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1d69-4305-6147-bf3c" name="Kastellan" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

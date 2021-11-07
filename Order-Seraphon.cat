@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0624-cb15-b0e5-ff95" name="Order - Seraphon" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0624-cb15-b0e5-ff95" name="Order - Seraphon" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="10d5-dc71-9780-d8b3" name="Kroxigor" hidden="false" collective="false" import="true" targetId="52f7-e364-0eaf-c89a" type="selectionEntry"/>
     <entryLink id="79cc-7f93-729b-f611" name="Razordon" hidden="false" collective="false" import="true" targetId="51e0-5525-2cb8-9234" type="selectionEntry"/>
@@ -113,6 +113,11 @@
         <modifier type="append" field="name" value="with Moonstone Club and Star-buckler">
           <conditions>
             <condition field="selections" scope="3cca-0457-25d8-f223" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce62-944a-e1d7-9a62" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -230,6 +235,11 @@
             <condition field="selections" scope="5034-371c-a10b-59aa" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c7dd-1794-c719-92b7" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="f58c-da3d-1cd2-ccbd" name="Terradon Rider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -298,6 +308,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0e0b-460c-a2ab-5049" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f2c5-f449-f72f-3e51" name="Ripperdactyl Rider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -329,6 +346,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="21e7-0222-5382-3b42" name="Saurus Guard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7507-cec0-1e97-8101" name="Saurus Guard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -368,6 +392,11 @@
         <modifier type="append" field="name" value="with Celestite Club">
           <conditions>
             <condition field="selections" scope="5902-179d-b13d-2201" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84d8-ae27-e090-b2b1" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -444,6 +473,11 @@
             <condition field="selections" scope="8593-cd65-37cc-2ee3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92a4-06b7-8a13-75c8" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="6731-8fbb-dcda-07d2" name="Saurus Knight" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -508,6 +542,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="52f7-e364-0eaf-c89a" name="Kroxigor" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="24b4-cc0c-b3f4-fe3f" name="Kroxigor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -544,6 +585,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5ba5-d396-7e00-191a" name="Skink Handler" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="5f49-0e6f-fe54-a6dc" name="Celestite Goad" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
@@ -576,6 +624,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d181-4cba-436c-18de" name="Salamander" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7d36-255e-1730-6e0e" name="Salamander" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -611,6 +666,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="51e0-5525-2cb8-9234" name="Razordon" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ea22-e8cf-f9bc-0032" name="Razordon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

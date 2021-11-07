@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="51cd-70a1-af82-4c9d" name="Chaos - Splintered Fang" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="51cd-70a1-af82-4c9d" name="Chaos - Splintered Fang" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="caf8-b7e4-6762-a37b" name="Clearblood" hidden="false" collective="false" import="true" targetId="120c-e8dc-4bfe-2953" type="selectionEntry"/>
     <entryLink id="06ad-485d-e19a-44b3" name="Trueblood" hidden="false" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
@@ -18,6 +18,11 @@
         <modifier type="set" field="name" value="Clearblood with Shield">
           <conditions>
             <condition field="selections" scope="120c-e8dc-4bfe-2953" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab8-0ab1-f8a3-25e4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -87,6 +92,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4443-3812-0fcf-8024" name="Serpent Caller" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="512b-ca2f-8e36-e62c" name="Serpant Caller" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -130,6 +142,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ed4d-9c22-4cb8-6f00" name="Serpents" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="6d4d-85cf-f71d-1fca" name="Serpents" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -165,6 +184,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="50ab-7fbb-0714-59b9" name="Pureblood" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ffd2-4e46-70b3-baf2" name="Pureblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -219,6 +245,11 @@
         <modifier type="set" field="name" value="Venomblood with Blade and Barbed Whip">
           <conditions>
             <condition field="selections" scope="86fe-b9d6-531f-7ed7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da12-6895-cb37-7ee5" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fae-5c7e-e77c-4d26" name="Death - Flesh-eater Courts" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fae-5c7e-e77c-4d26" name="Death - Flesh-eater Courts" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="dbd4-4deb-04f1-c6ab" name="Crypt Flayer" hidden="false" collective="false" import="true" targetId="af17-452d-7fc8-05d8" type="selectionEntry"/>
     <entryLink id="58aa-540d-5f7b-2552" name="Crypt Ghoul" hidden="false" collective="false" import="true" targetId="a47f-1b7f-85cf-7501" type="selectionEntry"/>
@@ -52,6 +52,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="a47f-1b7f-85cf-7501" name="Crypt Ghoul" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="81bc-1524-7729-cc8a" name="Crypt Ghoul" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -86,6 +93,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0d25-5594-1a4b-60dc" name="Crypt Horror" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e42c-83ba-2ef3-a06c" name="Crypt Horror" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -121,6 +135,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="af17-452d-7fc8-05d8" name="Crypt Flayer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2f2c-73b9-6df8-75c6" name="Crypt Flayer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

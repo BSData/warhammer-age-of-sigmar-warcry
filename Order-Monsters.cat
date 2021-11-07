@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fdcb-ae8a-c33d-e1d3" name="Order - Monsters" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fdcb-ae8a-c33d-e1d3" name="Order - Monsters" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fca1-c751-e211-0dd7" name="Kharibdyss" hidden="false" collective="false" import="true" targetId="294b-ca80-45c3-470c" type="selectionEntry"/>
     <entryLink id="b27e-f0a8-86a8-5339" name="War Hydra" hidden="false" collective="false" import="true" targetId="da66-9b31-c014-89b0" type="selectionEntry"/>
@@ -169,6 +169,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="da66-9b31-c014-89b0" name="War Hydra" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="fdcd-f2f2-1f4f-b1a5" name="War Hydra" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -240,6 +247,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="294b-ca80-45c3-470c" name="Kharibdyss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="a003-f68c-c588-7ce8" name="Kharibdyss" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

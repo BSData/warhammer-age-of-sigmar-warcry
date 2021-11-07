@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5199-9be4-edc2-5c3b" name="Chaos - Hedonites of Slaanesh - Daemons" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5199-9be4-edc2-5c3b" name="Chaos - Hedonites of Slaanesh - Daemons" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="75f4-1f75-813a-5765" name="Allurer" hidden="false" collective="false" import="true" targetId="e548-b443-ffb0-9311" type="selectionEntry">
       <categoryLinks>
@@ -43,6 +43,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6e8b-afa1-3bfe-1692" name="Daemonette" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="a4db-0b52-d74e-f539" name="Daemonette" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -78,6 +85,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f613-3ba8-7665-ad7b" name="Fiend" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="33e5-56d0-25fb-024b" name="Fiend" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -113,6 +127,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7763-7732-4427-524c" name="Seeker of Slaanesh" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="50af-09eb-9391-b52f" name="Seeker of Slaanesh" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -158,6 +179,11 @@
         <modifier type="append" field="name" value="with Hellscourge">
           <conditions>
             <condition field="selections" scope="c551-ea39-a7ef-78d6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c81-65b1-3241-c09a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
