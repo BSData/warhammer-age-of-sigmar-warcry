@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="65dd-895f-c4c7-630b" name="Chaos - Darkoath Savagers" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="48c6-4ae6-90b3-09ce" name="Slaughterborn" hidden="false" collective="false" import="true" targetId="3644-47ec-f98c-ebce" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="50d0-fe25-cff1-b4cf" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cb07-fc8f-e911-7eed" name="Proven" hidden="false" collective="false" import="true" targetId="8cc9-f78b-0404-7cf1" type="selectionEntry"/>
+    <entryLink id="5250-6d82-3761-4738" name="God-speaker" hidden="false" collective="false" import="true" targetId="aaaf-3143-1c3e-6d66" type="selectionEntry"/>
+    <entryLink id="1dad-9d7f-f68b-5235" name="Wrathtouched" hidden="false" collective="false" import="true" targetId="c247-34f3-3ea8-76f6" type="selectionEntry"/>
+    <entryLink id="68c7-a351-cc01-aae0" name="Gloryseeker" hidden="false" collective="false" import="true" targetId="2746-2deb-fb91-62b0" type="selectionEntry"/>
+  </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="8cc9-f78b-0404-7cf1" name="Proven" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8cc9-f78b-0404-7cf1" name="Proven" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -18,6 +29,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="dfd2-db10-167d-8d80" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="dcd1-d797-cb9d-2580" name="Profile" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -90,14 +104,18 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="7723-d28a-3a3e-e98f" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
-        <entryLink id="251d-7472-af26-258d" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup"/>
+        <entryLink id="251d-7472-af26-258d" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="884d-325f-4c13-0905" name="Darkoath Savagers" hidden="false" collective="false" import="true" targetId="7649-5425-860e-7aaa" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c247-34f3-3ea8-76f6" name="Wrathtouched" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c247-34f3-3ea8-76f6" name="Wrathtouched" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -122,11 +140,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="712a-60d3-ac21-beef" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="e0a2-37c3-d126-6240" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
         <entryLink id="9199-2ccd-4382-bd78" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="c2b7-354d-a502-0ae8" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
+            <entryLink id="dcf3-d177-66d5-2607" name="Darkoath Savagers" hidden="false" collective="false" import="true" targetId="7649-5425-860e-7aaa" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -135,7 +157,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aaaf-3143-1c3e-6d66" name="God-speaker" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="aaaf-3143-1c3e-6d66" name="God-speaker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -168,11 +190,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="8acb-d2e7-57cd-4ae1" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="c762-cbb9-c3d4-d078" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
         <entryLink id="6678-7b9f-50dc-7877" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="5cee-f471-d0a5-3426" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
+            <entryLink id="91ce-ebed-4b54-ad52" name="Darkoath Savagers" hidden="false" collective="false" import="true" targetId="7649-5425-860e-7aaa" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -181,7 +207,7 @@
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2746-2deb-fb91-62b0" name="Gloryseeker" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2746-2deb-fb91-62b0" name="Gloryseeker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -205,6 +231,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="64de-1d98-b0b1-dfde" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="957f-7e81-f09b-a5e8" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="3fdd-4018-5a44-718c">
           <selectionEntries>
@@ -285,7 +314,11 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="523c-3b10-6bc9-c785" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
-        <entryLink id="1fd4-0ae8-1ae0-e782" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup"/>
+        <entryLink id="1fd4-0ae8-1ae0-e782" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9b59-3708-6f3e-f88d" name="Darkoath Savagers" hidden="false" collective="false" import="true" targetId="7649-5425-860e-7aaa" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -293,4 +326,8 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="5276-ed6b-487f-cd55" name="Chaos - Darkoath Savagers - Leaders &amp; Abilities" targetId="f760-2739-c7ed-01a1" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="a436-04d0-98c8-6210" name="Agents of Chaos" targetId="edd2-67e1-a0c3-1672" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
