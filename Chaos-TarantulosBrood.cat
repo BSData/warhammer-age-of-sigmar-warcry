@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0cde-6da9-c95a-88c5" name="Chaos - Tarantulos Brood" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0cde-6da9-c95a-88c5" name="Chaos - Tarantulos Brood" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="9f40-117e-df53-37cc" name="Broodmaster" hidden="false" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
       <categoryLinks>
@@ -43,6 +43,10 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b7f7-95fb-a474-f3e6" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="d88c-137d-00d1-4177">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5acb-8d5d-69af-737a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9cd-a618-48f1-abe6" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="d88c-137d-00d1-4177" name="with Trident and Net" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -144,7 +148,11 @@
         <categoryLink id="5295-9f95-f855-6c15" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9a3f-2540-67cc-d06f" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="9a3f-2540-67cc-d06f" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1ce-6967-f941-6417">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8229-6509-633c-baf9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b24-b0cd-3f5f-ac54" type="max"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="e1ce-6967-f941-6417" name="with Sai" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>

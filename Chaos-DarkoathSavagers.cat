@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="65dd-895f-c4c7-630b" name="Chaos - Darkoath Savagers" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="65dd-895f-c4c7-630b" name="Chaos - Darkoath Savagers" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="48c6-4ae6-90b3-09ce" name="Slaughterborn" hidden="false" collective="false" import="true" targetId="3644-47ec-f98c-ebce" type="selectionEntry">
       <categoryLinks>
@@ -53,7 +53,11 @@
         <categoryLink id="dfd2-db10-167d-8d80" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="dcd1-d797-cb9d-2580" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="dcd1-d797-cb9d-2580" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="ffd0-6865-82bf-34da">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2750-f057-dc01-8c37" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="134c-4aaf-d31c-af33" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="ffd0-6865-82bf-34da" name="with Greatspear" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -276,6 +280,10 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="957f-7e81-f09b-a5e8" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="3fdd-4018-5a44-718c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b530-e2af-8f2c-41dd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c09b-0f67-5eb4-053a" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="3fdd-4018-5a44-718c" name="with Spear and Axe" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>

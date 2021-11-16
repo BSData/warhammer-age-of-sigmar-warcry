@@ -5131,6 +5131,246 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="f5ae-def3-d31c-ba7c" name="Webs within Webs" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7998-34df-f4d4-d7ce" name="Webs within Webs" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="48ca-5e94-a269-8290" name="Perfection Beckons" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c0eb-5d7f-04a0-d732" name="Perfection Beckons" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5706-43f6-6b8d-8d14" name="Summoned from the Dark" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="483b-7c8e-c359-336f" name="Summoned from the Dark" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, this fighter can use the &quot;Creeping Summons&quot; ability without needing or using any ability dice and without needing the Leader runemark.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b6fa-21e8-b001-0157" name="One with the Brood" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6da2-7aa7-8deb-1771" name="One with the Brood" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, this fighter can use the &quot;Scuttling Symbiosis&quot; ability without needing or using any ability dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="296d-7e1f-7dab-e484" name="Results over Honour" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a9cb-cae1-9347-3a19" name="Results over Honour" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less and that target an enemy fighter with 1 or more damage points allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8ded-9a21-0c85-b008" name="No Oath Unfulfilled" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3756-36e0-ab32-db9e" name="No Oath Unfulfilled" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">When this fighter is picked to activate, you can remove D3 damage points allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c29f-2777-8f1f-ecc0" name="Enemy Mine" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a1a6-308d-0d5d-bffe" name="Enemy Mine" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, at the start of the battle round, if this fighter is on the battlefield,  they can choose 1 enemy fighter to be their mark.  Until the end of the battle, add 2 to the Attacks characteristic of attack actions made by this fighter that target that enemy fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5230-5b1b-65e3-db52" name="Hellish Blessings" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0c31-40df-03b3-0b8a" name="Hellish Blessings" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, during their activation, this fighter can make a bonus attack action, bonus move action or bonus disengage action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="713d-b536-4d24-1559" name="Head-taker" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="45c3-e07d-5f18-bdd0" name="Head-taker" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Each time this fighter makes an attack action  that has a Range characteristic of 3 or less, you can change the Attacks characteristic of that attack action to 1.  If you do so, count a hit scored from that attack action as a critical hit instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f2b3-9b7e-4e44-1e55" name="Whispers of the Shamans" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="053d-2424-6a06-0676" name="Whispers of the Shamans" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, if this fighter is on the battlefield, after rolling your initiative dice, you can choose to re-roll all of them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="88d7-95d9-3491-0e82" name="No Challenge Too Great" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ffd7-2c1f-50b4-d6ca" name="No Challenge Too Great" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you begin the battle iwth 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="df10-961c-069d-dd04" name="Lethal Pounce" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e2d9-3333-7ac7-e213" name="Lethal Pounce" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, the first time this figther finishes a move action within 1&quot; of an enemy fighter, they can immediately make a bonus attack action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="7c26-37c0-fade-b1b7" name="Artifacts of Power" hidden="true" collective="false" import="true">
@@ -7818,6 +8058,246 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="ce18-60d9-bd62-2493" name="The Unravellers" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0421-e359-bcfc-7a8b" name="The Unravellers" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, pick a visible enemy fighter within 6&quot; of the bearer and roll a dice.  On a 1-3, nothing happens.  On a 4-5, allocate 5 damage points to that fighter.  On a 6, allocate 10 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c609-5d6f-411b-a5bf" name="Strangling Snarewebs" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1197-4982-1980-7c95" name="Strangling Snarewebs" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Do not count the vertical distance moved when the bearer is climbing.  In addition, once per battle, at the end of the bearer&apos;s activation, pick a visible enemy fighter within 1&quot; of the bearer.  Allocate D6 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fe5b-5cb7-25b8-b4d2" name="Cuirass Segmentum" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="cac5-7292-2e4d-085b" name="Cuirass Segmentum" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Toughness characteristic of the bearer.  In addition, each time the bearer is targeted by an attack action that has a Range characteristic of 3 or less, roll a dice.  On a 6, count each hit scored from that attack action as a miss instead (critical hits are not affected).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3d63-452a-f4f4-4d0e" name="Night Ursa Claws" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c20b-d474-74ff-668b" name="Night Ursa Claws" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the damage points allocated by each critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="284d-0b28-4271-eb23" name="Blade of the Ashen Pact" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="af68-2189-1ea6-33ba" name="Blade of the Ashen Pact" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time an enemy fighter is taken down by an attack action made by the bearer, you gain a number of wild dice equal to the number of critical hits scored from that attack action.  If no critical hits were scored, allocate D3 damage points to the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="813d-7f15-a586-a3d1" name="Chastener Drum" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6c78-c986-99e7-031e" name="Chastener Drum" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8409-5a14-0b95-37d2" name="Oathstone of the Red Reaver" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d9c6-3faa-d19b-f75e" name="Oathstone of the Red Reaver" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the start of each hero phase, if any enemy fighters were taken down in the previous battle round by an attack action made by the bearer, you gain 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4980-1e46-9fc3-b679" name="Oathstone of the Apex Hunter" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d384-cede-1bce-4f8b" name="Oathstone of the Apex Hunter" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer has made a move action this activation, add 2 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5794-6092-8d23-43ae" name="Oathstone of the Conquering Lord" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3e1a-996b-1d48-dd7e" name="Oathstone of the Conquering Lord" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Move characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4ad6-fb66-b0ac-c133" name="Eighteyes Helm" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1d29-9f43-7a29-fa28" name="Eighteyes Helm" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the damage points allocated by each critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d414-7b00-e87c-6e57" name="The Scuttling Cube" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="99e3-4b1e-0837-d3a9" name="The Scuttling Cube" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, at the end of the bearer&apos;s activation, you can pick a visible enemy fighter within 1&quot; of the bearer.  Allocate D6 damage points to that fighter.  In addition, on a 6, that fighter cannot activate this battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1b14-cd13-0e4c-0c8c" name="Venombite Spear" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d7d6-13db-5bd4-e02b" name="Venombite Spear" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If an attack action made by the bearer that has a Range characteristic of 3 or less scores any critical hits, the target of that attack action is poisoned until the end of the battle.  At the end of each of that fighter&apos;s activations, allocate D6 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="1746-5830-9cc1-d836" name="Lesser Artifacts" hidden="true" collective="false" import="true">
@@ -9399,6 +9879,86 @@ TRIAL OF CHAMPIONS</characteristic>
                 <profile id="6f11-1e3f-eeb0-9b06" name="Jaw of Mork" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
                   <characteristics>
                     <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, until the end of the battle round, add 1 to the Toughness characteristic of all friendly fighters.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d6a4-3500-8d28-520e" name="The Head of Orax" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9d5c-6ecc-1eb0-b5ee" name="The Head of Orax" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the start of each hero phase, if the bearer is on the battlefield, roll a dice.  On a 2+, you can re-roll a number of your initiative dice for that phase equal to the value of the roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="76f0-37a0-40f8-54f7" name="Experimental Philtres" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d091-af5d-6b37-b33c" name="Experimental Philtres" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Until the end of the battle, each time an enemy fighter is taken down by an attack action made by the bearer that has a Range characteristic of 3 or less, add 2 to the damage points allocated by each hit and critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="efdf-022a-111f-1d59" name="Blades of the Wicked Web" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c7b-324b-48bb-047d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="af7d-d533-ffd8-7777" name="Blades of the Wicked Web" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If an attack action made by the bearer that has a Range characteristic of 3 or less scores any critical hits, the target of that attack action is poisoned until the end of the battle.  At the end of each of that fighter&apos;s activations, allocate D6 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="639a-d58e-538d-c9b2" name="Stone of the Pact Fulfilled" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d7f-b2f3-5b3e-1c4a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="115b-bb24-10ee-b564" name="Stone of the Pact Fulfilled" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks and Strength characteristics of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17366,6 +17926,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9101-1c31-20b1-42a4" name="Headsman&apos;s Hound" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17382,6 +17946,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7657-5175-9052-0d9b" name="Tocsin of the Damned" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17398,6 +17966,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="71ec-8042-3342-8086" name="Underverse Casket" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17414,6 +17986,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f1ba-dd4d-3e63-23f8" name="Cloak of Aetherwing Feathers" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17430,6 +18006,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a3c1-2378-01b8-cc0c" name="Zaitreci Resonator" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17446,6 +18026,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d699-0e25-9dae-fd75" name="The Sinistral Pipes" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17462,6 +18046,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9009-57b8-5c93-3b8a" name="Mantle of the Grunta" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17478,6 +18066,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="388f-98be-0044-73ae" name="Da Shriekin&apos; Pipes" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17494,6 +18086,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3931-bd03-4985-52eb" name="Gorlog&apos;s Grappler" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17510,6 +18106,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c3cf-611c-1367-72cd" name="Shadeglass Sceptre" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17526,6 +18126,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="60a2-c2ae-0d3e-c411" name="Harrowflail" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17542,6 +18146,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -17600,6 +18208,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3a5a-a2ea-0edf-3bcf" name="Dark Inspiration" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17616,6 +18228,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7e14-e563-afbf-ec6d" name="Manifold Blessings" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17632,6 +18248,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0cfa-5326-a0c7-e9c4" name="Divine Ordination" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17648,6 +18268,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e44b-6b8e-3d0c-0fb0" name="Duelling Master" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17664,6 +18288,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6852-44e1-700d-8789" name="Vengeance Above All" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17680,6 +18308,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5805-af71-a9cb-dc7a" name="&quot;Meant to do that&quot;" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17696,6 +18328,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9682-063e-3efa-481d" name="Unstoppably Oblivious" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17712,6 +18348,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0436-6510-f7ce-016c" name="Primordial Rage" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17728,6 +18368,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0314-0b25-4ffc-6869" name="Life&apos;s Hateful Warmth" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17744,6 +18388,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a678-81e8-4273-e220" name="Soul Grasp" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17760,6 +18408,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="eeac-8ea4-8955-9953" name="Nexus of Fell Power" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17776,6 +18428,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -17838,6 +18494,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ffdc-c964-5a90-0626" name="Staff of the Hellish Gate" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17854,6 +18514,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="212d-5622-52f3-4b6a" name="Thing-Breaker" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17870,6 +18534,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ad93-0e2e-390d-27f8" name="Nullstones Tchotchkes" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17886,6 +18554,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2e9d-09bf-a1f4-cf7d" name="Warpstone Weepblade" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17902,6 +18574,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3938-b865-4eb6-a035" name="The Bloodboil Crucible" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17918,6 +18594,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="625c-934c-ba6c-680a" name="Dagger of the Dark Dominions" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17934,6 +18614,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8406-a285-dbe2-6fe0" name="Saintly Artifice" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17950,6 +18634,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ab72-89cb-4b02-322a" name="The Sunderer" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17966,6 +18654,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="bfed-5ff7-519e-6994" name="Kris of Aetheric Unmaking" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17982,6 +18674,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1cb8-970b-a118-1c04" name="Blade of the Iron Castellan" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -17998,6 +18694,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1c9f-07df-74db-027a" name="Aridian Blastbombs" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18014,6 +18714,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="26f9-9e5e-873d-a515" name="Da Boss&apos;s Gubbinz" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18030,6 +18734,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3a9a-8af6-7858-095b" name="Da Stikka" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18046,6 +18754,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="87a8-3b9d-d020-5743" name="Ardboss&apos;s Blocker" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18062,6 +18774,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a33a-ee06-26ef-a151" name="Donsian Breaker-charm" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18078,6 +18794,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="03d2-5ba0-e77d-73d7" name="Soopa Stunty-shoota" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18094,6 +18814,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f9c7-8de0-6da6-9216" name="Crown of the Primordial King" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18110,6 +18834,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6251-07c9-e9cf-3b05" name="Bloodrock Cleaver" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18126,6 +18854,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="cd5c-febf-9ad0-0b69" name="Warpstone Blade" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18142,6 +18874,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="dcc5-2d15-2b05-dc60" name="The Ever-seething Crown" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18158,6 +18894,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4376-ad1a-2d8e-581d" name="Corpsecaller&apos;s Brew" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18174,6 +18914,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="dadc-bda9-6b94-874f" name="Charms of Voidsilence" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18190,6 +18934,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5bba-ce11-2d37-5940" name="The Octaraka" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -18206,6 +18954,10 @@ from all enemy fighters.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
