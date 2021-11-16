@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ca25-8654-18e2-80ee" name="Death - Nighthaunt - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ca25-8654-18e2-80ee" name="Death - Nighthaunt - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ab08-a82f-93d2-74fa" name="Cairn Wraith" hidden="false" collective="false" import="true" targetId="4d24-d18d-2997-fe37" type="selectionEntry">
       <modifiers>
@@ -366,6 +366,17 @@
       </modifiers>
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Remove a number of damage points to all visible friendly fighters within 6&quot; of this fighter equal to the value of this ability.
 ⠀</description>
+    </rule>
+    <rule id="6ba2-44a4-e098-d122" name="⚅ Dungeon Abilities  ⚅" hidden="false"/>
+    <rule id="c0c3-7ec5-8762-02a4" name="⚅ ⚂ [Triple] Float Through Wall ⚅" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24cd-2c01-b535-4c89" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, they can move over dungeon walls and through sealed dungeon doors but must end any move action with their base wholly on the battlefield floor.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="38" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="39" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="8096-c20e-edc8-1a25" name="Glory" defaultCostLimit="-1.0" hidden="false"/>
@@ -767,7 +767,7 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="9a52-a063-a6ab-0338" name="Narrative Options " hidden="false" collective="false" import="true" targetId="578d-e141-c905-4efe" type="selectionEntry"/>
+    <entryLink id="9a52-a063-a6ab-0338" name="Narrative Options (Required)" hidden="false" collective="false" import="true" targetId="578d-e141-c905-4efe" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="f574-01e8-a7f3-ef39" name=" ⚁ [Double] Rush" hidden="false">
@@ -786,13 +786,30 @@
       <description>Pick a friendly fighter that has not activated yet this battle round and that is within 6&quot; of this fighter. You can activate that fighter immediately after the activation of this fighter ends.
 ⠀</description>
     </rule>
-    <rule id="75a5-83b2-7b92-12d8" name=" ⚁ [Double] Onslaught" hidden="false">
-      <description>Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less until the end of their activation.
-⠀</description>
-    </rule>
     <rule id="a9e3-c5bd-646d-b0e8" name=" ---- Universal Abiltiies ----" hidden="false">
       <description>⠀
 ⠀</description>
+    </rule>
+    <rule id="9487-cb6a-8bf6-1f93" name=" ⚁ [Double] Onslaught" hidden="false">
+      <description>Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less until the end of their activation.
+⠀</description>
+    </rule>
+    <rule id="41cd-5582-d214-b260" name="⚄ Varanite Delve Universal Abilities ⚄" hidden="false"/>
+    <rule id="0419-2861-a906-c602" name="⚄  ⚁ [Double] Turn Delve Engine On ⚄" hidden="false">
+      <description>A fighter can use this ability only if they are within 1&quot; of the operating mechanism of a delve engine that is turned off.  That delve engine is now turned on.  Roll a dice.  You can pick a number of sluices equal to the roll to become hazardous.  Each sluice picked must either be connected to the delve engine or connected to another sluice that has already been picked.  Allocate 2D6 damage points to each fighter on any hazardous sluices.  In addition, allocate D6 damage points to each fighter that is not on but is within 3&quot; of any hazardous sluices, excluding the fighter using this ability.</description>
+    </rule>
+    <rule id="2720-6e07-ee02-5918" name="⚅ Catacombs Universal Abilities ⚅" hidden="false"/>
+    <rule id="b8a4-8813-32d1-e867" name="⚅  ⚁ [Double] Lurk in the Shadows ⚅" hidden="false">
+      <description>Until the end of the battle round, this fighter is not visible to enemy fighters more than 6&quot; away if this fighter is within 1&quot; of a dungeon wall.</description>
+    </rule>
+    <rule id="9f7a-5cd5-de6c-787f" name="⚅ ⚁ [Double] Breach Door ⚅" hidden="false">
+      <description>Only fighters that do not have the Nighthaunt runemark can use this ability.  A fighter can use this ability only if they are within 1&quot; of a sealed dungeon door.  Pick 1 weapon from this fighter&apos;s fighter card that has a Range characteristic of 3 or less and roll a number of dice equal to the value of this ability.  Add the number of dice that scored a 2+ to the Strength characteristic of the weapon you picked.  If the score is 6 or more, that dungeon door is opened.</description>
+    </rule>
+    <rule id="58e2-11d8-d1a0-e03f" name="⚅ ⚂ [Triple] Push into Pit ⚅" hidden="false">
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and within 1/2&quot; of a pit.  Both players roll a dice and add the roll to their fighter&apos;s Toughness characteristic.  If your score is higher than your opponent&apos;s, the enemy fighter is taken down.</description>
+    </rule>
+    <rule id="8090-d607-b088-c546" name="⚄ ⚂ [Triple]Turn Delve Engine Off ⚄" hidden="false">
+      <description>A fighter can use this ability only if they are within 1&quot; of the operating mechanism of a delve engine that is turned on.  That delve engine is now turned off.  You can pick up to 6 hazardous sluices to no longer be hazardous.  Each sluice picked must either be connected to the delve engine or connected to another sluice that has already been picked.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -2376,6 +2393,26 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="4d7f-b2f3-5b3e-1c4a" name="Darkoath Savagers" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ec5-63bd-39d8-4402" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1867-64ab-299b-bbce" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2c7b-324b-48bb-047d" name="Tarantulos Brood" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37e7-1321-825a-863d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7e-a96a-055c-3b56" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -2479,6 +2516,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d34-1f35-7b48-7c8c" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ec7-2257-6894-15bd" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363b-4e0b-59db-0f18" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09a9-7a5c-3ffa-5bc3" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5123,6 +5161,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba2-a69c-ce76-bc4c" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae4-cf34-48c9-f64b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e76-4ef1-f16f-f8bc" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dcb-648d-e99f-83d7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29c0-fe51-1bd2-30f7" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -8288,6 +8328,15 @@ TRIAL OF CHAMPIONS</characteristic>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="7e26-f463-4883-7bd5" name="Branching Quest Rewards" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="041d-2308-f182-1da2" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="5ae6-5e00-5bc7-2649" name="Escalation Lesser Artefacts" hidden="true" collective="false" import="true">
@@ -8419,9 +8468,10 @@ TRIAL OF CHAMPIONS</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d075-a0fa-c8a4-d24f" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d34-1f35-7b48-7c8c" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09a9-7a5c-3ffa-5bc3" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-185c-ffc7-02c5" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363b-4e0b-59db-0f18" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d34-1f35-7b48-7c8c" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -8656,10 +8706,12 @@ TRIAL OF CHAMPIONS</characteristic>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae4-cf34-48c9-f64b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e76-4ef1-f16f-f8bc" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a1d-273c-0f87-8232" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29c0-fe51-1bd2-30f7" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e19c-43e8-5dda-48af" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0488-2706-e225-e6e9" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b931-cae3-13df-fab4" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dcb-648d-e99f-83d7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -9381,10 +9433,12 @@ TRIAL OF CHAMPIONS</characteristic>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae4-cf34-48c9-f64b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e76-4ef1-f16f-f8bc" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a1d-273c-0f87-8232" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dcb-648d-e99f-83d7" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba2-a69c-ce76-bc4c" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0488-2706-e225-e6e9" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b931-cae3-13df-fab4" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29c0-fe51-1bd2-30f7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -9553,6 +9607,7 @@ TRIAL OF CHAMPIONS</characteristic>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d34-1f35-7b48-7c8c" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ec7-2257-6894-15bd" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-185c-ffc7-02c5" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09a9-7a5c-3ffa-5bc3" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -9718,9 +9773,10 @@ TRIAL OF CHAMPIONS</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-185c-ffc7-02c5" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d34-1f35-7b48-7c8c" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09a9-7a5c-3ffa-5bc3" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ec7-2257-6894-15bd" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363b-4e0b-59db-0f18" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d34-1f35-7b48-7c8c" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10366,8 +10422,10 @@ TRIAL OF CHAMPIONS</characteristic>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a1d-273c-0f87-8232" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba2-a69c-ce76-bc4c" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0488-2706-e225-e6e9" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29c0-fe51-1bd2-30f7" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b931-cae3-13df-fab4" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0488-2706-e225-e6e9" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dcb-648d-e99f-83d7" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10454,10 +10512,11 @@ TRIAL OF CHAMPIONS</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d075-a0fa-c8a4-d24f" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09a9-7a5c-3ffa-5bc3" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-185c-ffc7-02c5" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ec7-2257-6894-15bd" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363b-4e0b-59db-0f18" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d075-a0fa-c8a4-d24f" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -12989,6 +13048,8 @@ TRIAL OF CHAMPIONS</characteristic>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba2-a69c-ce76-bc4c" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae4-cf34-48c9-f64b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b931-cae3-13df-fab4" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29c0-fe51-1bd2-30f7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dcb-648d-e99f-83d7" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -14870,10 +14931,12 @@ TRIAL OF CHAMPIONS</characteristic>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae4-cf34-48c9-f64b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e76-4ef1-f16f-f8bc" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a1d-273c-0f87-8232" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dcb-648d-e99f-83d7" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e19c-43e8-5dda-48af" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0488-2706-e225-e6e9" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba2-a69c-ce76-bc4c" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29c0-fe51-1bd2-30f7" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -17241,6 +17304,908 @@ from all enemy fighters.</characteristic>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="29c0-fe51-1bd2-30f7" name="Branching Quest Artefacts" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="823b-d7c5-68df-06db" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e26-f463-4883-7bd5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e19c-43e8-5dda-48af" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0488-2706-e225-e6e9" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a1d-273c-0f87-8232" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba2-a69c-ce76-bc4c" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae4-cf34-48c9-f64b" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b931-cae3-13df-fab4" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e76-4ef1-f16f-f8bc" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dcb-648d-e99f-83d7" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e98-4a9a-7b44-5798" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="a1bf-fc1a-b19b-216f" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="be9b-b84f-8635-f1bc" name="Ecstatic Blade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="487d-e92f-0a49-20eb" name="Ecstatic Blade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Each time an attack action made by the bearer that has a Range characteristic of 3 or less scores any critical hits, subtract 1 from the Toughness characteristic of the target fighter (to a minimum of 1) for the rest of the battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="9101-1c31-20b1-42a4" name="Headsman&apos;s Hound" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1254-3716-f1f7-fecc" name="Headsman&apos;s Hound" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="7657-5175-9052-0d9b" name="Tocsin of the Damned" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e28f-76ab-f80e-08b9" name="Tocsin of the Damned" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">For each critical hit scored from an attack action that targets the bearer, after that attack action has been resolved, allocate 1 damage points to the fighter that made that attack action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="71ec-8042-3342-8086" name="Underverse Casket" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4285-db0b-0ee5-050d" name="Underverse Casket" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, allocate D6 damage points to each visible enemy fighter within 3&quot; of the bearer (roll for each fighter).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="f1ba-dd4d-3e63-23f8" name="Cloak of Aetherwing Feathers" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="dee5-cde3-52e8-a00a" name="Cloak of Aetherwing Feathers" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">The first time the bearer jumps during each of their activations, do not count the first 3&quot; of horizontal distance moved toward the number of inches the bearer can move in total.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="a3c1-2378-01b8-cc0c" name="Zaitreci Resonator" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1678-8c28-a096-02ff" name="Zaitreci Resonator" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the value of abilities used by the bearer (to a maximum of 6).  In addition, once per battle, at the end of the bearer&apos;s activation, you can pick a visible enemy fighter within 1&quot; of the bearer.  Allocate D6 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="d699-0e25-9dae-fd75" name="The Sinistral Pipes" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="2669-de2b-0f9d-07c9" name="The Sinistral Pipes" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, at the end of their activation, the bearer can use this artefact as a bonus action.  If they do so, until the end of the battle round, subtract 1 from the Attacks characteristic of attack actions made by enemy fighters while they are within 6&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="9009-57b8-5c93-3b8a" name="Mantle of the Grunta" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="753b-ded4-21a9-d88b" name="Mantle of the Grunta" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Strength characteristic of attack actions made by the bearer that have a Range characteristic of 3 or less.  In addition, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target the bearer made by enemy fighters within 3&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="388f-98be-0044-73ae" name="Da Shriekin&apos; Pipes" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ddd2-8db2-37e6-435c" name="Da Shriekin&apos; Pipes" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, at the end of their activation, the bearer can use this artefact as a bonus action.  If they do so, until the end of the battle round, subtract 1 from the Attacks characteristic of attack actions made by fighters while they are within 9&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="3931-bd03-4985-52eb" name="Gorlog&apos;s Grappler" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="224f-c31e-6582-6d90" name="Gorlog&apos;s Grappler" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">The bearer can use this artefact as an action.  If they do so, pick a visible enemy fighter within 9&quot; of the bearer and roll a dice.  On a 2+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="c3cf-611c-1367-72cd" name="Shadeglass Sceptre" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="33c0-5d48-7491-d1ee" name="Shadeglass Sceptre" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as a bonus action.  If the ydo so, until the end of the battle round, count each critical hit scored from attack actions that target the bearer as a hit instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="60a2-c2ae-0d3e-c411" name="Harrowflail" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b792-5d95-b74a-4017" name="Harrowflail" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">After each attack action made by the bearer that has a Range characteristic of 3 or less, roll a dice for each critical hit scored.  On a 5+, the target fighter cannot activate this battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="09a9-7a5c-3ffa-5bc3" name="Branching Quest Command Traits" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e878-a8de-5e4e-8d4b" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e26-f463-4883-7bd5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d075-a0fa-c8a4-d24f" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-185c-ffc7-02c5" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ec7-2257-6894-15bd" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363b-4e0b-59db-0f18" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d34-1f35-7b48-7c8c" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff63-9a88-fbcd-7550" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="8448-7fbe-835c-d7ee" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="eb0d-a9f4-5201-2b06" name="Resolute Will" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0d65-ad5a-64f2-d38f" name="Resolute Will" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Toughness characteristic of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="3a5a-a2ea-0edf-3bcf" name="Dark Inspiration" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="8125-9f97-ab41-5564" name="Dark Inspiration" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">If this fighter is included in your warband, you begin the battle with 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="7e14-e563-afbf-ec6d" name="Manifold Blessings" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6a06-9972-8079-d2b5" name="Manifold Blessings" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the value of abilities used by friendly fighters (to a maximum of 6) while they are within 6&quot; of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="0cfa-5326-a0c7-e9c4" name="Divine Ordination" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="29f6-aea3-d975-8a88" name="Divine Ordination" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Move characteristic of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="e44b-6b8e-3d0c-0fb0" name="Duelling Master" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="f524-b610-3452-39d3" name="Duelling Master" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less while there is only 1 enemy fighter within 3&quot; of this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="6852-44e1-700d-8789" name="Vengeance Above All" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0dc9-e69f-bf32-ddd0" name="Vengeance Above All" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, if this fighter has 10 or more damage points allocated to them, this fighter can use the &quot;Rampage&quot; ability without needing or using any ability dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="5805-af71-a9cb-dc7a" name="&quot;Meant to do that&quot;" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d603-1a34-b06b-5dcc" name="&quot;Meant to do that&quot;" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Each time this fighter suffers impact damage and no damage points are allocated to them from the roll, at the start of the next battle round, if this fighter is on the battlefield, you gain 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="9682-063e-3efa-481d" name="Unstoppably Oblivious" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="081d-f493-de55-cc11" name="Unstoppably Oblivious" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">This fighter is not affected by rules on twist cards with the Environment runemark that affect fighters.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="0436-6510-f7ce-016c" name="Primordial Rage" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7046-735a-311b-c718" name="Primordial Rage" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 2 to the damage poitns allocated by each critical hit from attack actions made by this fighter that have a Range characteristic of 3 or less and that target  an enemy fighter with a Toughness characteristic of 4 or more.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="0314-0b25-4ffc-6869" name="Life&apos;s Hateful Warmth" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="50c8-0b6e-87c7-cda4" name="Life&apos;s Hateful Warmth" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Add 1 to the Attacks characteristic of attack actions made by the fighter that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="a678-81e8-4273-e220" name="Soul Grasp" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7768-d6f0-74d7-a050" name="Soul Grasp" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Once per battle, at the end of this fighter&apos;s activation, you can pick a visible enemy fighter within 1&quot; of this fighter.  Allocate D6 damage points to that fighter.  In addition, on a 6, that fighter cannot activate this battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="eeac-8ea4-8955-9953" name="Nexus of Fell Power" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="8bf8-0e9c-1496-8472" name="Nexus of Fell Power" hidden="false" typeId="5941-9204-88a3-ba42" typeName="Command Trait">
+                  <characteristics>
+                    <characteristic name="Description" typeId="cf97-0e3a-47ce-f603">Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions that target this fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2dcb-648d-e99f-83d7" name="Spoils of Victory (Branching Quests: Artefacts)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="823b-d7c5-68df-06db" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8cb1-a398-4f17-c766" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae4-cf34-48c9-f64b" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e76-4ef1-f16f-f8bc" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a1d-273c-0f87-8232" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c26-37c0-fade-b1b7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e19c-43e8-5dda-48af" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0488-2706-e225-e6e9" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba2-a69c-ce76-bc4c" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29c0-fe51-1bd2-30f7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b931-cae3-13df-fab4" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c99-8658-6bc3-7552" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="61e8-5767-44cb-fdb7" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="458a-c519-25f8-892c" name="Garvoxx&apos;s Amulet" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="20ae-87ef-2732-c04c" name="Garvoxx&apos;s Amulet" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the start of each hero phase, if the bearer is included in your warband and on the battlefield, roll a dice.  If the roll is greater than the number of the current battle round, you gain 1 additional wild dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="ffdc-c964-5a90-0626" name="Staff of the Hellish Gate" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c010-a697-9d10-0516" name="Staff of the Hellish Gate" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, remove the bearer from the battlefield and then immediately set them up anywhere on the battlefield more than 5&quot; from all enemy fighters.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="212d-5622-52f3-4b6a" name="Thing-Breaker" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d4ab-5c21-4ee9-2020" name="Thing-Breaker" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks and Strength characteristics of attack actions made by the bearer that have a Range characteristic of 3 or less and that target an enemy fighter with a Wounds characteristic of 20 or more.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="ad93-0e2e-390d-27f8" name="Nullstones Tchotchkes" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="42b2-baa8-4338-a87a" name="Nullstones Tchotchkes" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Count each critical hit scored from attack actions that have the Blast runemark and that target the bearer as a hit instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="2e9d-09bf-a1f4-cf7d" name="Warpstone Weepblade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c4bb-3b74-8071-400c" name="Warpstone Weepblade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If an attack action made by the bearer that has a Range characteristic of 3 or less scores any critical hits, after that attack action has been resolved, roll a dice.  On a 6, the target fighter cannot activate this battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="3938-b865-4eb6-a035" name="The Bloodboil Crucible" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e9fb-95ac-b443-1197" name="The Bloodboil Crucible" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action only if there are no enemy fighters within 1&quot; of them.  If they do so, pick a visible enemy fighter within 9&quot; of the bearer and roll a dice.  On a 2+, allocate 3D6 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="625c-934c-ba6c-680a" name="Dagger of the Dark Dominions" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a06f-8f3e-8520-4e17" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7119-39ee-0988-d111" name="Dagger of the Dark Dominions" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 3 to the damage points allocated by each critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="8406-a285-dbe2-6fe0" name="Saintly Artifice" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="78a3-b8b9-d874-09c8" name="Saintly Artifice" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the value of abilities used by the bearer (to a maximum of 6).  In addition, when the bearer is picked to activate, you can remove D3 damage points allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="ab72-89cb-4b02-322a" name="The Sunderer" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="630e-e566-1f89-c643" name="The Sunderer" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 3 to the damage points allocated by each critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less and that target an enemy fighter with a Toughness characteristic of 4 or more.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="bfed-5ff7-519e-6994" name="Kris of Aetheric Unmaking" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c752-87a4-9634-b57d" name="Kris of Aetheric Unmaking" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the damage points allocated by each critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less.  If the target fighter has a Wounds characteristic of 15 or more, add 3 to the damage points allocated by each critical hit from those attack actions instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="1cb8-970b-a118-1c04" name="Blade of the Iron Castellan" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1415-21b7-2031-b725" name="Blade of the Iron Castellan" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks and Strength characteristics of attack actions made by the bearer that have a Range characteristic of 3 or less.  In addition, add 1 to the Toughness characteristic of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="1c9f-07df-74db-027a" name="Aridian Blastbombs" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ee6-8264-15bf-7315" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e80b-3635-5a08-b37f" name="Aridian Blastbombs" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, pick a visible enemy fighter within 6&quot; of the bearer and roll a dice for each fighter within 3&quot; of that enemy fighter.  On a 2+, allocate D6 damage points to the fighter being rolled for.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="26f9-9e5e-873d-a515" name="Da Boss&apos;s Gubbinz" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ea74-f45d-82b2-b765" name="Da Boss&apos;s Gubbinz" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while the yare within 6&quot; of the bearer and have 1 or more damage points allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="3a9a-8af6-7858-095b" name="Da Stikka" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1e3e-235a-533d-bbe4" name="Da Stikka" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Add 3 to the damage points allocated by each critical hit from attack actions made by the bearer that have a Range characteristic of 3 or less and that target an enemy fighter that has 5 or more damage points allocated to them.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="87a8-3b9d-d020-5743" name="Ardboss&apos;s Blocker" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a972-48b6-5be0-f445" name="Ardboss&apos;s Blocker" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, until the bearer&apos;s position on the battlefield changes (for example, if they move), count each critical hit scored from attack actions that target the bearer as a hit instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="a33a-ee06-26ef-a151" name="Donsian Breaker-charm" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9bf1-58ac-3927-e87d" name="Donsian Breaker-charm" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, allocate D6 damage points to each visible enemy fighter within 9&quot; of the bearer that is on the battlefield floor (roll for each fighter).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="03d2-5ba0-e77d-73d7" name="Soopa Stunty-shoota" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="111a-06fe-8813-000b" name="Soopa Stunty-shoota" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, pick a visible enemy fighter within 12&quot; of the bearer and roll a dice.  On a 2+, allocate 2D6 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="f9c7-8de0-6da6-9216" name="Crown of the Primordial King" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b853-95ab-46a1-55ab" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3937-cc88-6113-e703" name="Crown of the Primordial King" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Until the end of the battle, each time an enemy fighter is taken down by an attack action made by the bearer that has a Range characteristic of 3 or less, add 1 to the damage points allocated by each hit and critical hit from attack actions made by  the bearer that have a Range characteristic of 3 or less.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="6251-07c9-e9cf-3b05" name="Bloodrock Cleaver" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3c85-291c-1b03-1a19" name="Bloodrock Cleaver" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Before the bearer makes an attack action that has a Range characteristic of 3 or less, you can change the Attacks characteristic of that attack action t o1.  If you do so, count a hit scored fro mthat attack action as a critical hit instead and add 3 to the damage points allocated by that critical hit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="cd5c-febf-9ad0-0b69" name="Warpstone Blade" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0e99-a2ed-8256-ad52" name="Warpstone Blade" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, after the bearer finishes a move action, you can pick a visible enemy fighter within 1&quot; of the bearer.  Allocate 2D6 damage points to that fighter.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="dcc5-2d15-2b05-dc60" name="The Ever-seething Crown" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6c91-b40a-9a0a-1c31" name="The Ever-seething Crown" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer cna use the &quot;Rampage&quot; ability without needing or using any ability dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="4376-ad1a-2d8e-581d" name="Corpsecaller&apos;s Brew" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="269a-75cb-1ba4-314e" name="Corpsecaller&apos;s Brew" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Once per battle, the bearer can use this artefact as an action.  If they do so, until the bearer&apos;s position on the battlefield changes (for example, if they move), count each critical hit scored from attack actions that target the bearer as a hit instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="dadc-bda9-6b94-874f" name="Charms of Voidsilence" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5ddd-3a32-7496-4491" name="Charms of Voidsilence" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If a fighter uses an ability that requires an enemy fighter to be picked, the bearer cannot be picked.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="5bba-ce11-2d37-5940" name="The Octaraka" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e81-9337-7b78-923a" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5e98-e765-4cc4-8787" name="The Octaraka" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Artefact">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">If the bearer is included in your warband, you begin the battle with 1 additional wild dice.  In addition, at the end of the bearer&apos;s activations, enemy fighters within 1&quot; of the bearer suffer impact damage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal - Leaders &amp; Abilities" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1b2d-a780-20fe-ca5f" name="Shadow Piercer" hidden="false" collective="false" import="true" targetId="354c-adb1-51d9-3f38" type="selectionEntry">
       <modifiers>
@@ -104,6 +104,27 @@
         </modifier>
       </modifiers>
       <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. Add 1 to the Strength characteristiic of that attack action if the fighter finished the move action 3&quot; or more vertically lower than their starting position.</description>
+    </rule>
+    <rule id="0bc9-b2c8-9dca-bb1f" name="⚅ Dungeon Abilities  ⚅" hidden="false"/>
+    <rule id="2397-add7-5843-69fc" name="⚅ ⚁ [Double] Wall Run  ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ee2-0090-d984-30c4" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they are within 1&quot; of a dungeon wall.  Until the end of this fighter&apos;s next move action this activation, this fighter can move over other fighters as if they could fly.  However, during that move action, this fighter must stay within 1&quot; of a dungeon wall.</description>
+    </rule>
+    <rule id="c4a9-4d78-bf21-a5af" name="⚅ ⚃ [Quad] Running Strike ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ee2-0090-d984-30c4" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>This fighter uses the &quot;Wall Run&quot; ability, then makes a bonus move action, and can then make a bonus attack action.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
