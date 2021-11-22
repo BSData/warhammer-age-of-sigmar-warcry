@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="39" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="40" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="8096-c20e-edc8-1a25" name="Glory" defaultCostLimit="-1.0" hidden="false"/>
@@ -56,16 +56,66 @@
     <categoryEntry id="5ed1-bb68-7a31-b173" name="Heroes" hidden="false"/>
     <categoryEntry id="e4b3-72a5-ca73-8c72" name="Narrative Options" hidden="false"/>
     <categoryEntry id="82fd-8251-2413-feb8" name="Bladeborn Fighters" hidden="false"/>
+    <categoryEntry id="15bb-04f5-5313-58a5" name="Open Play Options" hidden="false"/>
+    <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Bladeborn Allies" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="c181-c1de-6c1f-e780" value="250.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d010-27a4-3b09-70d3" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="c181-c1de-6c1f-e780" value="100.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dba-ff8c-a264-a495" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="c181-c1de-6c1f-e780" value="500.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c03f-195d-9d4b-68f0" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9032-694a-3205-3338" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c78-a6fb-8e90-7f9b" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Open Play Options Relationship</comment>
+          <modifiers>
+            <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc30-51a5-1bac-cdfd" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="851c-980c-8c57-7c5e" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc30-51a5-1bac-cdfd" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a28-06a6-cbd3-84f6" type="max"/>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="851c-980c-8c57-7c5e" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c181-c1de-6c1f-e780" type="max"/>
-        <constraint field="forces" scope="b12a-e361-2540-1376" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="808e-782b-7e22-7b3d" type="max"/>
       </constraints>
       <categoryLinks>
+        <categoryLink id="c5fd-11e3-587d-22ca" name="Open Play Options" hidden="false" targetId="15bb-04f5-5313-58a5" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c32a-38a0-0681-0ef8" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="5ff4-8541-ecbd-b97f" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca02-49fa-9a8e-4ebe" type="min"/>
@@ -73,12 +123,27 @@
           </constraints>
         </categoryLink>
         <categoryLink id="cc09-a311-7013-6e59" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+        <categoryLink id="bb9f-23ef-1c1d-5c51" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="8ef5-6034-f03f-b95e" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
+          <modifiers>
+            <modifier type="increment" field="5737-b82e-d9f2-7509" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b014-8825-a869-c3f2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5737-b82e-d9f2-7509" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8459-b0e5-21c1-5fca" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+          <modifiers>
+            <modifier type="increment" field="ca12-cd0c-f085-1eaf" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0bf-d5a3-41fb-9817" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <modifierGroups>
             <modifierGroup>
               <comment>bladeborn</comment>
@@ -125,6 +190,13 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c78-a6fb-8e90-7f9b" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <comment>Narrative Options Relationship</comment>
@@ -456,6 +528,7 @@
           </constraints>
         </categoryLink>
         <categoryLink id="d991-9f84-0e81-9ea1" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+        <categoryLink id="450b-ea15-dbda-0aab" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="3025-0b3b-9476-8223" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
           <modifierGroups>
             <modifierGroup>
@@ -520,33 +593,25 @@
         <categoryLink id="a1a8-adea-08e9-b3ef" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
           <modifierGroups>
             <modifierGroup>
+              <comment>allies/heroes</comment>
               <modifiers>
-                <modifier type="set" field="a290-04ae-6126-0037" value="3.0">
+                <modifier type="increment" field="a290-04ae-6126-0037" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5ed1-bb68-7a31-b173" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="a290-04ae-6126-0037" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5ed1-bb68-7a31-b173" type="equalTo"/>
+                  </conditions>
                   <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5ed1-bb68-7a31-b173" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
+                    <conditionGroup type="or"/>
                   </conditionGroups>
                 </modifier>
-                <modifier type="set" field="a290-04ae-6126-0037" value="2.0">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5ed1-bb68-7a31-b173" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" field="a290-04ae-6126-0037" value="1.0">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5ed1-bb68-7a31-b173" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                <modifier type="decrement" field="a290-04ae-6126-0037" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5ed1-bb68-7a31-b173" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </modifierGroup>
@@ -573,41 +638,6 @@
                 </modifier>
               </modifiers>
             </modifierGroup>
-            <modifierGroup>
-              <comment>bladeborn</comment>
-              <modifiers>
-                <modifier type="increment" field="a290-04ae-6126-0037" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="a290-04ae-6126-0037" value="4.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="a290-04ae-6126-0037" value="3.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="a290-04ae-6126-0037" value="5.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="a290-04ae-6126-0037" value="6.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="a290-04ae-6126-0037" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
           </modifierGroups>
           <constraints>
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a290-04ae-6126-0037" type="max"/>
@@ -622,6 +652,13 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c78-a6fb-8e90-7f9b" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bef-8541-1068-f6c1" type="max"/>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5988-6dd4-f405-8ce2" type="min"/>
@@ -636,49 +673,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+        <categoryLink id="786b-e120-4496-d5ea" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="2377-2d5d-138d-5546" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58f5-1fbc-791b-d2d3" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b379-4a42-2c4d-11ae" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
-          <modifierGroups>
-            <modifierGroup>
-              <comment>bladeborn</comment>
-              <modifiers>
-                <modifier type="increment" field="f972-5fd3-06ae-6bdc" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="f972-5fd3-06ae-6bdc" value="4.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="f972-5fd3-06ae-6bdc" value="3.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="f972-5fd3-06ae-6bdc" value="5.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="f972-5fd3-06ae-6bdc" value="6.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="f972-5fd3-06ae-6bdc" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f972-5fd3-06ae-6bdc" type="max"/>
           </constraints>
@@ -702,6 +703,13 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry id="0738-b6fd-56d7-29dc" name="Triumph &amp; Treachery [2-Players, 2 Warbands each]" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="316c-cd2a-e772-f859" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c78-a6fb-8e90-7f9b" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="316c-cd2a-e772-f859" type="max"/>
         <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b60-2449-157f-5665" type="min"/>
@@ -716,49 +724,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="d703-39d2-e96e-cd12" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+        <categoryLink id="1ad7-b655-2667-f9b2" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="9a60-0fa3-a727-0f60" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a8d-915b-27f4-3418" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="a912-2fc6-5801-7cf8" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
-          <modifierGroups>
-            <modifierGroup>
-              <comment>bladeborn</comment>
-              <modifiers>
-                <modifier type="increment" field="e56d-744b-ed43-6b52" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="e56d-744b-ed43-6b52" value="4.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="e56d-744b-ed43-6b52" value="3.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="e56d-744b-ed43-6b52" value="5.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="e56d-744b-ed43-6b52" value="6.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="e56d-744b-ed43-6b52" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82fd-8251-2413-feb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e56d-744b-ed43-6b52" type="max"/>
           </constraints>
@@ -768,6 +740,7 @@
   </forceEntries>
   <entryLinks>
     <entryLink id="9a52-a063-a6ab-0338" name="Narrative Options (Required)" hidden="false" collective="false" import="true" targetId="578d-e141-c905-4efe" type="selectionEntry"/>
+    <entryLink id="5720-d2b7-19d9-a904" name="Open Play Options" hidden="false" collective="false" import="true" targetId="cc30-51a5-1bac-cdfd" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="f574-01e8-a7f3-ef39" name=" ⚁ [Double] Rush" hidden="false">
@@ -1661,7 +1634,7 @@ You can spend 2 glory points to upgrade this territory.
                       <characteristics>
                         <characteristic name="Description" typeId="9b19-df09-3efb-e317">Once per aftermath sequence, you can spend 3 glory points to attempt to upgrade this territory. If you do so, roll a dice. On a 1-5, the attempt fails.  On a 6, the attempt succeeds and the territory is upgraded.
 
-[Upgrade] Opened: You immediately receive 1 artefact of power from the artefact of power table (pg 31). Re-roll the result if a fighter on your warband roster already bears that artefact of power. 
+[Upgrade] Opened: You immediately receive 1 artefact of power from the artefact of power table (pg 31). Re-roll the result if a fighter on your warband roster already bears that artefact of power.
 
 Once this territory has been upgraded, if it is stolen, the fighter that bears the artefact of power does not lose it and the warband that steals this territory does not receive an artefact of power.</characteristic>
                       </characteristics>
@@ -1810,7 +1783,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                         <characteristic name="Description" typeId="9b19-df09-3efb-e317">Once per aftermath sequence, you can spend 3 glory points to attempt to upgrade this territory. If you do so, pick a fighter from your warband and roll a dice. On a 1-3, the attempt fails and that fighter is immediately removed from your warband roster as if they were slain (no one knows what became of them). On a 4+, the attempt succeeds
 and the territory is upgraded.
 
-[Upgrade] Discovered: You immediately receive 1 artefact of power from the artefact of power table (pg 31). Re-roll the result if a fighter on your warband roster already bears that artefact of power. 
+[Upgrade] Discovered: You immediately receive 1 artefact of power from the artefact of power table (pg 31). Re-roll the result if a fighter on your warband roster already bears that artefact of power.
 
 Once this territory has been upgraded, if it is stolen, the fighter that bears the artefact of power does not lose it and the warband that steals this territory does not receive an artefact of power.</characteristic>
                       </characteristics>
@@ -2419,6 +2392,56 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="cc30-51a5-1bac-cdfd" name="Open Play Options" hidden="false" collective="true" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="b12a-e361-2540-1376" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c02b-0ee0-e89f-8465" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="faca-c178-d563-cc18" name="Open Play Options" hidden="false" targetId="15bb-04f5-5313-58a5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d010-27a4-3b09-70d3" name="+ 250 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c0bf-d5a3-41fb-9817" name="+1 Ally" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b014-8825-a869-c3f2" name="+1 Hero" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8dba-ff8c-a264-a495" name="+ 100 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c03f-195d-9d4b-68f0" name="+ 500 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9032-694a-3205-3338" name="+1 max Unit" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f0b6-b408-7bdf-e0d3" name="Battle Group" hidden="true" collective="false" import="true" defaultSelectionEntryId="fdf0-ef17-53f1-0993">
@@ -2460,7 +2483,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3729-a73d-4516-8451" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd0-a853-cccc-a6af" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8782,6 +8805,13 @@ TRIAL OF CHAMPIONS</characteristic>
               </costs>
             </selectionEntry>
             <selectionEntry id="823b-d7c5-68df-06db" name="Show All Artifacts" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccae-7edd-bf1d-f39e" type="max"/>
               </constraints>
@@ -8811,6 +8841,22 @@ TRIAL OF CHAMPIONS</characteristic>
             <selectionEntry id="7e26-f463-4883-7bd5" name="Branching Quest Rewards" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="041d-2308-f182-1da2" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2bd0-a853-cccc-a6af" name="Destiny Levels" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daec-e66c-1a05-1c28" type="max"/>
               </constraints>
               <costs>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -17841,7 +17887,7 @@ from all enemy fighters.</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6d44-30d3-31a1-4325" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" defaultSelectionEntryId="f17f-e7f3-d2bf-9972">
+        <selectionEntryGroup id="6d44-30d3-31a1-4325" name="- Is this model being used this battle?" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e44-cff9-4847-73c4" type="max"/>
           </constraints>

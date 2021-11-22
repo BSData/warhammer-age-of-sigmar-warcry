@@ -1,226 +1,132 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a9eb-039a-63b1-0fe5" name="Chaos - Beasts of Chaos - Leaders &amp; Abilities" revision="8" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a9eb-039a-63b1-0fe5" name="Chaos - Beasts of Chaos - Leaders &amp; Abilities" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="58ee-6a3b-6a0a-09e8" name="BoC Leaders" hidden="false"/>
+    <categoryEntry id="b473-aa68-a512-9341" name="Bladeborn Grashnak" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
-    <entryLink id="984a-eed6-46d2-d832" name="Beastlord" hidden="false" collective="false" import="true" targetId="6f12-5bdf-edcf-5738" type="selectionEntry">
+    <entryLink id="984a-eed6-46d2-d832" name="Beastlord" hidden="true" collective="false" import="true" targetId="6f12-5bdf-edcf-5738" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="438f-f8b8-c57d-3058" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bc02-e006-8516-b52d" name="Bloodkine" hidden="true" collective="false" import="true" targetId="5e94-93ab-a645-556a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0527-d3c3-f01c-ef08" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3a48-65a7-49ba-1e2d" name="Doombull" hidden="true" collective="false" import="true" targetId="8424-9c33-fd8c-15a4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6325-d34b-6061-f575" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2d3a-e9d5-8cda-82d4" name="Foe-render" hidden="true" collective="false" import="true" targetId="e3ab-72ff-7232-3b75" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="bc02-e006-8516-b52d" name="Bloodkine" hidden="false" collective="false" import="true" targetId="5e94-93ab-a645-556a" type="selectionEntry">
+    <entryLink id="2507-8079-dbde-b486" name="Gorehoof" hidden="true" collective="false" import="true" targetId="e962-9c33-8893-9d75" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="9b12-05f6-07b8-8c42" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink id="3a48-65a7-49ba-1e2d" name="Doombull" hidden="false" collective="false" import="true" targetId="8424-9c33-fd8c-15a4" type="selectionEntry">
+    <entryLink id="54c5-2c69-f519-0eb3" name="Gouge-horn" hidden="true" collective="false" import="true" targetId="96bd-ed60-3d97-8da5" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="8185-d556-46b5-db66" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink id="e23b-27dd-0475-8431" name="Dragon Ogor Shaggoth" hidden="false" collective="false" import="true" targetId="d36f-c479-285f-bbbf" type="selectionEntry">
+    <entryLink id="eba2-6e06-4b9d-ad22" name="Great Bray-Shaman" hidden="true" collective="false" import="true" targetId="2085-138c-cb00-d70d" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="3acb-0998-c796-3879" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink id="2d3a-e9d5-8cda-82d4" name="Foe-render" hidden="false" collective="false" import="true" targetId="e3ab-72ff-7232-3b75" type="selectionEntry">
+    <entryLink id="c03c-c0b9-145c-5e00" name="Ungor Halfhorn" hidden="true" collective="false" import="true" targetId="49e4-a84d-75d8-e88f" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="0d1a-279f-8c6e-605b" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink id="2507-8079-dbde-b486" name="Gorehoof" hidden="false" collective="false" import="true" targetId="e962-9c33-8893-9d75" type="selectionEntry">
+    <entryLink id="8d4f-105d-b8b5-d5ff" name="Ungor Raider Halfhorn" hidden="true" collective="false" import="true" targetId="fcf0-1c61-0044-b582" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="f3df-375b-8408-2f1f" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink id="54c5-2c69-f519-0eb3" name="Gouge-horn" hidden="false" collective="false" import="true" targetId="96bd-ed60-3d97-8da5" type="selectionEntry">
+    <entryLink id="4815-d1b3-1bfa-b3dc" name="Grashrak" hidden="true" collective="false" import="true" targetId="c89a-7a43-83ab-4dcf" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="2dca-5646-afb6-d61e" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink id="eba2-6e06-4b9d-ad22" name="Great Bray-Shaman" hidden="false" collective="false" import="true" targetId="2085-138c-cb00-d70d" type="selectionEntry">
+    <entryLink id="76ee-6801-adda-6c81" name="Dragon Ogor Shaggoth" hidden="true" collective="false" import="true" targetId="d36f-c479-285f-bbbf" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="c03c-c0b9-145c-5e00" name="Ungor Halfhorn" hidden="false" collective="false" import="true" targetId="49e4-a84d-75d8-e88f" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="8d4f-105d-b8b5-d5ff" name="Ungor Raider Halfhorn" hidden="false" collective="false" import="true" targetId="fcf0-1c61-0044-b582" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="3490-f0f1-436c-cd4d" name="Gnarl" hidden="false" collective="false" import="true" targetId="a650-7ac6-d25b-3369" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="f2ce-030d-9971-73f0">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="42eb-4c91-37cc-6ca5" name="Draknar" hidden="false" collective="false" import="true" targetId="90ed-0201-53a5-7f5d" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="f2ce-030d-9971-73f0">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="c798-ec5b-a621-fdeb" name="Korsh &quot;The Sneak&quot;" hidden="false" collective="false" import="true" targetId="25f4-0d80-2498-2356" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="f2ce-030d-9971-73f0">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="8c6e-c3b0-8f5c-9c32" name="Murghoth Half-horn" hidden="false" collective="false" import="true" targetId="899e-82dd-9279-f223" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="f2ce-030d-9971-73f0">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="dfdf-bc7f-e5fa-a108" name="Ushkor" hidden="false" collective="false" import="true" targetId="e409-2747-e50f-0d9a" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="f2ce-030d-9971-73f0">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="4815-d1b3-1bfa-b3dc" name="Grashrak" hidden="false" collective="false" import="true" targetId="c89a-7a43-83ab-4dcf" type="selectionEntry">
-      <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="733e-b677-de21-f3bb" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58ee-6a3b-6a0a-09e8" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -492,7 +398,7 @@
             <entryLink id="24eb-5c40-7814-6cb8" name=" Beasts of Chaos" hidden="false" collective="false" import="true" targetId="f20a-fe3d-4e6e-0a69" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a9ee-7a67-81d7-3195" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="a9ee-7a67-81d7-3195" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
@@ -961,18 +867,8 @@
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="90ed-0201-53a5-7f5d" name="Draknar" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="90ed-0201-53a5-7f5d" name="Draknar" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c89a-7a43-83ab-4dcf" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f20a-fe3d-4e6e-0a69" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
@@ -1018,18 +914,8 @@
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e409-2747-e50f-0d9a" name="Ushkor" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="e409-2747-e50f-0d9a" name="Ushkor" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c89a-7a43-83ab-4dcf" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f20a-fe3d-4e6e-0a69" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
@@ -1083,18 +969,8 @@
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a650-7ac6-d25b-3369" name="Gnarl" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="a650-7ac6-d25b-3369" name="Gnarl" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c89a-7a43-83ab-4dcf" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f20a-fe3d-4e6e-0a69" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
@@ -1148,18 +1024,8 @@
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="899e-82dd-9279-f223" name="Murghoth Half-horn" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="899e-82dd-9279-f223" name="Murghoth Half-horn" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c89a-7a43-83ab-4dcf" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f20a-fe3d-4e6e-0a69" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
@@ -1204,18 +1070,8 @@
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="25f4-0d80-2498-2356" name="Korsh &quot;The Sneak&quot;" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="25f4-0d80-2498-2356" name="Korsh &quot;The Sneak&quot;" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c89a-7a43-83ab-4dcf" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f20a-fe3d-4e6e-0a69" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>

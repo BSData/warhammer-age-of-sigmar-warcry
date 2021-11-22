@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="870a-4170-6d8d-e282" name="Unmade Leaders" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
-    <entryLink id="539c-4240-de44-47a2" name="Blissful One" hidden="false" collective="false" import="true" targetId="46b1-88e8-371e-e832" type="selectionEntry">
+    <entryLink id="539c-4240-de44-47a2" name="Blissful One" hidden="true" collective="false" import="true" targetId="46b1-88e8-371e-e832" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e027-a563-d05c-d0bd" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="870a-4170-6d8d-e282" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="79f6-c299-532b-2b13" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>

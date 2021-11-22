@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="b475-490a-59ff-4abe" name="Splintered Leaders" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
-    <entryLink id="2620-3d07-db7f-a9c3" name="Trueblood" hidden="false" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
+    <entryLink id="2620-3d07-db7f-a9c3" name="Trueblood" hidden="true" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51cd-70a1-af82-4c9d" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b475-490a-59ff-4abe" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="3f8a-b183-d9e2-8fe8" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>

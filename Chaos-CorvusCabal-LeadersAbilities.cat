@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="16fa-f517-7f33-f908" name="Corvus Leaders" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
-    <entryLink id="1b2d-a780-20fe-ca5f" name="Shadow Piercer" hidden="false" collective="false" import="true" targetId="354c-adb1-51d9-3f38" type="selectionEntry">
+    <entryLink id="1b2d-a780-20fe-ca5f" name="Shadow Piercer" hidden="true" collective="false" import="true" targetId="354c-adb1-51d9-3f38" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13ca-35a1-4b48-5b4c" type="instanceOf"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="16fa-f517-7f33-f908" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="94a5-91d7-5a89-6894" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>
@@ -105,7 +106,15 @@
       </modifiers>
       <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. Add 1 to the Strength characteristiic of that attack action if the fighter finished the move action 3&quot; or more vertically lower than their starting position.</description>
     </rule>
-    <rule id="0bc9-b2c8-9dca-bb1f" name="⚅ Dungeon Abilities  ⚅" hidden="false"/>
+    <rule id="0bc9-b2c8-9dca-bb1f" name="⚅ Dungeon Abilities  ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ee2-0090-d984-30c4" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="2397-add7-5843-69fc" name="⚅ ⚁ [Double] Wall Run  ⚅" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">

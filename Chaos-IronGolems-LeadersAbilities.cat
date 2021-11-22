@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3159-79eb-657a-183a" name="Chaos - Iron Golems - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3159-79eb-657a-183a" name="Chaos - Iron Golems - Leaders &amp; Abilities" revision="7" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="4913-fc55-6c2b-c796" name="Iron Golem Leaders" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
-    <entryLink id="1e44-6174-d49f-a4d6" name="Dominar" hidden="false" collective="false" import="true" targetId="7876-4740-b001-6d38" type="selectionEntry">
+    <entryLink id="1e44-6174-d49f-a4d6" name="Dominar" hidden="true" collective="false" import="true" targetId="7876-4740-b001-6d38" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6686-f99b-957f-1415" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4913-fc55-6c2b-c796" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="9223-fa8f-e2a4-1f5c" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>

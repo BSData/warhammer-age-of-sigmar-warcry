@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="680d-90e5-7442-0ee4" name="Chaos - Tarantulos Brood - Leaders &amp; Abilities" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="680d-90e5-7442-0ee4" name="Chaos - Tarantulos Brood - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="5164-33cd-375a-2859" name="Tarantulos Leaders" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
-    <entryLink id="89af-fd91-9ef6-32ea" name="Broodmaster" hidden="false" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
+    <entryLink id="89af-fd91-9ef6-32ea" name="Broodmaster" hidden="true" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0cde-6da9-c95a-88c5" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0cde-6da9-c95a-88c5" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5164-33cd-375a-2859" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="afa9-4c66-7d7d-6ba1" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts - Leaders &amp; Abilities" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="90d1-298b-309f-13b2" name="Untamed Leaders" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
-    <entryLink id="cf03-91c9-9a61-033b" name="Heart-eater" hidden="false" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
+    <entryLink id="cf03-91c9-9a61-033b" name="Heart-eater" hidden="true" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
       <modifiers>
-        <modifier type="set-primary" field="category" value="5ed1-bb68-7a31-b173">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="45ea-7617-f6a7-7fcb">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9af-d49b-af09-32b5" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90d1-298b-309f-13b2" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="80ed-1af2-9c5d-313a" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>
