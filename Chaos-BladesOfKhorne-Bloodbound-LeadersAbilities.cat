@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fa9-d844-f097-e3e8" name="Chaos - Blades of Khorne - Bloodbound - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fa9-d844-f097-e3e8" name="Chaos - Blades of Khorne - Bloodbound - Leaders &amp; Abilities" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="efa7-e293-f325-dc7f" name="Khorne Mortal Leaders" hidden="false"/>
     <categoryEntry id="9aec-09fe-ae65-b3c2" name="Bladeborn Garrek" hidden="false"/>
@@ -358,7 +358,7 @@
       </modifiers>
       <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. In addition, until the end of this fighter&apos;s activation, add half the value of this ability (rounding up) to the Strength characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
     </rule>
-    <rule id="4534-9301-2d7a-97fa" name="⚁ [Double] Always Onwards" hidden="true">
+    <rule id="4534-9301-2d7a-97fa" name="⚁ [Double] Ever Advancing" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -371,9 +371,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Add half of this ability (rounded up) to the Movement characteristic of this fighter for the next Move action during this activation. </description>
+      <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation. </description>
     </rule>
-    <rule id="8b60-d074-a8bc-b934" name="⚁ [Double] Decapacitating Blow" hidden="true">
+    <rule id="8b60-d074-a8bc-b934" name="⚁ [Double] Decapacitating Strike" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -387,9 +387,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Add half of this ability (rounded up) to the Damage points of critical hits of the next attack action with 3&quot; or less Range made by this fighter during this activation.</description>
+      <description>Add half the value of this ability (rounding up) to the number of damage points allocated by each critical hit from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
     </rule>
-    <rule id="8dc9-d268-d49a-1e83" name="⚂ [Triple] Raging Attack" hidden="true">
+    <rule id="8dc9-d268-d49a-1e83" name="⚂ [Triple] Frenzied Attack" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -403,9 +403,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Allocate damage points to all visible enemy fighters within 3&quot;of this fighter equal to half the value of this ablilty (rounded up).</description>
+      <description>Allocate a number of damage points equal to half the value of this ability (roudning up) to all visible enemy fighters within 3&quot; of this fighter.</description>
     </rule>
-    <rule id="65f0-8351-52a5-516a" name="⚃ [Quad] Khorne Does Not Khare" hidden="true">
+    <rule id="65f0-8351-52a5-516a" name="⚃ [Quad] Khorne Cares Not" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -418,7 +418,7 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>This fighter makes an additional attack action. Additionally, count how many fighters were taken down during this battle round and add that sum to the Attack characteristic of the additional attack action.</description>
+      <description>This fighter makes a bonus attack action. In addition, count the number of fighters that have been taken down during this battle round and add the total to the Attacks characteristic of that bonus attack action.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
