@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b32c-06a3-ce2e-8cd7" name="Order - Stormcast Eternal - Sacrosanct Chamber" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b32c-06a3-ce2e-8cd7" name="Order - Stormcast Eternal - Sacrosanct Chamber" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="18fb-7392-ac02-1445" name="Castigator" hidden="false" collective="false" import="true" targetId="2efb-6f00-3258-385e" type="selectionEntry"/>
     <entryLink id="d8b2-cfbc-d6b8-3710" name="Evocator" hidden="false" collective="false" import="true" targetId="7ed3-b2ac-9fdf-deb0" type="selectionEntry"/>
@@ -71,7 +71,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -98,8 +98,7 @@
             <entryLink id="c483-a554-4137-fdc8" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c930-7133-4430-58c5" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="f36b-3482-0cda-33c3" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="c930-7133-4430-58c5" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
@@ -120,7 +119,7 @@
         </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -183,8 +182,7 @@
             <entryLink id="f327-8c6f-cdda-4176" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c6a7-1c61-6378-ef93" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="de26-dcbe-81ac-828e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="c6a7-1c61-6378-ef93" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
@@ -208,6 +206,11 @@
             <condition field="selections" scope="eb46-88fb-bd7b-e21f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="452a-ec7c-972b-71da" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="8a83-c13a-dc88-bceb" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
@@ -220,13 +223,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="452a-ec7c-972b-71da" name="with Stormsmite Greatmace" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="d51e-ee52-f7cf-9bab" name="Stormsmite Greatmace" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -250,13 +246,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="d511-eb34-0dd4-8530" name="with Stormsmite Maul and Stormshield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="073d-e0de-8503-97b0" name="Sequitor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -278,13 +267,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="0d1d-8042-e9f7-f706" name="with Tempest Blade and Stormshield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="cc47-4d36-9437-44a3" name="Sequitor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -315,8 +297,7 @@
             <entryLink id="91c1-5ec0-d87c-f763" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="ab14-7d5f-5521-eb59" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="2acc-a8db-0043-78dd" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="ab14-7d5f-5521-eb59" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -333,6 +314,11 @@
         <modifier type="append" field="name" value="with Tempest Blade and Stormstave">
           <conditions>
             <condition field="selections" scope="5105-fa96-ddac-1e7a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa10-05cc-e3f5-97b2" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -356,13 +342,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="aa10-05cc-e3f5-97b2" name="with Tempest Blade and Stormstave" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="5220-38e2-a631-d31c" name="Tempest Blade" hidden="false" targetId="93b1-c5c1-3306-e11b" type="profile">
                   <modifierGroups>
@@ -384,13 +363,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="e210-2df7-d548-ddc2" name="with Grandstave" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="fef6-12e5-f38d-a099" name="Grandstave" hidden="false" targetId="46ee-5961-1ca9-961c" type="profile">
                   <modifiers>
@@ -418,8 +390,7 @@
             <entryLink id="61d0-6d59-cbb9-8626" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c8b3-1341-7f27-b164" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="d03e-2b2c-0da2-bb60" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="c8b3-1341-7f27-b164" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -430,7 +401,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -461,8 +432,7 @@
             <entryLink id="f3ff-f7b7-f1cc-199a" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="e485-e057-1445-a61b" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="e341-d2cd-b42f-f5a3" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="e485-e057-1445-a61b" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>

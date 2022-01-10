@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8bc9-81dc-18c5-632d" name="Chaos - Blades of Khorne - Bloodbound" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8bc9-81dc-18c5-632d" name="Chaos - Blades of Khorne - Bloodbound" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="9b42-867e-8c09-37c7" name="Blood Warrior" hidden="false" collective="false" import="true" targetId="4b11-f968-6472-109f" type="selectionEntry"/>
     <entryLink id="22d1-76b9-90f2-f249" name="Bloodreaver" hidden="false" collective="false" import="true" targetId="6be9-3bc9-27cf-e1af" type="selectionEntry"/>
@@ -102,7 +102,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -133,8 +133,7 @@
             <entryLink id="8c09-3944-83e0-c739" name=" Blades of  Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2a04-912f-2a66-3683" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="eef9-2ed2-d22a-5210" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="2a04-912f-2a66-3683" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
@@ -145,7 +144,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -176,8 +175,7 @@
             <entryLink id="720c-5788-0051-2da3" name=" Blades of  Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="0246-d98d-243d-2d16" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="cd85-58cb-bf9c-02aa" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="0246-d98d-243d-2d16" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
@@ -201,6 +199,11 @@
             <condition field="selections" scope="4b11-f968-6472-109f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3814-7e72-eb33-8d50" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="2bb9-b2da-478d-dfdf" name="Blood Warrior" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -222,13 +225,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="3814-7e72-eb33-8d50" name="with Goreglaive" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="368b-7050-484c-c97e" name="Goreglaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -245,13 +241,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="641b-8c6a-541a-6f16" name="with Pair of Goreaxes" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="3cdf-3403-bca5-6170" name="Pair of Goreaxes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -268,13 +257,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7af6-e0a1-8a96-95a8" name="with Goreaxe and Gorefist" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="5c18-da69-05ed-467f" name="Goreaxe and Gorefist" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -302,8 +284,7 @@
             <entryLink id="0441-22d0-8b9e-4e7d" name=" Blades of  Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="3612-747f-764a-cbef" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="07a3-5a96-4e68-2095" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="3612-747f-764a-cbef" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -324,7 +305,7 @@
         </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -388,8 +369,7 @@
             <entryLink id="dfc0-db96-49f1-d96d" name=" Blades of Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="181a-9c7c-774a-63c5" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="006f-2ce2-e9d8-ccb9" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="181a-9c7c-774a-63c5" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
@@ -400,7 +380,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -431,8 +411,7 @@
             <entryLink id="a6e2-22f9-15e5-e069" name=" Blades of  Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="9ff5-8bf4-d782-e13b" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="6bd5-cc59-1231-027d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="9ff5-8bf4-d782-e13b" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
@@ -449,6 +428,11 @@
         <modifier type="append" field="name" value="with Ensorcelled Axe">
           <conditions>
             <condition field="selections" scope="c3f3-0c22-7df3-2a5b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="060d-732d-65b1-986f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -472,13 +456,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="060d-732d-65b1-986f" name="with Ensorcelled Axe" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="4386-0730-c716-bc86" name="Ensorcelled Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -495,13 +472,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="1143-b7ba-c72e-a0fe" name="with Bloodglaive" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="b989-8339-8425-dc7d" name="Bloodglaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -527,8 +497,7 @@
             <entryLink id="3506-b7ee-b0d8-dc37" name=" Blades of  Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="0f37-c0a1-8ea9-1c2c" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="46cc-c40b-0b8a-aed0" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="0f37-c0a1-8ea9-1c2c" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -539,7 +508,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -569,8 +538,7 @@
             <entryLink id="8876-9a63-3126-60e6" name=" Blades of  Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="8740-b2c0-0471-25be" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="015f-4df1-577e-13a0" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="8740-b2c0-0471-25be" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>

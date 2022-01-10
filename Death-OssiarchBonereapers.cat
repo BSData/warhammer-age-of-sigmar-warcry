@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="497e-cceb-4805-44ec" name="Death - Ossiarch Bonereapers" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="497e-cceb-4805-44ec" name="Death - Ossiarch Bonereapers" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5f05-f377-b225-564b" name="Immortis Guard" hidden="false" collective="false" import="true" targetId="b960-23fa-1bbd-09e9" type="selectionEntry"/>
     <entryLink id="10ac-e9f6-b59a-43ec" name="Kavalos Deathriders" hidden="false" collective="false" import="true" targetId="e00e-b915-46dc-32f3" type="selectionEntry"/>
@@ -59,7 +59,7 @@
         </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -125,8 +125,7 @@
             <entryLink id="2bf9-a917-e032-8c57" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d15b-422a-22b1-3fd3" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="64f8-24fd-47b1-406b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="d15b-422a-22b1-3fd3" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
@@ -143,6 +142,11 @@
         <modifier type="append" field="name" value="with Dread Falchions">
           <conditions>
             <condition field="selections" scope="7523-1b82-1e80-27a5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a50-afcb-ab7c-4be9" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -166,13 +170,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="6a50-afcb-ab7c-4be9" name="Dread Falchions" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="a4ad-2fff-f5a9-9d41" name="Dread Falchions" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -189,13 +186,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="a6af-4e73-2320-cb7d" name="Spirit Blades" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="fa4e-9430-fa4b-03cf" name="Spirit Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -221,8 +211,7 @@
             <entryLink id="0d2b-0d17-fbdb-690a" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="f03e-4b3d-6081-2e2b" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="300f-1ace-a8dc-6155" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="f03e-4b3d-6081-2e2b" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -246,6 +235,11 @@
             <condition field="selections" scope="e010-ab59-8d81-6588" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3b52-2abc-3d5b-ca83" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="ad59-ccf1-6a3f-4a5d" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
@@ -258,13 +252,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="3b52-2abc-3d5b-ca83" name="with Nadirite Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="0fba-9ce6-0d91-5cb1" name="Nadirite Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -291,13 +278,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="ca10-353d-ecb9-ad23" name="with Nadirite Spear" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="c4a9-a8a2-8dd8-b25b" name="Nadirite Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -324,13 +304,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="288a-3358-ad0a-c257" name="with Soulcleaver Greatblade" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="9133-0068-fbe4-9431" name="Soulcleaver Greatblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -362,8 +335,7 @@
             <entryLink id="974d-867a-fc12-1133" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a481-cf16-ebc2-f1db" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="7cfb-cec2-135f-68a5" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="a481-cf16-ebc2-f1db" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -380,6 +352,11 @@
         <modifier type="append" field="name" value="with Spirit Swords">
           <conditions>
             <condition field="selections" scope="5ca0-42cf-2e35-c646" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="58b5-276b-dd36-37fb" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -403,13 +380,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="a7a2-3d59-f2d3-f920" name="with Spirit Halberd" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="d9a0-32be-6ab7-13b0" name="Spirit Halberd" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -426,13 +396,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="58b5-276b-dd36-37fb" name="with Spirit Swords" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="b160-c630-5e8d-be4e" name="Spirit Swords" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -458,8 +421,7 @@
             <entryLink id="cb28-c44e-e1c3-e61f" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c372-989d-1361-8d01" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="39c8-c260-de9f-5e40" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="c372-989d-1361-8d01" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -470,7 +432,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -501,8 +463,7 @@
             <entryLink id="1295-3555-e3f4-ad3a" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4b41-a76b-2462-dc81" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="0f61-2312-52fc-3280" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="4b41-a76b-2462-dc81" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
@@ -519,6 +480,11 @@
         <modifier type="append" field="name" value="with Spirit Halberd">
           <conditions>
             <condition field="selections" scope="697f-b9c6-0313-12d9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="acb8-4f82-9db8-2653" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -542,13 +508,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="acb8-4f82-9db8-2653" name="with Spirit Halberd" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="f3be-0a35-75f1-4be3" name="Spirit Halberd" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -565,13 +524,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="e1a5-b77a-a422-6c33" name="with Spirit Swords" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="7b9c-f8eb-0d1e-4ee3" name="Spirit Swords" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -598,8 +550,7 @@
             <entryLink id="0883-67d8-83a4-8860" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d6cf-4770-72fc-b688" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="89f7-f6ea-2fb5-bede" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="d6cf-4770-72fc-b688" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>

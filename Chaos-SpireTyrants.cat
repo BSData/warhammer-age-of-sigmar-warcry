@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1a20-692a-e9f0-9f1b" name="Chaos - Spire Tyrants" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1a20-692a-e9f0-9f1b" name="Chaos - Spire Tyrants" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1649-3ebc-db9e-16e4" name="Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
       <categoryLinks>
@@ -31,6 +31,11 @@
             <condition field="selections" scope="2d0f-25fd-694b-52a7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="991a-3c56-632d-046f" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="628c-3495-3f7e-2403" name="Pit Fighter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -52,13 +57,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="92c9-5026-12b1-c69c" name="with Net" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="4a0f-2adc-c119-3a5e" name="Fighter&apos;s Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -78,13 +76,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="991a-3c56-632d-046f" name="with Spear" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="5ebc-988b-10a8-eea1" name="Fighter&apos;s Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -104,13 +95,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="4c21-5a2b-7217-0313" name="with Punch Dagger" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="852e-5be2-475d-bcd8" name="Punch Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -138,8 +122,7 @@
             <entryLink id="5cd6-3dc7-32e4-8880" name=" Spire Tyrants" hidden="false" collective="false" import="true" targetId="8e60-89e1-0ef5-f4d8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="67ad-0d0e-2113-d20c" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="d347-035d-345a-9321" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="67ad-0d0e-2113-d20c" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -150,7 +133,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -181,8 +164,7 @@
             <entryLink id="0872-4424-708a-cad2" name=" Spire Tyrants" hidden="false" collective="false" import="true" targetId="8e60-89e1-0ef5-f4d8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="1b7d-4ff7-d180-5534" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="00f4-cfef-62c2-b807" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="1b7d-4ff7-d180-5534" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
@@ -193,7 +175,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -224,8 +206,7 @@
             <entryLink id="2b7d-322d-957d-160e" name=" Spire Tyrants" hidden="false" collective="false" import="true" targetId="8e60-89e1-0ef5-f4d8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="371d-e6f1-7c9a-f513" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="39e3-9292-3c53-96de" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="371d-e6f1-7c9a-f513" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
@@ -236,7 +217,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -267,8 +248,7 @@
             <entryLink id="6283-e6d8-c42b-3982" name=" Spire Tyrants" hidden="false" collective="false" import="true" targetId="8e60-89e1-0ef5-f4d8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="46d2-6268-eeda-30d1" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="3567-960b-a330-2e23" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="46d2-6268-eeda-30d1" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
@@ -285,6 +265,11 @@
         <modifier type="append" field="name" value="with Shield">
           <conditions>
             <condition field="selections" scope="c134-f417-900d-15d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf99-a693-c98c-6eb8" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -315,13 +300,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="cf99-a693-c98c-6eb8" name="with Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="c14d-8ecb-f271-997f" name="Veteran&apos;s Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -344,13 +322,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="0506-2f11-7582-79b1" name="with Dual Weapons" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="2cff-4a18-9733-1a9b" name="Dual Veteran&apos;s Weapons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -379,8 +350,7 @@
             <entryLink id="6e9b-a7e4-aee1-c855" name=" Spire Tyrants" hidden="false" collective="false" import="true" targetId="8e60-89e1-0ef5-f4d8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4036-3715-36ba-a94c" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="3d30-e7ac-2b71-e178" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="4036-3715-36ba-a94c" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>

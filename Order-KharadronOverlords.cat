@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ee7d-03e8-aac4-1e23" name="Order - Kharadron Overlords" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ee7d-03e8-aac4-1e23" name="Order - Kharadron Overlords" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ba18-927a-1423-05e0" name="Arkanaut Company Privateer" hidden="false" collective="false" import="true" targetId="145c-26bc-5420-6481" type="selectionEntry"/>
     <entryLink id="3d68-d608-9edf-ce64" name="Grundstok Thunderer" hidden="false" collective="false" import="true" targetId="43df-ac9f-30db-4aa4" type="selectionEntry"/>
@@ -83,6 +83,11 @@
             <condition field="selections" scope="145c-26bc-5420-6481" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b272-5c93-a6cc-ae6d" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="6848-f66b-a7d9-5fbd" name="Arkanaut Company Privateer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -104,13 +109,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="cf38-0fb2-0484-4039" name="with Privateer Pistol and Arkanaut Cutter" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="7d37-393b-fb78-db78" name="Vulcaniser Pistol" hidden="false" targetId="e1ae-283c-5cd8-95ed" type="profile"/>
                 <infoLink id="810f-4671-db18-7c4b" name="Arkanaut Cutter" hidden="false" targetId="e427-1eee-44f3-4f4a" type="profile"/>
@@ -121,13 +119,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="ab09-2e22-ccd4-b742" name="with Aethermatic Volley Gun" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="6ea3-03e1-3820-5ad5" name="Aethermatic Volley Gun" hidden="false" targetId="977d-ca7d-f672-dd96" type="profile"/>
                 <infoLink id="a921-265d-c546-3379" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
@@ -138,13 +129,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="b272-5c93-a6cc-ae6d" name="with Light Skyhook" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="7aad-ec7f-66d6-bc7d" name="Light Skyhook" hidden="false" targetId="bd51-60f5-caff-4b09" type="profile"/>
                 <infoLink id="6ea1-bbc4-ad1b-798a" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
@@ -155,13 +139,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="ecbe-1dbb-c02f-7458" name="with Skypike" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="f4ec-76d0-c012-4f69" name="Skypike" hidden="false" targetId="866d-3dc0-ae45-3ba6" type="profile"/>
               </infoLinks>
@@ -179,8 +156,7 @@
             <entryLink id="6e8a-3c3b-fa62-6ff9" name=" Kharadron Overlords" hidden="false" collective="false" import="true" targetId="5158-eb23-f030-1001" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b37c-58ca-b335-3080" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="049a-0921-395b-87eb" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="b37c-58ca-b335-3080" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -214,6 +190,11 @@
             <condition field="selections" scope="43df-ac9f-30db-4aa4" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8920-8a82-ec3a-6590" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="b6ee-a821-63cb-e37f" name="Grundstok Thunderer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -235,13 +216,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="cd41-9ba2-d31e-6438" name="with Decksweeper" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="68bf-af75-3d6d-2099" name="Decksweeper" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -261,13 +235,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="b0d6-f100-e85c-40c9" name="with Aethershot Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="5408-0d2b-17c8-87d5" name="Aethershot Rifle" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -287,13 +254,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="b5c5-5e23-b665-5926" name="with Aetheric Fumigator" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="f600-7cda-f0f7-08c0" name="Aetheric Fumigator" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -310,13 +270,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="3f41-b382-8670-5b8f" name="with Grundstok Mortar" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="e939-c621-fbce-4e17" name="Grundstok Mortar" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -336,13 +289,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="8920-8a82-ec3a-6590" name="with Aethercannon" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="125d-24a5-4447-cc4b" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
                 <infoLink id="0810-b4fd-8fbe-bfa7" name="Aethercannon" hidden="false" targetId="0eea-2dbb-ceb1-4598" type="profile"/>
@@ -362,8 +308,7 @@
             <entryLink id="c335-0294-fdd2-cb27" name=" Kharadron Overlords" hidden="false" collective="false" import="true" targetId="5158-eb23-f030-1001" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b213-fed3-ae65-63f4" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="eeb4-3ee6-11d0-146f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="b213-fed3-ae65-63f4" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -397,6 +342,11 @@
             <condition field="selections" scope="88ae-4c99-1b16-210c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4110-0d4c-7ec4-0ab4" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="9175-f0c7-64e3-fb46" name="Endrinrigger" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -418,13 +368,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="9dca-60ce-10df-e740" name="with Rapid-fire Rivet Gun and Aethermatic Saw" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="41b3-f3a4-3652-998e" name="Aethermatic Saw" hidden="false" targetId="8980-87bb-7c0b-156b" type="profile"/>
                 <infoLink id="4615-d1f3-ac27-eeb4" name="Rapid-fire Rivet Gun" hidden="false" targetId="1abd-2ed1-249b-7ccd" type="profile"/>
@@ -435,13 +378,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="4110-0d4c-7ec4-0ab4" name="with Aethermatic Volley Gun" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="4363-eff8-f887-1229" name="Aethermatic Volley Gun" hidden="false" targetId="977d-ca7d-f672-dd96" type="profile"/>
                 <infoLink id="8cfa-e70d-37e3-d4ef" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
@@ -452,13 +388,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="b648-0d68-f7bb-b116" name="with Drill Launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="7473-6a9c-4120-91b4" name="Drill Launcher" hidden="false" targetId="2402-c04c-e859-7123" type="profile"/>
                 <infoLink id="1ceb-6c70-39f5-7235" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
@@ -469,13 +398,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="ac24-2314-4302-5e1b" name="with Grapnel Launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="67a1-e9fb-cb64-c781" name="Grapnel Launcher" hidden="false" targetId="1899-e274-868b-7889" type="profile"/>
                 <infoLink id="caf7-c820-94be-6907" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
@@ -489,13 +411,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="41d1-d9a2-4f32-212c" name="with Skyhook" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="a9d1-3492-1356-480a" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
                 <infoLink id="5857-b91e-762e-e0ad" name="Skyhook" hidden="false" targetId="78f6-2a19-a443-c9eb" type="profile"/>
@@ -515,8 +430,7 @@
             <entryLink id="2605-affe-dac7-91c5" name=" Kharadron Overlords" hidden="false" collective="false" import="true" targetId="5158-eb23-f030-1001" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="1f19-59d8-7039-8cc0" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="be53-2594-ccb4-6596" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="1f19-59d8-7039-8cc0" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -550,6 +464,11 @@
             <condition field="selections" scope="13db-b8fa-116b-8f18" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="07a6-555b-d206-46e1" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="bf4f-ff80-930c-8a18" name="Skywarden" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -571,13 +490,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="07a6-555b-d206-46e1" name="with Vulcaniser Pistol and Skypike" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="080b-ede6-0cf1-9e97" name="Vulcaniser Pistol" hidden="false" targetId="e1ae-283c-5cd8-95ed" type="profile"/>
                 <infoLink id="10f2-9f5d-5f43-61df" name="Skypike" hidden="false" targetId="866d-3dc0-ae45-3ba6" type="profile"/>
@@ -588,13 +500,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="2da1-7a0d-d0d3-71b4" name="with Aethermatic Volley Gun" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="41c9-9703-02b0-f3f2" name="Aethermatic Volley Gun" hidden="false" targetId="977d-ca7d-f672-dd96" type="profile"/>
                 <infoLink id="1eba-e1f7-3cf4-f2ee" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
@@ -605,13 +510,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="b496-c9f5-2550-00ea" name="with Drill Launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="56bd-0b09-06fa-f2d2" name="Drill Launcher" hidden="false" targetId="2402-c04c-e859-7123" type="profile"/>
                 <infoLink id="5277-5b3f-b22f-02da" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
@@ -622,13 +520,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="02a8-090c-1d22-b922" name="with Grapnel Launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="aac6-d839-05be-c542" name="Grapnel Launcher" hidden="false" targetId="1899-e274-868b-7889" type="profile"/>
                 <infoLink id="e4b7-f23f-3fcb-f7e3" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
@@ -642,13 +533,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="067b-9b20-9609-3889" name="with Skyhook" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink id="21f7-bee6-1dc0-3b3b" name="Gun Butt" hidden="false" targetId="40e1-f588-abcb-eb55" type="profile"/>
                 <infoLink id="b12b-feff-2089-9d2a" name="Skyhook" hidden="false" targetId="78f6-2a19-a443-c9eb" type="profile"/>
@@ -669,8 +553,7 @@
             <entryLink id="49bb-d4b2-e352-c96d" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="21ef-f35e-87e5-a74e" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="7864-c8f4-a6f3-3f51" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="21ef-f35e-87e5-a74e" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a601-3b54-6b25-f250" name="Order - Stormcast Eternals - Thunderstrike Stormcasts - Leaders &amp; Abilities" revision="8" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a601-3b54-6b25-f250" name="Order - Stormcast Eternals - Thunderstrike Stormcasts - Leaders &amp; Abilities" revision="8" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a6a1-82a8-74d1-09f4" name="Thunderstrike Leaders" hidden="false"/>
   </categoryEntries>
@@ -316,7 +316,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -345,8 +345,7 @@
             <entryLink id="7c08-afc8-f606-0884" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d44f-60ea-0966-0447" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="9f46-aa4e-4788-673f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="d44f-60ea-0966-0447" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
@@ -365,6 +364,11 @@
             <condition field="selections" scope="c5ce-4ed5-e348-5cb7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86b9-08ac-905d-b3dc" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup id="e122-4adc-051a-9e99" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="6e2f-5f35-36ea-eaf1">
@@ -374,13 +378,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="6e2f-5f35-36ea-eaf1" name="with Meteoric Hammer" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="1f1f-7721-4e6b-6422" name="Meteoric Hammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -404,13 +401,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="86b9-08ac-905d-b3dc" name="with Grandhammer" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="3719-2658-32f1-302b" name="Annihilator-Prime" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -444,8 +434,7 @@
             <entryLink id="36bf-0795-5864-d798" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c3f9-befe-00a9-3591" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="5f91-5619-23a3-6855" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="c3f9-befe-00a9-3591" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -456,7 +445,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -493,8 +482,7 @@
             <entryLink id="0044-fd47-d1e2-ff0d" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="223c-bcf6-7592-b818" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="9c8b-259f-1078-8976" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="223c-bcf6-7592-b818" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
@@ -505,7 +493,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -534,8 +522,7 @@
             <entryLink id="caf5-54f7-35d2-2d09" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="f62a-0622-c0ba-6ab0" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="e209-2442-afb5-c285" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="f62a-0622-c0ba-6ab0" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
@@ -546,7 +533,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -575,8 +562,7 @@
             <entryLink id="7d75-b03b-ead7-b44f" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="e7b3-e02c-4a9b-58d3" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="236e-13cf-7239-f2ca" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="e7b3-e02c-4a9b-58d3" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
@@ -587,7 +573,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -624,8 +610,7 @@
             <entryLink id="9141-6403-358e-be24" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="f469-cced-9a93-f918" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="7498-1377-a900-6086" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="f469-cced-9a93-f918" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
@@ -636,7 +621,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -664,8 +649,7 @@
             <entryLink id="15a6-e64c-a33b-825d" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="5371-f556-9331-3956" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="4ea0-cc66-c023-ea80" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="5371-f556-9331-3956" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
@@ -676,7 +660,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -705,8 +689,7 @@
             <entryLink id="7ca0-d992-39a7-d91a" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a9af-929f-5e1a-97a3" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="d867-4208-dc6f-4037" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="a9af-929f-5e1a-97a3" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
@@ -717,7 +700,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -754,8 +737,7 @@
             <entryLink id="1cdc-caff-0750-abe3" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a555-d3af-8652-e332" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="2ab1-9d9d-df6d-4126" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="a555-d3af-8652-e332" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
@@ -766,7 +748,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -795,8 +777,7 @@
             <entryLink id="969f-f176-35d0-2c81" name="Thunderstrike Stormcasts" hidden="false" collective="false" import="true" targetId="bddf-6f5f-96fe-d3a0" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="e0d4-c2a0-457c-5f8d" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
-        <entryLink id="d29e-ba15-29f1-d28a" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="e0d4-c2a0-457c-5f8d" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
@@ -818,7 +799,4 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <catalogueLinks>
-    <catalogueLink id="10cf-98b3-c740-5975" name="Order - Campaign Options" targetId="b7c8-6fc1-6a83-cf0f" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

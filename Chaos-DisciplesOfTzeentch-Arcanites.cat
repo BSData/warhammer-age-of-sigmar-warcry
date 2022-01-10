@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ec1b-70c8-283c-c891" name="Chaos - Disciples of Tzeentch - Arcanites" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ec1b-70c8-283c-c891" name="Chaos - Disciples of Tzeentch - Arcanites" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="b1d8-2933-3f89-1038" name="Tzaangor" hidden="false" collective="false" import="true" targetId="0a38-4a84-8576-4701" type="selectionEntry"/>
     <entryLink id="56db-ed94-cc64-cd19" name="Kairic Acolytes" hidden="false" collective="false" import="true" targetId="3145-5c34-d671-66ad" type="selectionEntry"/>
@@ -100,6 +100,11 @@
             <condition field="selections" scope="0a38-4a84-8576-4701" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adfa-2e95-efd8-6ccf" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="0500-212a-d523-a945" name="Tzaangor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -128,13 +133,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="cf83-6d4e-b6d4-da44" name="with Savage Blade and Arcanite Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="5a66-0fbd-4b9a-8145" name="Savage Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -151,13 +149,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="adfa-2e95-efd8-6ccf" name="with Pair of Savage Blades" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="5df0-85c0-80e5-f3fb" name="Pair of Savage Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -174,13 +165,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="facf-2faf-335b-a3bb" name="with Savage Greatblade" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="490b-40a0-6c5a-c1c1" name="Savage Greatblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -197,15 +181,8 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="459b-91db-5cbc-5ef5" name="Mutant" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
-                <profile id="2983-f3d1-8c6a-8d9b" name="Mutant Teeth and Horns" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="2983-f3d1-8c6a-8d9b" name="Mutant Tetth and Horns" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
@@ -231,8 +208,7 @@
             <entryLink id="b953-a668-1e4e-70cf" name=" Disciples of Tzeentch: Arcanites" hidden="false" collective="false" import="true" targetId="8474-4371-6323-6e31" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="18c1-9448-d2d1-a7e4" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="de96-ddbd-cf26-2134" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="18c1-9448-d2d1-a7e4" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -264,6 +240,11 @@
         <modifier type="append" field="name" value="with Cursed Blade and Arcanite Shield">
           <conditions>
             <condition field="selections" scope="3145-5c34-d671-66ad" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d57-d608-4946-9a45" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -330,13 +311,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="8d57-d608-4946-9a45" name="with Cursed Blade and Arcanite Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="b3ee-7bf2-77a0-4b8d" name="Cursed Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -353,13 +327,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="e8e0-0e24-5990-2c41" name="with Cursed Glaive and Arcanite Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="4d3e-2da6-0426-d827" name="Cursed Glaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -376,13 +343,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="a81f-5edd-d27f-6c4d" name="with Scroll of the Dark Arts" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="73bb-8f93-7e54-7cc5" name="Cursed Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -399,13 +359,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="80cc-bd73-b5dc-cf73" name="with Vulcharc" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="8f3e-f7f5-6f8a-48ec" name="Cursed Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -417,7 +370,7 @@
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink id="d648-bd58-630e-9d66" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
+                <entryLink id="d648-bd58-630e-9d66" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
@@ -425,13 +378,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="2716-a598-59c6-9287" name="with Paired Cursed Blades" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="408b-42d4-5751-759d" name="Paired Cursed Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -456,8 +402,7 @@
             <entryLink id="07f9-9f4a-5118-b5ec" name=" Disciples of Tzeentch: Arcanites" hidden="false" collective="false" import="true" targetId="8474-4371-6323-6e31" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="3694-8baa-9321-3930" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="688d-256e-cc17-4e86" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="3694-8baa-9321-3930" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -474,6 +419,11 @@
         <modifier type="append" field="name" value="on Foot">
           <conditions>
             <condition field="selections" scope="a5be-8286-32d4-f8c1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd04-f33d-f157-8426" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -512,26 +462,12 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="bd04-f33d-f157-8426" name="on Foot" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8cec-6e75-c9f0-4512" name="on Disc" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <entryLinks>
                 <entryLink id="fde0-d422-1e72-263a" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
               </entryLinks>
@@ -550,8 +486,7 @@
             <entryLink id="7560-5dfc-8176-8cfc" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d7b0-b261-6546-273b" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="1cb0-5a88-199a-44a0" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="d7b0-b261-6546-273b" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -562,7 +497,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -597,8 +532,7 @@
             <entryLink id="44c0-d0cf-1009-99fd" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="409d-8fe5-1e25-ba66" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="a4a2-495e-e044-3dfb" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="409d-8fe5-1e25-ba66" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c14-883d-fcbd-7224" name="Chaos - Slaves to Darkness" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c14-883d-fcbd-7224" name="Chaos - Slaves to Darkness" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e413-6152-217c-ad8d" name="Aspiring Champion" hidden="false" collective="false" import="true" targetId="200a-8c00-6128-4959" type="selectionEntry">
       <categoryLinks>
@@ -123,6 +123,11 @@
             <condition field="selections" scope="9eb8-e4d8-ded5-9372" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="600c-1458-0307-5ae6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2c9d-f1b0-8cdd-0562" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
@@ -135,13 +140,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="737e-3595-3fd0-d8ec" name="with Javelin and Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="350c-6789-fbaf-628a" name="Marauder Javelin" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -168,13 +166,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="600c-1458-0307-5ae6" name="with Axe and Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="6cc1-807e-48bc-e009" name="Barbarian Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -198,13 +189,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="b2c0-a70b-6642-0001" name="with Marauder Flail" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="bfa8-d3ca-41f6-2fb4" name="Marauder Flail" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -237,8 +221,7 @@
             <entryLink id="b68a-31b4-8782-842f" name=" Slaves to Darkness" hidden="false" collective="false" import="true" targetId="2c41-8ff0-c35d-5283" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a800-e65e-ae01-837b" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="895c-4af5-8791-3198" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="a800-e65e-ae01-837b" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -267,6 +250,11 @@
             <condition field="selections" scope="0725-d6b0-94cf-0e2b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2c62-d16a-e63f-e712" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a89b-d193-474d-f55b" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
@@ -279,13 +267,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="2c62-d16a-e63f-e712" name="with Chaos Hand Weapon and Runeshield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="2846-c68c-6d6b-8baf" name="Chaos Warrior" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -312,13 +293,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="b136-4576-6726-7542" name="with Pair of Chaos Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="d158-780f-668d-4c43" name="Chaos Warrior" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -342,13 +316,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="452b-b3c2-3a6c-4562" name="with Chaos Greatblade" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="2a67-5d35-70b1-6e00" name="Chaos Warrior" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -372,13 +339,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="c123-cfb3-e11e-16b1" name="with Chaos Halberd and Runeshield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="c131-1892-a144-107d" name="Chaos Warrior" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -413,8 +373,7 @@
             <entryLink id="c08a-fbf8-3626-3bf6" name=" Slaves to Darkness" hidden="false" collective="false" import="true" targetId="2c41-8ff0-c35d-5283" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="3039-2da5-8660-ac43" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="d411-740c-0d16-c4c1" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="3039-2da5-8660-ac43" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -425,7 +384,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -456,8 +415,7 @@
             <entryLink id="aea2-732f-d8d4-c0b3" name=" Slaves to Darkness" hidden="false" collective="false" import="true" targetId="2c41-8ff0-c35d-5283" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="19bc-aa1c-028c-2488" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="3b44-9c40-7ca2-c2e3" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="19bc-aa1c-028c-2488" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
@@ -476,6 +434,11 @@
             <condition field="selections" scope="efb4-6ad6-7cf6-a490" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd26-665f-c218-3a25" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="09dd-26a4-d987-6b47" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
@@ -488,13 +451,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="43b5-6c27-36c9-49e2" name="with Barbarian Axe and Darkwood Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="75ba-412c-1fd3-4c4f" name="Chaos Marauder" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -521,13 +477,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="cd26-665f-c218-3a25" name="with Barbarian Flail" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="f8a4-6094-25a0-b830" name="Chaos Marauder" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -559,8 +508,7 @@
             <entryLink id="db5a-822a-febf-871c" name=" Slaves to Darkness" hidden="false" collective="false" import="true" targetId="2c41-8ff0-c35d-5283" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="96a0-b273-7ac3-c48b" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="8c64-048b-3772-2673" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="96a0-b273-7ac3-c48b" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -577,6 +525,11 @@
         <modifier type="append" field="name" value="with Ensorcelled Weapon and Chaos Runeshield">
           <conditions>
             <condition field="selections" scope="f846-5423-983c-875e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ece-d414-8ecc-213b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -600,13 +553,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="f435-3a2c-1440-29fd" name="with Cursed Lance and Chaos Runeshield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="f942-a1ea-3309-72b1" name="Cursed Lance" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -618,18 +564,11 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7ece-d414-8ecc-213b" name="with Ensorcelled Weapon and Chaos Runeshield" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="164b-b8f9-fae5-0f99" name="Ensorcelled Weapon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -641,7 +580,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -655,10 +594,10 @@
             <entryLink id="2e67-fc05-ca3a-9b8d" name=" Slaves to Darkness" hidden="false" collective="false" import="true" targetId="2c41-8ff0-c35d-5283" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="5391-9040-12b2-0893" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="5507-7ce7-879b-0d84" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="5391-9040-12b2-0893" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>

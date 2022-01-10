@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7021-2d1f-bc51-3d1a" name="Chaos - Cypher Lords" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7021-2d1f-bc51-3d1a" name="Chaos - Cypher Lords" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="0d67-9a7a-04b6-7b48" name="Luminate" hidden="false" collective="false" import="true" targetId="24cf-cb4d-9f96-8240" type="selectionEntry"/>
     <entryLink id="1fe7-eb37-be3f-5dc0" name="Mindbound" hidden="false" collective="false" import="true" targetId="c720-c47e-d160-808a" type="selectionEntry"/>
@@ -24,6 +24,11 @@
             <condition field="selections" scope="c720-c47e-d160-808a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1da1-fc3d-8916-5273" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="fd7d-5015-05b8-b392" name="Mindbound" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -45,13 +50,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="cbd4-c714-6bc3-a479" name="with Double-Bladed Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="c552-dfe7-f323-bf3d" name="Double-Bladed Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -71,13 +69,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="1da1-fc3d-8916-5273" name="with Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="4832-b5cb-3f6a-47a6" name="Mindbound Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -103,8 +94,7 @@
             <entryLink id="87d8-2a5a-32f2-0698" name=" Cypher Lords" hidden="false" collective="false" import="true" targetId="c9c9-4a59-c145-6f2c" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="0c46-5ed0-5806-9658" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="aa7c-b938-13c5-0567" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="0c46-5ed0-5806-9658" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -121,6 +111,11 @@
         <modifier type="append" field="name" value="with Duelling Swords">
           <conditions>
             <condition field="selections" scope="78ff-4163-3050-5ddd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3df4-2a1d-c416-668b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -144,13 +139,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="b3f0-ea86-83af-769f" name="with Glaive" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="ceac-60ad-8590-d2b3" name="Glaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -170,13 +158,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="3df4-2a1d-c416-668b" name="with Duelling Swords" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="eff9-d9a8-6b36-fbdc" name="Duelling Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -202,8 +183,7 @@
             <entryLink id="2d7f-9e3e-0e1e-efda" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="45b0-910d-58f8-925b" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="dc70-4c2e-e5dd-f9f8" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="45b0-910d-58f8-925b" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
@@ -214,7 +194,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -245,8 +225,7 @@
             <entryLink id="d846-b897-d710-4e73" name=" Cypher Lords" hidden="false" collective="false" import="true" targetId="c9c9-4a59-c145-6f2c" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="ed17-95ca-ea71-7d10" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="57a6-602e-3583-d8d8" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="ed17-95ca-ea71-7d10" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f760-2739-c7ed-01a1" name="Chaos - Darkoath Savagers - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f760-2739-c7ed-01a1" name="Chaos - Darkoath Savagers - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b2ba-f779-903f-c9b0" name="Darkoath Leaders" hidden="false"/>
   </categoryEntries>
@@ -110,6 +110,11 @@
   <sharedSelectionEntries>
     <selectionEntry id="3644-47ec-f98c-ebce" name="Slaughterborn" hidden="false" collective="false" import="true" type="model">
       <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+          </conditions>
+        </modifier>
         <modifier type="append" field="name" value="with Greatblade">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5461-73e8-6370-d2ae" type="equalTo"/>
@@ -138,13 +143,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="5461-73e8-6370-d2ae" name="with Greatblade" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="07b3-1ce4-375a-607b" name="with Greatblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -157,17 +155,10 @@
               </profiles>
               <costs>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a203-b9c6-4310-eae6" name="with Greataxe" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="4e00-2f1a-d725-1f3f" name="with Greataxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -180,24 +171,24 @@
               </profiles>
               <costs>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="dc6d-1c42-05f2-f638" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="dc6d-1c42-05f2-f638" name="Campaign Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
         <entryLink id="212e-694f-70e4-d929" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="758c-cf6e-32bf-7517" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
             <entryLink id="ac66-a335-e757-e1f8" name="Darkoath Savagers" hidden="false" collective="false" import="true" targetId="7649-5425-860e-7aaa" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2f8a-1e07-de51-9216" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7649-5425-860e-7aaa" name="Darkoath Savagers" hidden="false" collective="false" import="true" type="upgrade">
@@ -215,7 +206,4 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <catalogueLinks>
-    <catalogueLink id="662d-58b9-fad6-e6d7" name="Chaos - Campaign Options" targetId="cfdc-22b9-58b0-31d5" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>
