@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6625-1cfe-fa02-d633" name="Chaos - Hedonites of Slaanesh - Sybarites" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6625-1cfe-fa02-d633" name="Chaos - Hedonites of Slaanesh - Sybarites" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="2926-fbdd-2a53-5903" name="Blissbarb Archer" hidden="false" collective="false" import="true" targetId="e7f3-ce85-3697-d713" type="selectionEntry"/>
     <entryLink id="f839-9177-5067-6ebf" name="Blissbarb Seeker" hidden="false" collective="false" import="true" targetId="7301-11c2-eaf7-536c" type="selectionEntry"/>
@@ -85,6 +85,11 @@
             <condition field="selections" scope="1c52-8c23-cbdb-ef90" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a539-d6fb-69bf-708d" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="f27a-2d45-cf03-e19a" name="Hellstrider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -106,13 +111,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="e3cd-5ff1-cdfc-0a19" name="with Claw-spear" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="d49c-4096-e73f-4756" name="with Claw-spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -132,13 +130,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="a539-d6fb-69bf-708d" name="with Hellscourge" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="d011-ef28-1fc5-9a2d" name="with Hellscourge" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
