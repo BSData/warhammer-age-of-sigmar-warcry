@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b706-8178-73d8-57d0" name="Destruction - Kruleboyz" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b706-8178-73d8-57d0" name="Destruction - Kruleboyz" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="cf08-e7d6-63dc-412f" name="Gutrippa" hidden="false" collective="false" import="true" targetId="7632-505e-1353-37c1" type="selectionEntry"/>
     <entryLink id="f731-239f-e6c6-7d69" name="Stab-grot" hidden="false" collective="false" import="true" targetId="e480-6421-c5bf-8402" type="selectionEntry"/>
@@ -51,11 +51,6 @@
             <condition field="selections" scope="7632-505e-1353-37c1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="330b-3c57-fb97-01cf" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="22ef-ccb7-18f9-1ae3" name="Gutrippa" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -77,6 +72,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="2dbf-14cf-02fd-4e33" name="Wicked Hakka" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="a56e-bfd9-d6ef-7fae" name="Wicked Hakka" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -93,6 +95,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="330b-3c57-fb97-01cf" name="Wicked Stikka" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="fedc-bdfd-f5f7-7a08" name="Wicked Stikka" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -118,7 +127,8 @@
             <entryLink id="3471-80a9-6b66-e65b" name="Kruleboyz" hidden="false" collective="false" import="true" targetId="0744-84ba-9409-f294" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c779-e741-19f9-0b6b" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="c779-e741-19f9-0b6b" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="58b1-c764-2721-1085" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -129,7 +139,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -169,7 +179,8 @@
             <entryLink id="b324-918a-97dc-f8f0" name="Kruleboyz" hidden="false" collective="false" import="true" targetId="0744-84ba-9409-f294" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="abab-3b66-6b35-f3db" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="abab-3b66-6b35-f3db" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="85c2-7c41-9f24-81fd" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
@@ -180,7 +191,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -219,7 +230,8 @@
             <entryLink id="3409-fc92-33bf-8613" name="Kruleboyz" hidden="false" collective="false" import="true" targetId="0744-84ba-9409-f294" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="156c-efb4-0242-2fed" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="156c-efb4-0242-2fed" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="e08f-0206-bbd9-0f8e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
@@ -230,7 +242,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -270,7 +282,8 @@
             <entryLink id="e8b5-2e3e-52b8-1ff6" name="Kruleboyz" hidden="false" collective="false" import="true" targetId="0744-84ba-9409-f294" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d3dd-9c13-5938-0921" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="d3dd-9c13-5938-0921" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="3d5b-5eb7-901e-af17" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
@@ -281,7 +294,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -312,7 +325,8 @@
             <entryLink id="c843-7269-c721-42bc" name="Kruleboyz" hidden="false" collective="false" import="true" targetId="0744-84ba-9409-f294" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2bf8-408f-a997-2693" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="2bf8-408f-a997-2693" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="4938-784e-1250-0714" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
@@ -323,7 +337,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -354,7 +368,8 @@
             <entryLink id="252c-9880-9440-9e5f" name="Kruleboyz" hidden="false" collective="false" import="true" targetId="0744-84ba-9409-f294" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c212-b9df-bddb-3294" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="c212-b9df-bddb-3294" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="0a12-34a0-4963-941f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="35.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e18a-14c5-6c36-8d80" name="Death - Soulblight Gravelords - Leaders &amp; Abilities" revision="8" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e18a-14c5-6c36-8d80" name="Death - Soulblight Gravelords - Leaders &amp; Abilities" revision="8" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="023b-175d-21c0-1b46" name="Soulblight Leaders" hidden="false"/>
   </categoryEntries>
@@ -246,6 +246,7 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       <entryLinks>
         <entryLink id="04ea-a143-ff69-3a75" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="a5a3-b454-c4b9-66c3" type="selectionEntry"/>
         <entryLink id="de04-5577-73c6-b673" name="Death" hidden="false" collective="false" import="true" targetId="1e81-9337-7b78-923a" type="selectionEntry"/>
+        <entryLink id="8e8b-1dbf-c188-5b40" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -256,7 +257,7 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -286,7 +287,8 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
             <entryLink id="3712-d805-8e6b-066a" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a78c-f0d1-b5a5-fb39" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="a78c-f0d1-b5a5-fb39" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="ca70-36ed-5bc3-27eb" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
@@ -297,7 +299,7 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -334,7 +336,8 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
             <entryLink id="65bc-6d67-3a9a-4d07" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b325-fb1f-bc0a-f6f0" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="b325-fb1f-bc0a-f6f0" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="ae88-f352-749d-a55d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
@@ -353,11 +356,6 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
             <condition field="selections" scope="a290-4371-7a96-c3db" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4a7-f227-4519-3919" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup id="5630-e811-1152-b52d" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="91c9-00cd-71ca-ef38">
@@ -367,6 +365,13 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </constraints>
           <selectionEntries>
             <selectionEntry id="91c9-00cd-71ca-ef38" name="with Baleful Tomb Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="ddbe-dfdb-7824-6c3e" name="Wight King" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -399,6 +404,13 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
               </costs>
             </selectionEntry>
             <selectionEntry id="e4a7-f227-4519-3919" name="on Skeletal Steed" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="bf55-ef58-75d7-13ca" name="Wight King" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -434,7 +446,8 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3231-0cc3-8f4c-a994" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="3231-0cc3-8f4c-a994" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="1a1b-a97a-293d-c2f3" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -445,7 +458,7 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -475,7 +488,8 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
             <entryLink id="c5dc-7096-7ee5-1554" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="9e42-4e20-5fa7-681c" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="9e42-4e20-5fa7-681c" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="7770-0a85-e41c-0a2a" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
@@ -486,7 +500,7 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -516,7 +530,8 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
             <entryLink id="c132-985a-4e7e-4540" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="88fb-493d-fa84-59a6" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="88fb-493d-fa84-59a6" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="6aaf-b360-b0b8-947e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
@@ -524,4 +539,7 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="8de1-d0e7-9266-52fe" name="Death - Campaign Options" targetId="1355-fe6d-4766-ce01" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

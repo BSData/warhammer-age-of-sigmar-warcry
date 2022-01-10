@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3f44-f391-b62b-5849" name="Order - Daughters of Khaine" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3f44-f391-b62b-5849" name="Order - Daughters of Khaine" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="052e-203a-3274-0674" name="Sister of Slaughter" hidden="false" collective="false" import="true" targetId="087c-f1b1-1456-67cd" type="selectionEntry"/>
     <entryLink id="340e-0db8-5cb1-0372" name="Khinerai Lifetaker" hidden="false" collective="false" import="true" targetId="a4b3-d649-abc4-c120" type="selectionEntry"/>
@@ -88,11 +88,6 @@
             <condition field="selections" scope="1267-b30b-f91c-22f1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85c4-c774-e7ff-0f25" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="7bb0-6494-dd80-9bb5" name="Witch Aelf" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -121,6 +116,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="80b1-7e4f-9724-6a92" name="with Sacrifical Knives" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="a06d-7e96-be78-2e9c" name="Sacrifical Knives" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -137,6 +139,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="85c4-c774-e7ff-0f25" name="with Sacrifical Knife and Bladed Buckler" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="78d2-9bc5-9318-ce74" name="Sacrificial Knife and Bladed Buckler" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -161,7 +170,8 @@
             <entryLink id="eddd-d2b9-a97f-765f" name=" Daughters of Khaine" hidden="false" collective="false" import="true" targetId="2591-5f57-1749-3db3" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b896-6611-3e8e-2718" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="b896-6611-3e8e-2718" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="f585-32b2-4f15-d5ce" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -178,11 +188,6 @@
         <modifier type="append" field="name" value="with Barbed Whip and Bladed Buckler">
           <conditions>
             <condition field="selections" scope="087c-f1b1-1456-67cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a2c-e338-dc22-bc1e" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -213,6 +218,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="859e-0c97-b1bd-c3d7" name="with Barbed Whip and Sacrifical Knife" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="b8d9-1b96-4757-885d" name="Barbed Whip and Sacrifical Knife" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -229,6 +241,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="6a2c-e338-dc22-bc1e" name="with Barbed Whip and Bladed Buckler" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <infoLinks>
                 <infoLink id="27d4-5db8-be43-26c7" name="Barbed Whip and Bladed Buckler" hidden="false" targetId="9930-8c12-550b-06cf" type="profile"/>
               </infoLinks>
@@ -246,7 +265,8 @@
             <entryLink id="208b-7736-7aa0-a59b" name=" Daughters of Khaine" hidden="false" collective="false" import="true" targetId="2591-5f57-1749-3db3" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="066b-2a9a-f30c-aafe" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="066b-2a9a-f30c-aafe" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="cb53-eed6-8ead-6ace" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -257,7 +277,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -283,7 +303,8 @@
             <entryLink id="b8b8-0c48-97b8-3c47" name=" Daughters of Khaine" hidden="false" collective="false" import="true" targetId="2591-5f57-1749-3db3" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d98f-204a-7739-f5ea" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="d98f-204a-7739-f5ea" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="e2f3-895c-907c-afc2" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
@@ -294,7 +315,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -321,7 +342,8 @@
             <entryLink id="14fa-23b1-e5ad-3a7f" name=" Daughters of Khaine" hidden="false" collective="false" import="true" targetId="2591-5f57-1749-3db3" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="1925-2901-0492-1227" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="1925-2901-0492-1227" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="51fb-c146-e99c-a059" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
@@ -332,7 +354,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -359,7 +381,8 @@
             <entryLink id="6e7b-1bb9-fef1-05e3" name=" Daughters of Khaine" hidden="false" collective="false" import="true" targetId="2591-5f57-1749-3db3" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="7547-1087-379a-40c2" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="7547-1087-379a-40c2" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="6e9a-0f18-1cea-f52f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
@@ -370,7 +393,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -397,7 +420,8 @@
             <entryLink id="53c4-8b38-3e77-d014" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="e42e-d4a3-9de4-ca33" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="e42e-d4a3-9de4-ca33" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="e7e7-9e9d-73c4-1d2b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
@@ -408,7 +432,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -435,7 +459,8 @@
             <entryLink id="44bd-a1fe-bd38-7f5b" name=" Daughters of Khaine" hidden="false" collective="false" import="true" targetId="2591-5f57-1749-3db3" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="8af9-019c-2593-95b5" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="8af9-019c-2593-95b5" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="2675-a8ac-9131-70eb" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
