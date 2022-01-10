@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dfe5-8431-8f0e-59bf" name="Order - Fyreslayers" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="dfe5-8431-8f0e-59bf" name="Order - Fyreslayers" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d0ef-1c3e-51e4-a319" name="Hearthguard Berzerker" hidden="false" collective="false" import="true" targetId="1951-2ce6-ad55-257f" type="selectionEntry"/>
     <entryLink id="fdf5-6d8f-5e93-d644" name="Auric Hearthguard" hidden="false" collective="false" import="true" targetId="6e62-70ef-76fa-776a" type="selectionEntry"/>
@@ -70,7 +70,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -97,7 +97,8 @@
             <entryLink id="d47c-b8fa-56df-b418" name=" Fyreslayers" hidden="false" collective="false" import="true" targetId="2f9d-e6df-414f-4429" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="ecc0-4512-e199-a7de" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="ecc0-4512-e199-a7de" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="8f47-0cf0-71db-ec54" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
@@ -121,11 +122,6 @@
             <condition field="selections" scope="e642-6d79-1265-b33b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f3a3-15de-62d1-e5bb" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="fffc-5e5e-e558-b6a2" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
@@ -138,6 +134,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="f3a3-15de-62d1-e5bb" name="with Fyresteel War-pick and Bladed Slingshield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="133e-8dab-03b6-5153" name="Firesteel War-pick" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -164,6 +167,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="c76b-2030-a771-42f5" name="with Pair of Fyresteel Handaxes" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="0cbb-f76a-d8b9-0215" name="Vulkite Berzerker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -182,6 +192,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="a926-7732-c6a9-ecf3" name="with Fyresteel Handaxe and Bladed Slingshield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="21cb-77b3-3011-4972" name="Vulkite Berzerker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -211,7 +228,8 @@
             <entryLink id="dcf6-97de-b424-ff8e" name=" Fyreslayers" hidden="false" collective="false" import="true" targetId="2f9d-e6df-414f-4429" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4c6e-60ed-def6-be19" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="4c6e-60ed-def6-be19" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="9121-5dcb-ae75-e6ed" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -228,11 +246,6 @@
         <modifier type="append" field="name" value="with Berzerker Broadaxe">
           <conditions>
             <condition field="selections" scope="1951-2ce6-ad55-257f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5900-d181-75f8-a428" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -256,6 +269,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="5900-d181-75f8-a428" name="with Berzerker Broadaxe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <infoLinks>
                 <infoLink id="6a73-9be8-a6ec-01da" name="Berzerker Broadaxe" hidden="false" targetId="1ef3-cd6b-6cdd-12db" type="profile"/>
               </infoLinks>
@@ -265,6 +285,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="00fc-bdf1-a004-21f0" name="with Flamestrike Poleaxe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <infoLinks>
                 <infoLink id="8734-8613-1cbb-4dbf" name="Flamestrike Poleaxe" hidden="false" targetId="3905-39ec-2fb0-eaad" type="profile"/>
               </infoLinks>
@@ -283,7 +310,8 @@
             <entryLink id="c771-f96f-a353-e26b" name=" Fyreslayers" hidden="false" collective="false" import="true" targetId="2f9d-e6df-414f-4429" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="91e8-cab5-bb02-63ba" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="91e8-cab5-bb02-63ba" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="c486-5439-c134-0d7f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>

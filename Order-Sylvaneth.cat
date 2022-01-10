@@ -66,11 +66,6 @@
             <condition field="selections" scope="3f1b-03ba-fe58-c3da" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f30-64c2-12fb-63aa" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="7370-c4c5-966c-8256" name="Kurnoth Hunter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -92,6 +87,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="4637-c3a0-a9ce-ec6a" name="with Kurnoth Greatbow" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <infoLinks>
                 <infoLink id="a582-fe44-b00d-c60c" name="Vicious Claws" hidden="false" targetId="0b4a-660a-aec5-1bf2" type="profile"/>
                 <infoLink id="2419-eb26-7a70-6896" name="Kurnoth Greatbow" hidden="false" targetId="40cb-bc06-7110-b0d7" type="profile"/>
@@ -102,6 +104,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="61bd-3fba-ca65-291f" name="with Kurnoth Greatsword" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <infoLinks>
                 <infoLink id="d02f-0737-a67f-cbb1" name="Kurnoth Greatsword" hidden="false" targetId="5c1b-2f8d-5520-9177" type="profile"/>
               </infoLinks>
@@ -111,6 +120,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7f30-64c2-12fb-63aa" name="with Kurnoth Scythe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <infoLinks>
                 <infoLink id="8fb8-4bc9-c2cc-6393" name="Kurnoth Scythe" hidden="false" targetId="550d-e313-7ff8-97ba" type="profile"/>
               </infoLinks>
@@ -129,6 +145,8 @@
             <entryLink id="61b9-a7e8-cd95-4221" name=" Champion" hidden="false" collective="false" import="true" targetId="2da4-597a-7aab-a5d8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
+        <entryLink id="152a-d55f-6a3e-ceed" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="e18f-1ea6-e189-771c" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -139,7 +157,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -165,6 +183,8 @@
             <entryLink id="95e5-4ce5-780b-fc7e" name=" Sylvaneth" hidden="false" collective="false" import="true" targetId="239e-0d1d-fb6a-d7fc" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
+        <entryLink id="00f3-8503-168e-33b8" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="1217-000f-6bb3-8e21" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
@@ -175,7 +195,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -201,6 +221,8 @@
             <entryLink id="e570-43e3-d645-2cdb" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
+        <entryLink id="6b62-ff97-ee95-0bd6" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="e923-886b-b0cc-24cd" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="50.0"/>
@@ -211,7 +233,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -237,6 +259,8 @@
             <entryLink id="752a-bdbf-0b3a-7a2d" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
+        <entryLink id="1221-5361-43af-049c" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="9716-53ab-89db-ec72" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e383-b36f-ff8a-bdb0" name="Destruction - Ironjawz" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e383-b36f-ff8a-bdb0" name="Destruction - Ironjawz" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="08c3-8761-e3f0-1edb" name="Gore-Grunta Boss" hidden="false" collective="false" import="true" targetId="c7e6-3418-b8e6-0084" type="selectionEntry">
       <categoryLinks>
@@ -54,11 +54,6 @@
             <condition field="selections" scope="8115-b175-4311-6b75" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c866-8c4f-141d-b5e2" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="b4a2-bfd0-1098-1cb6" name="Orruk Gore-Grunta" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -80,6 +75,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="e9ed-5897-b743-3911" name="with Jagged Gore-hacka" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="83e2-ad2e-de13-a273" name="Gore-grunta Jagged Gore-hacka" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -96,6 +98,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="c866-8c4f-141d-b5e2" name="with Pig-iron Choppa" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="bd26-5d8d-d296-db45" name="Pig-iron Choppa" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -122,7 +131,8 @@
             <entryLink id="40e0-ea0c-47d5-03e0" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2c00-4c69-c8f7-5072" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="2c00-4c69-c8f7-5072" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="9ae6-394c-651d-4848" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -146,11 +156,6 @@
             <condition field="selections" scope="637a-76a7-3322-86a6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7da8-f07a-b995-7027" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="f328-5091-4363-83d9" name="Orruk Brute" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -172,6 +177,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="20b3-5c7f-9d89-953e" name="with Jagged Gore-hacka" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="aec9-2e78-541f-342a" name="Jagged Gore-hacka" page="2/5" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -188,6 +200,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7da8-f07a-b995-7027" name="with Pair of Brute Choppas" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4adf-773f-73c4-cc22" name="Pair of Brute Choppas" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -204,6 +223,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="cf66-bad5-2e41-3269" name="with Gore-choppa" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="3181-7264-28a9-0b47" name="Gore-choppa" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -229,7 +255,8 @@
             <entryLink id="6a91-b8e1-2702-25d1" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="1abe-c6c4-5eba-5179" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="1abe-c6c4-5eba-5179" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="5bc7-27c6-9460-4be1" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -253,11 +280,6 @@
             <condition field="selections" scope="d99e-1b43-1be3-42e5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46f5-881a-43ab-104d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="f9e2-be83-8e15-7d99" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
@@ -270,6 +292,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="46f5-881a-43ab-104d" name="with Ardboy Choppa and Orruk-forged Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="2c9f-2777-d181-6aaf" name="Ardboy with Orruk-forged Shield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -296,6 +325,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="34b9-0014-8b3d-7e0b" name="with Ardboy Choppas" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="18ce-e283-28ac-a469" name="Ardboy" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -319,6 +355,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="d613-a6eb-a535-911d" name="with Ardboy Big Choppa" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="c268-da8f-3202-8a74" name="Ardboy" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
@@ -350,7 +393,8 @@
             <entryLink id="f23f-3060-93b9-6aae" name=" Ironjawz" hidden="false" collective="false" import="true" targetId="7669-6bc2-4c13-9aee" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="52db-f9a0-95a4-be20" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="52db-f9a0-95a4-be20" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="6eb5-362f-c95e-dc91" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>

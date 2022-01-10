@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts - Leaders &amp; Abilities" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="90d1-298b-309f-13b2" name="Untamed Leaders" hidden="false"/>
   </categoryEntries>
@@ -126,7 +126,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -154,7 +154,8 @@
             <entryLink id="6d2e-e5fc-52f0-2e13" name=" Untamed Beasts" hidden="false" collective="false" import="true" targetId="ac73-08a5-d40f-f17f" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="6de8-5432-01b7-aa17" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="6de8-5432-01b7-aa17" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="4020-a489-ebd4-022c" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
@@ -162,4 +163,7 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="0cb8-2c96-d957-a6c9" name="Chaos - Campaign Options" targetId="cfdc-22b9-58b0-31d5" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

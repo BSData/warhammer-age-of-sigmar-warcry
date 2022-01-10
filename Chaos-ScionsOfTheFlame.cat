@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b91-0957-db30-93e7" name="Chaos - Scions of the Flame" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0b91-0957-db30-93e7" name="Chaos - Scions of the Flame" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="8fdd-4c79-924e-c3e8" name="Fireborn" hidden="false" collective="false" import="true" targetId="d18c-bf89-3f90-dc6e" type="selectionEntry"/>
     <entryLink id="9777-e92e-961b-5bfe" name="Initiate" hidden="false" collective="false" import="true" targetId="78c4-17d8-e0c7-56cc" type="selectionEntry"/>
@@ -18,7 +18,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -49,7 +49,8 @@
             <entryLink id="94f0-986f-d643-cca8" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="213b-28c6-1622-1abd" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="213b-28c6-1622-1abd" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="e62f-fa8e-9093-9f5e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
@@ -78,11 +79,6 @@
             <condition field="selections" scope="78c4-17d8-e0c7-56cc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="deb5-647e-215a-635e" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="873e-aaad-351d-5a0b" name="Initiate" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -104,6 +100,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="9c40-3580-11d2-1d50" name="with Brazier Weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="5d8b-6663-73c4-77de" name="Brazier Weapon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -123,6 +126,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7fe2-d233-b90f-2af5" name="with Flameburt Pot" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="11c7-ba2e-1788-d6ca" name="Flameburt Pot" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -142,6 +152,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="d555-c8ff-cecf-b032" name="with Morning Star" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="1fbc-05dd-fc02-9ed3" name="Morning Star" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -158,6 +175,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="deb5-647e-215a-635e" name="with Hooked Axe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4de6-42fb-08b1-4145" name="Hooked Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -182,7 +206,8 @@
             <entryLink id="e54f-46eb-3347-5b8e" name=" Scions of the Flame" hidden="false" collective="false" import="true" targetId="c1a9-ecf9-2a1e-b242" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="3f94-6ca0-0c31-96c8" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="3f94-6ca0-0c31-96c8" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="6593-3738-f6d7-0bac" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
@@ -193,7 +218,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -224,7 +249,8 @@
             <entryLink id="fb06-e40d-0f4e-d0e2" name=" Scions of the Flame" hidden="false" collective="false" import="true" targetId="c1a9-ecf9-2a1e-b242" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="0c83-2fc2-62ee-e662" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="0c83-2fc2-62ee-e662" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="9e31-4012-fc9c-83f2" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
@@ -235,7 +261,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -274,7 +300,8 @@
             <entryLink id="754f-a881-ce14-23f3" name=" Scions of the Flame" hidden="false" collective="false" import="true" targetId="c1a9-ecf9-2a1e-b242" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="ebe9-774d-03ee-414e" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="ebe9-774d-03ee-414e" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="af7d-84b0-6818-7c77" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
@@ -293,9 +320,9 @@
             <condition field="selections" scope="d18c-bf89-3f90-dc6e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f4b5-cb58-5e5f-862c" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+        <modifier type="set" field="name" value="Fireborn">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="d18c-bf89-3f90-dc6e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="acee-a4ce-a1cc-6360" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -319,6 +346,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="dc62-1d09-88c6-1ea8" name="with Sunblade and Brazier Axe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="29d7-0ac1-ab8b-12e0" name="Sunblade and Brazier Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -335,6 +369,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="f4b5-cb58-5e5f-862c" name="with Sunblade and Kris" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="6f9b-b22e-e983-599a" name="Sunblade and Kris" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -351,6 +392,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="acee-a4ce-a1cc-6360" name="Fireborn" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="9106-71d1-4d78-4821" name="Brazier Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -378,7 +426,8 @@
             <entryLink id="9f75-a2e8-59ba-1cf0" name=" Scions of the Flame" hidden="false" collective="false" import="true" targetId="c1a9-ecf9-2a1e-b242" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2c34-c9a7-32c9-8300" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="2c34-c9a7-32c9-8300" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="c2d6-3e3b-5b4e-4df3" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6625-1cfe-fa02-d633" name="Chaos - Hedonites of Slaanesh - Sybarites" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6625-1cfe-fa02-d633" name="Chaos - Hedonites of Slaanesh - Sybarites" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="2926-fbdd-2a53-5903" name="Blissbarb Archer" hidden="false" collective="false" import="true" targetId="e7f3-ce85-3697-d713" type="selectionEntry"/>
     <entryLink id="f839-9177-5067-6ebf" name="Blissbarb Seeker" hidden="false" collective="false" import="true" targetId="7301-11c2-eaf7-536c" type="selectionEntry"/>
@@ -85,11 +85,6 @@
             <condition field="selections" scope="1c52-8c23-cbdb-ef90" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a539-d6fb-69bf-708d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="f27a-2d45-cf03-e19a" name="Hellstrider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -111,6 +106,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="e3cd-5ff1-cdfc-0a19" name="with Claw-spear" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="d49c-4096-e73f-4756" name="with Claw-spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -130,6 +132,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="a539-d6fb-69bf-708d" name="with Hellscourge" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="d011-ef28-1fc5-9a2d" name="with Hellscourge" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -155,7 +164,8 @@
             <entryLink id="05a4-18ec-60b1-59d8" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="3c2c-3a48-379b-a0db" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="3c2c-3a48-379b-a0db" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="ed49-f917-98aa-3cdd" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
@@ -166,7 +176,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -205,7 +215,8 @@
             <entryLink id="362c-ae87-60be-9928" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="1051-453e-96e4-4bcf" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="1051-453e-96e4-4bcf" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="1631-f0d1-642d-f5dc" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
@@ -216,7 +227,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -247,7 +258,8 @@
             <entryLink id="1916-06c3-1920-3c36" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4f94-7f0b-07e9-b630" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="4f94-7f0b-07e9-b630" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="89ed-c6e9-396c-5728" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
@@ -258,7 +270,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -298,7 +310,8 @@
             <entryLink id="f4cd-54c8-383e-2412" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="424c-abeb-dba1-8aa2" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="424c-abeb-dba1-8aa2" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="2a1e-9a96-1cda-0fee" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
@@ -309,7 +322,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -340,7 +353,8 @@
             <entryLink id="22ad-ed53-b9cd-1c58" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="94b6-bc19-767d-bb04" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="94b6-bc19-767d-bb04" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="645d-34be-b1d5-4e37" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
@@ -351,7 +365,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -383,7 +397,8 @@
             <entryLink id="a61e-5deb-767a-c2e5" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="30ca-98f9-e781-93d6" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="30ca-98f9-e781-93d6" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="0c66-f1d0-8c21-c876" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
@@ -407,11 +422,6 @@
             <condition field="selections" scope="6ad8-5139-2de6-1251" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a18d-779c-bb2a-b714" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="17bb-dc17-310f-7dce" name="Symbaresh Twinsoul" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -433,6 +443,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="728b-e53c-4dd1-c46a" name="with Sinful Cleaver" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="89a3-20ed-1b67-7a8b" name="with Sinful Cleaver" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -449,6 +466,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="ddcd-9031-fe11-3df6" name="with Merciless Blades" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="8d7b-8212-5df7-b318" name="with Merciless Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -465,6 +489,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="a18d-779c-bb2a-b714" name="with Excruciator Lash" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="8a2d-efaf-ec7e-49a6" name="with Excruciator Lash" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -490,7 +521,8 @@
             <entryLink id="6a28-d0d7-f82c-72d9" name=" Hedonites of Slaanesh: Sybarites" hidden="false" collective="false" import="true" targetId="bd46-3b08-7875-01c7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="88a3-1868-874a-6d80" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="88a3-1868-874a-6d80" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
+        <entryLink id="6d83-60fb-4158-9a9a" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>

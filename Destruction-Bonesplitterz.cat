@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0eec-d494-3711-f7ae" name="Destruction - Bonesplitterz" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0eec-d494-3711-f7ae" name="Destruction - Bonesplitterz" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="999e-f54b-8b99-4941" name="Maniak Weirdnob" hidden="false" collective="false" import="true" targetId="8ea4-35f4-804b-6b84" type="selectionEntry">
       <categoryLinks>
@@ -77,7 +77,7 @@
         </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -147,7 +147,8 @@
             <entryLink id="dd75-1d0f-a7b0-037b" name=" Bonespliterz" hidden="false" collective="false" import="true" targetId="245b-2857-eaf4-d1ba" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="f0ab-52e4-3846-9b47" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="f0ab-52e4-3846-9b47" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="ac1e-aa97-5428-7212" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
@@ -158,7 +159,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -197,7 +198,8 @@
             <entryLink id="6b7f-5bfb-bce8-be58" name=" Bonespliterz" hidden="false" collective="false" import="true" targetId="245b-2857-eaf4-d1ba" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b154-c1bf-4dac-d711" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="b154-c1bf-4dac-d711" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="dd25-cf70-513f-695f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
@@ -214,11 +216,6 @@
         <modifier type="append" field="name" value="with Savage Stikka and Bone Shield">
           <conditions>
             <condition field="selections" scope="3249-7708-19de-3997" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e25f-776b-a5c5-96b2" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -242,6 +239,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="13c2-f51f-06b7-dc76" name="with Chompa and Bone Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="5d5f-0c0f-1543-044c" name="Chompa" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -258,6 +262,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="e25f-776b-a5c5-96b2" name="with Savage Stikka and Bone Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="8485-d4b9-89c8-cbc5" name="Savage Stikka" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -282,7 +293,8 @@
             <entryLink id="e732-8111-e652-87c4" name=" Bonespliterz" hidden="false" collective="false" import="true" targetId="245b-2857-eaf4-d1ba" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="dbe6-c10e-28cf-8e15" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="dbe6-c10e-28cf-8e15" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="a277-49a4-ad72-9eec" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -290,13 +302,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7dd6-3d73-ff5b-2261" name="Savage Boarboy Maniak" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="54ea-5e38-7360-61e6" name="Savage Boarboy Maniak" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -325,7 +330,8 @@
             <entryLink id="fa51-1459-886f-750d" name=" Elite" hidden="false" collective="false" import="true" targetId="f907-d5f0-c688-5596" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="bbee-5b00-12e2-84af" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="bbee-5b00-12e2-84af" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="cf9e-d27c-5a6e-5275" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
@@ -336,7 +342,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -366,7 +372,8 @@
             <entryLink id="9b27-9bba-b01f-97a7" name=" Bonespliterz" hidden="false" collective="false" import="true" targetId="245b-2857-eaf4-d1ba" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b97b-ff88-797d-056d" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="b97b-ff88-797d-056d" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="77b4-565b-80b8-2bc0" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
@@ -390,11 +397,6 @@
             <condition field="selections" scope="27ac-d8b3-92d4-53ad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b61-404f-749c-d22b" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd6c-8120-1d6b-6287" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="297e-48f8-6301-871c" name="Savage Boarboy" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -416,6 +418,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="731f-a2be-7e7d-0245" name="with Savage Stikka" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4d6e-cfbf-601e-f438" name="Savage Stikka" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -432,6 +441,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="cca6-1ab5-3f2c-0cdf" name="with Chompa" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="997b-5b2d-ba87-c45a" name="Chompa" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -448,6 +464,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7b61-404f-749c-d22b" name="Bone Totem Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="c1ce-4061-1d1d-8a08" name="Boarboy Bone Totem" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -476,7 +499,8 @@
             <entryLink id="6750-84cc-e453-91fa" name=" Bonesplitterz" hidden="false" collective="false" import="true" targetId="245b-2857-eaf4-d1ba" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="1b75-ded8-6717-0e31" name="Options" hidden="false" collective="false" import="true" targetId="39cc-5d3d-bedf-93c9" type="selectionEntryGroup"/>
+        <entryLink id="1b75-ded8-6717-0e31" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="4ad4-a39e-ccca-bbd0" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
