@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edd2-67e1-a0c3-1672" name="Agents of Chaos" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="edd2-67e1-a0c3-1672" name="Agents of Chaos" revision="7" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d497-84c3-796f-b120" name="Beastlord" hidden="false" collective="false" import="true" targetId="6f12-5bdf-edcf-5738" type="selectionEntry">
       <comment>CHAOS - SAMPLE ALLY MOD AND CONDITIONAL</comment>
@@ -1701,6 +1701,180 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="f728-1048-ac7a-f61f" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ea8a-0b22-32ed-7164" name="Fecula Flyblown" hidden="false" collective="false" import="true" targetId="96cb-659c-248e-33fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcf4-1ca6-49c6-a9a3" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f509-0a2b-b35b-e239" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="e725-970a-9eee-10bf" name="Bladeborn Fecula" hidden="false" targetId="32e7-5f04-0036-fba8" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fbe9-d2c4-0b8e-87eb" name="Sepsimus Plaguesworn" hidden="true" collective="false" import="true" targetId="8cdf-ed13-be6d-7b3d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32e7-5f04-0036-fba8" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="60f1-5a69-000b-d70b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="63e4-ff6a-45b1-2d49" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2735-09a9-5074-b66a" name="Ghulgoch the Butcher" hidden="true" collective="false" import="true" targetId="098d-3333-5559-a27e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32e7-5f04-0036-fba8" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="435e-58bb-733a-61cb" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f093-36c3-7e49-89ba" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8867-7016-be50-fec2" name="Riptooth" hidden="true" collective="false" import="true" targetId="8934-8453-bc3c-7d84" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12bb-9909-9041-1705" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6534-1e01-a118-2488" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="627e-15da-ded5-e4ae" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="467a-c75f-aa52-91d6" name="Zharkus the Bloodsighted" hidden="true" collective="false" import="true" targetId="49f2-c138-1054-48df" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12bb-9909-9041-1705" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca52-adff-ba00-6abf" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4200-bcb1-900c-2a97" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="96eb-4b8c-0a88-0198" name="Ghartok Flayskull" hidden="true" collective="false" import="true" targetId="0be6-0544-cad6-d807" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12bb-9909-9041-1705" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f34-bd6e-366f-de96" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="87d0-0b81-936d-3143" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2ea5-9fc8-529e-33e2" name="Magore Redhand" hidden="false" collective="false" import="true" targetId="f433-a8fe-07f7-d0d9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efa7-e293-f325-dc7f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="450d-e801-bade-7478" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="d72c-c4c4-edd4-d58d" name="Bladeborn Magore" hidden="false" targetId="12bb-9909-9041-1705" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="460e-d8a7-4c9a-a24b" name="The Lurking Skaven" hidden="true" collective="false" import="true" targetId="52b8-f500-6d63-83b8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc4e-b8a8-a60b-25c1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7c70-ad20-7ac8-244b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="98f3-396b-dc46-2504" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8a33-606b-41aa-1d34" name="Krrk the Almost-trusted" hidden="true" collective="false" import="true" targetId="1cbc-7eee-792d-08b5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc4e-b8a8-a60b-25c1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b360-7a16-b1f3-3f59" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c218-4779-910f-0479" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="37e1-8eb6-2e7d-7583" name="The Festering Skaven" hidden="true" collective="false" import="true" targetId="a012-6fce-ef93-bde1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc4e-b8a8-a60b-25c1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d98c-626c-0922-c135" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5672-b6c7-70bc-aecb" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="86c8-298b-b6b8-b120" name="The Hungering Skaven" hidden="true" collective="false" import="true" targetId="cf09-99a3-0a70-1f78" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc4e-b8a8-a60b-25c1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dad0-1624-4019-73cf" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3a50-0cea-5f1b-8097" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="78f9-6888-e64e-d0c3" name="Skritch Spiteclaw" hidden="false" collective="false" import="true" targetId="f86b-4ce0-7b47-4f2a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86b9-e1c0-c33f-87a2" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="52fd-956b-d323-6f31" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="99d1-023c-9a8b-c9a0" name="Bladeborn Garrek" hidden="false" targetId="9aec-09fe-ae65-b3c2" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
