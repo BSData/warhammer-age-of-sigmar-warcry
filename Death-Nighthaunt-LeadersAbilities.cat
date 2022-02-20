@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ca25-8654-18e2-80ee" name="Death - Nighthaunt - Leaders &amp; Abilities" revision="15" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ca25-8654-18e2-80ee" name="Death - Nighthaunt - Leaders &amp; Abilities" revision="16" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="986a-3b69-d565-d503" name="Nighthaunt Leaders" hidden="false"/>
+    <categoryEntry id="011e-91df-f669-9595" name="Bladeborn Briar" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="ab08-a82f-93d2-74fa" name="Cairn Wraith" hidden="true" collective="false" import="true" targetId="4d24-d18d-2997-fe37" type="selectionEntry">
@@ -147,6 +148,15 @@
       <categoryLinks>
         <categoryLink id="82bf-ad65-4236-f161" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="9219-f4ed-c605-ccd2" name="The Briar Queen" hidden="true" collective="false" import="true" targetId="c616-ff1e-6682-9aa5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="986a-3b69-d565-d503" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <rules>
@@ -364,6 +374,22 @@
         </modifier>
       </modifiers>
       <description>Until the end of this fighter&apos;s activation, they can move over dungeon walls and through sealed dungeon doors but must end any move action with their base wholly on the battlefield floor.</description>
+    </rule>
+    <rule id="c67f-6705-2aa0-3040" name="⚂ [Triple] Howling Vortex" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a55a-ba11-cb5b-e277" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24cd-2c01-b535-4c89" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate 3 damage points to that fighter.  In addition, for each 4+, subtract 1 from the Move characteristic (to a minimum of 1) of that fighter until the end of the battle round.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -897,6 +923,216 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c616-ff1e-6682-9aa5" name="The Briar Queen" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="131e-0849-58a1-5d33" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="824d-33f6-02c1-946c" name="The Briar Queen" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c43-1944-8bb4-1564" name="Briar Whip" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="29a3-1b9f-281d-ac11" name="Rending Scream" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-9</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="f1e4-cb58-54d0-5d9b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="b0d9-cb5e-ae91-0b09" name="Thorns of the Briar Queen" hidden="false" collective="false" import="true" targetId="a55a-ba11-cb5b-e277" type="selectionEntry"/>
+            <entryLink id="3dfb-b76a-81d6-d0bb" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
+            <entryLink id="7512-6011-221a-19eb" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="a4ca-103e-3e45-69b3" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="b4f3-6811-0eb2-2480" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="4d4b-acee-75b9-6d51" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a55a-ba11-cb5b-e277" name="Thorns of the Briar Queen" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d3d-9951-e596-7f87" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ce8-4b4c-8469-e1ae" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cec6-0f83-2713-a2f4" name="Varclav the Cruel" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="426b-566b-b303-aabb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b990-ebc2-1ed9-588d" name="Varclav the Cruel" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9cb9-a3d1-e4ed-6601" name="Malignant Weapon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7e0d-24e0-3e58-2223" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="1856-3952-6d87-78a1" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d44f-75bf-7c1e-9196" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d833-fe62-3b88-c09e" name="Thorns of the Briar Queen" hidden="false" collective="false" import="true" targetId="a55a-ba11-cb5b-e277" type="selectionEntry"/>
+            <entryLink id="2ac0-d77b-cacf-b8b8" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
+            <entryLink id="d36e-5df0-96a2-b38b" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="f6c9-f8ec-6b66-04f2" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="84fe-ffb6-6d20-430c" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="6ed0-2fb6-83fc-0d86" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f17-cc30-b44d-aaee" name="The Ever-hanged" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c6-6548-19af-1135" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9543-5fc4-a933-9486" name="The Ever-hanged" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3790-8d06-ffd4-4aa8" name="Malignant Weapon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d96c-7111-f920-c03c" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+        <categoryLink id="e1cb-f48c-40e5-0d2e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="10f5-30b7-efef-9878" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="0955-7acc-0c4e-d6f0" name="Thorns of the Briar Queen" hidden="false" collective="false" import="true" targetId="a55a-ba11-cb5b-e277" type="selectionEntry"/>
+            <entryLink id="76f2-82ef-d5c1-3553" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
+            <entryLink id="a5e6-f7a4-ef81-b737" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+            <entryLink id="f035-289d-e153-e980" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="b7b0-928c-1b0b-fea6" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="685a-1f53-cb49-ce7e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad58-bd6d-1846-6772" name="Thorns of the Briar Queen Chainrasp" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4f1-b0e1-fdb3-c7f6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="97fe-79e5-1b48-9d2b" name="Thorns of the Briar Queen Chainrasp" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6e9-5304-f57c-b989" name="Malignant Weapon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="61e5-4b58-1aa5-7d15" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+        <categoryLink id="8580-3905-15e0-9229" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fac4-38b2-bf3a-83d2" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e103-cbe6-8151-43d9" name="Thorns of the Briar Queen" hidden="false" collective="false" import="true" targetId="a55a-ba11-cb5b-e277" type="selectionEntry"/>
+            <entryLink id="90ab-7d64-ce6f-66c4" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
+            <entryLink id="42ac-852b-8b2f-dc5c" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+            <entryLink id="934d-afa9-59f9-cb8a" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="fc00-540a-ff1f-a49a" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
+        <entryLink id="1921-1c47-3a5e-0662" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>

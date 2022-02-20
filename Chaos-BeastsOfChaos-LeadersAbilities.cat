@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a9eb-039a-63b1-0fe5" name="Chaos - Beasts of Chaos - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a9eb-039a-63b1-0fe5" name="Chaos - Beasts of Chaos - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="58ee-6a3b-6a0a-09e8" name="BoC Leaders" hidden="false"/>
     <categoryEntry id="b473-aa68-a512-9341" name="Bladeborn Grashnak" hidden="false"/>
@@ -49,6 +49,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="4c53-b7d7-6f25-ebc7" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="2507-8079-dbde-b486" name="Gorehoof" hidden="true" collective="false" import="true" targetId="e962-9c33-8893-9d75" type="selectionEntry">
       <modifiers>
@@ -110,7 +113,7 @@
         <categoryLink id="f3df-375b-8408-2f1f" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4815-d1b3-1bfa-b3dc" name="Grashrak" hidden="true" collective="false" import="true" targetId="c89a-7a43-83ab-4dcf" type="selectionEntry">
+    <entryLink id="4815-d1b3-1bfa-b3dc" name="Grashrak Fellhoof" hidden="true" collective="false" import="true" targetId="c89a-7a43-83ab-4dcf" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -130,6 +133,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="c328-25f3-d3b5-bbfc" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>
@@ -811,8 +817,8 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
                 <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -852,6 +858,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122e-0e09-f3c2-01a8" type="max"/>
+      </constraints>
       <profiles>
         <profile id="82a9-58aa-eff5-f12f" name="Grashrak Fellhoof" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>

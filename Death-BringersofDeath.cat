@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ece1-6b27-e69d-3e37" name="Death - Bringers of Death" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ece1-6b27-e69d-3e37" name="Death - Bringers of Death" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e49a-8bc9-e96f-bde1" name="Abhorrant Archregent" hidden="false" collective="false" import="true" targetId="699f-0eba-7468-76ca" type="selectionEntry">
       <modifiers>
@@ -443,6 +443,401 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="6f7a-18e9-9f34-1fe3" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="187b-6cdb-0817-fa9e" name="Prince Duvalle" hidden="false" collective="false" import="true" targetId="d2d3-e552-6f0d-111f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="023b-175d-21c0-1b46" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="30c7-6b4c-6b97-eb8c" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="c8ca-c3eb-fc28-f20a" name="Bladeborn Duvalle" hidden="false" targetId="395a-c34a-df05-ee2f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4416-6de7-e8d8-2d97" name="The Ever-hanged" hidden="true" collective="false" import="true" targetId="3f17-cc30-b44d-aaee" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="011e-91df-f669-9595" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d235-aebe-9f9c-33d8" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0351-d68d-5b50-bcde" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2fad-1d73-8275-15ec" name="Thorns of the Briar Queen Chainrasp" hidden="true" collective="false" import="true" targetId="ad58-bd6d-1846-6772" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="011e-91df-f669-9595" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="61a7-7599-83ee-6afe" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="756c-5dfb-09a7-0ca4" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="366f-d890-418c-e0a9" name="Varclav the Cruel" hidden="true" collective="false" import="true" targetId="cec6-0f83-2713-a2f4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="011e-91df-f669-9595" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1587-90c7-55df-13ec" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2254-1661-5957-0605" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6ed6-44b7-c70d-ec43" name="Duke Crakmarrow" hidden="false" collective="false" import="true" targetId="5232-48c9-998c-1341" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986a-3b69-d565-d503" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8ca6-bb08-b549-3251" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="662b-a7bc-aab3-20b1" name="Bladeborn Duke" hidden="false" targetId="0a20-5d75-606a-ccad" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2d46-f9b7-93d7-3419" name="Valreek, The Tracker" hidden="true" collective="false" import="true" targetId="5070-8b19-56f2-415e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a20-5d75-606a-ccad" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5e2-358f-c520-d7c0" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5bb3-3a21-579e-1119" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8f90-2ff0-f0ba-ae19" name="Night&apos;s Herald" hidden="true" collective="false" import="true" targetId="5d98-a368-3271-523c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a20-5d75-606a-ccad" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e981-327a-6248-2749" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6e28-4087-bd9a-4798" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cfd4-440b-1a3b-70c9" name="Royal Butcher" hidden="true" collective="false" import="true" targetId="9792-ca1d-da77-7f65" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a20-5d75-606a-ccad" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d99-7c69-11cb-de3e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="78b5-cad2-bbe1-66ef" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="76a3-2272-fc90-f798" name="Master Talon" hidden="true" collective="false" import="true" targetId="472d-6b4a-4570-aadf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a20-5d75-606a-ccad" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4fd-bde3-a8b7-7948" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d1d6-8ca3-3c98-a529" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c7df-66c9-35fc-968e" name="Duke&apos;s Harriers" hidden="true" collective="false" import="true" targetId="7abf-45d2-57ac-fd22" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a20-5d75-606a-ccad" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f88-16d6-1b15-d690" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f601-d1ad-8d4c-5aae" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8e62-4e2a-e548-745e" name="Hakor" hidden="true" collective="false" import="true" targetId="5f3c-f456-cc48-519b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d85-2ae1-6124-5613" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8612-0d8c-14bf-ae53" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="eb08-35ae-86b4-1614" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="17fd-6c1a-fdba-2f97" name="Mir Kainan" hidden="false" collective="false" import="true" targetId="3300-3a15-2a9f-8182" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbf9-8fc9-d1b4-21aa" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8286-b869-dc41-e1d3" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="7776-5f57-6952-8a78" name="Bladeborn Kainan" hidden="false" targetId="4d85-2ae1-6124-5613" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="13e9-61d8-f3f7-d79a" name="Binar Khenta" hidden="true" collective="false" import="true" targetId="e955-e286-da88-e5d1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d85-2ae1-6124-5613" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5880-6afb-3e75-c432" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b619-1e9d-8f9b-767a" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6d9b-00ee-2309-b282" name="Senha" hidden="true" collective="false" import="true" targetId="c01e-57f6-89e9-0535" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d85-2ae1-6124-5613" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5ce2-96f1-c079-1582" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c569-b9db-6e3b-7f9f" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e774-2743-82d6-d0f9" name="Nohem" hidden="true" collective="false" import="true" targetId="cbfc-5b90-885a-d237" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d85-2ae1-6124-5613" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d1a-5468-19ba-7f0b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1a15-1a69-74ca-e89d" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e37d-7bab-735e-ec4f" name="Karu" hidden="true" collective="false" import="true" targetId="caf2-12e6-053e-a91e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d85-2ae1-6124-5613" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2a94-b46a-55e9-c689" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="40ea-b1bf-0f4e-6964" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1953-fbb1-d76c-c051" name="Gorath the Enforcer" hidden="true" collective="false" import="true" targetId="061f-f514-15a6-c64b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="395a-c34a-df05-ee2f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a08-07fc-da71-a912" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2b20-277c-bfe9-84dd" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3814-55de-0f8a-8697" name="The Briar Queen" hidden="false" collective="false" import="true" targetId="c616-ff1e-6682-9aa5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986a-3b69-d565-d503" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4993-67a2-bd07-c1a4" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="ebac-25ba-ae21-9d61" name="Bladeborn Briar" hidden="false" targetId="011e-91df-f669-9595" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4d47-cdb2-5de6-027f" name="The Sepulchral Warden" hidden="false" collective="false" import="true" targetId="6189-b290-9840-298f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="023b-175d-21c0-1b46" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2b82-81e4-3b0a-1555" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="5fb6-30c5-9771-3e92" name="Bladeborn Sepulchral" hidden="false" targetId="7304-52df-8e95-78ca" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c336-2224-835c-5686" name="Vellas von Faine" hidden="true" collective="false" import="true" targetId="873e-1f7b-ed91-a6c2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="395a-c34a-df05-ee2f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4be-1e61-2fa0-4196" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c765-734d-e986-1db5" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d5af-e839-474e-c3d6" name="Ennias Curse-born" hidden="true" collective="false" import="true" targetId="4fd3-d1c8-693f-e718" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="395a-c34a-df05-ee2f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dd88-4261-abb1-120e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="91b0-81ed-b7c6-0d2c" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fa9d-58ed-ee2c-c4b4" name="The Prince of Dust" hidden="true" collective="false" import="true" targetId="73ab-945e-a0c5-cabc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7304-52df-8e95-78ca" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ce6-262c-2fed-7099" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="259d-8854-f9fa-2d8d" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ae46-09a9-8fd8-bf65" name="Gristlewel, Greatsword" hidden="true" collective="false" import="true" targetId="c9e2-907c-49cd-9c0f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a20-5d75-606a-ccad" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8bb3-9cc8-02c0-5cf1" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9f29-82fd-e05c-3c23" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d660-8e6c-7fed-5f5b" name="The Champion" hidden="true" collective="false" import="true" targetId="2f51-c55b-dbbc-ea4b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7304-52df-8e95-78ca" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aea6-3a55-09da-5198" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4bbf-349f-6eff-bbc3" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="00e3-c9e1-580f-3d19" name="The Harvester" hidden="true" collective="false" import="true" targetId="b520-a2f2-2a96-14f7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7304-52df-8e95-78ca" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c3d-f7c5-c799-1501" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0d17-cb04-97c4-bf1e" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0ac6-82a7-1720-a3f7" name="Petitioner with Sword" hidden="true" collective="false" import="true" targetId="b01e-b5d7-a3fd-46da" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7304-52df-8e95-78ca" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf1e-2a31-19ad-fb1b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e093-2c30-9b29-dda1" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ceb0-fe5d-0184-e3a4" name="Petitioner with Sword and Shield" hidden="true" collective="false" import="true" targetId="0f39-8038-2423-bba3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7304-52df-8e95-78ca" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d62-f4a2-910e-f2b3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c10f-80cf-52e7-b903" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
