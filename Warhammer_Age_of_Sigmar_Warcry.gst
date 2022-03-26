@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="44" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="45" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="8096-c20e-edc8-1a25" name="Glory" defaultCostLimit="-1.0" hidden="false"/>
@@ -778,21 +778,72 @@
       <description>Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less until the end of their activation.
 ⠀</description>
     </rule>
-    <rule id="41cd-5582-d214-b260" name="⚄ Varanite Delve Universal Abilities ⚄" hidden="false"/>
-    <rule id="0419-2861-a906-c602" name="⚄  ⚁ [Double] Turn Delve Engine On ⚄" hidden="false">
+    <rule id="41cd-5582-d214-b260" name="⚄ Varanite Delve Universal Abilities ⚄" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="0419-2861-a906-c602" name="⚄  ⚁ [Double] Turn Delve Engine On ⚄" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if they are within 1&quot; of the operating mechanism of a delve engine that is turned off.  That delve engine is now turned on.  Roll a dice.  You can pick a number of sluices equal to the roll to become hazardous.  Each sluice picked must either be connected to the delve engine or connected to another sluice that has already been picked.  Allocate 2D6 damage points to each fighter on any hazardous sluices.  In addition, allocate D6 damage points to each fighter that is not on but is within 3&quot; of any hazardous sluices, excluding the fighter using this ability.</description>
     </rule>
-    <rule id="2720-6e07-ee02-5918" name="⚅ Catacombs Universal Abilities ⚅" hidden="false"/>
-    <rule id="b8a4-8813-32d1-e867" name="⚅  ⚁ [Double] Lurk in the Shadows ⚅" hidden="false">
+    <rule id="2720-6e07-ee02-5918" name="⚅ Catacombs Universal Abilities ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="b8a4-8813-32d1-e867" name="⚅  ⚁ [Double] Lurk in the Shadows ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <description>Until the end of the battle round, this fighter is not visible to enemy fighters more than 6&quot; away if this fighter is within 1&quot; of a dungeon wall.</description>
     </rule>
-    <rule id="9f7a-5cd5-de6c-787f" name="⚅ ⚁ [Double] Breach Door ⚅" hidden="false">
+    <rule id="9f7a-5cd5-de6c-787f" name="⚅ ⚁ [Double] Breach Door ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <description>Only fighters that do not have the Nighthaunt runemark can use this ability.  A fighter can use this ability only if they are within 1&quot; of a sealed dungeon door.  Pick 1 weapon from this fighter&apos;s fighter card that has a Range characteristic of 3 or less and roll a number of dice equal to the value of this ability.  Add the number of dice that scored a 2+ to the Strength characteristic of the weapon you picked.  If the score is 6 or more, that dungeon door is opened.</description>
     </rule>
-    <rule id="58e2-11d8-d1a0-e03f" name="⚅ ⚂ [Triple] Push into Pit ⚅" hidden="false">
+    <rule id="58e2-11d8-d1a0-e03f" name="⚅ ⚂ [Triple] Push into Pit ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <description>Pick a visible enemy fighter within 1&quot; of this fighter and within 1/2&quot; of a pit.  Both players roll a dice and add the roll to their fighter&apos;s Toughness characteristic.  If your score is higher than your opponent&apos;s, the enemy fighter is taken down.</description>
     </rule>
-    <rule id="8090-d607-b088-c546" name="⚄ ⚂ [Triple]Turn Delve Engine Off ⚄" hidden="false">
+    <rule id="8090-d607-b088-c546" name="⚄ ⚂ [Triple]Turn Delve Engine Off ⚄" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <description>A fighter can use this ability only if they are within 1&quot; of the operating mechanism of a delve engine that is turned on.  That delve engine is now turned off.  You can pick up to 6 hazardous sluices to no longer be hazardous.  Each sluice picked must either be connected to the delve engine or connected to another sluice that has already been picked.</description>
     </rule>
   </rules>
@@ -2456,6 +2507,40 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cfa0-ed89-dc32-1e75" name="Runemarks" hidden="false" collective="false" import="true"/>
+    <selectionEntryGroup id="83c1-486a-fac1-2cac" name="Optional Universal Abilities" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ca4-e66d-9403-64a5" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="8c18-3fe6-a00e-8ca4" name="Show Catacombs Abilities" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd9-1c3f-10be-aa99" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2212-4db6-8d91-4d04" name="Show Red Harvest Abilities" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cadc-b2d5-3215-849a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="dd17-5f25-3a66-0d5a" name="Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">

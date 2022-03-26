@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal - Leaders &amp; Abilities" revision="8" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal - Leaders &amp; Abilities" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="16fa-f517-7f33-f908" name="Corvus Leaders" hidden="false"/>
   </categoryEntries>
@@ -106,21 +106,17 @@
       </modifiers>
       <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. Add 1 to the Strength characteristiic of that attack action if the fighter finished the move action 3&quot; or more vertically lower than their starting position.</description>
     </rule>
-    <rule id="0bc9-b2c8-9dca-bb1f" name="⚅ Dungeon Abilities  ⚅" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ee2-0090-d984-30c4" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule id="2397-add7-5843-69fc" name="⚅ ⚁ [Double] Wall Run  ⚅" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ee2-0090-d984-30c4" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ee2-0090-d984-30c4" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <description>A fighter can use this ability only if they are within 1&quot; of a dungeon wall.  Until the end of this fighter&apos;s next move action this activation, this fighter can move over other fighters as if they could fly.  However, during that move action, this fighter must stay within 1&quot; of a dungeon wall.</description>
@@ -128,9 +124,14 @@
     <rule id="c4a9-4d78-bf21-a5af" name="⚅ ⚃ [Quad] Running Strike ⚅" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ee2-0090-d984-30c4" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ee2-0090-d984-30c4" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <description>This fighter uses the &quot;Wall Run&quot; ability, then makes a bonus move action, and can then make a bonus attack action.</description>
@@ -186,6 +187,7 @@
         </entryLink>
         <entryLink id="9da3-51f4-346c-447a" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
         <entryLink id="29d2-ba63-e2d6-8476" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="f1e4-b64b-3e38-6058" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
