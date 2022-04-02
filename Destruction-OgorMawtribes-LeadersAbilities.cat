@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9e73-1b18-7f12-0282" name="Destruction - Ogor Mawtribes - Leaders &amp; Abilities" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9e73-1b18-7f12-0282" name="Destruction - Ogor Mawtribes - Leaders &amp; Abilities" revision="16" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="f34a-a216-6bd0-411d" name="Ogor Leaders" hidden="false"/>
+    <categoryEntry id="44e3-46cb-cc19-2d68" name="Underworlds Hrothgorn" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="3751-ba35-fd49-406d" name="Tyrant" hidden="true" collective="false" import="true" targetId="e125-9372-ee04-f967" type="selectionEntry">
@@ -98,6 +99,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="104d-63c5-e902-853a" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="628b-16db-633f-3fc9" name="Hrothgorn Mantrapper" hidden="true" collective="false" import="true" targetId="d1ff-9a15-56be-2668" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f34a-a216-6bd0-411d" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="76f9-cceb-74cb-0ddd" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -280,6 +293,39 @@
         </modifier>
       </modifiers>
       <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3” of this fighter.
+⠀</description>
+    </rule>
+    <rule id="5a54-78ac-59a1-e84d" name="⚁ [Double] Lay Mantrap" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb8c-205b-371c-1355" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cab-4801-8446-647d" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can only use this ability once per battle.  Pick a point on a platform or the battlefield floor within 3&quot; of this fighter that is more than 1&quot; away from all enemy fighters and set up the Bushwakka&apos;s Trap marker.  Allocate 2D6 damage pints to the first enemy fighter to move within 1&quot; of the marker, then remove the marker.</description>
+    </rule>
+    <rule id="6d22-ffbc-f56a-f4c2" name="⚂ [Triple] Here You Go, Boss!" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb8c-205b-371c-1355" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cab-4801-8446-647d" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they are within 2&quot; of a friendly Hrothgorn Mantrapper.  that Hrothgorn Mantrapper makes a bonus attack action that has a Ranged Weapon runemark.
 ⠀</description>
     </rule>
   </rules>
@@ -685,6 +731,258 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fb8c-205b-371c-1355" name="Hrothgorn&apos;s Mantrappers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caf0-837f-fe45-b372" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f127-a97e-76d9-afb8" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d1ff-9a15-56be-2668" name="Hrothgorn Mantrapper" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1984-8994-d4ea-8f3a" name="Hrothgorn Mantrapper" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">40</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4391-81fd-9eff-e46f" name="Trap Launcher" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-9</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b82-11df-d66d-6e85" name="Hunting Knife" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="687e-56e7-943f-2657" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="4310-d834-ab9c-392c" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="2c6a-75df-964a-984f" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+            <entryLink id="44e5-80dc-68e3-423e" name="Hrothgorn&apos;s Mantrappers" hidden="false" collective="false" import="true" targetId="fb8c-205b-371c-1355" type="selectionEntry"/>
+            <entryLink id="6402-fafd-7ecc-98f8" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="9196-f362-9644-23b2" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="79ce-bfd9-11c1-0b7f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="c4e6-fa85-674f-cfa5" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="300.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ebb4-23d5-b6e8-8098" name="Thrafnir" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="140f-3ee7-7831-0513" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c7c7-d0d5-fd10-d4ef" name="Thrafnir" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e8b-2d95-9ace-5658" name="Gulping Bite" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a541-96e7-f8fe-bce3" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="e85d-2275-d965-16f0" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e412-3549-935e-eae1" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="cd48-3db6-1efa-a63e" name="Hrothgorn&apos;s Mantrappers" hidden="false" collective="false" import="true" targetId="fb8c-205b-371c-1355" type="selectionEntry"/>
+            <entryLink id="7a2a-d6ed-ee3e-28cd" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+            <entryLink id="27d2-2184-3723-0a66" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="a59d-9885-90a9-922b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="455b-77cc-8487-1fd7" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5725-7a6b-d394-f1e5" name="Luggit &amp; Thwak" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe6-d51e-4035-f7cb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6b19-9cf0-61a6-53fd" name="Luggit &amp; Thwak" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dec6-fc46-d3b9-fee1" name="Motley Assortment of Weapons and Sharp Stuff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a4de-9bac-b22c-9f98" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="a322-d783-c40d-bb06" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b278-d300-bc29-3193" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="2ce6-3b4f-166a-227c" name="Hrothgorn&apos;s Mantrappers" hidden="false" collective="false" import="true" targetId="fb8c-205b-371c-1355" type="selectionEntry"/>
+            <entryLink id="de01-d63b-1897-7d28" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="3b1b-fff9-cd4c-2d49" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="6702-4421-49b4-da3f" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0eb1-d1c0-040c-1ec4" name="Bushwakka" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64df-0a6f-50bc-1eb5" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e792-cae7-03c8-d056" name="Bushwakka" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2fd-09f8-6060-f7f9" name="Motley Assortment of Weapons and Sharp Stuff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5ec4-7a4e-dc0f-932e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="ee0e-eaaa-4acd-9660" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="be95-d181-552a-db9f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="5f8b-1c48-0a87-29d9" name="Hrothgorn&apos;s Mantrappers" hidden="false" collective="false" import="true" targetId="fb8c-205b-371c-1355" type="selectionEntry"/>
+            <entryLink id="dfc1-2b28-e177-8ef4" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+            <entryLink id="266d-76b7-d587-b5cc" name=" Trapper" hidden="false" collective="false" import="true" targetId="dd95-1c17-a923-4487" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="6445-0a0c-7eeb-109f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="46e9-071d-d346-59db" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="40.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17a2-50f6-b1dd-1e45" name="Quiv" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8424-26de-cf00-5cc1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a4b4-972c-0475-3f5c" name="Quiv" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="531c-d0af-65a1-0f8e" name="Motley Assortment of Weapons and Sharp Stuff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="015c-4871-c06e-aa51" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="aa23-a765-dd29-50ec" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e8a6-72a5-eb00-067a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="bcb4-492f-0989-1136" name="Hrothgorn&apos;s Mantrappers" hidden="false" collective="false" import="true" targetId="fb8c-205b-371c-1355" type="selectionEntry"/>
+            <entryLink id="7c26-7e83-e51d-5f42" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+            <entryLink id="3785-5954-6138-b98b" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="ada7-9417-745d-f259" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="5d0e-21c3-aa00-c131" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="45.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>

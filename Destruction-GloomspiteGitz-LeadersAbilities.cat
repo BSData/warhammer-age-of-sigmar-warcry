@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9551-9b76-5ee4-5caa" name="Destruction - Gloomspite Gitz - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9551-9b76-5ee4-5caa" name="Destruction - Gloomspite Gitz - Leaders &amp; Abilities" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="7add-738c-9b26-a074" name="Gitz Leaders" hidden="false"/>
+    <categoryEntry id="26ac-b856-360f-e933" name="Underworlds Zarbag" hidden="false"/>
+    <categoryEntry id="5860-76cd-4619-db46" name="Underworlds Mollog" hidden="false"/>
+    <categoryEntry id="86fe-4c16-d007-4ba5" name="Underworlds Rippa" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="7d90-f8c2-31f8-61ad" name="Bounder Boss" hidden="true" collective="false" import="true" targetId="5afa-3ad6-559e-7d82" type="selectionEntry">
@@ -112,6 +115,42 @@
         <categoryLink id="6073-33c5-c36f-2158" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="04f8-b3c4-2a2c-58c3" name="Zarbag" hidden="true" collective="false" import="true" targetId="6dae-d8e7-4643-023b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7add-738c-9b26-a074" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="db72-280a-5790-b264" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ca55-f5ae-745a-aa99" name="Mollog the Mighty" hidden="true" collective="false" import="true" targetId="5093-8489-c29a-f7cc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7add-738c-9b26-a074" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="75f9-f2cc-9edd-7ba8" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9929-c31d-3910-9f24" name="Rippa Narkbad" hidden="true" collective="false" import="true" targetId="edad-3366-e92a-e71a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7add-738c-9b26-a074" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2ca8-2391-a06e-a10c" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="3e30-07a8-ed67-7155" name="⚂ [Triple] Magic Spore Maws" hidden="true">
@@ -162,21 +201,6 @@
         </modifier>
       </modifiers>
       <description>Until the end of the battle round ,add the value of this ability to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6” of this fighter
-⠀</description>
-    </rule>
-    <rule id="bf2c-3370-e5af-5d8b" name="⚁ [Double] Backstabbing Mob" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if there is a visible friendly fighter 1” of them. Until the end of this fighter’s activation, add 1 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less.
 ⠀</description>
     </rule>
     <rule id="9c00-45f7-d9ef-3165" name="⚁ [Double] Barbed Net" hidden="true">
@@ -354,6 +378,134 @@
       </modifiers>
       <description>Pick an enemy fighter within a number of inches of this fighter equal to the value of this ability. Until the end of the battle round, subtract the value of this ability from the Attacks characteristic (to a minimum of 1) of the attack actions made by that fighter.
 ⠀</description>
+    </rule>
+    <rule id="d213-9eb1-d6b3-366d" name="⚁ [Double] Face of Da Bad Moon" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="304f-eacd-0665-dd1b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 9&quot; of this fighter that is within 1&quot; of a friendly fighter.  That enemy fighter must make a bonus disengage action.  If the ycannot do so, allocate D6 damage pints to that enemy fighter instead.
+⠀</description>
+    </rule>
+    <rule id="e75b-cf7f-a84c-ccb6" name="⚃ [Quad] Whirling Death" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="304f-eacd-0665-dd1b" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.
+⠀</description>
+    </rule>
+    <rule id="71a4-f009-5517-b0f2" name="⚁ [Double] Hurl Jabbertoad" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d7ea-c105-853a-a0b0" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice.  For each 4-5, allocate 1 damaage point to that fighter.  For each 6, allocate a number of damage pints equal to the value of this ability to that fighter.</description>
+    </rule>
+    <rule id="ebb2-9828-ec27-13f0" name="⚁ [Double] Summon Stalagsquig" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d7ea-c105-853a-a0b0" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can only use this ability once per battle.  Pick a point on a platform or the battlefield floor within 3&quot; of this fighter that is more than 1&quot; from all enemy fighters and set up the Stalagsquig marker.  Allocate 2D6 damage points to the first enemy fighter to move within 1&quot; of the marker, then remove the marker.
+⠀</description>
+    </rule>
+    <rule id="7b4d-9f13-53ae-fbf6" name="⚂ [Triple] Summon Spiteshroom" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d7ea-c105-853a-a0b0" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can only use this ability once per battle.  Pick a point on a platform or the battlefield floor within 3&quot; of this fighter that is more than 1&quot; from all enemy fighters and set up the Spiteshroom marker.  Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by the enemy fighters while they are within 6&quot; of the Spiteshroom marker.  Fighters cannot end a move on the Spiteshroom marker.</description>
+    </rule>
+    <rule id="184c-19cd-6163-9f42" name="⚁ [Double] Backstabbing Mob" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if there is a visible friendly fighter 1” of them. Until the end of this fighter’s activation, add 1 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less.
+⠀</description>
+    </rule>
+    <rule id="e2a9-244c-51f3-e756" name="⚁ [Double] Snarlfang&apos;s Jaws" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afff-fffb-0e18-e2b5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll 2 dice.  For each 4-5, allocate 1 damage point to that fighter.  For each 6, allocate a number of damage points equal to the value of this ability to that fighter.</description>
+    </rule>
+    <rule id="6e00-5c57-5db2-47d1" name="⚃ [Quad] Ferocious Presence" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afff-fffb-0e18-e2b5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a64d-7475-ae48-059a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points equal to the value of this ability to that fighter.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -992,6 +1144,580 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6dae-d8e7-4643-023b" name="Zarbag" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdec-bb7c-3e33-0cdb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ce00-f735-2059-62b3" name="Zarbag" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1fcc-bcaf-8684-29ba" name="Cursed Sickle" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3054-d937-ebfc-b01d" name="Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="ac75-9aa2-cd62-fa73" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="21da-fe41-bbf4-a540" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="1189-3235-df58-aa70" name="Zarbag&apos;s Gitz" hidden="false" collective="false" import="true" targetId="304f-eacd-0665-dd1b" type="selectionEntry"/>
+            <entryLink id="6414-d92f-68df-d479" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="dc42-c0ec-8358-92e1" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="49a5-3808-8e5f-62eb" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="5e0e-09c4-e817-6b81" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="304f-eacd-0665-dd1b" name="Zarbag&apos;s Gitz" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef10-8aa7-4ae4-4ad9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de01-39b6-c4f9-9ebb" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4882-c72c-89eb-2755" name="Drizgit da Squig Herder" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f8a-0dbf-031e-c1a3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c757-d36d-a9a4-eb0b" name="Drizgit da Squig Herder" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="41cd-4805-7098-fe0a" name="Squig Prodder" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e3ad-0252-a695-c720" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="886b-da84-8a28-cdb1" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4703-032a-25dd-802f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e064-9517-e7d3-853d" name="Zarbag&apos;s Gitz" hidden="false" collective="false" import="true" targetId="304f-eacd-0665-dd1b" type="selectionEntry"/>
+            <entryLink id="4d48-cd37-ef4a-fa4a" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="b101-c8d1-f58e-77af" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="92de-2d78-5268-8437" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="9fee-72b9-c56f-ba63" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ea8b-a71b-714a-78e4" name="Prog da Netter" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e769-7360-cb43-b856" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5dfa-d90a-b775-8bee" name="Prog da Netter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6080-da13-a623-2c5a" name="Slitta and Barbed Net" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e9db-f45a-8eeb-5a40" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9918-44f0-d92d-b3f3" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e323-a1ad-6140-c962" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d163-12aa-d2b3-9229" name="Zarbag&apos;s Gitz" hidden="false" collective="false" import="true" targetId="304f-eacd-0665-dd1b" type="selectionEntry"/>
+            <entryLink id="bc07-2dc9-5118-1e1d" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="4fa6-4241-ea5a-4fbf" name=" Trapper" hidden="false" collective="false" import="true" targetId="dd95-1c17-a923-4487" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="dfaf-44a8-b1c7-3ef9" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="163d-3cac-b025-b266" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="50.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e84-ff2d-354c-6bbb" name="Zarbag&apos;s Gitz Shoota" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a57b-21c9-1973-e1e7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a4b6-e2b0-5181-55ff" name="Zarbag&apos;s Gitz Shoota" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a2e-c078-f905-f103" name="Moonclan Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-12</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3ed9-5b05-79fa-1863" name="Slitta" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="14cd-6cc0-d79b-148d" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9d9e-d0d3-0d40-2137" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8855-e8cf-3b72-6005" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8858-1ee6-562d-41b8" name="Zarbag&apos;s Gitz" hidden="false" collective="false" import="true" targetId="304f-eacd-0665-dd1b" type="selectionEntry"/>
+            <entryLink id="08f3-98af-9215-e4eb" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="cc83-abfe-e1a3-3c47" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="7db0-6ee4-3d54-b36f" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3efa-1e09-f687-495a" name="Zarbag&apos;s Gitz Squig" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff82-1c9b-55a2-7435" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2d34-54a9-9470-5017" name="Zarbag&apos;s Gitz Squig" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1254-b644-dcc9-ebfd" name="Massive Gob Full of Teeth" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="83f6-4624-83ac-1568" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="1f54-b568-6209-2dde" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6eb4-ff2e-adcc-bf68" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8367-52be-a54e-5139" name="Zarbag&apos;s Gitz" hidden="false" collective="false" import="true" targetId="304f-eacd-0665-dd1b" type="selectionEntry"/>
+            <entryLink id="c1f1-9d70-36b1-f91d" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
+            <entryLink id="13bb-7179-6f05-aa8d" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="854e-364f-415b-1262" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="066a-e823-431b-dc63" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="218e-acc7-da2d-71fc" name="Snirk Sourtongue" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42fa-5246-7ab6-de2d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2f34-2c99-5276-b516" name="Snirk Sourtongue" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0f21-88d0-16fe-d4dc" name="Ball and Chain" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2276-dc29-3371-449e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="0f0b-501f-08e6-0c64" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="19ad-59b9-d112-fe3c" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="10f6-0d42-80a3-ef38" name="Zarbag&apos;s Gitz" hidden="false" collective="false" import="true" targetId="304f-eacd-0665-dd1b" type="selectionEntry"/>
+            <entryLink id="e385-c3f0-6f46-cbdb" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="160c-cd8f-9d89-d7d1" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="ea83-60cc-de8c-aa08" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="a4e8-cff0-8b05-8d9d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7ea-c105-853a-a0b0" name="Mollog&apos;s Mob" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c0a-3c26-6f64-3d3b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a9d-5378-a594-cf14" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5093-8489-c29a-f7cc" name="Mollog the Mighty" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd51-b20a-4d85-4f9a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1fad-e799-0179-ab24" name="Mollog the Mighty" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ad96-068c-01f6-328f" name="Puff-fungus Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">5/10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="a46a-82e5-0ee1-576b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="521b-1159-f3b8-a12f" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="6ca0-76fd-377b-a884" name="Mollog&apos;s Mob" hidden="false" collective="false" import="true" targetId="d7ea-c105-853a-a0b0" type="selectionEntry"/>
+            <entryLink id="e4bb-9e16-cc8a-411d" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="0da0-5b63-63f8-eea9" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="13b6-2458-402b-e880" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="e5b7-40fb-985d-2f0f" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="330.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e595-6e10-fa4a-a12a" name="Bat Squig" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f365-1530-ae27-b711" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="416e-2b44-81de-739f" name="Bat Squig" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5955-d184-00cd-12bb" name="Gnashing Jaws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d01e-9d0b-9834-2c1d" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="1cfc-fc7c-7b53-2c1c" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a634-5523-e80e-be7a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="6c10-d93d-3b7e-bad2" name="Mollog&apos;s Mob" hidden="false" collective="false" import="true" targetId="d7ea-c105-853a-a0b0" type="selectionEntry"/>
+            <entryLink id="53e8-b20e-bf78-4bdc" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="493a-4254-4d61-fc59" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
+            <entryLink id="17f3-3933-74c7-9ce7" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="90a3-12e1-8130-7279" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="5ccb-7389-d84d-66ff" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="afff-fffb-0e18-e2b5" name="Rippa&apos;s Snarlfangs" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c06-1fdc-a140-1511" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="183c-015f-bced-dd1a" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="edad-3366-e92a-e71a" name="Rippa Narkbad" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15eb-9cb0-fc74-cd6c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="858d-b3a3-3ab8-fea9" name="Rippa Narkbad" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c51-310c-e9ce-ddb3" name="Boss Loppa" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="60cb-f2c6-45dc-05b9" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="a067-238b-6fc8-e5e7" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="7587-6471-0d23-0004" name="Rippa&apos;s Snarlfangs" hidden="false" collective="false" import="true" targetId="afff-fffb-0e18-e2b5" type="selectionEntry"/>
+            <entryLink id="fcd5-bd25-11bd-06eb" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="a9e2-9fa4-6f11-476e" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7a58-bc94-3e73-e82c" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="a325-83a4-2dc6-c93e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="a4bb-b64b-11d0-32e8" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9489-0a6d-cf60-a16f" name="Mean-eye" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2788-b9d5-adab-49c2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2713-35f4-ec5e-ab02" name="Mean-eye" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="caee-1f0d-5fe4-7745" name="Grot Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e3f2-6bde-ba9d-328c" name="Bow Stave" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="be83-41b4-1254-98ba" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="6119-b7e0-47e9-d617" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cfce-f6b3-3b2b-38fc" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="cbc0-69b2-6e44-3bfd" name="Rippa&apos;s Snarlfangs" hidden="false" collective="false" import="true" targetId="afff-fffb-0e18-e2b5" type="selectionEntry"/>
+            <entryLink id="dd93-49a2-1ab2-a11c" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="4412-8a68-2c27-b57b" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="e5a5-4b2c-c297-b6d8" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="1329-bac9-9d5d-4e99" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="657b-61dc-bde3-1fe0" name="Stabbit" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0797-3e80-c58f-052e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8996-c424-2f0c-b84c" name="Stabbit" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d8d8-263b-682d-0c18" name="Stabbin&apos; Stikka" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6d93-fa5d-96f0-d015" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="f168-2a5a-bd16-61b4" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e125-6b98-3971-1c21" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="5b59-c976-da03-cf2b" name="Rippa&apos;s Snarlfangs" hidden="false" collective="false" import="true" targetId="afff-fffb-0e18-e2b5" type="selectionEntry"/>
+            <entryLink id="3584-0799-70e0-bd0e" name=" Gloomspite Gitz" hidden="false" collective="false" import="true" targetId="a64d-7475-ae48-059a" type="selectionEntry"/>
+            <entryLink id="9f68-6def-ad2a-ff7e" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="dd94-43f9-cc81-86a6" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
+        <entryLink id="e94a-8999-764d-e734" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
