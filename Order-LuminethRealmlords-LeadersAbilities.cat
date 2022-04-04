@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="48b0-c69d-9fa7-f0ea" name="Order - Lumineth Realm-lords - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="48b0-c69d-9fa7-f0ea" name="Order - Lumineth Realm-lords - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="390c-221f-52e6-938f" name="Lumineth Leaders" hidden="false"/>
+    <categoryEntry id="586f-89fb-18eb-df7d" name="Underworlds Myari" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="71f5-d35e-7e8b-4157" name="Alarith Stonemage" hidden="true" collective="false" import="true" targetId="317f-e737-ab75-f432" type="selectionEntry">
@@ -158,6 +159,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="b09c-1de3-7d86-2d0c" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7365-5047-7ce3-7731" name="Myari Lightcaller" hidden="true" collective="false" import="true" targetId="9cbe-16fd-39b0-d60a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="390c-221f-52e6-938f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ea8c-6ff5-875f-87b6" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -347,6 +360,22 @@
         </modifier>
       </modifiers>
       <description>Allocate D3 damage points to all visible enemy fighters within 6&quot; of this fighter (roll for each fighter). In addition, until the end of the battle round, halve the Move characteristic of all fighters that are within 6&quot; of this fighter when this fighter uses this ability.</description>
+    </rule>
+    <rule id="15e7-fd50-c8b6-9b68" name="⚂ [Triple] Dazzling Light" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc96-a7c5-cae9-f1b2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002b-ecb4-29dc-bce6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -923,6 +952,223 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc96-a7c5-cae9-f1b2" name="Myari&apos;s Purifiers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6383-3e68-4fdd-f36b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eee-f5bd-9695-9743" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9cbe-16fd-39b0-d60a" name="Myari Lightcaller" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0723-b494-37d8-64ad" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a2b9-0370-63aa-27f6" name="Myari Lightcaller" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b34f-88f1-693b-b970" name="Staff of Enlightenment" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d2e-9202-3f87-3c97" name="Searing Beams" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="d971-e4f2-9807-d2e4" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="3b47-121c-51dc-62f5" name="Myari&apos;s Purifiers" hidden="false" collective="false" import="true" targetId="dc96-a7c5-cae9-f1b2" type="selectionEntry"/>
+            <entryLink id="a702-e028-2758-cc7d" name=" Lumineth Realm-lords" hidden="false" collective="false" import="true" targetId="002b-ecb4-29dc-bce6" type="selectionEntry"/>
+            <entryLink id="29c8-d2c6-e005-c346" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="a447-a926-fa5e-1f9a" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="6c94-bf81-70b6-9f79" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="472d-4441-4b66-12e2" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="2d8d-2882-98b3-4c0a" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e0c-0c7f-fff9-0b11" name="Bahannar" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd9-45d6-fb14-71bf" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9d70-970f-358d-5f88" name="Bahannar" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6eee-9064-2eaf-c654" name="Stone Mallet" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7ce8-bf06-0c97-6f4f" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="66d4-1484-8d8f-840f" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7bfb-1108-c5c4-af6e" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8259-6860-d395-8ef9" name="Myari&apos;s Purifiers" hidden="false" collective="false" import="true" targetId="dc96-a7c5-cae9-f1b2" type="selectionEntry"/>
+            <entryLink id="4921-92cc-004e-547a" name=" Lumineth Realm-lords" hidden="false" collective="false" import="true" targetId="002b-ecb4-29dc-bce6" type="selectionEntry"/>
+            <entryLink id="6cf3-c715-4aca-ba9b" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="164a-3473-26df-9863" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="bad8-4a1c-cb99-5689" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e9e-ddba-073a-cdf4" name="Ailenn, The Mind&apos;s Edge" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b39c-1045-0e68-60f8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e7b1-2574-d6f1-3e84" name="Ailenn, The Mind&apos;s Edge" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3c6-cbd1-6384-1099" name="Sunmetal Greatsword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7daa-f641-b7c5-1379" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="a404-ba72-a0ae-020f" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="08bb-3584-df2d-0377" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d76c-4090-c007-0696" name="Myari&apos;s Purifiers" hidden="false" collective="false" import="true" targetId="dc96-a7c5-cae9-f1b2" type="selectionEntry"/>
+            <entryLink id="5277-74a2-9710-c08f" name=" Lumineth Realm-lords" hidden="false" collective="false" import="true" targetId="002b-ecb4-29dc-bce6" type="selectionEntry"/>
+            <entryLink id="9e79-48cc-a26e-eab3" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+            <entryLink id="3525-f060-5583-f801" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="51dd-d013-67ac-d1e0" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="60c4-179f-e57a-cd0c" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1d1d-62d9-dd2c-9857" name="Senaela" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b95-7a85-c3a4-c6bf" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b07c-204d-8578-bba1" name="Senaela" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="77d3-191f-8364-b7ce" name="Auralan Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="62a4-9b14-b28d-6b82" name="Vanari Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="91d9-7978-f534-2170" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="c5f7-3631-102d-0387" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f8ac-ee4d-dcfb-dea2" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="72ff-5d6a-f6ad-e9f0" name="Myari&apos;s Purifiers" hidden="false" collective="false" import="true" targetId="dc96-a7c5-cae9-f1b2" type="selectionEntry"/>
+            <entryLink id="8a93-8e7e-7a4f-46f3" name=" Lumineth Realm-lords" hidden="false" collective="false" import="true" targetId="002b-ecb4-29dc-bce6" type="selectionEntry"/>
+            <entryLink id="3584-525f-23aa-f4a1" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="ecb7-78ce-f9cb-5d3d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="2676-1422-736c-9e9c" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>

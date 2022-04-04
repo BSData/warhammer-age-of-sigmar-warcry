@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6d44-e5d4-3849-6465" name="Order - Fyreslayers - Leaders &amp; Abiilities" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6d44-e5d4-3849-6465" name="Order - Fyreslayers - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="58c4-d0c9-5657-e1de" name="Fyreslayers Leaders" hidden="false"/>
+    <categoryEntry id="eba1-79f1-cb88-ebe7" name="Underworlds Fjul-Grimnir" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="16b0-c7cd-1919-0088" name="Auric Runefather" hidden="true" collective="false" import="true" targetId="971e-31ab-32fb-3a81" type="selectionEntry">
@@ -122,6 +123,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="add2-d1a8-f577-36bf" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f706-1621-1898-40a5" name="Fjul-Grimnir" hidden="true" collective="false" import="true" targetId="91d8-8c99-50df-541f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58c4-d0c9-5657-e1de" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6516-6c14-06b9-29dc" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -307,6 +320,21 @@
         </modifier>
       </modifiers>
       <description>Until the end of this fighter&apos;s activation, add the value of this ability to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="9e4d-6e83-3270-acc3" name="⚁ [Double] The Chosen Kin" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415a-1cfa-81b0-60e4" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly Fjul-Grimnir.  Until the end of this fighter&apos;s activation, add 2 to the Attacks characteristic of attack actions made by this fighter that have the Axe runemark.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -807,6 +835,203 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="415a-1cfa-81b0-60e4" name="The Chosen Axes" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc9e-1ab8-45f2-a27b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f1-ac8c-ad56-7d23" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="91d8-8c99-50df-541f" name="Fjul-Grimnir" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b44e-fec7-5b60-4b42" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="215d-5c26-32cc-05dc" name="Fjul-Grimnir" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">26</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="52b9-49bf-3ce7-fe20" name="Latchkey Grandaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="1e40-228c-c275-2406" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="6777-c50a-ca5f-147d" name=" Fyreslayers" hidden="false" collective="false" import="true" targetId="2f9d-e6df-414f-4429" type="selectionEntry"/>
+            <entryLink id="e41b-3744-2686-8eb1" name="The Chosen Axes" hidden="false" collective="false" import="true" targetId="415a-1cfa-81b0-60e4" type="selectionEntry"/>
+            <entryLink id="0690-c6fb-6eaa-ae5d" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="2e3c-854e-a7b7-6b6c" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7cbe-5a23-d45b-6e67" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="ca20-95f1-8f22-a502" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="09e8-fe55-eedb-b244" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17aa-cb60-0525-f36e" name="Tefk Flamebearer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13e0-c338-ef1a-61fe" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="496f-0231-db48-9841" name="Tefk Flamebearer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d5a8-e6dd-24de-baef" name="Pair of Firesteel Handaxes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e000-752e-2dca-2a35" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="49a6-165a-ebcc-6d9b" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9844-774e-5564-45c0" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="19d5-319b-e843-fbd5" name=" Fyreslayers" hidden="false" collective="false" import="true" targetId="2f9d-e6df-414f-4429" type="selectionEntry"/>
+            <entryLink id="cec8-5927-6fa2-fc60" name="The Chosen Axes" hidden="false" collective="false" import="true" targetId="415a-1cfa-81b0-60e4" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="ba1c-eab9-65b9-0657" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="d705-e15f-8d83-f00d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="20f8-c9e7-2332-7962" name="Mad Maegrim" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30cd-0249-15c1-4ca6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="40b1-10df-8f8a-2445" name="Mad Maegrim" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d0fe-9246-575a-add4" name="Pair of Firesteel Handaxes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0a7c-dc58-c6dc-ff2e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="da9c-ffc0-d44f-60ad" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a5dd-9c33-d253-8f9b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="3a2c-b574-7537-54f5" name=" Fyreslayers" hidden="false" collective="false" import="true" targetId="2f9d-e6df-414f-4429" type="selectionEntry"/>
+            <entryLink id="c306-2852-b773-9792" name="The Chosen Axes" hidden="false" collective="false" import="true" targetId="415a-1cfa-81b0-60e4" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="c391-823c-d9ac-7b44" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="2c0d-429d-d368-c941" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="284a-16ca-9b47-bf1f" name="Vol Orrukbane" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="302d-8693-1df5-8168" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a272-1448-14c4-2af8" name="Vol Orrukbane" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f884-c5e4-1da9-bc28" name="Firesteel Greataxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a90e-da05-1136-c959" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9209-78e3-0d76-9108" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="427d-1b8b-a16b-43b4" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="7c9a-38d7-f1da-8452" name=" Fyreslayers" hidden="false" collective="false" import="true" targetId="2f9d-e6df-414f-4429" type="selectionEntry"/>
+            <entryLink id="9216-4bde-37da-1480" name="The Chosen Axes" hidden="false" collective="false" import="true" targetId="415a-1cfa-81b0-60e4" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="db61-3177-2223-e51d" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="0e56-15bc-15d4-5fb7" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>

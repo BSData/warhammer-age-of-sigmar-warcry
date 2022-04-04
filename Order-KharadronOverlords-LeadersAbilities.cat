@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7178-41fb-d97d-27a5" name="Order - Kharadron Overlords - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7178-41fb-d97d-27a5" name="Order - Kharadron Overlords - Leaders &amp; Abilities" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="85ed-ff09-b982-c3a0" name="Kharadron Leaders" hidden="false"/>
+    <categoryEntry id="58ab-2895-af3e-bb4e" name="Underworlds Thundrik" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5e93-4053-cfc9-293c" name="Aether-khemist" hidden="true" collective="false" import="true" targetId="1a4a-c05d-7bd7-6cb4" type="selectionEntry">
@@ -110,6 +111,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="b3ef-b72a-37c8-3ee6" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5cdf-0e8c-5d33-6844" name="Bjorgen Thundrik" hidden="true" collective="false" import="true" targetId="7dd5-2114-0870-0e5a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="85ed-ff09-b982-c3a0" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="eff2-b2fa-1ed7-c9c0" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -265,6 +278,21 @@
         </modifier>
       </modifiers>
       <description>A fighter can use this ability only if they are within 3&quot; of an enemy fighter. Allocate a number of damage points equal of the value of this ability to enemy fighters within 1&quot; of this fighter. Then, this fighter makes a bonus disengage action.</description>
+    </rule>
+    <rule id="c812-ef72-2fdb-a368" name="⚂ [Triple] Win Recognition" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec12-4ef3-0df3-536a" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5158-eb23-f030-1001" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly Bjorgen Thundrik and it is the third battle round or later.  This fighter can make a bonus attack action.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -735,6 +763,292 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7dd5-2114-0870-0e5a" name="Bjorgen Thundrik" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10cb-f408-01c0-65e6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8d50-e5ee-3a35-327f" name="Bjorgen Thundrik" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">24</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d68e-c595-36fa-fa6f" name="Heavy Instruments" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6fb6-58c9-d619-40ca" name="Atmospheric Anatomiser" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-9</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="d509-ad28-eda7-88ee" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="dd20-8e91-eca7-9a35" name=" Kharadron Overlords" hidden="false" collective="false" import="true" targetId="5158-eb23-f030-1001" type="selectionEntry"/>
+            <entryLink id="b6f3-dd5d-c2e1-a9a6" name="Thundrik&apos;s Profiteers" hidden="false" collective="false" import="true" targetId="ec12-4ef3-0df3-536a" type="selectionEntry"/>
+            <entryLink id="2ca7-0736-c78f-a481" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="fe93-093d-9690-1bf5" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="e0de-2084-1736-794b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="6117-59d0-e875-2fb0" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="7494-32ad-fb27-aea6" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec12-4ef3-0df3-536a" name="Thundrik&apos;s Profiteers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89bc-367a-45ac-8164" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0448-2220-2300-376a" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="92c2-5bb9-cb7e-7911" name="Khazgan Drakkskewer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfa8-6930-c739-7938" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4518-85c0-33c2-6873" name="Khazgan Drakkskewer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b10-d900-87b3-0c34" name="Skypike" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="31ac-5cf4-e17f-014a" name="Vulcaniser Pistol" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3b32-8ddf-53bc-e97d" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="daba-2193-36fd-ba2d" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b8f3-0a55-2ddf-bbbc" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="f5c8-c8de-cb32-f3c3" name="Thundrik&apos;s Profiteers" hidden="false" collective="false" import="true" targetId="ec12-4ef3-0df3-536a" type="selectionEntry"/>
+            <entryLink id="eb00-f252-1f72-b929" name=" Kharadron Overlords" hidden="false" collective="false" import="true" targetId="5158-eb23-f030-1001" type="selectionEntry"/>
+            <entryLink id="756e-b93f-cfac-6a5d" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="6061-5711-d728-587a" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="5dda-f56a-34bc-3710" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="75dc-6f2d-a6d4-d55b" name="Dead-Eye Lund" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944e-27cb-445b-bb94" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e788-b6e8-5ef8-fb46" name="Dead-Eye Lund" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ee01-1ec8-3a84-259a" name="Gun Butt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="380b-47bd-f918-d31a" name="Aethershot Rifle" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1f18-11a7-b814-6f56" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="a767-31b6-7bd2-5cd0" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cea9-7510-cb6a-e471" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="1b65-c41d-0641-741a" name="Thundrik&apos;s Profiteers" hidden="false" collective="false" import="true" targetId="ec12-4ef3-0df3-536a" type="selectionEntry"/>
+            <entryLink id="00fa-3d94-b047-3bb1" name=" Kharadron Overlords" hidden="false" collective="false" import="true" targetId="5158-eb23-f030-1001" type="selectionEntry"/>
+            <entryLink id="cbe3-fe85-7a31-5bd4" name=" Elite" hidden="false" collective="false" import="true" targetId="f907-d5f0-c688-5596" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="3d72-2d9f-56b1-46ea" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="bdae-d649-cf12-319b" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="51e3-33bf-36e3-1429" name="Enrik Ironhail" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a2-97f3-b1ce-b7e1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="592b-ed30-f67e-1c15" name="Enrik Ironhail" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1e32-6f29-b7e1-7a5e" name="Gun Butt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b759-180e-e98b-c2f9" name="Aethermatic Volley Gun" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">6</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4da7-0b1b-164b-4db5" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="11c5-1fa1-8805-0303" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2ba2-688c-7f57-90a6" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e5d4-f4a2-86f5-8f9d" name="Thundrik&apos;s Profiteers" hidden="false" collective="false" import="true" targetId="ec12-4ef3-0df3-536a" type="selectionEntry"/>
+            <entryLink id="ceb9-05ea-843b-622d" name=" Kharadron Overlords" hidden="false" collective="false" import="true" targetId="5158-eb23-f030-1001" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="cb3f-291c-9a0e-3558" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="6b9a-e991-cb68-efc6" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0088-69ec-ab9a-c8c9" name="Garodd Alensen" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5300-e6f1-9cdc-6406" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="323d-6741-f411-8d20" name="Garodd Alensen" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2e21-f6cb-ad61-7f87" name="Arkanaut Cutter" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a94-6889-b89c-f2c2" name="Privateer Pistol" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ad21-b124-1653-0676" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="aa73-affd-5948-ecbd" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="42f3-553a-4b5b-bdf0" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="fce2-6db9-1be8-33bb" name="Thundrik&apos;s Profiteers" hidden="false" collective="false" import="true" targetId="ec12-4ef3-0df3-536a" type="selectionEntry"/>
+            <entryLink id="3330-585f-ada5-b3bf" name=" Kharadron Overlords" hidden="false" collective="false" import="true" targetId="5158-eb23-f030-1001" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="0d1c-9419-1bb9-4ae8" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="1068-5e2d-1336-c8f8" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>

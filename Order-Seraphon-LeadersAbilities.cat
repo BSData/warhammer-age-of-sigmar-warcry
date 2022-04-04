@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dc67-9928-1654-d38a" name="Order - Seraphon - Leaders &amp; Abilities" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="dc67-9928-1654-d38a" name="Order - Seraphon - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="9fbf-b960-2404-c860" name="Seraphon Leaders" hidden="false"/>
+    <categoryEntry id="67bb-ac4b-a519-41f9" name="Underworlds Kixi-Taka" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="c40d-fcee-e509-8334" name="Ripperdactyl Chief" hidden="true" collective="false" import="true" targetId="9147-e090-4937-63ce" type="selectionEntry">
@@ -208,6 +209,18 @@
         <categoryLink id="b7fe-9330-45c3-7be0" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="85a8-ac9f-a4d9-97ef" name="Kixi-Taka, The Diviner" hidden="true" collective="false" import="true" targetId="f60b-0b49-a321-6482" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9fbf-b960-2404-c860" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cd91-5354-31ac-df62" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="96bd-70c0-520f-6c99" name="⚃ [Quad] Revivifying Energies" hidden="true">
@@ -377,6 +390,38 @@
         </modifier>
       </modifiers>
       <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks and Strength charateristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+    </rule>
+    <rule id="58af-c9ba-a66f-5a40" name="⚁ [Double] Chameleon Ambush" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf90-4a31-8137-c1f5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5687-2c12-aaeb-9ae0" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>This fighter can use this ability only if there are no visible enemy fighters within 12&quot; of this fighter.  This fighter makes a bonus move action.</description>
+    </rule>
+    <rule id="f8c7-3f34-f9e2-4fbc" name="⚂ [Triple] Imbue with Azyrite Energy" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf90-4a31-8137-c1f5" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5687-2c12-aaeb-9ae0" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Move and Toughness characteristics of friendly fighters while they are within 9&quot; of this fighter.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -1158,6 +1203,297 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf90-4a31-8137-c1f5" name="The Starblood Stalkers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71b7-08b5-c95b-bc11" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aba-9d42-3ef3-204a" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f60b-0b49-a321-6482" name="Kixi-Taka, The Diviner" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="12cd-9f03-e1bc-dca0" name="Kixi-Taka, The Diviner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c8b-1ccd-66d2-a439" name="Star-stone Staff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="71bb-40fa-f561-b543" name="Starbolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="523b-abd4-8569-0db4" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8ad2-1cfb-520c-a250" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="b52a-2fda-69c6-ee63" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="6743-9207-2000-12cf" name="The Starblood Stalkers" hidden="false" collective="false" import="true" targetId="cf90-4a31-8137-c1f5" type="selectionEntry"/>
+            <entryLink id="4957-5992-38b4-4e9f" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="1b2c-51a8-b73d-ccd8" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="69ef-d89f-968f-4752" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="600c-171d-1a92-8412" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7699-e72e-7b12-d662" name="Klaq-Trok" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="3dfe-bc51-621a-c5ed" name="Klaq-Trok" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ec71-bd17-47d1-ce36" name="Celestite Warblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="02b5-515f-039b-7f56" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="dc0b-6e96-7289-0aed" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="764d-16dc-8cd2-39d0" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+            <entryLink id="c6fd-69ef-b787-50c8" name="The Starblood Stalkers" hidden="false" collective="false" import="true" targetId="cf90-4a31-8137-c1f5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="2afe-96a6-1204-3006" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="5624-4ba5-ca3b-3e03" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5be9-88d8-1718-9e8f" name="Otapatl" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="0e72-61ae-dcb0-d259" name="Otapatl" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="402a-a440-dcc1-2d45" name="Celestite Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3d7f-b264-5ccf-47da" name="Dartpipe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">12</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="fbdf-f60c-41cc-e092" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8d38-3620-4fa3-4c2a" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="54d9-dbf0-9e2f-a5f4" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
+            <entryLink id="ba5d-7d66-cc15-f06f" name="The Starblood Stalkers" hidden="false" collective="false" import="true" targetId="cf90-4a31-8137-c1f5" type="selectionEntry"/>
+            <entryLink id="79cf-ff14-c302-5ff5" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="a6bc-5c07-d454-da42" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="cc6d-b689-6d45-7b6b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e126-2be8-4647-f931" name="Huachi" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c7a4-f291-ed9f-6d60" name="Huachi" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="baa5-28c1-d866-98a2" name="Meteoric Javelin" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">1</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b7f5-944b-be8e-300c" name="Celestite Dagger and Star-buckler" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="9593-6dc9-ccdc-d8a0" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="df83-161a-8a27-11eb" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="ca28-28c4-5a0b-10ac" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+            <entryLink id="b4cb-63eb-8776-bb80" name="The Starblood Stalkers" hidden="false" collective="false" import="true" targetId="cf90-4a31-8137-c1f5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="4334-718f-ea40-0e60" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="ce0b-5e9f-a34e-8189" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f5f4-1e4c-36cb-6761" name="Xepic" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="d07b-32bf-c2ae-255c" name="Xepic" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5e73-7599-9812-8437" name="Moonstone Club and Star-buckler" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="6280-dd5e-dd1a-ccd7" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="ecda-246c-9476-f5e5" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="f2bb-797b-de2d-d409" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+            <entryLink id="7cf9-2c47-04e9-68e8" name="The Starblood Stalkers" hidden="false" collective="false" import="true" targetId="cf90-4a31-8137-c1f5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="9611-5a00-e200-04b9" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="5ca0-6806-e308-b8de" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f86c-0707-fc6a-70a9" name="Tok" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a59c-2091-aeeb-154c" name="Tok" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6017-8490-f957-2cb0" name="Moonstone Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fa9f-8f0c-bd66-e8be" name="Boltspitter" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">12</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="b864-2e34-3d08-fd3b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="0ff0-3fd4-4abb-13ff" name=" Seraphon" hidden="false" collective="false" import="true" targetId="5687-2c12-aaeb-9ae0" type="selectionEntry"/>
+            <entryLink id="74cd-4e80-a6c4-14b5" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
+            <entryLink id="e8e1-9fd6-a6de-8c33" name="The Starblood Stalkers" hidden="false" collective="false" import="true" targetId="cf90-4a31-8137-c1f5" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="6654-a9d5-0a9a-7c42" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="0751-7cf0-b007-fc0c" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>

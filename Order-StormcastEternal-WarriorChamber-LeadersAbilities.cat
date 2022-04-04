@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7442-8d51-0f84-ab10" name="Order - Stormcast Eternal - Warrior Chamber - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7442-8d51-0f84-ab10" name="Order - Stormcast Eternal - Warrior Chamber - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ed76-ce0a-938f-fe58" name="Warrior Leaders" hidden="false"/>
+    <categoryEntry id="9297-9a6f-ad14-f574" name="Underworlds Steelheart" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fda6-6faa-a2b4-6593" name="Decimator-Prime" hidden="true" collective="false" import="true" targetId="10bd-b526-5a20-a202" type="selectionEntry">
@@ -158,6 +159,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="e70e-0b27-fc28-26fa" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8599-3f9f-871d-2288" name="Severin Steelheart" hidden="true" collective="false" import="true" targetId="41d6-d0eb-4646-ac1e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed76-ce0a-938f-fe58" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="df99-0f26-ced4-5101" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -361,6 +374,21 @@
         </modifier>
       </modifiers>
       <description>This fighter makes a bonus attack action. In addition, add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from that attack action.</description>
+    </rule>
+    <rule id="0903-252e-eec0-d0ad" name="⚁ [Double] Heroic Guard" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35b3-0eed-f4b2-324d" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fe8-2361-950a-adf8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, subtract 1 from the damage points allocated by each hit and critical hit (to a minimum of 1) from attack actions that target this fighter.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -1116,6 +1144,141 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="35b3-0eed-f4b2-324d" name="Steelheart&apos;s Champions" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5c3-115b-7574-e80e" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df9-1241-235d-1638" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="492b-b5b7-9e03-43e4" name="Obryn the Bold" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="322b-37e4-8d17-a1cb" name="Obryn the Bold" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1c26-4d4c-ba29-c7e9" name="Grandhammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="a7d1-170c-788c-8b39" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="27b5-a3d1-949f-66de" name="Steelheart&apos;s Champions" hidden="false" collective="false" import="true" targetId="35b3-0eed-f4b2-324d" type="selectionEntry"/>
+            <entryLink id="15ce-e6d5-ba41-9647" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
+            <entryLink id="d0f3-409a-edae-0ad7" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="872b-3c7d-f7ec-1416" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="506d-f271-1eee-ae3b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="41d6-d0eb-4646-ac1e" name="Severin Steelheart" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="d636-0a26-5d54-fa71" name="Severin Steelheart" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="28c4-e63b-7cfb-f8d9" name="Broadsword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="ea87-7f5d-f0f5-cbe8" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="54f3-bd76-565e-f9f8" name="Steelheart&apos;s Champions" hidden="false" collective="false" import="true" targetId="35b3-0eed-f4b2-324d" type="selectionEntry"/>
+            <entryLink id="536f-3e1b-7f5e-9d46" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
+            <entryLink id="85b1-680a-2e02-a07b" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="a001-2c51-e300-d5e5" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="d9f4-44e1-c817-2133" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="e9f4-22a4-86a0-ce46" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="cc84-197c-dbc8-28f8" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6454-1357-17ad-15b5" name="Angharad Brightshield" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="854c-ca04-58d6-53cb" name="Angharad Brightshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b4d0-9cfb-623e-d330" name="Warhammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="e758-cbff-77a8-8d9b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="b10b-6eda-8353-9661" name="Steelheart&apos;s Champions" hidden="false" collective="false" import="true" targetId="35b3-0eed-f4b2-324d" type="selectionEntry"/>
+            <entryLink id="2ea4-6da9-802f-d928" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
+            <entryLink id="67d9-6d7c-72a4-ace3" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="9f66-3c9a-b83c-0306" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="ed06-13d5-52be-4a28" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>

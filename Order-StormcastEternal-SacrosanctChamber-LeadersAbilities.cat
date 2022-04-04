@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fa9-8ff9-b985-4c2d" name="Order - Stormcast Eternal - Sacrosanct Chamber - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fa9-8ff9-b985-4c2d" name="Order - Stormcast Eternal - Sacrosanct Chamber - Leaders &amp; Abilities" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2d7f-5475-4938-0a32" name="Sacrosanct Leaders" hidden="false"/>
+    <categoryEntry id="bad7-8f5a-fdd5-8309" name="Underworlds Stormsire" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="51d4-e4aa-be56-3863" name="Castigator-Prime" hidden="true" collective="false" import="true" targetId="d89d-07d8-ff38-66d9" type="selectionEntry">
@@ -122,6 +123,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="8497-0b98-d259-efdc" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="42f9-a886-366e-c837" name="Averon Stormsire" hidden="true" collective="false" import="true" targetId="9d42-f277-09e4-de75" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2d7f-5475-4938-0a32" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="763f-4e72-0abf-b3c8" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -276,6 +289,22 @@
         </modifier>
       </modifiers>
       <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
+    </rule>
+    <rule id="ce6e-84b4-9fda-b926" name="⚂ [Triple] Storm of Eldritch Lightning" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce17-5779-7e83-0950" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4702-646d-ff6b-28fe" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 3+, allocate 3 damage points to that fighter.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -976,6 +1005,149 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="280.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ce17-5779-7e83-0950" name="Stormsire&apos;s Cursebreakers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc0-c19f-731f-2116" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d2-1942-0882-727d" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9d42-f277-09e4-de75" name="Averon Stormsire" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="56c1-0872-b69f-3350" name="Averon Stormsire" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d1a-82de-092f-bf8f" name="Incantor’s Staff " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0db4-e42f-98a7-d52c" name="Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="9996-721c-0c1b-bad7" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8c44-3dd8-f687-10f3" name=" Stormcast Eternal Sacrosanct Chamber" hidden="false" collective="false" import="true" targetId="4702-646d-ff6b-28fe" type="selectionEntry"/>
+            <entryLink id="d583-2989-87c4-83f5" name="Stormsire&apos;s Cursebreakers" hidden="false" collective="false" import="true" targetId="ce17-5779-7e83-0950" type="selectionEntry"/>
+            <entryLink id="7cef-a86c-949b-d453" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="601f-98db-5579-8065" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="4926-52b9-8cc8-bb52" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="5e88-94e4-96fd-9dee" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="e7c6-2d87-40c5-332e" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1cca-c26b-90a8-31e8" name="Ammis Dawnguard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="23b1-cdf4-14f7-57ad" name="Ammis Dawnguard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd6b-a836-bd7e-6844" name="Tempest Blade and Stormstave" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="ea14-bd92-5c46-5751" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="c7a4-8d60-f1cb-d219" name=" Stormcast Eternal Sacrosanct Chamber" hidden="false" collective="false" import="true" targetId="4702-646d-ff6b-28fe" type="selectionEntry"/>
+            <entryLink id="9b65-5514-7bc4-9783" name="Stormsire&apos;s Cursebreakers" hidden="false" collective="false" import="true" targetId="ce17-5779-7e83-0950" type="selectionEntry"/>
+            <entryLink id="5903-857b-7980-46eb" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7b03-0b66-f583-1656" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="6256-def7-7d83-daa7" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="18ec-6dc9-78ee-b8ba" name="Rastus the Charmed" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8007-ad45-dfea-6148" name="Rastus the Charmed" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="123a-6913-b6b4-95f2" name="Tempest Blade and Stormstave" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="837f-23ad-b667-7ace" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="3025-f8b8-7e44-995b" name=" Stormcast Eternal Sacrosanct Chamber" hidden="false" collective="false" import="true" targetId="4702-646d-ff6b-28fe" type="selectionEntry"/>
+            <entryLink id="2f1c-2787-52a3-f46e" name="Stormsire&apos;s Cursebreakers" hidden="false" collective="false" import="true" targetId="ce17-5779-7e83-0950" type="selectionEntry"/>
+            <entryLink id="9ec4-2011-5a78-ff80" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="34f7-194d-e7f1-0f77" name="Campaign Options (ORDER)" hidden="false" collective="false" import="true" targetId="7a7c-bbd0-5bc2-2c99" type="selectionEntryGroup"/>
+        <entryLink id="397c-6d77-0d9a-be9d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
         <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
