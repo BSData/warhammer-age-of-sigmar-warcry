@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="45" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="46" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="8096-c20e-edc8-1a25" name="Glory" defaultCostLimit="-1.0" hidden="false"/>
@@ -55,9 +55,9 @@
     <categoryEntry id="e311-66c4-5d05-cd1e" name="Monsters" hidden="false"/>
     <categoryEntry id="5ed1-bb68-7a31-b173" name="Heroes" hidden="false"/>
     <categoryEntry id="e4b3-72a5-ca73-8c72" name="Narrative Options" hidden="false"/>
-    <categoryEntry id="82fd-8251-2413-feb8" name="Bladeborn Fighters" hidden="false"/>
+    <categoryEntry id="82fd-8251-2413-feb8" name="Underworlds Fighters" hidden="false"/>
     <categoryEntry id="15bb-04f5-5313-58a5" name="Open Play Options" hidden="false"/>
-    <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Bladeborn Allies" hidden="false"/>
+    <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Underworlds Allies" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
