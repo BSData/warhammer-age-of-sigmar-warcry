@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="497e-cceb-4805-44ec" name="Death - Ossiarch Bonereapers" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="497e-cceb-4805-44ec" name="Death - Ossiarch Bonereapers" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5f05-f377-b225-564b" name="Immortis Guard" hidden="false" collective="false" import="true" targetId="b960-23fa-1bbd-09e9" type="selectionEntry"/>
     <entryLink id="10ac-e9f6-b59a-43ec" name="Kavalos Deathriders" hidden="false" collective="false" import="true" targetId="e00e-b915-46dc-32f3" type="selectionEntry"/>
@@ -68,11 +68,6 @@
             <condition field="selections" scope="e00e-b915-46dc-32f3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8fc5-daab-8809-5ae7" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="9a4c-8a7a-c208-4171" name="Kavalos Deathriders" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -94,6 +89,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="8fc5-daab-8809-5ae7" name="Nadirite Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="bd09-57a7-1a61-8fa6" name="Nadirite Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -106,10 +108,16 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3b2c-1c56-4b48-7d10" name="Nadirite Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="9c77-c82e-8e0e-90e9" name="Nadirite Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -122,7 +130,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -136,12 +143,11 @@
             <entryLink id="2bf9-a917-e032-8c57" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d15b-422a-22b1-3fd3" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="64f8-24fd-47b1-406b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="0b89-0d05-03e3-cc8d" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="b6fe-728a-95ee-0eb0" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7523-1b82-1e80-27a5" name="Necropolis Stalkers" hidden="false" collective="false" import="true" type="model">
@@ -180,7 +186,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -196,14 +202,13 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a6af-4e73-2320-cb7d" name="Spirit Blades" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -218,7 +223,6 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -232,12 +236,11 @@
             <entryLink id="0d2b-0d17-fbdb-690a" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="f03e-4b3d-6081-2e2b" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="300f-1ace-a8dc-6155" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="cb21-d767-eb58-8d5c" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="0875-abbe-6b76-466a" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e010-ab59-8d81-6588" name="Mortek Guard" hidden="false" collective="false" import="true" type="model">
@@ -272,7 +275,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -297,7 +300,6 @@
                 <entryLink id="8138-2662-2023-02fb" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -305,7 +307,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -330,7 +332,6 @@
                 <entryLink id="e39f-6d28-04c7-dbf3" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -338,7 +339,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -361,7 +362,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="20.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -373,12 +373,11 @@
             <entryLink id="974d-867a-fc12-1133" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a481-cf16-ebc2-f1db" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="7cfb-cec2-135f-68a5" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="88d6-5ae7-3158-318b" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="cd26-640c-1dac-63f6" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ca0-42cf-2e35-c646" name="Morghast Archai" hidden="false" collective="false" import="true" type="model">
@@ -417,7 +416,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -433,14 +432,13 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="58b5-276b-dd36-37fb" name="with Spirit Swords" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -455,7 +453,6 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -469,19 +466,18 @@
             <entryLink id="cb28-c44e-e1c3-e61f" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c372-989d-1361-8d01" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="39c8-c260-de9f-5e40" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="e36b-c93e-7e2f-ffee" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="43d2-cbba-b838-dbda" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b960-23fa-1bbd-09e9" name="Immortis Guard" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -512,12 +508,11 @@
             <entryLink id="1295-3555-e3f4-ad3a" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4b41-a76b-2462-dc81" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="0f61-2312-52fc-3280" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="d849-573f-cbfb-e893" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="25df-f87e-1289-47a7" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="697f-b9c6-0313-12d9" name="Morghast Harbinger" hidden="false" collective="false" import="true" type="model">
@@ -556,7 +551,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -572,14 +567,13 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e1a5-b77a-a422-6c33" name="with Spirit Swords" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -594,7 +588,6 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -609,12 +602,11 @@
             <entryLink id="0883-67d8-83a4-8860" name=" Ossiarch Bonereapers" hidden="false" collective="false" import="true" targetId="093c-76a5-13b0-bb66" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d6cf-4770-72fc-b688" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="89f7-f6ea-2fb5-bede" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="d502-3604-ea4e-d9b7" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="8795-4a6f-4dde-c923" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="79ed-0d82-87ac-387a" name="Order - Idoneth Deepkin - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="79ed-0d82-87ac-387a" name="Order - Idoneth Deepkin - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="51db-e7f3-ab7a-7dfe" name="Idoneth Leaders" hidden="false"/>
     <categoryEntry id="a6dd-f743-daa9-0c36" name="Underworlds Elathain" hidden="false"/>
@@ -111,6 +111,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="df9e-d889-a8e5-ddce" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c387-ffad-2b05-a888" name="Arkhelian Thrallmaster" hidden="true" collective="false" import="true" targetId="6ef2-5b72-32e7-5737" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="51db-e7f3-ab7a-7dfe" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8384-a83c-7b83-633f" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -300,6 +312,22 @@
       </modifiers>
       <description>This fighter makes a bonus attack action.  After that attack action, the fighter targeted by that attack action makes a bonus move action directly towards this figther, as if they were jumping, a number of inches equal to the value of this ability.</description>
     </rule>
+    <rule id="9b68-45a9-1719-0a98" name="⚂ [Triple] Way of the Depths" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf8-4940-a2eb-d3f4" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36bc-1458-be72-8d16" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Strength characteristic of attack actions that have a Range characterisic of 3 or less made by this fighter and by visible friendly fighters that have the Idoneth Deepkin runemark and either the Agile or Minion runemarks while they are within 6&quot; of this fighter.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="36bc-1458-be72-8d16" name=" Idoneth Deepkin" hidden="false" collective="false" import="true" type="upgrade">
@@ -313,10 +341,9 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6493-9ae9-a888-7d1d" name="Arkhelian King" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6493-9ae9-a888-7d1d" name="Akhelian King" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -356,7 +383,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="280.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0fbb-be88-083b-f3b8" name="Isharann Soulrender" hidden="false" collective="false" import="true" type="model">
@@ -406,7 +432,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6de6-ce8b-a858-0aad" name="Akhelian Ishlaen Guard Lochian Prince" hidden="false" collective="false" import="true" type="model">
@@ -456,7 +481,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e524-f3b9-1ae4-2519" name="Isharann Soulscryer" hidden="false" collective="false" import="true" type="model">
@@ -498,7 +522,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b8a8-3780-b4bd-24e1" name="Isharann Tidecaster" hidden="false" collective="false" import="true" type="model">
@@ -543,10 +566,9 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d76a-aa82-edb6-c43a" name="Arkhelian Morrsarr Lochian Prince" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="d76a-aa82-edb6-c43a" name="Akhelian Morrsarr Lochian Prince" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -593,7 +615,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3259-3274-b2a5-d0f1" name="Namarti Thrall Icon Bearer" hidden="false" collective="false" import="true" type="model">
@@ -642,7 +663,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ec9b-b75f-ba68-e7a5" name="Namarti Reaver Icon Bearer" hidden="false" collective="false" import="true" type="model">
@@ -703,7 +723,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e5d9-6f7e-c86e-4594" name="Elathain Ill-Fated" hidden="false" collective="false" import="true" type="model">
@@ -756,7 +775,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="614f-fdd9-bbe5-e367" name="Elathain&apos;s Soulraid" hidden="false" collective="false" import="true" type="upgrade">
@@ -766,7 +784,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cc60-cec8-d3ce-170f" name="Fuirann" hidden="false" collective="false" import="true" type="model">
@@ -813,7 +830,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="692a-a8c3-6f3d-a638" name="Tammael" hidden="false" collective="false" import="true" type="model">
@@ -861,7 +877,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a3e-9fe9-1ad7-6009" name="Spinefin" hidden="false" collective="false" import="true" type="model">
@@ -910,7 +925,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f81-3112-bbc3-1f4d" name="Duinclaw" hidden="false" collective="false" import="true" type="model">
@@ -958,7 +972,47 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6ef2-5b72-32e7-5737" name="Akhelian Thrallmaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="aca2-872a-ced9-9a92" name="Arkhelian Thrallmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11e5-2b9a-8dfc-51fd" name="Esoteric Weapons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="3101-83ce-eb05-f700" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="7669-459c-9868-9917" name=" Idoneth Deepkin" hidden="false" collective="false" import="true" targetId="36bc-1458-be72-8d16" type="selectionEntry"/>
+            <entryLink id="f715-cbd6-c572-6bd8" name=" Sentience" hidden="false" collective="false" import="true" targetId="fdf8-4940-a2eb-d3f4" type="selectionEntry"/>
+            <entryLink id="25ee-361b-85c9-b4b5" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="f078-08bc-ccc5-e9de" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="67c5-1885-b231-5371" name="Battle Groups" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="6ae1-60d8-685a-3704" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="160.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

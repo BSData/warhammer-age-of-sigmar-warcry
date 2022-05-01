@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cfcb-75c3-fbab-5305" name="Destruction - Monsters and Thrall" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cfcb-75c3-fbab-5305" name="Destruction - Monsters and Thrall" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="880a-807a-5ce0-b5eb" name="Aleguzzler Gargant" hidden="false" collective="false" import="true" targetId="dceb-17a9-0b8f-2ca7" type="selectionEntry"/>
     <entryLink id="7349-73ad-f3d8-566a" name="Dankhold Troggoth" hidden="false" collective="false" import="true" targetId="b4ef-48db-ef3c-a050" type="selectionEntry"/>
@@ -238,7 +238,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="870d-f73d-b0aa-f59f" name=" Monsters of Destruction" hidden="false" collective="false" import="true" type="upgrade">
@@ -248,14 +247,13 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dceb-17a9-0b8f-2ca7" name="Aleguzzler Gargant" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -326,18 +324,17 @@
             <entryLink id="db5f-1dc8-1091-753a" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="834e-6cda-855d-99fe" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="2bd8-edd8-4d5c-9e61" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="325.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a1c8-3551-ff1b-12a8" name="Skitterstrand Arachnarok" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -408,11 +405,10 @@
             <entryLink id="72f1-f3e7-de77-537e" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="418e-ea61-84bf-9fb1" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="4b01-355f-48dc-6761" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="345.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="250a-b51a-9e31-4205" name=" Destruction" hidden="false" collective="false" import="true" type="upgrade">
@@ -422,14 +418,13 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b4ef-48db-ef3c-a050" name="Dankhold Troggoth" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -500,18 +495,17 @@
             <entryLink id="849b-e5bf-0d07-0fce" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="9dba-a9bd-d049-569c" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="ac19-d818-7fdf-65d8" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="305.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4f4a-3efe-0670-138d" name="Fellwater Troggoth" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -546,18 +540,17 @@
             <entryLink id="53e6-8fdf-b5c5-b45c" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2b81-1993-2dfd-3b84" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="bedb-e67d-ec9b-04f0" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb36-a236-fb2f-0a00" name="Rockgut Troggoth" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -592,11 +585,10 @@
             <entryLink id="384e-ef9d-2bff-7f84" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="693a-cd56-8a2e-748d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="a40c-5988-05d8-4eff" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -794,7 +786,4 @@
       </rules>
     </infoGroup>
   </sharedInfoGroups>
-  <catalogueLinks>
-    <catalogueLink id="1a66-4fcc-b203-e8d1" name="Destruction - Campaign Options" targetId="d396-152b-8b2f-50e2" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

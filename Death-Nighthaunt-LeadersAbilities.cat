@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ca25-8654-18e2-80ee" name="Death - Nighthaunt - Leaders &amp; Abilities" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ca25-8654-18e2-80ee" name="Death - Nighthaunt - Leaders &amp; Abilities" revision="20" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="986a-3b69-d565-d503" name="Nighthaunt Leaders" hidden="false"/>
     <categoryEntry id="011e-91df-f669-9595" name="Underworlds Briar" hidden="false"/>
@@ -359,7 +359,7 @@
       <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Remove a number of damage points to all visible friendly fighters within 6&quot; of this fighter equal to the value of this ability.
 ⠀</description>
     </rule>
-    <rule id="c0c3-7ec5-8762-02a4" name="⚅ ⚂ [Triple] Float Through Wall ⚅" hidden="false">
+    <rule id="c0c3-7ec5-8762-02a4" name="⚅ ⚂ [Triple] Float Through Wall ⚅" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -403,14 +403,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="805c-f1ca-7e6f-c414" name="Knight Of Shrouds" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -440,20 +439,19 @@
             <entryLink id="671d-c4ed-8727-b04c" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="7101-9a1f-72d4-a34f" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="0181-aa76-7eff-767e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="dba6-6b4e-c8c0-9725" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="79c4-b589-2de4-9c59" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="5227-c400-14af-7a6c" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4d24-d18d-2997-fe37" name="Cairn Wraith" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -483,20 +481,19 @@
             <entryLink id="061a-ffc0-5fcc-d5d9" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="381d-f645-c302-af67" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="8f41-aa71-3763-114c" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="7690-9225-74d8-4eef" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="2a0e-0ead-583e-1e94" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="85ba-8dc2-0f45-849b" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8612-cc65-8798-94c2" name="Dreadblade Harrow" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -526,20 +523,19 @@
             <entryLink id="03f1-7a5c-291f-478d" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="1a5f-e01e-87b1-84f1" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="9922-5f98-1f6e-7b5b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="e2d4-ee14-238d-d41d" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="51e3-f33e-f6bb-a7ec" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="dc66-0de4-5d52-e68e" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ab9e-cf40-6543-17ef" name="Dreadwarden" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -569,20 +565,19 @@
             <entryLink id="408f-4bf3-9908-83fd" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="fc2c-60f9-9d2b-657e" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="583d-932a-0744-7d3b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="efda-946f-ec96-cc5b" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="e9f9-01d0-75da-d1ac" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="605d-84ca-e4c2-9720" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4d46-8a47-3045-a6c7" name="Extoller of Shyish" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -611,20 +606,19 @@
             <entryLink id="7f8c-c23d-dbce-2e54" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c866-7915-4a7d-a14d" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="69ea-d7c5-4699-299d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="ab69-7a5f-bfea-2a3f" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="0b8c-8e2f-768b-1490" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="3607-499f-cb4a-56fe" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb37-1cfd-8dc2-ca5a" name="Guardian of Souls" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -662,20 +656,19 @@
             <entryLink id="6d14-2dd8-8476-80e2" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="77e5-d03b-f9cb-0443" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="a80d-c793-363a-2b44" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="eb56-777f-c4c2-562b" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="19a0-7bed-8385-7cf0" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="42ef-ee29-6a03-b0d5" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a02a-9839-5200-29e4" name="Lord Executioner" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -705,20 +698,19 @@
             <entryLink id="6bdb-aa08-0995-eecc" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="9bb3-7f03-b22c-730d" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="9146-ff4f-9cfe-6439" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="d5b1-ec87-37a7-41d7" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="9e71-5038-a545-7f85" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="3610-cacc-c25d-d1a6" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ece-77fb-0264-74bb" name="Slasher Crone" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -748,20 +740,19 @@
             <entryLink id="8f70-b144-e9e9-3c78" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="bf2a-dbc3-6c23-74c3" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="1a75-033c-0e7f-f19b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="d5ea-b0e5-46ed-621e" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="3090-e6df-a24e-dfa9" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="0a44-1c69-8287-7272" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f374-fd1c-faa7-6185" name="Spirit Torment" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -791,20 +782,19 @@
             <entryLink id="cfe1-35b8-490b-ac45" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c529-34cd-f31e-65e5" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="8524-9057-c5fc-6012" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="c800-b2ee-2b2d-0dbe" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="d919-1dbf-f5f1-7bca" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="13a3-582d-3926-4f7a" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1945-7ed9-1c62-e336" name="Tomb Banshee" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -842,20 +832,19 @@
             <entryLink id="0b66-61d7-1e4b-6eb5" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="ce49-7c32-fc06-f79e" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="05da-c006-a21d-2a3b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="4f9e-382c-10b6-657c" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="355e-b11c-6e98-3d49" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="8ac3-d9b0-49ef-c00e" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b9d7-e5fb-ec66-90a0" name="Knight Of Shrouds on Ethereal Steed" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -885,20 +874,19 @@
             <entryLink id="ccc1-1445-19fe-14dd" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="e25b-07cc-e7d3-b4bd" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="973d-d825-1987-7734" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="c82b-9649-16ea-b3ca" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="d80d-4e12-1c39-179b" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="77b3-ad0b-09bb-231b" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4475-cc49-ce3f-e8e7" name="Hellwraith" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -928,20 +916,19 @@
             <entryLink id="21f2-1f91-3587-02a2" name=" Nighthaunt" hidden="false" collective="false" import="true" targetId="24cd-2c01-b535-4c89" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="1c3c-54e6-8d02-cdbc" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="d09f-47c8-d4a1-d02d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="3240-3ed4-2878-5d1c" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="37d8-d6f5-4ca2-b0f9" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="5b77-f03d-8439-0255" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c616-ff1e-6682-9aa5" name="The Briar Queen" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -982,13 +969,12 @@
             <entryLink id="a4ca-103e-3e45-69b3" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b4f3-6811-0eb2-2480" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="4d4b-acee-75b9-6d51" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="7e3b-a8b1-a040-71ca" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="6762-a445-d2e4-2321" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="549f-9613-c973-4e3e" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a55a-ba11-cb5b-e277" name="Thorns of the Briar Queen" hidden="false" collective="false" import="true" type="upgrade">
@@ -998,14 +984,13 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cec6-0f83-2713-a2f4" name="Varclav the Cruel" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1042,20 +1027,19 @@
             <entryLink id="f6c9-f8ec-6b66-04f2" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="84fe-ffb6-6d20-430c" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="6ed0-2fb6-83fc-0d86" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="351c-7798-8116-ed1a" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="55c0-1d58-d3f8-8620" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="e799-d48c-ee58-968f" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f17-cc30-b44d-aaee" name="The Ever-hanged" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1092,20 +1076,19 @@
             <entryLink id="f035-289d-e153-e980" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b7b0-928c-1b0b-fea6" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="685a-1f53-cb49-ce7e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="4280-6913-1dc7-16ee" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="b6a9-c7f4-263d-7811" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="2d20-9b45-e0ec-85fc" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ad58-bd6d-1846-6772" name="Thorns of the Briar Queen Chainrasp" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1142,17 +1125,13 @@
             <entryLink id="934d-afa9-59f9-cb8a" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="fc00-540a-ff1f-a49a" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="1921-1c47-3a5e-0662" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="7b0d-648f-27d2-5532" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="18c1-4683-b86e-1a28" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="2282-a0d3-0245-f219" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <catalogueLinks>
-    <catalogueLink id="2564-6312-49bf-3426" name="Death - Campaign Options" targetId="1355-fe6d-4766-ce01" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

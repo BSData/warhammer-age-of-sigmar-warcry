@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="46" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="47" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="8096-c20e-edc8-1a25" name="Glory" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="7bf1-ad0a-0d19-6565" name="Model">
@@ -524,7 +523,6 @@
         <constraint field="selections" scope="roster" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eab-7954-84eb-7178" type="max"/>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a612-cfde-504b-b8d6" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00fd-8510-5cfd-67a0" type="max"/>
-        <constraint field="8096-c20e-edc8-1a25" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8153-1787-93d6-fb7a" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="6167-9314-b82b-737d" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false">
@@ -627,7 +625,7 @@
               </modifiers>
             </modifierGroup>
             <modifierGroup>
-              <comment>ally/hero relationship - set to hidden when allies selected</comment>
+              <comment>ally/hero relationship - set to hidden when heroes selected</comment>
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -859,7 +857,6 @@
       </rules>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f70-c4ef-9eb9-f16f" name=" Ally" hidden="false" collective="false" import="true" type="upgrade">
@@ -869,7 +866,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4992-8710-6244-a9b8" name=" Leader" hidden="false" collective="false" import="true" type="upgrade">
@@ -879,7 +875,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d40e-db86-36c7-f7c6" name=" Agile" hidden="false" collective="false" import="true" type="upgrade">
@@ -889,7 +884,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2c07-fa6a-0279-0c91" name=" Beast" hidden="false" collective="false" import="true" type="upgrade">
@@ -899,7 +893,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d3a-0293-108e-0fdd" name=" Berserker" hidden="false" collective="false" import="true" type="upgrade">
@@ -909,7 +902,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e53-802d-d855-d3f2" name=" Brute" hidden="false" collective="false" import="true" type="upgrade">
@@ -919,7 +911,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c26f-4300-fb59-c645" name=" Bulwark" hidden="false" collective="false" import="true" type="upgrade">
@@ -929,7 +920,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2da4-597a-7aab-a5d8" name=" Champion" hidden="false" collective="false" import="true" type="upgrade">
@@ -939,7 +929,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ac09-2c36-a1a2-920b" name=" Destroyer" hidden="false" collective="false" import="true" type="upgrade">
@@ -949,7 +938,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f907-d5f0-c688-5596" name=" Elite" hidden="false" collective="false" import="true" type="upgrade">
@@ -959,7 +947,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8b52-047b-c9e1-3386" name=" Ferocious" hidden="false" collective="false" import="true" type="upgrade">
@@ -969,7 +956,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9488-26b8-09dc-98f7" name=" Fly" hidden="false" collective="false" import="true" type="upgrade">
@@ -979,7 +965,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0510-be9d-1e15-64f3" name=" Frenzied" hidden="false" collective="false" import="true" type="upgrade">
@@ -989,7 +974,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f309-c6a9-6f7d-a3f8" name=" Gargantuan" hidden="false" collective="false" import="true" type="upgrade">
@@ -999,7 +983,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="38b1-f499-b603-c4f6" name=" Icon Bearer" hidden="false" collective="false" import="true" type="upgrade">
@@ -1009,7 +992,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f03-c585-1ede-64c6" name=" Mount" hidden="false" collective="false" import="true" type="upgrade">
@@ -1019,7 +1001,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="71d5-d154-4b90-841e" name=" Mystic" hidden="false" collective="false" import="true" type="upgrade">
@@ -1029,7 +1010,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f58d-4233-7f4a-1313" name=" Priest" hidden="false" collective="false" import="true" type="upgrade">
@@ -1039,7 +1019,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7507-ed71-37d4-12b6" name=" Scout" hidden="false" collective="false" import="true" type="upgrade">
@@ -1049,7 +1028,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fdf8-4940-a2eb-d3f4" name=" Sentience" hidden="false" collective="false" import="true" type="upgrade">
@@ -1059,7 +1037,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="841a-a982-1fe2-94eb" name=" Terrifying" hidden="false" collective="false" import="true" type="upgrade">
@@ -1069,7 +1046,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="231e-509a-2ced-f559" name=" Thrall" hidden="false" collective="false" import="true" type="upgrade">
@@ -1079,7 +1055,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dd95-1c17-a923-4487" name=" Trapper" hidden="false" collective="false" import="true" type="upgrade">
@@ -1089,7 +1064,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47ac-9fa2-ed46-d6db" name=" Warrior" hidden="false" collective="false" import="true" type="upgrade">
@@ -1099,7 +1073,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3202-546a-969f-fdf5" name=" Hero" hidden="false" collective="false" import="true" type="upgrade">
@@ -1109,7 +1082,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7b9-055c-eaaf-fec5" name=" Minion" hidden="false" collective="false" import="true" type="upgrade">
@@ -1119,13 +1091,11 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a18f-3460-d9bf-8c05" name=" -----Below Are Universal Runemarks-----" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="578d-e141-c905-4efe" name="Narrative Options (Required)" hidden="false" collective="true" import="true" type="unit">
@@ -1152,7 +1122,6 @@
             <categoryLink id="f97d-9d95-b1d7-89a0" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1164,47 +1133,6 @@
               </conditions>
             </modifier>
           </modifiers>
-          <modifierGroups>
-            <modifierGroup>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="d0f9-75f3-bf1c-f588" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="d0f9-75f3-bf1c-f588" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="d0f9-75f3-bf1c-f588" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="d0f9-75f3-bf1c-f588" value="3.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="d0f9-75f3-bf1c-f588" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0f9-75f3-bf1c-f588" type="max"/>
           </constraints>
@@ -1212,7 +1140,6 @@
             <categoryLink id="e2b0-70d8-1039-78a2" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1231,20 +1158,7 @@
             <categoryLink id="c5a7-d389-597f-c8a0" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-1.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0dc8-16ee-2970-7503" name="Additional Search Roll" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d70-1ec4-cc47-bf26" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="84c9-ff1e-3de8-7650" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7579-db4e-0dd6-4537" name="Dominated Territories" hidden="false" collective="false" import="true" type="upgrade">
@@ -1263,7 +1177,6 @@
             <categoryLink id="f247-d9b6-8d80-2985" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-10.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1275,7 +1188,6 @@
             <categoryLink id="2605-430c-5abd-7700" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="1.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1287,7 +1199,6 @@
             <categoryLink id="065d-4b53-874f-0d72" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1299,7 +1210,6 @@
             <categoryLink id="f729-a503-c87c-2680" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1335,7 +1245,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1357,7 +1266,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1379,7 +1287,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1401,7 +1308,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1423,7 +1329,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1445,7 +1350,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1496,7 +1400,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1533,7 +1436,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1570,7 +1472,6 @@
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1599,13 +1500,11 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-5.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1623,13 +1522,11 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1651,13 +1548,11 @@ You can spend 2 glory points to upgrade this territory.
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d9-e1cc-1f99-bd5e" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-2.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1675,13 +1570,11 @@ You can spend 2 glory points to upgrade this territory.
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1703,13 +1596,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1727,13 +1618,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-5.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1751,13 +1640,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-5.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1775,13 +1662,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1799,13 +1684,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-5.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1823,13 +1706,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-5.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1852,13 +1733,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1876,13 +1755,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1359-dd35-fa2b-08ec" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1900,13 +1777,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-5.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1924,13 +1799,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1948,13 +1821,33 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="-3.0"/>
                     <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4328-943e-f294-ed8c" name="Convergence Tracker" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aab3-b162-fb6b-9d13" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="833d-9d17-f6c2-4e5c" name="Convergence #1 completed" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1928-bcd4-32cc-3801" name="Convergence #2 completed" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1cc0-9a89-1a61-bdef" name="Convergence #3 completed" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1962,7 +1855,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1974,7 +1866,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7a6-5cad-ed79-2d80" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1984,7 +1875,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abf5-fa90-3d68-cf48" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1994,7 +1884,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b48-5a6a-bc81-c575" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2004,7 +1893,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="783c-e744-e7fa-74c5" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2014,7 +1902,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f1a-bf70-0513-a8ba" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2024,7 +1911,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5029-a36b-08f7-ac1d" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2034,7 +1920,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ec7-b004-1cb8-5be0" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2044,7 +1929,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b38-7272-f2ac-9968" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2054,7 +1938,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fb0-b285-accd-82e7" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2064,7 +1947,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef23-94de-1aad-035e" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2074,7 +1956,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0af7-0e25-a026-cd67" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2084,7 +1965,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7bc-27d6-417d-78ee" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2094,7 +1974,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d03d-3166-dace-34ba" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2104,7 +1983,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="221e-aed9-e51c-c904" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2114,7 +1992,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd47-c022-8145-729b" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2124,7 +2001,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="644c-553d-336c-66d9" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2134,7 +2010,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0f5-4206-4ec1-e46c" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2144,7 +2019,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5246-e998-3ec6-4b85" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2154,7 +2028,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d90c-0cfe-7174-6be5" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2164,7 +2037,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1925-db0c-23c1-49b1" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2174,7 +2046,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="891b-1ace-e196-8866" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2184,7 +2055,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dadc-b65e-4249-6eb0" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2194,7 +2064,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3043-ec2f-8c93-c3b9" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2204,7 +2073,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40a9-8087-27ca-4ffd" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2214,7 +2082,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f5-cabe-6d6c-7df3" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2224,7 +2091,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc61-e1cf-d4b5-db47" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2234,7 +2100,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f408-4c65-0390-3725" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2244,7 +2109,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb0c-e19b-ebb0-ee6e" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2254,7 +2118,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ab0-441a-49ad-00f6" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2264,7 +2127,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d8d-f87e-151e-a430" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2274,7 +2136,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="692f-4d0c-564a-c57b" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2284,7 +2145,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f646-7b42-75e3-e16e" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2294,7 +2154,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="545d-d6a6-3024-8bd3" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2304,7 +2163,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cf8-d6e7-8491-462b" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2314,7 +2172,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="425a-08fe-189c-d64c" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2324,7 +2181,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a445-c2db-cc59-34cb" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2334,7 +2190,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8f0-0290-9eb8-a139" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2344,7 +2199,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e99-73e3-496f-2925" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2354,7 +2208,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da9f-d169-3581-6cad" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2364,7 +2217,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa67-f777-fec0-186d" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2374,7 +2226,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="983d-2314-c8c2-16b5" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2384,7 +2235,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ff8-348f-3129-0a18" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2394,7 +2244,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cba8-f7f0-e368-1ee1" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2404,7 +2253,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0535-9c1a-5889-8926" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2414,7 +2262,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9600-afcf-6b16-371f" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2424,7 +2271,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e32-58a6-5363-f489" type="min"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2434,7 +2280,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1867-64ab-299b-bbce" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2444,13 +2289,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7e-a96a-055c-3b56" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2465,42 +2308,35 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <selectionEntry id="d010-27a4-3b09-70d3" name="+ 250 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c0bf-d5a3-41fb-9817" name="+1 Ally" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b014-8825-a869-c3f2" name="+1 Hero" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8dba-ff8c-a264-a495" name="+ 100 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c03f-195d-9d4b-68f0" name="+ 500 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9032-694a-3205-3338" name="+1 max Unit" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2526,7 +2362,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd9-1c3f-10be-aa99" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2535,11 +2370,287 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cadc-b2d5-3215-849a" type="max"/>
           </constraints>
           <costs>
-            <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="12f7-2c49-ad72-65d5" name="Battle Groups" hidden="false" collective="false" import="true" defaultSelectionEntryId="7e7b-3a8b-c198-7ef2">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b88-24fb-4151-ba4e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c98-d3c6-f3c1-b112" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="7e7b-3a8b-c198-7ef2" name="Dagger" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1874-9f1a-b3ef-b135" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2a02-64ba-a525-e21d" name="Inactive (removes cost)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2109-44c1-8c46-ea4f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ec2-b632-3017-70f8" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bbe8-2033-e724-fe67" name=" Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d88-1294-330f-2a35" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0e05-0cfd-1086-d37c" name="Hammer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab1b-847b-b0a9-3ae4" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0641-ca29-0b13-4b1c" name="Campaign Options" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2109-44c1-8c46-ea4f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ca1e-1324-219f-b21e" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="804e-566f-dcbf-b00f" name="Critical Injuries" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b280-d982-75fb-b35e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2bc3-bf70-b258-3ef3" name="Slain" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="9359-bbb8-332f-bb7b" name="Slain" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Remove this fighter from your warband roster. If they have any lesser artefacts or artefacts of power, these are lost. If this fighter is the leader of your warband, treat this result as &apos;Lost Favour&apos; instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd9c-98b8-beb8-d9ee" name="Gut Wound" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e9b0-b50f-1531-0811" name="Gut Wound" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Halve the Wounds characteristic of this fighter (rounding up) while they have this injury.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="003e-0abb-1a16-31b0" name="Cracked Rib" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="387c-0945-5445-ff5c" name="Cracked Rib" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the Toughness characteristic of this fighter (to a minimum of 1) while they have this injury.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4178-496a-fb24-e753" name="Blinded in One Eye" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e678-5770-8352-7bb6" name="Blinded in One Eye" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by this fighter while they have this injury.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5a3c-e913-5a05-43f3" name="Fractured Arm" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e694-67c9-d4ed-4b31" name="Fractured Arm" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract I from the Strength characteristic (to a minimum of 1) of attack actions that have a Range characteristic of 3 or less made by this fighter while they have this injury.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cff2-d7a9-4b5e-2423" name="Broken Leg" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="d81c-911b-776d-0917" name="Broken Leg" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the Move characteristic of this fighter (to a minimum of 1) while they have this injury.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dba3-b7b6-27fc-9e87" name="Concussion" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1be6-bdbc-a2b8-b431" name="Concussion" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the value of abilities used by this fighter (to a minimum of 1) while they have this injury.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="376a-f980-e3de-be42" name="Lost Favour" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f40d-6b33-e4a5-0a26" name="Lost Favour" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the value of abilities used by this fighter (to a minimum of 1) while they have this injury.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6ede-562c-cd98-6301" name="Full Recovery" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2423-7afc-3315-bd5c" name="Full Recovery" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">This fighter suffers no effects.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="735f-3fef-4d58-f9c4" name="Survive Against the Odds" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="afd4-4e10-4d24-1023" name="Survive Against the Odds" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Treat this result as &apos;Full Recovery. In addition, this fighter immediately gains 1 destiny level.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a18c-718b-210f-4abf" name="Destiny Level" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aadf-5830-72a8-d164" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="465c-7021-ff16-3d12" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="193a-06ac-017d-09eb" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="a156-0aae-eee6-59e0" name="Level 1" page="" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="45b3-6df0-9225-3129" name="Level 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9dc1-7354-b18e-0f33" name="Level 3" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b823-1496-fc67-6bfe" name="Narrative Items" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="1e48-6c1b-0b77-950c" name="Artifact of Power" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0270-e331-9c44-065a" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d61a-178d-68a4-e0e4" name="Command Trait/Favored Warrior" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14db-81dd-b399-e0f0" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f3f2-35d5-cb8c-d79e" name="Lesser Artifact" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a95-b8df-23b5-62dc">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd38-e1bd-2eb5-e708" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="4a95-b8df-23b5-62dc" name="Consumable" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d037-b416-7f80-fe4b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0491-74b3-dc03-56d5" name="Perishable" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1927-73c5-f6b1-6f37" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>

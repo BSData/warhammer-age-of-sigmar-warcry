@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf05-61ad-1a74-2e9d" name="Death - Flesh-eater Courts - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf05-61ad-1a74-2e9d" name="Death - Flesh-eater Courts - Leaders &amp; Abilities" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="e931-5258-f45a-bbdd" name="Flesh-eater Leaders" hidden="false"/>
     <categoryEntry id="0a20-5d75-606a-ccad" name="Underworlds Duke" hidden="false"/>
@@ -121,6 +121,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="cf94-1302-79de-0c6c" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>
@@ -298,17 +301,9 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="699f-0eba-7468-76ca" name="Abhorrant Archregent" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="a015-8669-9aad-2284" name="Abhorrant Archregent" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -334,23 +329,16 @@
             <entryLink id="792c-9216-cdf9-b082" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="7a03-ef72-fe7a-49c1" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="29c2-73b7-9e14-01eb" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="6522-9419-c7a1-79f2" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="3519-d5aa-f784-54c5" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="8529-0ca8-6f0f-0af1" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="1ef7-0dbf-f2f3-3d12" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6acf-f397-3f43-bcc4" name="Abhorrant Ghoul King" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="f581-811b-90d4-35f2" name="Abhorrant Ghoul King" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -376,23 +364,15 @@
             <entryLink id="c4ea-bcb1-1555-b451" name=" Flesh-eater Court" hidden="false" collective="false" import="true" targetId="778a-d3ee-21c4-f7f4" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="6560-f2b9-d4ec-fb4c" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="7306-c834-26ce-db26" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="094c-9fe6-fa49-48fd" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="2858-f218-d8fc-4917" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="465e-334b-b1d5-488e" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4699-bafe-5fb6-d564" name="Crypt Ghast" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="b81f-b47e-277a-1dd1" name="Crypt Ghast" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -417,23 +397,15 @@
             <entryLink id="b551-b553-8e54-11db" name=" Flesh-eater Court" hidden="false" collective="false" import="true" targetId="778a-d3ee-21c4-f7f4" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="9955-403c-72d5-31df" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="6ae3-cb59-94eb-4bd9" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="d698-856f-c163-4ed4" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="2094-f1bf-53d5-3207" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="8daa-40f4-b3ee-952f" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1480-a5ed-a629-47d4" name="Crypt Ghast Courtier" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="5787-6a61-ac42-aaba" name="Crypt Ghast Courtier" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -458,23 +430,15 @@
             <entryLink id="841f-3523-510a-ba6e" name=" Flesh-eater Court" hidden="false" collective="false" import="true" targetId="778a-d3ee-21c4-f7f4" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b44d-8e8a-f696-fdef" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="35b7-7a98-1029-7ae9" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="56f3-fa7d-51c3-d8c8" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="2db4-dfef-29c6-9814" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="998a-cbd0-78e3-3061" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e7c5-6325-f55f-22f2" name="Crypt Haunter" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="643e-f536-0511-6a23" name="Crypt Haunter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -500,23 +464,15 @@
             <entryLink id="4f5f-f85c-3869-dcb6" name=" Flesh-eater Court" hidden="false" collective="false" import="true" targetId="778a-d3ee-21c4-f7f4" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="6ca3-f97e-65e7-316d" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="a25e-2f5a-5b57-ecda" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="ef8a-df0f-0e56-1026" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="7ec4-fcc5-03a0-e65b" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="9bda-3838-4091-306b" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0c67-02ff-1ac7-c5e5" name="Crypt Haunter Courtier" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="82bc-0f1c-a6ea-5ab0" name="Crypt Haunter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -542,23 +498,15 @@
             <entryLink id="31ed-a082-e160-e787" name=" Flesh-eater Court" hidden="false" collective="false" import="true" targetId="778a-d3ee-21c4-f7f4" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a84f-ca0e-82fe-9a43" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="ca36-00f9-2124-cfde" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="5395-6753-ce35-2005" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="5bca-40df-351d-c800" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="922d-dc85-06b6-8902" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="275.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5dc1-8082-385d-8a32" name="Crypt Infernal" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="b3dd-f4d3-c58f-49a1" name="Crypt Infernal" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -585,23 +533,15 @@
             <entryLink id="119b-0016-7df5-1001" name=" Flesh-eater Court" hidden="false" collective="false" import="true" targetId="778a-d3ee-21c4-f7f4" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="5726-76fb-8915-d760" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="2eee-1e34-2ddb-bb9e" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="bf0d-4905-0334-cbec" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="5707-e523-6f61-758a" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="1d6a-a5af-8484-bfed" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="305.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6b88-6281-4e1a-2333" name="Crypt Infernal Courtier" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="f1be-6732-7345-376d" name="Crypt Infernal Courtier" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -628,23 +568,15 @@
             <entryLink id="f9d4-647f-aa04-8cd5" name=" Flesh-eater Court" hidden="false" collective="false" import="true" targetId="778a-d3ee-21c4-f7f4" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d74a-3e03-d5f4-7449" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="61e7-e0d0-5ce7-c337" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="47da-a726-2f47-4dc9" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="07cf-1f47-a4e7-93d0" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="ceda-c62f-cffa-b503" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="320.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0450-bebe-0c89-28c1" name="Varghulf Courtier" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="bb2f-5393-b0ce-74c2" name="Varghulf Courtier" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
@@ -671,13 +603,12 @@
             <entryLink id="b039-c32b-5fad-d5f6" name=" Flesh-eater Court" hidden="false" collective="false" import="true" targetId="778a-d3ee-21c4-f7f4" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="b9dc-0e77-f910-dc32" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="afea-266a-3305-88fa" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="44ed-7a69-847b-bece" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="b2d9-ea94-a29b-fdbe" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="0197-dff2-79d4-9e0f" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d32c-3f28-4a9d-f5c4" name="The Grymwatch" hidden="false" collective="false" import="true" type="upgrade">
@@ -687,17 +618,9 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5232-48c9-998c-1341" name="Duke Crakmarrow" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb3b-6fd9-9fb1-1fd1" type="max"/>
       </constraints>
@@ -726,23 +649,15 @@
             <entryLink id="cb98-4060-9b91-2a72" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c3a9-d68f-a089-5f24" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="b3d5-3e7e-4d87-4fce" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
         <entryLink id="e44b-4200-2648-d5bd" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="c90a-ebc0-a281-2c51" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="24ee-9bb2-2728-aaed" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c9e2-907c-49cd-9c0f" name="Gristlewel, Greatsword" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5977-8396-e46a-bf52" type="max"/>
       </constraints>
@@ -775,22 +690,14 @@
             <entryLink id="dbb9-24be-40f0-4b45" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="ea8a-b515-0a73-d95e" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="2906-9d9f-8ce8-a409" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="3f18-4454-3e1b-c80e" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="902e-f979-36dd-bf9d" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5070-8b19-56f2-415e" name="Valreek, The Tracker" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f37-b32e-0275-058c" type="max"/>
       </constraints>
@@ -823,22 +730,14 @@
             <entryLink id="5e6b-9a07-4b39-1d50" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d737-2c90-b313-aef0" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="b863-25b3-a542-8a37" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="aa64-4709-e864-97bc" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="6837-37cb-a8c5-a264" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d98-a368-3271-523c" name="Night&apos;s Herald" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65d9-b7b5-9d7d-f255" type="max"/>
       </constraints>
@@ -871,22 +770,14 @@
             <entryLink id="d06f-d8c7-3a74-2d65" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4d03-076a-43ce-e23a" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="5180-79bd-3621-f7d3" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="f393-75e2-4167-c8de" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="60b7-c5d0-a3ec-a67f" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9792-ca1d-da77-7f65" name="Royal Butcher" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ce1-7511-1552-4266" type="max"/>
       </constraints>
@@ -919,22 +810,14 @@
             <entryLink id="6fa9-d2b6-5c32-a856" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="08df-58c1-c8dd-ed84" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="4488-bced-cbaf-e58c" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="84e7-f316-e08c-a65a" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="cd5a-ced9-abe2-3651" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="472d-6b4a-4570-aadf" name="Master Talon" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee7-312b-e673-4787" type="max"/>
       </constraints>
@@ -967,22 +850,14 @@
             <entryLink id="29ca-c24c-6c15-1794" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2944-9788-0354-e4b0" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="a496-4f33-80b1-74e2" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
+        <entryLink id="c2bb-7485-4880-c57e" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="e7b8-6e58-0269-29ec" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7abf-45d2-57ac-fd22" name="Duke&apos;s Harriers" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a413-67b2-3f5b-87e1" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3d9-c0cf-775d-622d" type="max"/>
       </constraints>
@@ -1016,16 +891,10 @@
             <entryLink id="a764-4ccd-d92d-7a31" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2566-6ee0-2b3c-4b4c" name="Campaign Options (DEATH)" hidden="false" collective="false" import="true" targetId="7d37-33ad-dfe1-04bb" type="selectionEntryGroup"/>
-        <entryLink id="2a53-246e-67db-5556" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="05c9-5f7d-c718-ba3f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <catalogueLinks>
-    <catalogueLink id="e456-20db-23a1-3bd3" name="Death - Campaign Options" targetId="1355-fe6d-4766-ce01" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

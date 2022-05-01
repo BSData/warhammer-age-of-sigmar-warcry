@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aee6-e756-8a26-8a7b" name="Destruction - Ogor Mawtribes" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aee6-e756-8a26-8a7b" name="Destruction - Ogor Mawtribes" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5153-640d-85ad-b80e" name="Mournfang Pack" hidden="false" collective="false" import="true" targetId="3964-a920-5a3b-28a8" type="selectionEntry"/>
     <entryLink id="7c4e-91e1-6c44-0368" name="Frost Sabre" hidden="false" collective="false" import="true" targetId="c075-00dd-7095-9fb6" type="selectionEntry"/>
@@ -106,7 +106,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -124,7 +124,6 @@
                 <entryLink id="c3d8-f031-d4d9-4dac" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -132,7 +131,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -148,7 +147,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -162,12 +160,11 @@
             <entryLink id="3f9b-09c4-3a64-a0e5" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="7da1-58db-f92b-4f2b" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="4004-8ce5-bbc0-bd0c" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="51b8-2fdf-3692-83b7" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="7e55-e4ea-1194-d039" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4de7-c699-96ad-aa85" name="Ogor Glutton" hidden="false" collective="false" import="true" type="model">
@@ -180,6 +177,11 @@
         <modifier type="append" field="name" value="with Ironfist">
           <conditions>
             <condition field="selections" scope="4de7-c699-96ad-aa85" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="42ea-894a-65e8-f3d6" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -206,7 +208,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -221,7 +223,6 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -229,7 +230,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -248,7 +249,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="10.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -261,19 +261,18 @@
             <entryLink id="525a-84ab-4761-171c" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="17dd-ba4e-f9db-fe03" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="cfee-0154-09d1-0dc5" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="17dd-ba4e-f9db-fe03" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="cfee-0154-09d1-0dc5" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b8f-d820-70f5-1149" name="Maneater" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -312,19 +311,18 @@
             <entryLink id="7c4c-54a8-a9d0-ec46" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="40f6-d986-1809-c4fa" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="665f-7314-0b83-cdc4" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="bdae-856c-4e30-82eb" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="3a9c-d97d-93e1-1f44" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f945-23c9-6e14-99a8" name="Irongut" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -355,19 +353,18 @@
             <entryLink id="ee12-d5e0-b704-00bb" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4970-4976-a910-487c" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="a37c-b427-55e5-380d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="f034-b683-0eb3-8bf4" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="25ff-5e10-383b-c1a2" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c075-00dd-7095-9fb6" name="Frost Sabre" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -398,19 +395,18 @@
             <entryLink id="d71c-bd5b-563f-5899" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="9f46-636f-0ca9-4053" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="a205-8a94-5b66-d401" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="1710-b7fe-72a9-8603" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="4517-1128-582b-cb06" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3428-14f5-f634-7460" name="Leadbelcher" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -450,19 +446,18 @@
             <entryLink id="24ef-832d-9165-82ae" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="da9b-75e6-e712-56f3" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="46d7-01db-2963-45c3" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="a83c-9824-f89e-0272" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="014f-fcf7-52ae-5fc5" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="52b2-7089-7606-cc89" name="Icefall Yhetee" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -493,19 +488,18 @@
             <entryLink id="71c5-ef9c-7dde-ba42" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a919-42f4-4cc4-aea7" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="c5ea-7d48-f464-172a" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="cc19-e840-90b0-49ad" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="800b-e253-f404-f1bc" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="24da-34be-e1cd-7e82" name="Gnoblar" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -536,19 +530,18 @@
             <entryLink id="c1f7-6bc1-8b3b-ba84" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="48de-1036-fa6f-013b" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="1108-f40e-58cd-0042" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="9542-211d-2af4-84a5" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="facb-6491-cf09-a963" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="45.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b390-7758-5b67-cad4" name="Gorger" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd24-2702-0d40-541a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -580,12 +573,11 @@
             <entryLink id="83eb-1ff5-a0f8-c55f" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="634a-a81b-3013-550d" name="Campaign Options (DESTRUCTION)" hidden="false" collective="false" import="true" targetId="63e8-51bd-0295-e6fc" type="selectionEntryGroup"/>
-        <entryLink id="421c-756a-a4f4-4223" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="370e-a218-2398-3bd8" type="selectionEntryGroup"/>
+        <entryLink id="ec50-578c-92dd-46eb" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="49d0-e36b-a32c-0ed8" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

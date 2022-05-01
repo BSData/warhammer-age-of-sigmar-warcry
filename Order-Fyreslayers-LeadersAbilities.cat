@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6d44-e5d4-3849-6465" name="Order - Fyreslayers - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6d44-e5d4-3849-6465" name="Order - Fyreslayers - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="58c4-d0c9-5657-e1de" name="Fyreslayers Leaders" hidden="false"/>
     <categoryEntry id="eba1-79f1-cb88-ebe7" name="Underworlds Fjul-Grimnir" hidden="false"/>
@@ -135,6 +135,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="6516-6c14-06b9-29dc" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3c5a-61c9-ff52-f59e" name="Auric Flamekeeper" hidden="true" collective="false" import="true" targetId="e97d-fbb4-5caf-b496" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58c4-d0c9-5657-e1de" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e229-0e67-08cb-b915" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -336,6 +348,22 @@
       </modifiers>
       <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly Fjul-Grimnir.  Until the end of this fighter&apos;s activation, add 2 to the Attacks characteristic of attack actions made by this fighter that have the Axe runemark.</description>
     </rule>
+    <rule id="b483-f673-84af-a8fb" name="⚁ [Double] Masterflame Rune" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f9d-e6df-414f-4429" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can only use this ability in a battle round in which a friendly figther has been taken down.  Until the end of the battle round, add 1 to the damage points allocated to enemy fighters by each hit and critical hit from attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="2f9d-e6df-414f-4429" name=" Fyreslayers" hidden="false" collective="false" import="true" type="upgrade">
@@ -349,7 +377,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="681b-98fb-4b1d-b823" name="Vulkite Berzerker Karl" hidden="false" collective="false" import="true" type="model">
@@ -397,7 +424,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2808-8a77-1d1c-b019" name="Hearthguard Berzerker Karl" hidden="false" collective="false" import="true" type="model">
@@ -451,7 +477,6 @@
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -473,7 +498,6 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -493,7 +517,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b77f-7474-678c-72e1" name="Auric Hearthguard Karl" hidden="false" collective="false" import="true" type="model">
@@ -542,7 +565,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ddd6-5e73-0cbb-6660" name="Auric Runeson" hidden="false" collective="false" import="true" type="model">
@@ -584,7 +606,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="971e-31ab-32fb-3a81" name="Auric Runefather" hidden="false" collective="false" import="true" type="model">
@@ -626,7 +647,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5755-c004-3735-e4c2" name="Auric Runesmiter" hidden="false" collective="false" import="true" type="model">
@@ -668,7 +688,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eadf-94a6-ab9c-bfb8" name="Grimwrath Berzerker" hidden="false" collective="false" import="true" type="model">
@@ -710,7 +729,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7755-b62d-1927-e05f" name="Auric Runemaster" hidden="false" collective="false" import="true" type="model">
@@ -752,7 +770,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="797a-5fda-4da8-be72" name="Battlesmith" hidden="false" collective="false" import="true" type="model">
@@ -794,7 +811,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8322-99a5-b88b-61bb" name="Doomseeker" hidden="false" collective="false" import="true" type="model">
@@ -835,7 +851,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="415a-1cfa-81b0-60e4" name="The Chosen Axes" hidden="false" collective="false" import="true" type="upgrade">
@@ -845,7 +860,6 @@
       </constraints>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="91d8-8c99-50df-541f" name="Fjul-Grimnir" hidden="false" collective="false" import="true" type="model">
@@ -891,7 +905,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="17aa-cb60-0525-f36e" name="Tefk Flamebearer" hidden="false" collective="false" import="true" type="model">
@@ -938,7 +951,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="20f8-c9e7-2332-7962" name="Mad Maegrim" hidden="false" collective="false" import="true" type="model">
@@ -985,7 +997,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="284a-16ca-9b47-bf1f" name="Vol Orrukbane" hidden="false" collective="false" import="true" type="model">
@@ -1032,7 +1043,47 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e97d-fbb4-5caf-b496" name="Auric Flamekeeper" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be77-c634-22a9-2235" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="fb5a-1956-e646-c12c" name="Auric Flamekeeper" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2314-a0ff-0d75-afd0" name="Brazier Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="49dd-f966-6661-c8a1" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="f3b6-4a68-190f-3628" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
+            <entryLink id="30ab-4f74-4cbc-e488" name=" Fyreslayers" hidden="false" collective="false" import="true" targetId="2f9d-e6df-414f-4429" type="selectionEntry"/>
+            <entryLink id="7955-cdaa-e370-1f4e" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="d628-c574-a379-4a17" name="Battle Groups" hidden="false" collective="false" import="true" targetId="4131-645d-9fc9-12bb" type="selectionEntryGroup"/>
+        <entryLink id="661e-e300-0949-22f3" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="fc43-e90e-eb1b-c717" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
