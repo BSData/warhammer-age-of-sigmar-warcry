@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="47" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="48" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -24,7 +24,7 @@
         <characteristicType id="9b71-a24e-4046-7a28" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="05da-eba7-8ed2-ba43" name="Artefact">
+    <profileType id="05da-eba7-8ed2-ba43" name="Hidden Agenda">
       <characteristicTypes>
         <characteristicType id="0ec8-ef3e-72d9-8b62" name="Description"/>
       </characteristicTypes>
@@ -45,6 +45,11 @@
         <characteristicType id="9b19-df09-3efb-e317" name="Description"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="7698-989e-2e88-168e" name="Artefact">
+      <characteristicTypes>
+        <characteristicType id="70d1-b8bc-0fcc-7f55" name="Description"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="f2ce-030d-9971-73f0" name="Fighters" hidden="false"/>
@@ -57,6 +62,7 @@
     <categoryEntry id="82fd-8251-2413-feb8" name="Underworlds Fighters" hidden="false"/>
     <categoryEntry id="15bb-04f5-5313-58a5" name="Open Play Options" hidden="false"/>
     <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Underworlds Allies" hidden="false"/>
+    <categoryEntry id="fba5-9730-9be1-8ee9" name="Hidden Agendas" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -668,6 +674,33 @@
           </repeats>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Hidden Agendas Relationship</comment>
+          <modifiers>
+            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6913-b466-755d-9581" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6913-b466-755d-9581" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="7bef-8541-1068-f6c1" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6913-b466-755d-9581" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6913-b466-755d-9581" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bef-8541-1068-f6c1" type="max"/>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5988-6dd4-f405-8ce2" type="min"/>
@@ -675,6 +708,7 @@
         <constraint field="forces" scope="54fc-61ae-71eb-ca9d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dae6-b91d-555a-ae96" type="max"/>
       </constraints>
       <categoryLinks>
+        <categoryLink id="ca4a-4448-2312-8339" name="Hidden Agendas" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="false"/>
         <categoryLink id="c5d2-95ec-5b7d-32c2" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
@@ -750,6 +784,7 @@
   <entryLinks>
     <entryLink id="9a52-a063-a6ab-0338" name="Narrative Options (Required)" hidden="false" collective="false" import="true" targetId="578d-e141-c905-4efe" type="selectionEntry"/>
     <entryLink id="5720-d2b7-19d9-a904" name="Open Play Options" hidden="false" collective="false" import="true" targetId="cc30-51a5-1bac-cdfd" type="selectionEntry"/>
+    <entryLink id="88ba-c39d-e9b8-f2c3" name="Hidden Agendas" hidden="false" collective="false" import="true" targetId="6913-b466-755d-9581" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="f574-01e8-a7f3-ef39" name=" ⚁ [Double] Rush" hidden="false">
@@ -2331,6 +2366,199 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           </costs>
         </selectionEntry>
         <selectionEntry id="9032-694a-3205-3338" name="+1 max Unit" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6913-b466-755d-9581" name="Hidden Agendas" page="Tome of Champions 2021" hidden="false" collective="true" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="54fc-61ae-71eb-ca9d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="379c-622b-93a7-78bc" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cbbf-8539-b7fe-e928" name="Hidden Agendas" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1477-ac77-d109-3659" name="The Champion" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="acf3-c5ae-5105-fb4e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0354-8b5c-c361-a145" name="The Champion" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if the enemy leader has been taken down but your leader has not.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0b11-2694-f3ad-8adf" name="Fortune-favoured" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21ec-5b18-e979-134d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a5ab-0603-4815-b2b8" name="Fortune-favoured" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda immediately if you seize the initiative and 2 or more wild dice have been added to your number of singles.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e779-7351-5eef-fca4" name="Goliath Slayer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2712-fba2-637e-6166" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e8b4-192d-dce2-8655" name="Goliath Slayer" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda immediately if an enemy fighter with a Wounds characteristic of 30 or more is taken down by an attack action made by a friendly fighter with a Wounds characteristic of 10 or less.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b5f7-c8de-501b-b55b" name="Dominate" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e74-8ea1-e9f1-a74b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6372-8d80-acf0-2407" name="Dominate" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if you control more objectives than your opponent.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7cd6-656f-77d2-e1d1" name="Prudent Warrior" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9db5-7455-6cf9-0763" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="984d-25ca-2520-2379" name="Prudent Warrior" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if you have 3 or more wild dice that have not been used in the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4bef-d7d9-0faf-0e35" name="Flaunt" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7829-a2a9-4133-4db6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ff04-d7fb-25cf-655a" name="Flaunt" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda immediately if you use a [quad] for an ability that requires a [double].</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8944-1d80-7103-270e" name="The Architect" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2ce-9573-af92-3d82" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="87ca-0a76-f263-d5f6" name="The Architect" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if your opponent&apos;s warband has had half or more of its fighters taken down, but your warband has had less than half of its fighters taken down.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0415-aa4b-a3a3-8626" name="The High Ground" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e34d-9d5b-2107-4fb6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="af81-0285-b88c-53a0" name="The High Ground" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if 1 or mroe friendly fighters are vertically 3&quot; above the battlefield floor and no enemy fighters are vertically 3&quot; above the battlefield floor.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9499-46ee-0f25-56f1" name="Overrun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2615-eb10-5c65-6bb7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f8f4-f13a-b9a7-bea4" name="Overrun" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda at the end of the battle round if you have 1 or more fighters wholly within each quarter of the battlefield.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e415-086e-a0ff-e0fa" name="Hold the Centre" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ac1-190e-9e37-a7bd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bf57-e9b9-c4d4-7ac8" name="Hold the Centre" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if 1 or more friendly fighters are within 6&quot; horizontally of the centre of the battlefield and no enemy fighters are within 6&quot; horizontally of the centre of the battlefield.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9bbe-d9e7-3fae-58a1" name="Concealed Artifact" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="725d-17ec-eb76-e4de" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c93b-a0cc-738d-1f3a" name="Concealed Artifact" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Secretly note down one of your fighters to be the bearer of the concealed artefact.  The fighter must be on the battlefield.  At the start of the combat phase of the third battle round, reveal which of your fighters bears the concealed artefact.  At the end of the battle, you complete this Hidden Agenda if the bearer has not been taken down.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c1c7-d4a8-8a4c-46b8" name="Inglorious Demise" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf16-81e7-29a9-676c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e9e8-36c4-08c5-f03e" name="Inglorious Demise" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+              <characteristics>
+                <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda immediately if the enemy leader is taken down by a damage point allocated to them that did not result from an attack action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
