@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edd2-67e1-a0c3-1672" name="Agents of Chaos" revision="7" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="edd2-67e1-a0c3-1672" name="Agents of Chaos" revision="7" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d497-84c3-796f-b120" name="Beastlord" hidden="false" collective="false" import="true" targetId="6f12-5bdf-edcf-5738" type="selectionEntry">
       <comment>CHAOS - SAMPLE ALLY MOD AND CONDITIONAL</comment>
@@ -1478,21 +1478,6 @@
         <categoryLink id="ae13-c365-3fd8-6c8c" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4b68-d044-861f-b02f" name="Brimstone Horrors" hidden="true" collective="false" import="true" targetId="903a-4c29-af90-90aa" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0824-bd93-dd3f-a5a9" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bda4-b37c-8155-9fbd" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="2689-66c0-3b77-2cb2" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="b1be-42ba-fc16-0cb2" name="Narvia" hidden="true" collective="false" import="true" targetId="f049-afce-4e16-27ad" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1881,8 +1866,16 @@
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="c8dc-e2d4-a5be-bf3f" name="Optional Universal Abilities (Chaos)" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="1546-849c-0ed2-6b65" name="Show Catacombs Abilities" hidden="false" collective="false" import="true" type="upgrade"/>
-        <selectionEntry id="f3e3-b7d1-7a74-993f" name="Show Red Harvest Abilities" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="1546-849c-0ed2-6b65" name="Show Catacombs Abilities" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f3e3-b7d1-7a74-993f" name="Show Red Harvest Abilities" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fa9-d844-f097-e3e8" name="Chaos - Blades of Khorne - Bloodbound - Leaders &amp; Abilities" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fa9-d844-f097-e3e8" name="Chaos - Blades of Khorne - Bloodbound - Leaders &amp; Abilities" revision="20" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="efa7-e293-f325-dc7f" name="Khorne Mortal Leaders" hidden="false"/>
     <categoryEntry id="9aec-09fe-ae65-b3c2" name="Underworlds Garrek" hidden="false"/>
@@ -478,14 +478,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b62-ec8c-1fdf-6bb3" name="Aspiring Deathbringer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -513,13 +512,12 @@
             <entryLink id="4e24-36a2-4867-5997" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="ad10-0a33-1193-90cc" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="a237-5d97-dbe2-83be" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="d82b-baa7-474d-5faa" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="2b2b-6d20-4a35-459b" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="f31a-a82e-4bb7-91f8" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d90c-2e52-d28e-dcba" name="Exalted Deathbringer" hidden="false" collective="false" import="true" type="model">
@@ -555,7 +553,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -571,14 +569,13 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d2b3-1e69-4518-19c9" name="with Ruinous Axe" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -593,7 +590,6 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -607,20 +603,19 @@
             <entryLink id="913d-99d4-cd53-018d" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="c263-4aff-1fe8-4df7" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="8e34-2c88-5932-fdf2" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="7ac4-484f-c651-f5f3" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="d0a8-5ebb-440a-a37e" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="0fcc-7a72-0e56-1d60" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ffd2-c04f-37f0-98c6" name="Skullgrinder" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -648,13 +643,12 @@
             <entryLink id="f3f9-0150-10d0-842d" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4096-bf2b-b38c-ea5a" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="72e5-51b0-a945-10ea" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="888d-359f-2a48-6b9f" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="e357-4b13-fe49-224f" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="7bd8-a8f4-21d6-a1c2" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bb78-be66-8925-c976" name="Slaughterpriest" hidden="false" collective="false" import="true" type="model">
@@ -667,11 +661,6 @@
         <modifier type="append" field="name" value="with Bloodbathed Axe">
           <conditions>
             <condition field="selections" scope="bb78-be66-8925-c976" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee47-1d9e-108b-3c31" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -692,6 +681,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="ee47-1d9e-108b-3c31" name="with Bloodbathed Axe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="4058-aa3b-75c5-b764" name="Bloodbathed Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -704,10 +700,16 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e1d3-5b17-9899-39c2" name="with Wrath-hammer and Hackblade" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="fd65-3a67-de8d-be11" name="Wrath-hammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -728,7 +730,6 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-                <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -742,20 +743,19 @@
             <entryLink id="dc6b-d232-6c71-02ba" name=" Priest" hidden="false" collective="false" import="true" targetId="f58d-4233-7f4a-1313" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="4472-ecbd-916e-103f" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="ef78-69ef-73c8-f994" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="c7e0-b5a6-8239-398c" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="c41b-7ae7-fed4-5e28" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="ea57-ead6-2a95-512e" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="56d2-5f5d-7c03-d9b0" name="Bloodsecrator" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -784,20 +784,19 @@
             <entryLink id="04e1-fe08-2c03-989b" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="a662-6db8-9afc-86aa" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="59de-ac3a-e70d-2b76" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="f6f3-686e-e6b0-7808" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="70f1-2bcc-fada-da4d" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="420c-e8ed-1975-2cc0" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d11d-0288-f8bf-ecc4" name="Mighty Lord of Khorne" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -826,20 +825,19 @@
             <entryLink id="126d-ae2c-4902-4983" name=" Champion" hidden="false" collective="false" import="true" targetId="2da4-597a-7aab-a5d8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="ee97-b618-8cae-4c40" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="0ef9-9b12-f8c6-c722" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="ee97-b618-8cae-4c40" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
         <entryLink id="f1f3-f678-25a1-d86b" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="dba8-cd38-0d28-f55e" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="699b-95e1-d576-2dee" name="Mighty Lord of Khorne on Juggernaut" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -868,20 +866,19 @@
             <entryLink id="75bd-e90d-0df7-4cf8" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="9ea0-0804-dc6b-0b98" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="4fbc-fa11-90a2-09a1" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="d4c6-889e-c89b-b637" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="ca26-af8b-577d-68c9" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="cafc-960f-ec4e-0994" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a438-2913-d892-b225" name="Bloodstoker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -918,20 +915,19 @@
             <entryLink id="cc5c-0f6a-60c7-7550" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="be23-452c-694a-fdbe" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="73fd-dcd8-4c02-ad32" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="bdf4-89f2-1a55-b232" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="32aa-c05e-60a9-e966" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="23ad-933f-0757-5ddf" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c000-5cec-0fac-7c54" name="Skullseeker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -960,20 +956,19 @@
             <entryLink id="5f77-28df-0a3d-7696" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="7772-2790-d1de-3012" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="a6e1-8aa6-ab10-b4ce" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="45ed-b9e6-d280-1197" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="cbdb-939e-ced1-0926" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="72d0-01a6-cb54-97e8" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3015-b450-4d67-ffbf" name="Skullhunter" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1002,20 +997,19 @@
             <entryLink id="1f1c-08a5-0834-0180" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="cf3e-07ea-6f44-764d" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="1eb8-5ae0-3b0d-6f94" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="eeaf-6f7f-bb71-924f" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="7fa8-a283-4d02-00ea" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="e30e-b79c-5f8c-c174" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cd18-c97e-6138-9d75" name="Wrathmaster" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1044,20 +1038,19 @@
             <entryLink id="0a66-b9c9-f27d-8085" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d5f2-53f4-4a1b-86cd" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="9914-ffa9-5ca2-fe2c" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="46f0-42b5-4f49-4e68" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="1ab7-cdb9-2948-5959" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="1eeb-54c7-50d1-8d2b" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f0cf-9f65-ef79-6e84" name="Chaos Champion" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1086,20 +1079,19 @@
             <entryLink id="0b79-e7c9-10be-80ae" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2e78-0a61-cfc0-7dbd" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="8ecc-a359-add6-495d" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="977f-636a-d1f0-3d9e" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="f8de-06be-5bf7-7d6f" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="da89-4b26-8142-b075" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c623-43ca-88b7-40a9" name="Bloodreaver Chieftain" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1127,20 +1119,19 @@
             <entryLink id="45b6-b4dc-0e03-8eeb" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="aca6-b7c5-8a3b-8069" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="0f04-0084-e40a-ca05" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="da38-7850-f82b-c961" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="dd01-cccf-a01f-0d83" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="25f5-41b6-fdf3-6cc3" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7faa-652d-f6ea-c0c5" name="Garrek Gorebeard" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1169,20 +1160,19 @@
             <entryLink id="5017-6bdc-5b94-4508" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="050e-af21-e394-55ad" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="0517-07b8-dd72-e1b5" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="8d79-2798-963a-c633" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="1b1e-9bec-ad97-4448" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="2475-92e6-390b-30a1" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb70-052d-77f8-fecb" name="Karsus the Chained" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1215,19 +1205,18 @@
             <entryLink id="ce61-eacc-a167-532b" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="2ee5-4c23-5891-e0c3" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="a868-b251-b35f-8cb5" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="9553-4980-1d03-2662" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="ce32-c544-f8ce-cfba" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a4e-12a9-4dfc-a515" name="Blooded Saek" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1259,19 +1248,18 @@
             <entryLink id="65d4-5790-efe3-2af8" name="Garrek&apos;s Reavers" hidden="false" collective="false" import="true" targetId="cd86-819c-2780-db27" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="6f7d-906a-021a-0d73" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="acc5-1b60-df03-30d6" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="599b-3d3b-8eb5-cc73" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="b5e8-bcc7-0a93-3570" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7ba3-30ee-ee30-7a27" name="Targor" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1303,19 +1291,18 @@
             <entryLink id="dfc4-7c54-bc29-f025" name="Garrek&apos;s Reavers" hidden="false" collective="false" import="true" targetId="cd86-819c-2780-db27" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="d01e-4e9e-e22b-7ccb" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="fb27-21d9-caeb-b80b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="8f55-456f-5292-0b2d" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="cfea-f0db-0cd3-fb23" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3acb-dd1f-9a0a-5c68" name="Arnulf" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1347,12 +1334,12 @@
             <entryLink id="9a54-6790-7814-9151" name=" Blades of Khorne: Bloodbound" hidden="false" collective="false" import="true" targetId="66e8-954c-b66f-7c68" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="0af2-d957-eecc-5177" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="22c5-2a47-db00-9f34" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="e5c5-7b97-a62a-afb7" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="05d0-3464-d5e7-eb6b" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="c733-c76d-6cc0-5081" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cd86-819c-2780-db27" name="Garrek&apos;s Reavers" hidden="false" collective="false" import="true" type="upgrade">
@@ -1361,7 +1348,6 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c7f-5192-10aa-624a" type="max"/>
       </constraints>
       <costs>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1369,7 +1355,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1398,13 +1384,12 @@
             <entryLink id="320d-adab-5b39-614b" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="7132-fa10-78af-d7e2" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="8765-e166-0fd9-6397" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
         <entryLink id="a8fa-aa17-b837-e26f" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="6173-0c51-0393-b2b8" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="c4c5-ef9f-aa25-302a" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6d5b-7de3-b57d-eb44" name="Magore&apos;s Fiends" hidden="false" collective="false" import="true" type="upgrade">
@@ -1413,7 +1398,6 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="429c-cc97-cbc6-df1e" type="max"/>
       </constraints>
       <costs>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1421,7 +1405,7 @@
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1454,19 +1438,18 @@
             <entryLink id="b97a-5b02-8ca9-223a" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="cd2e-2b5e-08b2-c4ee" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="0234-57e4-e244-b764" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="6e28-62ab-8503-65b6" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="d2d4-3207-353c-946b" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="49f2-c138-1054-48df" name="Zharkus the Bloodsighted" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1499,19 +1482,18 @@
             <entryLink id="f3fa-5942-c5c6-7c3a" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="46fc-b30a-1644-5366" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="4287-8e94-59c1-4e95" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="46fc-b30a-1644-5366" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="4287-8e94-59c1-4e95" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8934-8453-bc3c-7d84" name="Riptooth" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdd6-f96f-a585-016e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1544,16 +1526,12 @@
             <entryLink id="5f37-45e3-696c-7538" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="5b8e-87a4-6bcd-3103" name="Campaign Options (CHAOS)" hidden="false" collective="false" import="true" targetId="6b6c-10bf-6d8b-0211" type="selectionEntryGroup"/>
-        <entryLink id="eaea-faab-9540-4938" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="b908-b59d-c7e6-a38e" type="selectionEntryGroup"/>
+        <entryLink id="5c61-aa3c-0ea1-64b9" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="3585-c7c4-e52e-88a9" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-        <cost name="Glory" typeId="8096-c20e-edc8-1a25" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <catalogueLinks>
-    <catalogueLink id="e90a-7639-931e-94f7" name="Chaos - Campaign Options" targetId="cfdc-22b9-58b0-31d5" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>
