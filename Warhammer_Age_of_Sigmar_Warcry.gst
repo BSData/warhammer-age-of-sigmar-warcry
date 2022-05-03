@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="48" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <publications>
+    <publication id="df3a-f424-e7ea-5f69" name="Tome of Champions 2021" shortName="ToC21" publisher="Tome of Champions 2021" publicationDate="March 2022"/>
+  </publications>
   <costTypes>
     <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -151,7 +154,7 @@
           </modifiers>
           <modifierGroups>
             <modifierGroup>
-              <comment>bladeborn</comment>
+              <comment>underworlds relationship</comment>
               <modifiers>
                 <modifier type="increment" field="ca12-cd0c-f085-1eaf" value="1.0">
                   <conditions>
@@ -2375,7 +2378,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6913-b466-755d-9581" name="Hidden Agendas" page="Tome of Champions 2021" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6913-b466-755d-9581" name="Hidden Agendas" publicationId="df3a-f424-e7ea-5f69" page="100" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="54fc-61ae-71eb-ca9d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="379c-622b-93a7-78bc" type="max"/>
       </constraints>
