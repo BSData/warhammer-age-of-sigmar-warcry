@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ece1-6b27-e69d-3e37" name="Death - Bringers of Death" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ece1-6b27-e69d-3e37" name="Death - Bringers of Death" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e49a-8bc9-e96f-bde1" name="Abhorrant Archregent" hidden="false" collective="false" import="true" targetId="699f-0eba-7468-76ca" type="selectionEntry">
       <modifiers>
@@ -838,6 +838,30 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="c10f-80cf-52e7-b903" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="21b3-009f-6bdd-30d0" name="Craven Huntmaster" hidden="false" collective="false" import="true" targetId="063e-0e9a-456f-108a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986a-3b69-d565-d503" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9980-3413-6038-0c2a" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="00c3-2a44-43ab-2b64" name="Scriptor Mortis" hidden="false" collective="false" import="true" targetId="4f5e-b881-5fe8-5be3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986a-3b69-d565-d503" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4f31-8b54-ad5b-7097" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

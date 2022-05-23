@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a400-ed28-e7ad-d4ee" name="Order - Daughters of Khaine - Leaders &amp; Abilities" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a400-ed28-e7ad-d4ee" name="Order - Daughters of Khaine - Leaders &amp; Abilities" revision="16" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="f678-cbf9-4294-8888" name="Daughters Leaders" hidden="false"/>
     <categoryEntry id="66bd-937c-0f5d-30d2" name="Underworlds Morgwaeth" hidden="false"/>
@@ -147,6 +147,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="231d-8688-6ea1-78aa" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7456-294f-6e03-d8a4" name="High Gladiatrix" hidden="true" collective="false" import="true" targetId="fcab-f437-06fe-d5e1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f678-cbf9-4294-8888" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ecef-10d5-6cea-c47b" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -317,6 +329,22 @@
         </modifier>
       </modifiers>
       <description>Pick another visible friendly fighter with teh Morgwaeth&apos;s blade-Coven runemark within 3&quot; of this fighter. That fighter can make a bonus attack action.</description>
+    </rule>
+    <rule id="36fd-1169-2a61-c84b" name="⚁ [Double] Killing Stroke" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2591-5f57-1749-3db3" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice.  On a 3-4, allocate 1 point of damage to that fighter.  On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -1072,6 +1100,47 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fcab-f437-06fe-d5e1" name="High Gladiatrix" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9b84-f363-dc9e-cce1" name="High Gladiatrix" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="14ca-bf46-82a9-b2c9" name="Barbed Whip" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="dc30-1a25-4e9e-3710" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="b86e-d35d-f800-48f2" name=" Trapper" hidden="false" collective="false" import="true" targetId="dd95-1c17-a923-4487" type="selectionEntry"/>
+            <entryLink id="c795-102a-5e38-0830" name=" Daughters of Khaine" hidden="false" collective="false" import="true" targetId="2591-5f57-1749-3db3" type="selectionEntry"/>
+            <entryLink id="8fa1-1af1-af78-2dd6" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="fadb-5566-4eba-1c2b" name="- Is this model being used this battle?" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="7793-80f7-c3bb-659d" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="9d87-323a-fa79-31a7" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
