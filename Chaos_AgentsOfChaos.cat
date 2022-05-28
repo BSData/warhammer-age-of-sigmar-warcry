@@ -1863,22 +1863,134 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="c8dc-e2d4-a5be-bf3f" name="Optional Universal Abilities (Chaos)" hidden="false" collective="false" import="true">
-      <selectionEntries>
-        <selectionEntry id="1546-849c-0ed2-6b65" name="Show Catacombs Abilities" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f3e3-b7d1-7a74-993f" name="Show Red Harvest Abilities" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
+  <rules>
+    <rule id="900a-b729-c01a-d6ca" name="⚁ [Double] Acrobatic Leap" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;.</description>
+    </rule>
+    <rule id="a453-0c1e-b838-7a15" name="⚁ [Double] Throwing Stars and Chakrams" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="333e-8f3d-3053-cf12" name="⚂ [Triple] Shadowy Recall" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter with the Minion runemark that is within 12&quot; of this fighter. Remove that fighter from the battlefield and then immediately set them up anywhere on the battlefield within a number of inches of this fighter equal to the value of this ability.</description>
+    </rule>
+    <rule id="0e52-1e24-e9c5-bbbe" name="⚂ [Triple] Shattered Gloom Globe" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of the attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
+    </rule>
+    <rule id="62da-27f9-bdb4-ead3" name="⚃ [Quad] Spinning Somersault Strike" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;. In addition, this fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+    </rule>
+  </rules>
+  <sharedInfoGroups>
+    <infoGroup id="5823-47b2-4489-934a" name="Thrallmaster" hidden="false">
+      <rules>
+        <rule id="1849-ebe0-7196-2f62" name="⚁ [Double] Acrobatic Leap" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;.</description>
+        </rule>
+        <rule id="f48b-d384-c47c-8f5c" name="⚁ [Double] Throwing Stars and Chakrams" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="ce9f-c73b-a914-372e" name="⚂ [Triple] Shadowy Recall" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a friendly fighter with the Minion runemark that is within 12&quot; of this fighter. Remove that fighter from the battlefield and then immediately set them up anywhere on the battlefield within a number of inches of this fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="a9c0-d9f2-1cf5-ed92" name="⚂ [Triple] Shattered Gloom Globe" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of the attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
+        </rule>
+        <rule id="ae57-cec7-7aa4-47a6" name="⚃ [Quad] Spinning Somersault Strike" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;. In addition, this fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
   <catalogueLinks>
     <catalogueLink id="e814-3dc7-1022-fb56" name="Chaos - Beasts of Chaos - Leaders &amp; Abilities" targetId="a9eb-039a-63b1-0fe5" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="f201-f80e-e5ec-258f" name="Chaos - Blades of Khorne - Bloodbound - Leaders &amp; Abilities" targetId="4fa9-d844-f097-e3e8" type="catalogue" importRootEntries="true"/>
