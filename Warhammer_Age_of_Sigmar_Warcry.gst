@@ -686,12 +686,22 @@
           <modifiers>
             <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fba5-9730-9be1-8ee9" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fba5-9730-9be1-8ee9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
