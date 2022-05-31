@@ -735,7 +735,15 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="ca4a-4448-2312-8339" name="Hidden Agendas" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="false"/>
-        <categoryLink id="9849-411e-15d4-9c6a" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
+        <categoryLink id="9849-411e-15d4-9c6a" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink id="c5d2-95ec-5b7d-32c2" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>

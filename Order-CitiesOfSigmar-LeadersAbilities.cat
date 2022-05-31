@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="46f8-e2a4-c896-82db" name="Order - Cities of Sigmar - Leaders &amp; Abilities" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="46f8-e2a4-c896-82db" name="Order - Cities of Sigmar - Leaders &amp; Abilities" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2eaf-cecc-7ff0-0ad7" name="CoS Leaders" hidden="false"/>
   </categoryEntries>
@@ -4007,8 +4007,15 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2ed9-4e2f-91e2-ef6c" name="Cities" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="1ef3-878d-c5ae-3d32" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2eaf-cecc-7ff0-0ad7" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef3-878d-c5ae-3d32" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef3-878d-c5ae-3d32" type="min"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d503-b2e9-ed84-da02" type="max"/>
       </constraints>
       <categoryLinks>
