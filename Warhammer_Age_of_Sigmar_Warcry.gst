@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="48" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="49" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="df3a-f424-e7ea-5f69" name="Tome of Champions 2021" shortName="ToC21" publisher="Tome of Champions 2021" publicationDate="March 2022"/>
   </publications>
@@ -66,6 +66,7 @@
     <categoryEntry id="15bb-04f5-5313-58a5" name="Open Play Options" hidden="false"/>
     <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Underworlds Allies" hidden="false"/>
     <categoryEntry id="fba5-9730-9be1-8ee9" name="Hidden Agendas" hidden="false"/>
+    <categoryEntry id="e663-95d1-d351-f200" name="Allegiances" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -195,6 +196,7 @@
         </categoryLink>
         <categoryLink id="e96a-4ba9-a4f3-9277" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
         <categoryLink id="6a6a-fcf5-2a74-ef67" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false"/>
+        <categoryLink id="8999-2018-4ce5-b7e7" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
@@ -667,6 +669,7 @@
           </constraints>
         </categoryLink>
         <categoryLink id="2cd0-557e-0202-662d" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
+        <categoryLink id="a103-f8fc-0b50-3f72" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
@@ -679,27 +682,17 @@
       </modifiers>
       <modifierGroups>
         <modifierGroup>
-          <comment>Hidden Agendas Relationship</comment>
+          <comment>Hidden Agendas &amp; Allegiances Relationship</comment>
           <modifiers>
             <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6913-b466-755d-9581" type="atLeast"/>
-              </conditions>
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
             <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6913-b466-755d-9581" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="7bef-8541-1068-f6c1" value="0.0">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6913-b466-755d-9581" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="0.0">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6913-b466-755d-9581" type="equalTo"/>
-              </conditions>
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
         </modifierGroup>
@@ -712,6 +705,7 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="ca4a-4448-2312-8339" name="Hidden Agendas" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="false"/>
+        <categoryLink id="9849-411e-15d4-9c6a" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
         <categoryLink id="c5d2-95ec-5b7d-32c2" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
@@ -719,7 +713,7 @@
           </constraints>
         </categoryLink>
         <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="786b-e120-4496-d5ea" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
+        <categoryLink id="786b-e120-4496-d5ea" name="Underworlds Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="2377-2d5d-138d-5546" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58f5-1fbc-791b-d2d3" type="max"/>
@@ -746,6 +740,7 @@
           </constraints>
         </categoryLink>
         <categoryLink id="22a0-1b29-e80a-36dc" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
+        <categoryLink id="f1a4-11d7-7f58-e616" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="0738-b6fd-56d7-29dc" name="Triumph &amp; Treachery [2-Players, 2 Warbands each]" hidden="false">
@@ -781,6 +776,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e56d-744b-ed43-6b52" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="defd-d565-f696-a39f" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
