@@ -206,7 +206,22 @@
         </categoryLink>
         <categoryLink id="e96a-4ba9-a4f3-9277" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
         <categoryLink id="6a6a-fcf5-2a74-ef67" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false"/>
-        <categoryLink id="8999-2018-4ce5-b7e7" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
+        <categoryLink id="8999-2018-4ce5-b7e7" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
@@ -689,7 +704,22 @@
           </constraints>
         </categoryLink>
         <categoryLink id="2cd0-557e-0202-662d" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
-        <categoryLink id="a103-f8fc-0b50-3f72" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
+        <categoryLink id="a103-f8fc-0b50-3f72" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
@@ -735,12 +765,19 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="ca4a-4448-2312-8339" name="Hidden Agendas" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="false"/>
-        <categoryLink id="9849-411e-15d4-9c6a" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false">
+        <categoryLink id="9849-411e-15d4-9c6a" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="lessThan"/>
-              </conditions>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </categoryLink>
@@ -790,7 +827,22 @@
           </constraints>
         </categoryLink>
         <categoryLink id="22a0-1b29-e80a-36dc" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="f1a4-11d7-7f58-e616" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
+        <categoryLink id="f1a4-11d7-7f58-e616" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="0738-b6fd-56d7-29dc" name="Triumph &amp; Treachery [2-Players, 2 Warbands each]" hidden="false">
@@ -836,7 +888,22 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e56d-744b-ed43-6b52" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="defd-d565-f696-a39f" name="Allegiances" hidden="false" targetId="e663-95d1-d351-f200" primary="false"/>
+        <categoryLink id="defd-d565-f696-a39f" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
