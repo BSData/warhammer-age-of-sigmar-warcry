@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9e73-1b18-7f12-0282" name="Destruction - Ogor Mawtribes - Leaders &amp; Abilities" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9e73-1b18-7f12-0282" name="Destruction - Ogor Mawtribes - Leaders &amp; Abilities" revision="20" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="f34a-a216-6bd0-411d" name="Ogor Leaders" hidden="false"/>
     <categoryEntry id="44e3-46cb-cc19-2d68" name="Underworlds Hrothgorn" hidden="false"/>
+    <categoryEntry id="22ed-76da-2b29-89c9" name="Underworlds Blackpowder" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="3751-ba35-fd49-406d" name="Tyrant" hidden="true" collective="false" import="true" targetId="e125-9372-ee04-f967" type="selectionEntry">
@@ -111,6 +112,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="76f9-cceb-74cb-0ddd" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c12c-6cff-393a-5c43" name="Gorlok Blackpowder" hidden="true" collective="false" import="true" targetId="e61f-2dd0-9fce-e3cd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f34a-a216-6bd0-411d" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e7fc-97ee-190f-47a6" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1189,6 +1202,245 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb0e-0769-7ed1-4cf4" name="Peggz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cae-6bfc-f1c7-c5cc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cdef-c532-fc22-8945" name="Peggz" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b70b-b107-148c-547f" name="Motley Assortment of Weapons and Sharp Stuff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4767-27cd-630d-e93b" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="d161-672b-8a9f-dbf1" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d43c-13c9-95cf-360b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="bb1e-81d6-d858-6ede" name="Blackpowder&apos;s Buccaneers" hidden="false" collective="false" import="true" targetId="fbe1-a855-cde3-5085" type="selectionEntry"/>
+            <entryLink id="25ee-42e0-9be4-1244" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7e08-5663-334e-7da5" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="acd3-acb9-a517-47bc" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbe1-a855-cde3-5085" name="Blackpowder&apos;s Buccaneers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f18-8c67-e2c8-81aa" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a672-7dc6-5ee5-10c2" type="max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry id="e61f-2dd0-9fce-e3cd" name="Gorlok Blackpowder" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="051a-3d3b-f82a-1c46" name="Gorlok Blackpowder" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">40</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cebd-5f74-1e52-a7e4" name="Great Cutlass and Gulping Bite" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-9</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="db5c-143c-f9a5-c798" name="Grunderbuss" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="76eb-6b7c-200a-0ba0" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="450e-0759-8116-b908" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
+            <entryLink id="0c73-85f5-e4ac-b7cc" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+            <entryLink id="016f-c031-db27-7b63" name="Blackpowder&apos;s Buccaneers" hidden="false" collective="false" import="true" targetId="fbe1-a855-cde3-5085" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="3520-8d56-f253-fd53" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+        <entryLink id="affb-6a3e-3579-b63c" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="4bfe-f01a-1b3c-74c1" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="300.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2425-cf87-8ab5-9bcb" name="Kagey" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed4a-c49b-296b-e7ea" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5f90-004d-695f-575e" name="Kagey" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="25b1-889b-6a93-6ff8" name="Motley Assortment of Weapons and Sharp Stuff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c48b-316e-7e43-b22b" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="0412-85fe-01c7-2359" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b2bd-908d-faa6-cc85" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e710-adf4-1f53-7819" name="Blackpowder&apos;s Buccaneers" hidden="false" collective="false" import="true" targetId="fbe1-a855-cde3-5085" type="selectionEntry"/>
+            <entryLink id="bd4c-8ec5-801c-6847" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="a2df-c232-bd1a-d8f7" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="8acb-fa9f-ff94-f3a6" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77d4-01b6-daa6-1a0f" name="Mange" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0745-a608-cf6a-ad5d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8b98-eefb-af53-743b" name="Mange" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9dc1-7923-2b77-9978" name="Motley Assortment of Weapons and Sharp Stuff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="381c-edae-ec3f-b08c" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="a417-3f4a-e97d-e447" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0c9f-6621-f2f0-3782" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="00f5-2f8a-6b67-bf32" name="Blackpowder&apos;s Buccaneers" hidden="false" collective="false" import="true" targetId="fbe1-a855-cde3-5085" type="selectionEntry"/>
+            <entryLink id="ce69-d529-d8c9-c9dd" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="5965-2e6b-c03c-b971" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="2014-af2c-2ad1-c332" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c038-0ae8-73b7-14f4" name="Shreek" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b773-4569-a856-e8a0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f726-84c6-c3df-9def" name="Shreek" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="337e-ece2-967c-f045" name="Motley Assortment of Weapons and Sharp Stuff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ce8d-beca-d323-19d3" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="b4d3-7e66-e1b9-205f" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="160d-db6f-f4c7-78bb" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="54b4-e78e-fdd1-9f32" name="Blackpowder&apos;s Buccaneers" hidden="false" collective="false" import="true" targetId="fbe1-a855-cde3-5085" type="selectionEntry"/>
+            <entryLink id="dd7e-e719-60a6-9282" name=" Ogor Mawtribes" hidden="false" collective="false" import="true" targetId="9cab-4801-8446-647d" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7781-ecd5-57d8-4f12" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="7afd-def2-729a-5f12" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="40.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
