@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ece1-6b27-e69d-3e37" name="Death - Bringers of Death" revision="8" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ece1-6b27-e69d-3e37" name="Death - Bringers of Death" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e49a-8bc9-e96f-bde1" name="Abhorrant Archregent" hidden="false" collective="false" import="true" targetId="699f-0eba-7468-76ca" type="selectionEntry">
       <modifiers>
@@ -2168,6 +2168,66 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
         </modifier>
       </modifiers>
       <description>Pick a number of visible friendly fighters with the Minion runemark equal to the value of this ability within 6&quot; of this fighter. Each fighter pi cked can make a bonus move action or a bonus attack action (some can make bonus move actions and others bonus attack actions).</description>
+    </rule>
+    <rule id="8932-9b21-bd63-146e" name="⚂ [Triple] Dynamic Enhancer" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of the battle round, add 1 to the Attack characteristic of attack actions with a Range characteristic of 3 or less made by visible friendly fighters with both the Exiled Dead and Frienzied runemarks while they are within 9&quot; of this fighter.</description>
+    </rule>
+    <rule id="09ff-0efa-5f3f-3ee2" name="⚁ [Double] Dread Puppetry" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf8-4940-a2eb-d3f4" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a friendly fighter with both the Exiled Dead and Bulwark runemarks and has not activated yet this battle round.  you can activate that fighter immediately after this fighter&apos;s activation ends.</description>
+    </rule>
+    <rule id="c443-3381-acb9-b588" name="⚁ [Double] Crackling Arcs" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a number of dice equal to the value of this ability.  For each roll of 5+, pick a visible enemy fighter within 3&quot; of this fighter.  Allocate 1 damage point to that fighter for each friendly fighter with this ability&apos;s runemarks within 3&quot; of that fighter.</description>
     </rule>
   </rules>
   <catalogueLinks>
