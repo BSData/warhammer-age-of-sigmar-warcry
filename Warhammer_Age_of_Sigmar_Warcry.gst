@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="50" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="51" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="df3a-f424-e7ea-5f69" name="Tome of Champions 2021" shortName="ToC21" publisher="Tome of Champions 2021" publicationDate="March 2022"/>
   </publications>
@@ -62,11 +62,38 @@
     <categoryEntry id="e311-66c4-5d05-cd1e" name="Monsters" hidden="false"/>
     <categoryEntry id="5ed1-bb68-7a31-b173" name="Heroes" hidden="false"/>
     <categoryEntry id="e4b3-72a5-ca73-8c72" name="Narrative Options" hidden="false"/>
-    <categoryEntry id="82fd-8251-2413-feb8" name="Underworlds Fighters" hidden="false"/>
+    <categoryEntry id="82fd-8251-2413-feb8" name="Bladeborn Fighters" hidden="false"/>
     <categoryEntry id="15bb-04f5-5313-58a5" name="Open Play Options" hidden="false"/>
-    <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Underworlds Allies" hidden="false"/>
+    <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Bladeborn Allies" hidden="false"/>
     <categoryEntry id="fba5-9730-9be1-8ee9" name="Hidden Agendas" hidden="false"/>
     <categoryEntry id="e663-95d1-d351-f200" name="Allegiances" hidden="false"/>
+    <categoryEntry id="c1d9-ad54-d2e9-6849" name=" Agile" hidden="false"/>
+    <categoryEntry id="a333-9146-42e8-421a" name=" Beast" hidden="false"/>
+    <categoryEntry id="65b3-6aac-769e-b8bd" name=" Ally" hidden="false"/>
+    <categoryEntry id="c3f5-3905-6ef9-4bee" name=" Berserker" hidden="false"/>
+    <categoryEntry id="1482-0037-1879-7409" name=" Brute" hidden="false"/>
+    <categoryEntry id="0f0b-3883-05ea-e379" name=" Bulwark" hidden="false"/>
+    <categoryEntry id="3c8f-bdce-f950-c13e" name=" Champion" hidden="false"/>
+    <categoryEntry id="4a55-52e5-0611-9983" name=" Destroyer" hidden="false"/>
+    <categoryEntry id="fcb1-dbed-6277-4fda" name=" Elite" hidden="false"/>
+    <categoryEntry id="1aa1-183f-952b-ad08" name=" Ferocious" hidden="false"/>
+    <categoryEntry id="6840-bddb-4164-6ebe" name=" Fly" hidden="false"/>
+    <categoryEntry id="12a9-d7b7-2309-fde6" name=" Frenzied" hidden="false"/>
+    <categoryEntry id="ddfc-7256-ce66-075d" name=" Gargantuan" hidden="false"/>
+    <categoryEntry id="ec3f-503a-fe2e-3e6d" name=" Hero" hidden="false"/>
+    <categoryEntry id="2bf9-3f3e-ea63-1f26" name=" Icon Bearer" hidden="false"/>
+    <categoryEntry id="e5fd-f9f1-938d-dc5b" name=" Leader" hidden="false"/>
+    <categoryEntry id="9d06-5a04-abc1-f87c" name=" Minion" hidden="false"/>
+    <categoryEntry id="85e4-2bbc-e2a5-c551" name=" Mount" hidden="false"/>
+    <categoryEntry id="7622-abbe-a6f9-0bc6" name=" Mystic" hidden="false"/>
+    <categoryEntry id="cfc3-b159-c796-fdce" name=" Priest" hidden="false"/>
+    <categoryEntry id="dce8-a536-db85-d856" name=" Scout" hidden="false"/>
+    <categoryEntry id="5452-a013-9d01-fd29" name=" Sentience" hidden="false"/>
+    <categoryEntry id="9a13-b45c-d217-fc43" name=" Terrifying" hidden="false"/>
+    <categoryEntry id="5c54-590a-5fc0-e435" name=" Thrall" hidden="false"/>
+    <categoryEntry id="ad7e-e1dc-6545-1969" name=" Trapper" hidden="false"/>
+    <categoryEntry id="d93c-b171-eecc-ef6d" name=" Warrior" hidden="false"/>
+    <categoryEntry id="b311-2a5f-39e3-f8e4" name=" Monster" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -937,7 +964,7 @@
       <description>Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less until the end of their activation.
 ⠀</description>
     </rule>
-    <rule id="41cd-5582-d214-b260" name="⚄ Varanite Delve Universal Abilities ⚄" hidden="true">
+    <rule id="41cd-5582-d214-b260" name="⚄ Red Harvest Universal Abilities ⚄" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1004,6 +1031,25 @@
         </modifier>
       </modifiers>
       <description>A fighter can use this ability only if they are within 1&quot; of the operating mechanism of a delve engine that is turned on.  That delve engine is now turned off.  You can pick up to 6 hazardous sluices to no longer be hazardous.  Each sluice picked must either be connected to the delve engine or connected to another sluice that has already been picked.</description>
+    </rule>
+    <rule id="e777-043f-5d2e-84c7" name="⚅  Heart of Ghur Universal Abilities ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="94a0-bb37-533c-5a7d" name="⚅ Cutting the Ropes ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>A fighter that is within 1&quot; of a rope bridge but not on it can attempt to destroy it as an action.  If they do so, roll 3 dice and add 1 to the score of each roll if the fighter is a monster or has any melee weapons with a Strength characterisitc of 5 or greater.  if 1 roll scores 6+, the rope bridge is damaged.  If 2 or more rolls score 6+, the rope bridge is destroyed.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -2453,6 +2499,33 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="4b97-91f4-40ac-a110" name="Horns of Hashut" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61d7-657f-6395-88e9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e9-ba47-3852-0220" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2c86-dbf0-a1fd-7383" name="Rotmire Creed" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07d2-6010-256f-27e3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1a5-7fda-0a57-5085" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="479f-991d-7f00-b2f4" name="Chaos Legionnaires" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da51-7e1d-3cb8-de82" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a50d-beb4-4956-3a1c" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -2729,6 +2802,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <selectionEntry id="2212-4db6-8d91-4d04" name="Show Red Harvest Abilities" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cadc-b2d5-3215-849a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="77de-f41a-3164-1be1" name="Show Heart of Ghur Abilities" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f7-5622-85dc-9880" type="max"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>

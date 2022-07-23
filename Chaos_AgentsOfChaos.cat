@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edd2-67e1-a0c3-1672" name="Agents of Chaos" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="edd2-67e1-a0c3-1672" name="Agents of Chaos" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d497-84c3-796f-b120" name="Beastlord" hidden="false" collective="false" import="true" targetId="6f12-5bdf-edcf-5738" type="selectionEntry">
       <comment>CHAOS - SAMPLE ALLY MOD AND CONDITIONAL</comment>
@@ -1860,6 +1860,42 @@
       <categoryLinks>
         <categoryLink id="52fd-956b-d323-6f31" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
         <categoryLink id="99e7-442a-e2f3-e0bf" name="Underworlds Spiteclaw" hidden="false" targetId="cc4e-b8a8-a60b-25c1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b608-000b-a75e-adfb" name="Ruinator Alpha" hidden="false" collective="false" import="true" targetId="5cec-ac2e-d820-0f99" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8104-5a90-b4c7-8087" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d55d-d946-1eee-140a" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cccb-3eeb-3c82-c51e" name="Witherlord" hidden="false" collective="false" import="true" targetId="c9ff-9984-2516-51f4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f930-d7ae-44ab-dbcc" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9748-f6b3-a59b-9db8" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="59f9-0ae3-3a31-54cd" name="Decuriarch" hidden="false" collective="false" import="true" targetId="17d5-6203-61e3-e3fe" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5bd7-6494-dc99-61b0" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ddef-d519-205e-fc3c" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5540,5 +5576,8 @@
     <catalogueLink id="4fa0-9978-9b1b-b97d" name="Chaos - Hedonites of Slaanesh - Sybarites - Leaders &amp; Abilities" targetId="8cea-0c8e-1151-fc7d" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="2580-a285-5987-9fb0" name="Chaos - Darkoath Savagers - Leaders &amp; Abilities" targetId="f760-2739-c7ed-01a1" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="0e91-e3ff-51e6-455b" name="Chaos - Tarantulos Brood - Leaders &amp; Abilities" targetId="680d-90e5-7442-0ee4" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="bbd9-c26d-c6da-19a5" name="Chaos - Horns of Hashut - Leaders &amp; Abilities" targetId="f444-4e67-b4f9-c9f0" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="3634-202a-ff93-1ece" name="Chaos - Rotmire Creed - Leaders &amp; Abilities" targetId="d42d-d99c-e2b6-315b" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="4a8e-54a1-bb97-35e6" name="Chaos - Chaos Legionnaires - Leaders &amp; Abilities" targetId="e3df-fd4c-d88e-5ff1" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

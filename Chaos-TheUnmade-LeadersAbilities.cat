@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="870a-4170-6d8d-e282" name="Unmade Leaders" hidden="false"/>
   </categoryEntries>
@@ -14,6 +14,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="79f6-c299-532b-2b13" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f9e9-9432-68b0-c23c" name="Blissful One" hidden="false" collective="false" import="true" targetId="46b1-88e8-371e-e832" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870a-4170-6d8d-e282" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bf9f-3589-f64f-4618" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

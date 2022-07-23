@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="90d1-298b-309f-13b2" name="Untamed Leaders" hidden="false"/>
   </categoryEntries>
@@ -14,6 +14,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="80ed-1af2-9c5d-313a" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5985-6c52-fb86-0674" name="Heart-eater" hidden="false" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90d1-298b-309f-13b2" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c3b7-1fb8-5283-28d3" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

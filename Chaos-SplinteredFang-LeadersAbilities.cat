@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b475-490a-59ff-4abe" name="Splintered Leaders" hidden="false"/>
   </categoryEntries>
@@ -14,6 +14,18 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="3f8a-b183-d9e2-8fe8" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="76b7-4446-0482-cf34" name="Trueblood" hidden="false" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b475-490a-59ff-4abe" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1cae-a1c1-da0c-0aca" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
