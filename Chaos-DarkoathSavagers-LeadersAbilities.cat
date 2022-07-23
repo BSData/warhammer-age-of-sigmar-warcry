@@ -186,6 +186,110 @@
       </modifiers>
       <description>Add the value of this ability to the damage points allocated to enemy fighters by each hit or critical hit from the next attack action made by this fighter this activation that has a Range charactersitic of 3 or less.</description>
     </rule>
+    <rule id="a812-c0bd-4dfe-8dde" name="⚁ [Double] A Vow Fulfilled" page="" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7649-5425-860e-7aaa" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Until the end of this fighter&apos;s activation, each time an enemy fighter is taken down, you can pick either this fighter&apos;s Toughness characteristic or the Attacks or Strength characteristic of 1 weapon this fighter is armed with. Until the end of the battle add 1 to the characteristic you picked.</description>
+    </rule>
+    <rule id="de27-c309-0f6a-39b5" name="⚁ [Double] Display of Brutality" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7649-5425-860e-7aaa" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation.  This fighter makes a bonus move action or a bonux attack action.</description>
+    </rule>
+    <rule id="1bcc-45a1-f89c-44ce" name="⚂ [Triple] Furious Rampage" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7649-5425-860e-7aaa" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 3-4, allocate 1 damage point to the fighter being rolled for.  On a 5-6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+    </rule>
+    <rule id="24f4-098f-bd68-7549" name="⚂ [Triple] Curse of Withering" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7649-5425-860e-7aaa" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a number of dice equal to the value of this abiltiy.  For each 4-5, subtract 1 from that fighter&apos;s Toughness characteristic (to a minimum of 1) until the  end of the battle round.  For each 6, subtract 1 from that fighter&apos;s Toughness characteristic (to a minimum of 1) until the end of the battle.</description>
+    </rule>
+    <rule id="bfdd-bf98-5de1-09b8" name="⚁ [Double] Visions of Glory" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7649-5425-860e-7aaa" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a number of dice equal to the value of this ability.  For each 5-6, you gain 1 additional wild dice that can be used from the start of the next battle round.</description>
+    </rule>
+    <rule id="a871-33bd-bda3-e16b" name="⚃ [Quad] Deathblow" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7649-5425-860e-7aaa" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add the value of this ability to the damage points allocated to enemy fighters by each hit or critical hit from the next attack action made by this fighter this activation that has a Range charactersitic of 3 or less.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="3644-47ec-f98c-ebce" name="Slaughterborn" hidden="false" collective="false" import="true" type="model">
