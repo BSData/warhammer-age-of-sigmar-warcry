@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f444-4e67-b4f9-c9f0" name="Chaos - Horns of Hashut - Leaders &amp; Abilities" revision="2" battleScribeVersion="2.03" authorName="Hood" authorContact="discord hood#3264" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f444-4e67-b4f9-c9f0" name="Chaos - Horns of Hashut" revision="3" battleScribeVersion="2.03" authorName="Hood" authorContact="discord hood#3264" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="8104-5a90-b4c7-8087" name="Hashut Leaders" hidden="false"/>
+    <categoryEntry id="57fc-63ea-dd2b-6127" name="Horns of Hashut" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="359c-a3e5-ff6c-afaf" name="Ruinator Alpha" hidden="true" collective="false" import="true" targetId="5cec-ac2e-d820-0f99" type="selectionEntry">
@@ -20,7 +21,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8104-5a90-b4c7-8087" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8104-5a90-b4c7-8087" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -28,6 +29,14 @@
         <categoryLink id="cf33-1c39-42c3-0838" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="e7c6-a727-4404-f746" name="Ruinator Alpha" hidden="false" collective="false" import="true" targetId="5cec-ac2e-d820-0f99" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="aa98-0843-847a-61fc" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="943e-298c-351a-2bb7" name="Demolisher" hidden="false" collective="false" import="true" targetId="647e-f496-1f87-407a" type="selectionEntry"/>
+    <entryLink id="3883-f5bb-c273-d193" name="Shatterer" hidden="false" collective="false" import="true" targetId="e7fa-26e9-38d2-5aa8" type="selectionEntry"/>
+    <entryLink id="ecd0-55ba-4d02-7e44" name="Ruinator" hidden="false" collective="false" import="true" targetId="b9b3-efcd-6370-6964" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="a577-f86a-085e-5c10" name="⚀ [Reaction] Breath of Cinder and Smoke" hidden="true">
@@ -38,26 +47,26 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -75,26 +84,26 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12a9-d7b7-2309-fde6" type="atLeast"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12a9-d7b7-2309-fde6" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12a9-d7b7-2309-fde6" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12a9-d7b7-2309-fde6" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -112,26 +121,26 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -147,10 +156,10 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
+                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
+                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
+                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -166,26 +175,26 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -203,20 +212,20 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -234,26 +243,26 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
+                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
+                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
+                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b922-9c96-af24-52ad" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="atLeast"/>
+                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57fc-63ea-dd2b-6127" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -265,19 +274,6 @@
     </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="b922-9c96-af24-52ad" name="Horns of Hashut" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bc1-ad6c-e432-f305" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4876-0e63-3635-6a06" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="4051-fc19-9df7-86cc" name="Chaos" hidden="false" collective="false" import="true" targetId="a06f-8f3e-8520-4e17" type="selectionEntry"/>
-        <entryLink id="7d2b-49b4-1f71-9f3f" name="Horns of Hashut" hidden="false" collective="false" import="true" targetId="4b97-91f4-40ac-a110" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="5cec-ac2e-d820-0f99" name="Ruinator Alpha" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -305,6 +301,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="43d0-f7ea-be5e-6bd0" name="Hashut Leaders" hidden="false" targetId="8104-5a90-b4c7-8087" primary="false"/>
+        <categoryLink id="79c3-7b2c-b10f-e285" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
+        <categoryLink id="ff7b-7058-7c4b-e497" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="c05e-9e0b-33b6-3958" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="195b-8282-1116-c4c7" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="118d-d20f-e8d5-bc9a" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="243a-828e-8531-9b95">
           <constraints>
@@ -351,17 +354,259 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="fee2-0e06-6e4f-1011" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e590-54ea-2c8b-8f08" name="Horns of Hashut" hidden="false" collective="false" import="true" targetId="b922-9c96-af24-52ad" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="0728-7b0d-091a-53fa" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
         <entryLink id="0cd7-2847-2b42-a638" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
         <entryLink id="ed27-9b81-42ab-7981" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="647e-f496-1f87-407a" name="Demolisher" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Crushing Weapon and Shield">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5bc8-03e9-40e2-2986" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Flamehurler">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5838-6ce2-1459-a5a4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Crushing Weapons">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7745-86dc-f21d-6a72" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="886b-882c-fcb2-5272" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="16d4-3f63-428f-9359" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0ea8-8035-8039-334d" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2884-559e-8dd8-c24c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34dd-4877-0db9-fc7d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5bc8-03e9-40e2-2986" name="with Crushing Weapon and Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c7dc-06d8-0aad-8564" name="Crushing Weapon and Shield" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="6b10-30da-b539-5b4f" name="Demolisher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a"/>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e"/>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="e05d-74fc-9cd9-e182" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7745-86dc-f21d-6a72" name="with Crushing Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="f5d6-d7dd-378d-8d18" name="Crushing Weapons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="ae12-7b2b-1f88-4edf" name="Demolisher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5838-6ce2-1459-a5a4" name="with Flamehurler" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d151-3c95-a0e2-9237" name="Flamehurler" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="9fc5-8a68-8715-cb4a" name="Demolisher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9480-01d1-fb83-5901" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="4858-3a61-e665-7165" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b9b3-efcd-6370-6964" name="Ruinator" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="37d3-7319-f622-23dd" name="Ruinator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c5c6-c191-00cc-43a5" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="8183-d74b-3d72-ae04" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="9f83-fa12-3fb4-6dbc" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="99e3-348c-00e0-fbc3" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a8-140c-7664-1f01" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e82-fd66-4dc6-46e7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9679-883c-5159-5f13" name="with Familiar" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b27e-b2b0-5803-1a81" name="Corvus Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="8a54-de7c-1a9b-6841" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9ef2-ac0d-b5b4-4e54" name="with Dagger" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="2ceb-a7e4-6ce8-3c32" name="Corvus Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="66e5-4db6-7b05-edc1" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="2d9e-d2ef-ffcb-603e" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e7fa-26e9-38d2-5aa8" name="Shatterer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9cb2-ccfc-3c84-d61d" name="Shrike Talon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5807-d87f-9a82-e317" name="Corvus Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ece2-889a-c25b-a16f" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="cdde-f707-af4b-cc35" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4f07-b6d9-0d44-42e0" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="7436-879e-5f1d-3daf" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
