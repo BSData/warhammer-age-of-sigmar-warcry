@@ -5,7 +5,7 @@
     <categoryEntry id="57a2-e12e-7d85-c55b" name="Rotmire Creed" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="8469-b8f8-6d58-4b7d" name="Witherlord" hidden="false" collective="false" import="true" targetId="84c3-5e5c-423d-98be" type="selectionEntry">
+    <entryLink id="8469-b8f8-6d58-4b7d" name="Witherlord" hidden="true" collective="false" import="true" targetId="84c3-5e5c-423d-98be" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -21,7 +21,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0a9-fab2-661f-197d" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0a9-fab2-661f-197d" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -29,6 +29,14 @@
         <categoryLink id="b1fb-f900-c03b-6484" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="8355-8f71-40bd-c6ce" name="Witherlord" hidden="false" collective="false" import="true" targetId="84c3-5e5c-423d-98be" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dba1-5972-80e2-9e61" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4bca-5b78-98b7-aab8" name="Bloated One" hidden="false" collective="false" import="true" targetId="f798-8a71-8948-2abc" type="selectionEntry"/>
+    <entryLink id="6374-1598-2521-9fe9" name="Carrion Catcher" hidden="false" collective="false" import="true" targetId="0e53-7ef2-91e7-b70c" type="selectionEntry"/>
+    <entryLink id="4e0c-26c6-fa0f-9f09" name="Mirefolk Outcast" hidden="false" collective="false" import="true" targetId="00ef-278c-7119-464c" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="bd00-430f-cf09-9ae6" name="⚀ [Reaction] Bile Blood" hidden="true">
@@ -281,13 +289,9 @@
         <categoryLink id="8169-4219-48ff-2b3e" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="ed30-d530-7ebb-8bec" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
         <categoryLink id="7215-1938-b61b-b47e" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
+        <categoryLink id="db62-8abe-0be9-40b0" name="Rotmire Leaders" hidden="false" targetId="c0a9-fab2-661f-197d" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2cb8-4789-b8e5-d478" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9a7f-afa2-89d0-8ae1" name="Rotmire Creed" hidden="false" collective="false" import="true" targetId="5f4e-41cd-a5fd-b27e" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="f55d-30cd-36c1-c73b" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
         <entryLink id="d10b-2a0a-b1a6-b1c6" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
         <entryLink id="47c8-2eb1-712e-bcd9" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
@@ -296,14 +300,244 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5f4e-41cd-a5fd-b27e" name="Rotmire Creed" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbda-e183-812c-e150" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9138-77e8-7d4c-3ad4" type="max"/>
-      </constraints>
+    <selectionEntry id="f798-8a71-8948-2abc" name="Bloated One" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="3ddc-3935-81f5-616b" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="1f9f-7a15-aae4-c0f8" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8cc9-03c5-b9d5-caf2" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b4-9c26-15d5-7f22" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de0c-2ebd-3712-1d52" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9d90-c662-44a8-6661" name="with Raker-claw and Hooked Net" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="21d3-8037-8ade-524e" name="Raker-claw and Hooked Net" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d047-7c7f-4344-c384" name="Bloated One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a"/>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e"/>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="87ac-bd01-2547-4cc7" name="with Raker-claws" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a184-4202-7182-e2e6" name="Raker-claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d216-5b73-888f-fc2e" name="Bloated One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6889-8147-3b31-9fca" name="Chaos" hidden="false" collective="false" import="true" targetId="a06f-8f3e-8520-4e17" type="selectionEntry"/>
-        <entryLink id="562c-3b62-dfda-733c" name="Rotmire Creed" hidden="false" collective="false" import="true" targetId="2c86-dbf0-a1fd-7383" type="selectionEntry"/>
+        <entryLink id="99a8-6d21-877c-915c" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="ee6d-87c9-04e7-0583" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e53-7ef2-91e7-b70c" name="Carrion Catcher" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="ccd5-29f6-85f5-e378" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="6101-7692-5516-4c66" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="85fb-e22f-f7d8-5672" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61dc-ee10-0563-049b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6de-9ea6-0da7-8c85" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1ef3-114a-8c1f-4c45" name="with Snatcher-hook" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1cf4-822d-bf87-a0a0" name="Snatcher-hook" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="6e56-a7f9-a05a-a626" name="Carrion Catcher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a"/>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e"/>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a754-50c6-aae3-ef88" name="with Impaler" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0fe5-7da2-d310-0326" name="Impaler" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="63c5-7c44-9b63-485b" name="Carrion Catcher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="59cd-6b39-4e8b-6e02" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="68d8-388f-e7a5-2dad" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="00ef-278c-7119-464c" name="Mirefolk Outcast" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="2067-b436-f8da-338b" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="b4c4-ccd8-9b56-51ae" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a020-af4c-48c8-05e6" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f46c-b324-82aa-1d98" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1002-2fd3-5dd8-ca39" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b8f9-d82f-18c6-86b9" name="with Bilewood Weapon and Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="38e6-0018-d129-5e6f" name="Bilewood Weapon and Shield" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="4f32-8f19-a139-bf02" name="Mirefolk Outcast" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a"/>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e"/>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b777-f8db-36d3-6e50" name="with Bilewood Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="014c-9b19-de61-d60b" name="Bilewood Weapons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="ba44-d622-d4d2-780a" name="Mirefolk Outcast" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ff69-29e0-575a-9b07" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="a3c6-7af8-714e-9f8f" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
