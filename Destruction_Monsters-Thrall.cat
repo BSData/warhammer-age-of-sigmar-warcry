@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cfcb-75c3-fbab-5305" name="Destruction - Monsters and Thrall" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cfcb-75c3-fbab-5305" name="Destruction - Monsters and Thrall" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="6987-6b25-a4bb-de8f" name="Monsters of Destruction" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
     <entryLink id="880a-807a-5ce0-b5eb" name="Aleguzzler Gargant" hidden="false" collective="false" import="true" targetId="dceb-17a9-0b8f-2ca7" type="selectionEntry"/>
     <entryLink id="7349-73ad-f3d8-566a" name="Dankhold Troggoth" hidden="false" collective="false" import="true" targetId="b4ef-48db-ef3c-a050" type="selectionEntry"/>
@@ -253,7 +256,7 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="250a-b51a-9e31-4205" type="atLeast"/>
+                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
                     <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
                     <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="231e-509a-2ced-f559" type="atLeast"/>
                   </conditions>
@@ -273,7 +276,7 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="250a-b51a-9e31-4205" type="atLeast"/>
+                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
                     <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="231e-509a-2ced-f559" type="atLeast"/>
                     <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
                   </conditions>
@@ -467,15 +470,6 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="345.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="250a-b51a-9e31-4205" name=" Destruction" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f4-d54d-3e7f-d2f5" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe28-c5c8-4c2e-b9e8" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="b4ef-48db-ef3c-a050" name="Dankhold Troggoth" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -591,7 +585,6 @@
       <entryLinks>
         <entryLink id="1320-9e7b-ec3e-2c01" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
-            <entryLink id="9b12-9371-13a1-d076" name=" Destruction" hidden="false" collective="false" import="true" targetId="250a-b51a-9e31-4205" type="selectionEntry"/>
             <entryLink id="156d-0fbd-5128-1618" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
             <entryLink id="53e6-8fdf-b5c5-b45c" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
           </entryLinks>
@@ -636,7 +629,6 @@
       <entryLinks>
         <entryLink id="3fba-271a-a45b-3539" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
           <entryLinks>
-            <entryLink id="0323-7589-d778-37be" name=" Destruction" hidden="false" collective="false" import="true" targetId="250a-b51a-9e31-4205" type="selectionEntry"/>
             <entryLink id="540f-e150-1a1f-2850" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
             <entryLink id="384e-ef9d-2bff-7f84" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
           </entryLinks>
@@ -761,7 +753,7 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="250a-b51a-9e31-4205" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
                     <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
@@ -777,7 +769,7 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="250a-b51a-9e31-4205" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
                     <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
                   </conditions>
                 </conditionGroup>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="51" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="52" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="df3a-f424-e7ea-5f69" name="Tome of Champions 2021" shortName="ToC21" publisher="Tome of Champions 2021" publicationDate="March 2022"/>
   </publications>
@@ -94,7 +94,12 @@
     <categoryEntry id="ad7e-e1dc-6545-1969" name=" Trapper" hidden="false"/>
     <categoryEntry id="d93c-b171-eecc-ef6d" name=" Warrior" hidden="false"/>
     <categoryEntry id="b311-2a5f-39e3-f8e4" name=" Monster" hidden="false"/>
-    <categoryEntry id="f7b6-6ae2-7fdb-3093" name="-Universals end here-" hidden="false"/>
+    <categoryEntry id="f7b6-6ae2-7fdb-3093" name="-Functional Categories-" hidden="false"/>
+    <categoryEntry id="a069-63a6-a6b4-742b" name="  Chaos" hidden="false"/>
+    <categoryEntry id="e62d-3867-a149-1ffa" name="  Death" hidden="false"/>
+    <categoryEntry id="7c12-f3a7-3b3c-30f1" name="  Destruction" hidden="false"/>
+    <categoryEntry id="530f-47bb-d668-1ca6" name="  Order" hidden="false"/>
+    <categoryEntry id="52ee-0c94-262c-9a8e" name=" -Universal Runemarks-" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
