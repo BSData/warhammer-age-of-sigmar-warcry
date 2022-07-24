@@ -3050,14 +3050,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cb05-fb8b-8fa4-fca2" name="_" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="cb05-fb8b-8fa4-fca2" name="Leader Options" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="73a1-eafb-76e2-4d47" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
         <entryLink id="a052-a8b5-abbf-abae" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
         <entryLink id="0365-d662-b4ec-ced2" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="48e0-6cce-1680-dc73" name="__" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="48e0-6cce-1680-dc73" name="Fighter Options" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="daed-61db-012d-2dff" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
         <entryLink id="c1a2-a9ae-c053-d9ba" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
