@@ -100,6 +100,7 @@
     <categoryEntry id="7c12-f3a7-3b3c-30f1" name="  Destruction" hidden="false"/>
     <categoryEntry id="530f-47bb-d668-1ca6" name="  Order" hidden="false"/>
     <categoryEntry id="52ee-0c94-262c-9a8e" name=" -Universal Runemarks-" hidden="false"/>
+    <categoryEntry id="8134-f759-d667-7eb1" name="Cities of Sigmar" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -249,16 +250,9 @@
         <categoryLink id="8999-2018-4ce5-b7e7" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+              </conditions>
             </modifier>
           </modifiers>
         </categoryLink>
@@ -750,16 +744,9 @@
         <categoryLink id="a103-f8fc-0b50-3f72" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+              </conditions>
             </modifier>
           </modifiers>
         </categoryLink>
@@ -822,16 +809,9 @@
         <categoryLink id="9849-411e-15d4-9c6a" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+              </conditions>
             </modifier>
           </modifiers>
         </categoryLink>
@@ -846,50 +826,6 @@
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58f5-1fbc-791b-d2d3" type="max"/>
           </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry id="1a63-49ca-3699-5767" name="Pit Fights [2-Players, 2 Warbands each]" hidden="false">
-      <modifiers>
-        <modifier type="increment" field="4a12-5ca2-474b-eb2d" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" field="e7af-21c4-7330-8a2c" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a12-5ca2-474b-eb2d" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7af-21c4-7330-8a2c" type="min"/>
-        <constraint field="820d-9f65-fcb1-d476" scope="force" value="250.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b29-a65d-a2f7-c104" type="max"/>
-        <constraint field="forces" scope="1a63-49ca-3699-5767" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2658-8472-ad45-6435" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="c66d-3230-ee4c-9a65" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5206-90b8-d5df-b64a" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="22a0-1b29-e80a-36dc" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="f1a4-11d7-7f58-e616" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -945,16 +881,9 @@
         <categoryLink id="defd-d565-f696-a39f" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e088-7de4-45d9-903e" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+              </conditions>
             </modifier>
           </modifiers>
         </categoryLink>
@@ -3120,6 +3049,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="cb05-fb8b-8fa4-fca2" name="_" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="73a1-eafb-76e2-4d47" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="a052-a8b5-abbf-abae" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+        <entryLink id="0365-d662-b4ec-ced2" name="Optional Universal Abilities" hidden="false" collective="false" import="true" targetId="83c1-486a-fac1-2cac" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="48e0-6cce-1680-dc73" name="__" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="daed-61db-012d-2dff" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
+        <entryLink id="c1a2-a9ae-c053-d9ba" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
