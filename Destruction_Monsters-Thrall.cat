@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="cfcb-75c3-fbab-5305" name="Destruction - Monsters and Thrall" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="6987-6b25-a4bb-de8f" name="Monsters of Destruction" hidden="false"/>
+    <categoryEntry id="b28b-d8c2-4594-e0f0" name="Monsters of Destruction" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="880a-807a-5ce0-b5eb" name="Aleguzzler Gargant" hidden="false" collective="false" import="true" targetId="dceb-17a9-0b8f-2ca7" type="selectionEntry"/>
@@ -10,304 +10,7 @@
     <entryLink id="7d3e-1300-2007-26ee" name="Rockgut Troggoth" hidden="false" collective="false" import="true" targetId="fb36-a236-fb2f-0a00" type="selectionEntry"/>
     <entryLink id="ab08-cd23-eaee-b858" name="Skitterstrand Arachnarok" hidden="false" collective="false" import="true" targetId="a1c8-3551-ff1b-12a8" type="selectionEntry"/>
   </entryLinks>
-  <rules>
-    <rule id="1fc9-07df-52bc-902a" name="⚁ [Triple] Mighty Kick" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="e411-0f4c-78c0-5464" name="⚃ [Quad] Demolishing Rampage" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a terrain piece within 1&quot; of this fighter.  In an order of your choice, place each objective, treasure token and fighter that is on that terrain feature, and on any other terrain feature that is on that terrain feature, on the battlefield floor in a location of your choice as close as possible horizontally to its current location.  then, in an order of your choice, each fighter placed on the battlefield in this manner suffers impact damage.  Then, remove the terrain feature(s)</description>
-    </rule>
-    <rule id="2919-10db-6a7f-67c2" name="⚃ [Quad] Dragged Victim" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick an enemy fighter within 1&quot; of this fighter.  Remove that fighter from the battlefield and set them up within 1&quot; of this fighter.  Then, this fighter makes a bonus attack action against that fighter.</description>
-    </rule>
-    <rule id="f410-e39a-8f00-0478" name="⚃ [Quad] Vicious &apos;Eadbutt" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="77e6-e2a9-c209-f59e" name="⚁ [Double] Drunken Stagger" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a number of dice equal to the value of this ability.  For each roll of 1-2, subtract 1 from this fighter&apos;s Move characteristic until the end of this fighter&apos;s activation.  For each roll of 3+, add 1 to this fighters Move characteristic until the end of this fighter&apos;s activation.</description>
-    </rule>
-    <rule id="4740-8a68-c793-97c2" name="⚁ [Double] Troggoth Regrowth (Monster)" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Remove a number of damage points form this fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="1704-29e1-4781-c203" name="⚁ [Triple] Paralysing Venom" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, after each attack action made by this fighter, roll a dice.  On a 2+, until the end of the battle round, the target of that attack action cannot make move actions or disengage actions.</description>
-    </rule>
-    <rule id="6065-9330-4094-90cb" name="⚁ [Triple] Crushing Grip" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick 1 visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate 2 damage points to that fighter.</description>
-    </rule>
-    <rule id="131e-650c-f51b-496a" name="⚁ [Triple] Drag and Maul" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 6&quot; of this fighter.  Remove that fighter from the battlefield and set them up within 1&quot; of this fighter.  Then, roll a number of dice equal to the value of this ability.  For each 4+, allocate 3 damage points to that fighter.</description>
-    </rule>
-    <rule id="e466-17cb-370f-41f8" name="⚁ [Double] Wall Crawler" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, do not count the vertical distance moved when this fighter is climbing.</description>
-    </rule>
-    <rule id="e4f9-c1a8-4361-c58c" name="⚁ [Double] Squiggly-beast Followers" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  If the roll is less than or equal to the value of this ability, allocate 1 damage point to the fighter being rolled for.</description>
-    </rule>
-    <rule id="e0f6-022e-54c0-5e28" name="⚁ [Double] Monstrous Reach" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f309-c6a9-6f7d-a3f8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, do not count the vertical distance when measuring the range for attack actions made by this fighter.</description>
-    </rule>
-    <rule id="ff5c-de72-ec75-938a" name="⚁ [Double] Noxious Vomit" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="231e-509a-2ced-f559" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a number of dice equal to the value of this ability.  For each 4+, pick 1 visible enemy fighter within 6&quot; of this fighter.  Allocate D3 damage points to that fighter.</description>
-    </rule>
-    <rule id="7ea6-8317-ab02-002d" name="⚁ [Double] Troggoth Regrowth" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="231e-509a-2ced-f559" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Remove a number of damage points form this fighter equal to the value of this ability.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="fd83-2e02-c301-973e" name=" -----Below Are Destruction Specific Runemarks-----" hidden="true" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9504-df97-ee2b-7d10" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b8d-fe7d-14ac-18a4" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="870d-f73d-b0aa-f59f" name=" Monsters of Destruction" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fad-a110-2654-3ff7" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb87-3de3-e93c-affc" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="dceb-17a9-0b8f-2ca7" name="Aleguzzler Gargant" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -370,20 +73,16 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="6581-ea99-11dc-0f05" name="Aleguzzler Abilities" hidden="false" targetId="9394-f59e-e35e-8f32" type="infoGroup"/>
+        <infoLink id="0192-0795-9508-8315" name="Special Abilities" hidden="false" targetId="2a67-2832-2de4-db28" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8610-2b1a-00dd-ef31" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+        <categoryLink id="b61c-1e68-9410-aa36" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="e089-7707-9ece-2b15" name=" Gargantuan" hidden="false" targetId="ddfc-7256-ce66-075d" primary="false"/>
+        <categoryLink id="02f8-353f-2520-05fc" name="Monsters of Destruction" hidden="false" targetId="b28b-d8c2-4594-e0f0" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e103-1468-0e45-f0e2" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="99c7-c3a0-79d9-57ee" name=" Monsters of Destruction" hidden="false" collective="false" import="true" targetId="870d-f73d-b0aa-f59f" type="selectionEntry"/>
-            <entryLink id="f76f-5404-ac60-8341" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
-            <entryLink id="db5f-1dc8-1091-753a" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="2bd8-edd8-4d5c-9e61" name="Battle Groups" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+        <entryLink id="2bd8-edd8-4d5c-9e61" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="325.0"/>
@@ -451,20 +150,16 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="fdfc-31cc-bd39-4a43" name="Skitterstrand Arachnarok Abilities" hidden="false" targetId="4028-b8e0-15e5-ff65" type="infoGroup"/>
+        <infoLink id="1b68-bf23-600f-8d1f" name="Special Abilities" hidden="false" targetId="2a67-2832-2de4-db28" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="54dc-f230-04f3-82a1" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+        <categoryLink id="2e94-fbbc-78d8-9479" name="Monsters of Destruction" hidden="false" targetId="b28b-d8c2-4594-e0f0" primary="false"/>
+        <categoryLink id="b4b1-2612-f77d-1bcc" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+        <categoryLink id="ffdb-cb2c-1ea5-aa61" name=" Gargantuan" hidden="false" targetId="ddfc-7256-ce66-075d" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5b0b-684b-2923-bc7d" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="96ab-a1d5-2dfc-1c05" name=" Monsters of Destruction" hidden="false" collective="false" import="true" targetId="870d-f73d-b0aa-f59f" type="selectionEntry"/>
-            <entryLink id="4510-b78a-c533-d646" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
-            <entryLink id="72f1-f3e7-de77-537e" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="4b01-355f-48dc-6761" name="Battle Groups" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+        <entryLink id="4b01-355f-48dc-6761" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="345.0"/>
@@ -532,20 +227,16 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="f95a-4f8f-c559-4911" name="Dankhold Troggoth Abilities" hidden="false" targetId="1966-f1fa-2c89-1090" type="infoGroup"/>
+        <infoLink id="1605-1df1-a477-b8ac" name="Special Abilities" hidden="false" targetId="2a67-2832-2de4-db28" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6217-67bc-9f90-c042" name="New CategoryLink" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="true"/>
+        <categoryLink id="cbbd-c630-02d5-195c" name=" Ferocious" hidden="false" targetId="1aa1-183f-952b-ad08" primary="false"/>
+        <categoryLink id="7d52-2425-791b-cb42" name=" Gargantuan" hidden="false" targetId="ddfc-7256-ce66-075d" primary="false"/>
+        <categoryLink id="2df7-d27c-4e60-19f9" name="Monsters of Destruction" hidden="false" targetId="b28b-d8c2-4594-e0f0" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="74ae-cfad-d642-43ff" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="6e2a-e2b5-5c71-2efe" name=" Monsters of Destruction" hidden="false" collective="false" import="true" targetId="870d-f73d-b0aa-f59f" type="selectionEntry"/>
-            <entryLink id="14b5-8a0d-4004-44f3" name=" Ferocious" hidden="false" collective="false" import="true" targetId="8b52-047b-c9e1-3386" type="selectionEntry"/>
-            <entryLink id="849b-e5bf-0d07-0fce" name=" Gargantuan" hidden="false" collective="false" import="true" targetId="f309-c6a9-6f7d-a3f8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="ac19-d818-7fdf-65d8" name="Battle Groups" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+        <entryLink id="ac19-d818-7fdf-65d8" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="305.0"/>
@@ -577,19 +268,16 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="5267-579c-684a-7e65" name="Destruction Thrall Abilities" hidden="false" targetId="9d0c-0961-18f8-ac6d" type="infoGroup"/>
+        <infoLink id="8f24-9752-7ce3-de73" name="Special Abilities" hidden="false" targetId="2a67-2832-2de4-db28" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="052f-e506-440c-ec98" name="New CategoryLink" hidden="false" targetId="aadf-5830-72a8-d164" primary="true"/>
+        <categoryLink id="102e-1a8d-bb24-7168" name=" Thrall" hidden="false" targetId="5c54-590a-5fc0-e435" primary="false"/>
+        <categoryLink id="875e-2572-ea57-db98" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink id="37a5-09db-84c7-a99a" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1320-9e7b-ec3e-2c01" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="156d-0fbd-5128-1618" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
-            <entryLink id="53e6-8fdf-b5c5-b45c" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="bedb-e67d-ec9b-04f0" name="Battle Groups" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+        <entryLink id="bedb-e67d-ec9b-04f0" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
@@ -621,19 +309,16 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="85c7-173c-5630-a341" name="Destruction Thrall Abilities" hidden="false" targetId="9d0c-0961-18f8-ac6d" type="infoGroup"/>
+        <infoLink id="1005-21e2-7349-f01e" name="Special Abilities" hidden="false" targetId="2a67-2832-2de4-db28" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2e5c-d208-345f-bcb3" name="New CategoryLink" hidden="false" targetId="aadf-5830-72a8-d164" primary="true"/>
+        <categoryLink id="b784-167a-4d92-dfed" name=" Thrall" hidden="false" targetId="5c54-590a-5fc0-e435" primary="false"/>
+        <categoryLink id="fb7c-55c9-9437-e222" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="e31b-f84e-e466-40b4" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3fba-271a-a45b-3539" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="540f-e150-1a1f-2850" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
-            <entryLink id="384e-ef9d-2bff-7f84" name=" Thrall" hidden="false" collective="false" import="true" targetId="231e-509a-2ced-f559" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="a40c-5988-05d8-4eff" name="Battle Groups" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+        <entryLink id="a40c-5988-05d8-4eff" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
@@ -641,197 +326,247 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
-    <infoGroup id="9394-f59e-e35e-8f32" name="Aleguzzler Abilities" hidden="true">
+    <infoGroup id="b925-3600-a91e-431f" name="Destruction Monsters &amp; Thralls Abilities" hidden="false">
       <rules>
-        <rule id="55ae-99d5-270b-b6aa" name="⚁ [Double] Druken Stagger" hidden="true">
+        <rule id="00a8-a180-6c59-f4d3" name="⚁ [Double] Drunken Stagger" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Roll a number of dice equal to the value of this ability. For each 1-2, subtract 1 from this fighter’s Move characteristic until the end of this fighter’s activation. For each 3+, add 1 to this fighter’s Move characteristic until the end of this fighter’s activation
-⠀</description>
+          <description>Roll a number of dice equal to the value of this ability.  For each roll of 1-2, subtract 1 from this fighter&apos;s Move characteristic until the end of this fighter&apos;s activation.  For each roll of 3+, add 1 to this fighters Move characteristic until the end of this fighter&apos;s activation.</description>
         </rule>
-        <rule id="ad6b-35c1-fd42-0a6a" name="⚂ [Triple] Mighty Kick" hidden="true">
+        <rule id="e895-79c8-76bf-d514" name="⚁ [Double] Monstrous Reach" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1” of an enemy fighter, pick a visible enemy fighter within 1” of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.
-⠀</description>
+          <description>Until the end of this fighter&apos;s activation, do not count the vertical distance when measuring the range for attack actions made by this fighter.</description>
         </rule>
-        <rule id="f09c-b2c9-92e1-d986" name="⚃ [Quad] Vicious &apos;Eadbutt" hidden="true">
+        <rule id="e5cc-0ce1-80fb-4249" name="⚁ [Double] Noxious Vomit" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
+                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
+                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="atLeast"/>
+                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c54-590a-5fc0-e435" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1” of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate a number of damage points to that fighter equal to the value of this ability.
-⠀</description>
+          <description>Roll a number of dice equal to the value of this ability.  For each 4+, pick 1 visible enemy fighter within 6&quot; of this fighter.  Allocate D3 damage points to that fighter.</description>
+        </rule>
+        <rule id="5757-c81a-c6d5-b05a" name="⚁ [Double] Squiggly-beast Followers" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1aa1-183f-952b-ad08" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  If the roll is less than or equal to the value of this ability, allocate 1 damage point to the fighter being rolled for.</description>
+        </rule>
+        <rule id="755b-7ece-946a-111b" name="⚁ [Double] Troggoth Regrowth" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
+                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c54-590a-5fc0-e435" type="atLeast"/>
+                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Remove a number of damage points form this fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="dd85-561c-9c19-829e" name="⚁ [Double] Troggoth Regrowth (Monster)" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1aa1-183f-952b-ad08" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Remove a number of damage points form this fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="fb24-f584-66f0-4594" name="⚁ [Double] Wall Crawler" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, do not count the vertical distance moved when this fighter is climbing.</description>
+        </rule>
+        <rule id="e24d-2e32-437b-4f93" name="⚁ [Triple] Crushing Grip" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1aa1-183f-952b-ad08" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick 1 visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate 2 damage points to that fighter.</description>
+        </rule>
+        <rule id="18d4-5ff4-9048-8e24" name="⚁ [Triple] Drag and Maul" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter.  Remove that fighter from the battlefield and set them up within 1&quot; of this fighter.  Then, roll a number of dice equal to the value of this ability.  For each 4+, allocate 3 damage points to that fighter.</description>
+        </rule>
+        <rule id="7c61-f7cd-82d1-4c68" name="⚁ [Triple] Mighty Kick" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="2d37-5dcb-b51f-ad06" name="⚁ [Triple] Paralysing Venom" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, after each attack action made by this fighter, roll a dice.  On a 2+, until the end of the battle round, the target of that attack action cannot make move actions or disengage actions.</description>
+        </rule>
+        <rule id="376e-7f87-74d0-8802" name="⚃ [Quad] Demolishing Rampage" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a terrain piece within 1&quot; of this fighter.  In an order of your choice, place each objective, treasure token and fighter that is on that terrain feature, and on any other terrain feature that is on that terrain feature, on the battlefield floor in a location of your choice as close as possible horizontally to its current location.  then, in an order of your choice, each fighter placed on the battlefield in this manner suffers impact damage.  Then, remove the terrain feature(s)</description>
+        </rule>
+        <rule id="da98-27d6-68e2-67ca" name="⚃ [Quad] Dragged Victim" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter within 1&quot; of this fighter.  Remove that fighter from the battlefield and set them up within 1&quot; of this fighter.  Then, this fighter makes a bonus attack action against that fighter.</description>
+        </rule>
+        <rule id="6895-63e9-11de-bcca" name="⚃ [Quad] Vicious &apos;Eadbutt" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-d8c2-4594-e0f0" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="6254-829d-c025-2348" name="⚀ [Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
         </rule>
       </rules>
     </infoGroup>
-    <infoGroup id="4028-b8e0-15e5-ff65" name="Skitterstrand Arachnarok Abilities" hidden="true">
-      <rules>
-        <rule id="b3b1-dcec-f404-bf80" name="⚁ [Double] Wall Crawler" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Until the end of this fighter’s activation, do not count the vertical distance moved when this fighter is climbing.
-⠀</description>
-        </rule>
-        <rule id="3995-5035-7f98-4821" name="⚂ [Triple] Paralysing Venom" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Until the end of this fighter’s activation, after each attack action made by this fighter, roll a dice. On a 2+, until the end of the battle round, the target of that attack action cannot make move actions or disengage actions.
-⠀</description>
-        </rule>
-        <rule id="e36c-734b-17b2-0155" name="⚃ [Quad] Dragged Victim" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Pick an enemy fighter within 1” of this fighter. Remove that fighter from the battlefield and set them up within 1” of this fighter. Then this fighter makes a bonus attack action against that fighter.
-⠀</description>
-        </rule>
-      </rules>
-    </infoGroup>
-    <infoGroup id="9d0c-0961-18f8-ac6d" name="Destruction Thrall Abilities" hidden="true">
-      <rules>
-        <rule id="f718-db1d-6a1f-c08b" name="⚁ [Double] Noxious Vomit" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Roll a number of dice equal to the value of this ability. For each 4+, pick 1 visible enemy fighter within 6” of this fighter. Allocate D3 damage points to that fighter.
-⠀</description>
-        </rule>
-        <rule id="57f4-66a7-50c2-e89c" name="⚁ [Double] Troggoth Regrowth" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c12-f3a7-3b3c-30f1" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Remove a number of damage points from this fighter equal to the value of this ability.
-⠀</description>
-        </rule>
-      </rules>
-    </infoGroup>
-    <infoGroup id="1966-f1fa-2c89-1090" name="Dankhold Troggoth Abilities" hidden="true">
-      <rules>
-        <rule id="f04c-bc38-080e-97bf" name="⚁ [Double] Squiggly-beast Followers" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Roll a dice for each visible enemy fighter within 3” of this fighter. If the roll is less than or equal to the value of this ability, allocate 1 damage point to the fighter being rolled for.
-⠀</description>
-        </rule>
-        <rule id="365f-9372-a6aa-c920" name="⚁ [Double] Troggoth Regrowth" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Remove a number of damage points from this fighter equal to the value of this ability.
-⠀</description>
-        </rule>
-        <rule id="7cf3-8974-30e3-9408" name="⚂ [Triple] Crushing Grip" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="870d-f73d-b0aa-f59f" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Pick 1 visible enemy fighter within 1” of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 2 damage points to that fighter.
-⠀</description>
-        </rule>
-      </rules>
+    <infoGroup id="2a67-2832-2de4-db28" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="fe30-9c5d-0788-60f5" name="Destruction Monsters &amp; Thralls Abilities" hidden="false" targetId="b925-3600-a91e-431f" type="infoGroup"/>
+      </infoLinks>
     </infoGroup>
   </sharedInfoGroups>
 </catalogue>

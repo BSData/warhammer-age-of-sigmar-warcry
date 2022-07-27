@@ -38,227 +38,6 @@
     <entryLink id="6374-1598-2521-9fe9" name="Carrion Catcher" hidden="false" collective="false" import="true" targetId="0e53-7ef2-91e7-b70c" type="selectionEntry"/>
     <entryLink id="4e0c-26c6-fa0f-9f09" name="Mirefolk Outcast" hidden="false" collective="false" import="true" targetId="00ef-278c-7119-464c" type="selectionEntry"/>
   </entryLinks>
-  <rules>
-    <rule id="bd00-430f-cf09-9ae6" name="⚀ [Reaction] Bile Blood" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can make this reaction when they are targeted by a melee attack action.  After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.  For each 3+, allocate 3 damage points to the fighter that made that attack action.</description>
-    </rule>
-    <rule id="5c62-1243-fa38-dde1" name="⚁ [Double] Blowpipe" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice.  For each 4+, allocate a number of damage points to that fighter equal to half the value of this ability (rounding up).  In addition, for each 6, subtract 1 from that fighter&apos;s Toughness characteristic until the end of the battle round.</description>
-    </rule>
-    <rule id="bfda-a2f0-8735-c3c2" name="⚂ [Triple] Slashing Attack" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 3-4, allocate 1 damage point to the fighter being rolled for.  On a 5-6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
-    </rule>
-    <rule id="c669-34ed-ec78-fe3b" name="⚃ [Quad] Ensnaring Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter makes a bonus attack action.  In addition, if that attack action scores any critical hits, the target fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
-    </rule>
-    <rule id="0ab2-7d03-b2dd-5c77" name="⚁ [Double] Gruesome Harvest" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by a melee attack action made by them this activation.  This fighter now has a *potent vial* until the end of the battle.  While a fighter has a potent vial, when they use an ability, the value of the ability is treated as being 6 even if the ability dice show a different score.</description>
-    </rule>
-    <rule id="6de5-e4cc-2066-6a4d" name="⚁ [Double] Hooked Net" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice.  On a 3+, allocate a number of damage points to that figther equal to the roll, and that fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
-    </rule>
-    <rule id="8075-3bf6-459b-2b2b" name="⚂ [Triple] Lethal Injection" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each roll that exceeds the Toughness characteristic of that fighter, allocate 5 damage points to them.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="84c3-5e5c-423d-98be" name="Witherlord" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -285,6 +64,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="2a15-f35b-3a39-b3a2" name="Special Abilities" hidden="false" targetId="e05d-0a0c-2b3a-c2af" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="8169-4219-48ff-2b3e" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="ed30-d530-7ebb-8bec" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
@@ -304,7 +86,7 @@
         <categoryLink id="1f9f-7a15-aae4-c0f8" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8cc9-03c5-b9d5-caf2" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8cc9-03c5-b9d5-caf2" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d90-c662-44a8-6661">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b4-9c26-15d5-7f22" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de0c-2ebd-3712-1d52" type="max"/>
@@ -335,6 +117,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="4a99-29cf-5e48-4ade" name="Special Abilities" hidden="false" targetId="e05d-0a0c-2b3a-c2af" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
               </costs>
@@ -364,6 +149,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="94d7-ccae-519a-07f1" name="Special Abilities" hidden="false" targetId="e05d-0a0c-2b3a-c2af" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
               </costs>
@@ -384,7 +172,7 @@
         <categoryLink id="6101-7692-5516-4c66" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="85fb-e22f-f7d8-5672" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="85fb-e22f-f7d8-5672" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ef3-114a-8c1f-4c45">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61dc-ee10-0563-049b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6de-9ea6-0da7-8c85" type="max"/>
@@ -415,6 +203,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="c011-3f82-b78a-a2ee" name="Special Abilities" hidden="false" targetId="e05d-0a0c-2b3a-c2af" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
               </costs>
@@ -444,6 +235,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="462f-75f9-5786-e5e1" name="Special Abilities" hidden="false" targetId="e05d-0a0c-2b3a-c2af" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
               </costs>
@@ -464,7 +258,7 @@
         <categoryLink id="b4c4-ccd8-9b56-51ae" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a020-af4c-48c8-05e6" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="a020-af4c-48c8-05e6" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="b777-f8db-36d3-6e50">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f46c-b324-82aa-1d98" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1002-2fd3-5dd8-ca39" type="max"/>
@@ -495,6 +289,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="a0f8-b13b-1ec1-622b" name="Special Abilities" hidden="false" targetId="e05d-0a0c-2b3a-c2af" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
               </costs>
@@ -518,12 +315,18 @@
                 </profile>
                 <profile id="ba44-d622-d4d2-780a" name="Mirefolk Outcast" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
                     <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="1513-781a-d85f-8084" name="Special Abilities" hidden="false" targetId="e05d-0a0c-2b3a-c2af" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="5d70-c551-f941-9dec" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
               </costs>
@@ -539,4 +342,110 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="cad3-c7ad-21b6-1bb6" name="Rotmire Creed Abilities" hidden="false">
+      <rules>
+        <rule id="679b-1901-cfb5-c678" name="⚀ [Reaction] Bile Blood" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.  After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.  For each 3+, allocate 3 damage points to the fighter that made that attack action.</description>
+        </rule>
+        <rule id="43b7-98ae-747b-5ad7" name="⚁ [Double] Blowpipe" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice.  For each 4+, allocate a number of damage points to that fighter equal to half the value of this ability (rounding up).  In addition, for each 6, subtract 1 from that fighter&apos;s Toughness characteristic until the end of the battle round.</description>
+        </rule>
+        <rule id="620a-1fe1-8d41-880f" name="⚁ [Double] Gruesome Harvest" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if an enemy fighter has been taken down by a melee attack action made by them this activation.  This fighter now has a *potent vial* until the end of the battle.  While a fighter has a potent vial, when they use an ability, the value of the ability is treated as being 6 even if the ability dice show a different score.</description>
+        </rule>
+        <rule id="f11b-fb6a-5b73-f8ab" name="⚁ [Double] Hooked Net" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd95-1c17-a923-4487" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice.  On a 3+, allocate a number of damage points to that figther equal to the roll, and that fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
+        </rule>
+        <rule id="7b19-37f7-a534-63b5" name="⚂ [Triple] Lethal Injection" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each roll that exceeds the Toughness characteristic of that fighter, allocate 5 damage points to them.</description>
+        </rule>
+        <rule id="0b2e-b911-62cb-e659" name="⚂ [Triple] Slashing Attack" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 3-4, allocate 1 damage point to the fighter being rolled for.  On a 5-6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+        </rule>
+        <rule id="6937-8658-3e3f-9252" name="⚃ [Quad] Ensnaring Strike" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a2-e12e-7d85-c55b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>This fighter makes a bonus attack action.  In addition, if that attack action scores any critical hits, the target fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+    <infoGroup id="e05d-0a0c-2b3a-c2af" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="a3e9-0d8d-5989-021e" name="Rotmire Creed Abilities" hidden="false" targetId="cad3-c7ad-21b6-1bb6" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>

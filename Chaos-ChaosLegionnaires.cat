@@ -35,117 +35,6 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <rules>
-    <rule id="f324-c441-2e40-2685" name="⚀ [Reaction] Bile Blood" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can make this reaction when they are targeted by a melee attack action.  After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.  For each 3+, allocate 3 damage points to the fighter that made that attack action.</description>
-    </rule>
-    <rule id="6137-399f-cb19-f0eb" name="⚁ [Double] Blowpipe" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice.  For each 4+, allocate a number of damage points to that fighter equal to half the value of this ability (rounding up).  In addition, for each 6, subtract 1 from that fighter&apos;s Toughness characteristic until the end of the battle round.</description>
-    </rule>
-    <rule id="c1b9-f890-8ccd-1405" name="⚂ [Triple] Lethal Injection" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each roll that exceeds the Toughness characteristic of that fighter, allocate 5 damage points to them.</description>
-    </rule>
-    <rule id="af0f-b8eb-8445-957c" name="⚃ [Quad] Ensnaring Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter makes a bonus attack action.  In addition, if that attack action scores any critical hits, the target fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="9c9b-69ba-d0c6-4a36" name="Decuriarch" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -172,6 +61,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="d31c-1100-a548-d360" name="Special Abilities" hidden="false" targetId="2b68-764e-5fca-f481" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="98b9-c011-4584-9d8b" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="c63b-1f19-ce71-4a79" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
@@ -186,4 +78,70 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="051a-7b39-607a-597f" name="Chaos Legionnaires Abilities" hidden="false">
+      <rules>
+        <rule id="5702-db51-7398-b6d1" name="⚀ [Reaction] Bile Blood" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.  After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.  For each 3+, allocate 3 damage points to the fighter that made that attack action.</description>
+        </rule>
+        <rule id="7ce6-c9d8-07d5-05e9" name="⚁ [Double] Blowpipe" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dce8-a536-db85-d856" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice.  For each 4+, allocate a number of damage points to that fighter equal to half the value of this ability (rounding up).  In addition, for each 6, subtract 1 from that fighter&apos;s Toughness characteristic until the end of the battle round.</description>
+        </rule>
+        <rule id="f384-1de8-631c-de26" name="⚂ [Triple] Lethal Injection" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each roll that exceeds the Toughness characteristic of that fighter, allocate 5 damage points to them.</description>
+        </rule>
+        <rule id="76e9-8c70-be25-ee86" name="⚃ [Quad] Ensnaring Strike" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>This fighter makes a bonus attack action.  In addition, if that attack action scores any critical hits, the target fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+    <infoGroup id="2b68-764e-5fca-f481" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="0b68-a15a-970c-443a" name="Chaos Legionnaires Abilities" hidden="false" targetId="051a-7b39-607a-597f" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>

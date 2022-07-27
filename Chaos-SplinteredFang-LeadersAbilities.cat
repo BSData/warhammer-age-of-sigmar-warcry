@@ -2,6 +2,7 @@
 <catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b475-490a-59ff-4abe" name="Splintered Leaders" hidden="false"/>
+    <categoryEntry id="f03c-f314-5dde-e380" name="Splintered Fang" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="2620-3d07-db7f-a9c3" name="Trueblood" hidden="true" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
@@ -29,282 +30,7 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <rules>
-    <rule id="2521-e8e9-fc07-cafb" name="⚁ [Double] Ensnaring Net" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 3&quot; of this fighter. Until the end of the battle round, that enemy fighter cannot make move actions or disengage actions.</description>
-    </rule>
-    <rule id="0848-39bc-6392-6617" name="⚁ [Double] Fanged Buckler" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to the fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="168e-f729-5fc6-f409" name="⚁ [Double] Poisoned Weapon" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, the Strength characteristic of attack actions made by this fighter count as being higher than the target&apos;s Toughness characteristic.</description>
-    </rule>
-    <rule id="fdaa-2f2b-7ce6-b588" name="⚂ [Triple] Relentless Killer" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use tis ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus attack action.</description>
-    </rule>
-    <rule id="955c-92f5-ce4e-a49f" name="⚂ [Triple] Snake Charmer" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action.</description>
-    </rule>
-    <rule id="e136-dd5d-8b85-c55c" name="⚃ [Quad] Paralysing Venom" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, add the value of this ability to the damage points allocated by cirtical hits from the attack actions made by this fighter, and after each attack action made by this fighter, roll a dice. On a 5-6, until the end of the battle round the target fighter cannot make move actions or disengage actions.</description>
-    </rule>
-    <rule id="3984-cdf0-cfd9-3cf0" name="⚃ [Quad] Paralysing Venom" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, add the value of this ability to the damage points allocated by cirtical hits from the attack actions made by this fighter, and after each attack action made by this fighter, roll a dice. On a 5-6, until the end of the battle round the target fighter cannot make move actions or disengage actions.</description>
-    </rule>
-    <rule id="7eb5-6327-b8a5-788d" name="⚂ [Triple] Snake Charmer" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action.</description>
-    </rule>
-    <rule id="20dc-0131-817f-ef3c" name="⚂ [Triple] Relentless Killer" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use tis ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus attack action.</description>
-    </rule>
-    <rule id="eb9f-a2b7-ea15-b84b" name="⚁ [Double] Poisoned Weapon" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, the Strength characteristic of attack actions made by this fighter count as being higher than the target&apos;s Toughness characteristic.</description>
-    </rule>
-    <rule id="038a-1dd9-9dab-c481" name="⚁ [Double] Fanged Buckler" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26f-4300-fb59-c645" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to the fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="a18c-d4a3-7b39-5071" name="⚁ [Double] Ensnaring Net" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f05-2073-9ce2-f486" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 3&quot; of this fighter. Until the end of the battle round, that enemy fighter cannot make move actions or disengage actions.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="6f05-2073-9ce2-f486" name=" Splintered Fang" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7a8-55be-73da-6c20" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a04-6ca8-1514-3053" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="3103-3c32-c0fd-bec9" name="Splintered Fang" hidden="false" collective="false" import="true" targetId="905d-eee3-036d-0a40" type="selectionEntry"/>
-        <entryLink id="6f6f-6d66-10d3-ab57" name="Chaos" hidden="false" collective="false" import="true" targetId="a06f-8f3e-8520-4e17" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="e1ee-3979-d517-cd72" name="Trueblood" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -330,13 +56,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="c824-3588-486d-05cf" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5afc-02d8-c2af-d2ef" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
+        <categoryLink id="bc34-4ab7-f435-ce5e" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="18ee-48d3-c5e0-1e20" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="5b8a-9551-b4aa-1dff" name=" Splintered Fang" hidden="false" collective="false" import="true" targetId="6f05-2073-9ce2-f486" type="selectionEntry"/>
-            <entryLink id="295e-070c-00fb-4dad" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="7a0c-07f9-46fb-b07f" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -344,4 +71,131 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="02f1-4a8b-fea9-981d" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="78b0-2beb-84b5-6ffa" name="Splintered Fang Abilities" hidden="false" targetId="66d8-b823-b3db-c414" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="66d8-b823-b3db-c414" name="Splintered Fang Abilities" hidden="false">
+      <rules>
+        <rule id="d31e-68ed-1964-0ab8" name="⚁ [Double] Ensnaring Net" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f03c-f314-5dde-e380" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 3&quot; of this fighter. Until the end of the battle round, that enemy fighter cannot make move actions or disengage actions.</description>
+        </rule>
+        <rule id="5864-fd3b-64c0-ba5e" name="⚁ [Double] Fanged Buckler" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f0b-3883-05ea-e379" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f03c-f314-5dde-e380" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to the fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="f9de-a6ca-9f27-01e7" name="⚁ [Double] Poisoned Weapon" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f03c-f314-5dde-e380" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, the Strength characteristic of attack actions made by this fighter count as being higher than the target&apos;s Toughness characteristic.</description>
+        </rule>
+        <rule id="11e0-8576-06b1-30d5" name="⚂ [Triple] Relentless Killer" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f03c-f314-5dde-e380" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use tis ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus attack action.</description>
+        </rule>
+        <rule id="9397-bda7-74d8-b8ab" name="⚂ [Triple] Snake Charmer" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f03c-f314-5dde-e380" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7622-abbe-a6f9-0bc6" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action.</description>
+        </rule>
+        <rule id="0025-9e42-8ac5-9991" name="⚃ [Quad] Paralysing Venom" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f03c-f314-5dde-e380" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, add the value of this ability to the damage points allocated by cirtical hits from the attack actions made by this fighter, and after each attack action made by this fighter, roll a dice. On a 5-6, until the end of the battle round the target fighter cannot make move actions or disengage actions.</description>
+        </rule>
+        <rule id="ff91-47d7-d0e7-99ed" name="⚀ [Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>

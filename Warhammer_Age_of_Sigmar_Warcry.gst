@@ -94,12 +94,12 @@
     <categoryEntry id="ad7e-e1dc-6545-1969" name=" Trapper" hidden="false"/>
     <categoryEntry id="d93c-b171-eecc-ef6d" name=" Warrior" hidden="false"/>
     <categoryEntry id="b311-2a5f-39e3-f8e4" name=" Monster" hidden="false"/>
-    <categoryEntry id="f7b6-6ae2-7fdb-3093" name="-Functional Categories-" hidden="false"/>
+    <categoryEntry id="f7b6-6ae2-7fdb-3093" name="-Functional Categories-" hidden="true"/>
     <categoryEntry id="a069-63a6-a6b4-742b" name="  Chaos" hidden="false"/>
     <categoryEntry id="e62d-3867-a149-1ffa" name="  Death" hidden="false"/>
     <categoryEntry id="7c12-f3a7-3b3c-30f1" name="  Destruction" hidden="false"/>
     <categoryEntry id="530f-47bb-d668-1ca6" name="  Order" hidden="false"/>
-    <categoryEntry id="52ee-0c94-262c-9a8e" name=" -Universal Runemarks-" hidden="false"/>
+    <categoryEntry id="52ee-0c94-262c-9a8e" name=" -Universal Runemarks-" hidden="true"/>
     <categoryEntry id="8134-f759-d667-7eb1" name="Cities of Sigmar" hidden="false"/>
   </categoryEntries>
   <forceEntries>

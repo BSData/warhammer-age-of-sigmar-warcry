@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="870a-4170-6d8d-e282" name="Unmade Leaders" hidden="false"/>
+    <categoryEntry id="74b9-be1e-a283-6b91" name="The Unmade" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="539c-4240-de44-47a2" name="Blissful One" hidden="true" collective="false" import="true" targetId="46b1-88e8-371e-e832" type="selectionEntry">
@@ -29,262 +30,7 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <rules>
-    <rule id="1924-4611-1786-afb0" name="⚁ [Double] Barbed Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, if any attack action made by this fighter scores any hits or critical hits, subtract 1 from the Toughness characteristic (to a minimum of 1) of the target fighter until the end of the battle round.</description>
-    </rule>
-    <rule id="8b94-68c9-880b-d11b" name="⚁ [Double] Chain Garrotte" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick an enemy fighter within 5&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="6fcd-47f2-f222-0f63" name="⚁ [Double] Nightmarish Visage" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick an enemy fighter within a number of inches of this fighter equal to the value of this ability and roll a dice. On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
-    </rule>
-    <rule id="0754-9eb7-53da-4e67" name="⚂ [Triple] Flaying Frenzy" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter. On a 3-4, allocate 1 damage point to the fighter being rolled for.On a 5-6, allocate a number of damage points ot the fighter being rolled for equal to the value of this ability.</description>
-    </rule>
-    <rule id="4859-78c5-451c-f1ec" name="⚂ [Triple] Vessel of Torment" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
-    </rule>
-    <rule id="1b43-bb00-62ce-2964" name="⚃ [Quad] Gift of Agony" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter makes a bonus attack action. Add 1 to the Strength characteristics of that attack action if this fighter has any damage points allocated to them.</description>
-    </rule>
-    <rule id="1b29-8181-1e3d-6584" name="⚃ [Quad] Gift of Agony" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter makes a bonus attack action. Add 1 to the Strength characteristics of that attack action if this fighter has any damage points allocated to them.</description>
-    </rule>
-    <rule id="ef3b-08c2-f963-fdb6" name="⚂ [Triple] Vessel of Torment" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
-    </rule>
-    <rule id="7fee-d169-952c-cc56" name="⚂ [Triple] Flaying Frenzy" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter. On a 3-4, allocate 1 damage point to the fighter being rolled for.On a 5-6, allocate a number of damage points ot the fighter being rolled for equal to the value of this ability.</description>
-    </rule>
-    <rule id="b9df-acb1-14c0-0154" name="⚁ [Double] Nightmarish Visage" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick an enemy fighter within a number of inches of this fighter equal to the value of this ability and roll a dice. On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
-    </rule>
-    <rule id="466d-e48f-2ac7-efd0" name="⚁ [Double] Chain Garrotte" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ac-9fa2-ed46-d6db" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick an enemy fighter within 5&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="65be-5e78-9791-b9fe" name="⚁ [Double] Barbed Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40d5-3504-9a35-5bef" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation, if any attack action made by this fighter scores any hits or critical hits, subtract 1 from the Toughness characteristic (to a minimum of 1) of the target fighter until the end of the battle round.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="40d5-3504-9a35-5bef" name=" The Unmade" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7528-9db4-6c6c-71df" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa7f-a8ce-6b72-4ddd" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="f51a-48b8-f3da-759a" name="The Unmade" hidden="false" collective="false" import="true" targetId="c727-ce73-58fd-0fb4" type="selectionEntry"/>
-        <entryLink id="69ba-1756-2f0e-aab5" name="Chaos" hidden="false" collective="false" import="true" targetId="a06f-8f3e-8520-4e17" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="46b1-88e8-371e-e832" name="Blissful One" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -310,13 +56,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="2478-4ba9-8496-4636" name="Special Abilities" hidden="false" targetId="e2e8-3e28-e842-54e3" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c4b8-2f62-f4b5-1d69" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="a939-64be-b220-8158" name="The Unmade" hidden="false" targetId="74b9-be1e-a283-6b91" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="36ff-8c6d-b5fb-6424" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="c6c1-a53a-24ea-7a2b" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="2c79-67aa-272a-7194" name=" The Unmade" hidden="false" collective="false" import="true" targetId="40d5-3504-9a35-5bef" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="7b5c-551b-82ac-6d74" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -324,4 +71,102 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="e2e8-3e28-e842-54e3" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="b4f9-9243-73b8-c628" name="Unmade Abilities" hidden="false" targetId="4cbf-d4c4-d745-7591" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="4cbf-d4c4-d745-7591" name="Unmade Abilities" hidden="false">
+      <rules>
+        <rule id="3e3d-35a3-3f80-dfda" name="⚁ [Double] Barbed Strike" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74b9-be1e-a283-6b91" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, if any attack action made by this fighter scores any hits or critical hits, subtract 1 from the Toughness characteristic (to a minimum of 1) of the target fighter until the end of the battle round.</description>
+        </rule>
+        <rule id="79e1-8f6d-f943-c256" name="⚁ [Double] Chain Garrotte" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74b9-be1e-a283-6b91" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter within 5&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="80ec-80e4-e338-63ba" name="⚁ [Double] Nightmarish Visage" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74b9-be1e-a283-6b91" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter within a number of inches of this fighter equal to the value of this ability and roll a dice. On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
+        </rule>
+        <rule id="dc9f-6e02-f8da-a770" name="⚂ [Triple] Flaying Frenzy" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74b9-be1e-a283-6b91" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter. On a 3-4, allocate 1 damage point to the fighter being rolled for.On a 5-6, allocate a number of damage points ot the fighter being rolled for equal to the value of this ability.</description>
+        </rule>
+        <rule id="88a2-0dc9-34c8-0045" name="⚂ [Triple] Vessel of Torment" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74b9-be1e-a283-6b91" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+        </rule>
+        <rule id="2002-7673-942d-2e83" name="⚃ [Quad] Gift of Agony" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74b9-be1e-a283-6b91" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>This fighter makes a bonus attack action. Add 1 to the Strength characteristics of that attack action if this fighter has any damage points allocated to them.</description>
+        </rule>
+        <rule id="acd3-cf24-4240-bd58" name="⚀ [Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>

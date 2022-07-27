@@ -2,6 +2,7 @@
 <catalogue id="d9e1-8075-c6ae-7f95" name="Chaos - Cypher Lords - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="80a0-280d-445d-b868" name="Cypher Leaders" hidden="false"/>
+    <categoryEntry id="e4be-965e-5895-3468" name="Cypher Lords" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="9f8d-6eae-199d-5f9e" name="Thrallmaster" hidden="true" collective="false" import="true" targetId="70db-8d8e-f47e-1438" type="selectionEntry">
@@ -29,242 +30,7 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <rules>
-    <rule id="7b97-3d4a-a6ef-3aa1" name="⚁ [Double] Acrobatic Leap" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;.</description>
-    </rule>
-    <rule id="d342-3ca7-6bde-cb0e" name="⚁ [Double] Low Sweeping Blow" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll 1 dice for each visible enemy fighter within 2&quot; of this fighter. On a 4-5, allocate 1 damage point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
-    </rule>
-    <rule id="3b5e-f3b8-0a60-ca5c" name="⚁ [Double] Throwing Stars and Chakrams" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="0865-2f33-9761-31db" name="⚂ [Triple] Shadowy Recall" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with the Minion runemark that is within 12&quot; of this fighter. Remove that fighter from the battlefield and then immediately set them up anywhere on the battlefield within a number of inches of this fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="2238-c3c7-6531-8868" name="⚂ [Triple] Shattered Gloom Globe" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of the attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
-    </rule>
-    <rule id="7765-e6ff-e83a-1c1c" name="⚃ [Quad] Spinning Somersault Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;. In addition, this fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
-    </rule>
-    <rule id="b98f-8f2d-c1b8-5681" name="⚃ [Quad] Spinning Somersault Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;. In addition, this fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
-    </rule>
-    <rule id="b93a-f5a8-1ae8-8b4d" name="⚂ [Triple] Shattered Gloom Globe" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of the attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
-    </rule>
-    <rule id="e771-fc56-949c-9291" name="⚂ [Triple] Shadowy Recall" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with the Minion runemark that is within 12&quot; of this fighter. Remove that fighter from the battlefield and then immediately set them up anywhere on the battlefield within a number of inches of this fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="2603-b3b4-8de3-d0c3" name="⚁ [Double] Throwing Stars and Chakrams" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="1b71-da9d-baf8-26f2" name="⚁ [Double] Low Sweeping Blow" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll 1 dice for each visible enemy fighter within 2&quot; of this fighter. On a 4-5, allocate 1 damage point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
-    </rule>
-    <rule id="dfca-b421-3dfd-d53b" name="⚁ [Double] Acrobatic Leap" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9c9-4a59-c145-6f2c" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="c9c9-4a59-c145-6f2c" name=" Cypher Lords" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b77-55dc-fa2e-d87a" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9e6-4191-a2ec-3694" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="0158-1b2d-bcb1-bdb4" name="Cypher Lords" hidden="false" collective="false" import="true" targetId="5831-7dad-b520-aa2d" type="selectionEntry"/>
-        <entryLink id="1427-98a5-2403-78f7" name="Chaos" hidden="false" collective="false" import="true" targetId="a06f-8f3e-8520-4e17" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="70db-8d8e-f47e-1438" name="Thrallmaster" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -290,17 +56,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="c910-a381-e90f-9f84" name="Special Abilities" hidden="false" targetId="66cc-d608-616c-a9fe" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
-        <categoryLink id="df14-232d-33f0-fd9a" name="Cypher Leaders" hidden="false" targetId="80a0-280d-445d-b868" primary="false"/>
+        <categoryLink id="e16c-b0ed-f356-6fef" name="Cypher Lords" hidden="false" targetId="e4be-965e-5895-3468" primary="false"/>
+        <categoryLink id="fd21-0285-bbe2-503c" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="c6a7-c87f-7d0e-31f1" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8afa-6646-4aec-f898" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="7c64-2dbd-af60-ec14" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="74b3-5779-e8ab-d474" name=" Cypher Lords" hidden="false" collective="false" import="true" targetId="c9c9-4a59-c145-6f2c" type="selectionEntry"/>
-            <entryLink id="a4a9-2538-c933-f7ff" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="6962-7834-be3a-cd09" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -308,4 +72,102 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="66cc-d608-616c-a9fe" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="9551-c3e1-5269-ad09" name="Cypher Lords Abilities" hidden="false" targetId="f14d-8b12-3584-4407" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="f14d-8b12-3584-4407" name="Cypher Lords Abilities" hidden="false">
+      <rules>
+        <rule id="d4a8-85f1-77be-04ec" name="⚁ [Double] Acrobatic Leap" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4be-965e-5895-3468" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;.</description>
+        </rule>
+        <rule id="8ff9-8cdc-2637-32e8" name="⚁ [Double] Low Sweeping Blow" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4be-965e-5895-3468" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll 1 dice for each visible enemy fighter within 2&quot; of this fighter. On a 4-5, allocate 1 damage point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+        </rule>
+        <rule id="48bf-b527-8b7f-afef" name="⚁ [Double] Throwing Stars and Chakrams" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4be-965e-5895-3468" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="4413-6bf7-c966-4f13" name="⚂ [Triple] Shadowy Recall" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4be-965e-5895-3468" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7622-abbe-a6f9-0bc6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a friendly fighter with the Minion runemark that is within 12&quot; of this fighter. Remove that fighter from the battlefield and then immediately set them up anywhere on the battlefield within a number of inches of this fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="7201-5955-8939-071b" name="⚂ [Triple] Shattered Gloom Globe" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4be-965e-5895-3468" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of the attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
+        </rule>
+        <rule id="5983-15f4-86f4-cac2" name="⚃ [Quad] Spinning Somersault Strike" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4be-965e-5895-3468" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;. In addition, this fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+        </rule>
+        <rule id="ba8a-2ebf-c3ba-17fa" name="⚀ [Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>

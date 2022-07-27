@@ -6,6 +6,9 @@
     <categoryEntry id="395a-c34a-df05-ee2f" name="Underworlds Duvalle" hidden="false"/>
     <categoryEntry id="313e-69a8-9997-57f6" name="Underworlds Deintalos" hidden="false"/>
     <categoryEntry id="caac-e696-ba40-43ad" name="Soulblight Gravelords" hidden="false"/>
+    <categoryEntry id="06b6-edd7-ec73-eb91" name="Exiled Dead" hidden="false"/>
+    <categoryEntry id="813d-4b82-0e9a-cc71" name="Sepulchral Guard" hidden="false"/>
+    <categoryEntry id="ce85-c4b7-3626-c38a" name="Crimson Court" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="8a75-9413-f646-dad4" name="Vampire Lord" hidden="true" collective="false" import="true" targetId="5fce-38f5-9d35-e8cf" type="selectionEntry">
@@ -414,899 +417,7 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <rules>
-    <rule id="02dd-68a6-0b39-f5f8" name="⚁ [Double] Shambling Horde" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus move action of a number of inches equal to the value of this ability.</description>
-    </rule>
-    <rule id="456e-04e4-8060-4d80" name="⚁ [Double] Vampiric Agility" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter’s activation, do not count the vertical distance moved when this fighter is climbing.</description>
-    </rule>
-    <rule id="3ada-b5c7-d661-9292" name="⚁ [Double] Blood-maddened Feeding Frenzy" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by this fighter this activation. This fighter makes a bonus move action or a bonus attack action.</description>
-    </rule>
-    <rule id="a171-0c18-0f59-a322" name="⚂ [Triple] Deathly Charge" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f03-c585-1ede-64c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f03-c585-1ede-64c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f03-c585-1ede-64c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points equal to the value of this ability to that fighter.</description>
-    </rule>
-    <rule id="221a-0d02-0783-d0f0" name="⚂ [Triple] Thirst for Blood" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by this fighter this activation. Remove a number of damage points allocated to this fighter up to double the value of this ability.</description>
-    </rule>
-    <rule id="2349-56f3-750d-0686" name="⚃ [Quad] Chosen Champion" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus attack action. In addition, add half the value of this ability (rounding up) to the Attacks characteristic of that attack action.</description>
-    </rule>
-    <rule id="d4b4-7264-bc29-334e" name="⚁ [Double] Beheading Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Add half the value of this ability (rounding up) to the number of damage points allocated by critical hits from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
-    </rule>
-    <rule id="78fd-3cbf-98a0-f443" name="⚁ [Double] Necrotic Siphon" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible friendly fighter with the Minion runemark within 6&quot; of this fighter. Allocate a number of damage points equal to the value of this ability to that fighter. Then, remove a number of damage points allocated to this fighter up to double the value of this ability.</description>
-    </rule>
-    <rule id="b1c1-7db6-a7f8-12cf" name="⚂ [Triple] Summon Undead Minions" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with the Minion runemark that has been taken down. Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter. That fighter no longer counts as being taken down and has no damage points allocated to it.</description>
-    </rule>
-    <rule id="d64e-1269-3b58-d332" name="⚂ [Triple] Call the Crimson Feast" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>
-Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
-    </rule>
-    <rule id="602e-88a4-37e5-db31" name="⚃ [Quad] Vanhel’s Danse Macabre" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a number of visible friendly fighters with the Minion runemark equal to the value of this ability within 6&quot; of this fighter. Each fighter pi cked can make a bonus move action or a bonus attack action (some can make bonus move actions and others bonus attack actions).</description>
-    </rule>
-    <rule id="93d7-1036-39b7-b8c4" name="⚁ [Double] The Thrill of the Hunt" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3914-f912-f556-ef23" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3914-f912-f556-ef23" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3914-f912-f556-ef23" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>If the next attack action made by this fighter this activation targets an enemy fighter with any damage points allocated to them, add 1 to the Attacks and Strength characteristics of that attack action.</description>
-    </rule>
-    <rule id="f719-88b8-58ca-2a0b" name="⚁ [Double] Fiendish Lure" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3914-f912-f556-ef23" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3914-f912-f556-ef23" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3914-f912-f556-ef23" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, add 1 to the damage points allocated by each critical hit from attack actions made by friendly fighters that target an enemy fighter within 6&quot; of this fighter.</description>
-    </rule>
-    <rule id="526e-5030-8c1a-4810" name="⚂ [Triple] Frightening Charge" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67a7-85ab-87e5-28ef" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67a7-85ab-87e5-28ef" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67a7-85ab-87e5-28ef" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them.  This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
-    </rule>
-    <rule id="bd8c-71b0-9e6f-d51d" name="⚁ [Double] Dread Puppetry" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf8-4940-a2eb-d3f4" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf8-4940-a2eb-d3f4" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf8-4940-a2eb-d3f4" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with both the Exiled Dead and Bulwark runemarks and has not activated yet this battle round.  you can activate that fighter immediately after this fighter&apos;s activation ends.</description>
-    </rule>
-    <rule id="ecaf-cf4e-a9fc-f17c" name="⚁ [Double] Crackling Arcs" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a number of dice equal to the value of this ability.  For each roll of 5+, pick a visible enemy fighter within 3&quot; of this fighter.  Allocate 1 damage point to that fighter for each friendly fighter with this ability&apos;s runemarks within 3&quot; of that fighter.</description>
-    </rule>
-    <rule id="525e-5811-b063-f750" name="⚂ [Triple] Dynamic Enhancer" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, add 1 to the Attack characteristic of attack actions with a Range characteristic of 3 or less made by visible friendly fighters with both the Exiled Dead and Frienzied runemarks while they are within 9&quot; of this fighter.</description>
-    </rule>
-    <rule id="0018-14b1-260a-1b2e" name="⚃ [Quad] Vanhel’s Danse Macabre" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a number of visible friendly fighters with the Minion runemark equal to the value of this ability within 6&quot; of this fighter. Each fighter pi cked can make a bonus move action or a bonus attack action (some can make bonus move actions and others bonus attack actions).</description>
-    </rule>
-    <rule id="773e-ae95-7434-2049" name="⚃ [Quad] Chosen Champion" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2da4-597a-7aab-a5d8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus attack action. In addition, add half the value of this ability (rounding up) to the Attacks characteristic of that attack action.</description>
-    </rule>
-    <rule id="072b-337c-5521-ab53" name="⚂ [Triple] Thirst for Blood" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by this fighter this activation. Remove a number of damage points allocated to this fighter up to double the value of this ability.</description>
-    </rule>
-    <rule id="26f6-edb9-658f-284f" name="⚂ [Triple] Summon Undead Minions" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with the Minion runemark that has been taken down. Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter. That fighter no longer counts as being taken down and has no damage points allocated to it.</description>
-    </rule>
-    <rule id="d3d5-3f24-df79-5e90" name="⚂ [Triple] Frightening Charge" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67a7-85ab-87e5-28ef" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them.  This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
-    </rule>
-    <rule id="1e1f-4344-0c93-45db" name="⚂ [Triple] Dynamic Enhancer" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, add 1 to the Attack characteristic of attack actions with a Range characteristic of 3 or less made by visible friendly fighters with both the Exiled Dead and Frienzied runemarks while they are within 9&quot; of this fighter.</description>
-    </rule>
-    <rule id="c08a-5607-205f-6c72" name="⚂ [Triple] Deathly Charge" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f03-c585-1ede-64c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points equal to the value of this ability to that fighter.</description>
-    </rule>
-    <rule id="99ce-4ed9-170c-48fa" name="⚂ [Triple] Call the Crimson Feast" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="841a-a982-1fe2-94eb" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>
-Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
-    </rule>
-    <rule id="733d-3ffc-bdc8-56f7" name="⚁ [Double] Vampiric Agility" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter’s activation, do not count the vertical distance moved when this fighter is climbing.</description>
-    </rule>
-    <rule id="9e45-5f3f-41fe-8dbb" name="⚁ [Double] The Thrill of the Hunt" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3914-f912-f556-ef23" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>If the next attack action made by this fighter this activation targets an enemy fighter with any damage points allocated to them, add 1 to the Attacks and Strength characteristics of that attack action.</description>
-    </rule>
-    <rule id="0942-24cd-a38b-bee3" name="⚁ [Double] Shambling Horde" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus move action of a number of inches equal to the value of this ability.</description>
-    </rule>
-    <rule id="47e5-f7e2-42d5-86bd" name="⚁ [Double] Necrotic Siphon" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible friendly fighter with the Minion runemark within 6&quot; of this fighter. Allocate a number of damage points equal to the value of this ability to that fighter. Then, remove a number of damage points allocated to this fighter up to double the value of this ability.</description>
-    </rule>
-    <rule id="1ef8-1523-da4f-7d0c" name="⚁ [Double] Fiendish Lure" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3914-f912-f556-ef23" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, add 1 to the damage points allocated by each critical hit from attack actions made by friendly fighters that target an enemy fighter within 6&quot; of this fighter.</description>
-    </rule>
-    <rule id="c4b3-f074-64ac-3ad1" name="⚁ [Double] Dread Puppetry" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf8-4940-a2eb-d3f4" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with both the Exiled Dead and Bulwark runemarks and has not activated yet this battle round.  you can activate that fighter immediately after this fighter&apos;s activation ends.</description>
-    </rule>
-    <rule id="b053-b974-610e-019c" name="⚁ [Double] Crackling Arcs" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d63c-5f78-3a14-16bc" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a number of dice equal to the value of this ability.  For each roll of 5+, pick a visible enemy fighter within 3&quot; of this fighter.  Allocate 1 damage point to that fighter for each friendly fighter with this ability&apos;s runemarks within 3&quot; of that fighter.</description>
-    </rule>
-    <rule id="63a7-ffb6-3db8-7d4e" name="⚁ [Double] Blood-maddened FeedingFrenzy" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b52-047b-c9e1-3386" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by this fighter this activation. This fighter makes a bonus move action or a bonus attack action.</description>
-    </rule>
-    <rule id="91b7-afa4-5c65-5191" name="⚁ [Double] Beheading Strike" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7217-ed91-4ebf-d704" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b9-055c-eaaf-fec5" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Add half the value of this ability (rounding up) to the number of damage points allocated by critical hits from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="7217-ed91-4ebf-d704" name="Soulblight Gravelords" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a95-43bd-a294-4ad3" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d889-1233-99c9-a3b0" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="04ea-a143-ff69-3a75" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="a5a3-b454-c4b9-66c3" type="selectionEntry"/>
-        <entryLink id="de04-5577-73c6-b673" name="Death" hidden="false" collective="false" import="true" targetId="1e81-9337-7b78-923a" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="5fce-38f5-9d35-e8cf" name="Vampire Lord" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -1332,15 +443,16 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="617d-9b3f-9b46-768b" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8eab-d248-a6a1-a871" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="339a-d0d5-0b50-df01" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="6dca-8b3a-f33f-7985" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="37fb-6bdd-efc9-a657" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="8957-250e-2d67-95f1" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9137-bb35-517c-8eba" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
-            <entryLink id="b0f9-04bb-1a1b-d763" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="82ac-cba4-dbc3-73a1" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="3712-d805-8e6b-066a" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="1e7f-dc3e-566e-c3bf" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1380,14 +492,15 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="504e-a96f-ce2e-8e50" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f4d5-2449-835a-8ac0" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="5f04-5f50-1ac0-e94f" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="c211-b6b5-2f70-9068" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="d2b2-e259-f665-cfde" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="58a9-d22e-3b52-c7e5" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
-            <entryLink id="da1e-5bca-6c00-bdbc" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="65bc-6d67-3a9a-4d07" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="49cb-0dc0-9c89-36c4" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1407,6 +520,11 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="63d1-f48e-31bd-18c5" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="f875-ad98-bc6b-83a7" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="7c7a-2399-5af7-dc47" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5630-e811-1152-b52d" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="91c9-00cd-71ca-ef38">
           <constraints>
@@ -1439,15 +557,9 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink id="b27d-6e91-1267-f433" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-                  <entryLinks>
-                    <entryLink id="8512-4358-75aa-524d" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
-                    <entryLink id="8083-4904-b46a-33cc" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-                    <entryLink id="ecfb-1956-a35c-9177" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-                  </entryLinks>
-                </entryLink>
-              </entryLinks>
+              <infoLinks>
+                <infoLink id="2427-b1d1-ed25-381c" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
               </costs>
@@ -1477,15 +589,12 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink id="9ff0-c3b8-4aa6-e91b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-                  <entryLinks>
-                    <entryLink id="2b0f-fc7f-97ee-1251" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
-                    <entryLink id="6fcb-0238-efa0-135e" name=" Berserker" hidden="false" collective="false" import="true" targetId="8d3a-0293-108e-0fdd" type="selectionEntry"/>
-                    <entryLink id="6bcc-b0c5-a1ad-10b1" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-                  </entryLinks>
-                </entryLink>
-              </entryLinks>
+              <infoLinks>
+                <infoLink id="5b17-95b4-363f-a1e5" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="e28a-8172-5222-1841" name=" Mount" hidden="false" targetId="85e4-2bbc-e2a5-c551" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="225.0"/>
               </costs>
@@ -1525,15 +634,16 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="65a0-d647-6fe6-063b" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4dba-a9f2-f2de-d73a" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="19c2-a423-573c-6f79" name=" Ferocious" hidden="false" targetId="1aa1-183f-952b-ad08" primary="false"/>
+        <categoryLink id="917e-7d4a-53d0-7184" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="edfb-4424-09de-2717" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="ae04-da02-0f63-ba8e" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="f819-fed4-3950-3918" name=" Ferocious" hidden="false" collective="false" import="true" targetId="8b52-047b-c9e1-3386" type="selectionEntry"/>
-            <entryLink id="f768-521a-60e2-b5e4" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
-            <entryLink id="5ebd-75cf-7af0-bb0a" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="c5dc-7096-7ee5-1554" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="0432-34ad-8e28-a1b8" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1565,15 +675,16 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="3fec-73fb-5648-329a" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="180c-8c3e-8516-c4a0" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="779f-34d0-1c23-128c" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="07d1-fdd5-1c7e-f27c" name=" Mount" hidden="false" targetId="85e4-2bbc-e2a5-c551" primary="false"/>
+        <categoryLink id="e8d4-cde2-80b2-9d4a" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="b0bb-7c4b-862a-dd8f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9238-b67f-492a-2036" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
-            <entryLink id="aee0-8dd0-70f9-3953" name=" Mount" hidden="false" collective="false" import="true" targetId="8f03-c585-1ede-64c6" type="selectionEntry"/>
-            <entryLink id="cc9c-7f93-ed43-b363" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="c132-985a-4e7e-4540" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="99d4-7729-da1e-dc7e" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1608,15 +719,16 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6b7a-5ba0-898b-3ff9" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cfed-f74f-72ca-f5b2" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="37f5-78f4-f879-e9c2" name="Crimson Court" hidden="false" targetId="ce85-c4b7-3626-c38a" primary="false"/>
+        <categoryLink id="4ab2-7c00-fca1-fbe4" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="76c3-be1a-6a53-0439" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="a010-91be-1a6b-877d" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="b7b8-1258-4697-31a4" name="The Crimson Court" hidden="false" collective="false" import="true" targetId="3914-f912-f556-ef23" type="selectionEntry"/>
-            <entryLink id="d3c0-3608-8f8d-f7c7" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="adac-b9a9-9241-974a" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="6093-8885-5740-699a" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="68c9-ad57-6f40-53e6" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1651,14 +763,15 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="9f64-8132-5bb8-9a45" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e962-c67f-a322-77ad" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="beee-db97-b832-158f" name="Sepulchral Guard" hidden="false" targetId="813d-4b82-0e9a-cc71" primary="false"/>
+        <categoryLink id="34ed-cd6a-dfaa-b2d8" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="e93a-f2e4-2b19-6913" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="f152-84b1-3828-7ae1" name="Sepulchral Guard" hidden="false" collective="false" import="true" targetId="67a7-85ab-87e5-28ef" type="selectionEntry"/>
-            <entryLink id="3d0f-9082-476f-b7e2" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="2c40-0cd3-3e6c-da88" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="b027-f041-8063-a793" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1693,40 +806,21 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="3460-c8fb-0f1d-bc2a" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4d0d-a098-99c8-a002" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="8a0c-43c4-61c7-a9e5" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="2c5c-9d65-7638-b5df" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="40e7-efa1-4114-71fb" name="Crimson Court" hidden="false" targetId="ce85-c4b7-3626-c38a" primary="false"/>
+        <categoryLink id="1843-bfdf-787e-8036" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="7f36-1660-88d0-0cab" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="05f9-e823-6c92-2e1f" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="bac3-ce28-b9d3-0709" name="The Crimson Court" hidden="false" collective="false" import="true" targetId="3914-f912-f556-ef23" type="selectionEntry"/>
-            <entryLink id="ef69-39c3-5ee3-e2d7" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="6fb0-c3a2-e220-c044" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="67a7-85ab-87e5-28ef" name="Sepulchral Guard" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93db-c7b0-7ce2-936c" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3412-a276-b91a-a488" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3914-f912-f556-ef23" name="The Crimson Court" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e902-3646-e37c-d604" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f608-4a8c-044d-e168" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4fd3-d1c8-693f-e718" name="Ennias Curse-born" hidden="false" collective="false" import="true" type="model">
@@ -1757,19 +851,18 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="ab1a-49dd-764f-3f10" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="3dfc-2b04-d86d-42ae" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="78d7-a8af-a6aa-9ae2" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="f1f2-6a35-78ee-ca55" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="ef6c-0c1c-0730-9b30" name="Crimson Court" hidden="false" targetId="ce85-c4b7-3626-c38a" primary="false"/>
+        <categoryLink id="b703-8be5-8a56-b375" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="232b-d612-8d2f-6384" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3895-98cb-bd8e-f341" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="a86b-5e44-b0f2-f242" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="63de-4044-8841-fd23" name="The Crimson Court" hidden="false" collective="false" import="true" targetId="3914-f912-f556-ef23" type="selectionEntry"/>
-            <entryLink id="68d5-1977-d48d-032f" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
-            <entryLink id="7fcb-8a89-28fe-717f" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="c427-f3ae-495e-36dc" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1804,18 +897,17 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="7bd9-04d7-9b5a-1bb1" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="963f-5798-aebb-8200" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="a5cd-0ea6-0dcf-a4e1" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="0d3f-97ff-0d6a-e712" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="08d5-c32f-c722-6dcf" name="Crimson Court" hidden="false" targetId="ce85-c4b7-3626-c38a" primary="false"/>
+        <categoryLink id="ca36-6daa-daf4-1f9a" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="be92-4c72-32b1-576a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="329d-9634-088a-7282" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="5244-b174-b81d-c991" name="The Crimson Court" hidden="false" collective="false" import="true" targetId="3914-f912-f556-ef23" type="selectionEntry"/>
-            <entryLink id="0149-9aa3-e75a-1505" name=" Terrifying" hidden="false" collective="false" import="true" targetId="841a-a982-1fe2-94eb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="cbda-080c-8058-2b4c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1850,18 +942,17 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="2655-fd03-5ebe-697b" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="df5c-a3c2-655d-b3c2" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="8413-412b-6cbd-5cc9" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9381-b67d-b3ca-d592" name="Sepulchral Guard" hidden="false" targetId="813d-4b82-0e9a-cc71" primary="false"/>
+        <categoryLink id="831b-6334-2dcb-4450" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
+        <categoryLink id="978d-df97-74db-850c" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2746-0a87-0532-edba" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="5e17-2776-896f-fb96" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="4e13-68d3-8da2-603b" name="Sepulchral Guard" hidden="false" collective="false" import="true" targetId="67a7-85ab-87e5-28ef" type="selectionEntry"/>
-            <entryLink id="bad2-daf9-b99d-106b" name=" Champion" hidden="false" collective="false" import="true" targetId="2da4-597a-7aab-a5d8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="65f6-1fb5-48c4-9b44" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1896,17 +987,16 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="bf2e-1475-4a3f-5f3d" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="d429-edd1-19d3-ee53" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="f640-0c03-cac7-311c" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="606b-309c-f1a0-bac3" name="Sepulchral Guard" hidden="false" targetId="813d-4b82-0e9a-cc71" primary="false"/>
+        <categoryLink id="f999-9d58-54ca-acf9" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4573-f1f9-1907-461f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="bba4-cc86-28a6-2682" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="cb76-b607-547e-0536" name="Sepulchral Guard" hidden="false" collective="false" import="true" targetId="67a7-85ab-87e5-28ef" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="5823-40e6-7554-b681" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1941,17 +1031,16 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6a6d-abf3-5717-ceb7" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="9634-6001-ba36-17a9" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="5aed-3843-8165-25fe" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="aa01-f134-2c3b-d263" name="Sepulchral Guard" hidden="false" targetId="813d-4b82-0e9a-cc71" primary="false"/>
+        <categoryLink id="3c07-939f-5e61-c176" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="80f3-35eb-43ae-0b0b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="a0f5-d1cf-7914-881d" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="53b9-3f6c-b94e-5907" name="Sepulchral Guard" hidden="false" collective="false" import="true" targetId="67a7-85ab-87e5-28ef" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="e992-b1d2-e545-beb3" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1986,17 +1075,16 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="b283-720b-e2ac-a5df" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="a2a8-9dcf-e5c9-12f6" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="ad88-1ead-87d9-32ab" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="96d1-968c-3c11-7694" name="Sepulchral Guard" hidden="false" targetId="813d-4b82-0e9a-cc71" primary="false"/>
+        <categoryLink id="0cde-6c40-558d-e047" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b7c9-50f2-af4a-c76e" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="ec86-b768-192c-11f7" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="c8da-d7cc-38c7-3394" name="Sepulchral Guard" hidden="false" collective="false" import="true" targetId="67a7-85ab-87e5-28ef" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="6c6d-92c8-1561-9c53" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2031,31 +1119,21 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="3de8-d1bd-5403-8a5a" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6204-7329-7edd-1351" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="7c53-944f-d69b-e358" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="d09f-58ac-5395-cab8" name="Sepulchral Guard" hidden="false" targetId="813d-4b82-0e9a-cc71" primary="false"/>
+        <categoryLink id="57d6-695d-b073-bc19" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="550b-d1e8-d0bf-4719" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="370a-edc2-6fb9-731e" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e31f-daab-225a-05b8" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="b1f8-8604-7eb9-2e7a" name="Sepulchral Guard" hidden="false" collective="false" import="true" targetId="67a7-85ab-87e5-28ef" type="selectionEntry"/>
-            <entryLink id="d122-d071-4b73-f05e" name=" Champion" hidden="false" collective="false" import="true" targetId="2da4-597a-7aab-a5d8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="9f0f-ff86-dec0-0f3c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d63c-5f78-3a14-16bc" name="The Exiled Dead" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="440d-a1e0-d089-74ea" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d428-5820-2187-9ce7" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f39f-867a-038e-ed2b" name="Deintalos the Exile" hidden="false" collective="false" import="true" type="model">
@@ -2094,15 +1172,16 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="ebfa-63b2-18d1-aaf8" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6dc6-a6aa-5bcd-296e" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="4208-6972-2324-dc88" name="Exiled Dead" hidden="false" targetId="06b6-edd7-ec73-eb91" primary="false"/>
+        <categoryLink id="63c8-675b-7956-3bdb" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="c506-3835-16da-44b8" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="2658-67c0-e828-9da1" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="0f9e-e50c-1cae-19fb" name="The Exiled Dead" hidden="false" collective="false" import="true" targetId="d63c-5f78-3a14-16bc" type="selectionEntry"/>
-            <entryLink id="ac0d-c606-1c68-1b7b" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="3a1d-bee2-791a-5619" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="b53b-484c-1b06-ba55" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="077b-a18c-3435-a86e" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2137,18 +1216,17 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="f334-4311-e5b5-0db2" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="1fb9-ce93-2798-2c01" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="8cf2-a288-f227-77e0" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="3479-b62e-2477-e90c" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="af6a-d518-d00d-7c6b" name="Exiled Dead" hidden="false" targetId="06b6-edd7-ec73-eb91" primary="false"/>
+        <categoryLink id="ef8c-d34c-5cd0-1bce" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a1a9-f1b9-58b9-0cb2" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="ee58-758c-d3ad-db6a" name=" Sentience" hidden="false" collective="false" import="true" targetId="fdf8-4940-a2eb-d3f4" type="selectionEntry"/>
-            <entryLink id="20a9-1c94-53f6-0a9e" name="The Exiled Dead" hidden="false" collective="false" import="true" targetId="d63c-5f78-3a14-16bc" type="selectionEntry"/>
-            <entryLink id="e25b-ffb8-e2e9-5b97" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="0397-ae03-3971-5ca4" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2183,19 +1261,18 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="95f9-cdc8-bcc4-299d" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="aab1-b8e5-fd75-fa81" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="334e-fa3e-bf6a-676d" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="910a-2fd5-d74d-9bc6" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="1502-9c8c-99ff-5142" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
+        <categoryLink id="2b1d-92ef-da79-0e9d" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
+        <categoryLink id="3ec8-6204-304d-867a" name="Exiled Dead" hidden="false" targetId="06b6-edd7-ec73-eb91" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3ba1-856c-92cd-9ad1" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="0d44-9a96-6756-8075" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="379c-59fa-6c60-e30f" name="The Exiled Dead" hidden="false" collective="false" import="true" targetId="d63c-5f78-3a14-16bc" type="selectionEntry"/>
-            <entryLink id="6ba2-9a1f-c5b7-8088" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
-            <entryLink id="a944-c5d9-60a4-6226" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="ab15-5769-b8bf-2f84" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2230,19 +1307,18 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="1ee7-bcb7-58cd-0ceb" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="a914-ad2b-e8e8-b772" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="48ae-18ac-29f7-630c" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="5d63-f2de-ab25-0a91" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="c46b-2b04-145d-cc3a" name="Exiled Dead" hidden="false" targetId="06b6-edd7-ec73-eb91" primary="false"/>
+        <categoryLink id="d59d-1177-9d5a-9b6c" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
+        <categoryLink id="cb1b-fd89-0045-4c65" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5ab5-f5d9-3a88-d1d4" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="1425-f03c-bd84-ed87" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="89f4-7019-ede4-e062" name="The Exiled Dead" hidden="false" collective="false" import="true" targetId="d63c-5f78-3a14-16bc" type="selectionEntry"/>
-            <entryLink id="047c-cb1c-a189-16ff" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
-            <entryLink id="ba6c-6794-6a8f-0523" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="199d-3694-ae9f-73cd" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2277,19 +1353,18 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="a751-893f-75c4-86db" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4b6a-5a68-6b69-3fb4" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="4688-a147-751f-d7c5" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="5d87-59b8-6ee1-5c49" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="7625-0dc7-511a-f017" name="Exiled Dead" hidden="false" targetId="06b6-edd7-ec73-eb91" primary="false"/>
+        <categoryLink id="ed9d-c3d5-16e0-ffbb" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
+        <categoryLink id="dc28-46aa-8b02-6583" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b606-1675-f5ad-c155" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="7f63-4059-e8ff-f4f7" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="5fa9-1ded-e38d-ee32" name="The Exiled Dead" hidden="false" collective="false" import="true" targetId="d63c-5f78-3a14-16bc" type="selectionEntry"/>
-            <entryLink id="3357-fba1-9490-2804" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
-            <entryLink id="a6b9-d706-074c-e375" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="b48e-9633-5a53-3738" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2324,19 +1399,18 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="b8a5-842d-3371-e5be" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="ffef-83da-ebf2-87c4" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="1e01-2a1a-4344-0bc2" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="2652-b062-d7a2-3f63" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="0cde-7684-22ec-a59d" name="Exiled Dead" hidden="false" targetId="06b6-edd7-ec73-eb91" primary="false"/>
+        <categoryLink id="eeee-f3ed-65f9-53db" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
+        <categoryLink id="55c0-85b5-c3bf-8a8f" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6787-c3a5-1f7b-b248" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="50a1-f162-aec0-c2a7" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="9deb-0e81-5379-fee8" name="The Exiled Dead" hidden="false" collective="false" import="true" targetId="d63c-5f78-3a14-16bc" type="selectionEntry"/>
-            <entryLink id="39c6-1bed-b08b-a40b" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
-            <entryLink id="8494-eef7-a8f2-72c4" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="4f3b-b260-08a9-3b6e" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2371,19 +1445,18 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="8bed-367e-61ca-afb2" name="Special Abilities" hidden="false" targetId="f797-aa9b-19b8-a716" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e790-dfb2-5a86-ae88" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="c529-4485-9685-b99c" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="59ae-f832-7dc4-9299" name="Soulblight Gravelords" hidden="false" targetId="caac-e696-ba40-43ad" primary="false"/>
+        <categoryLink id="cae0-e265-6b87-f90f" name="Exiled Dead" hidden="false" targetId="06b6-edd7-ec73-eb91" primary="false"/>
+        <categoryLink id="6d85-e610-bcb7-1be4" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+        <categoryLink id="17eb-21ea-eea2-2e1a" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ae47-4b5a-de17-ab6f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="7908-3589-fd1f-2d1e" name="Soulblight Gravelords" hidden="false" collective="false" import="true" targetId="7217-ed91-4ebf-d704" type="selectionEntry"/>
-            <entryLink id="ad0a-4535-b849-6607" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
-            <entryLink id="fc5f-7c23-b26c-4758" name="The Exiled Dead" hidden="false" collective="false" import="true" targetId="d63c-5f78-3a14-16bc" type="selectionEntry"/>
-            <entryLink id="0520-1d47-fdf2-508c" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="e8ec-4322-ab16-c8c4" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2391,4 +1464,291 @@ Until the end of the battle round, add 1 to the Attacks characteristic of attack
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="f797-aa9b-19b8-a716" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="1fb7-1a31-c7fe-76a1" name="Soulblight Gravelords Abilities" hidden="false" targetId="8922-6d96-ed88-3720" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="8922-6d96-ed88-3720" name="Soulblight Gravelords Abilities" hidden="false">
+      <rules>
+        <rule id="3a62-e0ad-b03f-656a" name="⚁ [Double] Beheading Strike" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d06-5a04-abc1-f87c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3f5-3905-6ef9-4bee" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Add half the value of this ability (rounding up) to the number of damage points allocated by critical hits from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+        </rule>
+        <rule id="96dd-1736-f387-b4b1" name="⚁ [Double] Blood-maddened FeedingFrenzy" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1aa1-183f-952b-ad08" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by this fighter this activation. This fighter makes a bonus move action or a bonus attack action.</description>
+        </rule>
+        <rule id="9c56-4d42-03ba-99dc" name="⚁ [Double] Crackling Arcs" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b6-edd7-ec73-eb91" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12a9-d7b7-2309-fde6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a number of dice equal to the value of this ability.  For each roll of 5+, pick a visible enemy fighter within 3&quot; of this fighter.  Allocate 1 damage point to that fighter for each friendly fighter with this ability&apos;s runemarks within 3&quot; of that fighter.</description>
+        </rule>
+        <rule id="469e-f513-0746-04d8" name="⚁ [Double] Dread Puppetry" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b6-edd7-ec73-eb91" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5452-a013-9d01-fd29" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a friendly fighter with both the Exiled Dead and Bulwark runemarks and has not activated yet this battle round.  you can activate that fighter immediately after this fighter&apos;s activation ends.</description>
+        </rule>
+        <rule id="ab59-7caf-e956-36e6" name="⚁ [Double] Fiendish Lure" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce85-c4b7-3626-c38a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, add 1 to the damage points allocated by each critical hit from attack actions made by friendly fighters that target an enemy fighter within 6&quot; of this fighter.</description>
+        </rule>
+        <rule id="3cb3-5dbb-f0d7-9245" name="⚁ [Double] Necrotic Siphon" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7622-abbe-a6f9-0bc6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible friendly fighter with the Minion runemark within 6&quot; of this fighter. Allocate a number of damage points equal to the value of this ability to that fighter. Then, remove a number of damage points allocated to this fighter up to double the value of this ability.</description>
+        </rule>
+        <rule id="8358-f87e-9987-297a" name="⚁ [Double] Shambling Horde" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d06-5a04-abc1-f87c" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus move action of a number of inches equal to the value of this ability.</description>
+        </rule>
+        <rule id="0e7b-cf18-e807-0d5f" name="⚁ [Double] The Thrill of the Hunt" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce85-c4b7-3626-c38a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>If the next attack action made by this fighter this activation targets an enemy fighter with any damage points allocated to them, add 1 to the Attacks and Strength characteristics of that attack action.</description>
+        </rule>
+        <rule id="9288-d377-894c-c667" name="⚂ [Triple] Call the Crimson Feast" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>
+Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
+        </rule>
+        <rule id="87f5-32d8-5304-679e" name="⚁ [Double] Vampiric Agility" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter’s activation, do not count the vertical distance moved when this fighter is climbing.</description>
+        </rule>
+        <rule id="6249-2d1c-c591-9384" name="⚂ [Triple] Deathly Charge" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85e4-2bbc-e2a5-c551" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points equal to the value of this ability to that fighter.</description>
+        </rule>
+        <rule id="9d23-bad5-ddc3-e370" name="⚂ [Triple] Dynamic Enhancer" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b6-edd7-ec73-eb91" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, add 1 to the Attack characteristic of attack actions with a Range characteristic of 3 or less made by visible friendly fighters with both the Exiled Dead and Frienzied runemarks while they are within 9&quot; of this fighter.</description>
+        </rule>
+        <rule id="3934-c346-344a-e4fd" name="⚂ [Triple] Frightening Charge" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="813d-4b82-0e9a-cc71" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them.  This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
+        </rule>
+        <rule id="cefa-79a0-3fb2-3d41" name="⚂ [Triple] Summon Undead Minions" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a friendly fighter with the Minion runemark that has been taken down. Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter. That fighter no longer counts as being taken down and has no damage points allocated to it.</description>
+        </rule>
+        <rule id="779a-c71b-b357-1a7c" name="⚂ [Triple] Thirst for Blood" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by this fighter this activation. Remove a number of damage points allocated to this fighter up to double the value of this ability.</description>
+        </rule>
+        <rule id="7731-e3d0-d6c6-89dc" name="⚃ [Quad] Chosen Champion" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c8f-bdce-f950-c13e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if they are within 6&quot; of a visible friendly fighter with the Leader runemark. This fighter can make a bonus attack action. In addition, add half the value of this ability (rounding up) to the Attacks characteristic of that attack action.</description>
+        </rule>
+        <rule id="b5f6-f3a6-3d84-530b" name="⚃ [Quad] Vanhel’s Danse Macabre" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caac-e696-ba40-43ad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7622-abbe-a6f9-0bc6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a number of visible friendly fighters with the Minion runemark equal to the value of this ability within 6&quot; of this fighter. Each fighter pi cked can make a bonus move action or a bonus attack action (some can make bonus move actions and others bonus attack actions).</description>
+        </rule>
+        <rule id="c8ce-57b7-800f-dd8f" name="⚀ [Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>
