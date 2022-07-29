@@ -153,6 +153,8 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="5cd3-7391-2d74-6cb3" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9864-1523-0ce1-2be1" name="Warrior Chamber" hidden="false" targetId="c992-da07-f2cb-cb5d" primary="false"/>
+        <categoryLink id="6945-368c-583e-537f" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e2d9-27d0-6782-82f6" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa21-706d-fc36-7453">
@@ -179,6 +181,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="0bc1-f8fe-842a-8cef" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
@@ -201,6 +206,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="12da-6e95-f906-5c9d" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
@@ -215,6 +223,7 @@
               </modifiers>
               <infoLinks>
                 <infoLink id="aec9-c888-4620-59e4" name="Grandblade" hidden="false" targetId="7e5a-0c29-cebd-5dd4" type="profile"/>
+                <infoLink id="12f1-07a2-da8d-f003" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="25.0"/>
@@ -230,6 +239,7 @@
               </modifiers>
               <infoLinks>
                 <infoLink id="b7da-0fbf-2b44-3de9" name="Grandhammer" hidden="false" targetId="b57a-ae44-26fb-833a" type="profile"/>
+                <infoLink id="c311-572e-7c02-b743" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="25.0"/>
@@ -245,10 +255,11 @@
               </modifiers>
               <infoLinks>
                 <infoLink id="51a2-1e9e-55b3-cb11" name="Warhammer" hidden="false" targetId="536b-679c-a436-27f4" type="profile"/>
+                <infoLink id="25c8-3911-e0a5-6b2d" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="292c-aac8-e7df-8171" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
-              </entryLinks>
+              <categoryLinks>
+                <categoryLink id="6d5b-6f4f-68c5-dd5f" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
               </costs>
@@ -263,10 +274,11 @@
               </modifiers>
               <infoLinks>
                 <infoLink id="27af-629f-f27d-8cd4" name="Warblade" hidden="false" targetId="b602-d2db-5567-8d46" type="profile"/>
+                <infoLink id="912f-74e6-afe4-eed5" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="fe8b-ea8f-3daa-bd2f" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
-              </entryLinks>
+              <categoryLinks>
+                <categoryLink id="fe64-4359-b5aa-fb87" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
               </costs>
@@ -275,12 +287,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b1bb-60cf-61df-4658" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="4ce3-2dfd-a6ad-3fcf" name=" Warrior" hidden="false" collective="false" import="true" targetId="47ac-9fa2-ed46-d6db" type="selectionEntry"/>
-            <entryLink id="bbd7-ae45-b779-972c" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="16da-8352-5ddd-a7f2" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -321,9 +327,11 @@
       </profiles>
       <infoLinks>
         <infoLink id="6e8f-d35f-8935-0149" name="Storm Gladius" hidden="false" targetId="52ca-1a16-860c-311c" type="profile"/>
+        <infoLink id="b495-8ad1-ea00-bd9a" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2b05-2de2-985c-0494" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="d9c0-bd04-240e-6137" name="Warrior Chamber" hidden="false" targetId="c992-da07-f2cb-cb5d" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9bd5-99d2-687f-0695" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="bec9-11ec-1bc1-605b">
@@ -410,11 +418,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="00eb-2907-b69c-8343" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="3171-29f1-c8cf-d816" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="0ee5-9063-d13e-2ff0" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -446,16 +449,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="7cfa-581d-631d-7b2c" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="3296-6c40-6ead-e4ea" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="dc1a-e8f3-fead-8004" name="Warrior Chamber" hidden="false" targetId="c992-da07-f2cb-cb5d" primary="false"/>
+        <categoryLink id="b2f0-ffad-637b-cacc" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4aef-551e-d63c-f0c1" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e702-8962-c634-adde" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
-            <entryLink id="644b-425d-1b06-2ca4" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="c88c-aa4f-111a-8ca6" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -524,6 +526,8 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="dd02-56bd-b484-1fca" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="182c-8622-e4c1-3a8c" name="Warrior Chamber" hidden="false" targetId="c992-da07-f2cb-cb5d" primary="false"/>
+        <categoryLink id="3485-990a-fc4e-787d" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c654-4b78-c2e7-4664" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5b0-5ba6-e80c-ff06">
@@ -550,6 +554,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="9d59-2f7b-3381-2afe" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
@@ -564,6 +571,7 @@
               </modifiers>
               <infoLinks>
                 <infoLink id="868f-b20e-e5b8-247e" name="Grandblade" hidden="false" targetId="7e5a-0c29-cebd-5dd4" type="profile"/>
+                <infoLink id="5268-705e-c38c-bd93" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -579,6 +587,7 @@
               </modifiers>
               <infoLinks>
                 <infoLink id="7f8e-742f-8681-e154" name="Grandhammer" hidden="false" targetId="b57a-ae44-26fb-833a" type="profile"/>
+                <infoLink id="218d-7a4a-2f1d-15ae" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -595,6 +604,7 @@
               <infoLinks>
                 <infoLink id="e112-2c64-cc81-617d" name="Paired Celestial Hammer" hidden="false" targetId="8987-f507-8672-b37f" type="profile"/>
                 <infoLink id="9377-1365-d752-d6dd" name="Thrown Paired Celestial Hammer" hidden="false" targetId="14b7-ff4e-69f4-0dd1" type="profile"/>
+                <infoLink id="14bc-cd6e-3868-f909" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
@@ -611,10 +621,11 @@
               <infoLinks>
                 <infoLink id="7f61-3b90-e7af-f57b" name="Stormcall Javelin" hidden="false" targetId="3115-c277-05ea-575b" type="profile"/>
                 <infoLink id="be60-f5c2-5b73-5028" name="Thrown Stormcall Javelin" hidden="false" targetId="3212-c2b4-756d-932f" type="profile"/>
+                <infoLink id="f5de-dcb5-e2f8-ea6b" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="9864-52bd-2545-8507" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
-              </entryLinks>
+              <categoryLinks>
+                <categoryLink id="7cbc-26df-452f-c63e" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
               </costs>
@@ -645,9 +656,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink id="b683-207c-293c-55ce" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
-              </entryLinks>
+              <infoLinks>
+                <infoLink id="54b3-8201-0bbc-d35f" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="15f5-4d43-35f6-71b7" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="25.0"/>
               </costs>
@@ -678,9 +692,12 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink id="2887-c287-b8ae-6204" name=" Bulwark" hidden="false" collective="false" import="true" targetId="c26f-4300-fb59-c645" type="selectionEntry"/>
-              </entryLinks>
+              <infoLinks>
+                <infoLink id="469a-715f-9fbd-64c1" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="04b1-023a-eed6-fcbf" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
               </costs>
@@ -689,12 +706,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="eaad-216c-36c3-11d7" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="c43d-49e2-3b28-41f9" name=" Fly" hidden="false" collective="false" import="true" targetId="9488-26b8-09dc-98f7" type="selectionEntry"/>
-            <entryLink id="4f0c-d3cb-7cf8-b7f6" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="94ea-6563-ed7f-3608" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -720,17 +731,14 @@
       </profiles>
       <infoLinks>
         <infoLink id="9bfa-5545-4f8d-3b74" name="Thunderaxe" hidden="false" targetId="6874-f979-08dc-8f81" type="profile"/>
+        <infoLink id="4004-95cf-2f8d-5bb9" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a190-6c6f-bdee-a26e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="137b-36da-112a-7341" name="Warrior Chamber" hidden="false" targetId="c992-da07-f2cb-cb5d" primary="false"/>
+        <categoryLink id="8b61-88fa-72be-b48e" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="7403-8e11-97cd-3e35" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="2c38-d562-7db4-7637" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
-            <entryLink id="0c10-ba06-a5de-1fd8" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="b757-e767-b003-0200" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -762,16 +770,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6f00-6d7b-4894-5eb5" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="0720-1df6-8443-4f36" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="58ec-16ef-d3ec-40c9" name="Warrior Chamber" hidden="false" targetId="c992-da07-f2cb-cb5d" primary="false"/>
+        <categoryLink id="28a2-e407-8425-8380" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b8bc-4f80-c6d4-b002" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="4683-2d13-11a6-d420" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
-            <entryLink id="0f5a-9847-24f2-091c" name=" Beast" hidden="false" collective="false" import="true" targetId="2c07-fa6a-0279-0c91" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="b91c-3776-3dba-1df8" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -797,17 +804,14 @@
       </profiles>
       <infoLinks>
         <infoLink id="cdd9-5469-aa95-694d" name="Lightning Hammer" hidden="false" targetId="5870-4ad2-2fae-989a" type="profile"/>
+        <infoLink id="d571-5068-cf06-9b2d" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8d92-5cbe-dcf3-47e2" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="f652-99f5-b166-d2f6" name="Warrior Chamber" hidden="false" targetId="c992-da07-f2cb-cb5d" primary="false"/>
+        <categoryLink id="6a80-1e1a-9712-d7c9" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6fb9-6411-269a-1245" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="2022-c110-97a0-6b82" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
-            <entryLink id="a50c-373d-5f4d-6c42" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="c9d5-7fff-dfe6-6c22" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -833,17 +837,14 @@
       </profiles>
       <infoLinks>
         <infoLink id="92e7-e45c-4376-0d61" name="Stormstrike Glaive" hidden="false" targetId="95a6-3e30-7c64-0cce" type="profile"/>
+        <infoLink id="b487-c229-2761-e6db" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a8f3-d8b8-435c-fed9" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="65ab-772c-ea3a-83d4" name="Warrior Chamber" hidden="false" targetId="c992-da07-f2cb-cb5d" primary="false"/>
+        <categoryLink id="f2a7-76c0-6f4b-cd60" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="89e3-d307-dfc7-541a" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="765c-0918-c610-5cf4" name=" Stormcast Eternal Warrior Chamber" hidden="false" collective="false" import="true" targetId="3fe8-2361-950a-adf8" type="selectionEntry"/>
-            <entryLink id="3fc8-39f7-5614-4348" name=" Brute" hidden="false" collective="false" import="true" targetId="9e53-802d-d855-d3f2" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="17ab-a2b6-9907-02ef" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
