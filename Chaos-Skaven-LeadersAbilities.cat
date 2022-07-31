@@ -3,6 +3,8 @@
   <categoryEntries>
     <categoryEntry id="86b9-e1c0-c33f-87a2" name="Skaven Leaders" hidden="false"/>
     <categoryEntry id="cc4e-b8a8-a60b-25c1" name="Underworlds Spiteclaw" hidden="false"/>
+    <categoryEntry id="88a1-7058-81bb-655e" name="Skaven" hidden="false"/>
+    <categoryEntry id="7bf2-e3a4-13c8-72ba" name="Spiteclaw&apos;s Swarm" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="1681-c737-b70e-6d06" name="Clawleader" hidden="true" collective="false" import="true" targetId="fad4-f3b1-61d1-a447" type="selectionEntry">
@@ -379,692 +381,7 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <rules>
-    <rule id="6a43-8b2b-6fda-5e6f" name="⚁ [Double] Consume Warpstone Token" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a number of dice equal to the value of this ability.  For each roll of 1, allocate 1 damage point to this fighter.  For each roll of 4+, add 1 to the damage points allocated to enemy fighters by each hit or critical hit from the next attack action made by this fighter this activation that has a range characteristic of 3 or more.</description>
-    </rule>
-    <rule id="d6d4-1ea8-d36d-e315" name="⚁ [Double] Hired Bodyguard" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f907-d5f0-c688-5596" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f907-d5f0-c688-5596" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f907-d5f0-c688-5596" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, friendly fighters with the Leader runemark cannot be targeted while they are within 1&quot; of this fighter</description>
-    </rule>
-    <rule id="2c6a-24de-86e3-96a7" name="⚁ [Double] Scurry Away" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if they are within 3&quot; of an enemy fighter. Roll a dice. On a 4+, this fighter makes a bonus disengage action.</description>
-    </rule>
-    <rule id="b431-03ba-4f82-4a9d" name="⚂ [Triple] Poisonous Fumes" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 3+, allocate a number of damage points equal to half the value of this ability (roudning up) to that fighter.</description>
-    </rule>
-    <rule id="3b40-1bfb-723b-ec07" name="⚂ [Triple] Lead From The Back" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by other friendly fighters while they are within 3&quot; of this fighter.</description>
-    </rule>
-    <rule id="ba35-198a-2a23-7845" name="⚃ [Quad] Expend Warpstone Spark Canister" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter makes a bonus attack action.  In addition, add half the value of this ability (rounding up) to the damage points allocated by each hit and critical hit from that action.</description>
-    </rule>
-    <rule id="ad68-a123-6374-e3bf" name="⚁ [Double] Warp Lightning" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a number of visible enemy fighters equal to the value of this ability.  The first fighter picked must be within 6&quot; of this fighter, and each subsequent fighter picked must be within 3&quot; of a fighter that has already been picked.  The same fighter cannot be picked more than once.  Allocate 1 damage point to each fighter picked.</description>
-    </rule>
-    <rule id="f264-e21c-dea8-b438" name="⚁ [Double] Crack the Whip" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action that has a Range characteristic of 3 or less.</description>
-    </rule>
-    <rule id="b7b2-d063-480a-f819" name="⚂ [Triple] Running Death" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter makes a bonus move action or bonus disengage action.  In addition, until the end of this fighter&apos;s activation, add 1 to the damage points allocated by the critical hits from attack actions made by this fighter.</description>
-    </rule>
-    <rule id="58f7-8a4d-a455-6533" name="⚂ [Triple] Crushing Charge" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="084b-1aef-69d9-b261" name="⚃ [Quad] Recite from the Book of Woes" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f58d-4233-7f4a-1313" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f58d-4233-7f4a-1313" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f58d-4233-7f4a-1313" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, enemy fighters cannot use abilities while they are within 3&quot; of this fighter.</description>
-    </rule>
-    <rule id="c3e1-db35-1f55-4674" name="⚂ [Triple] There Are Always More" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b84c-178e-69e9-d363" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b84c-178e-69e9-d363" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b84c-178e-69e9-d363" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with both the Spiteclaw&apos;s Swarm and the Minion runemark that has been taken down.  Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter.  The fighter set up on the battlefield no longer counts as being taken down.  Remove a number of damage points allocated to that fighter up to the value of this ability.</description>
-    </rule>
-    <rule id="7df9-b08b-7acb-8593" name="⚁ [Double] Flesh-mend" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                    <condition field="selections" scope="0ca4-e66d-9403-64a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                    <condition field="selections" scope="f2ce-030d-9971-73f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                    <condition field="selections" scope="5ed1-bb68-7a31-b173" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this figther.  Remove a number of damage points allocated to that fighter equal to half the value of this ability (rounding up).</description>
-    </rule>
-    <rule id="d011-684b-65e3-1987" name="⚃ [Quad] Recite from the Book of Woes" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f58d-4233-7f4a-1313" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, enemy fighters cannot use abilities while they are within 3&quot; of this fighter.</description>
-    </rule>
-    <rule id="806e-a1ea-f1f0-4768" name="⚃ [Quad] Expend Warpstone Spark Canister" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter makes a bonus attack action.  In addition, add half the value of this ability (rounding up) to the damage points allocated by each hit and critical hit from that action.</description>
-    </rule>
-    <rule id="7794-5a9c-f91d-1cc6" name="⚂ [Triple] There Are Always More" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b84c-178e-69e9-d363" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a friendly fighter with both the Spiteclaw&apos;s Swarm and the Minion runemark that has been taken down.  Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter.  The fighter set up on the battlefield no longer counts as being taken down.  Remove a number of damage points allocated to that fighter up to the value of this ability.</description>
-    </rule>
-    <rule id="c30a-b4fe-721f-ff0e" name="⚂ [Triple] Running Death" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7507-ed71-37d4-12b6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>This fighter makes a bonus move action or bonus disengage action.  In addition, until the end of this fighter&apos;s activation, add 1 to the damage points allocated by the critical hits from attack actions made by this fighter.</description>
-    </rule>
-    <rule id="e17e-4e31-f6b0-72e3" name="⚂ [Triple] Poisonous Fumes" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d3a-0293-108e-0fdd" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 3+, allocate a number of damage points equal to half the value of this ability (roudning up) to that fighter.</description>
-    </rule>
-    <rule id="238b-c7e3-3688-ab3e" name="⚂ [Triple] Lead From The Back" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by other friendly fighters while they are within 3&quot; of this fighter.</description>
-    </rule>
-    <rule id="4073-74d4-ff08-8a1e" name="⚂ [Triple] Crushing Charge" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9e53-802d-d855-d3f2" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of this fighter&apos;s activation the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
-    </rule>
-    <rule id="fc3e-ac53-e91a-24be" name="⚁ [Double] Warp Lightning" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ac09-2c36-a1a2-920b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a number of visible enemy fighters equal to the value of this ability.  The first fighter picked must be within 6&quot; of this fighter, and each subsequent fighter picked must be within 3&quot; of a fighter that has already been picked.  The same fighter cannot be picked more than once.  Allocate 1 damage point to each fighter picked.</description>
-    </rule>
-    <rule id="f2b5-cd99-c805-6e3b" name="⚁ [Double] Scurry Away" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d40e-db86-36c7-f7c6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>A fighter can use this ability only if they are within 3&quot; of an enemy fighter. Roll a dice. On a 4+, this fighter makes a bonus disengage action.</description>
-    </rule>
-    <rule id="2b43-0928-ec2d-9760" name="⚁ [Double] Hired Bodyguard" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f907-d5f0-c688-5596" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Until the end of the battle round, friendly fighters with the Leader runemark cannot be targeted while they are within 1&quot; of this fighter</description>
-    </rule>
-    <rule id="9a2e-a909-ea98-7ed4" name="⚁ [Double] Flesh-mend" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this figther.  Remove a number of damage points allocated to that fighter equal to half the value of this ability (rounding up).</description>
-    </rule>
-    <rule id="ccfe-58ca-c969-e4ae" name="⚁ [Double] Crack the Whip" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0510-be9d-1e15-64f3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action that has a Range characteristic of 3 or less.</description>
-    </rule>
-    <rule id="afd6-301a-9121-0580" name="⚁ [Double] Consume Warpstone Token" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2769-a38e-4ba1-7d39" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4992-8710-6244-a9b8" type="atLeast"/>
-                    <condition field="selections" scope="45ea-7617-f6a7-7fcb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="71d5-d154-4b90-841e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Roll a number of dice equal to the value of this ability.  For each roll of 1, allocate 1 damage point to this fighter.  For each roll of 4+, add 1 to the damage points allocated to enemy fighters by each hit or critical hit from the next attack action made by this fighter this activation that has a range characteristic of 3 or more.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="2769-a38e-4ba1-7d39" name=" Skaven" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b7-425f-4a86-2596" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0264-0745-6d2b-fcfc" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="2205-e1d1-e52e-275f" name="Skaven" hidden="false" collective="false" import="true" targetId="0d05-27b7-e022-8ddf" type="selectionEntry"/>
-        <entryLink id="75fa-4a92-69e9-4f4e" name="Chaos" hidden="false" collective="false" import="true" targetId="a06f-8f3e-8520-4e17" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="0c36-c2ed-7ea4-bd70" name="Grey Seer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -1092,16 +409,15 @@
       </profiles>
       <infoLinks>
         <infoLink id="bbe0-cb6d-025b-f129" name="Arcane Bolt" hidden="false" targetId="dd17-5f25-3a66-0d5a" type="profile"/>
+        <infoLink id="e256-4cd1-e961-e9d2" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7713-c26e-c89a-c3af" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="4b38-cc7e-7cc4-62db" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="7ee2-050c-9357-9201" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="f1d6-a2bb-6c21-ec03" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="c8df-7f76-58b1-fdfe" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="ffb7-8e88-afb1-28ea" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="f9bf-c9e4-f3bb-7487" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="394d-c46c-e5da-c062" name=" Mystic" hidden="false" collective="false" import="true" targetId="71d5-d154-4b90-841e" type="selectionEntry"/>
-            <entryLink id="b30d-544e-0326-2ab7" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="7908-e380-b8ce-8b93" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1133,14 +449,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="8c09-7fd0-4b1b-e655" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6c3a-bfbf-a470-c0e8" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="dd1e-8c7b-ae01-2cf3" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="b769-a3be-dcf1-02dd" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="088a-892b-853c-5d52" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="049c-8a1f-8661-c3e2" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="0e94-a34a-2c76-a459" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="afce-4978-8d7d-f116" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="c873-1d97-432b-9aac" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1172,15 +489,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="03d3-fc95-7dfe-2663" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ccff-df69-e7c4-77bb" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="a009-84be-7f1a-0534" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="f193-efa7-ef79-2e16" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="d095-c326-a138-7a48" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="b69b-3d2f-a213-46d2" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="060f-09ee-3153-babc" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
-            <entryLink id="6936-84cb-04c9-ff64" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="59ae-7def-3d24-ef89" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="4931-1fb0-bb21-ae21" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="883e-5896-f24f-9ac7" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1218,15 +536,14 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
+        <infoLink id="f088-709f-14cc-5086" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4b0f-cae2-1135-87ae" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="9f2f-3a9c-ac79-f7bf" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="3e7d-9316-813c-dc62" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="32e8-9a3f-db55-b66f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="6fcc-cbbc-ab6a-f5d1" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="d444-a420-4318-a23f" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="eb3a-38a6-d0ae-e0b8" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="441b-f05a-25bc-7afc" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1266,15 +583,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="c422-a320-70f5-ec28" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3270-59a0-b2fe-1868" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="63f0-200e-d511-5bfd" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="ae9e-9067-abbe-6823" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="4717-e524-2773-cdee" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="5642-7bdb-e9dd-061e" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="ef2c-2fea-8596-8587" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
-            <entryLink id="2cc7-3940-a12f-352a" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="cfb3-c640-ed41-a3b2" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="56ca-c8b1-9077-73c3" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="6671-6493-3823-a598" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1314,15 +632,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="68c3-41f3-dbc1-85c7" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f8b8-2c81-2db1-f407" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="a03b-ecbd-6a16-797f" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="e566-f0ca-1b6d-eaa5" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="4aca-799c-c765-6d39" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="8d90-9efd-d8d3-dee4" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="c0cd-7620-d6ba-2dce" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="99db-f08b-3305-5cd9" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="d0f9-0d76-a795-3a5c" name=" Destroyer" hidden="false" collective="false" import="true" targetId="ac09-2c36-a1a2-920b" type="selectionEntry"/>
-            <entryLink id="3328-85d9-ed25-7a1b" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="93c2-1a74-7d0c-0561" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1362,15 +681,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="fa77-6885-f5ca-0f85" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cc4e-af27-c7dc-bf00" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="733d-421f-d5c9-4439" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="de92-62f4-c7d4-f7eb" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="3d56-b8e0-eca3-ddba" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="a647-16d8-3d27-77cc" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="2a8c-3fd9-75ec-dbcf" name=" Frenzied" hidden="false" collective="false" import="true" targetId="0510-be9d-1e15-64f3" type="selectionEntry"/>
-            <entryLink id="2d07-ea5d-fd21-dcda" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="5444-f572-d201-edce" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="4ebf-e562-1829-c8a4" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="901c-22a9-2548-394f" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1410,15 +730,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="c9cc-aea2-fec3-cfa5" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f99d-5d5b-d5c3-5053" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="6d86-334b-b2eb-3982" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="8624-e51b-a96d-0211" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="29ef-7a08-5165-8700" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="054e-44d4-63dd-da6b" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="5ac4-d68d-ab74-7b08" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="eec6-b593-6c76-7285" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="9e8d-782c-2b4d-52c5" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
-            <entryLink id="fe76-a58c-d5d1-d4c1" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="fea1-e52a-cc83-08b5" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1450,15 +771,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="b0e7-bff1-84d3-90cd" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e7e0-537b-2fce-45ce" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="1c93-b5af-19b1-e1e8" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="b1fb-12f2-26a0-5bcd" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="7560-a267-7e8a-65ba" name=" Priest" hidden="false" targetId="cfc3-b159-c796-fdce" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="eaf1-61fb-dffc-b91d" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="34a3-4a11-7a20-d96e" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="715b-de19-e238-a387" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="0384-1700-b7c8-5dfc" name=" Priest" hidden="false" collective="false" import="true" targetId="f58d-4233-7f4a-1313" type="selectionEntry"/>
-            <entryLink id="9ef0-7b4d-74e6-192c" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="5062-6de9-dc88-a913" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1497,14 +819,13 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
+        <infoLink id="42d8-f7b1-56b5-16f1" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4c85-7788-3a30-b7ee" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="7f7b-1468-d9a1-4ecc" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="6b50-77e3-0371-f2a7" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="c9cd-4ac2-b24c-5c5f" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="0d6d-d716-03fa-629b" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="72d7-5451-a95e-f766" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1555,16 +876,15 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
+        <infoLink id="6d16-e688-5505-d89e" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9619-dd80-a9c1-aa2e" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="c5f5-b2e6-d5d0-78c7" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="5b48-dc29-5960-5ac2" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="5566-6e36-f410-6197" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="656c-2f17-69bd-465d" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="bf16-e30e-5ad7-6659" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="cdd6-6017-b0fb-fc11" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="8499-2675-ad8a-58e8" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="6072-a486-9dce-f2bc" name=" Scout" hidden="false" collective="false" import="true" targetId="7507-ed71-37d4-12b6" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="1e73-a09e-ba58-235f" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1601,29 +921,19 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
+        <infoLink id="0c9d-87af-2fc2-9738" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8cab-f4ec-69b7-71e6" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="45b3-5561-2fc8-9a0d" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="de75-0fe7-a1d1-f584" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="9cb1-2cda-ee9c-96df" name=" Priest" hidden="false" targetId="cfc3-b159-c796-fdce" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="ab79-ddd1-3e56-891f" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="b78a-61e6-c378-73bf" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="b488-497e-7fd2-32e8" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="42bd-c30a-5538-43e3" name=" Priest" hidden="false" collective="false" import="true" targetId="f58d-4233-7f4a-1313" type="selectionEntry"/>
-            <entryLink id="3c88-d772-381f-1bf1" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="9928-224c-1509-27d7" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b84c-178e-69e9-d363" name="Spiteclaw&apos;s Swarm" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c93-fd1c-96bc-f8ed" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8fc-1bd0-b6c1-416a" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f86b-4ce0-7b47-4f2a" name="Skritch Spiteclaw" hidden="false" collective="false" import="true" type="model">
@@ -1651,15 +961,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6451-5e9f-63a3-a065" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a1e9-362f-e4c2-ff66" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="896b-87a6-a3e2-a6b2" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="dae2-cad1-fc0e-cd18" name="Spiteclaw&apos;s Swarm" hidden="false" targetId="7bf2-e3a4-13c8-72ba" primary="false"/>
+        <categoryLink id="178d-4af0-377e-6f82" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="7011-046f-2cac-f529" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="629f-84cb-9ec9-e051" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="b132-f633-c5c6-cc74" name="Spiteclaw&apos;s Swarm" hidden="false" collective="false" import="true" targetId="b84c-178e-69e9-d363" type="selectionEntry"/>
-            <entryLink id="ea21-1458-64ab-5f0d" name=" Leader" hidden="false" collective="false" import="true" targetId="4992-8710-6244-a9b8" type="selectionEntry"/>
-            <entryLink id="ee01-e323-8b25-d67b" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="dfe9-1f2f-7a3c-3744" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1691,18 +1002,17 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="b892-7fe8-6fc2-2072" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="06a2-e5c0-9f5a-ac3a" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="ab53-c059-e477-fc68" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="06aa-30c5-2e7a-826f" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="7a1f-06b4-5888-b4ab" name="Spiteclaw&apos;s Swarm" hidden="false" targetId="7bf2-e3a4-13c8-72ba" primary="false"/>
+        <categoryLink id="ddfa-960a-0e17-0159" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d434-4c2d-1d7e-a7fc" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="929f-9b5f-1143-296a" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="52ef-e55e-6029-867d" name="Spiteclaw&apos;s Swarm" hidden="false" collective="false" import="true" targetId="b84c-178e-69e9-d363" type="selectionEntry"/>
-            <entryLink id="3fe7-64e6-52f4-d291" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="f4f0-babe-ad7a-56e4" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1734,19 +1044,18 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="62c8-0545-2484-1848" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="69e1-2e81-4012-d1f7" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="7bf9-c052-c8fc-efc2" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="7e62-14f6-6221-eaa0" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="79a2-430e-e381-6ada" name="Spiteclaw&apos;s Swarm" hidden="false" targetId="7bf2-e3a4-13c8-72ba" primary="false"/>
+        <categoryLink id="c5eb-6385-b0b9-933b" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="6dfc-5b2b-c704-2882" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2fce-88c9-11e4-d662" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="f43c-4d8a-8368-afeb" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="314a-1674-e23b-207b" name="Spiteclaw&apos;s Swarm" hidden="false" collective="false" import="true" targetId="b84c-178e-69e9-d363" type="selectionEntry"/>
-            <entryLink id="c5d1-b597-b15b-7b62" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="370f-edf1-d30f-ef0b" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="638f-c270-9e3a-ac57" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1778,19 +1087,18 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="565c-8d01-6baf-2283" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="58aa-e198-e092-b674" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="4bac-eeb3-3119-ad86" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="26d0-6ec9-c5c1-e579" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="2538-6d2a-6631-a165" name="Spiteclaw&apos;s Swarm" hidden="false" targetId="7bf2-e3a4-13c8-72ba" primary="false"/>
+        <categoryLink id="dd40-4d6d-f744-d2f2" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="9a24-2df5-98c4-ddd0" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3748-9e6b-fbfc-d5f9" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="2e4b-da97-17be-9f34" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="28a4-c87e-260b-bb60" name="Spiteclaw&apos;s Swarm" hidden="false" collective="false" import="true" targetId="b84c-178e-69e9-d363" type="selectionEntry"/>
-            <entryLink id="e30c-ad70-41d7-1670" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
-            <entryLink id="dd92-0e35-5d1d-a745" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="5a26-e45c-d378-17ac" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1822,19 +1130,18 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="cad3-6aaa-d701-bafc" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="1abf-f9aa-1b23-a6cc" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="f033-c083-f11b-6c54" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="1f66-5b93-d756-75da" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
+        <categoryLink id="3634-7c4b-8d25-8c4e" name="Spiteclaw&apos;s Swarm" hidden="false" targetId="7bf2-e3a4-13c8-72ba" primary="false"/>
+        <categoryLink id="cb6d-4262-cbf4-69fe" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
+        <categoryLink id="dde0-3982-0460-4776" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="07be-dd70-e442-c8da" name="Runemarks" hidden="false" collective="false" import="true" targetId="cfa0-ed89-dc32-1e75" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="7ca0-94e2-8edc-33e5" name=" Skaven" hidden="false" collective="false" import="true" targetId="2769-a38e-4ba1-7d39" type="selectionEntry"/>
-            <entryLink id="c2cf-39c9-d190-2be0" name="Spiteclaw&apos;s Swarm" hidden="false" collective="false" import="true" targetId="b84c-178e-69e9-d363" type="selectionEntry"/>
-            <entryLink id="22e2-713f-0b42-37fe" name=" Agile" hidden="false" collective="false" import="true" targetId="d40e-db86-36c7-f7c6" type="selectionEntry"/>
-            <entryLink id="8ac9-d7f0-2887-ab0b" name=" Minion" hidden="false" collective="false" import="true" targetId="b7b9-055c-eaaf-fec5" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="b9a8-cdf8-53bb-4ca8" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1892,4 +1199,215 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup id="54e7-81df-cd9d-5745" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="16d0-2576-43d9-ccdf" name="Skaven Abilities" hidden="false" targetId="b9f0-501e-d453-eda1" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="b9f0-501e-d453-eda1" name="Skaven Abilities" hidden="false">
+      <rules>
+        <rule id="854d-4433-be72-210b" name="⚁ [Double] Consume Warpstone Token" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7622-abbe-a6f9-0bc6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a number of dice equal to the value of this ability.  For each roll of 1, allocate 1 damage point to this fighter.  For each roll of 4+, add 1 to the damage points allocated to enemy fighters by each hit or critical hit from the next attack action made by this fighter this activation that has a range characteristic of 3 or more.</description>
+        </rule>
+        <rule id="95ad-b85b-cc5c-8c8a" name="⚁ [Double] Crack the Whip" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="12a9-d7b7-2309-fde6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action that has a Range characteristic of 3 or less.</description>
+        </rule>
+        <rule id="251b-0c3d-8205-0336" name="⚁ [Double] Flesh-mend" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="12a9-d7b7-2309-fde6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this figther.  Remove a number of damage points allocated to that fighter equal to half the value of this ability (rounding up).</description>
+        </rule>
+        <rule id="92e4-03f6-b180-7274" name="⚁ [Double] Hired Bodyguard" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fcb1-dbed-6277-4fda" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, friendly fighters with the Leader runemark cannot be targeted while they are within 1&quot; of this fighter</description>
+        </rule>
+        <rule id="18cf-83cb-7b03-d491" name="⚁ [Double] Scurry Away" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if they are within 3&quot; of an enemy fighter. Roll a dice. On a 4+, this fighter makes a bonus disengage action.</description>
+        </rule>
+        <rule id="5a31-5137-de2e-4586" name="⚁ [Double] Warp Lightning" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4a55-52e5-0611-9983" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a number of visible enemy fighters equal to the value of this ability.  The first fighter picked must be within 6&quot; of this fighter, and each subsequent fighter picked must be within 3&quot; of a fighter that has already been picked.  The same fighter cannot be picked more than once.  Allocate 1 damage point to each fighter picked.</description>
+        </rule>
+        <rule id="fb53-2555-7a70-1405" name="⚂ [Triple] Crushing Charge" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1482-0037-1879-7409" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="736a-cd28-cfe0-9aeb" name="⚂ [Triple] Lead From The Back" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by other friendly fighters while they are within 3&quot; of this fighter.</description>
+        </rule>
+        <rule id="d4ba-a42a-8ddb-a8bc" name="⚂ [Triple] Poisonous Fumes" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c3f5-3905-6ef9-4bee" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 3+, allocate a number of damage points equal to half the value of this ability (roudning up) to that fighter.</description>
+        </rule>
+        <rule id="086d-5671-f688-fd83" name="⚂ [Triple] Running Death" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dce8-a536-db85-d856" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>This fighter makes a bonus move action or bonus disengage action.  In addition, until the end of this fighter&apos;s activation, add 1 to the damage points allocated by the critical hits from attack actions made by this fighter.</description>
+        </rule>
+        <rule id="20f7-0723-e990-d2a1" name="⚂ [Triple] There Are Always More" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7bf2-e3a4-13c8-72ba" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a friendly fighter with both the Spiteclaw&apos;s Swarm and the Minion runemark that has been taken down.  Set up that fighter once more on the battlefield wholly within 3&quot; of this fighter.  The fighter set up on the battlefield no longer counts as being taken down.  Remove a number of damage points allocated to that fighter up to the value of this ability.</description>
+        </rule>
+        <rule id="7c80-c6c9-9dfe-070d" name="⚃ [Quad] Expend Warpstone Spark Canister" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4a55-52e5-0611-9983" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>This fighter makes a bonus attack action.  In addition, add half the value of this ability (rounding up) to the damage points allocated by each hit and critical hit from that action.</description>
+        </rule>
+        <rule id="aaff-98af-8ea0-f430" name="⚃ [Quad] Recite from the Book of Woes" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88a1-7058-81bb-655e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfc3-b159-c796-fdce" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, enemy fighters cannot use abilities while they are within 3&quot; of this fighter.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>

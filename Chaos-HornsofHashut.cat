@@ -32,6 +32,7 @@
     <entryLink id="e7c6-a727-4404-f746" name="Ruinator Alpha" hidden="false" collective="false" import="true" targetId="5cec-ac2e-d820-0f99" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="aa98-0843-847a-61fc" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="3f9d-2f7f-1ffa-81da" name="Hashut Leaders" hidden="false" targetId="8104-5a90-b4c7-8087" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="943e-298c-351a-2bb7" name="Demolisher" hidden="false" collective="false" import="true" targetId="647e-f496-1f87-407a" type="selectionEntry"/>
@@ -41,12 +42,7 @@
   <sharedSelectionEntries>
     <selectionEntry id="5cec-ac2e-d820-0f99" name="Ruinator Alpha" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" field="name" value="with Twin-pronged Spear">
+        <modifier type="append" field="name" value="with War Bident">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="243a-828e-8531-9b95" type="equalTo"/>
           </conditions>
@@ -80,9 +76,16 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be15-39ee-30e7-662c" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="243a-828e-8531-9b95" name="Twin-pronged Spear" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="243a-828e-8531-9b95" name="War Bident" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
-                <profile id="6ce5-22ee-b45a-c050" name="Twin-pronged Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                <profile id="6ce5-22ee-b45a-c050" name="War Bident" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
@@ -103,13 +106,20 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="fabf-bdbe-b6b1-fa7a" name="Heavy Flail" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="b8c1-4f70-c947-5ecf" name="Heavy Flail" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786"/>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d"/>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1"/>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b"/>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -147,7 +157,15 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7745-86dc-f21d-6a72" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="9c2f-c8c7-cd06-543f" name="Special Abilities" hidden="false" targetId="3645-8455-fc53-7263" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="886b-882c-fcb2-5272" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="16d4-3f63-428f-9359" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
@@ -174,14 +192,14 @@
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
                     <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="6b10-30da-b539-5b4f" name="Demolisher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a"/>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e"/>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633"/>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -192,7 +210,7 @@
                 <categoryLink id="e05d-74fc-9cd9-e182" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7745-86dc-f21d-6a72" name="with Crushing Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -209,14 +227,14 @@
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
                     <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="ae12-7b2b-1f88-4edf" name="Demolisher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
                   <characteristics>
-                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
-                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -224,7 +242,7 @@
                 <infoLink id="7768-b822-b61a-efa5" name="Special Abilities" hidden="false" targetId="3645-8455-fc53-7263" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5838-6ce2-1459-a5a4" name="with Flamehurler" hidden="false" collective="false" import="true" type="upgrade">
@@ -281,85 +299,44 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b9b3-efcd-6370-6964" name="Ruinator" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="37d3-7319-f622-23dd" name="Ruinator" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="92ec-b85a-efe6-f154" name="War Bident" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="001e-36bd-46f9-d402" name="Special Abilities" hidden="false" targetId="3645-8455-fc53-7263" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c5c6-c191-00cc-43a5" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="8183-d74b-3d72-ae04" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
         <categoryLink id="9f83-fa12-3fb4-6dbc" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
+        <categoryLink id="7313-dc17-fb3d-0d1d" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="99e3-348c-00e0-fbc3" name="Profile" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a8-140c-7664-1f01" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e82-fd66-4dc6-46e7" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="9679-883c-5159-5f13" name="with Familiar" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="b27e-b2b0-5803-1a81" name="Corvus Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="0d59-e9f7-f949-8faf" name="Special Abilities" hidden="false" targetId="3645-8455-fc53-7263" type="infoGroup"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9ef2-ac0d-b5b4-4e54" name="with Dagger" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="2ceb-a7e4-6ce8-3c32" name="Corvus Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="f039-3fb4-fd39-17a3" name="Special Abilities" hidden="false" targetId="3645-8455-fc53-7263" type="infoGroup"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="66e5-4db6-7b05-edc1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e7fa-26e9-38d2-5aa8" name="Shatterer" hidden="false" collective="false" import="true" type="model">
@@ -371,19 +348,19 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="9cb2-ccfc-3c84-d61d" name="Shrike Talon" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="9cb2-ccfc-3c84-d61d" name="Shatterer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
           </characteristics>
         </profile>
-        <profile id="5807-d87f-9a82-e317" name="Corvus Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="5807-d87f-9a82-e317" name="Farming Tool" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -398,7 +375,7 @@
         <entryLink id="7436-879e-5f1d-3daf" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="55.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
