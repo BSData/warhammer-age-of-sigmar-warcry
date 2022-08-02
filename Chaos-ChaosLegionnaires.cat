@@ -82,16 +82,6 @@
   <sharedInfoGroups>
     <infoGroup id="051a-7b39-607a-597f" name="Chaos Legionnaires Abilities" hidden="false">
       <rules>
-        <rule id="5702-db51-7398-b6d1" name="⚀ [Reaction] Bile Blood" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.  After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.  For each 3+, allocate 3 damage points to the fighter that made that attack action.</description>
-        </rule>
         <rule id="7ce6-c9d8-07d5-05e9" name="⚁ [Double] Blowpipe" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -136,6 +126,18 @@
             </modifier>
           </modifiers>
           <description>This fighter makes a bonus attack action.  In addition, if that attack action scores any critical hits, the target fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
+        </rule>
+        <rule id="29d8-3f22-e12b-38de" name="[Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
         </rule>
       </rules>
     </infoGroup>

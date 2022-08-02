@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="79ed-0d82-87ac-387a" name="Order - Idoneth Deepkin - Leaders &amp; Abilities" revision="16" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="79ed-0d82-87ac-387a" name="Order - Idoneth Deepkin - Leaders &amp; Abilities" revision="16" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="51db-e7f3-ab7a-7dfe" name="Idoneth Leaders" hidden="false"/>
     <categoryEntry id="a6dd-f743-daa9-0c36" name="Underworlds Elathain" hidden="false"/>
@@ -79,30 +79,6 @@
         <categoryLink id="d50d-488e-7d34-b8d3" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="32bd-05df-c908-25f4" name="Namarti Reaver Icon Bearer" hidden="true" collective="false" import="true" targetId="ec9b-b75f-ba68-e7a5" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="51db-e7f3-ab7a-7dfe" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="f5c4-9d2e-5462-7053" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="3911-dd78-1cd5-e97c" name="Namarti Thrall Icon Bearer" hidden="true" collective="false" import="true" targetId="3259-3274-b2a5-d0f1" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="51db-e7f3-ab7a-7dfe" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="743d-4303-59d3-aeb4" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="811b-8488-05ed-3822" name="Elathain Ill-Fated" hidden="true" collective="false" import="true" targetId="e5d9-6f7e-c86e-4594" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -125,30 +101,6 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="8384-a83c-7b83-633f" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="09df-f3e9-f89f-637f" name="Namarti Thrall Icon Bearer" hidden="false" collective="false" import="true" targetId="3259-3274-b2a5-d0f1" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51db-e7f3-ab7a-7dfe" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="3659-5d6d-f549-ee22" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="d23b-d240-d712-b6ea" name="Namarti Reaver Icon Bearer" hidden="false" collective="false" import="true" targetId="ec9b-b75f-ba68-e7a5" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51db-e7f3-ab7a-7dfe" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="a761-57cc-12db-830e" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5c75-0853-8f7b-b725" name="Isharann Tidecaster" hidden="false" collective="false" import="true" targetId="b8a8-3780-b4bd-24e1" type="selectionEntry">
@@ -312,9 +264,14 @@
   <sharedSelectionEntries>
     <selectionEntry id="6493-9ae9-a888-7d1d" name="Akhelian King" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+        <modifier type="append" field="name" value="with Greatsword">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+            <condition field="selections" scope="6493-9ae9-a888-7d1d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eea7-d16d-10af-e310" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Bladed Polearm">
+          <conditions>
+            <condition field="selections" scope="6493-9ae9-a888-7d1d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="25af-54bf-41e3-354e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -323,15 +280,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">38</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="bc5a-4450-923e-bc24" name="Bladed Polearm" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -344,11 +293,65 @@
         <categoryLink id="2902-2315-759a-07da" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="94f8-5b3c-1ee3-bd65" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f4c4-eac0-641b-1d5d" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="25af-54bf-41e3-354e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9479-6dd4-fdf1-7a71" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d2d-dd51-7b42-fb0f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="eea7-d16d-10af-e310" name="Greatsword" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="32ee-04da-1755-5a8f" name="Greatsword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="305.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="25af-54bf-41e3-354e" name="Bladed Polearm" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e76e-523e-01a9-272b" name="Bladed Polearm" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="305.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="616b-d9f2-d077-6002" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="280.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0fbb-be88-083b-f3b8" name="Isharann Soulrender" hidden="false" collective="false" import="true" type="model">
@@ -396,7 +399,7 @@
         <entryLink id="90ea-c9b3-4535-ec5f" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6de6-ce8b-a858-0aad" name="Akhelian Ishlaen Guard Lochian Prince" hidden="false" collective="false" import="true" type="model">
@@ -412,12 +415,13 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="320f-2a81-6f21-e644" name="Helsabre" hidden="false" targetId="f8f9-eb06-781c-696b" type="profile">
+        <infoLink id="defe-5b72-25e4-8ac7" name="Special Abilities" hidden="false" targetId="8f3f-947b-92b4-fee6" type="infoGroup"/>
+        <infoLink id="98b7-6dda-b12a-d6af" name="Voltspear" hidden="false" targetId="17f1-499e-473b-ee65" type="profile">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -430,7 +434,6 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="defe-5b72-25e4-8ac7" name="Special Abilities" hidden="false" targetId="8f3f-947b-92b4-fee6" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="721b-ad4d-3559-9773" name="Idoneth Deepkin" hidden="false" targetId="6483-0f9f-abb4-d185" primary="false"/>
@@ -442,7 +445,7 @@
         <entryLink id="1ff6-524d-1a1c-e74e" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="265.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e524-f3b9-1ae4-2519" name="Isharann Soulscryer" hidden="false" collective="false" import="true" type="model">
@@ -458,7 +461,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
           </characteristics>
         </profile>
         <profile id="aeb1-0316-7dc6-820f" name="Finger Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -482,7 +485,7 @@
         <entryLink id="158b-6d3c-e0a6-009d" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b8a8-3780-b4bd-24e1" name="Isharann Tidecaster" hidden="false" collective="false" import="true" type="model">
@@ -498,7 +501,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
           </characteristics>
         </profile>
         <profile id="f767-a808-8526-8a32" name="Pelagic Staff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -523,7 +526,7 @@
         <entryLink id="036a-b83d-4412-5631" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d76a-aa82-edb6-c43a" name="Akhelian Morrsarr Lochian Prince" hidden="false" collective="false" import="true" type="model">
@@ -544,7 +547,8 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="b0b3-f944-3b9c-7e62" name="Voltspear" hidden="false" targetId="17f1-499e-473b-ee65" type="profile">
+        <infoLink id="43ce-2cdd-368c-9c86" name="Special Abilities" hidden="false" targetId="8f3f-947b-92b4-fee6" type="infoGroup"/>
+        <infoLink id="c66f-4bb3-6f17-a1a4" name="Helsabre" hidden="false" targetId="f8f9-eb06-781c-696b" type="profile">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -557,7 +561,6 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="43ce-2cdd-368c-9c86" name="Special Abilities" hidden="false" targetId="8f3f-947b-92b4-fee6" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dc7d-15d0-a0ab-d5c1" name="Idoneth Deepkin" hidden="false" targetId="6483-0f9f-abb4-d185" primary="false"/>
@@ -570,108 +573,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3259-3274-b2a5-d0f1" name="Namarti Thrall Icon Bearer" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="4722-09b5-d7fb-02b2" name="Namarti Thrall Icon Bearer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="88e4-1a1b-af34-3163" name="Lanmari Blade" hidden="false" targetId="c617-1c8f-069d-fdce" type="profile">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3259-3274-b2a5-d0f1" type="atLeast"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="4591-7140-62c7-f2f1" value="4"/>
-                <modifier type="set" field="446b-a910-1596-123b" value="2/5"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
-        <infoLink id="2341-3ae6-c1db-0614" name="Special Abilities" hidden="false" targetId="8f3f-947b-92b4-fee6" type="infoGroup"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="c9ca-8d98-e34e-7d29" name="Idoneth Deepkin" hidden="false" targetId="6483-0f9f-abb4-d185" primary="false"/>
-        <categoryLink id="6d8c-e6d1-1f1b-052c" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
-        <categoryLink id="bc96-2a43-67a1-797d" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="5948-1269-2418-1470" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ec9b-b75f-ba68-e7a5" name="Namarti Reaver Icon Bearer" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="d487-b2ae-aad6-8029" name="Namarti Reaver Icon Bearer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="4350-4522-9a82-1ba1" name="Whisperbow" hidden="false" targetId="d59e-42f9-ead8-981c" type="profile">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3259-3274-b2a5-d0f1" type="atLeast"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="446b-a910-1596-123b" value="1/4"/>
-                <modifier type="set" field="60cf-9920-ff5d-032d" value="3"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
-        <infoLink id="7457-4efe-06f6-80ee" name="Keening Blade" hidden="false" targetId="d521-a052-e8e5-a0d6" type="profile">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3259-3274-b2a5-d0f1" type="atLeast"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="4591-7140-62c7-f2f1" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
-        <infoLink id="392d-0b4c-6817-1367" name="Special Abilities" hidden="false" targetId="8f3f-947b-92b4-fee6" type="infoGroup"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="0aca-f113-f8f6-26cd" name="Idoneth Deepkin" hidden="false" targetId="6483-0f9f-abb4-d185" primary="false"/>
-        <categoryLink id="f9f8-87b3-ed81-7311" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
-        <categoryLink id="15de-1480-b890-4dea" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="0755-2ef0-8ac0-3f36" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e5d9-6f7e-c86e-4594" name="Elathain Ill-Fated" hidden="false" collective="false" import="true" type="model">
@@ -942,7 +843,7 @@
         <entryLink id="6ae1-60d8-685a-3704" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="160.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1010,7 +911,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a dice.  On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
+          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a dice. On a roll of 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
         </rule>
         <rule id="fe5f-4451-4fb4-0f7d" name="⚁ [Double] Low Tide" hidden="true">
           <modifiers>
@@ -1020,7 +921,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if it is the first battle round. This fighter can make a bonus move action of a number of inches equal to the value of this ability.</description>
+          <description>A fighter can use this ability only if it is the first battle round. This fighter can make a bonus move action up to a number of inches equal to the value of this ability.</description>
         </rule>
         <rule id="819c-2df4-2dc2-a5f4" name="⚁ [Double] Riptide" hidden="true">
           <modifiers>
@@ -1067,7 +968,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter’s activation, add 1 to the Attacks characteristic of attack actions made by this fighter that target an enemy fighter more than 3&quot; away.</description>
+          <description>Until the end of this fighter’s activation, add 1 to the Attacks characteristic of missile attack actions made by this fighter.</description>
         </rule>
         <rule id="53a5-c784-d75d-7249" name="⚁ [Double] Storm of Blows" hidden="true">
           <modifiers>
@@ -1083,7 +984,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+          <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next melee attack action made by this fighter in this activation.</description>
         </rule>
         <rule id="46f3-8922-0e5b-da7e" name="⚁ [Double] Sweeping Blow" hidden="true">
           <modifiers>
@@ -1098,7 +999,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Roll 1 dice for each visible enemy fighter within 2&quot; of this fighter. On a 5, allocate 1 damage point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+          <description>Roll a dice for each visible enemy fighter within 2&quot; of this fighter. On a roll of 5, allocate 1 damage point to the fighter being rolled for. On a roll of 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
         </rule>
         <rule id="b947-cfa6-4ae4-74c6" name="⚂ [Triple] Biovoltaic Barrier" hidden="true">
           <modifiers>
@@ -1113,7 +1014,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, count each critical hit scored from attack actions that target this fighter as a hit instead.</description>
+          <description>Until the end of the battle round, count each critical hit from attack actions that target this fighter as a hit instead.</description>
         </rule>
         <rule id="40f6-96ac-1dfb-dfbf" name="⚂ [Triple] High Tide" hidden="true">
           <modifiers>
@@ -1128,7 +1029,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if it is the third battle round. Add 1 to the Attacks and Strength characteristics of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+          <description>A fighter can only use this ability if it is the third battle round. Add 1 to the Attacks and Strength characteristics of melee attack actions made by friendly fighters while they are within 6&quot; of this fighter.</description>
         </rule>
         <rule id="4f53-b84f-bb01-f90d" name="⚂ [Triple] Riptide Harpoon" hidden="true">
           <modifiers>
@@ -1160,7 +1061,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 10&quot; of this fighter and roll 6 dice.  For each 3-5, allocate 1 damage point to that fighter.  For each 6, allocate 2 damage points to that fighter.</description>
+          <description>Pick a visible enemy fighter within 10&quot; of this fighter and roll 6 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate 2 damage points to that fighter.</description>
         </rule>
         <rule id="1cc0-4cab-81bf-d2f9" name="⚂ [Triple] Way of the Depths" hidden="true">
           <modifiers>
@@ -1176,7 +1077,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Strength characteristic of attack actions that have a Range characterisic of 3 or less made by this fighter and by visible friendly fighters that have the Idoneth Deepkin runemark and either the Agile or Minion runemarks while they are within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 1 to the Strength characteristic of melee attack actions made by this fighter and by visible friendly fighters with the Idoneth Deepkin faction runemark and either the Agile or Minion runemarks while they are within 6&quot; of this fighter.</description>
         </rule>
         <rule id="6f76-a8aa-c2cf-0bfc" name="⚃ [Quad] Biovoltaic Blast" hidden="true">
           <modifiers>
@@ -1193,17 +1094,15 @@
           </modifiers>
           <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
         </rule>
-        <rule id="9902-d546-1b48-9067" name="⚀ [Reaction] " hidden="true">
+        <rule id="c3af-798c-e419-903c" name="[Reaction] Fade from Memory" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6483-0f9f-abb4-d185" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction when an enemy fighter finishes a move action within 3&quot; of them. If there is another friendly fighter visible to that enemy fighter and within range of at least one of that enemy fighter’s melee weapons, for the rest of the battle round that enemy fighter cannot target this fighter.</description>
         </rule>
       </rules>
     </infoGroup>

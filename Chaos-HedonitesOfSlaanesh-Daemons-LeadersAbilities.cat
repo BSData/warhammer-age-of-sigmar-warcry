@@ -602,6 +602,18 @@
           </modifiers>
           <description>Until the ned of this fighter&apos;s activation, add half the value of this ability (rounding up) to the damage points allocated by critical hits from attack actions made by this fighter. In addition, after each attack action made by this fighter, roll a dice. On a 5_, until the end of this battle round, the target fighter cannot make move actions or disengage actions.</description>
         </rule>
+        <rule id="1611-d719-544a-9db8" name="[Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+        </rule>
       </rules>
     </infoGroup>
     <infoGroup id="d8e4-adab-9e0d-94e8" name="Special Abilities" hidden="false">

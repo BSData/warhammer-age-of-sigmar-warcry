@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="70cb-ea60-447b-ee54" name="Order - Khainite Shadowstalkers" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="70cb-ea60-447b-ee54" name="Order - Khainite Shadowstalkers" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="c80e-ceb8-8b74-30fa" name="Slaughtershade" hidden="false" collective="false" import="true" targetId="1315-a61c-98e2-b31c" type="selectionEntry"/>
     <entryLink id="fdf5-583e-0b88-8e15" name="Shroudblade" hidden="false" collective="false" import="true" targetId="b82e-f669-2f60-812c" type="selectionEntry"/>
@@ -33,7 +33,7 @@
       <profiles>
         <profile id="fef6-3645-c126-0706" name="Slaughtershade" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
           </characteristics>
@@ -45,8 +45,8 @@
       <categoryLinks>
         <categoryLink id="b178-3530-111e-9157" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="977c-46af-2393-2e76" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
-        <categoryLink id="0137-333f-6021-eede" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
-        <categoryLink id="4830-cefe-daf2-6de0" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+        <categoryLink id="3218-9b3a-7363-7a57" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="ed0e-b7f1-b7a2-fe6d" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0571-a2ee-0ed6-e556" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="c1f4-2ce9-3a93-60b0">
@@ -68,14 +68,14 @@
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4b24-6872-a1aa-7b43" name="with Shadow Whip" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="f546-34c3-e792-6adc" name="Shadow Whip" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">4</characteristic>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
                     <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
@@ -83,7 +83,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -92,9 +92,6 @@
       <entryLinks>
         <entryLink id="0815-35c6-1444-057c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="def7-0fbc-0938-9e11" name="Darkflame Warlock" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -108,18 +105,13 @@
             <condition field="selections" scope="def7-0fbc-0938-9e11" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e207-cea4-574f-8841" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <profiles>
         <profile id="b21d-ed2e-7f0d-c0ba" name="Darkflame Warlock" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -139,6 +131,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="74b6-1cb1-7a35-fd06" name="Doomfire Ring" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="1f20-dc35-4cbd-6b54" name="Assassin&apos;s Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -158,10 +157,17 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e207-cea4-574f-8841" name="Repeater Crossbows" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile id="fe63-202a-69a9-e87a" name="Repeater Crossbows" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -173,7 +179,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -207,7 +213,7 @@
       <profiles>
         <profile id="2a4a-62b9-d8f2-3e95" name="Shroudblade" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
           </characteristics>
@@ -240,7 +246,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5087-dfe6-f295-b79c" name="with Umbral Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -248,7 +254,7 @@
                 <infoLink id="17e1-dd7e-ed3d-9029" name="Umbral Spear" hidden="false" targetId="721f-c1f2-aa50-2215" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>

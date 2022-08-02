@@ -1383,6 +1383,18 @@
           </modifiers>
           <description>Add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from the next attack action made by this fighter this activation that targets an enemy fighter that has not activated this battle round.</description>
         </rule>
+        <rule id="09a4-b937-3f57-9317" name="[Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+        </rule>
       </rules>
     </infoGroup>
   </sharedInfoGroups>

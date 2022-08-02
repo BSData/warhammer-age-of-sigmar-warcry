@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fa9-8ff9-b985-4c2d" name="Order - Stormcast Eternal - Sacrosanct Chamber - Leaders &amp; Abilities" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fa9-8ff9-b985-4c2d" name="Order - Stormcast Eternal - Sacrosanct Chamber - Leaders &amp; Abilities" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2d7f-5475-4938-0a32" name="Sacrosanct Leaders" hidden="false"/>
     <categoryEntry id="bad7-8f5a-fdd5-8309" name="Underworlds Stormsire" hidden="false"/>
@@ -317,7 +317,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">32</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -335,7 +335,7 @@
         <entryLink id="c6c7-0122-e6c2-dff6" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="048a-3ad8-4807-912c" name="Lord-Arcanum on Celestial Dracoline" hidden="false" collective="false" import="true" type="model">
@@ -356,7 +356,7 @@
         </profile>
         <profile id="9130-dd7b-2031-8269" name="Monstrous Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
@@ -398,7 +398,15 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="ea3d-e1d1-832e-4ee8" name="Aetherstave" hidden="false" targetId="e9bb-4b74-46a4-9ef8" type="profile"/>
+        <infoLink id="ea3d-e1d1-832e-4ee8" name="Aetherstave" hidden="false" targetId="e9bb-4b74-46a4-9ef8" type="profile">
+          <modifiers>
+            <modifier type="set" field="4591-7140-62c7-f2f1" value="4">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="97e5-a014-192d-917f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="f657-d336-7156-2cc1" name="Thunderclap" hidden="false" targetId="1dbf-3554-b10e-eb45" type="profile"/>
         <infoLink id="c95f-0c05-08bf-c809" name="Special Abilities" hidden="false" targetId="c4a0-ec79-3aa8-41a2" type="infoGroup"/>
       </infoLinks>
@@ -412,7 +420,7 @@
         <entryLink id="ae97-295c-eb0d-d290" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="290.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="305.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8de5-341a-96df-c699" name="Lord-Exorcist" hidden="false" collective="false" import="true" type="model">
@@ -428,7 +436,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">32</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
         <profile id="b51f-26b0-71db-97e1" name="Redemption Stave" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -453,7 +461,7 @@
         <entryLink id="7957-9d86-00c1-f9cb" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4f7b-3ec6-da2d-437b" name="Lord-Ordinator" hidden="false" collective="false" import="true" type="model">
@@ -474,7 +482,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">32</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -512,7 +520,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7198-b3a0-616c-3818" name="with Paired Astral Hammers" hidden="false" collective="false" import="true" type="upgrade">
@@ -534,7 +542,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -560,7 +568,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">28</characteristic>
           </characteristics>
         </profile>
         <profile id="cc59-6334-1432-509f" name="Incantor’s Staff " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -585,7 +593,7 @@
         <entryLink id="a352-72d7-8569-7bb6" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c90-7780-57c8-8e1a" name="Evocator-Prime" hidden="false" collective="false" import="true" type="model">
@@ -621,7 +629,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -645,19 +653,24 @@
                 <infoLink id="b3b0-16ef-2074-4b1f" name="Tempest Blade" hidden="false" targetId="93b1-c5c1-3306-e11b" type="profile">
                   <modifierGroups>
                     <modifierGroup>
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c90-7780-57c8-8e1a" type="atLeast"/>
-                      </conditions>
                       <modifiers>
-                        <modifier type="set" field="60cf-9920-ff5d-032d" value="5"/>
-                        <modifier type="set" field="4591-7140-62c7-f2f1" value="5"/>
+                        <modifier type="set" field="60cf-9920-ff5d-032d" value="5">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a2c-66bc-f590-3b73" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="4591-7140-62c7-f2f1" value="5">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a2c-66bc-f590-3b73" type="atLeast"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d475-20b2-5258-c7c9" name="with Grandstave" hidden="false" collective="false" import="true" type="upgrade">
@@ -666,14 +679,14 @@
                   <modifiers>
                     <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
                       <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c90-7780-57c8-8e1a" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d475-20b2-5258-c7c9" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -682,9 +695,6 @@
       <entryLinks>
         <entryLink id="c0b3-9dd1-4c1e-3d98" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="d89d-07d8-ff38-66d9" name="Castigator-Prime" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -699,7 +709,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -708,7 +718,7 @@
           <modifiers>
             <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d89d-07d8-ff38-66d9" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d89d-07d8-ff38-66d9" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -751,7 +761,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -780,7 +790,7 @@
                   <modifiers>
                     <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
                       <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a515-8259-191e-b4bc" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5866-a343-3875-7971" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -788,7 +798,7 @@
                 <infoLink id="86cb-03bd-4f44-e238" name="Special Abilities" hidden="false" targetId="c4a0-ec79-3aa8-41a2" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5f1f-4ec4-6bda-0e2e" name="with Stormsmite Maul and Soulshield" hidden="false" collective="false" import="true" type="upgrade">
@@ -804,7 +814,7 @@
                   <modifiers>
                     <modifier type="set" field="60cf-9920-ff5d-032d" value="3">
                       <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a515-8259-191e-b4bc" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5f1f-4ec4-6bda-0e2e" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -812,7 +822,7 @@
                 <infoLink id="c6d9-43af-6a61-15f3" name="Special Abilities" hidden="false" targetId="c4a0-ec79-3aa8-41a2" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4802-c63b-b365-cbba" name="with Redemption Cache" hidden="false" collective="false" import="true" type="upgrade">
@@ -828,7 +838,7 @@
                   <modifiers>
                     <modifier type="set" field="60cf-9920-ff5d-032d" value="3">
                       <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a515-8259-191e-b4bc" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4802-c63b-b365-cbba" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -839,7 +849,7 @@
                 <categoryLink id="73ad-7edf-c381-413e" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -848,9 +858,6 @@
       <entryLinks>
         <entryLink id="8590-0537-a23a-6f9d" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="0727-faf6-add0-df7e" name="Evocator-Prime on Celestial Dracoline" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -902,14 +909,14 @@
                 <profile id="6d9a-aacc-0389-4356" name="Tempest Blade and Stormstave" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
                     <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="330.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ea4e-1d56-69ed-e7bf" name="with Grandstave" hidden="false" collective="false" import="true" type="upgrade">
@@ -924,19 +931,24 @@
                 <infoLink id="3fd0-4fbc-ac19-938e" name="Grandstave" hidden="false" targetId="46ee-5961-1ca9-961c" type="profile">
                   <modifierGroups>
                     <modifierGroup>
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0727-faf6-add0-df7e" type="atLeast"/>
-                      </conditions>
                       <modifiers>
-                        <modifier type="set" field="446b-a910-1596-123b" value="3/6"/>
-                        <modifier type="set" field="60cf-9920-ff5d-032d" value="3"/>
+                        <modifier type="set" field="446b-a910-1596-123b" value="2/6">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea4e-1d56-69ed-e7bf" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea4e-1d56-69ed-e7bf" type="atLeast"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="315.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -945,9 +957,6 @@
       <entryLinks>
         <entryLink id="50af-ed29-174a-6f73" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="280.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="9d42-f277-09e4-de75" name="Averon Stormsire" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1118,7 +1127,7 @@
     </profile>
     <profile id="ac2f-1fee-c6c8-7f39" name="Thunderhead Greatbow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6-15</characteristic>
         <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
         <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
         <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
@@ -1157,7 +1166,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, add the value of this ability to the Strength characteristic of the next attack action made by this fighter that has a Ranger characteristic of 3 or less.</description>
+          <description>Add the value of this ability to the Strength characteristic of the next melee attack action made by this fighter in this activation. Fighters with the Beast  runemark cannot use this ability.</description>
         </rule>
         <rule id="3158-41ce-b30a-3dc1" name="⚁ [Double] Cleanse the Realm of Taint" hidden="true">
           <modifiers>
@@ -1172,7 +1181,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
         </rule>
         <rule id="9111-3d19-7aa7-1f81" name="⚁ [Double] Meteoric Slam" hidden="true">
           <modifiers>
@@ -1188,7 +1197,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, add 1 to the Attacks and Strength characteristics of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+          <description>Until the end of this fighter’s activation, add 1 to the Attacks and Strength characteristics of melee attack actions made by this fighter.</description>
         </rule>
         <rule id="382f-1fab-9782-6254" name="⚁ [Double] Summon Celestial Lightning" hidden="true">
           <modifiers>
@@ -1203,7 +1212,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damage point to the enemy fighter.</description>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each roll of 4+, allocate 1 damage point to that enemy fighter.</description>
         </rule>
         <rule id="d177-5399-ab60-3f78" name="⚂ [Triple] Burst of Celestial Lightning" hidden="true">
           <modifiers>
@@ -1218,7 +1227,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from the next attack action made by this fighter this activation that targets an enemy fighter more than 3&quot; away.</description>
+          <description>Add half the value of this ability (rounding up) to the damage points allocated to enemy fighters by each hit and critical hit from the next missile attack action made by this fighter this activation.</description>
         </rule>
         <rule id="c1c9-393f-ae80-0605" name="⚂ [Triple] Darting Attack" hidden="true">
           <modifiers>
@@ -1233,7 +1242,8 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>This fighter makes a bonus attack action.  Then, they can make a bonus disengage action.</description>
+          <description>This fighter makes a bonus attack action. Then, they can make a bonus disengage action.
+</description>
         </rule>
         <rule id="c363-b4a8-b8f7-5958" name="⚂ [Triple] Shatter Spirit Flask" hidden="true">
           <modifiers>
@@ -1249,7 +1259,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
+          <description>Allocate a number of damage points equal to the value of this ability to this fighter and to all visible fighters within 3&quot; of this fighter.</description>
         </rule>
         <rule id="9345-dc8f-7e2b-18d6" name="⚂ [Triple] Soul-shield Channelling" hidden="true">
           <modifiers>
@@ -1264,7 +1274,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add the value of this ability ot the Toughness  characteristic of this fighter.</description>
+          <description>Until the end of the battle round, count each critical hit from attack actions that target this fighter as a hit instead.</description>
         </rule>
         <rule id="3daf-3e09-c685-610c" name="⚂ [Triple] Storm of Eldritch Lightning" hidden="true">
           <modifiers>
@@ -1310,19 +1320,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to double the value of this ability.</description>
         </rule>
-        <rule id="7f13-2614-0e7f-7fbc" name="⚀ [Reaction] " hidden="true">
+        <rule id="8c08-4b8a-3d3b-d38d" name="[Reaction] Thunderous Departure" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e29-0338-9b31-dd03" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action, after the damage is totalled but before it is allocated to this fighter, if it is enough for this fighter to be taken down. Allocate D6 damage points to their attacker. Fighters with the Beast  runemark or both the Scout  and Fly  runemarks cannot make this reaction.</description>
         </rule>
       </rules>
     </infoGroup>

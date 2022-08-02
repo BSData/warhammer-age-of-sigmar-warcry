@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="48b0-c69d-9fa7-f0ea" name="Order - Lumineth Realm-lords - Leaders &amp; Abilities" revision="17" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="48b0-c69d-9fa7-f0ea" name="Order - Lumineth Realm-lords - Leaders &amp; Abilities" revision="17" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="390c-221f-52e6-938f" name="Lumineth Leaders" hidden="false"/>
     <categoryEntry id="586f-89fb-18eb-df7d" name="Underworlds Myari" hidden="false"/>
@@ -89,18 +89,6 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="c507-a69a-542b-c990" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="ba98-01cb-d7cd-e00d" name="Alarith Stoneguard with Stone Mallet" hidden="true" collective="false" import="true" targetId="f88c-a2da-1cf9-0ffa" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="390c-221f-52e6-938f" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="e59b-56f7-8cd1-89e1" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3987-bd2c-f33f-049d" name="Bladelord Seneschal" hidden="true" collective="false" import="true" targetId="fd3c-c998-d920-c29a" type="selectionEntry">
@@ -332,18 +320,6 @@
         <categoryLink id="0cfc-2e08-6aaa-0d84" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="388c-5ba9-75a5-b228" name="Alarith Stoneguard with Stone Mallet" hidden="false" collective="false" import="true" targetId="f88c-a2da-1cf9-0ffa" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="390c-221f-52e6-938f" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="45da-b9f6-561d-9622" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="360d-232a-0c8c-f82b" name="Senaela" hidden="true" collective="false" import="true" targetId="1d1d-62d9-dd2c-9857" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -389,6 +365,36 @@
         <categoryLink id="4822-6d16-c41e-0395" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="eed9-c2b1-758c-9631" name="Scinari Enlightener" hidden="true" collective="false" import="true" targetId="8887-375b-b680-e9f7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="390c-221f-52e6-938f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1cbb-8f6d-4ec1-03b4" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e3b6-9fb8-a73e-6e6a" name="Scinari Enlightener" hidden="false" collective="false" import="true" targetId="8887-375b-b680-e9f7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="390c-221f-52e6-938f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9e3d-c257-2d1e-2996" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e6e8-be2b-b2ae-cb1c" name="Scinari Enlightener" hidden="false" collective="false" import="true" targetId="8887-375b-b680-e9f7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6c40-f405-3ef1-686b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="a1fe-1169-3b5e-5404" name="Lumineth Leaders" hidden="false" targetId="390c-221f-52e6-938f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4de6-a713-f8d2-1ad9" name="Scinari Cathallar" hidden="false" collective="false" import="true" type="model">
@@ -404,13 +410,13 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
           </characteristics>
         </profile>
         <profile id="7e9f-a49b-e4e6-45df" name="Despairing Touch" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
           </characteristics>
@@ -428,7 +434,7 @@
         <entryLink id="348a-932b-2ef9-5114" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="317f-e737-ab75-f432" name="Alarith Stonemage" hidden="false" collective="false" import="true" type="model">
@@ -470,7 +476,7 @@
         <entryLink id="243e-bdaf-5cc5-ffb7" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="155.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="02bc-0363-d8ea-b202" name="Steedmaster" hidden="false" collective="false" import="true" type="model">
@@ -486,7 +492,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">26</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -494,6 +500,11 @@
         <infoLink id="e36f-8835-4bc5-fa74" name="Sunmetal Lance" hidden="false" targetId="a316-5346-650f-51d1" type="profile">
           <modifiers>
             <modifier type="set" field="4591-7140-62c7-f2f1" value="4">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="02bc-0363-d8ea-b202" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="02bc-0363-d8ea-b202" type="atLeast"/>
               </conditions>
@@ -512,7 +523,7 @@
         <entryLink id="adc4-71c3-9bc8-9b8f" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3c80-42ab-dafc-334d" name="High Sentinel" hidden="false" collective="false" import="true" type="model">
@@ -528,7 +539,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -546,7 +557,7 @@
         <entryLink id="72e2-6b77-a426-c5b2" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4b7f-fee9-a868-cdfb" name="High Warden" hidden="false" collective="false" import="true" type="model">
@@ -562,7 +573,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -580,7 +591,7 @@
         <entryLink id="3393-c0e2-89b1-666d" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="23ba-dbf2-a1a6-a843" name="Truestone Seneschal" hidden="false" collective="false" import="true" type="model">
@@ -596,7 +607,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
           </characteristics>
         </profile>
         <profile id="f557-d532-fbc6-5b0b" name="Pair of Stratum Hammers" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -620,7 +631,7 @@
         <entryLink id="e575-58ef-a4c3-7b5b" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f9ab-45f9-897f-767b" name="Vanari Lord Regent" hidden="false" collective="false" import="true" type="model">
@@ -636,7 +647,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">228</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -655,10 +666,10 @@
         <entryLink id="2128-9754-26f7-93bc" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f88c-a2da-1cf9-0ffa" name="Alarith Stoneguard with Stone Mallet" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f88c-a2da-1cf9-0ffa" name="Alarith Stoneguard with Stone Mallet" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -711,7 +722,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
           </characteristics>
         </profile>
         <profile id="bf70-cdd6-69cc-b261" name="Loreseeker Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -736,7 +747,7 @@
         <entryLink id="0505-82ab-a690-92a7" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="772f-0a7f-ac6b-64bc" name="Windspeaker Seneschal" hidden="false" collective="false" import="true" type="model">
@@ -752,12 +763,12 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">12</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">26</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
           </characteristics>
         </profile>
         <profile id="0b70-6236-0457-ad34" name="Windcharger Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">10</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
@@ -777,7 +788,7 @@
         <entryLink id="05e7-b912-4813-1e12" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1eba-e603-7fc7-2869" name="Scinari Calligrave" hidden="false" collective="false" import="true" type="model">
@@ -793,7 +804,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
           </characteristics>
         </profile>
         <profile id="4ba7-a29d-193e-516a" name="Calligrave Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -818,14 +829,19 @@
         <entryLink id="ef27-9d22-ad2b-1038" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd3c-c998-d920-c29a" name="Bladelord Seneschal" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+        <modifier type="append" field="name" value="with Sunmetal Dual Blades">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+            <condition field="selections" scope="fd3c-c998-d920-c29a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f49-66eb-98f0-7bd6" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Sunmetal Greatblade">
+          <conditions>
+            <condition field="selections" scope="fd3c-c998-d920-c29a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c7da-6a68-6313-c6b6" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -834,12 +850,11 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="94fb-524c-dc18-f3d7" name="Sunmetal Greatblade" hidden="false" targetId="6a51-7c7f-3b37-a7f8" type="profile"/>
         <infoLink id="31c8-1f4f-38f9-58c6" name="Special Abilities" hidden="false" targetId="4258-d3da-ea2c-ec38" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -848,11 +863,58 @@
         <categoryLink id="1a19-3448-3e0f-fdd7" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
         <categoryLink id="c640-c224-6523-3db0" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="30a4-622c-c085-c269" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b067-d768-03c3-400b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8723-6b6d-f2c3-6d98" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1f49-66eb-98f0-7bd6" name="with Sunmetal Dual Blades" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="fbc6-677e-8d5e-67a3" name="Sunmetal Dual Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c7da-6a68-6313-c6b6" name="with Sunmetal Greatblade" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="a156-18b3-46ea-96e3" name="Sunmetal Greatblade" hidden="false" targetId="6a51-7c7f-3b37-a7f8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="0c3a-c754-a220-0c6c" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ac4b-45d4-f487-6b5e" name="Hurakan Windmage" hidden="false" collective="false" import="true" type="model">
@@ -894,7 +956,7 @@
         <entryLink id="3ead-c208-1cae-d02d" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9cbe-16fd-39b0-d60a" name="Myari Lightcaller" hidden="false" collective="false" import="true" type="model">
@@ -1093,6 +1155,53 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8887-375b-b680-e9f7" name="Scinari Enlightener" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c2bf-ddf2-e700-6d37" name="Scinari Enlightener" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="577c-5a5c-c590-04b3" name="Ranged Spell" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-12</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="92af-dd5d-a2a5-a10a" name="Calligrave Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4aeb-0891-b75d-c2b1" name="Special Abilities" hidden="false" targetId="4258-d3da-ea2c-ec38" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b910-5a83-8a74-1670" name="Lumineth Realmlords" hidden="false" targetId="4824-862c-e7c8-0509" primary="false"/>
+        <categoryLink id="836f-be65-4b95-07dc" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b31e-0202-204d-86f0" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="a316-5346-650f-51d1" name="Sunmetal Lance" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -1136,7 +1245,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+          <description>Add half the value of this ability (rounding up) to this fighter’s Move characteristic for their next move action in this activation.</description>
         </rule>
         <rule id="da92-cec7-f056-b552" name="⚁ [Double] Lone Agent" hidden="true">
           <modifiers>
@@ -1152,7 +1261,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if there are no other friendly fighters within 6&quot; of this fighter.  this fighter makes a bonus move action.</description>
+          <description>A fighter can only use this ability if there are no other friendly fighters within 6&quot; of this fighter. This fighter makes a bonus move action.</description>
         </rule>
         <rule id="1419-6930-e675-48c2" name="⚁ [Double] Moonfire Flask" hidden="true">
           <modifiers>
@@ -1168,7 +1277,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each 4-5, allocate 1 damage point to that fighter. For each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points equal to the value of this ability to that fighter.</description>
         </rule>
         <rule id="685d-06ce-e315-91f7" name="⚁ [Double] Mountain Stance" hidden="true">
           <modifiers>
@@ -1183,7 +1292,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, subtract 1 from the damage points allocated by each hit and critical hit from attack actions that target this fighter.</description>
+          <description>Until the end of the battle round, subtract 1 from the damage points allocated by each hit and critical hit (to a minimum of 1) from attack actions that target this fighter.</description>
         </rule>
         <rule id="c663-466e-1c6d-b269" name="⚁ [Double] Sharp-eyed Scryhawk" hidden="true">
           <modifiers>
@@ -1199,7 +1308,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round, add 1 to the attacks characteristic of attack actions that target that fighter.</description>
+          <description>Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that target that fighter.</description>
         </rule>
         <rule id="23c2-1f66-da29-7b77" name="⚁ [Double] Shining Company" hidden="true">
           <modifiers>
@@ -1214,7 +1323,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if there are 2 or more other friendly fighters with both the Lumineth Realm-lords faction runemark and the Warrior runemark within 1&quot; of this fighter. Until the end of the battle round, subtract 1 from the Attacks characteristic of attack actions that target friendly fighters within 1&quot; of this fighter.</description>
+          <description>A fighter can only use this ability if there are 2 or more other friendly fighters with both the Lumineth Realm-lords faction runemark and the Warrior runemark within 1&quot; of this fighter. Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they target a fighter within 1&quot; of this fighter.</description>
         </rule>
         <rule id="2a48-a5df-46ea-08cd" name="⚂ [Triple] Dazzling Light" hidden="true">
           <modifiers>
@@ -1246,7 +1355,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick 1 visible friendly fighter within 12&quot; of this fighter that has 1 or more damage points allocated to them. Then, pick 1 visible enemy fighter within 12&quot; of this fighter. Roll a number of dice equal to the number of damage points allocated to that friendly fighter. For each 4+, allocate 1 damage point to that enemy fighter.</description>
+          <description>Pick a visible friendly fighter with the Lumineth Realm-lords faction runemark that has 1 or more damage points allocated to them and that is within 12&quot; of this fighter. Then, pick a visible enemy fighter within 12&quot; of this fighter. Roll a number of dice equal to the number of damage points allocated to that friendly fighter. For each 4+, allocate 1 damage point to that enemy fighter.</description>
         </rule>
         <rule id="867a-2ed0-7004-4910" name="⚂ [Triple] Lances of the Dawn" hidden="true">
           <modifiers>
@@ -1261,7 +1370,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick 1 visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that enemy fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points equal to the value of this ability to that fighter.</description>
         </rule>
         <rule id="01f6-1f35-2862-eb45" name="⚂ [Triple] Move Like the Wind" hidden="true">
           <modifiers>
@@ -1276,7 +1385,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, this fighter can finish disengage actions within 1&quot; of enemy fighters.</description>
+          <description>Until the end of this fighter’s activation, this fighter can finish disengage actions within 1&quot; of enemy fighters.</description>
         </rule>
         <rule id="1e01-4188-1c87-da2c" name="⚂ [Triple] Realmscribe" hidden="true">
           <modifiers>
@@ -1292,7 +1401,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a point on the battlefield within 9&quot; of this fighter and place a special token there.  Until the end of the battle round, subtract 1 from the damage points allocated by each critical hit from attack actions that target friendly fighters while they are within 6&quot; of the centre of that token.</description>
+          <description>Pick a point on the battlefield within 9&quot; of this fighter and place a special token there. Until the end of the battle round, subtract 1 from the damage points allocated by each critical hit from attack actions that target friendly fighters while they are within 6&quot; of the centre of that token.</description>
         </rule>
         <rule id="4b81-a3ff-e9d6-fc8c" name="⚃ [Quad] Gravitic Redirection" hidden="true">
           <modifiers>
@@ -1308,7 +1417,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Allocate D3 damage points to all visible enemy fighters within 6&quot; of this fighter (roll for each fighter). In addition, until the end of the battle round, halve the Move characteristic of all fighters that are within 6&quot; of this fighter when this fighter uses this ability.</description>
+          <description>Allocate D3 damage points to all visible enemy fighters within 6&quot; of this fighter (roll for each). In addition, until the end of the battle round, halve the Move characteristic (rounding up) of all fighters while they make a move action that starts within 6&quot; of this fighter.</description>
         </rule>
         <rule id="7f74-4e12-03e5-95be" name="⚃ [Quad] Perfect Strike" hidden="true">
           <modifiers>
@@ -1323,19 +1432,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>This fighter makes a bonus action.  in addition, add the value of this ability to the damage points allocated by each critical hit from that attack action.</description>
+          <description>This fighter makes a bonus attack action. In addition, add the value of this ability to the damage points allocated to enemy fighters by each critical hit from that attack action.</description>
         </rule>
-        <rule id="1063-79da-f15d-eb6e" name="⚀ [Reaction] " hidden="true">
+        <rule id="07d2-4e3b-8566-7761" name="[Reaction] Blinding Brilliance" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4824-862c-e7c8-0509" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a missile attack action but before the hit rolls are made. After the hit rolls have been made, roll a dice for each critical hit. On a roll of 4+, that critical hit becomes a hit instead.</description>
         </rule>
       </rules>
     </infoGroup>

@@ -1407,6 +1407,18 @@
           </modifiers>
           <description>Until the end of the battle round, enemy fighters cannot use abilities while they are within 3&quot; of this fighter.</description>
         </rule>
+        <rule id="abff-bcfe-6d3c-7001" name="[Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+        </rule>
       </rules>
     </infoGroup>
   </sharedInfoGroups>

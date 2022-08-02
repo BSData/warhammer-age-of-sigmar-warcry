@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0312-6eb9-dc4a-0fb7" name="Order - Sylvaneth - Leaders &amp; Abilities" revision="16" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0312-6eb9-dc4a-0fb7" name="Order - Sylvaneth - Leaders &amp; Abilities" revision="16" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="45c1-72e4-01a6-333c" name="Sylvaneth Leaders" hidden="false"/>
     <categoryEntry id="83de-8306-6f8a-d280" name="Underworlds Ylthari" hidden="false"/>
@@ -69,7 +69,7 @@
         <categoryLink id="dfd3-7592-cf89-0973" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0c2b-860d-5e63-9fdf" name="Scion" hidden="true" collective="false" import="true" targetId="eb7d-1e49-34da-a534" type="selectionEntry">
+    <entryLink id="0c2b-860d-5e63-9fdf" name="Tree-Revenant Scion" hidden="true" collective="false" import="true" targetId="eb7d-1e49-34da-a534" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -155,7 +155,7 @@
         <categoryLink id="0408-5b8e-1f4f-57a8" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="afb5-9e1b-4d70-a00c" name="Scion" hidden="false" collective="false" import="true" targetId="eb7d-1e49-34da-a534" type="selectionEntry">
+    <entryLink id="afb5-9e1b-4d70-a00c" name="Tree-Revenant Scion" hidden="false" collective="false" import="true" targetId="eb7d-1e49-34da-a534" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -332,21 +332,104 @@
         <categoryLink id="42dd-36e5-5cd9-f7ba" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="eba0-fc7d-f9c2-ced3" name="Spiterider Scion" hidden="false" collective="false" import="true" targetId="f20b-7531-eaac-59bd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e3d5-7d3c-5e6e-f371" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="78b4-6e8f-6d97-fb8e" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="825b-4a35-fb55-55b7" name="Flitwing Scion" hidden="false" collective="false" import="true" targetId="e0ac-f220-e012-03f4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="17e5-896c-414a-7f0e" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="a876-41fd-f891-4f2f" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bae2-c978-0c85-6679" name="Revenant Soulwarden" hidden="false" collective="false" import="true" targetId="d949-9bb2-50b5-bc6d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b474-d4dd-9388-b535" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="38f7-ea36-7d4f-dc81" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d289-2e33-0dec-8914" name="Revenant Soulwarden" hidden="false" collective="false" import="true" targetId="d949-9bb2-50b5-bc6d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45c1-72e4-01a6-333c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="92ab-bdd7-41c5-add0" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+        <categoryLink id="88e5-db40-24ab-9320" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da09-ca78-ba5e-ac5d" name="Revenant Soulwarden" hidden="false" collective="false" import="true" targetId="d949-9bb2-50b5-bc6d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45c1-72e4-01a6-333c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a579-5b3f-d0c2-642e" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+        <categoryLink id="1f2f-6951-e5a2-697c" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f989-949b-5483-d6a0" name="Spiterider Scion" hidden="false" collective="false" import="true" targetId="f20b-7531-eaac-59bd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45c1-72e4-01a6-333c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fcc5-6753-bc88-f6aa" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+        <categoryLink id="fd9b-ce96-3157-8e21" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b329-5e8b-3ba7-d9dc" name="Spiterider Scion" hidden="false" collective="false" import="true" targetId="f20b-7531-eaac-59bd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45c1-72e4-01a6-333c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="edb4-f435-54b9-dcdd" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+        <categoryLink id="b3fb-fce5-e006-75f4" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cfda-58ca-3ce5-ed88" name="Flitwing Scion" hidden="false" collective="false" import="true" targetId="e0ac-f220-e012-03f4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45c1-72e4-01a6-333c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3b5b-e64c-0bae-b173" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+        <categoryLink id="7eab-b3ab-44c1-f53f" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fce8-c66d-1d63-8f21" name="Flitwing Scion" hidden="false" collective="false" import="true" targetId="e0ac-f220-e012-03f4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45c1-72e4-01a6-333c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e346-e996-9280-1dff" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
+        <categoryLink id="c9e9-2577-74a6-6d17" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="239e-0d1d-fb6a-d7fc" name=" Sylvaneth" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="407c-5d91-f0eb-7648" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e58a-a9f3-02be-d0f1" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="cd27-3ae8-c0fb-e287" name="Sylvaneth" hidden="false" collective="false" import="true" targetId="e6a1-81b3-1972-7992" type="selectionEntry"/>
-        <entryLink id="2973-5890-1f94-1906" name="Order" hidden="false" collective="false" import="true" targetId="9ee6-8264-15bf-7315" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="5ce8-22eb-9827-a4ab" name="Arch-Revenant" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -385,7 +468,7 @@
         <entryLink id="e31a-222c-ca4f-9899" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c8c4-96e7-fea1-3c28" name="Kurnoth Huntmaster" hidden="false" collective="false" import="true" type="model">
@@ -411,7 +494,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">32</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -451,7 +534,7 @@
                 <infoLink id="48cb-aa72-c232-e367" name="Vicious Claws" hidden="false" targetId="0b4a-660a-aec5-1bf2" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a21a-6c1a-6bf6-8f39" name="with Kurnoth Greatsword" hidden="false" collective="false" import="true" type="upgrade">
@@ -474,7 +557,7 @@
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="215.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fb6e-0603-aa86-3997" name="with Kurnoth Scythe" hidden="false" collective="false" import="true" type="upgrade">
@@ -497,7 +580,7 @@
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -506,9 +589,6 @@
       <entryLinks>
         <entryLink id="6121-0d7f-9253-4441" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="2122-4eb8-c2b8-31de" name="Branchwraith" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -523,7 +603,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
           </characteristics>
         </profile>
         <profile id="b0f5-3810-5d69-26e4" name="Piercing Talons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -548,7 +628,7 @@
         <entryLink id="220d-d5fb-e949-bfaa" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2b11-052e-8a4e-d9e3" name="Branchwych" hidden="false" collective="false" import="true" type="model">
@@ -564,7 +644,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
           </characteristics>
         </profile>
         <profile id="b5db-1b1c-b879-9536" name="Greenwood Scythe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -589,40 +669,37 @@
         <entryLink id="db93-3f18-3065-7c76" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eb7d-1e49-34da-a534" name="Scion" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="eb7d-1e49-34da-a534" name="Tree-Revenant Scion" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="with Enchanted Blade">
+          <conditions>
+            <condition field="selections" scope="eb7d-1e49-34da-a534" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa2a-4abc-9ed2-3ece" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Protector Glaive">
+          <conditions>
+            <condition field="selections" scope="eb7d-1e49-34da-a534" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1bc-43c4-eb8e-3993" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
-        <profile id="d81d-a47d-2e34-14ae" name="Scion" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="d81d-a47d-2e34-14ae" name="Tree-Revenant Scion" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="fa7d-ab99-9094-86d0" name="Enchanted Blade" hidden="false" targetId="3c45-c805-6d22-d480" type="profile">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb7d-1e49-34da-a534" type="atLeast"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="446b-a910-1596-123b" value="2/4"/>
-                <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
         <infoLink id="0b3f-2e66-c126-2df6" name="Special Abilities" hidden="false" targetId="78e8-6332-0913-fa1d" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -630,12 +707,68 @@
         <categoryLink id="122a-0848-0ad7-8ca5" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="6b52-4040-5ca8-a315" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4f6e-c473-03b8-c794" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc2c-cb1b-f9b8-89f2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7905-db21-cb41-9027" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e1bc-43c4-eb8e-3993" name="with Protector Glaive" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1be5-f519-3bbb-ea1f" name="Protector Glaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fa2a-4abc-9ed2-3ece" name="with Enchanted Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="a011-0403-8838-8c5f" name="Enchanted Blade" hidden="false" targetId="3c45-c805-6d22-d480" type="profile">
+                  <modifierGroups>
+                    <modifierGroup>
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb7d-1e49-34da-a534" type="atLeast"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" field="446b-a910-1596-123b" value="2/4"/>
+                        <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fb4f-f0a9-0603-bbac" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="bb74-4de4-b10b-a674" name="Shadestalker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -650,7 +783,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -679,7 +812,7 @@
         <entryLink id="35e2-7a0e-cd6a-af7b" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e53-f1a6-3cf1-c7ac" name="Branch Nymph" hidden="false" collective="false" import="true" type="model">
@@ -695,7 +828,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
           </characteristics>
         </profile>
         <profile id="4327-e70a-9deb-8561" name="Wracking Talons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -719,7 +852,7 @@
         <entryLink id="f4e2-4974-ee24-b3f7" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c418-b2b4-2bd7-9d5a" name="Ylthari" hidden="false" collective="false" import="true" type="model">
@@ -809,24 +942,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0785-a593-e015-8c9c" name="Ylthari&apos;s Guardians" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fddc-9360-31b7-66a6" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="366d-fb63-ce0a-8124" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e09b-18bd-c4f5-02fa" name="Skaeth&apos;s Wild Hunt" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68a6-bf9a-b30e-ac03" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df3-19d7-a1ff-c723" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c7b-d9cd-5d13-2f8f" name="Karthaen" hidden="false" collective="false" import="true" type="model">
@@ -1133,6 +1248,137 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e0ac-f220-e012-03f4" name="Flitwing Scion" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="83f2-7dfa-b92d-9af4" name="Flitwing Scion" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c0ce-a629-1f41-dd7b" name="Gossamid Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10	</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5179-ced2-8e3e-ecca" name="Cruel Talons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="681f-857a-ceb2-9d9e" name="Special Abilities" hidden="false" targetId="78e8-6332-0913-fa1d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4455-b5a6-7eb7-c100" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
+        <categoryLink id="8917-91f8-8770-6845" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="2124-f8ee-bb48-6e86" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="176a-4f30-029e-ba9e" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c2ff-1829-ddb0-8c45" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f20b-7531-eaac-59bd" name="Spiterider Scion" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="6080-b923-a147-6434" name="Spiterider Scion" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">12</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7bf9-8c48-54ba-83aa" name="Spiterider Lance" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ef4d-6c4a-1262-c754" name="Special Abilities" hidden="false" targetId="78e8-6332-0913-fa1d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bfa2-d71e-9d5a-6ab2" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
+        <categoryLink id="954b-901f-3cc8-8433" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="e1f7-5a99-229d-7da9" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="b86b-3f7c-b4c8-51ec" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5d1b-cbd2-cf38-a3f0" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d949-9bb2-50b5-bc6d" name="Revenant Soulwarden" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="037e-bb8a-1035-7ae1" name="Revenant Soulwarden" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c4a5-051f-b750-cfec" name="Seeker&apos;s Sickle" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="93a1-0625-c219-0cda" name="Special Abilities" hidden="false" targetId="78e8-6332-0913-fa1d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="19dd-2da8-3236-e173" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
+        <categoryLink id="ac9e-8e3b-76b0-0260" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="d68f-7675-e236-eccb" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+        <categoryLink id="606a-9f96-07f0-6b6c" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a53a-a377-80c9-8214" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="5135-345a-764e-6867" name="Wracking Talons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -1179,7 +1425,7 @@
       <characteristics>
         <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
         <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
         <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
       </characteristics>
     </profile>
@@ -1187,7 +1433,7 @@
       <characteristics>
         <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
         <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
         <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
       </characteristics>
     </profile>
@@ -1204,7 +1450,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Remove a number of damage points allocated to this fighter equal to half the value of this ability (rounding up).</description>
+          <description>Remove a number of damage points allocated to this fighter up to the value of this ability.</description>
         </rule>
         <rule id="d33a-40a2-c47e-450e" name="⚁ [Double] Shrieking Terror" hidden="true">
           <modifiers>
@@ -1219,7 +1465,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within a number of inches this fighter equal to the value of this abilit and roll a dice. On a 3+, until the end of the battle round that fighter cannot make move actions or disengage actions.</description>
+          <description>Pick a visible enemy fighter within a number of inches of this fighter equal to the value of this ability and roll a dice. On a roll of 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
         </rule>
         <rule id="38fc-6f15-a789-5910" name="⚁ [Double] Swarm of Spites" hidden="true">
           <modifiers>
@@ -1235,22 +1481,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate 1 damage point to that fighter.</description>
-        </rule>
-        <rule id="2b52-1987-cd00-0fd5" name="⚁ [Double] Trample Underfoot" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c8f-bdce-f950-c13e" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e96f-b5d8-31c0-7973" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Pick a visible enemy fighter with 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 4+, allocate 1 damage point to that fighter.</description>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll a number of dice equal to the value of this ability. For each roll of 4+, allocate 1 damage point to that fighter.</description>
         </rule>
         <rule id="d306-224f-318d-0720" name="⚁ [Double] Vigour and Wrath" hidden="true">
           <modifiers>
@@ -1265,7 +1496,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, add 1 to the damage points allocated by each critical hit from attack actions made by this fighter.</description>
+          <description>Until the end of this fighter&apos;s activation, add 1 to the damage pints allocated by each critical hit from attack actions made by this fighter.</description>
         </rule>
         <rule id="13ad-a5d5-9379-55fd" name="⚁ [Double] Zephyrite&apos;s Tail Pincers" hidden="true">
           <modifiers>
@@ -1281,7 +1512,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice.  For each 3-4, allocate 1 damage point to that fighter.  For each 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a roll of 3+, allocate 3 damage points to that fighter.</description>
         </rule>
         <rule id="1fe2-4df2-7042-ec1e" name="⚂ [Triple] Blessing of the Forest" hidden="true">
           <modifiers>
@@ -1297,7 +1528,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Remove 1 damage point allocated to each friendly fighter within 6&quot; of this fighter.</description>
+          <description>Remove up to D3 damage points allocated to each friendly fighter within 6&quot; of this fighter (roll for each).</description>
         </rule>
         <rule id="aead-f695-434c-39a0" name="⚂ [Triple] Call to Battle" hidden="true">
           <modifiers>
@@ -1313,7 +1544,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 3&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
         </rule>
         <rule id="542f-9567-42d8-c071" name="⚂ [Triple] Enrapturing Song" hidden="true">
           <modifiers>
@@ -1328,7 +1559,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within a number of inches of this fighter equal to the value of this ability. Until the end of the battle round, add 1 to Attacks characteristic of attackactions mage by friendly fighters with both the Sylvaneth runemark and the Scout runemark that target that fighter.</description>
+          <description>Pick a visible enemy fighter within a number of inches of this fighter equal to the value of this ability. Until the end of the battle round, add 1 to the Attacks characteristic of attack actions made by friendly fighters with both the Sylvaneth faction runemark and the Scout runemark that target that fighter.</description>
         </rule>
         <rule id="c478-55c0-f5f4-2c84" name="⚂ [Triple] Might of Kurnoth" hidden="true">
           <modifiers>
@@ -1359,7 +1590,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Remove this fighter from the battlefield and set them up anywhere on the battlefield floor more than 5&quot; from any enemy fighter.</description>
+          <description>Remove this fighter from the battlefield and set them up anywhere on the battlefield floor more than 5&quot; from any enemy fighters. </description>
         </rule>
         <rule id="5a7c-14d4-7281-4bd4" name="⚃ [Quad] Envoy of the Everqueen" hidden="true">
           <modifiers>
@@ -1392,17 +1623,45 @@
           </modifiers>
           <description>Roll a dice for each visible enemy fighter within 6&quot; of this fighter.  On a 2+, allocate a number of damage points equal to the value of this ability to the fighter being rolled for.</description>
         </rule>
-        <rule id="27ac-2b7c-ef1f-ac8c" name="⚀ [Reaction] " hidden="true">
+        <rule id="eb0b-3fdc-421f-4f28" name="[Reaction] Vengeful Spites" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e96f-b5d8-31c0-7973" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. For each hit roll from that attack action that hits, allocate 1 damage point to the attacking fighter. For each critical hit, allocate 2 damage points to the attacking fighter instead.</description>
+        </rule>
+        <rule id="eae7-1c38-6d6d-d1dd" name="⚁ [Double] Larval Shafts" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e96f-b5d8-31c0-7973" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad7e-e1dc-6545-1969" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Add half the value of this ability (rounding up) to the Strength characteristic of the next missile attack action made by this fighter in this activation.</description>
+        </rule>
+        <rule id="175a-b664-6b35-3798" name="⚃ [Quad] Thrumming with Life" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5452-a013-9d01-fd29" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e96f-b5d8-31c0-7973" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Remove up to 10 damage points allocated to this fighter.</description>
         </rule>
       </rules>
     </infoGroup>

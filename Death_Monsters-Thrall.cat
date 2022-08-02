@@ -1,55 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd90-6863-ac10-6491" name="Death - Monsters and Thrall" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cd90-6863-ac10-6491" name="Death - Monsters and Thrall" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink id="8e3b-a938-6659-64e8" name="Bat Swarm" hidden="false" collective="false" import="true" targetId="0c61-80be-1634-1136" type="selectionEntry"/>
     <entryLink id="c0e7-fb8d-a281-811c" name="Dire Wolf" hidden="false" collective="false" import="true" targetId="5430-5b09-6da9-b810" type="selectionEntry"/>
     <entryLink id="e487-0255-14c8-b631" name="Fell Bat" hidden="false" collective="false" import="true" targetId="bc6d-71bd-d851-7a8d" type="selectionEntry"/>
     <entryLink id="194e-f714-c20d-7195" name="Terrorgheist" hidden="false" collective="false" import="true" targetId="149f-50e6-22e8-5bc8" type="selectionEntry"/>
     <entryLink id="807e-0291-1a39-4f01" name="Zombie Dragon" hidden="false" collective="false" import="true" targetId="4dde-4733-71c8-84fc" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="0c61-80be-1634-1136" name="Bat Swarm" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="bb1a-f49c-bd34-a881" name="Bat Swarm" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">6</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a408-f8cb-7ed3-147d" name="Razor Sharp Teeth" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="2fb0-f3ed-ca36-4456" name="Special Abilities" hidden="false" targetId="d966-05da-779e-ffe1" type="infoGroup"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="f1aa-4cee-55b0-37aa" name="New CategoryLink" hidden="false" targetId="aadf-5830-72a8-d164" primary="true"/>
-        <categoryLink id="76a2-0cb4-4799-f0eb" name="  Death" hidden="false" targetId="e62d-3867-a149-1ffa" primary="false"/>
-        <categoryLink id="fff4-d069-955c-9be6" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
-        <categoryLink id="ca22-2ec9-c512-0e9c" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
-        <categoryLink id="e96e-db38-f774-5039" name=" Thrall" hidden="false" targetId="5c54-590a-5fc0-e435" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="0dd0-2b56-4b6e-a6f3" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="5430-5b09-6da9-b810" name="Dire Wolf" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -88,7 +45,7 @@
         <entryLink id="3060-a047-8700-1aeb" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc6d-71bd-d851-7a8d" name="Fell Bat" hidden="false" collective="false" import="true" type="model">
@@ -124,13 +81,13 @@
         <categoryLink id="99c0-7bf4-14fa-3579" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="c353-69ee-1885-9b86" name="  Death" hidden="false" targetId="e62d-3867-a149-1ffa" primary="false"/>
         <categoryLink id="743e-7673-89e2-3404" name=" Thrall" hidden="false" targetId="5c54-590a-5fc0-e435" primary="false"/>
-        <categoryLink id="05db-e318-ab98-d165" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
+        <categoryLink id="4086-c765-2328-2cb3" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8c12-5101-6082-222c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="149f-50e6-22e8-5bc8" name="Terrorgheist" hidden="false" collective="false" import="true" type="model">
@@ -286,37 +243,21 @@
         <entryLink id="fb39-5c98-1173-4628" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="390.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="405.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="1c6b-6132-fc5a-7b0f" name="Death Monsters &amp; Thralls Abilities" hidden="false">
       <rules>
-        <rule id="4952-d1af-fa6c-4508" name="⚁ [Double] Blood Suckers" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c54-590a-5fc0-e435" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>Pick a visible enemy fighter with 1&quot; of this fighter. Allocate D6 damage points to that fighter. Then, you can remove a number of damage points from this fighter equal to the roll.</description>
-        </rule>
         <rule id="7dbb-e089-355d-6363" name="⚁ [Double] Monstrous Reach" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -330,15 +271,14 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dce8-a536-db85-d856" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c54-590a-5fc0-e435" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dce8-a536-db85-d856" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
+          <description>A fighter can only use this ability if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
         </rule>
         <rule id="b7a2-ef1c-36b0-cc51" name="⚁ [Double] Swooping Dive" hidden="true">
           <modifiers>
@@ -346,15 +286,14 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+          <description>Add 3 to this fighter&apos;s Move characteristic of this fighter for the next move action in this activation.</description>
         </rule>
         <rule id="7f9c-dcbf-0606-0054" name="⚁ [Double] Swooping Dive" hidden="true">
           <modifiers>
@@ -362,15 +301,14 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+          <description>Add 3 to this fighter&apos;s Move characteristic for their next move action this activation.</description>
         </rule>
         <rule id="9004-b99a-b759-a29b" name="⚂ [Triple] Death Scream" hidden="true">
           <modifiers>
@@ -378,15 +316,14 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Roll 1 dice for each visible enemy fighter within 8&quot; of this fighter. On a 5, allocate 1 damage point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+          <description>Roll a dice for each visible enemy fighter within 8&quot; of this fighter. On a roll of 5, allocate 1 damage point to the fighter being rolled for. On a roll of 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
         </rule>
         <rule id="e73b-6767-4ab5-8cd8" name="⚂ [Triple] Drag and Maul" hidden="true">
           <modifiers>
@@ -394,8 +331,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -409,9 +346,9 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="atLeast"/>
-                    <condition field="selections" scope="aadf-5830-72a8-d164" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c54-590a-5fc0-e435" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12a9-d7b7-2309-fde6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c54-590a-5fc0-e435" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -425,15 +362,14 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+          <description>Add 3 to the Attacks characteristic of the next melee attack action made by this fighter this activation.</description>
         </rule>
         <rule id="040d-c6af-9308-594a" name="⚃ [Quad] Demolishing Rampage" hidden="true">
           <modifiers>
@@ -441,8 +377,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -456,15 +392,14 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can only use this ability if 10 or more damage points have been allocated to them. Allocate a number of damage points to all visible enemy fighters within 3&quot; of this fighter equal to the value of this ability.</description>
+          <description>A fighter can only use this ability if 10 or more damage points have been allocated to them. Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
         </rule>
         <rule id="b1fc-b3bc-e426-be47" name="⚃ [Quad] Pestilent Breath" hidden="true">
           <modifiers>
@@ -472,27 +407,29 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="atLeast"/>
-                    <condition field="selections" scope="e311-66c4-5d05-cd1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfc-7256-ce66-075d" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a dice for that fighter and each other fighter within 3&quot; of that fighter.  On a 2-5, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.  On a 6, allocate a number of damage points to the fighter being rolled for equal to double the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a dice for that fighter and each other fighter within 3&quot; of that fighter and visible to that fighter.  On a roll of 2-5, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.  On a 6, allocate a number of damage points to the fighter being rolled for equal to double the value of this ability.</description>
         </rule>
-        <rule id="39a0-78d4-dd22-7c93" name="⚀ [Reaction] " hidden="true">
+        <rule id="0e66-aa97-ae93-b75d" name="[Reaction] Necromantic Bonds" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c54-590a-5fc0-e435" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e62d-3867-a149-1ffa" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after an enemy finishes a move action within 3&quot; of a friendly fighter with the Hero runemark.  This fighter makes a bonus move action.  After that move action this fighter must be within 1&quot; of the enemy fighter that made the move action.  Then this fighter makes a bonus attack action.</description>
         </rule>
       </rules>
     </infoGroup>

@@ -1319,6 +1319,18 @@
           </modifiers>
           <description>Pick a visible enemy fighter within 12&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability. Then, roll a die. On a 2+, that fighter cannot activate this round.</description>
         </rule>
+        <rule id="365b-2761-d38a-d5dd" name="[Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+        </rule>
       </rules>
     </infoGroup>
   </sharedInfoGroups>

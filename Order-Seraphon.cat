@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0624-cb15-b0e5-ff95" name="Order - Seraphon" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0624-cb15-b0e5-ff95" name="Order - Seraphon" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="10d5-dc71-9780-d8b3" name="Kroxigor" hidden="false" collective="false" import="true" targetId="52f7-e364-0eaf-c89a" type="selectionEntry"/>
     <entryLink id="79cc-7f93-729b-f611" name="Razordon" hidden="false" collective="false" import="true" targetId="51e0-5525-2cb8-9234" type="selectionEntry"/>
@@ -177,10 +177,18 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="04fc-5905-df09-818d" name="Moonstone Club" hidden="false" targetId="2c24-141f-4201-60e8" type="profile"/>
+                <infoLink id="04fc-5905-df09-818d" name="Moonstone Club" hidden="false" targetId="2c24-141f-4201-60e8" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="4591-7140-62c7-f2f1" value="2">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cca-0457-25d8-f223" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fd39-28c5-bab4-79fc" name="with Meteoric Javelin and Star-buckler" hidden="false" collective="false" import="true" type="upgrade">
@@ -204,7 +212,7 @@
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
                   </characteristics>
                 </profile>
@@ -217,7 +225,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="25.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a99b-35dd-5cac-6338" name="with Boltspitter and Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
@@ -231,10 +239,10 @@
               <profiles>
                 <profile id="cd5c-337b-4c74-146a" name="Boltspitter" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">12</characteristic>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">1</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="cde1-27b8-77a6-83f9" name="Skink" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -246,10 +254,18 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="bda0-18e0-8058-8a4d" name="Moonstone Club" hidden="false" targetId="2c24-141f-4201-60e8" type="profile"/>
+                <infoLink id="bda0-18e0-8058-8a4d" name="Moonstone Club" hidden="false" targetId="2c24-141f-4201-60e8" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="4591-7140-62c7-f2f1" value="2">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cca-0457-25d8-f223" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -258,9 +274,6 @@
       <entryLinks>
         <entryLink id="8fce-5cf2-da21-2097" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="5034-371c-a10b-59aa" name="Terradon Rider" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -313,7 +326,7 @@
                 <infoLink id="a31f-52bf-816a-ff4a" name="Razor-sharp Jaw" hidden="false" targetId="f46c-ac51-edfa-2331" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3af0-93f5-9c4b-43d0" name="with Starstrike Javelin" hidden="false" collective="false" import="true" type="upgrade">
@@ -328,7 +341,7 @@
                 <profile id="5fff-ec73-a845-7716" name="Starstrike Javelin" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">1</characteristic>
                     <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
                   </characteristics>
@@ -338,7 +351,7 @@
                 <infoLink id="39e1-9207-453c-bdff" name="Razor-sharp Jaw" hidden="false" targetId="f46c-ac51-edfa-2331" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="15.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -347,9 +360,6 @@
       <entryLinks>
         <entryLink id="1f2a-db8f-2982-d516" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="0e0b-460c-a2ab-5049" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -382,7 +392,7 @@
         <entryLink id="b422-0565-1de4-b00a" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="21e7-0222-5382-3b42" name="Saurus Guard" hidden="false" collective="false" import="true" type="model">
@@ -415,7 +425,7 @@
         <entryLink id="06e0-8db5-51a2-feea" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5902-179d-b13d-2201" name="Saurus Warrior" hidden="false" collective="false" import="true" type="model">
@@ -441,7 +451,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -465,7 +475,7 @@
                 <infoLink id="be13-ad36-e2ec-7071" name="Celestite Club" hidden="false" targetId="e19b-65f5-cfe7-ca11" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="05de-4ddb-4c43-1657" name="with Celestite Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -473,14 +483,14 @@
                 <profile id="f81a-7ebf-eb4c-30aa" name="Celestite Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -489,9 +499,6 @@
       <entryLinks>
         <entryLink id="36d0-820e-6ba8-1c88" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="8593-cd65-37cc-2ee3" name="Saurus Knight" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -541,14 +548,14 @@
                 <profile id="4a60-5c0a-2b64-f759" name="Celestite Warspear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7876-4f52-a674-6f68" name="with Celestite Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -556,7 +563,7 @@
                 <infoLink id="f3d2-9c89-a5e4-cb7f" name="Celestite Blade" hidden="false" targetId="86a9-bcf6-f294-6bf6" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="160.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -565,9 +572,6 @@
       <entryLinks>
         <entryLink id="c030-07a1-7f5f-dbb8" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="52f7-e364-0eaf-c89a" name="Kroxigor" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -582,12 +586,12 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">32</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">28</characteristic>
           </characteristics>
         </profile>
         <profile id="e2c2-4263-82a8-9a49" name="Drakebite Maul" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6
@@ -607,7 +611,7 @@
         <entryLink id="5ac6-a976-05b7-01fb" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ba5-d396-7e00-191a" name="Skink Handler" hidden="false" collective="false" import="true" type="model">
@@ -623,7 +627,7 @@
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
@@ -642,7 +646,7 @@
         <entryLink id="92e0-5857-d310-49d1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="45.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d181-4cba-436c-18de" name="Salamander" hidden="false" collective="false" import="true" type="model">
@@ -658,14 +662,14 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
           </characteristics>
         </profile>
         <profile id="17f2-ba4e-7281-737d" name="Stream of Fire" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">7</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
           </characteristics>
         </profile>
@@ -698,8 +702,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20
-</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
           </characteristics>
         </profile>
         <profile id="320d-4d56-546a-4f80" name="Volley of Spikes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -723,7 +726,7 @@
         <entryLink id="7b92-408f-012a-d853" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

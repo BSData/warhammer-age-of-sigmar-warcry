@@ -856,7 +856,7 @@
         <infoLink id="3325-4ea2-c9f4-0391" name="Slaanesh Sybarites" hidden="false" targetId="ee33-9f55-7067-ba06" type="infoGroup"/>
       </infoLinks>
     </infoGroup>
-    <infoGroup id="ee33-9f55-7067-ba06" name="Slaanesh Sybarites" hidden="false">
+    <infoGroup id="ee33-9f55-7067-ba06" name="Slaanesh Sybarites Abilities" hidden="false">
       <rules>
         <rule id="1ab3-d131-16b7-e185" name="⚁ [Double] Dance of the Wailing Blade" hidden="true">
           <modifiers>
@@ -1004,6 +1004,18 @@
             </modifier>
           </modifiers>
           <description>This fighter can make a bonus move action or a bonus attack action.  In addition, each time a fighter is taken down by an attack action made by this fighter this activation, this fighter can make a further bonus move action or bonus attack action.</description>
+        </rule>
+        <rule id="2841-10ce-dd83-019c" name="[Reaction] " hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action.
+
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
         </rule>
       </rules>
     </infoGroup>
