@@ -97,10 +97,24 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
           </characteristics>
         </profile>
+        <profile id="f3dd-e1b6-3a0a-faff" name="Fyresteel Throwing Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ee4b-7cc3-eb1d-cc31" name="Magmapike" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="07d3-b5b0-baa6-dd14" name="Fyresteel Throwing Axe" hidden="false" targetId="4f7e-188b-8c4e-b8e5" type="profile"/>
-        <infoLink id="cafd-4a8c-01f3-626b" name="Magmapike" hidden="false" targetId="6710-13e2-8ad0-774a" type="profile"/>
         <infoLink id="56e1-0335-cf6f-487f" name="Special Abilities" hidden="false" targetId="2c96-c5dd-3567-5811" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -157,7 +171,7 @@
                   <characteristics>
                     <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
                     <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
                   </characteristics>
                 </profile>
@@ -195,9 +209,16 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="95c9-c0c9-5be1-068b" name="Pair of Fyresteel Handaxes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="ae27-0d81-8a87-dbf5" name="Pair of Fyresteel Handaxes" hidden="false" targetId="2df1-6007-ada7-7d80" type="profile"/>
                 <infoLink id="1508-e977-18f1-9ae6" name="Special Abilities" hidden="false" targetId="2c96-c5dd-3567-5811" type="infoGroup"/>
               </infoLinks>
               <costs>
@@ -220,9 +241,16 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="348c-5926-4175-7df8" name="Fyresteel Handaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="7ccd-f83f-d909-a6e6" name="Fyresteel Handaxe" hidden="false" targetId="113d-a22c-6268-3ef2" type="profile"/>
                 <infoLink id="665e-128a-ec21-7f5d" name="Special Abilities" hidden="false" targetId="2c96-c5dd-3567-5811" type="infoGroup"/>
               </infoLinks>
               <categoryLinks>
@@ -238,9 +266,6 @@
       <entryLinks>
         <entryLink id="9121-5dcb-ae75-e6ed" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="1951-2ce6-ad55-257f" name="Hearthguard Berzerker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -287,9 +312,16 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <infoLinks>
-                <infoLink id="6a73-9be8-a6ec-01da" name="Berzerker Broadaxe" hidden="false" targetId="1ef3-cd6b-6cdd-12db" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="6a04-d36e-998a-049a" name="Berzerker Broadaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="100.0"/>
               </costs>
@@ -322,9 +354,6 @@
       <entryLinks>
         <entryLink id="c486-5439-c134-0d7f" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d9ce-a6a3-f1a8-ff91" name="Chaos - Disciples of Tzeentch - Arcanites - Leaders &amp; Abilities" revision="20" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d9ce-a6a3-f1a8-ff91" name="Chaos - Disciples of Tzeentch - Arcanites - Leaders &amp; Abilities" revision="20" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="63d5-8016-6938-4c14" name="Tzeentch Mortal Leaders" hidden="false"/>
     <categoryEntry id="0824-bd93-dd3f-a5a9" name="Underworlds Vortemis" hidden="false"/>
@@ -347,54 +347,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="52f8-ad09-f65b-ebc1" name="Magister" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="0958-48c6-b983-25f1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e30b-96d1-b15c-3571" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="585d-de0f-f39b-3633" value="25"/>
-                <modifier type="set" field="68cf-bb2c-bce1-e83e" value="4"/>
-                <modifier type="set" field="c652-026b-c19b-fb1a" value="10"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="daa9-e218-0ba4-7cff" name="Warpsteel Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="0958-48c6-b983-25f1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e30b-96d1-b15c-3571" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="7dca-fb1f-40d4-01ad" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile"/>
-        <infoLink id="3f79-366e-a95d-cda8" name="Teeth and Horns" hidden="false" targetId="3e3c-9e78-d267-bd02" type="profile">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="0958-48c6-b983-25f1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e30b-96d1-b15c-3571" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="10e5-b6c4-d387-47cb" name="Tzeentch Arcanites" hidden="false" targetId="62ca-f693-32a9-05fa" primary="false"/>
         <categoryLink id="cabd-ada6-f831-73f1" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
@@ -413,6 +365,31 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="abb5-59e3-6400-d41f" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d332-c2d3-ea67-2eb9" name="Teeth and Horns" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="a1ec-a61b-aa5b-ab2a" name="Magister" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="7966-a76d-2a8f-4748" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
               </infoLinks>
@@ -420,7 +397,7 @@
                 <categoryLink id="e7dd-1906-69fa-3d19" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="100.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="245.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5ab8-5fd8-d49d-d28d" name="on Foot" hidden="false" collective="false" import="true" type="upgrade">
@@ -431,21 +408,46 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="2e9e-48f8-be93-66ab" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d611-65c6-de9e-bfbf" name="Warpsteel Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="2f10-d961-446f-81ce" name="Magister" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="c175-79dd-27e4-5910" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="155.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4a2a-fd80-638d-77aa" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+        <entryLink id="e2b1-4947-ffac-d231" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4b12-3b7c-a742-cca4" name="Tzaangor Shaman" hidden="false" collective="false" import="true" type="model">
@@ -464,10 +466,24 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
+        <profile id="cfa9-78f1-6091-29dd" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8c40-4cd8-65cb-9e0b" name="Teeth and Horns" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="410c-3219-a03b-f92c" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile"/>
-        <infoLink id="ff1c-4f1d-b228-b4fa" name="Teeth and Horns" hidden="false" targetId="3e3c-9e78-d267-bd02" type="profile"/>
         <infoLink id="b565-410c-59ba-a25b" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -479,7 +495,7 @@
         <entryLink id="e048-b2f0-4966-f4bc" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="305.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d08-488f-3d4e-c0f8" name="Ogroid Thaumaturge" hidden="false" collective="false" import="true" type="model">
@@ -506,9 +522,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
           </characteristics>
         </profile>
+        <profile id="a5cc-4c91-772d-e0f8" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="3d3a-200a-7150-7d59" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile"/>
         <infoLink id="9c77-556d-378a-884e" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -547,9 +570,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
           </characteristics>
         </profile>
+        <profile id="aaca-8bf9-b85b-4ea5" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="206a-9b31-add9-3fd8" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile"/>
         <infoLink id="0128-1d8e-0351-171b" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -578,52 +608,13 @@
       </modifiers>
       <profiles>
         <profile id="1d0e-780f-bb06-141d" name="Gaunt Summoner of Tzeentch" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="0ed7-2d33-5791-0288" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75ce-2641-8630-600e" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="68cf-bb2c-bce1-e83e" value="4"/>
-                <modifier type="set" field="c652-026b-c19b-fb1a" value="10"/>
-                <modifier type="set" field="585d-de0f-f39b-3633" value="28"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
           </characteristics>
         </profile>
-        <profile id="27e6-4bb6-20a3-8d05" name="Warptongue Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="0ed7-2d33-5791-0288" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75ce-2641-8630-600e" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="5f56-9173-c6d2-0eb1" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile"/>
-        <infoLink id="d961-2d5b-38d3-603c" name="Teeth and Horns" hidden="false" targetId="3e3c-9e78-d267-bd02" type="profile">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="0ed7-2d33-5791-0288" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75ce-2641-8630-600e" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="14f4-65c4-48ba-5d00" name="Tzeentch Arcanites" hidden="false" targetId="62ca-f693-32a9-05fa" primary="false"/>
         <categoryLink id="0d41-5f01-d332-8e35" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
@@ -643,6 +634,31 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="645d-f8a3-ee73-c934" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="3861-dfc2-95cd-91e9" name="Teeth and Horns" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b5a7-2d99-d541-b929" name="Gaunt Summoner of Tzeentch" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="f8b9-8d65-da84-a81f" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
               </infoLinks>
@@ -661,6 +677,31 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="464d-cc63-f46c-16e3" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="735a-f45b-48a9-b890" name="Warptongue Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="f476-8caf-5108-8818" name="Gaunt Summoner of Tzeentch" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="8a87-b30d-e7aa-ed19" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
               </infoLinks>
@@ -732,30 +773,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="57a7-8313-64ba-cf1a" name="Aviarch Tzeentchian Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e84b-a527-91ae-dacf" name="Enlightened Aviarch" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="c652-026b-c19b-fb1a" value="10">
-              <conditions>
-                <condition field="selections" scope="c2b0-7368-c8a1-c7d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9a3-299d-b961-27a1" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="747d-a67b-57b1-722c" name="Tzeentch Arcanites" hidden="false" targetId="62ca-f693-32a9-05fa" primary="false"/>
         <categoryLink id="7cce-83d0-217f-3761" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
@@ -776,6 +793,23 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="6988-20b1-2145-b53c" name="Enlightened Aviarch" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="a511-8d39-3bbc-120e" name="Aviarch Tzeentchian Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="c91d-080a-1548-6f9d" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
               </infoLinks>
@@ -791,6 +825,23 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="c998-8733-bfd7-8fdb" name="Enlightened Aviarch" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="6e10-7cb2-d9f6-ec7e" name="Aviarch Tzeentchian Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="019f-7afc-33d4-c735" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
               </infoLinks>
@@ -835,9 +886,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
           </characteristics>
         </profile>
+        <profile id="58ed-5419-0ae6-c250" name="Cursed Glaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="20d1-8ca8-234e-82b1" name="Cursed Glaive" hidden="false" targetId="4904-8d5d-1c52-e300" type="profile"/>
         <infoLink id="3d88-12af-d210-c4be" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -914,9 +972,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
           </characteristics>
         </profile>
+        <profile id="bede-7b4d-cab3-1a57" name="Teeth and Horns" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="2d43-3cce-5758-2cb3" name="Teeth and Horns" hidden="false" targetId="3e3c-9e78-d267-bd02" type="profile"/>
         <infoLink id="f5fe-8c84-4f56-e074" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -956,9 +1021,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
+        <profile id="b1f6-d8aa-9695-1630" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a3c6-f502-ca5f-1e0c" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile"/>
         <infoLink id="6e84-1bd9-486a-55f8" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -1045,14 +1117,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
           </characteristics>
         </profile>
+        <profile id="4448-f4bf-d286-56e3" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="7345-405e-b766-9de9" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Sorcerous Bolt"/>
-            <modifier type="set" field="446b-a910-1596-123b" value="1/3"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="821e-19d9-de29-d90f" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -1095,14 +1169,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
           </characteristics>
         </profile>
+        <profile id="1d86-d53c-006c-4382" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="47f1-a763-33a6-23cc" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Sorcerous Bolt"/>
-            <modifier type="set" field="446b-a910-1596-123b" value="1/3"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="03ee-0b9d-bca7-5ba1" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -1145,14 +1221,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
           </characteristics>
         </profile>
+        <profile id="0a57-1f1b-c6dd-1dac" name="Blue Horror&apos;s Magical Flames" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="48cd-6796-f8d0-bcd2" name="Tzeentch Arcane Bolt" hidden="false" targetId="0ebe-9945-89fc-24cb" type="profile">
-          <modifiers>
-            <modifier type="set" field="446b-a910-1596-123b" value="1/3"/>
-            <modifier type="set" field="name" value="Blue Horror&apos;s Magical Flames"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="9eec-b99d-0dff-24c6" name="Special Abilities" hidden="false" targetId="3b37-171a-8e4a-545c" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -1170,32 +1248,6 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedProfiles>
-    <profile id="0ebe-9945-89fc-24cb" name="Tzeentch Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3e3c-9e78-d267-bd02" name="Teeth and Horns" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4904-8d5d-1c52-e300" name="Cursed Glaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup id="3b37-171a-8e4a-545c" name="Special Abilities" hidden="false">
       <infoLinks>

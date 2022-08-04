@@ -91,10 +91,24 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
           </characteristics>
         </profile>
+        <profile id="c822-3ab7-1599-cb98" name="Heavy Stock" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7996-9754-e933-8057" name="Thunderhead Greatbow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="4ce4-09b4-b4cb-b3c5" name="Thunderhead Greatbow" hidden="false" targetId="ac2f-1fee-c6c8-7f39" type="profile"/>
-        <infoLink id="3d9e-c1b1-6aab-738a" name="Heavy Stock" hidden="false" targetId="17fd-dc9d-b2d6-5990" type="profile"/>
         <infoLink id="53ae-b5e5-95ed-42e1" name="Special Abilities" hidden="false" targetId="c4a0-ec79-3aa8-41a2" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -154,21 +168,16 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <infoLinks>
-                <infoLink id="1760-5ff7-84f4-12c4" name="Tempest Blade" hidden="false" targetId="93b1-c5c1-3306-e11b" type="profile">
-                  <modifierGroups>
-                    <modifierGroup>
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bae4-6f54-aaa3-fc1e" type="atLeast"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
-                        <modifier type="set" field="4591-7140-62c7-f2f1" value="5"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </infoLink>
-              </infoLinks>
+              <profiles>
+                <profile id="6465-65c6-afdc-d94c" name="Tempest Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
               </costs>
@@ -181,9 +190,16 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <infoLinks>
-                <infoLink id="1669-05bd-a2dd-994a" name="Grandstave" hidden="false" targetId="46ee-5961-1ca9-961c" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="2709-9f3e-c634-6a44" name="Grandstave" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="150.0"/>
               </costs>
@@ -194,6 +210,9 @@
       <entryLinks>
         <entryLink id="de26-dcbe-81ac-828e" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="eb46-88fb-bd7b-e21f" name="Sequitor" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -272,9 +291,16 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="de47-7ef2-6473-501d" name="Stormsmite Maul" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="d7d6-b63e-ef69-a6d3" name="Stormsmite Maul" hidden="false" targetId="56e2-b961-787d-f43e" type="profile"/>
                 <infoLink id="501a-58ce-be8d-2e6f" name="Special Abilities" hidden="false" targetId="c4a0-ec79-3aa8-41a2" type="infoGroup"/>
               </infoLinks>
               <categoryLinks>
@@ -300,9 +326,16 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="673f-42dc-d422-2e8d" name="Tempest Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="405b-ece2-2b7f-5250" name="Tempest Blade" hidden="false" targetId="93b1-c5c1-3306-e11b" type="profile"/>
                 <infoLink id="98e0-9956-1e8f-38a4" name="Special Abilities" hidden="false" targetId="c4a0-ec79-3aa8-41a2" type="infoGroup"/>
               </infoLinks>
               <categoryLinks>
@@ -318,6 +351,9 @@
       <entryLinks>
         <entryLink id="2acc-a8db-0043-78dd" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5105-fa96-ddac-1e7a" name="Evocator on Dracoline" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -365,21 +401,16 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <infoLinks>
-                <infoLink id="5220-38e2-a631-d31c" name="Tempest Blade" hidden="false" targetId="93b1-c5c1-3306-e11b" type="profile">
-                  <modifierGroups>
-                    <modifierGroup>
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa10-05cc-e3f5-97b2" type="atLeast"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" field="60cf-9920-ff5d-032d" value="5"/>
-                        <modifier type="set" field="4591-7140-62c7-f2f1" value="5"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </infoLink>
-              </infoLinks>
+              <profiles>
+                <profile id="7e3d-4ad4-76ae-e3de" name="Tempest Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="285.0"/>
               </costs>
@@ -392,22 +423,16 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <infoLinks>
-                <infoLink id="fef6-12e5-f38d-a099" name="Grandstave" hidden="false" targetId="46ee-5961-1ca9-961c" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="446b-a910-1596-123b" value="2/5">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e210-2df7-d548-ddc2" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e210-2df7-d548-ddc2" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
+              <profiles>
+                <profile id="b2c0-24cb-6360-4916" name="Grandstave" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="275.0"/>
               </costs>
@@ -418,6 +443,9 @@
       <entryLinks>
         <entryLink id="d03e-2b2c-0da2-bb60" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ea41-df94-50bb-0561" name="Gryph-hound" hidden="false" collective="false" import="true" type="model">
       <modifiers>

@@ -359,21 +359,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
           </characteristics>
         </profile>
+        <profile id="c995-61be-21f2-32b1" name="Pair of Fyresteel Handaxes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="d8ad-ee41-9f01-b948" name="Pair of Fyresteel Handaxes" hidden="false" targetId="2df1-6007-ada7-7d80" type="profile">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="681b-98fb-4b1d-b823" type="atLeast"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="4591-7140-62c7-f2f1" value="4"/>
-                <modifier type="set" field="446b-a910-1596-123b" value="2/4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
         <infoLink id="4991-8364-78c0-c2f0" name="Special Abilities" hidden="false" targetId="2c96-c5dd-3567-5811" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -430,42 +425,31 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="67c2-cc05-336c-8e7d" name="with Berzerker Broadaxe" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="af34-b0a5-0c72-413a" name="Berzerker Broadaxe" hidden="false" targetId="1ef3-cd6b-6cdd-12db" type="profile">
-                  <modifierGroups>
-                    <modifierGroup>
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2808-8a77-1d1c-b019" type="atLeast"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
-                        <modifier type="set" field="446b-a910-1596-123b" value="2/4"/>
-                        <modifier type="set" field="4591-7140-62c7-f2f1" value="5"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </infoLink>
-              </infoLinks>
+              <profiles>
+                <profile id="e1a3-0f3c-bf91-83b4" name="Berzerker Broadaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a0ac-e1ec-86eb-900c" name="with Flamestrike Poleaxe" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="0861-cd2f-e6ef-5812" name="Flamestrike Poleaxe" hidden="false" targetId="3905-39ec-2fb0-eaad" type="profile">
-                  <modifierGroups>
-                    <modifierGroup>
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2808-8a77-1d1c-b019" type="atLeast"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
-                        <modifier type="set" field="446b-a910-1596-123b" value="2/5"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </infoLink>
-              </infoLinks>
+              <profiles>
+                <profile id="fa9c-a5ae-e5c9-4cb2" name="Flamestrike Poleaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
               </costs>
@@ -476,6 +460,9 @@
       <entryLinks>
         <entryLink id="e0ac-e13d-6e0d-8b83" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b77f-7474-678c-72e1" name="Auric Hearthguard Karl" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -493,18 +480,24 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
           </characteristics>
         </profile>
+        <profile id="d83e-a204-218c-5faa" name="Fyresteel Throwing Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="13dc-2747-bd1c-2881" name="Magmapike" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="cfb0-b8b9-8436-ab4b" name="Fyresteel Throwing Axe" hidden="false" targetId="4f7e-188b-8c4e-b8e5" type="profile">
-          <modifiers>
-            <modifier type="set" field="4591-7140-62c7-f2f1" value="4">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b77f-7474-678c-72e1" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="7693-b5da-0c1e-dcf7" name="Magmapike" hidden="false" targetId="6710-13e2-8ad0-774a" type="profile"/>
         <infoLink id="8bb5-201b-e5b6-41d8" name="Special Abilities" hidden="false" targetId="2c96-c5dd-3567-5811" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -606,6 +599,9 @@
       <entryLinks>
         <entryLink id="b5c1-9961-ff04-0b5a" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="971e-31ab-32fb-3a81" name="Auric Runefather" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1063,56 +1059,6 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedProfiles>
-    <profile id="6710-13e2-8ad0-774a" name="Magmapike" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="1ef3-cd6b-6cdd-12db" name="Berzerker Broadaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3905-39ec-2fb0-eaad" name="Flamestrike Poleaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="113d-a22c-6268-3ef2" name="Fyresteel Handaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2df1-6007-ada7-7d80" name="Pair of Fyresteel Handaxes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4f7e-188b-8c4e-b8e5" name="Fyresteel Throwing Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup id="2c96-c5dd-3567-5811" name="Special Abilities" hidden="false"/>
     <infoGroup id="e469-38b5-21be-a239" name="Fyreslayers Abilities" hidden="false">

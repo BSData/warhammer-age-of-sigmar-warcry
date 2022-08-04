@@ -175,18 +175,15 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="8da1-ddfe-6152-01b5" name="Moonstone Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="04fc-5905-df09-818d" name="Moonstone Club" hidden="false" targetId="2c24-141f-4201-60e8" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="4591-7140-62c7-f2f1" value="2">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cca-0457-25d8-f223" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
               </costs>
@@ -252,18 +249,15 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="61c6-bf73-a476-3433" name="Moonstone Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="bda0-18e0-8058-8a4d" name="Moonstone Club" hidden="false" targetId="2c24-141f-4201-60e8" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="4591-7140-62c7-f2f1" value="2">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cca-0457-25d8-f223" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
               </costs>
@@ -274,6 +268,9 @@
       <entryLinks>
         <entryLink id="8fce-5cf2-da21-2097" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5034-371c-a10b-59aa" name="Terradon Rider" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -321,10 +318,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <infoLinks>
-                <infoLink id="df57-3852-55eb-533e" name="Sunleech Bolas" hidden="false" targetId="05c8-c87b-f3ec-0e90" type="profile"/>
-                <infoLink id="a31f-52bf-816a-ff4a" name="Razor-sharp Jaw" hidden="false" targetId="f46c-ac51-edfa-2331" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="5f9c-0714-eaf9-f5b0" name="Sunleech Bolas" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="7a1b-41f8-f178-aea2" name="Razor-sharp Jaw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
               </costs>
@@ -346,10 +357,15 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="2417-4c13-3b60-8e86" name="Razor-sharp Jaw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="39e1-9207-453c-bdff" name="Razor-sharp Jaw" hidden="false" targetId="f46c-ac51-edfa-2331" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
               </costs>
@@ -360,6 +376,9 @@
       <entryLinks>
         <entryLink id="1f2a-db8f-2982-d516" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0e0b-460c-a2ab-5049" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -377,9 +396,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
           </characteristics>
         </profile>
+        <profile id="e001-85bf-f8d0-e361" name="Tearing Jaws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="5e32-0867-fd98-2274" name="Tearing Jaws" hidden="false" targetId="74c1-39bf-cc85-e12c" type="profile"/>
         <infoLink id="9d4f-9355-dc52-1d52" name="Special Abilities" hidden="false" targetId="b7dd-6001-19d1-3083" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -411,9 +437,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
           </characteristics>
         </profile>
+        <profile id="a8a1-2e9c-5949-2f65" name="Celestite Polearm" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8e89-6710-9640-b3d5" name="Celestite Polearm" hidden="false" targetId="8452-3765-f91a-cf91" type="profile"/>
         <infoLink id="1c95-ec60-6132-413e" name="Special Abilities" hidden="false" targetId="b7dd-6001-19d1-3083" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -471,9 +504,16 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="84d8-ae27-e090-b2b1" name="with Celestite Club" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="be13-ad36-e2ec-7071" name="Celestite Club" hidden="false" targetId="e19b-65f5-cfe7-ca11" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="168d-24ad-87ae-c29f" name="Celestite Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
               </costs>
@@ -499,6 +539,9 @@
       <entryLinks>
         <entryLink id="36d0-820e-6ba8-1c88" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8593-cd65-37cc-2ee3" name="Saurus Knight" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -559,9 +602,16 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7876-4f52-a674-6f68" name="with Celestite Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="f3d2-9c89-a5e4-cb7f" name="Celestite Blade" hidden="false" targetId="86a9-bcf6-f294-6bf6" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="7eb0-b073-2a5b-d150" name="Celestite Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="160.0"/>
               </costs>
@@ -572,6 +622,9 @@
       <entryLinks>
         <entryLink id="c030-07a1-7f5f-dbb8" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="52f7-e364-0eaf-c89a" name="Kroxigor" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -631,9 +684,15 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
+        <profile id="5699-9a3d-0bf8-2760" name="Skink Handler" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8c08-38ce-c0e7-947c" name="Skink" hidden="false" targetId="2290-ede0-38dc-d681" type="profile"/>
         <infoLink id="bb72-8cb9-2f2f-1d92" name="Special Abilities" hidden="false" targetId="b7dd-6001-19d1-3083" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -730,15 +789,6 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedProfiles>
-    <profile id="2290-ede0-38dc-d681" name="Skink" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-      <characteristics>
-        <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-        <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
-        <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="941b-a50f-bd96-7aa5" name="Order - Seraphon - Leaders &amp; Abilities" targetId="dc67-9928-1654-d38a" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>

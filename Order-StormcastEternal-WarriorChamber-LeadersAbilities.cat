@@ -709,22 +709,15 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="f42a-cd34-ef7c-5c40" name="Warblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="d760-6ed4-fb54-92ab" name="Warblade" hidden="false" targetId="b602-d2db-5567-8d46" type="profile">
-                  <modifierGroups>
-                    <modifierGroup>
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce81-6c46-c30a-956f" type="atLeast"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" field="60cf-9920-ff5d-032d" value="4"/>
-                        <modifier type="set" field="4591-7140-62c7-f2f1" value="4"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </infoLink>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
               </costs>
@@ -738,22 +731,15 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="15b6-bc64-0cb7-9c3d" name="Warhammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="42bb-5ce8-2f2b-0495" name="Warhammer" hidden="false" targetId="536b-679c-a436-27f4" type="profile">
-                  <modifierGroups>
-                    <modifierGroup>
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="48f0-7ac1-8b2d-51b1" type="atLeast"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" field="60cf-9920-ff5d-032d" value="3"/>
-                        <modifier type="set" field="4591-7140-62c7-f2f1" value="5"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </infoLink>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
@@ -808,6 +794,9 @@
       <entryLinks>
         <entryLink id="441b-2da9-20f6-65d6" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0c21-fb7b-1ab0-6b86" name="Judicator-Prime" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -853,18 +842,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <infoLinks>
-                <infoLink id="a4ce-52cd-9d58-5e71" name="Storm Gladius" hidden="false" targetId="52ca-1a16-860c-311c" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c21-fb7b-1ab0-6b86" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="fffb-dd4c-8751-2a78" name="Boltstorm Crossbow" hidden="false" targetId="91e9-ff24-a383-867e" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="580f-b3a2-3780-b85e" name="Storm Gladius" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="15dc-d516-f725-4937" name="Boltstorm Crossbow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-12</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
               </costs>
@@ -877,18 +872,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <infoLinks>
-                <infoLink id="6bb0-dafb-1527-fec4" name="Storm Gladius" hidden="false" targetId="52ca-1a16-860c-311c" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c21-fb7b-1ab0-6b86" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="bf81-aa8c-b07b-7fed" name="Skybolt Bow" hidden="false" targetId="9901-82ae-a670-8208" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="9093-8185-4f7d-167d" name="Skybolt Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-20</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b6b5-90df-ed10-294f" name="Storm Gladius" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="235.0"/>
               </costs>
@@ -899,6 +900,9 @@
       <entryLinks>
         <entryLink id="31f3-e74c-785c-2771" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bd83-0fb7-17ba-e4e5" name="Protector-Prime" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -916,17 +920,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
+        <profile id="7fd8-ff6a-58b8-eefc" name="Stormstrike Glaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="f05b-f1f2-b817-e146" name="Stormstrike Glaive" hidden="false" targetId="95a6-3e30-7c64-0cce" type="profile">
-          <modifiers>
-            <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd83-0fb7-17ba-e4e5" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="f629-6594-33c7-780b" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -957,17 +960,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
+        <profile id="1a7b-7223-fd26-2fde" name="Thunderaxe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="5ab0-8a49-338c-6d55" name="Thunderaxe" hidden="false" targetId="6874-f979-08dc-8f81" type="profile">
-          <modifiers>
-            <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10bd-b526-5a20-a202" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="cad2-86c5-58cb-4982" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -1050,9 +1052,16 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="b768-b9f8-736f-159e" name="Thrown Paired Celestial Hammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-8</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="5b2b-b40f-f627-3838" name="Thrown Paired Celestial Hammer" hidden="false" targetId="14b7-ff4e-69f4-0dd1" type="profile"/>
                 <infoLink id="b1c0-e491-aba4-e506" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
               <costs>
@@ -1067,17 +1076,25 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="2ed3-83e2-33db-ebaa" name="Thrown Stormcall Javelin" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-8</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b930-755b-b6fa-c94d" name="Stormcall Javelin" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
-                <infoLink id="f3c8-6340-5ed2-ef45" name="Stormcall Javelin" hidden="false" targetId="3115-c277-05ea-575b" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
-                      <conditions>
-                        <condition field="selections" scope="ae68-684d-50fa-0d1c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65c0-1136-0305-2a66" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="4ba7-e179-9b0a-c16f" name="Thrown Stormcall Javelin" hidden="false" targetId="3212-c2b4-756d-932f" type="profile"/>
                 <infoLink id="8881-cacc-7b2e-3b1d" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
               <categoryLinks>
@@ -1104,9 +1121,16 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="7339-0c1d-9546-0a69" name="Thrown Stormcall Javelin" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-8</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="9584-f49f-4c06-a815" name="Thrown Stormcall Javelin" hidden="false" targetId="3212-c2b4-756d-932f" type="profile"/>
                 <infoLink id="9a6c-b7c6-9968-81a1" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
               </infoLinks>
               <categoryLinks>
@@ -1122,6 +1146,9 @@
       <entryLinks>
         <entryLink id="4bda-cd95-1a89-9f4b" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="36d7-32f8-8f2d-ed7b" name="Retributor-Prime" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1139,17 +1166,16 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
           </characteristics>
         </profile>
+        <profile id="da55-21cf-3918-4cfa" name="Lightning Hammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="6027-9709-59b1-d8db" name="Lightning Hammer" hidden="false" targetId="5870-4ad2-2fae-989a" type="profile">
-          <modifiers>
-            <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36d7-32f8-8f2d-ed7b" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="b376-c62a-56dc-4e3d" name="Special Abilities" hidden="false" targetId="b8df-4ae4-36e3-fbbf" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>

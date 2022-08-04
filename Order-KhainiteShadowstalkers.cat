@@ -56,17 +56,16 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="c1f4-2ce9-3a93-60b0" name="with Umbral Spear" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="2754-78e6-792e-a022" name="Umbral Spear" hidden="false" targetId="721f-c1f2-aa50-2215" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="60cf-9920-ff5d-032d" value="4">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1315-a61c-98e2-b31c" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
+              <profiles>
+                <profile id="1b89-fe3a-f185-7a4f" name="Umbral Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
               </costs>
@@ -92,6 +91,9 @@
       <entryLinks>
         <entryLink id="0815-35c6-1444-057c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="def7-0fbc-0938-9e11" name="Darkflame Warlock" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -250,9 +252,16 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="5087-dfe6-f295-b79c" name="with Umbral Spear" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="17e1-dd7e-ed3d-9029" name="Umbral Spear" hidden="false" targetId="721f-c1f2-aa50-2215" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="f968-c5fe-cb1b-30c3" name="Umbral Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
               </costs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c93-2200-a39e-de22" name="Chaos - Skaven" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c93-2200-a39e-de22" name="Chaos - Skaven" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="8f45-0f1b-941f-d284" name="Stormfiend" hidden="false" collective="false" import="true" targetId="acf7-98bf-ee1f-8431" type="selectionEntry"/>
     <entryLink id="bf9c-afda-94fd-e88b" name="Skryre Acolyte" hidden="false" collective="false" import="true" targetId="47d7-c313-4103-d2d1" type="selectionEntry"/>
@@ -239,10 +239,15 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="a783-c27c-a485-bc65" name="Clawed Fist" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="dc47-a5b9-0ce7-1a3f" name="Stormfiend Unarmed" hidden="false" targetId="93fe-0553-7cde-f9ff" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="20.0"/>
               </costs>
@@ -264,10 +269,15 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="5b41-ba20-8303-745a" name="Clawed Fist" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="d977-1935-9c15-ae6d" name="Stormfiend Unarmed" hidden="false" targetId="93fe-0553-7cde-f9ff" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="10.0"/>
               </costs>
@@ -289,10 +299,15 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="caf0-dc77-d510-6700" name="Clawed Fist" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="808f-170d-6b0d-3766" name="Stormfiend Unarmed" hidden="false" targetId="93fe-0553-7cde-f9ff" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
@@ -379,8 +394,17 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="f755-7ac7-c9f3-b4ee" name="Pair of Foetid Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
-                <infoLink id="e772-0543-f121-f230" name="Pair of Foetid Blades" hidden="false" targetId="b8f6-68d9-3edd-4d0a" type="profile"/>
                 <infoLink id="71c7-0898-ff43-6802" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
               </infoLinks>
               <costs>
@@ -444,15 +468,6 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink id="d233-8f84-1f74-720b" name="Rusty Halberd" hidden="false" targetId="d5f7-bbb8-459b-429c" type="profile">
-          <modifiers>
-            <modifier type="set" field="60cf-9920-ff5d-032d" value="2">
-              <conditions>
-                <condition field="selections" scope="8349-35d6-8bef-ffdb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c67e-be4e-9f9b-c0af" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="c702-cdae-4cea-0967" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -482,6 +497,14 @@
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="2eeb-cbe3-2438-c1b8" name="Rusty Halberd" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -501,6 +524,14 @@
                     <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
                     <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
                     <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="8dd3-e9ba-0b08-f69f" name="Rusty Halberd" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -590,8 +621,17 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="8bff-0778-4b44-d935" name="Rusty Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
-                <infoLink id="4062-8fab-226e-823c" name="Rusty Blade" hidden="false" targetId="b61d-1a31-301d-b826" type="profile"/>
                 <infoLink id="f83b-371f-c279-8f09" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
               </infoLinks>
               <costs>
@@ -610,9 +650,9 @@
     </selectionEntry>
     <selectionEntry id="0405-9ce3-4131-e631" name="Rat Ogor" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="append" field="name" value="with Warpfire Gun">
+        <modifier type="set" field="name" value="Rat Ogor">
           <conditions>
-            <condition field="selections" scope="0405-9ce3-4131-e631" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dac9-3aaf-334a-a5a9" type="equalTo"/>
+            <condition field="selections" scope="0405-9ce3-4131-e631" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ffb-1673-ed9e-69f5" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -620,34 +660,12 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="with Warpfire Gun">
+          <conditions>
+            <condition field="selections" scope="0405-9ce3-4131-e631" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dac9-3aaf-334a-a5a9" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
-      <profiles>
-        <profile id="e4a5-8424-d1fa-ee78" name="Rat Ogor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a844-37af-809f-0238" name="Tearing Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <modifiers>
-            <modifier type="set" field="60cf-9920-ff5d-032d" value="2">
-              <conditions>
-                <condition field="selections" scope="0405-9ce3-4131-e631" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dac9-3aaf-334a-a5a9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="72fc-e2a9-b156-19d2" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="421d-3423-c94d-9847" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="1ecd-db6a-b916-b558" name="Skaven" hidden="false" targetId="88a1-7058-81bb-655e" primary="false"/>
@@ -655,9 +673,10 @@
         <categoryLink id="ba60-9049-636f-2420" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f1c4-b772-7457-c2b5" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f1c4-b772-7457-c2b5" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ffb-1673-ed9e-69f5">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="847e-ff9c-bc98-f0ef" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d7-7067-f1ab-721f" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="dac9-3aaf-334a-a5a9" name="with Warpfire Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -677,9 +696,59 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="50dd-a354-ee34-b18a" name="Rat Ogor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="3c63-77d1-256b-db04" name="Tearing Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="5720-fee6-f683-09e3" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5ffb-1673-ed9e-69f5" name="Rat Ogor" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="c750-27c8-9bc5-e05c" name="Rat Ogor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">30</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0597-d004-b853-d7a4" name="Tearing Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="281a-4582-1bdd-cc70" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -716,9 +785,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
           </characteristics>
         </profile>
+        <profile id="6019-a103-ac6e-8edf" name="Rusty Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="121e-1eac-09be-7562" name="Rusty Blade" hidden="false" targetId="b61d-1a31-301d-b826" type="profile"/>
         <infoLink id="b3e6-7206-bce6-7110" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -799,9 +875,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
+        <profile id="3da1-6e09-b3ef-381a" name="Eshin Throwing Stars" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="1332-c612-7c9f-143b" name="Eshin Throwing Stars" hidden="false" targetId="a2d2-de57-2987-14b7" type="profile"/>
         <infoLink id="a82b-34cb-0e0e-1229" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -840,9 +923,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
           </characteristics>
         </profile>
+        <profile id="214c-3e07-e03d-5b40" name="Rusty Knife" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0256-a827-b1e4-f398" name="Rusty Knife" hidden="false" targetId="3c62-7a01-06eb-ea8d" type="profile"/>
         <infoLink id="3121-586a-e2cd-f50e" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -882,9 +972,16 @@
             <characteristic name="Damage" typeId="446b-a910-1596-123b">4/10</characteristic>
           </characteristics>
         </profile>
+        <profile id="d422-515d-78e2-9325" name="Rusty Knife" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8af4-8107-cb8c-1055" name="Rusty Knife" hidden="false" targetId="3c62-7a01-06eb-ea8d" type="profile"/>
         <infoLink id="f727-a8c1-0566-038f" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -915,10 +1012,24 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
           </characteristics>
         </profile>
+        <profile id="0ebe-5343-0510-831f" name="Eshin Throwing Weapons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d258-b945-ebe1-c9f0" name="Stabbing Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0267-1ac5-4aa8-cd4b" name="Stabbing Blade" hidden="false" targetId="66d4-3576-29a0-73b5" type="profile"/>
-        <infoLink id="a683-e45d-6b9a-284b" name="Eshin Throwing Weapons" hidden="false" targetId="53ff-7aa7-c4dc-5673" type="profile"/>
         <infoLink id="6529-8f30-9706-64e1" name="Special Abilities" hidden="false" targetId="54e7-81df-cd9d-5745" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
@@ -1055,24 +1166,6 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedProfiles>
-    <profile id="93fe-0553-7cde-f9ff" name="Stormfiend Unarmed" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">4/8</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3c62-7a01-06eb-ea8d" name="Rusty Knife" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-        <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-        <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-        <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="007a-2413-0ec6-bd77" name="Chaos - Skaven - Leaders &amp; Abilities" targetId="a636-8332-75fc-8a73" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
