@@ -87,7 +87,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, if any attack action made by this fighter scores any hits or critical hits, subtract 1 from the Toughness characteristic (to a minimum of 1) of the target fighter until the end of the battle round.</description>
+          <description>Until the end of this fighter’s activation, if an attack action made by this fighter scores any hits or critical hits, subtract 1 from the target fighter’s Toughness characteristic (to a minimum of 1) until the end of the battle round.</description>
         </rule>
         <rule id="79e1-8f6d-f943-c256" name="⚁ [Double] Chain Garrotte" hidden="true">
           <modifiers>
@@ -102,7 +102,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick an enemy fighter within 5&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 5&quot; of this fighter and roll a dice. On a roll of 3-4, allocate 1 damage point to that fighter. On a roll of 5+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="80ec-80e4-e338-63ba" name="⚁ [Double] Nightmarish Visage" hidden="true">
           <modifiers>
@@ -112,7 +112,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Pick an enemy fighter within a number of inches of this fighter equal to the value of this ability and roll a dice. On a 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
+          <description>Pick an enemy fighter within a number of inches of this fighter equal to the value of this ability and roll a dice. On a roll of 3+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
         </rule>
         <rule id="dc9f-6e02-f8da-a770" name="⚂ [Triple] Flaying Frenzy" hidden="true">
           <modifiers>
@@ -127,7 +127,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter. On a 3-4, allocate 1 damage point to the fighter being rolled for.On a 5-6, allocate a number of damage points ot the fighter being rolled for equal to the value of this ability.</description>
+          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter. On a roll of 3-4, allocate 1 damage point to the fighter being rolled for. On a roll of 5+, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
         </rule>
         <rule id="88a2-0dc9-34c8-0045" name="⚂ [Triple] Vessel of Torment" hidden="true">
           <modifiers>
@@ -142,7 +142,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
         </rule>
         <rule id="2002-7673-942d-2e83" name="⚃ [Quad] Gift of Agony" hidden="true">
           <modifiers>
@@ -152,19 +152,19 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>This fighter makes a bonus attack action. Add 1 to the Strength characteristics of that attack action if this fighter has any damage points allocated to them.</description>
+          <description>This fighter makes a bonus attack action. Add 3 to the Strength and Attacks characteristics of that attack action if this fighter has 1 or more damage points allocated to them. </description>
         </rule>
-        <rule id="22b9-6e53-f669-36e5" name="[Reaction] " hidden="true">
+        <rule id="22b9-6e53-f669-36e5" name="[Reaction] Shared Pain" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74b9-be1e-a283-6b91" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <description>A fighter can make this reaction when they are targeted by a melee attack action.
 
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scoredA fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. For each hit roll from that attack action that hits, allocate 1 damage point to the attacking fighter. For each critical hit, allocate 2 damage points to the attacking fighter instead. from that attack action.</description>
         </rule>
       </rules>
     </infoGroup>

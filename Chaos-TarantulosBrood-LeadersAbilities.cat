@@ -94,7 +94,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick 1 friendly Spider Swarm within 6&quot; of this fighter or within 9&quot; of this fighter if the value of this ability is 4 or greater.  That Spider Swarm can make a bonus move action or a bonus attack action.</description>
+          <description>Pick a friendly Spider Swarm within 6&quot; of this fighter or within 9&quot; of this fighter if the value of this ability is 4 or greater. That Spider Swarm can make a bonus move action or a bonus attack action.</description>
         </rule>
         <rule id="b0ba-af85-0397-1077" name="⚁ [Double] Silken Strangle-nets" hidden="true">
           <modifiers>
@@ -109,7 +109,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a dice.  On a 3+, that fighter cannot make move actions or disengage actions this battle round.</description>
+          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a dice. On a roll of 3+, until the end of the battle round, that enemy fighter cannot make move actions or disengage actions.</description>
         </rule>
         <rule id="19de-0a1a-effa-0269" name="⚁ [Double] Skittering Ascent" hidden="true">
           <modifiers>
@@ -124,7 +124,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, do not count the vertical distance moved when this fighter is climbing.</description>
+          <description>Until the end of this fighter’s activation, do not count the vertical distance moved when this fighter is climbing.</description>
         </rule>
         <rule id="4dc1-dfce-3137-1b47" name="⚂ [Triple] Creeping Summons" hidden="true">
           <modifiers>
@@ -139,7 +139,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a friendly Spider Swarm that has been taken down.  Set it up once more on the battlefield wholly within 3&quot; of this fighter.  That Spider Swarm no longer counts as being taken down and has no damage points allocated to it.</description>
+          <description>Pick a friendly Spider Swarm that has been taken down. Set that fighter up on a platform or the battlefield floor, wholly within 3&quot; of this fighter. That Spider Swarm no longer counts as being taken down and has no damage points allocated to it.</description>
         </rule>
         <rule id="3e00-4fe6-02cb-0645" name="⚂ [Triple] Envenomed Projectile" hidden="true">
           <modifiers>
@@ -154,7 +154,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice.  For each 4-5, allocate a number of damage points to that fighter equal to half the value of this ability (roudning up).  For each 6, allocate a number od damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate a number damage points to that fighter equal to half the value of this ability (rounding up). For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="4cdb-8d73-1a4c-40ef" name="⚃ [Quad] Gifts of the Eightfold Watcher" hidden="true">
           <modifiers>
@@ -169,19 +169,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>This fighter makes a bonus attack action.  After that attack action, roll a number of dice equal to the value of this ability.  If you rolled any 6s, the fighter targeted by that attack action cannot make move actions or disengage actions until the end of the battle round.  In additiona, if you rolled 3 or more 6s, allocate 10 damage points to that fighter.</description>
+          <description>This fighter makes a bonus attack action. After that attack action, roll a number of dice equal to the value of this ability. If you rolled any 6s, allocate 10 damage points to the fighter targeted by that attack action, and until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
         </rule>
-        <rule id="2337-c369-e9f6-a616" name="[Reaction] " hidden="true">
+        <rule id="2337-c369-e9f6-a616" name="[Reaction] Defensive Blades" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. For each hit roll of 1 or 2 from that attack action, allocate 2 damage points to the attacking fighter.</description>
         </rule>
       </rules>
     </infoGroup>

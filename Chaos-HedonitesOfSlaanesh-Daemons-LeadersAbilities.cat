@@ -498,7 +498,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 2+, until the end of this battle round, that fighter cannoy make move actions or disengage actions.</description>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a roll of 2+, until the end of the battle round, that fighter cannot make move actions or disengage actions.</description>
         </rule>
         <rule id="c295-c0c5-7f35-c50e" name="⚁ [Double] Discordant Disruption" hidden="true">
           <modifiers>
@@ -524,7 +524,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+          <description>Add 3 to this fighter’s Move characteristic for their next move action in this activation.</description>
         </rule>
         <rule id="93ba-5a61-8f2f-b524" name="⚁ [Double] Sadistic Killers" hidden="true">
           <modifiers>
@@ -539,7 +539,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add 1 to the damage point allocated by each hit or critical hit from attack actions made by this fighter this activation that have a Range characteristic of 3 or less.</description>
+          <description>Until the end of this fighter’s activation, add 1 to the damage points allocated to enemy fighters by each hit and critical hit from melee attack actions made by this fighter.</description>
         </rule>
         <rule id="6a09-a202-bb1f-fa23" name="⚂ [Triple] Impaling Strike" hidden="true">
           <modifiers>
@@ -554,7 +554,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finished a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="6239-114b-3d36-0ff9" name="⚂ [Triple] Locus of Excruciation" hidden="true">
           <modifiers>
@@ -569,9 +569,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Strength characteristics of attack actions that have a Range characteristic of 3 of less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 1 to the Strength characteristic of melee attack actions made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
         </rule>
-        <rule id="af28-347f-e99a-5178" name="⚂ [Triple] Mirror of Absorption" hidden="true">
+        <rule id="af28-347f-e99a-5178" name="⚃ [Quad] Mirror of Absorption" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -585,9 +585,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter that has not activated this battle round that is within 9&quot; of this fighter.  That fighter is said to have activated.</description>
+          <description>Pick a visible enemy fighter within 9&quot; of this fighter. That fighter cannot activate or make reactions in this battle round.</description>
         </rule>
-        <rule id="d1c3-1062-9d26-9e74" name="⚃ [Quad] Deadly Venom" hidden="true">
+        <rule id="d1c3-1062-9d26-9e74" name="⚂ [Triple] Deadly Venom" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -600,19 +600,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the ned of this fighter&apos;s activation, add half the value of this ability (rounding up) to the damage points allocated by critical hits from attack actions made by this fighter. In addition, after each attack action made by this fighter, roll a dice. On a 5_, until the end of this battle round, the target fighter cannot make move actions or disengage actions.</description>
+          <description>Add half the value of this ability (rounding up) to the damage points allocated to enemy fighters by each hit and critical hit from the next melee attack action made by this fighter in this activation.</description>
         </rule>
-        <rule id="1611-d719-544a-9db8" name="[Reaction] " hidden="true">
+        <rule id="1611-d719-544a-9db8" name="[Reaction] Shared Pain" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6414-ef3e-892f-7aef" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. For each hit roll from that attack action that hits, allocate 1 damage point to the attacking fighter. For each critical hit, allocate 2 damage points to the attacking fighter instead.</description>
         </rule>
       </rules>
     </infoGroup>

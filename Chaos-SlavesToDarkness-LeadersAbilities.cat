@@ -989,6 +989,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="b370-2c6e-f36d-2a05" name="Fellspear" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1018,6 +1021,9 @@
       <entryLinks>
         <entryLink id="9efb-8899-40e7-50e2" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="39d8-6b47-31c7-1f67" name="Doom Knight" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1559,7 +1565,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible friendly fighter within 8&quot; of this fighter.  Until the end of the battle  round, add 1 to the Strength and Attack characteristics of the next attack action made by that fighter that has a Range characteristic of 3 or less.</description>
+          <description>Pick a visible friendly fighter within 8&quot; of this fighter. Until the end of the battle round, add 1 to the Strength and Attacks characteristics of the next melee attack action made by that fighter.</description>
         </rule>
         <rule id="8471-3f16-39f2-0f4b" name="⚁ [Double] Hunting Hound" hidden="true">
           <modifiers>
@@ -1585,7 +1591,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, add the value of this ability to the strength characteristic of attack actions made by this fighter that have a range characteristic of 3 or less.</description>
+          <description>Until the end of this fighter’s activation, add the value of this ability to the Strength characteristic of melee attack actions made by this fighter.</description>
         </rule>
         <rule id="90ff-b86b-c149-d728" name="⚁ [Double] Relentless Killers" hidden="true">
           <modifiers>
@@ -1601,7 +1607,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter that has a Range characteristic of 3 or less.</description>
+          <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next melee attack action made by this fighter in this activation.</description>
         </rule>
         <rule id="79a9-e280-31e5-8a02" name="⚁ [Double] Shield Ram" hidden="true">
           <modifiers>
@@ -1616,7 +1622,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 4-5 allocate 1 damage point to that fighter. On a 6 allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a roll of 2-5, allocate 2 damage points to that fighter. On a roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="4581-5aee-d63b-612f" name="⚁ [Double] Spite-tongue Curse" hidden="true">
           <modifiers>
@@ -1647,7 +1653,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to that fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability</description>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll a dice. On a roll of 3-4, allocate 1 damage point to that fighter. On a roll of 5+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="5fef-6b7b-6643-1f15" name="⚂ [Triple] Champion of Darkness" hidden="true">
           <modifiers>
@@ -1694,7 +1700,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 2 to the Move characteristic of friendly fighters with the Mount runemark that start their activation within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 2 to the Move characteristic of friendly fighters with the Mount runemark and a Toughness characteristic of 5 or more.</description>
         </rule>
         <rule id="7812-fb9d-b7b7-1730" name="⚂ [Triple] Mask of Darkness" hidden="true">
           <modifiers>
@@ -1726,7 +1732,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 3&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by friendly fighters while they are within 3&quot; of this fighter.</description>
         </rule>
         <rule id="256f-8e81-6621-77b0" name="⚂ [Triple] Trampling Hooves" hidden="true">
           <modifiers>
@@ -1741,7 +1747,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="d00b-d825-d11c-f092" name="⚃ [Quad] Deathblow" hidden="true">
           <modifiers>
@@ -1757,7 +1763,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add the value of this ability to the damage points allocated to enemy fighters by each hit or critical hit from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+          <description>Add the value of this ability to the damage points allocated to enemy fighters by each hit and critical hit from the next melee attack action made by this fighter in this activation.</description>
         </rule>
         <rule id="180d-743a-6d32-061a" name="⚃ [Quad] Desecration" hidden="true">
           <modifiers>
@@ -1787,7 +1793,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add half the value of this ability (rounding up) to the attacks characteristic of attack actions made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 3 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
         </rule>
         <rule id="457a-9eb7-e4e7-7c08" name="⚃ [Quad] Oathsworn Attack" hidden="true">
           <modifiers>
@@ -1804,17 +1810,15 @@
           </modifiers>
           <description>This fighter makes a bonus attack action. In addition, add half the value of this ability (rounding up) to the Attack characteristic of that bonus attack action.</description>
         </rule>
-        <rule id="c23a-520f-1b2a-9e6c" name="[Reaction] " hidden="true">
+        <rule id="c23a-520f-1b2a-9e6c" name="[Reaction] Boon of Fortitude" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f8e-6dd7-a9af-54b8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. Remove 3 damage points allocated to this fighter.</description>
         </rule>
       </rules>
     </infoGroup>

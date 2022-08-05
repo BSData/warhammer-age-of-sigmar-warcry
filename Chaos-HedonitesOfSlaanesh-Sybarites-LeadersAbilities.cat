@@ -871,7 +871,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add 1 to the damage points allocated by each hit and critical hit from attack actions made by this fighter this activation that have a Range characteristic of 3 or less.</description>
+          <description>Until the end of this fighter’s activation, add 1 to the damage points allocated to enemy fighters by each hit and critical hit from melee attack actions made by this fighter.</description>
         </rule>
         <rule id="355f-25ac-eb98-b6b5" name="⚁ [Double] Slaves to Impulse" hidden="true">
           <modifiers>
@@ -886,7 +886,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them.  This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
+          <description>A fighter can only use this ability if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
         </rule>
         <rule id="3c07-55ec-c18e-7cb2" name="⚁ [Double] Unrivalled Velocity" hidden="true">
           <modifiers>
@@ -896,7 +896,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Move characteristic of this fighter for the next move action they make this activation.</description>
+          <description>Add 3 to this fighter’s Move characteristic for their next move action in this activation.</description>
         </rule>
         <rule id="ad1f-78dc-fc2b-e6a5" name="⚁ [Double] Violence and Excess" hidden="true">
           <modifiers>
@@ -911,7 +911,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation.  This fighter makes a bonus move action or a bonus attack action.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
         </rule>
         <rule id="3d29-ed40-ece0-8c53" name="⚁ [Triple] Impaling Strike" hidden="true">
           <modifiers>
@@ -926,9 +926,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
-        <rule id="6c52-80a6-dabb-2abf" name="⚁ [Triple] Paragon of Depravity" hidden="true">
+        <rule id="6c52-80a6-dabb-2abf" name="⚃ [Quad] Paragon of Depravity" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -942,7 +942,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle  round, add the value of this ability to the Strength characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add the value of this ability to the Strength characteristic of melee attack actions made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
         </rule>
         <rule id="d205-750d-0af7-5c60" name="⚁ [Triple] Tendrils of Unnatural Smoke" hidden="true">
           <modifiers>
@@ -973,7 +973,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that targets an enemy fighter more than 3&quot; away.</description>
+          <description>Add 2 to the Attacks characteristic of the next missile attack action made by this fighter in this activation. In addition, add 1 to the Strength characteristic of that action while this fighter is within 3&quot; of a friendly fighter with the Hedonites of Slaanesh: Sybarites faction runemark and the Priest runemark.</description>
         </rule>
         <rule id="0cce-7c8f-426d-a8c0" name="⚃ [Quad] Cavalcade of Madness" hidden="true">
           <modifiers>
@@ -1003,19 +1003,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>This fighter can make a bonus move action or a bonus attack action.  In addition, each time a fighter is taken down by an attack action made by this fighter this activation, this fighter can make a further bonus move action or bonus attack action.</description>
+          <description>This fighter can make a bonus move action or a bonus attack action. In addition, each time a fighter is taken down by an attack action made by this fighter this activation, this fighter can make a further bonus move action or bonus attack action.</description>
         </rule>
-        <rule id="2841-10ce-dd83-019c" name="[Reaction] " hidden="true">
+        <rule id="2841-10ce-dd83-019c" name="[Reaction] Shared Pain" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fd1-b097-6e89-03ea" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. For each hit roll from that attack action that hits, allocate 1 damage point to the attacking fighter. For each critical hit, allocate 2 damage points to the attacking fighter instead.</description>
         </rule>
       </rules>
     </infoGroup>

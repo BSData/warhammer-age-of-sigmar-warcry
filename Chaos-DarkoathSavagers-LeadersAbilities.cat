@@ -133,7 +133,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, each time an enemy fighter is taken down, you can pick either this fighter&apos;s Toughness characteristic or the Attacks or Strength characteristic of 1 weapon this fighter is armed with. Until the end of the battle add 1 to the characteristic you picked.</description>
+          <description>Until the end of this fighter’s activation, each time an enemy fighter is taken down, you can pick either this fighter’s Toughness characteristic or the Attacks or Strength characteristic of 1 weapon this fighter is armed with. Until the end of the battle, add 1 to the characteristic you picked.</description>
         </rule>
         <rule id="2acc-feb2-1cc2-c216" name="⚁ [Double] Display of Brutality" hidden="true">
           <modifiers>
@@ -148,7 +148,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation.  This fighter makes a bonus move action or a bonux attack action.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
         </rule>
         <rule id="4643-f374-a1ff-253e" name="⚁ [Double] Visions of Glory" hidden="true">
           <modifiers>
@@ -163,7 +163,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Roll a number of dice equal to the value of this ability.  For each 5-6, you gain 1 additional wild dice that can be used from the start of the next battle round.</description>
+          <description>Roll a number of dice equal to the value of this ability. For each roll of 5+, add one wild dice to your saved wild dice.</description>
         </rule>
         <rule id="6321-7d71-7589-60b8" name="⚂ [Triple] Curse of Withering" hidden="true">
           <modifiers>
@@ -178,7 +178,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a number of dice equal to the value of this abiltiy.  For each 4-5, subtract 1 from that fighter&apos;s Toughness characteristic (to a minimum of 1) until the  end of the battle round.  For each 6, subtract 1 from that fighter&apos;s Toughness characteristic (to a minimum of 1) until the end of the battle.</description>
+          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a number of dice equal to the value of this ability. For each roll of 4-5, until the end of the battle round, subtract 1 from that fighter’s Toughness characteristic (to a minimum of 1). For each roll of 6, until the end of the battle, subtract 1 from that fighter’s Toughness characteristic (to a minimum of 1).</description>
         </rule>
         <rule id="dcb8-42ee-b821-0228" name="⚂ [Triple] Furious Rampage" hidden="true">
           <modifiers>
@@ -193,7 +193,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter.  On a 3-4, allocate 1 damage point to the fighter being rolled for.  On a 5-6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter. On a roll of 3-4, allocate 1 damage point to the fighter being rolled for. On a roll of 5+, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
         </rule>
         <rule id="2106-8347-66d4-45da" name="⚃ [Quad] Deathblow" hidden="true">
           <modifiers>
@@ -203,19 +203,17 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Add the value of this ability to the damage points allocated to enemy fighters by each hit or critical hit from the next attack action made by this fighter this activation that has a Range charactersitic of 3 or less.</description>
+          <description>Add the value of this ability to the damage points allocated to enemy fighters by each hit and critical hit from the next melee attack action made by this fighter in this activation.</description>
         </rule>
-        <rule id="707c-8067-3732-5148" name="[Reaction] " hidden="true">
+        <rule id="707c-8067-3732-5148" name="[Reaction] Instinctive Dodge" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77ef-4180-cb59-d294" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by an attack action, after the hit rolls have been made. Roll a dice for each critical hit. On a roll of 4+, that critical hit becomes a hit instead.</description>
         </rule>
       </rules>
     </infoGroup>

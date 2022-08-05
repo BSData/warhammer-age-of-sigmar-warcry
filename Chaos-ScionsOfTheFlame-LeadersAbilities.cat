@@ -88,7 +88,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up)  to the damage points allocated by critical hits from the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+          <description>Until the end of this fighter’s activation, add half the value of this ability (rounding up) to the damage points allocated to enemy fighters by each critical hit from the next melee attack action made by this fighter.</description>
         </rule>
         <rule id="8107-d063-c453-00bf" name="⚁ [Double] Fiery Might" hidden="true">
           <modifiers>
@@ -98,7 +98,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, add half the value of this ability (rounding up)  to the Strength characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+          <description>Until the end of this fighter’s activation, add half the value of this ability (rounding up) to the Strength characteristic of melee attack actions made by this fighter.</description>
         </rule>
         <rule id="d054-d3de-99e1-0636" name="⚁ [Double] Throw Fire Bomb" hidden="true">
           <modifiers>
@@ -113,7 +113,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice.  For each 4-5, allocate 1 damage point to that fighter.  For each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="0005-d949-3913-b44b" name="⚁ [Triple] Ignited Fervour" hidden="true">
           <modifiers>
@@ -128,7 +128,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 3&quot; of this fighter.</description>
         </rule>
         <rule id="4059-cd00-3181-aee4" name="⚁ [Triple] Inferno" hidden="true">
           <modifiers>
@@ -143,7 +143,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Roll 1 dice for each visible enemy fighter within 3&quot; of this fighter.  On a 4-5, allocate 1 damage point to the fighter being rolled for.  On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+          <description>Roll a dice for each visible enemy fighter within 3&quot; of this fighter. On a roll of 4+, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
         </rule>
         <rule id="8d63-259f-9e6d-2b75" name="⚃ [Quad] Engulf in Flames" hidden="true">
           <modifiers>
@@ -158,31 +158,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll 6 dice.  For each 2+, allocate a number of  damage points to that fighter equal to half the value of this ability (rounding up).  In addition, for each 6, roll 1 extra dice as above (and so on).</description>
+          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll 6 dice. For each roll of 2+, allocate a number of damage points to that fighter equal to half the value of this ability (rounding up). In addition, for each roll of 6, roll an extra dice as above (and so on). </description>
         </rule>
-        <rule id="8189-1597-6f63-efc4" name="⚀ [Reaction] " hidden="true">
+        <rule id="c0d9-dfec-be8e-c18b" name="[Reaction] Blaze of Fury" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f460-2c25-50bf-9a1f" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
-        </rule>
-        <rule id="c0d9-dfec-be8e-c18b" name="[Reaction] " hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. For each hit roll from that attack action that hits, allocate 1 damage point to the attacking fighter. For each critical hit, allocate 2 damage points to the attacking fighter instead.</description>
         </rule>
       </rules>
     </infoGroup>

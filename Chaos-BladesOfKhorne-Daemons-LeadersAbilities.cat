@@ -277,7 +277,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activiation. This fighter makes a bonus move action or a bonus attack action.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
         </rule>
         <rule id="a29d-1b9c-ee5d-d247" name="⚁ [Double] Decapitating Strike" hidden="true">
           <modifiers>
@@ -292,7 +292,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the damage points allocated by critical hits for the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+          <description>Until the end of this fighter’s activation, add half the value of this ability (rounding up) to the damage points allocated to enemy fighters by each critical hit from melee attack actions made by this fighter.</description>
         </rule>
         <rule id="edb1-be1d-0e79-272b" name="⚁ [Double] Hungry for Flesh" hidden="true">
           <modifiers>
@@ -307,7 +307,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that action.</description>
+          <description>A fighter can only use this ability if there is a visible enemy fighter within 6&quot; of them. This fighter makes a bonus move action and must finish closer to the closest visible enemy fighter than they were at the start of that move action.</description>
         </rule>
         <rule id="b922-a14b-db7c-3cb5" name="⚂ [Triple] Locus of Fury" hidden="true">
           <modifiers>
@@ -322,7 +322,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
         </rule>
         <rule id="fe8c-966a-a026-98ff" name="⚂ [Triple] Murderous Charge" hidden="true">
           <modifiers>
@@ -337,7 +337,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action with 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="ff99-3868-eea6-6abd" name="⚃ [Quad] Burning Roar" hidden="true">
           <modifiers>
@@ -352,19 +352,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a number of dice equal to the value of this ability. For each 2+, allocate 2 damage points to the fighter.</description>
+          <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a number of dice equal to the value of this ability. For each roll of 2+, allocate 2 damage points to that fighter.</description>
         </rule>
-        <rule id="c7e0-7a20-257c-4022" name="[Reaction] " hidden="true">
+        <rule id="c7e0-7a20-257c-4022" name="[Reaction] Khorne&apos;s Due" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c3c-0778-219d-f18a" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. For each hit roll from that attack action that misses, allocate 2 damage points to the attacking fighter. For each critical hit from that attack action, allocate 1 additional damage point to this fighter.</description>
         </rule>
       </rules>
     </infoGroup>

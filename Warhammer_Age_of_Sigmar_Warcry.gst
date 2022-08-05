@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="53" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="54" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="df3a-f424-e7ea-5f69" name="Tome of Champions 2021" shortName="ToC21" publisher="Tome of Champions 2021" publicationDate="March 2022"/>
     <publication id="2c2f-d4c8-7730-6c82" name="Warcry Heart of Ghur Core Rule Book" shortName="HoG Core Book" publisher="2022" publicationDate="~~~2022"/>
@@ -855,19 +855,15 @@
 ⠀</description>
     </rule>
     <rule id="3ab2-db70-3462-b5f1" name=" ⚃ [Quad] Rampage" hidden="false">
-      <description>This fighter makes a bonus move action. Then, they can make a bonus attack action.
+      <description>This fighter can make a bonus move action. Then, they can make a bonus attack action.
 ⠀</description>
     </rule>
     <rule id="0a9f-c47f-40d6-66ee" name=" ⚂ [Triple] Inspiring Presence" hidden="false">
-      <description>Pick a friendly fighter that has not activated yet this battle round and that is within 6&quot; of this fighter. You can activate that fighter immediately after the activation of this fighter ends.
-⠀</description>
+      <description>Pick a visible friendly fighter within 6&quot; of this fighter that has not activated yet this battle round.  You can activate that fighter immediately after this fighter&apos;s activation ends.
+(requires the Hero runemark to use)</description>
     </rule>
     <rule id="a9e3-c5bd-646d-b0e8" name=" ---- Universal Abilties ----" hidden="false">
       <description>⠀
-⠀</description>
-    </rule>
-    <rule id="9487-cb6a-8bf6-1f93" name=" ⚁ [Double] Onslaught" hidden="false">
-      <description>Add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less until the end of their activation.
 ⠀</description>
     </rule>
     <rule id="41cd-5582-d214-b260" name="⚄ Red Harvest Universal Abilities ⚄" hidden="true">
@@ -889,7 +885,7 @@
       </modifiers>
       <description>A fighter can use this ability only if they are within 1&quot; of the operating mechanism of a delve engine that is turned off.  That delve engine is now turned on.  Roll a dice.  You can pick a number of sluices equal to the roll to become hazardous.  Each sluice picked must either be connected to the delve engine or connected to another sluice that has already been picked.  Allocate 2D6 damage points to each fighter on any hazardous sluices.  In addition, allocate D6 damage points to each fighter that is not on but is within 3&quot; of any hazardous sluices, excluding the fighter using this ability.</description>
     </rule>
-    <rule id="2720-6e07-ee02-5918" name="⚅ Catacombs Universal Abilities ⚅" hidden="true">
+    <rule id="2720-6e07-ee02-5918" name="⚄ Catacombs Universal Abilities ⚄" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -898,7 +894,7 @@
         </modifier>
       </modifiers>
     </rule>
-    <rule id="b8a4-8813-32d1-e867" name="⚅  ⚁ [Double] Lurk in the Shadows ⚅" hidden="true">
+    <rule id="b8a4-8813-32d1-e867" name="⚄  ⚁ [Double] Lurk in the Shadows ⚄" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -908,7 +904,7 @@
       </modifiers>
       <description>Until the end of the battle round, this fighter is not visible to enemy fighters more than 6&quot; away if this fighter is within 1&quot; of a dungeon wall.</description>
     </rule>
-    <rule id="9f7a-5cd5-de6c-787f" name="⚅ ⚁ [Double] Breach Door ⚅" hidden="true">
+    <rule id="9f7a-5cd5-de6c-787f" name="⚄ ⚁ [Double] Breach Door ⚄" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -918,7 +914,7 @@
       </modifiers>
       <description>Only fighters that do not have the Nighthaunt runemark can use this ability.  A fighter can use this ability only if they are within 1&quot; of a sealed dungeon door.  Pick 1 weapon from this fighter&apos;s fighter card that has a Range characteristic of 3 or less and roll a number of dice equal to the value of this ability.  Add the number of dice that scored a 2+ to the Strength characteristic of the weapon you picked.  If the score is 6 or more, that dungeon door is opened.</description>
     </rule>
-    <rule id="58e2-11d8-d1a0-e03f" name="⚅ ⚂ [Triple] Push into Pit ⚅" hidden="true">
+    <rule id="58e2-11d8-d1a0-e03f" name="⚄ ⚂ [Triple] Push into Pit ⚄" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -957,6 +953,20 @@
       </modifiers>
       <description>A fighter that is within 1&quot; of a rope bridge but not on it can attempt to destroy it as an action.  If they do so, roll 3 dice and add 1 to the score of each roll if the fighter is a monster or has any melee weapons with a Strength characterisitc of 5 or greater.  if 1 roll scores 6+, the rope bridge is damaged.  If 2 or more rolls score 6+, the rope bridge is destroyed.</description>
     </rule>
+    <rule id="bbaf-62e3-6c9e-c576" name="[Reaction] Counter" hidden="false">
+      <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made.  For each hit roll from that attack action that misses, allocate 1 damage point to the attacking fighter.  For each hit roll of 1, allocate 2 damage points to the attacking fighter instead.</description>
+    </rule>
+    <rule id="7b34-8342-cff8-30db" name=" ⚁ [Double] Onslaught" hidden="false">
+      <description>Add 1 to the Attacks characteristic of melee attack actions made by this fighter until the end of their activation.
+⠀</description>
+    </rule>
+    <rule id="716b-5e1c-63b2-aa21" name="[Reaction] Strike Them Down" hidden="false">
+      <description>A fighter can make this reaction when a visible enemy fighter within 1&quot; of them makes a disengage action but before that fighter moves away.  Roll a dice.  On a 4+, allocate D6 damage points to that enemy fighter.</description>
+    </rule>
+    <rule id="22f5-947a-3962-51bd" name="[Reaction] Take Cover" hidden="false">
+      <description>A fighter that is in cover can make this reaction after they are targeted by a missile attack action but before the hit rolls are made.  After the hit rolls have been made, roll a dice for each critical hit.  On a 4+, that critical hit becomes a hit instead.  Fighters with the Mount runemark cannot make this reaction.</description>
+    </rule>
+    <rule id="10ae-33a9-aac0-577f" name="[-Universal Reactions-]" hidden="false"/>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="936c-93b8-e91d-8998" name="Monster Hunting Abilities" hidden="false" collective="false" import="true" type="upgrade">

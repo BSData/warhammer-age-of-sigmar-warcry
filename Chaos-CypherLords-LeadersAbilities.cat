@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d9e1-8075-c6ae-7f95" name="Chaos - Cypher Lords - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d9e1-8075-c6ae-7f95" name="Chaos - Cypher Lords - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="80a0-280d-445d-b868" name="Cypher Leaders" hidden="false"/>
     <categoryEntry id="e4be-965e-5895-3468" name="Cypher Lords" hidden="false"/>
@@ -88,7 +88,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;.</description>
+          <description>Until the end of this fighter’s activation, add 1 to their Move characteristic, and they can fly when making move actions; however, when flying, they cannot move vertically upwards more than 3&quot;.</description>
         </rule>
         <rule id="8ff9-8cdc-2637-32e8" name="⚁ [Double] Low Sweeping Blow" hidden="true">
           <modifiers>
@@ -103,7 +103,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Roll 1 dice for each visible enemy fighter within 2&quot; of this fighter. On a 4-5, allocate 1 damage point to the fighter being rolled for. On a 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
+          <description>Roll a dice for each visible enemy fighter within 2&quot; of this fighter. On a roll of 4-5, allocate 1 damage point to the fighter being rolled for. On a roll of 6, allocate a number of damage points to the fighter being rolled for equal to the value of this ability.</description>
         </rule>
         <rule id="48bf-b527-8b7f-afef" name="⚁ [Double] Throwing Stars and Chakrams" hidden="true">
           <modifiers>
@@ -128,7 +128,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a friendly fighter with the Minion runemark that is within 12&quot; of this fighter. Remove that fighter from the battlefield and then immediately set them up anywhere on the battlefield within a number of inches of this fighter equal to the value of this ability.</description>
+          <description>Pick a friendly fighter with the Cypher Lords faction runemark and the Minion runemark that is within 12&quot; of this fighter. Remove that fighter from the battlefield, then set that fighter up on a platform or the battlefield floor, wholly within a number of inches of this fighter equal to the value of this ability.</description>
         </rule>
         <rule id="7201-5955-8939-071b" name="⚂ [Triple] Shattered Gloom Globe" hidden="true">
           <modifiers>
@@ -143,7 +143,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of the attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they are within 6&quot; of this fighter.</description>
         </rule>
         <rule id="5983-15f4-86f4-cac2" name="⚃ [Quad] Spinning Somersault Strike" hidden="true">
           <modifiers>
@@ -153,19 +153,17 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>This fighter can fly when making move actions until the end of their activation; however, when flying, they cannot move vertically upwards more than 3&quot;. In addition, this fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
+          <description>Until the end of this fighter’s activation, they can fly when making move actions; however, when flying, they cannot move vertically upwards more than 3&quot;. In addition, this fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
         </rule>
-        <rule id="dd49-e4d4-7764-e106" name="[Reaction] " hidden="true">
+        <rule id="dd49-e4d4-7764-e106" name="[Reaction] Unexpected Assault" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4be-965e-5895-3468" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after an enemy fighter finishes a move action visible to this fighter and within 3&quot; of this fighter. Pick another friendly fighter with the Cypher Lords faction runemark and the Mystic runemark. That fighter makes a bonus move action. After that move action that fighter must be within 1&quot; of the enemy fighter that made the move action.</description>
         </rule>
       </rules>
     </infoGroup>

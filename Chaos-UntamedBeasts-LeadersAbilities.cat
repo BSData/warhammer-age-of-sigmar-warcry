@@ -87,7 +87,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or bonus attack action.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
         </rule>
         <rule id="9cae-dba3-be65-d66b" name="⚁ [Double] Beastmaster" hidden="true">
           <modifiers>
@@ -102,7 +102,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible friendly fighter with the Beast runemakr within 4&quot; of this fighter. That fighter makes a bonus attack action.</description>
+          <description>Pick a visible friendly fighter with the Beast runemark within 4&quot; of this fighter. That fighter makes a bonus attack action.</description>
         </rule>
         <rule id="4a0f-4602-ac53-2c49" name="⚁ [Double] Savage Fury" hidden="true">
           <modifiers>
@@ -112,7 +112,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Add 1 to the Move chracteristic of this fighter for the next move action they make this activation, and add 1 to the Attacks characteristic of the next attack action they make this activation.</description>
+          <description>Add 1 to the Move characteristic of this fighter for the next move action they make in this activation, and add 1 to the Attacks characteristic of the next attack action made by this fighter in this activation.</description>
         </rule>
         <rule id="62c7-4d3f-d307-25b4" name="⚂ [Triple] Harpoon Snag" hidden="true">
           <modifiers>
@@ -127,7 +127,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>This fighter makes a bonus attack action. After that attack action, the fighter targeted by that attack action makes a bonus move action directly towards this fighter, as if they were jumping, a number of inches equal to the value of this ability.</description>
+          <description>This fighter makes a bonus attack action. After that attack action, the target of that attack action makes a bonus move action directly towards this fighter, as if they were jumping, a number of inches equal to the value of this ability. When doing so, they can move away from enemy fighters within 1&quot; at the start of that move action.</description>
         </rule>
         <rule id="ad0b-3188-d8d3-bbbf" name="⚂ [Triple] Pounce" hidden="true">
           <modifiers>
@@ -142,7 +142,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="aca1-1a08-4eac-648c" name="⚃ [Quad] Unleash the Beast" hidden="true">
           <modifiers>
@@ -152,19 +152,17 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks and Strength characteristic of attack actions made by this fighter that have a Ranger characteristic of 3 or less.</description>
+          <description>Until the end of the battle round, add half the value of this ability (rounding up) to the Attacks and Strength characteristics of melee attack actions made by this fighter.</description>
         </rule>
-        <rule id="dd00-ce03-dc2d-40f4" name="[Reaction] " hidden="true">
+        <rule id="dd00-ce03-dc2d-40f4" name="[Reaction] Brute Resilience" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e8b-afc8-1311-4158" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action but before the hit rolls are made. Subtract 1 from the damage points allocated to this fighter by each hit from that attack action (to a minimum of 1).</description>
         </rule>
       </rules>
     </infoGroup>

@@ -100,7 +100,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll 1 dice. On a 3+, that fighter cannot make move actions or disengage actions this battle round.</description>
+          <description>Pick a visible enemy fighter within 3&quot; of this fighter and roll a dice. On a roll of 3+, until the end of the battle round, that enemy fighter cannot make move actions or disengage actions.</description>
         </rule>
         <rule id="70fe-934c-eb8f-9435" name="⚁ [Double] Pit Fighter" hidden="true">
           <modifiers>
@@ -125,7 +125,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action, pick a visible enemy fighter within 1&quot; of this fighter and roll 1 dice. On a 4-5, allocate 1 damage point to that fighter. On a 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a roll of 2-5, allocate 2 damage points to that fighter. On a roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="400b-a7f7-1314-756c" name="⚂ [Triple] Champion of the Warpits" hidden="true">
           <modifiers>
@@ -140,7 +140,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attack characteristic of attack actions made by visible enemy friendly fighters within 6&quot; of this fighter.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of attack actions made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
         </rule>
         <rule id="665c-f6eb-336e-a275" name="⚂ [Triple] Readied Stance" hidden="true">
           <modifiers>
@@ -170,19 +170,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll 1 dice. On a 3-4, allocate a number of damage points to that fighter equal to the value of this ability. On a 5-6, allocate a number of damage points to that fighter equal to double the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a roll of 2+, allocate 8 damage points to that fighter.</description>
         </rule>
-        <rule id="f871-5826-fe38-4f90" name="[Reaction] " hidden="true">
+        <rule id="f871-5826-fe38-4f90" name="[Reaction] Gladiatorial Display" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b386-b2d9-fed7-4798" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. If none of the hit rolls from that attack action result in a critical hit, allocate 4 damage points to the attacking fighter.</description>
         </rule>
       </rules>
     </infoGroup>

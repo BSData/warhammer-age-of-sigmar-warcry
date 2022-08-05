@@ -373,7 +373,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Move characteristic of move actions made by friendly fighters that start within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 1 to the Move characteristic of friendly fighters while they make a move action that starts within 7&quot; of this fighter.</description>
         </rule>
         <rule id="0fd7-4dab-6060-384e" name="⚁ [Double] Disgustingly Resilent" hidden="true">
           <modifiers>
@@ -383,7 +383,8 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Roll a number of dice equal to the value of this ability. For each 4+, remove 1 damage point allocated to this fighter.</description>
+          <description>Roll a number of dice equal to the value of this ability. For each roll of 3+, remove up to 1 damage point allocated to this fighter.
+</description>
         </rule>
         <rule id="e9b3-e1fc-824b-6a97" name="⚁ [Double] Venomous Sting" hidden="true">
           <modifiers>
@@ -398,7 +399,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll ... On a 2+, until the end of this battle round, that fighter cannot make move actions or disengage actions.</description>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a roll of 2+, until the end of this battle round, that fighter cannot make move actions or disengage actions.</description>
         </rule>
         <rule id="d937-2bb1-25b8-eba8" name="⚂ [Triple] Cloud of Flies" hidden="true">
           <modifiers>
@@ -428,9 +429,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Strength characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 1 to the Strength characteristic of melee attack actions made by visible friendly fighters while they are within 7&quot; of this fighter.</description>
         </rule>
-        <rule id="de94-aa2f-e6ff-f925" name="⚂ [Triple] Menacing Overseer" hidden="true">
+        <rule id="de94-aa2f-e6ff-f925" name="⚃ [Quad] Menacing Overseer" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -444,9 +445,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by friendly fighters while they are within 9&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 9&quot; of this fighter.</description>
         </rule>
-        <rule id="c594-8e58-7749-9007" name="⚃ [Quad] Disgusting Sneeze" hidden="true">
+        <rule id="c594-8e58-7749-9007" name="⚂ [Triple] Disgusting Sneeze" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -460,7 +461,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 2+, allocate 2 damage points to that fighter.</description>
+          <description>Pick a visible enemy fighter within 7&quot; of this fighter and roll a number of dice equal to the value of this ability. For each roll of 2+, allocate 1 damage point to that fighter. </description>
         </rule>
         <rule id="cdc4-a7a4-a72a-7f00" name="⚃ [Quad] Endless Swarm" hidden="true">
           <modifiers>
@@ -475,19 +476,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Remove a number of damage points allocated to this fighter equal to double the value of this ability.</description>
+          <description>Remove a number of damage points allocated to this fighter up to double the value of this ability.</description>
         </rule>
-        <rule id="1650-724d-d66c-9248" name="[Reaction] " hidden="true">
+        <rule id="1650-724d-d66c-9248" name="[Reaction] Impossible to Wound" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="857a-2cf7-1707-66b9" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action but before the hit rolls are made. Subtract 1 from the damage points allocated to this fighter by each hit from that attack action (to a minimum of 1).</description>
         </rule>
       </rules>
     </infoGroup>

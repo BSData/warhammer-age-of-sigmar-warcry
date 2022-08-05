@@ -706,6 +706,9 @@
       <entryLinks>
         <entryLink id="74fa-5cdc-88ad-e8a2" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5d02-466c-067e-453c" name="Fatemaster" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -846,6 +849,9 @@
       <entryLinks>
         <entryLink id="df29-78ff-79c0-9aef" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d816-0e65-b844-f8ca" name="Kairic Adept" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1255,7 +1261,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if 15 or more damage points have been allocated to them.  Until the end of the battle, add 1 to the Attacks characteristic of attack actions made by this fighter that have a Range characteristic of 3 or less.</description>
+          <description>A fighter can only use this ability if 15 or more damage points have been allocated to them. Until the end of the battle, add 1 to the Attacks characteristic of melee attack actions made by this fighter.</description>
         </rule>
         <rule id="b6ed-67e6-3727-4ac3" name="⚁ [Double] Locus of Sorcery" hidden="true">
           <modifiers>
@@ -1270,7 +1276,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Strength characteristic of the next attack action made by this fighter this activation that targets an enemy fighter more than 3&quot; away.</description>
+          <description>Add half the value of this ability (rounding up) to the Strength characteristic of the next missile attack action made by this fighter in this activation.</description>
         </rule>
         <rule id="85e3-9ef4-d3cf-974f" name="⚁ [Double] Split Into Brimstone Horrors" hidden="true">
           <modifiers>
@@ -1296,7 +1302,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Add 1 to the Attacks and Strength characteristics of the next attack action made by this fighter this activation that has a Range characteristic of 3 or less.</description>
+          <description>Add 1 to the Attacks and Strength characteristics of the next melee attack action made by this fighter in this activation.</description>
         </rule>
         <rule id="7cc3-a292-19a9-7f3f" name="⚁ [Double] Vicious Beak" hidden="true">
           <modifiers>
@@ -1311,7 +1317,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each 4+, allocate 1 damage to that fighter.</description>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each roll of 4+, allocate 1 damage point to that fighter.</description>
         </rule>
         <rule id="0e51-25b3-381f-fe33" name="⚁ [Double] Vulcharc" hidden="true">
           <modifiers>
@@ -1326,7 +1332,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick an enemy fighter within 20&quot; of this fighter.  Until the end of the battle round, that fighter cannot make disengage actions.</description>
+          <description>Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round, that fighter cannot make disengage actions.</description>
         </rule>
         <rule id="8017-a167-2535-248e" name="⚂ [Triple] Cleaving Strike" hidden="true">
           <modifiers>
@@ -1357,7 +1363,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from the next attackion made by this fighter this activation that has a Range characteristic of 3 or less and that targets an enemy fighter that has activated this battle round.</description>
+          <description>Add the value of this ability to the damage points allocated to enemy fighters by each hit and critical hit from the next melee attack action made by this fighter in this activation that targets an enemy fighter that has activated this battle round.</description>
         </rule>
         <rule id="7c2d-0539-6124-73a5" name="⚂ [Triple] Master of Destiny" hidden="true">
           <modifiers>
@@ -1388,7 +1394,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighterand roll a number of dice equal to the value of this ability.  On a 2-5, allocate 1 damage point to that fighter.  On a 6, allocate 3 damage points to that fighter.</description>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability. For each roll of 2-5, allocate 1 damage point to that fighter. For each roll of 6, allocate 3 damage points to that fighter.</description>
         </rule>
         <rule id="f64d-84eb-9f9e-61fd" name="⚃ [Quad] Empowered Bolts" hidden="true">
           <modifiers>
@@ -1405,7 +1411,7 @@
           </modifiers>
           <description>This fighter makes a bonus attack action. In addition, if that bonus attack action has the Blast runemark, add half the value of this ablilty (rounding up) to the Attacks and Strength characteristics of that bonus attack action. </description>
         </rule>
-        <rule id="73c8-f15b-37ba-a349" name="⚃ [Quad] Guided by the Future" hidden="true">
+        <rule id="73c8-f15b-37ba-a349" name="⚂ [Triple] Guided by the Future" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -1418,19 +1424,33 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the damage points allocated by each hit or critical hit from the next attack action made by this fighter this activation that targets an enemy fighter that has not activated this battle round.</description>
+          <description>Add half the value of this ability (rounding up) to the damage points allocated to enemy fighters by each hit and critical hit from the next attack action made by this fighter in this activation that targets an enemy fighter that has not activated this battle round.</description>
         </rule>
-        <rule id="09a4-b937-3f57-9317" name="[Reaction] " hidden="true">
+        <rule id="09a4-b937-3f57-9317" name="[Reaction] Twist of Fate" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62ca-f693-32a9-05fa" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by an attack action but before the hit rolls are made. Pick one of the hit rolls, and change the value of one of your [doubles] to that value.</description>
+        </rule>
+        <rule id="ed9b-de42-cf8a-5bf2" name="⚃ [Quad] Lord of Fate" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62ca-f693-32a9-05fa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c8f-bdce-f950-c13e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 9&quot; of this fighter.</description>
         </rule>
       </rules>
     </infoGroup>

@@ -97,7 +97,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round, that fighter cannot make disengage actions.</description>
+          <description>Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round, that fighter cannot make disengage actions.Pick an enemy fighter within 20&quot; of this fighter. Until the end of the battle round, that fighter cannot make disengage actions.</description>
         </rule>
         <rule id="865b-b70a-d442-b0f0" name="⚁ [Double] Raven Dart" hidden="true">
           <modifiers>
@@ -111,7 +111,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 8&quot; of this fighter and rol a dice. On a 3-5, allocate 1 damage point to that fighter. On a 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a dice. On a roll of 2-4, allocate 1 damage point to that fighter. On a roll of 5+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="8307-9867-0e64-b515" name="⚁ [Double] Swift Climb" hidden="true">
           <modifiers>
@@ -130,7 +130,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, do not count the vertical distance moved when this fighter is climbing.</description>
+          <description>Until the end of this fighter’s activation, do not count the vertical distance moved when this fighter is climbing.</description>
         </rule>
         <rule id="4f11-ae3b-5399-545f" name="⚂ [Triple] Grisly Trophy" hidden="true">
           <modifiers>
@@ -149,7 +149,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a range characteristic of 3 or less made by visible friendly fighters while they are within 6&quot; of this fighter.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 9&quot; of this fighter.</description>
         </rule>
         <rule id="fb10-8dec-2726-b06f" name="⚂ [Triple] Swooping Attack" hidden="true">
           <modifiers>
@@ -182,7 +182,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. Add 1 to the Strength characteristiic of that attack action if the fighter finished the move action 3&quot; or more vertically lower than their starting position.</description>
+          <description>This fighter makes a bonus move action. Then, they can make a bonus attack action. Add 1 to the Strength characteristic of that attack action if the fighter finished the move action 3&quot; or more vertically lower than their starting position. </description>
         </rule>
         <rule id="3883-2727-13bc-08db" name="⚅ ⚁ [Double] Wall Run  ⚅" hidden="true">
           <modifiers>
@@ -222,17 +222,15 @@
           </modifiers>
           <description>This fighter uses the &quot;Wall Run&quot; ability, then makes a bonus move action, and can then make a bonus attack action.</description>
         </rule>
-        <rule id="6948-72d6-f980-e18c" name="[Reaction] " hidden="true">
+        <rule id="6948-72d6-f980-e18c" name="[Reaction] Raptor Strike" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53c1-4321-81c5-6ee8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after an enemy fighter finishes a move action visible to this fighter, within 5&quot; horizontally and vertically lower than this fighter. This fighter makes a bonus move action and must finish closer to that enemy fighter than they were at the start of that move action. If this fighter ends that move within 1&quot; of that enemy fighter, this fighter does not suffer impact damage and that enemy fighter suffers impact damage.</description>
         </rule>
       </rules>
     </infoGroup>

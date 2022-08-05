@@ -850,6 +850,9 @@
       <entryLinks>
         <entryLink id="72ce-f043-6e2c-3cbf" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c89a-7a43-83ab-4dcf" name="Grashrak Fellhoof" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1165,7 +1168,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been take down by an attack action made by them this activation. Remove a number of damage points allocated to this fighter equal to the value of this ability.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Remove a number of damage points allocated to this fighter up to the value of this ability.</description>
         </rule>
         <rule id="7712-5aff-79d8-6076" name="⚁ [Double] Brayherd Ambush" hidden="true">
           <modifiers>
@@ -1175,7 +1178,7 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if it is the first battle round. This fighter can make a bonus move action a number of inches equal to the value of this ability.</description>
+          <description>A fighter can only use this ability if it is the first battle round. This fighter can make a bonus move action up to a number of inches equal to the value of this ability.</description>
         </rule>
         <rule id="cc68-e414-d23e-3878" name="⚁ [Double] Devolve" hidden="true">
           <modifiers>
@@ -1191,7 +1194,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 6&quot; of this fighter.  That fighter makes a bonus move action directly towards this fighter, as if they were jumping a number of inches equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 6&quot; of this fighter. That enemy fighter makes a bonus move action directly towards this fighter, as if they were jumping, a number of inches equal to the value of this ability. When doing so, they can move away from enemy fighters within 1&quot; at the start of that move action. </description>
         </rule>
         <rule id="b797-fce1-2f47-833a" name="⚁ [Double] Rip, Gore and Tear!" hidden="true">
           <modifiers>
@@ -1206,7 +1209,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if an enemy fighter has been take down by an ttack action made by them this activation. This fighter makes a bonus move action or bonus attack action.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
         </rule>
         <rule id="d0b7-c6a6-10b0-d3b5" name="⚂ [Triple]  Bestial Charge" hidden="true">
           <modifiers>
@@ -1221,7 +1224,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="86bf-e50d-f26e-2a83" name="⚂ [Triple]  Grisly Trophy" hidden="true">
           <modifiers>
@@ -1237,7 +1240,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this abiltiy only if an enemy fighter has been taken down by an attack action made by them this activation.  Until the end of the battle round, add 1 to the Attacks characteristic of attack actions that have a Range characteristic of 3 or less made by visible friendly fighters while they are within 9&quot; of this fighter.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 9&quot; of this fighter.</description>
         </rule>
         <rule id="8aa0-15fc-248a-bbd6" name="⚂ [Triple]  Petrifying Gaze" hidden="true">
           <modifiers>
@@ -1252,7 +1255,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick 1 visible enemy fighter within 8&quot; of this fighter and roll a dice.  On a 2+, allocate a number of damage points to that fighter equal to the roll.  In addition, subtract 1 from the move characteristic (to a minimum of 1) of that fighter until the end of the battle round.</description>
+          <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a dice. On a roll of 2+, allocate a number of damage points to that fighter equal to the roll. In addition, until the end of the battle round, subtract 1 from the Move characteristic of that fighter (to a minimum of 1).</description>
         </rule>
         <rule id="e3b9-eb3c-34e5-675f" name="⚂ [Triple] Volley of Arrows" hidden="true">
           <modifiers>
@@ -1267,9 +1270,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next attack action made by this fighter this activation that targets an enemy fighter more than 3&quot; away.</description>
+          <description>Add half the value of this ability (rounding up) to the Attacks characteristic of the next missile attack action made by this fighter in this activation.</description>
         </rule>
-        <rule id="a3d4-08fe-bb2e-5a93" name="⚃ [Quad] Bring Down the Storm" hidden="true">
+        <rule id="a3d4-08fe-bb2e-5a93" name="⚂ [Triple] Bring Down the Storm" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -1282,7 +1285,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick 1 visible enemy fighter within 20&quot; of this fighter and roll 1 dice. On a 2+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 20&quot; of this fighter and roll a dice. On a roll of 2+, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="cec8-647f-4904-64aa" name="⚃ [Quad] Empowering Lightning" hidden="true">
           <modifiers>
@@ -1298,7 +1301,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>For each friendly fighter with the Beasts of Chaos and Destroyer runemarks within 9&quot; of this fighter, you can remove a number of damage points allocated to that fighter equal to the value of this ability.</description>
+          <description>Remove a number of damage points up to the value of this ability allocated to each friendly fighter with both the Beasts of Chaos faction runemark and the Destroyer runemark within 9&quot; of this fighter.</description>
         </rule>
         <rule id="8a72-88f0-298c-8d40" name="⚃ [Quad] Savage Bolt" hidden="true">
           <modifiers>
@@ -1316,17 +1319,15 @@
           </modifiers>
           <description>Pick a visible enemy fighter within 12&quot; of this fighter.  Allocate a number of damage points to that fighter equal to the value of this ability. Then, roll a die. On a 2+, that fighter cannot activate this round.</description>
         </rule>
-        <rule id="365b-2761-d38a-d5dd" name="[Reaction] " hidden="true">
+        <rule id="365b-2761-d38a-d5dd" name="[Reaction] Brute Resilience" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cda-3b9c-10f5-d608" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action but before the hit rolls are made. Subtract 1 from the damage points allocated to this fighter by each hit from that attack action (to a minimum of 1).</description>
         </rule>
       </rules>
     </infoGroup>

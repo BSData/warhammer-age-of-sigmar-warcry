@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b475-490a-59ff-4abe" name="Splintered Leaders" hidden="false"/>
     <categoryEntry id="f03c-f314-5dde-e380" name="Splintered Fang" hidden="false"/>
@@ -115,7 +115,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a 3-4, allocate 1 damage point to the fighter. On a 5-6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a dice. On a roll of 3+, allocate 3 damage points to that fighter.</description>
         </rule>
         <rule id="f9de-a6ca-9f27-01e7" name="⚁ [Double] Poisoned Weapon" hidden="true">
           <modifiers>
@@ -129,7 +129,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, the Strength characteristic of attack actions made by this fighter count as being higher than the target&apos;s Toughness characteristic.</description>
+          <description>Until the end of this fighter’s activation, the Strength characteristic of attack actions made by this fighter count as being higher than the target’s Toughness characteristic.</description>
         </rule>
         <rule id="11e0-8576-06b1-30d5" name="⚂ [Triple] Relentless Killer" hidden="true">
           <modifiers>
@@ -148,7 +148,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use tis ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus attack action.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
         </rule>
         <rule id="9397-bda7-74d8-b8ab" name="⚂ [Triple] Snake Charmer" hidden="true">
           <modifiers>
@@ -181,19 +181,17 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of this fighter&apos;s activation, add the value of this ability to the damage points allocated by cirtical hits from the attack actions made by this fighter, and after each attack action made by this fighter, roll a dice. On a 5-6, until the end of the battle round the target fighter cannot make move actions or disengage actions.</description>
+          <description>Until the end of this fighter’s activation, add the value of this ability to the damage points allocated to enemy fighters by each critical hit from attack actions made by this fighter. In addition, until the end of this fighter’s activation, after each attack action made by this fighter, roll a dice. On a roll of 5+, until the end of this battle round, the target fighter cannot make move actions or disengage actions.</description>
         </rule>
-        <rule id="0ba0-48a6-ee64-b637" name="[Reaction] " hidden="true">
+        <rule id="0ba0-48a6-ee64-b637" name="[Reaction] Vicious Riposte" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f03c-f314-5dde-e380" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. For each hit roll of 1 or 2 from that attack action, allocate 2 damage points to the attacking fighter.</description>
         </rule>
       </rules>
     </infoGroup>

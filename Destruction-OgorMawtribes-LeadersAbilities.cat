@@ -1420,7 +1420,7 @@
           <description>A fighter can use this ability only if they are within 2&quot; of a friendly Hrothgorn Mantrapper.  that Hrothgorn Mantrapper makes a bonus attack action that has a Ranged Weapon runemark.
 ⠀</description>
         </rule>
-        <rule id="e533-db2a-be5c-16d0" name="⚂ [Triple] Sneaky Traps" hidden="true">
+        <rule id="e533-db2a-be5c-16d0" name="⚁ [Double] Sneaky Traps" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -1469,9 +1469,14 @@
         <rule id="c3f7-8de0-77b3-8174" name="[Reaction] Quick Bite" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d08-b4a9-1a59-8833" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. If none of the hit rolls from that attack action result in a critical hit, allocate 3 damage points to the attacking fighter, and remove up to 3 damage points allocated to this fighter.</description>

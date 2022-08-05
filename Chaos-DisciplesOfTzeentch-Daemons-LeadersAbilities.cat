@@ -308,6 +308,9 @@
       <entryLinks>
         <entryLink id="456a-7cde-51a3-8f40" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8dbc-7d03-af65-f8c1" name="Changecaster" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -417,6 +420,9 @@
       <entryLinks>
         <entryLink id="76c5-c22f-f151-5f07" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
@@ -441,7 +447,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll 2 dice.  For each 4-5, allocate 1 damage point to that fighter.  For each 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+          <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="c106-0d0c-804b-9dea" name="⚁ [Double] Locus of Sorcery" hidden="true">
           <modifiers>
@@ -451,9 +457,9 @@
               </conditions>
             </modifier>
           </modifiers>
-          <description>Add half the value of this ability (rounding up) to the Strength characteristics of the next attack action made by this fighter this activation that has a range characteristic of 3 or more.</description>
+          <description>Add half the value of this ability (rounding up) to the Strength characteristic of the next missile attack action made by this fighter in this activation.</description>
         </rule>
-        <rule id="979c-e1a1-359e-a8d9" name="⚁ [Double] Split" hidden="true">
+        <rule id="979c-e1a1-359e-a8d9" name="[Reaction] Split" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -466,9 +472,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if they have 1 or more damage points allocated to them. Set up 2 new fighters with the Disciples of Tzeentch: Daemons runemark and the Warrior runemark on the battlefield within 3&quot; of this fighter. Then, this fighter is taken down. In a campaign battle, do no make an injury roll for this fighter.</description>
+          <description>A fighter can make this reaction when they are targeted by an attack action, after the damage is totalled but before it is allocated to this fighter. Set up 2 new fighters with the Disciples of Tzeentch: Daemons faction runemark and the Warrior runemark on the battlefield within 3&quot; of this fighter. Then, this fighter is taken down. In a campaign battle, do not make an injury roll for this fighter.</description>
         </rule>
-        <rule id="ceb7-55cd-8aa0-c645" name="⚁ [Double] Split Again" hidden="true">
+        <rule id="ceb7-55cd-8aa0-c645" name="[Reaction] Split Again" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -481,7 +487,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can use this ability only if they have 1 or more damage points allocated to them. Set up 1 new fighter with the Disciples of Tzeentch Daemons runemark with the Minion runemark on the battlefield within 3&quot; of this fighter. Then, this fighter is taken down. In a campaign battle, do not make an injry roll for this fighter.</description>
+          <description>A fighter can make this reaction when they are targeted by an attack action, after the damage is totalled but before it is allocated to this fighter. Set up 1 new fighter with the Disciples of Tzeentch: Daemons faction runemark and the Minion runemark on the battlefield within 3&quot; of this fighter. Then, this fighter is taken down. In a campaign battle, do not make an injury roll for this fighter.</description>
         </rule>
         <rule id="4b9c-48fc-ae45-578b" name="⚂ [Triple] Latching Bite" hidden="true">
           <modifiers>
@@ -496,7 +502,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Add the value of this ability to the Strength characteristic of the next attack action made by this fighter this activation. In addition, the target fighter cannoy make move or disengage actions until the end of the battle round.</description>
+          <description>Add half the value of this ability (rounding up) to the Strength characteristic of the next attack action made by this fighter in this activation. In addition, until the end of the battle round, the target fighter cannot make move or disengage actions.</description>
         </rule>
         <rule id="e2fc-58e3-c864-d9d5" name="⚂ [Triple] Master of Destiny" hidden="true">
           <modifiers>
@@ -511,7 +517,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, add the value of this ability to the value of other abilities (to a maximum of 6) used by friendly fighters within 6&quot; of this fighter.</description>
+          <description>Until the end of the battle round, add the value of this ability to the value of other abilities (to a maximum of 6) used by friendly fighters within 12&quot; of this fighter.</description>
         </rule>
         <rule id="60cc-30d3-effe-561d" name="⚂ [Triple] Pink Fire" hidden="true">
           <modifiers>
@@ -527,7 +533,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy within 9&quot; of this fighter and roll 9 dice.  For each 3+, allocate 1 damage point to that fighter.</description>
+          <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll 9 dice. For each roll of 4+, allocate 1 damage point to that fighter.</description>
         </rule>
         <rule id="1fe2-daa9-6066-2733" name="⚃ [Quad] Capricious Warpflame" hidden="true">
           <modifiers>
@@ -544,17 +550,15 @@
           </modifiers>
           <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
         </rule>
-        <rule id="cbed-de56-6f2c-ca23" name="[Reaction] " hidden="true">
+        <rule id="cbed-de56-6f2c-ca23" name="[Reaction] Twist of Fate" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction after they are targeted by an attack action but before the hit rolls are made. Pick one of the hit rolls, and change the value of one of your [doubles] to that value.</description>
         </rule>
       </rules>
     </infoGroup>
