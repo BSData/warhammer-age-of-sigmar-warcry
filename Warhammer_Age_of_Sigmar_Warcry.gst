@@ -654,7 +654,7 @@
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
+                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="7989-e5fa-4eea-0df6" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -732,7 +732,7 @@
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="746e-f161-824a-1d61" type="max"/>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="746e-f161-824a-1d61" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="44f6-b6c0-bcb3-cd03" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false">
@@ -797,7 +797,7 @@
           <categoryLinks>
             <categoryLink id="65b8-c7f4-1c50-97d1" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
               <constraints>
-                <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
+                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="8077-6f1c-cde4-8898" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -824,7 +824,7 @@
         <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
         <categoryLink id="2377-2d5d-138d-5546" name="Heroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58f5-1fbc-791b-d2d3" type="max"/>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58f5-1fbc-791b-d2d3" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b1fc-6ef9-f273-6f4a" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false">
