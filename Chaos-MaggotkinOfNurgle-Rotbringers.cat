@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8ab7-9752-ec64-3693" name="Chaos - Maggotkin of Nurgle - Rotbringers" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8ab7-9752-ec64-3693" name="Chaos - Maggotkin of Nurgle - Rotbringers" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1aa9-93a6-da04-521f" name="Pusgoyle Blightlord" hidden="false" collective="false" import="true" targetId="f893-e2c0-41d4-a794" type="selectionEntry"/>
     <entryLink id="1fc0-edf5-a33e-0487" name="Putrid Blightking" hidden="false" collective="false" import="true" targetId="1e8a-ba4d-edfa-e4ae" type="selectionEntry"/>
@@ -62,14 +62,14 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">40</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">38</characteristic>
           </characteristics>
         </profile>
         <profile id="4fe8-6d53-7ba1-1b4d" name="Pusgoyle Blighted Weapon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
           </characteristics>
         </profile>
@@ -87,7 +87,7 @@
         <entryLink id="5b3e-c686-8032-b753" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="250.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="260.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1e8a-ba4d-edfa-e4ae" name="Putrid Blightking" hidden="false" collective="false" import="true" type="model">
@@ -113,22 +113,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="58b2-18fc-0e76-9b67" name="Putrid Blightking" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="68cf-bb2c-bce1-e83e" value="5">
-              <conditions>
-                <condition field="selections" scope="1e8a-ba4d-edfa-e4ae" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a773-dd0f-c9d3-f0be" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="3b56-9599-859d-c2db" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="144c-fa7a-9c10-a3e8" name="Nurgle Rotbringers" hidden="false" targetId="81f3-2a02-d61e-d89c" primary="false"/>
@@ -157,12 +141,19 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="5c4a-5a7c-444f-7385" name="Putrid Blightking" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
                 <infoLink id="a9c8-023b-6024-b262" name="Special Abilities" hidden="false" targetId="9668-02fe-70f0-a0c9" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="03af-40ed-714d-7d50" name="Icon Bearer" hidden="false" collective="false" import="true" type="upgrade">
@@ -182,6 +173,13 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="bd4b-cfda-0cfd-e984" name="Putrid Blightking" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
                 <infoLink id="2731-289b-288f-53b3" name="Special Abilities" hidden="false" targetId="9668-02fe-70f0-a0c9" type="infoGroup"/>
@@ -190,7 +188,7 @@
                 <categoryLink id="37d5-5058-6e14-600f" name=" Icon Bearer" hidden="false" targetId="2bf9-3f3e-ea63-1f26" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="5.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="471a-c4fb-a4b3-f6a5" name="with Sonorous Tocsin" hidden="false" collective="false" import="true" type="upgrade">
@@ -210,6 +208,13 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="5749-ea52-c7c7-7144" name="Putrid Blightking" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
                 <infoLink id="946b-0514-c974-9b6e" name="Special Abilities" hidden="false" targetId="9668-02fe-70f0-a0c9" type="infoGroup"/>
@@ -218,7 +223,7 @@
                 <categoryLink id="09e9-99c3-3ed2-414c" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="10.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8cca-b2c1-85e5-9a24" name="with Blighted Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -238,12 +243,19 @@
                     <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
                   </characteristics>
                 </profile>
+                <profile id="8574-5fcc-499b-4b8f" name="Putrid Blightking" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
                 <infoLink id="461e-2263-fe24-f04e" name="Special Abilities" hidden="false" targetId="9668-02fe-70f0-a0c9" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -252,9 +264,6 @@
       <entryLinks>
         <entryLink id="b81b-2fc5-4f69-8956" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>

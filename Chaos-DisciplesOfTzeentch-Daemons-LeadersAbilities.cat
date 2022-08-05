@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b3a7-1206-c007-9fd9" name="Chaos - Disciples of Tzeentch - Daemons - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b3a7-1206-c007-9fd9" name="Chaos - Disciples of Tzeentch - Daemons - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="3708-3a77-a4b8-2339" name="Tzeentch Demon Leaders" hidden="false"/>
     <categoryEntry id="ac6e-70a7-6d40-65ea" name="Tzeentch Daemons" hidden="false"/>
@@ -115,8 +115,8 @@
         <profile id="8ff9-d75f-0879-c9f2" name="Iridescent Horror" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
           </characteristics>
         </profile>
         <profile id="a05d-75cc-573b-56d8" name="Iridescent Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -148,7 +148,7 @@
         <entryLink id="4bba-7380-a301-0005" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a141-4470-f70a-f001" name="Pyrocaster" hidden="false" collective="false" import="true" type="model">
@@ -164,12 +164,12 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
           </characteristics>
         </profile>
         <profile id="b5c6-e1d5-6f29-5323" name="Pyrocaster Warpflame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
@@ -196,7 +196,7 @@
         <entryLink id="d4be-a65d-0c66-78ae" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="96d8-6d38-84b6-360e" name="Fluxmaster" hidden="false" collective="false" import="true" type="model">
@@ -206,6 +206,16 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="with Staff of Change">
+          <conditions>
+            <condition field="selections" scope="96d8-6d38-84b6-360e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38b2-23a9-ebcd-6eeb" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Ritual Dagger">
+          <conditions>
+            <condition field="selections" scope="96d8-6d38-84b6-360e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadf-3d58-8009-8b65" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="f20a-6c4c-3e20-e7cb" name="Fluxmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -213,22 +223,6 @@
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">12</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ea2c-217c-a925-877a" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c32a-b784-bee1-b678" name="Ritual Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -241,12 +235,79 @@
         <categoryLink id="0bfe-faaf-4435-7cd2" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="45c7-c81d-4f2d-894a" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0db6-c39a-9a8c-5a87" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="38b2-23a9-ebcd-6eeb">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a7-5d6e-8f7a-c228" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ffa-e2d3-35af-2584" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="38b2-23a9-ebcd-6eeb" name="Staff of Change" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0356-8a07-781d-e936" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="3232-1b27-9253-60da" name="Staff of Change" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fadf-3d58-8009-8b65" name="Ritual Dagger" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0b75-32e5-372f-af9b" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0dfd-8ca3-7405-a0ac" name="Ritual Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="456a-7cde-51a3-8f40" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="8dbc-7d03-af65-f8c1" name="Changecaster" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -255,29 +316,23 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="with Ritual Dagger">
+          <conditions>
+            <condition field="selections" scope="8dbc-7d03-af65-f8c1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f39-ab65-4ead-8b26" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Staff of Change">
+          <conditions>
+            <condition field="selections" scope="8dbc-7d03-af65-f8c1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="284c-43e8-8d5b-c257" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="953e-7948-7b6b-6b5a" name="Changecaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1afb-6360-1b77-f18d" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0b90-c3d2-0367-73c6" name="Ritual Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -289,12 +344,79 @@
         <categoryLink id="16d9-e45b-b4fd-cb43" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="4695-8375-6ac1-1d6a" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5c51-dd96-ffdb-02b7" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="284c-43e8-8d5b-c257">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4515-bc36-6bcf-6249" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac94-7a90-731f-586e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="284c-43e8-8d5b-c257" name="Staff of Change" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="f5fe-7b8a-f823-93e6" name="Staff of Change" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="83ea-f319-1715-398d" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="160.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8f39-ab65-4ead-8b26" name="Ritual Dagger" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="27b5-4279-3a42-17d5" name="Ritual Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0fa0-a638-081c-7668" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="160.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="76c5-c22f-f151-5f07" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180.0"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
