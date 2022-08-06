@@ -267,14 +267,21 @@
           </repeats>
         </modifier>
         <modifier type="increment" field="a612-cfde-504b-b8d6" value="1.0">
+          <comment>allegiances</comment>
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
         <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
+          <comment>allegiances</comment>
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" field="00fd-8510-5cfd-67a0" value="950.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e4b-ec37-4927-c2bb" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -654,7 +661,7 @@
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="7989-e5fa-4eea-0df6" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -732,7 +739,7 @@
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="746e-f161-824a-1d61" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="746e-f161-824a-1d61" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="44f6-b6c0-bcb3-cd03" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false">
@@ -1092,6 +1099,18 @@
           </constraints>
           <categoryLinks>
             <categoryLink id="f729-a503-c87c-2680" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="081b-bfbe-08c1-f915" name="Reputation" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="100.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-50d6-b90b-8b67" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="90a9-f40c-e520-bfb7" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="2483-8e94-9f25-5ceb" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -1737,6 +1756,28 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="875c-f90b-cf2b-7dde" name="Current State of Encampment" hidden="false" collective="false" import="true" defaultSelectionEntryId="c628-3ee6-3db7-007f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dce-d172-b047-1a5a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c628-3ee6-3db7-007f" name="Secure" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3e4b-ec37-4927-c2bb" name="Compromised" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6632-ec63-9fd9-8f05" name="Threatened" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -2098,11 +2139,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b280-d982-75fb-b35e" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2bc3-bf70-b258-3ef3" name="Slain" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2bc3-bf70-b258-3ef3" name="Killed" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="9359-bbb8-332f-bb7b" name="Slain" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                <profile id="9359-bbb8-332f-bb7b" name="Killed" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Remove this fighter from your warband roster. If they have any lesser artefacts or artefacts of power, these are lost. If this fighter is the leader of your warband, treat this result as &apos;Lost Favour&apos; instead.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Remove this fighter from your warband roster. If they have any lesser artefacts or artefacts of power, these are lost and also removed from your warband roster.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2114,7 +2155,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <profiles>
                 <profile id="e9b0-b50f-1531-0811" name="Gut Wound" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Halve the Wounds characteristic of this fighter (rounding up) while they have this injury.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">[Injury] Halve the Wounds characteristic of this fighter (rounding up) while they have this injury.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2126,7 +2167,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <profiles>
                 <profile id="387c-0945-5445-ff5c" name="Cracked Rib" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the Toughness characteristic of this fighter (to a minimum of 1) while they have this injury.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">[Injury] Subtract 1 from the Toughness characteristic of this fighter (to a maximum of 1) while they have this injury.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2138,7 +2179,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <profiles>
                 <profile id="e678-5770-8352-7bb6" name="Blinded in One Eye" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by this fighter while they have this injury.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">[Injury] Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by this fighter while they have this injury.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2150,7 +2191,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <profiles>
                 <profile id="e694-67c9-d4ed-4b31" name="Fractured Arm" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract I from the Strength characteristic (to a minimum of 1) of attack actions that have a Range characteristic of 3 or less made by this fighter while they have this injury.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">[Injury] Subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by this fighter while they have this injury.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2162,7 +2203,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <profiles>
                 <profile id="d81c-911b-776d-0917" name="Broken Leg" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the Move characteristic of this fighter (to a minimum of 1) while they have this injury.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">[Injury Subtract 1 from the Move characteristic of this fighter (to a minimum of 1) while they have this injury.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2174,7 +2215,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <profiles>
                 <profile id="1be6-bdbc-a2b8-b431" name="Concussion" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the value of abilities used by this fighter (to a minimum of 1) while they have this injury.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">[Injury] Subtract 1 from the value of abilities used by this fighter (to a minimum of 1) while they have this injury.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2182,11 +2223,11 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="376a-f980-e3de-be42" name="Lost Favour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="376a-f980-e3de-be42" name="Lost Renown" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="f40d-6b33-e4a5-0a26" name="Lost Favour" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                <profile id="f40d-6b33-e4a5-0a26" name="Lost Renown" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Roll a dice. On a 1, this injury is [permanent]. On a 2+, this injury is [temporary]. Subtract 1 from the value of abilities used by this fighter (to a minimum of 1) while they have this injury.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">This fighter loses a level of renown.  If they have none, they suffer no effects.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2194,9 +2235,9 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6ede-562c-cd98-6301" name="Full Recovery" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6ede-562c-cd98-6301" name="Flesh Wound" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="2423-7afc-3315-bd5c" name="Full Recovery" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                <profile id="2423-7afc-3315-bd5c" name="Flesh Wound" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
                     <characteristic name="Description" typeId="9b71-a24e-4046-7a28">This fighter suffers no effects.</characteristic>
                   </characteristics>
@@ -2210,7 +2251,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               <profiles>
                 <profile id="afd4-4e10-4d24-1023" name="Survive Against the Odds" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">Treat this result as &apos;Full Recovery. In addition, this fighter immediately gains 1 destiny level.</characteristic>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">This fighter gains a level of renown.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2220,7 +2261,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a18c-718b-210f-4abf" name="Destiny Level" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="a18c-718b-210f-4abf" name="Level of Renown" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2259,7 +2300,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         </selectionEntryGroup>
         <selectionEntryGroup id="b823-1496-fc67-6bfe" name="Narrative Items" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="1e48-6c1b-0b77-950c" name="Artifact of Power" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1e48-6c1b-0b77-950c" name="Artifact" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0270-e331-9c44-065a" type="max"/>
               </constraints>
@@ -2267,9 +2308,22 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d61a-178d-68a4-e0e4" name="Command Trait/Favored Warrior" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d61a-178d-68a4-e0e4" name="Heroic Trait" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="14db-81dd-b399-e0f0" value="1.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f2ce-030d-9971-73f0" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e311-66c4-5d05-cd1e" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aadf-5830-72a8-d164" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14db-81dd-b399-e0f0" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14db-81dd-b399-e0f0" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
