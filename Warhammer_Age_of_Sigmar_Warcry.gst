@@ -256,6 +256,11 @@
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink id="9606-3d0e-3937-d9d3" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a64-aef5-92b6-6aa5" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
@@ -757,6 +762,11 @@
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink id="b021-7fa8-daf2-b17d" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cfa0-1bc3-38f1-b286" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
@@ -842,6 +852,11 @@
         <categoryLink id="37d9-ea6a-34ca-6010" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-0268-4131-b04c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f1ba-36f7-c185-5746" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1d-5c15-e2f5-2ecd" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
