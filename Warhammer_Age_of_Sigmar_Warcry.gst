@@ -212,7 +212,7 @@
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38ae-8bfd-d301-796a" type="max"/>
+                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38ae-8bfd-d301-796a" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="ae35-2cf4-c82d-79c8" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -256,6 +256,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink id="ed2c-9cfa-a5ac-1b50" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
@@ -762,6 +763,7 @@
             <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cfa0-1bc3-38f1-b286" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="cd0c-dfa1-c64c-5f85" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
@@ -854,6 +856,7 @@
             <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1d-5c15-e2f5-2ecd" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="26ad-7a72-52a2-60b0" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
