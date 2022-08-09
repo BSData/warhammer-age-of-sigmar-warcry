@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2b2-b639-6904-7f45" name="Chaos - Spire Tyrants - Leaders &amp; Abilities" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2b2-b639-6904-7f45" name="Chaos - Spire Tyrants" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="dc68-472e-9a89-970e" name="Spire Leaders" hidden="false"/>
     <categoryEntry id="b386-b2d9-fed7-4798" name="Spire Tyrants" hidden="false"/>
@@ -29,9 +29,20 @@
         <categoryLink id="13f6-06e8-82b6-6b04" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="3ca6-c7ef-b2ce-e5e4" name="Pit Fighter" hidden="false" collective="false" import="true" targetId="eced-60e8-14a0-6c8b" type="selectionEntry"/>
+    <entryLink id="075c-2d19-4ea5-7b21" name="Pit Veteran" hidden="false" collective="false" import="true" targetId="a91b-43b1-843a-25f6" type="selectionEntry"/>
+    <entryLink id="17d4-da04-6cef-dcd0" name="Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d0f1-2fac-3231-371b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="c2be-ab7e-d080-8621" name="Spire Leaders" hidden="false" targetId="dc68-472e-9a89-970e" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d429-9351-c6f8-b0c6" name="Headclaimer" hidden="false" collective="false" import="true" targetId="0c45-aab7-1ad8-ee37" type="selectionEntry"/>
+    <entryLink id="14ea-b77c-365d-29ee" name="Bestigor Destroyer" hidden="false" collective="false" import="true" targetId="d9d7-2ce6-8893-5236" type="selectionEntry"/>
+    <entryLink id="b6c2-aa2f-cc24-625c" name="Frenzied Rager" hidden="false" collective="false" import="true" targetId="8609-e7f5-dd97-e4e4" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="bad5-b298-a63e-84ef" name="Pit Champion" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="bad5-b298-a63e-84ef" name=" Pit Champion" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -78,6 +89,365 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d9d7-2ce6-8893-5236" name="Bestigor Destroyer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1a9a-aa25-5119-e459" name="Bestigor Destroyer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cc51-0910-d3ae-f6f3" name="Destroyer&apos;s Mace" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="407b-b489-9a01-a1c3" name="Special Abilities" hidden="false" targetId="bf13-3cd8-8b17-b7a6" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="30cb-9e3d-b82c-56e7" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="f33c-88b0-b7a1-523c" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
+        <categoryLink id="85cd-664a-b1e4-ec34" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a4b8-7051-0045-5005" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8609-e7f5-dd97-e4e4" name="Frenzied Rager" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="b775-b345-e806-b15e" name="Frenzied Rager" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">3</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4f20-4b40-4dea-841f" name="Rager&apos;s Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c245-be9e-2f0b-37af" name="Special Abilities" hidden="false" targetId="bf13-3cd8-8b17-b7a6" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="654d-2160-16b0-c464" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="bc65-4b48-87f7-65dd" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
+        <categoryLink id="4218-aa03-27b6-157b" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4f2c-7e7f-c3f4-4a45" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c45-aab7-1ad8-ee37" name="Headclaimer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="3ecb-3d9c-0022-f9e0" name="Headclaimer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cfae-e0b5-2b35-2f17" name="Headclaimer&apos;s Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d7d0-d614-4671-1373" name="Special Abilities" hidden="false" targetId="bf13-3cd8-8b17-b7a6" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0bcd-306b-a595-006c" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9356-a999-921c-e2ea" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
+        <categoryLink id="b7ff-f973-4485-eb9b" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b01f-c5c1-2e59-e62b" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eced-60e8-14a0-6c8b" name="Pit Fighter" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Punch Dagger">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57f9-6b21-582a-bc96" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Net">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2117-73b1-5359-4974" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Spear">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f78-5376-c973-f300" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="52fe-2db0-f3ea-8607" name="Pit Fighter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3a8c-f732-b010-1d6f" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="dd4e-238b-00a7-cf1b" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="529f-d9cb-da4c-ec68" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="8f78-5376-c973-f300">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c61-eecb-2230-d7c5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17c3-548f-c787-7fb7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2117-73b1-5359-4974" name="with Net" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5152-1190-a55f-0a84" name="Fighter&apos;s Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="431f-6f5f-5a03-3507" name="Special Abilities" hidden="false" targetId="bf13-3cd8-8b17-b7a6" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="3cc1-1996-4cc9-595d" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8f78-5376-c973-f300" name="with Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="f533-42af-5f40-cb06" name="Fighter&apos;s Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="c641-8b2a-6b5d-51aa" name="Special Abilities" hidden="false" targetId="bf13-3cd8-8b17-b7a6" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="3266-2d7d-73ab-3f35" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="57f9-6b21-582a-bc96" name="with Punch Dagger" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="3041-9d30-6194-c248" name="Punch Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="a6a1-2cb0-d53b-59fb" name="Special Abilities" hidden="false" targetId="bf13-3cd8-8b17-b7a6" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="a89f-c94c-2b9c-e230" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ab7a-1c2b-662d-53da" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a91b-43b1-843a-25f6" name="Pit Veteran" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Dual Weapons">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcb3-fcc4-5229-75ac" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Shield">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fed-90e8-4d02-85e1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5650-9167-5c58-a405" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="b6ff-3083-6a3e-16ac" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
+        <categoryLink id="e77a-60aa-9617-c356" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="239a-d8e6-e4ac-a5be" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="fcb3-fcc4-5229-75ac">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba0d-3198-0d90-8db7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab96-14af-77d2-81cc" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6fed-90e8-4d02-85e1" name="with Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7c27-a281-87c3-189f" name="Veteran&apos;s Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="35b3-a0ed-dce4-64cf" name="Pit Veteran" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="810d-48ef-7e8f-99e9" name="Special Abilities" hidden="false" targetId="bf13-3cd8-8b17-b7a6" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="e091-0433-4640-8a62" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+                <categoryLink id="6edd-869c-36e2-4bc0" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fcb3-fcc4-5229-75ac" name="with Dual Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5506-aa77-dde3-e720" name="Dual Veteran&apos;s Weapons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="7ec5-c1df-c536-e4e1" name="Pit Veteran" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="a36e-688c-3982-7fe0" name="Special Abilities" hidden="false" targetId="bf13-3cd8-8b17-b7a6" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="af90-bd22-f452-9de6" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="77c3-62fe-028b-b0e1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f5d-fd68-6463-ffbd" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="bf13-3cd8-8b17-b7a6" name="Special Abilities" hidden="false">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="870a-4170-6d8d-e282" name="Unmade Leaders" hidden="false"/>
     <categoryEntry id="74b9-be1e-a283-6b91" name="The Unmade" hidden="false"/>
@@ -29,9 +29,18 @@
         <categoryLink id="bf9f-3589-f64f-4618" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="233d-4edb-9a8a-ae20" name="Ascended One" hidden="false" collective="false" import="true" targetId="1151-8db2-6621-5393" type="selectionEntry"/>
+    <entryLink id="9a04-f70c-f3f5-55c8" name="Joyous One" hidden="false" collective="false" import="true" targetId="521e-e78e-b9d3-32b1" type="selectionEntry"/>
+    <entryLink id="63c0-98d0-0b78-f760" name="Blissful One" hidden="false" collective="false" import="true" targetId="46b1-88e8-371e-e832" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b164-e1e1-73df-a4d8" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="0f38-5af7-76cf-1398" name="Unmade Leaders" hidden="false" targetId="870a-4170-6d8d-e282" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d10b-a2d3-d59c-1b26" name="Awakened One" hidden="false" collective="false" import="true" targetId="0f30-e28e-4c9c-5ecb" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="46b1-88e8-371e-e832" name="Blissful One" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="46b1-88e8-371e-e832" name=" Blissful One" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -70,6 +79,185 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="255.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1151-8db2-6621-5393" name="Ascended One" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2c69-6d20-8511-ac4d" name="Ascended One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6fd4-1d4c-8f71-4d20" name="Ascended Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8e84-1686-79b1-664f" name="Special Abilities" hidden="false" targetId="e2e8-3e28-e842-54e3" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7c3e-035b-d2a0-0aa0" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="4a37-c884-d545-64c8" name="The Unmade" hidden="false" targetId="74b9-be1e-a283-6b91" primary="false"/>
+        <categoryLink id="f329-8340-cceb-c18e" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2d10-77ab-cc8e-06d9" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f30-e28e-4c9c-5ecb" name="Awakened One" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Flail">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbc6-290e-6cc1-18ec" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Brutal Polearm">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea18-dedb-7694-1c6a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="e39b-fc7a-81ee-8a41" name="Awakened One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d94a-855e-6d20-78d9" name="Special Abilities" hidden="false" targetId="e2e8-3e28-e842-54e3" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8633-ec63-9c6e-4367" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="8cc8-8de2-2a06-6148" name="The Unmade" hidden="false" targetId="74b9-be1e-a283-6b91" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="15a8-bceb-8fc5-273f" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea18-dedb-7694-1c6a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b961-fdba-c5aa-2008" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="874e-4e08-bc4c-4155" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ea18-dedb-7694-1c6a" name="with Brutal Polearm" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a03e-b42f-c7f2-fd6c" name="Brutal Polearm" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fbc6-290e-6cc1-18ec" name="with Flail" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="47ea-fdb8-d39e-e171" name="Flail" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="faa2-f04c-6663-f030" name="Awakened Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2a4b-ba7d-7a9e-71b8" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="521e-e78e-b9d3-32b1" name="Joyous One" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7a3c-3fe4-dbfb-7ec5" name="Joyous One" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="56d7-6ad5-f0ba-5e18" name="Maiming Daggers" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="64db-fec4-47ea-090e" name="Special Abilities" hidden="false" targetId="e2e8-3e28-e842-54e3" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b684-1268-ceb7-e842" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="4ef5-c3be-8da1-3c7d" name="The Unmade" hidden="false" targetId="74b9-be1e-a283-6b91" primary="false"/>
+        <categoryLink id="261f-48ab-e3f4-c156" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="45e2-6605-5048-c2a3" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="baad-7afe-9a87-4186" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="e2e8-3e28-e842-54e3" name="Special Abilities" hidden="false">

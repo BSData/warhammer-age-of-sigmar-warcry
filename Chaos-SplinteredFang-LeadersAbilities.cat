@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang - Leaders &amp; Abilities" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b475-490a-59ff-4abe" name="Splintered Leaders" hidden="false"/>
     <categoryEntry id="f03c-f314-5dde-e380" name="Splintered Fang" hidden="false"/>
@@ -29,9 +29,20 @@
         <categoryLink id="1cae-a1c1-da0c-0aca" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="a042-2941-5066-b15b" name="Venomblood" hidden="false" collective="false" import="true" targetId="5069-fdca-de3f-0159" type="selectionEntry"/>
+    <entryLink id="3b68-d6aa-75a5-8ec5" name="Serpents" hidden="false" collective="false" import="true" targetId="4a23-0957-69f7-40c4" type="selectionEntry"/>
+    <entryLink id="d03f-91b6-5906-b365" name="Serpent Caller" hidden="false" collective="false" import="true" targetId="f54f-954c-e8eb-c8a5" type="selectionEntry"/>
+    <entryLink id="7e61-6acc-8c66-49ae" name="Clearblood" hidden="false" collective="false" import="true" targetId="78fb-75c6-f93e-4840" type="selectionEntry"/>
+    <entryLink id="7a56-51a8-0680-3d4c" name="Trueblood" hidden="false" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e9c3-bb9c-9bf7-e60b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="d3fb-7e02-ebc9-9318" name="Splintered Leaders" hidden="false" targetId="b475-490a-59ff-4abe" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a25f-7167-bf3f-b9d7" name="Pureblood" hidden="false" collective="false" import="true" targetId="7021-0200-98d9-f3b2" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="e1ee-3979-d517-cd72" name="Trueblood" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e1ee-3979-d517-cd72" name=" Trueblood" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -68,6 +79,420 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e6e3-6546-dcc9-c299" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="78fb-75c6-f93e-4840" name="Clearblood" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="name" value="Clearblood with Shield">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa13-a689-b8a2-b2ac" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Clearblood">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a01d-d262-146f-9cf2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="557b-a3e9-e8f7-7f06" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="f581-0838-3536-8f88" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2f41-6fc8-6fd8-4f84" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="a01d-d262-146f-9cf2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9b6-3627-d252-7dea" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ce60-bc2a-131d-b613" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fa13-a689-b8a2-b2ac" name="with Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b459-bf37-4074-4dc8" name="Clearblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="cb90-c488-0fa4-5de9" name="Clearblood Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="9f95-f0dc-8b31-2071" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="4d6e-97d3-d09c-26c3" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a01d-d262-146f-9cf2" name="Clearblood" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="065a-0486-9986-7cf7" name="Clearblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="c5e9-ad57-ce57-a903" name="Clearblood Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="a479-bfdb-5757-a00e" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1f79-ff7d-7d9b-4219" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7021-0200-98d9-f3b2" name="Pureblood" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="23a6-78d1-fa57-029f" name="Pureblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="296f-e0c5-9d62-edc3" name="Pureblood Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4ddb-47fe-57f1-a9de" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="18ec-4a0b-7d1e-0847" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="a836-f0ae-49a7-761a" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
+        <categoryLink id="13e7-c819-1ac8-a65c" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3b2d-0ea2-4fd1-b9d1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f54f-954c-e8eb-c8a5" name="Serpent Caller" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="dec0-3780-f826-9630" name="Serpant Caller" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9420-07bc-ef1b-c2fa" name="Caller&apos;s Serpent" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b55b-a4af-c16c-2e15" name="Thrown Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="90b5-08cf-e5c2-e247" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="acd8-6dc7-0176-f63c" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="6a91-1fdc-b15c-16da" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
+        <categoryLink id="be64-e363-824f-006b" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3073-924a-0053-4499" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4a23-0957-69f7-40c4" name="Serpents" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c4c0-3ed3-50cb-cfdf" name="Serpents" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d7dc-469d-6612-d585" name="Serpent Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="20a1-24db-2e17-5aeb" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ba08-207b-036b-4add" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="3858-fbfc-079b-6d31" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
+        <categoryLink id="8d08-3db5-8f30-adb0" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="23af-db39-9d5a-eaf5" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5069-fdca-de3f-0159" name="Venomblood" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="name" value="Venomblood with Duelling Blades">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d513-7429-55aa-8c5e" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Venomblood with Spear and Shield">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad4f-23fc-a26b-9d7c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Venomblood with Barbed Whip">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a1f0-aed4-07b7-55cc" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Venomblood with Blade and Barbed Whip">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f19-0c9d-2eab-d020" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f585-b27d-a085-d8ed" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="e46f-a78e-dcfa-55d5" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3dcc-4453-d0a2-e4f4" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="5f19-0c9d-2eab-d020">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a53-91ad-d86d-4cd9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8998-6101-9049-91eb" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a1f0-aed4-07b7-55cc" name="with Barbed Whip" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5500-5f6a-a67c-b25e" name="Barbed Whip" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="c3c0-969c-fb13-49a1" name="Venomblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="caeb-336e-a40b-1298" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="8269-7b73-3be3-5901" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5f19-0c9d-2eab-d020" name="with Blade and Barbed Whip" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9350-7d11-979f-7050" name="Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="c704-1b86-4592-e1e5" name="Barbed Whip (with Blade)" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d9ce-6e46-4591-4e70" name="Venomblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="1652-f6e7-6dc4-c17b" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d513-7429-55aa-8c5e" name="with Duelling Blades" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="cc09-1d85-9676-fb47" name="Duelling Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="3cd7-dbef-9cf6-bcf4" name="Venomblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="6dc1-3c90-701e-a86c" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ad4f-23fc-a26b-9d7c" name="with Spear and Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e66d-35aa-e323-7ad1" name="Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="1f23-7bec-e514-08e7" name="Venomblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="3e8e-5b1a-4d37-10ac" name="Special Abilities" hidden="false" targetId="02f1-4a8b-fea9-981d" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="0c46-eead-32dd-00bb" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6be3-fbba-2ed2-ba55" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

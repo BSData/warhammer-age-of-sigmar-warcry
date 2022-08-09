@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts - Leaders &amp; Abilities" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="90d1-298b-309f-13b2" name="Untamed Leaders" hidden="false"/>
     <categoryEntry id="5e8b-afc8-1311-4158" name="Untamed Beasts" hidden="false"/>
@@ -29,9 +29,20 @@
         <categoryLink id="c3b7-1fb8-5283-28d3" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b562-4585-0386-b051" name="Preytaker" hidden="false" collective="false" import="true" targetId="f130-badc-a583-6f07" type="selectionEntry"/>
+    <entryLink id="d3d2-a616-6d35-dcd4" name="Rocktusk Prowler" hidden="false" collective="false" import="true" targetId="43e1-2cdf-61b5-580c" type="selectionEntry"/>
+    <entryLink id="3011-68d3-8720-b466" name="Heart-eater" hidden="false" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a063-2bbb-e264-f340" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="0313-6fc6-0137-047b" name="Untamed Leaders" hidden="false" targetId="90d1-298b-309f-13b2" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3af1-e0e0-535d-d19b" name="Plains-runner" hidden="false" collective="false" import="true" targetId="3880-07dd-6ae7-22e5" type="selectionEntry"/>
+    <entryLink id="7220-ab29-c242-a2b5" name="First Fang" hidden="false" collective="false" import="true" targetId="8ef6-d634-db3f-ef15" type="selectionEntry"/>
+    <entryLink id="fac4-52c4-6476-ef4d" name="Beastspeaker" hidden="false" collective="false" import="true" targetId="a9c7-8fd3-6270-c57d" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="ce06-d39d-9e4d-655f" name="Heart-eater" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ce06-d39d-9e4d-655f" name=" Heart-eater" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -70,6 +81,272 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a9c7-8fd3-6270-c57d" name="Beastspeaker" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="256f-c50b-bf1d-9797" name="Beastspeaker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="db74-935a-5358-51de" name="Reach" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b159-53ec-3f03-e711" name="Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d244-5aa4-a2b4-74b6" name="Special Abilities" hidden="false" targetId="ee2f-329d-a816-00ee" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8f4c-7924-0c72-74a5" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="2f04-6cd9-6ee1-7972" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
+        <categoryLink id="de7d-84bf-2ea2-d451" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="161f-a487-243b-760d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8ef6-d634-db3f-ef15" name="First Fang" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="fe66-47f7-b87c-c584" name="First Fang" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="de65-0571-8a6d-60e1" name="Jagged Harpoon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7bdb-0913-bfb6-9316" name="First Fang Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cbaf-b6cb-a102-aa67" name="Special Abilities" hidden="false" targetId="ee2f-329d-a816-00ee" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5609-2c4b-649e-e9d7" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="15c9-87fa-54c7-0a13" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
+        <categoryLink id="f583-bd58-0430-d590" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9abb-5f7f-48ea-3ca9" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3880-07dd-6ae7-22e5" name="Plains-runner" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f3cf-6b35-4303-3b37" name="Plains-runner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0ad8-8136-7816-3634" name="Plains-runner Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fc4a-45df-434c-495f" name="Special Abilities" hidden="false" targetId="ee2f-329d-a816-00ee" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b1bf-eff9-3a19-41b8" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="883c-0eed-3ced-4c31" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="97f7-e4f5-6c64-dcd4" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f130-badc-a583-6f07" name="Preytaker" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Sawtooth Blade">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e065-dca1-6b48-724f" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Fanged Axe">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12fa-7be6-a9e7-60f5" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8b70-88bf-9eb9-9f96" name="Preytaker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="46e9-85db-153c-9127" name="Special Abilities" hidden="false" targetId="ee2f-329d-a816-00ee" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c984-580a-32f7-eed5" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="e257-3da1-3b32-d425" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="eb3e-a864-cd53-9681" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="12fa-7be6-a9e7-60f5">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d17c-0a9d-7be3-e837" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf62-b611-c8fb-28f9" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="12fa-7be6-a9e7-60f5" name="with Fanged Axe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="642a-8b20-c159-5b8d" name="Fanged Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e065-dca1-6b48-724f" name="with Sawtooth Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="7ee2-46f7-4689-c17d" name="Sawtooth Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="100.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="56a8-44b3-0822-f29d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="43e1-2cdf-61b5-580c" name="Rocktusk Prowler" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a41b-6a01-9161-6412" name="Rocktusk Prowler" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1d81-6767-a463-4f8e" name="Rocktusk Fangs" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8401-f293-88ca-1506" name="Special Abilities" hidden="false" targetId="ee2f-329d-a816-00ee" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2519-9d97-1bf3-5e83" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="37a4-eb53-75b0-1bd1" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
+        <categoryLink id="4d21-4e53-a8cf-b50e" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5d3f-1245-1bf3-1037" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0ff1-655b-e712-5881" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="d1b4-e230-8d36-b1e1" name="Untamed Beast Abilities" hidden="false">
