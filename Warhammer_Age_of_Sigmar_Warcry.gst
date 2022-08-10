@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="55" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="56" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="df3a-f424-e7ea-5f69" name="Tome of Champions 2021" shortName="ToC21" publisher="Tome of Champions 2021" publicationDate="March 2022"/>
     <publication id="2c2f-d4c8-7730-6c82" name="Warcry Heart of Ghur Core Rule Book" shortName="HoG Core Book" publisher="2022" publicationDate="~~~2022"/>
@@ -216,6 +216,15 @@
               </constraints>
             </categoryLink>
             <categoryLink id="ae35-2cf4-c82d-79c8" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
+            <categoryLink id="ba05-c495-d0e5-7c5d" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -666,6 +675,15 @@
               </constraints>
             </categoryLink>
             <categoryLink id="7989-e5fa-4eea-0df6" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
+            <categoryLink id="2c63-1889-107e-958a" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -815,6 +833,15 @@
               </constraints>
             </categoryLink>
             <categoryLink id="8077-6f1c-cde4-8898" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
+            <categoryLink id="b874-baa6-e8b6-d153" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
         </forceEntry>
       </forceEntries>

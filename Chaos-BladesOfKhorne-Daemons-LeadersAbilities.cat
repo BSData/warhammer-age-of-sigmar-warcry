@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6937-4d88-5447-4e34" name="Chaos - Blades of Khorne - Daemons - Leaders &amp; Abilities" revision="15" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6937-4d88-5447-4e34" name="Chaos - Blades of Khorne - Daemons" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="9747-1f1b-e9c3-fb17" name="Khorne Demon Leaders" hidden="false"/>
     <categoryEntry id="1c3c-0778-219d-f18a" name="Khorne Daemons" hidden="false"/>
@@ -101,9 +101,37 @@
         <categoryLink id="d667-34ff-8d86-8d35" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="09c5-e55f-1443-6850" name="Bloodcrusher" hidden="false" collective="false" import="true" targetId="3ee9-e124-2968-111e" type="selectionEntry"/>
+    <entryLink id="3330-6ab5-19b0-7fd8" name="Bloodhunter" hidden="false" collective="false" import="true" targetId="50af-0851-86e0-42c6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ac29-e3bf-029e-02f6" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="ac3a-2bc1-65cc-c6f4" name="Khorne Demon Leaders" hidden="false" targetId="9747-1f1b-e9c3-fb17" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b3f1-7b00-ea1e-c164" name="Bloodletter" hidden="false" collective="false" import="true" targetId="7dfa-d473-9b0f-0bbc" type="selectionEntry"/>
+    <entryLink id="9d2f-d074-ac50-22d5" name="Bloodmaster, Herald of Khorne" hidden="false" collective="false" import="true" targetId="a4cf-5032-e82e-ad26" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d765-24f3-d511-5f37" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="2bcb-82a4-8a36-2f04" name="Khorne Demon Leaders" hidden="false" targetId="9747-1f1b-e9c3-fb17" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f69f-5f53-9216-da89" name="Bloodreaper" hidden="false" collective="false" import="true" targetId="cb42-cd77-5d89-85cf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cb5a-5960-9ad5-6fb2" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="23d4-c592-8b07-050a" name="Khorne Demon Leaders" hidden="false" targetId="9747-1f1b-e9c3-fb17" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8284-2c9d-6d47-701e" name="Flesh Hound" hidden="false" collective="false" import="true" targetId="1243-105e-1a62-8bda" type="selectionEntry"/>
+    <entryLink id="680b-c168-003d-0cd9" name="Gore Hound" hidden="false" collective="false" import="true" targetId="e3cf-116b-d77f-5c7d" type="selectionEntry"/>
+    <entryLink id="88c6-19f7-3f7a-747c" name="Skullmaster, Herald of Khorne" hidden="false" collective="false" import="true" targetId="7ed2-1152-652b-79a8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ca16-abe6-127f-8827" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="050e-1f7a-e5da-9a9a" name="Khorne Demon Leaders" hidden="false" targetId="9747-1f1b-e9c3-fb17" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="7ed2-1152-652b-79a8" name="Skullmaster, Herald of Khorne" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7ed2-1152-652b-79a8" name=" Skullmaster, Herald of Khorne" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -144,7 +172,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="285.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a4cf-5032-e82e-ad26" name="Bloodmaster, Herald of Khorne" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a4cf-5032-e82e-ad26" name=" Bloodmaster, Herald of Khorne" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -184,7 +212,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cb42-cd77-5d89-85cf" name="Bloodreaper" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="cb42-cd77-5d89-85cf" name=" Bloodreaper" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -224,7 +252,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="50af-0851-86e0-42c6" name="Bloodhunter" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="50af-0851-86e0-42c6" name=" Bloodhunter" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -265,6 +293,171 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="230.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3ee9-e124-2968-111e" name="Bloodcrusher" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ac47-1dad-5dfe-aacb" name="Bloodcrusher" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33a9-b8e1-8f12-09a1" name="Bloodcrusher Hellblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5bb0-c644-49c5-c8d2" name="Special Abilities" hidden="false" targetId="e6d8-2b0f-9ae1-3c44" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5308-8e9b-8d40-b0c5" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9055-793a-f7c1-aada" name="Khorne Daemons" hidden="false" targetId="1c3c-0778-219d-f18a" primary="false"/>
+        <categoryLink id="00d3-03fd-f368-4e30" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+        <categoryLink id="ca18-d634-acef-faac" name=" Mount" hidden="false" targetId="85e4-2bbc-e2a5-c551" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c7c2-70ad-b04e-d9b5" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7dfa-d473-9b0f-0bbc" name="Bloodletter" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9ee4-02d3-1517-2fd6" name="Bloodletter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="38b8-87ad-4e17-1ebd" name="Bloodletter Hellblade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7d4c-6be4-6af8-9609" name="Special Abilities" hidden="false" targetId="e6d8-2b0f-9ae1-3c44" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f7d8-54a0-62a4-01bd" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="2bc7-1585-bffa-0beb" name="Khorne Daemons" hidden="false" targetId="1c3c-0778-219d-f18a" primary="false"/>
+        <categoryLink id="8cb6-3c31-0650-fa1e" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a5cc-c29d-326f-a8b2" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1243-105e-1a62-8bda" name="Flesh Hound" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a3e7-30e1-8e02-0e94" name="Flesh Hound" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b6d-da69-d033-dfda" name="Blood-dark Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1b4e-c76e-c09a-cff7" name="Special Abilities" hidden="false" targetId="e6d8-2b0f-9ae1-3c44" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="456f-75fb-3e3d-416c" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="976e-9f4a-886d-7c91" name="Khorne Daemons" hidden="false" targetId="1c3c-0778-219d-f18a" primary="false"/>
+        <categoryLink id="4686-6920-bbc0-6906" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="5389-3ad1-bfec-eedd" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="66b4-4d60-c856-10ee" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e3cf-116b-d77f-5c7d" name="Gore Hound" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8da7-b253-e3fb-9e7a" name="Gore Hound" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e74-ad18-602f-9e75" name="Gore Hound Blood-dark Claws" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b5e0-3e7a-0351-80e9" name="Special Abilities" hidden="false" targetId="e6d8-2b0f-9ae1-3c44" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2eaf-77a6-05a9-2063" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="a2ad-f735-3b33-452d" name="Khorne Daemons" hidden="false" targetId="1c3c-0778-219d-f18a" primary="false"/>
+        <categoryLink id="1cb6-7da0-f94c-e806" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="2ba1-0524-d5d7-4403" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="1f14-5d4b-9b22-30c7" name=" Ferocious" hidden="false" targetId="1aa1-183f-952b-ad08" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4d86-fe44-4309-3e3e" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dae7-5047-20f8-2922" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="909e-1124-fa9d-28b9" name="Khorne Daemons Abilities" hidden="false">
