@@ -19,7 +19,7 @@
         <categoryLink id="aebe-1bff-f03e-b925" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1acd-d3ac-9dfd-8d9d" name="Witch Aelf Hag" hidden="true" collective="false" import="true" targetId="b6dd-e5ae-68fd-16d7" type="selectionEntry">
+    <entryLink id="1acd-d3ac-9dfd-8d9d" name=" Witch Aelf Hag" hidden="true" collective="false" import="true" targetId="b6dd-e5ae-68fd-16d7" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -163,7 +163,7 @@
         <categoryLink id="ecef-10d5-6cea-c47b" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a520-765b-febc-3bfc" name="Witch Aelf Hag" hidden="false" collective="false" import="true" targetId="b6dd-e5ae-68fd-16d7" type="selectionEntry">
+    <entryLink id="a520-765b-febc-3bfc" name=" Witch Aelf Hag" hidden="false" collective="false" import="true" targetId="b6dd-e5ae-68fd-16d7" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1428,6 +1428,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cae-8774-a2a7-c9ce" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="8c2b-8544-f30f-f08b" name="Special Abilities" hidden="false" targetId="556f-fb53-026c-f4ab" type="infoGroup"/>
@@ -1447,7 +1452,7 @@
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
