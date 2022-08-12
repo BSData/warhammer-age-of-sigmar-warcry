@@ -1,2 +1,882 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8b42-84ca-672b-a29c" name="Chaos - Disciples of Tzeentch - Daemons" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue id="b3a7-1206-c007-9fd9" name="Chaos - Disciples of Tzeentch - Daemons" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="3708-3a77-a4b8-2339" name="Tzeentch Demon Leaders" hidden="false"/>
+    <categoryEntry id="ac6e-70a7-6d40-65ea" name="Tzeentch Daemons" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="48fb-f66e-5bb1-7628" name="Changecaster" hidden="true" collective="false" import="true" targetId="8dbc-7d03-af65-f8c1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3708-3a77-a4b8-2339" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6a25-745f-b185-8f82" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7b21-6976-5b8c-961a" name="Fluxmaster" hidden="true" collective="false" import="true" targetId="96d8-6d38-84b6-360e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3708-3a77-a4b8-2339" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="52b3-8a7d-3988-f94a" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9194-0e31-ee34-29e3" name="Iridescent Horror" hidden="true" collective="false" import="true" targetId="8cd2-a7c2-0ef0-bef0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3708-3a77-a4b8-2339" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8acd-f6d3-6820-b172" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c4fb-6a06-cd42-e917" name="Pyrocaster" hidden="true" collective="false" import="true" targetId="a141-4470-f70a-f001" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3708-3a77-a4b8-2339" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e87e-da61-4f5f-82bc" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="81aa-238f-78ec-e475" name="Fluxmaster" hidden="false" collective="false" import="true" targetId="96d8-6d38-84b6-360e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3708-3a77-a4b8-2339" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1b79-4288-6e18-9aba" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="749d-6904-e7fc-5adf" name="Changecaster" hidden="false" collective="false" import="true" targetId="8dbc-7d03-af65-f8c1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3708-3a77-a4b8-2339" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3927-6312-1a31-4ee3" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="11ed-f78c-be27-2006" name="Iridescent Horror" hidden="false" collective="false" import="true" targetId="8cd2-a7c2-0ef0-bef0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3708-3a77-a4b8-2339" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a08c-26ab-1a44-edb0" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="69c8-a467-e054-770d" name="Pyrocaster" hidden="false" collective="false" import="true" targetId="a141-4470-f70a-f001" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3708-3a77-a4b8-2339" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d032-9b82-101a-2968" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="050a-080f-8a95-4d26" name="Blue Horror" hidden="false" collective="false" import="true" targetId="5461-5638-0bdd-e545" type="selectionEntry"/>
+    <entryLink id="44f0-8b08-02c6-3885" name="Brimstone Horror" hidden="false" collective="false" import="true" targetId="9998-f3f5-904a-9d3a" type="selectionEntry"/>
+    <entryLink id="974c-367f-79d1-faca" name="Changecaster" hidden="false" collective="false" import="true" targetId="8dbc-7d03-af65-f8c1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3242-856b-610b-d6a4" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="1da8-3376-cae5-c25e" name="Tzeentch Demon Leaders" hidden="false" targetId="3708-3a77-a4b8-2339" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="75bf-0587-0036-4c58" name="Pink Horror" hidden="false" collective="false" import="true" targetId="6983-a315-e1a8-4783" type="selectionEntry"/>
+    <entryLink id="c258-3d36-fdd2-1e68" name="Screamer of Tzeentch" hidden="false" collective="false" import="true" targetId="90b7-9160-b406-7962" type="selectionEntry"/>
+    <entryLink id="8618-ff4f-8418-1172" name="Fluxmaster" hidden="false" collective="false" import="true" targetId="96d8-6d38-84b6-360e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3654-9b0a-129b-d6b2" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="223a-c776-04f5-fff7" name="Tzeentch Demon Leaders" hidden="false" targetId="3708-3a77-a4b8-2339" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7e07-bb63-f9f7-02bb" name="Iridescent Horror" hidden="false" collective="false" import="true" targetId="8cd2-a7c2-0ef0-bef0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6d77-a1bf-5f64-b4e4" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="fccf-c558-0167-9c17" name="Tzeentch Demon Leaders" hidden="false" targetId="3708-3a77-a4b8-2339" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="034a-d377-a0db-437f" name="Flamer of Tzeentch" hidden="false" collective="false" import="true" targetId="7048-0e91-e6a1-d33c" type="selectionEntry"/>
+    <entryLink id="c957-7911-1639-1688" name="Pyrocaster" hidden="false" collective="false" import="true" targetId="a141-4470-f70a-f001" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7265-1a8e-5b34-0b14" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="d9ee-76b0-e23a-a9cb" name="Tzeentch Demon Leaders" hidden="false" targetId="3708-3a77-a4b8-2339" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="27d5-2a3c-0482-d945" name="Exalted Flamer of Tzeentch" hidden="false" collective="false" import="true" targetId="053d-824f-3a90-aca7" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="8cd2-a7c2-0ef0-bef0" name=" Iridescent Horror" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8ff9-d75f-0879-c9f2" name="Iridescent Horror" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a05d-75cc-573b-56d8" name="Iridescent Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b32b-684b-c24e-bce5" name="Iridescent Grasping Hands" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a4b6-08ca-4afb-1201" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6065-efd3-873e-0958" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="3cac-8cc3-1d79-7a13" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="ff2f-cd03-f2dc-8bea" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4bba-7380-a301-0005" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a141-4470-f70a-f001" name=" Pyrocaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1868-5a0b-1fea-ad45" name="Pyrocaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b5c6-e1d5-6f29-5323" name="Pyrocaster Warpflame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b9f-efea-c08d-2a9b" name="Flaming Maw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0a9d-cde8-bf86-4e2e" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bd6d-7dcc-84fc-add3" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="1a73-66c7-b4de-28e3" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="0960-d1d5-885a-f2e9" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d4be-a65d-0c66-78ae" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="96d8-6d38-84b6-360e" name=" Fluxmaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Staff of Change">
+          <conditions>
+            <condition field="selections" scope="96d8-6d38-84b6-360e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38b2-23a9-ebcd-6eeb" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Ritual Dagger">
+          <conditions>
+            <condition field="selections" scope="96d8-6d38-84b6-360e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadf-3d58-8009-8b65" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f20a-6c4c-3e20-e7cb" name="Fluxmaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">12</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ada1-e218-09cc-ef43" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cc48-96de-c0dc-cbd5" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="ee35-7be9-bb79-d2fe" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="0bfe-faaf-4435-7cd2" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="45c7-c81d-4f2d-894a" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0db6-c39a-9a8c-5a87" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="38b2-23a9-ebcd-6eeb">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a7-5d6e-8f7a-c228" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ffa-e2d3-35af-2584" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="38b2-23a9-ebcd-6eeb" name="Staff of Change" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0356-8a07-781d-e936" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="3232-1b27-9253-60da" name="Staff of Change" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fadf-3d58-8009-8b65" name="Ritual Dagger" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0b75-32e5-372f-af9b" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0dfd-8ca3-7405-a0ac" name="Ritual Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="240.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="456a-7cde-51a3-8f40" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8dbc-7d03-af65-f8c1" name=" Changecaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Ritual Dagger">
+          <conditions>
+            <condition field="selections" scope="8dbc-7d03-af65-f8c1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f39-ab65-4ead-8b26" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Staff of Change">
+          <conditions>
+            <condition field="selections" scope="8dbc-7d03-af65-f8c1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="284c-43e8-8d5b-c257" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="953e-7948-7b6b-6b5a" name="Changecaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1bda-2730-f16e-7928" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2334-c0a7-8e7f-ff39" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="16d9-e45b-b4fd-cb43" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="4695-8375-6ac1-1d6a" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5c51-dd96-ffdb-02b7" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="284c-43e8-8d5b-c257">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4515-bc36-6bcf-6249" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac94-7a90-731f-586e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="284c-43e8-8d5b-c257" name="Staff of Change" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="f5fe-7b8a-f823-93e6" name="Staff of Change" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="83ea-f319-1715-398d" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="160.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8f39-ab65-4ead-8b26" name="Ritual Dagger" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="27b5-4279-3a42-17d5" name="Ritual Dagger" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0fa0-a638-081c-7668" name="Magical Flame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="160.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="76c5-c22f-f151-5f07" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="855f-87d0-9438-b75f" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="5461-5638-0bdd-e545" name="Blue Horror" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2a05-53a7-9d7d-fcc2" name="Blue Horror" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf70-e5d0-f71f-9ab0" name="Blue Magical Flames" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8a15-fa5b-ccf1-10f5" name="Blue Taloned Hands" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cc20-a07b-b0b0-9cce" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9154-7026-f789-0230" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="2e5c-05b0-27c9-e577" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="c5b4-1548-cd2e-c725" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ef12-4a21-88e2-64e9" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9998-f3f5-904a-9d3a" name="Brimstone Horror" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="67df-a49a-9f2f-1240" name="Brimstone Horror" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33ae-41b2-259f-5b8e" name="Brimstone Magical Flames" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cfcb-ad23-6358-ee67" name="Brimstone Taloned Hands" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="05a5-3dcc-5919-38c7" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cbf3-9130-56cf-15a8" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="b831-4aed-43b7-7fdc" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="3834-a7fc-0e79-9e44" name=" Minion" hidden="false" targetId="9d06-5a04-abc1-f87c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8819-2de9-75ce-367d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="053d-824f-3a90-aca7" name="Exalted Flamer of Tzeentch" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2d48-b045-e82f-c5b1" name="Exalted Flamer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a92-e951-8ce4-d826" name="Billowing Warpflame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca20-812b-bdfe-4bd9" name="Flaming Maw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a467-6036-19e5-b562" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2e84-13af-9042-5d32" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9667-a4d2-3428-1db9" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="ef51-65ac-5374-9e73" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="75c4-5b6c-4d4c-955b" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="220.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7048-0e91-e6a1-d33c" name="Flamer of Tzeentch" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ae21-8a62-1a64-03f5" name="Flamer of Tzeentch" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="039a-b1e9-02db-b05d" name="Warpflame" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-15</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ce48-ca69-1558-ce04" name="Flaming Maw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="af9a-f580-9113-0036" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0a9e-1887-77e3-3f41" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="0041-6760-639a-6daf" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="4cdc-0707-f81b-20ba" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8791-540c-efd2-988f" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6983-a315-e1a8-4783" name="Pink Horror" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="54fb-69be-ebe9-ec31" name="Pink Horror" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ccfd-c4b2-a216-e321" name="Pink Magical Flames" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-10</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b957-2986-a393-0fda" name="Pink Grasping Hands" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9370-a72a-81f1-550a" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2217-938c-6e18-ae2d" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="87b6-985e-0f8d-64e5" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="b3ba-2fd7-ef48-bf8f" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f6f9-455f-b3aa-b765" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="90b7-9160-b406-7962" name="Screamer of Tzeentch" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9fe6-ab47-035b-87e2" name="Screamer of Tzeentch" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">12</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6754-b54d-4a95-8275" name="Lamprey Bite" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="457d-fb4a-a5da-c719" name="Special Abilities" hidden="false" targetId="a983-17a2-38be-0ce8" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f629-2c94-2dd1-131a" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="96e4-d168-1034-eba8" name="Tzeentch Daemons" hidden="false" targetId="ac6e-70a7-6d40-65ea" primary="false"/>
+        <categoryLink id="b449-d275-b9f8-35a7" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="2ed2-f53b-ebfb-f339" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="af47-ee7b-e8ba-726a" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="666f-7cc5-b95c-4d6c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="a983-17a2-38be-0ce8" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="6698-46f4-e7f8-ae83" name="Tzeentch Daemons" hidden="false" targetId="9dc8-c4b8-0496-f208" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="9dc8-c4b8-0496-f208" name="Tzeentch Daemons" hidden="false">
+      <rules>
+        <rule id="9987-c0c4-ea4d-e89e" name="⚁ [Double] Blue Fire" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7622-abbe-a6f9-0bc6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll 2 dice. For each roll of 4-5, allocate 1 damage point to that fighter. For each roll of 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="c106-0d0c-804b-9dea" name="⚁ [Double] Locus of Sorcery" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Add half the value of this ability (rounding up) to the Strength characteristic of the next missile attack action made by this fighter in this activation.</description>
+        </rule>
+        <rule id="979c-e1a1-359e-a8d9" name="[Reaction] Split" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcb1-dbed-6277-4fda" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by an attack action, after the damage is totalled but before it is allocated to this fighter. Set up 2 new fighters with the Disciples of Tzeentch: Daemons faction runemark and the Warrior runemark on the battlefield within 3&quot; of this fighter. Then, this fighter is taken down. In a campaign battle, do not make an injury roll for this fighter.</description>
+        </rule>
+        <rule id="ceb7-55cd-8aa0-c645" name="[Reaction] Split Again" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by an attack action, after the damage is totalled but before it is allocated to this fighter. Set up 1 new fighter with the Disciples of Tzeentch: Daemons faction runemark and the Minion runemark on the battlefield within 3&quot; of this fighter. Then, this fighter is taken down. In a campaign battle, do not make an injury roll for this fighter.</description>
+        </rule>
+        <rule id="4b9c-48fc-ae45-578b" name="⚂ [Triple] Latching Bite" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Add half the value of this ability (rounding up) to the Strength characteristic of the next attack action made by this fighter in this activation. In addition, until the end of the battle round, the target fighter cannot make move or disengage actions.</description>
+        </rule>
+        <rule id="e2fc-58e3-c864-d9d5" name="⚂ [Triple] Master of Destiny" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, add the value of this ability to the value of other abilities (to a maximum of 6) used by friendly fighters within 12&quot; of this fighter.</description>
+        </rule>
+        <rule id="60cc-30d3-effe-561d" name="⚂ [Triple] Pink Fire" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll 9 dice. For each roll of 4+, allocate 1 damage point to that fighter.</description>
+        </rule>
+        <rule id="1fe2-daa9-6066-2733" name="⚃ [Quad] Capricious Warpflame" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3f5-3905-6ef9-4bee" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter.</description>
+        </rule>
+        <rule id="cbed-de56-6f2c-ca23" name="[Reaction] Twist of Fate" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac6e-70a7-6d40-65ea" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction after they are targeted by an attack action but before the hit rolls are made. Pick one of the hit rolls, and change the value of one of your [doubles] to that value.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
+  <catalogueLinks>
+    <catalogueLink id="e0b4-d9ca-0c9f-198e" name="Chaos - Chaotic Beasts" targetId="6f6f-a348-e87b-3017" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>

@@ -1,2 +1,460 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="70cb-ea60-447b-ee54" name="Order - Khainite Shadowstalkers" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue id="3da7-5571-9064-9a44" name="Order - Khainite Shadowstalkers" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="0ca7-5274-4d0b-8de7" name="Khainite Leaders" hidden="false"/>
+    <categoryEntry id="98e8-329c-385d-8a02" name="Khainite Shadowstalkers" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="e3c1-0697-9124-ae4e" name="Shroud Queen" hidden="true" collective="false" import="true" targetId="a2b1-27bd-fff6-7dfb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca7-5274-4d0b-8de7" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fbc9-0a4e-6bf0-57b0" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d326-1865-0bbc-1889" name="Shroud Queen" hidden="false" collective="false" import="true" targetId="a2b1-27bd-fff6-7dfb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ca7-5274-4d0b-8de7" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bf0f-e096-ab11-cce4" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f425-224e-8f7c-5a4d" name="Shroudblade" hidden="false" collective="false" import="true" targetId="28d6-1e22-e538-1fc9" type="selectionEntry"/>
+    <entryLink id="ab70-8e64-1c7d-5c60" name="Darkflame Warlock" hidden="false" collective="false" import="true" targetId="67e4-bf46-0333-475c" type="selectionEntry"/>
+    <entryLink id="f427-f736-43de-e407" name="Slaughtershade" hidden="false" collective="false" import="true" targetId="40e4-c629-b8e5-9548" type="selectionEntry"/>
+    <entryLink id="d95b-0d91-ffce-2735" name="Shroud Queen" hidden="false" collective="false" import="true" targetId="a2b1-27bd-fff6-7dfb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="580c-aeb1-ee19-7ed4" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="7ab5-de81-90a9-6dae" name="Khainite Leaders" hidden="false" targetId="0ca7-5274-4d0b-8de7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="a2b1-27bd-fff6-7dfb" name=" Shroud Queen" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="fdc9-5a1c-834a-3cf5" name="Shroud Queen" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3188-9f86-acb7-9431" name="Cursed Missiles" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0ee2-5459-484e-3fc1" name="Umbral Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9278-7034-3f1f-95c2" name="Special Abilities" hidden="false" targetId="095f-ea1b-2aa3-1000" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1f0b-fe6a-f5fb-67e1" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
+        <categoryLink id="8dd8-54b0-faeb-2f8f" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b538-7312-4064-2c4d" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="67e4-bf46-0333-475c" name="Darkflame Warlock" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Doomfire Ring">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e88-8799-1bbb-1514" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Repeater Crossbows">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6519-74a6-3b7f-b287" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9528-edd6-589b-7aff" name="Darkflame Warlock" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8f0f-e8b5-7c3b-3887" name="Special Abilities" hidden="false" targetId="095f-ea1b-2aa3-1000" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="25bc-64dd-d235-6e77" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="27c5-24be-55c2-689f" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
+        <categoryLink id="9f58-c113-f2b3-b10b" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b631-392c-3758-ce95" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="3e88-8799-1bbb-1514">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc22-adfd-5f1c-f1f6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccaa-3594-b317-475f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3e88-8799-1bbb-1514" name="Doomfire Ring" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="cffd-89ba-fb14-e423" name="Assassin&apos;s Blade" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="c28f-0a8c-1304-7e7a" name="Doomfire" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6519-74a6-3b7f-b287" name="Repeater Crossbows" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="e9c3-08d0-fbae-2790" name="Repeater Crossbows" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="926d-779b-02ea-83ff" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="28d6-1e22-e538-1fc9" name="Shroudblade" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Umbral Spear">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e311-0eff-52aa-73fb" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Cursed Swords">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd8c-c437-b58a-584a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c2ae-fa42-177a-255e" name="Shroudblade" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="952b-c5b1-bb1a-8b45" name="Special Abilities" hidden="false" targetId="095f-ea1b-2aa3-1000" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="21ee-d7ad-74e7-ac15" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="cfde-20d9-0050-69f9" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
+        <categoryLink id="412d-1e20-f49f-facf" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9318-34d9-de0b-7220" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="bd8c-c437-b58a-584a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87ca-e5b3-4e72-6365" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35af-63dc-61a7-1113" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bd8c-c437-b58a-584a" name="with Cursed Swords" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3062-6bc5-6f47-35d7" name="Cursed Swords" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="85.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e311-0eff-52aa-73fb" name="with Umbral Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="0f3c-438c-7fa1-e0ee" name="Umbral Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a1f4-cd73-41e6-b912" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="40e4-c629-b8e5-9548" name="Slaughtershade" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Umbral Spear">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd7-d208-b430-4180" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Shadow Whip">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5f3-8716-efd1-0eae" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="d8ec-f97f-8756-d1ec" name="Slaughtershade" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e4e4-384e-53cd-ae57" name="Special Abilities" hidden="false" targetId="095f-ea1b-2aa3-1000" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2baf-6d5b-a381-4326" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="1135-5c74-8733-4fa4" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
+        <categoryLink id="096a-a830-0d67-f851" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="069c-f6fe-65d0-1a76" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="500d-6593-dd80-4e99" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="2cd7-d208-b430-4180">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7291-5a72-32ee-1655" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dc0-ddef-6210-c54e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2cd7-d208-b430-4180" name="with Umbral Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e540-683e-2a9c-c87e" name="Umbral Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d5f3-8716-efd1-0eae" name="with Shadow Whip" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c4fb-1fb6-5572-9e1a" name="Shadow Whip" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5b1e-cc1c-97e5-ada1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6635-990e-3e7d-4807" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+  </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="3ce3-d0ed-8d4a-6dfd" name="Khainite Shadowstalkers Abilities" hidden="false">
+      <rules>
+        <rule id="6edd-aeef-cb50-da28" name="⚁ [Double] Cursed Darts" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98e8-329c-385d-8a02" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll 2 dice. For each roll of 4+, allocate 2 damage points to that fighter. In addition, if either dice rolls a 6, until the end of the battle round, halve the Move characteristic of that fighter (rounding up).</description>
+        </rule>
+        <rule id="ead8-3e48-c9c1-6d3d" name="⚁ [Double] Instrument of Khaine" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98e8-329c-385d-8a02" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3f5-3905-6ef9-4bee" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
+        </rule>
+        <rule id="de94-611b-bae2-41c5" name="⚁ [Double] Shadow Leap" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98e8-329c-385d-8a02" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter’s activation, this fighter can fly when making move actions.</description>
+        </rule>
+        <rule id="24f2-309c-9503-6471" name="⚁ [Triple] Dance of Death" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98e8-329c-385d-8a02" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter’s activation, this fighter can finish disengage actions within 1&quot; of enemy fighters.</description>
+        </rule>
+        <rule id="56c3-183d-2bc4-45d7" name="⚁ [Triple] Harness Shadow" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98e8-329c-385d-8a02" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7622-abbe-a6f9-0bc6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they target a fighter within 3&quot; of this fighter.</description>
+        </rule>
+        <rule id="434f-98e4-43a2-8fb0" name="⚃ [Quad] Ensnaring Darkness" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98e8-329c-385d-8a02" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Either allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter, or allocate 3 damage points to this fighter and a number of damage points equal to the value of this ability to all visible enemy fighters within 6&quot; of this fighter. </description>
+        </rule>
+        <rule id="e112-5e2b-e888-2c35" name="[Reaction] Slip Between Shadows" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98e8-329c-385d-8a02" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when an enemy fighter finishes a move action within 3&quot; of them. Note the distance between this fighter and the enemy fighter that made the move action. Remove this fighter from the battlefield and then set this fighter up on a platform or the battlefield floor no further from the enemy fighter that made the move action.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+    <infoGroup id="095f-ea1b-2aa3-1000" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="a3db-5e18-1b6d-b3b3" name="Khainite Shadowstalkers Abilities" hidden="false" targetId="3ce3-d0ed-8d4a-6dfd" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
+  <catalogueLinks>
+    <catalogueLink id="68f5-849e-09d2-df89" name="Order - Monsters" targetId="fdcb-ae8a-c33d-e1d3" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>
