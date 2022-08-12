@@ -1197,7 +1197,11 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b6fb-bb2f-9df9-805a" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="b6fb-bb2f-9df9-805a" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="5a3a-f4cc-338e-5314" name="Blood Sister" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
@@ -1428,11 +1432,6 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cae-8774-a2a7-c9ce" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="8c2b-8544-f30f-f08b" name="Special Abilities" hidden="false" targetId="556f-fb53-026c-f4ab" type="infoGroup"/>
@@ -1449,13 +1448,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="b0a3-0a16-4b5c-471c" name="with Kruiplash and Sacrifical Knife" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="0b9c-ea92-f74a-7988" name="Kruiplash and Sacrifical Knife" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>
@@ -1478,13 +1470,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="9cae-8774-a2a7-c9ce" name="with Kruiplash and Bladed Buckler" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="a027-4186-cd26-2370" name="Kruiplash and Bladed Buckler" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
                   <characteristics>

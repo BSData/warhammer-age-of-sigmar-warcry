@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="56" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="57" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="df3a-f424-e7ea-5f69" name="Tome of Champions 2021" shortName="ToC21" publisher="Tome of Champions 2021" publicationDate="March 2022"/>
     <publication id="2c2f-d4c8-7730-6c82" name="Warcry Heart of Ghur Core Rule Book" shortName="HoG Core Book" publisher="2022" publicationDate="~~~2022"/>
@@ -615,6 +615,61 @@
             </modifierGroup>
           </modifierGroups>
         </modifierGroup>
+        <modifierGroup>
+          <comment>roster max alteration (gnarlwood encampments)</comment>
+          <modifierGroups>
+            <modifierGroup>
+              <comment>ALL soroth kor territory modifiers</comment>
+              <modifiers>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1050.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="098c-bd55-bf8d-ff94" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1050.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a362-c2bc-a64b-e83d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1100.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d66c-f25f-0f59-b507" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5dc5-9f7a-353c-cc4a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1250.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e802-716e-272d-92df" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0358-e822-ad3a-6aa3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c24-36a1-babe-54c8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fdf-60f2-1895-9274" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1200.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6f-9689-e731-772c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
       </modifierGroups>
       <constraints>
         <constraint field="selections" scope="roster" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1eab-7954-84eb-7178" type="max"/>
@@ -1014,6 +1069,26 @@
       <description>A fighter that is in cover can make this reaction after they are targeted by a missile attack action but before the hit rolls are made.  After the hit rolls have been made, roll a dice for each critical hit.  On a 4+, that critical hit becomes a hit instead.  Fighters with the Mount runemark cannot make this reaction.</description>
     </rule>
     <rule id="10ae-33a9-aac0-577f" name="[-Universal Reactions-]" hidden="false"/>
+    <rule id="8c2d-4d4b-36f9-17cf" name="⚅ ⚂ [Triple]Sound the Alarm ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>A fighter can use this ability only if they are within 1&quot; of the watchtower&apos;s war-horn.  Roll a number of dice equal to the value of this ability.  For each 4+, you can pick 1 fighter from your warband thatt is in the reserve and set them up on the battlefield within 3&quot; horizontally of their deployment point as normal.  These fighters can be activated this battle round as normal.</description>
+    </rule>
+    <rule id="59a3-3573-6823-cd3c" name="⚅ The Watchtower&apos;s War-horn ⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>If a fighter is within 1&quot; of the watchtower&apos;s war-horn, they can use the Sound the Alarm ability as a Triple to call in reserves to the battle.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="936c-93b8-e91d-8998" name="Monster Hunting Abilities" hidden="false" collective="false" import="true" type="upgrade">
@@ -1038,11 +1113,16 @@
         <categoryLink id="25a3-9457-dfda-611d" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="10ff-25f8-d133-5fc1" name="Increase Roster max by 100pts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="10ff-25f8-d133-5fc1" name="Increase Roster max by 100pts" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1056,11 +1136,16 @@
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b188-f905-02be-fd21" name="+1 Ally/Hero" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b188-f905-02be-fd21" name="+1 Ally/Hero" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1074,11 +1159,16 @@
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ed3b-f3ff-7285-d37a" name="Increase Roster max by 50pts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ed3b-f3ff-7285-d37a" name="Increase Roster max by 50pts" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1092,12 +1182,17 @@
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7579-db4e-0dd6-4537" name="Dominated Territories" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7579-db4e-0dd6-4537" name="Dominated Territories" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="a8e5-1b07-c226-925c" value="15.0">
               <comment>soroth kor territory limit</comment>
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1122,7 +1217,14 @@
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5ef2-3a00-53cf-6f5c" name="Show Narrative Battles options" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5ef2-3a00-53cf-6f5c" name="Show Narrative Battles options" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2218-aff7-33c9-5e54" type="max"/>
           </constraints>
@@ -1133,7 +1235,14 @@
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9bb9-c7fc-02e5-0f92" name="Show Soroth Kor options" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9bb9-c7fc-02e5-0f92" name="Show Soroth Kor options" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02e3-9806-9dcf-41a2" type="max"/>
           </constraints>
@@ -1144,10 +1253,10 @@
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="081b-bfbe-08c1-f915" name="Reputation" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="081b-bfbe-08c1-f915" name="Current Reputation Modifier" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="100.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-50d6-b90b-8b67" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="90a9-f40c-e520-bfb7" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f56a-56a4-848c-fddb" type="min"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="2483-8e94-9f25-5ceb" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
@@ -1156,6 +1265,18 @@
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="7e5c-a6a5-144a-97e7" name="Show Gnarlwood options" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7842-3d05-af91-d5b6" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="a19b-f8dc-ca6f-abcf" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4be2-7238-74b9-92ed" name="Show Warcry1.0 Narrative Options" hidden="false" collective="false" import="true" type="upgrade"/>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="4e23-04e0-1757-7ddb" name="Narrative Battles (Abilities)" hidden="true" collective="false" import="true">
@@ -1774,7 +1895,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4328-943e-f294-ed8c" name="Convergence Tracker" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="4328-943e-f294-ed8c" name="Convergence Tracker" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aab3-b162-fb6b-9d13" type="max"/>
           </constraints>
@@ -1812,6 +1940,137 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
               </costs>
             </selectionEntry>
             <selectionEntry id="6632-ec63-9fd9-8f05" name="Threatened" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9b2d-1eaf-0874-3ebc" name="Gnarlwood (Encampments)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e5c-a6a5-144a-97e7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="098c-bd55-bf8d-ff94" name="Foreboding Watchtower" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="7187-30f1-a057-4756" name="Foreboding Watchtower" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b71-a24e-4046-7a28">In step 5 of the aftermath sequence, you can re-roll 1 exploration roll you make.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5dc5-9f7a-353c-cc4a" name="Dead Gnarloak Grove" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="23bb-0dfe-3ff6-8291" name="Dead Gnarloak Grove" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">In a campaign battle, you gain 1 additional wild dice at the start of the battle if you are the defender.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="80b3-a8d3-8414-8d9c" name="Outskirts of the Gnarlwood" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="dd99-ab61-f3d6-ef15" name="Outskirts of the Gnarlwood" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">Do not make encampment checks for this location</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a362-c2bc-a64b-e83d" name="Stranglegrove Swamp" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3913-d12e-84ee-1817" name="Stranglegrove Swamp" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">In step 5 of the aftermath sequence, you can pick 1 fighter from your warband and send them forth to explore the swamp.  To do so, roll a dice.  On a 1-2, make an injury roll for that fighter.  On a 3+, roll once on the Gnarlwood Lesser Artefacts table.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d66c-f25f-0f59-b507" name="Timeworn Ruin" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="284a-1d51-5923-b086" name="Timeworn Ruin" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">In step 5 of the aftermath sequence, you can pick 1 fighter from your warband and send them forth to explore the ruins.  To do so, roll a dice.  On a 1, make an injury roll for that fighter.  On a 2+, roll once on the Gnarlwood Lesser Artifacts table.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0358-e822-ad3a-6aa3" name="Scorpid Hive" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="82ae-b96a-3e5f-1a6d" name="Scorpid Hive" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">In a campaign battle, you gain 1 additional wild dice at the start of the battle if you are the attacker.  In addition, in step 1 of the aftermath sequence, you gain D6 additional glory if you were the attacker.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3c6f-9689-e731-772c" name="Shard of Talaxis" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4c28-76f4-cbfc-bd38" name="Shard of Talaxis" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">In step 5 of the aftermath sequence, you can pick 1 fighter from your warband and send them forth to explore the wreckage.  To do so, roll a dice.  On a 1, make an injury roll for that fighter.  On a 2+, roll once on the Gnarlwood Lesser Artefacts table, but instead of rolling a D66, roll 1 dice and add 60 to the score (giving a result of 61-66).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e802-716e-272d-92df" name="Hidden Cavern" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="61ca-7efb-fa2e-80e0" name="Hidden Cavern" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">In a campaign battle, you gain 1 additional wild dice at the start of the battle if you are the defender.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8c24-36a1-babe-54c8" name="Ley Line Nexus" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="0a60-73e0-e301-b24b" name="Ley Line Nexus" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">In step 6 of the aftermath sequence, add 1 to all perish rolls you make.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3fdf-60f2-1895-9274" name="Wellspring" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="5930-f1c5-021e-23c2" name="Wellspring" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">In step 6 of the aftermath sequence, add 1 to all recovery rolls you make.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
@@ -2302,18 +2561,6 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="a18c-718b-210f-4abf" name="Level of Renown" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aadf-5830-72a8-d164" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="465c-7021-ff16-3d12" type="max"/>
           </constraints>
@@ -2350,20 +2597,20 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             </selectionEntry>
             <selectionEntry id="d61a-178d-68a4-e0e4" name="Heroic Trait" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="14db-81dd-b399-e0f0" value="1.0">
+                <modifier type="set" field="14db-81dd-b399-e0f0" value="3.0">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f2ce-030d-9971-73f0" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e311-66c4-5d05-cd1e" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aadf-5830-72a8-d164" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ca4-e66d-9403-64a5" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ed1-bb68-7a31-b173" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14db-81dd-b399-e0f0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14db-81dd-b399-e0f0" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
