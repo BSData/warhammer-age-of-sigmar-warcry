@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e3df-fd4c-d88e-5ff1" name="Chaos - Chaos Legionnaires" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e3df-fd4c-d88e-5ff1" name="Chaos - Chaos Legionnaires" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="95fd-abcd-a818-54cd" name="Chaos Legionnaires" hidden="false"/>
     <categoryEntry id="99e1-0d2d-7683-3984" name="Legionnaire Leaders" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="b4ec-2317-b91d-794e" name="Decuriarch" hidden="true" collective="false" import="true" targetId="9c9b-69ba-d0c6-4a36" type="selectionEntry">
+    <entryLink id="b4ec-2317-b91d-794e" name=" Decuriarch" hidden="true" collective="false" import="true" targetId="9c9b-69ba-d0c6-4a36" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -17,7 +17,7 @@
         <categoryLink id="20aa-dc56-5aad-f0b8" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="000d-f2f8-2106-88a7" name="Decuriarch" hidden="false" collective="false" import="true" targetId="9c9b-69ba-d0c6-4a36" type="selectionEntry">
+    <entryLink id="000d-f2f8-2106-88a7" name=" Decuriarch" hidden="false" collective="false" import="true" targetId="9c9b-69ba-d0c6-4a36" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -35,6 +35,7 @@
         <categoryLink id="508f-8265-9d40-6dc1" name="Legionnaire Leaders" hidden="false" targetId="99e1-0d2d-7683-3984" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="d63e-907c-ff18-4b89" name="Hornshield" hidden="false" collective="false" import="true" targetId="20ed-2cf9-b8ae-9138" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9c9b-69ba-d0c6-4a36" name=" Decuriarch" hidden="false" collective="false" import="true" type="model">
@@ -78,25 +79,135 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7601-1179-8eb7-d2fb" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="7601-1179-8eb7-d2fb" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="20ed-2cf9-b8ae-9138" name="Hornshield" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="5dd9-fabb-0183-b180" name="Hornshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b146-4bee-32cf-dba0" name="Chaos Sword and Horned Shield" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="17ee-3a96-4fdd-d5ae" name="Special Abilities" hidden="false" targetId="2b68-764e-5fca-f481" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8a41-4d2b-2b00-8a59" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="cd90-4aca-3280-a03f" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+        <categoryLink id="a51e-b6a2-dd53-d342" name="Chaos Legionnaires" hidden="false" targetId="95fd-abcd-a818-54cd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3228-5709-3146-c4a3" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4304-82de-8217-9654" name="DEFAULT FIGHTER" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Sword and Horned Shield">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba10-563f-7685-dc48" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="0f50-42f7-d120-11e3" name="Hornshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="da89-c0c0-523e-94d8" name="Chaos Sword and Horned Shield" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b69f-fa15-238e-967c" name="Special Abilities" hidden="false" targetId="2b68-764e-5fca-f481" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5fff-bf54-950f-02b4" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="cfdc-549d-4624-2c77" name="Chaos Legionnaires" hidden="false" targetId="95fd-abcd-a818-54cd" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d52c-2722-818d-92ae" name="Profile" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4da-aacb-b5a3-d8d1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f4-a09b-54ce-c697" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ba10-563f-7685-dc48" name="with Bullgor Axe and Bullshield" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dd66-7123-66e7-afd1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="051a-7b39-607a-597f" name="Chaos Legionnaires Abilities" hidden="false">
       <rules>
-        <rule id="7ce6-c9d8-07d5-05e9" name="⚁ [Double] Blowpipe" hidden="true">
+        <rule id="7ce6-c9d8-07d5-05e9" name="⚁ [Double] Dark Pact" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dce8-a536-db85-d856" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 6&quot; of this fighter and roll 2 dice.  For each 4+, allocate a number of damage points to that fighter equal to half the value of this ability (rounding up).  In addition, for each 6, subtract 1 from that fighter&apos;s Toughness characteristic until the end of the battle round.</description>
+          <description>Pick a visible enemy fighter within 12&quot; of this fighter.  Roll a number of dice equal to the value of this ability.  For each 3+, allocate 1 damage point to that fighter.  After all of the dice have been rolled, allocate D3 damage points to this fighter.</description>
         </rule>
         <rule id="f384-1de8-631c-de26" name="⚂ [Triple] Lethal Injection" hidden="true">
           <modifiers>
@@ -128,17 +239,30 @@
           </modifiers>
           <description>This fighter makes a bonus attack action.  In addition, if that attack action scores any critical hits, the target fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
         </rule>
-        <rule id="29d8-3f22-e12b-38de" name="[Reaction] " hidden="true">
+        <rule id="29d8-3f22-e12b-38de" name="[Reaction] Call to Arms" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when they are targeted by a melee attack action.
-
-After the damage is totalled but before it is allocated to this fighter, roll a dice for each critical hit scored from that attack action.</description>
+          <description>A fighter can make this reaction when an enemy fighter ends their move action visible to this fighter and within 3&quot; of this fighter.  Pick another friendly fighter within 3&quot; of this fighter.  That fighter makes a bonus move action.  After that move action that fighter must be within 1&quot; of the enemy fighter that made the move action.</description>
+        </rule>
+        <rule id="b139-8b89-df1f-7eb5" name="⚁ [Double] Shield Ram" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f0b-3883-05ea-e379" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of this fighter and roll a dice.  On a 4-5, allocate 1 damage point to that fighter.  On a 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
       </rules>
     </infoGroup>

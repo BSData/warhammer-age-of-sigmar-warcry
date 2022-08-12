@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6f6f-a348-e87b-3017" name="Chaos - Chaotic Beasts" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6f6f-a348-e87b-3017" name="Chaos - Chaotic Beasts" revision="15" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ea18-2256-baec-9611" name="Chaotic Beasts" hidden="false"/>
     <categoryEntry id="4887-e19a-966d-6966" name="Chaos" hidden="false"/>
@@ -923,9 +923,9 @@
             <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">35</characteristic>
           </characteristics>
         </profile>
-        <profile id="33ce-e758-444d-4100" name="Trident and Hooked Net" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="33ce-e758-444d-4100" name="Spear and Hooked Net" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
             <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
@@ -938,6 +938,7 @@
       <categoryLinks>
         <categoryLink id="7774-f140-aec8-b039" name="Chaotic Beasts" hidden="false" targetId="ea18-2256-baec-9611" primary="false"/>
         <categoryLink id="6cad-be56-77f5-89e8" name=" Ally" hidden="false" targetId="65b3-6aac-769e-b8bd" primary="false"/>
+        <categoryLink id="8c68-d684-1db4-0d6f" name=" Icon Bearer" hidden="false" targetId="2bf9-3f3e-ea63-1f26" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b939-2355-bea0-aa99" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1614,6 +1615,21 @@
             </modifier>
           </modifiers>
           <description>Until the end of this fighter’s activation, the next time this fighter finishes a move action within 1&quot; of an enemy fighter, pick a visible enemy fighter within 1&quot; of this fighter. Allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="8faa-7eee-ad9d-c162" name="⚃ [Quad] Skewer, Drag and Bludgeon" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bf9-3f3e-ea63-1f26" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea18-2256-baec-9611" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>This fighter can make a bonus attack action with its spear.  In addition, if that bonus attack action scores any critical hits, the target fighter moves 3&quot;  directly towards this fighter as if they were jumping, even if they are within 1&quot; of any enemy fighters.  If the target fighter finishes that move within 1&quot; of this fighter, this fighter can make a bonus attack action with its club.</description>
         </rule>
       </rules>
     </infoGroup>
