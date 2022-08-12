@@ -61,7 +61,7 @@
     <categoryEntry id="45ea-7617-f6a7-7fcb" name="Allies" hidden="false"/>
     <categoryEntry id="aadf-5830-72a8-d164" name="Thralls" hidden="false"/>
     <categoryEntry id="e311-66c4-5d05-cd1e" name="Monsters" hidden="false"/>
-    <categoryEntry id="5ed1-bb68-7a31-b173" name="OGHeroes" hidden="false"/>
+    <categoryEntry id="5ed1-bb68-7a31-b173" name="zzzzz" hidden="false"/>
     <categoryEntry id="e4b3-72a5-ca73-8c72" name="Narrative Options" hidden="false"/>
     <categoryEntry id="82fd-8251-2413-feb8" name="Bladeborn Fighters" hidden="false"/>
     <categoryEntry id="15bb-04f5-5313-58a5" name="Open Play Options" hidden="false"/>
