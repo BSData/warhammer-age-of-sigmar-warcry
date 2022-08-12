@@ -57,7 +57,7 @@
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="f2ce-030d-9971-73f0" name="Fighters" hidden="false"/>
-    <categoryEntry id="0ca4-e66d-9403-64a5" name="Leaders" hidden="false"/>
+    <categoryEntry id="0ca4-e66d-9403-64a5" name="Heroes (1 to 3)" hidden="false"/>
     <categoryEntry id="45ea-7617-f6a7-7fcb" name="Allies" hidden="false"/>
     <categoryEntry id="aadf-5830-72a8-d164" name="Thralls" hidden="false"/>
     <categoryEntry id="e311-66c4-5d05-cd1e" name="Monsters" hidden="false"/>
@@ -242,18 +242,6 @@
         </categoryLink>
         <categoryLink id="cc09-a311-7013-6e59" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
         <categoryLink id="bb9f-23ef-1c1d-5c51" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
-        <categoryLink id="8ef5-6034-f03f-b95e" name="OGHeroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
-          <modifiers>
-            <modifier type="increment" field="5737-b82e-d9f2-7509" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b014-8825-a869-c3f2" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5737-b82e-d9f2-7509" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="e96a-4ba9-a4f3-9277" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
         <categoryLink id="6a6a-fcf5-2a74-ef67" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false"/>
         <categoryLink id="8999-2018-4ce5-b7e7" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
@@ -683,18 +671,13 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3def-010b-811e-64ad" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e236-6bab-45e7-dadd" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+        <categoryLink id="e236-6bab-45e7-dadd" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c17-c507-690d-a3a5" type="min"/>
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d25-9dd2-1047-5dcc" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="d991-9f84-0e81-9ea1" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="3025-0b3b-9476-8223" name="OGHeroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="072e-e925-6fac-2488" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="44f6-b6c0-bcb3-cd03" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4b0-7266-8ff6-5532" type="max"/>
@@ -790,18 +773,13 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink id="c5d2-95ec-5b7d-32c2" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+        <categoryLink id="c5d2-95ec-5b7d-32c2" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9306-d299-2f5c-7e39" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="2377-2d5d-138d-5546" name="OGHeroes" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58f5-1fbc-791b-d2d3" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="b1fc-6ef9-f273-6f4a" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ec-61fe-bd81-2c7c" type="max"/>

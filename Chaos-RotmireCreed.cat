@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d42d-d99c-e2b6-315b" name="Chaos - Rotmire Creed" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d42d-d99c-e2b6-315b" name="Chaos - Rotmire Creed" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c0a9-fab2-661f-197d" name="Rotmire Leaders" hidden="false"/>
     <categoryEntry id="57a2-e12e-7d85-c55b" name="Rotmire Creed" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="8469-b8f8-6d58-4b7d" name="Witherlord" hidden="true" collective="false" import="true" targetId="84c3-5e5c-423d-98be" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0a9-fab2-661f-197d" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="55b9-f925-f6fd-e05d" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="98d8-3572-6c29-7e0e" name="Witherlord" hidden="false" collective="false" import="true" targetId="84c3-5e5c-423d-98be" type="selectionEntry">
+    <entryLink id="98d8-3572-6c29-7e0e" name=" Witherlord" hidden="false" collective="false" import="true" targetId="84c3-5e5c-423d-98be" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -386,7 +374,11 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e26e-dc1d-50b6-d282" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="e26e-dc1d-50b6-d282" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="cad3-c7ad-21b6-1bb6" name="Rotmire Creed Abilities" hidden="false">

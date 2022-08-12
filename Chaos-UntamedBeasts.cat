@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="90d1-298b-309f-13b2" name="Untamed Leaders" hidden="false"/>
     <categoryEntry id="5e8b-afc8-1311-4158" name="Untamed Beasts" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="cf03-91c9-9a61-033b" name="Heart-eater" hidden="true" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90d1-298b-309f-13b2" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="80ed-1af2-9c5d-313a" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="5985-6c52-fb86-0674" name="Heart-eater" hidden="false" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
+    <entryLink id="5985-6c52-fb86-0674" name=" Heart-eater" hidden="false" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -346,7 +334,11 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0ff1-655b-e712-5881" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="0ff1-655b-e712-5881" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="d1b4-e230-8d36-b1e1" name="Untamed Beast Abilities" hidden="false">

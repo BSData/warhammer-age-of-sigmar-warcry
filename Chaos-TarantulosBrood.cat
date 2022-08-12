@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="680d-90e5-7442-0ee4" name="Chaos - Tarantulos Brood" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="680d-90e5-7442-0ee4" name="Chaos - Tarantulos Brood" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="5164-33cd-375a-2859" name="Tarantulos Leaders" hidden="false"/>
     <categoryEntry id="8895-9ffb-1ffd-effb" name="Tarantulos Brood" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="89af-fd91-9ef6-32ea" name="Broodmaster" hidden="true" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5164-33cd-375a-2859" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="afa9-4c66-7d7d-6ba1" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="2221-4c8c-28a9-1935" name="Broodmaster" hidden="false" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
+    <entryLink id="2221-4c8c-28a9-1935" name=" Broodmaster" hidden="false" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -81,7 +69,11 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="23ba-6901-9fc4-8400" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="23ba-6901-9fc4-8400" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="1178-05ee-c5dd-f316" name="Broodkin" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Scythe and Spider Claw">

@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2b2-b639-6904-7f45" name="Chaos - Spire Tyrants" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2b2-b639-6904-7f45" name="Chaos - Spire Tyrants" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="dc68-472e-9a89-970e" name="Spire Leaders" hidden="false"/>
     <categoryEntry id="b386-b2d9-fed7-4798" name="Spire Tyrants" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="b3bb-104c-a716-07cf" name="Pit Champion" hidden="true" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dc68-472e-9a89-970e" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="761c-991d-2075-4361" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="4b3c-63aa-117f-a71e" name="Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
+    <entryLink id="4b3c-63aa-117f-a71e" name=" Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -447,7 +435,11 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8f5d-fd68-6463-ffbd" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="8f5d-fd68-6463-ffbd" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="bf13-3cd8-8b17-b7a6" name="Special Abilities" hidden="false">

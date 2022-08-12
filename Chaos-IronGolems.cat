@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3159-79eb-657a-183a" name="Chaos - Iron Golems" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3159-79eb-657a-183a" name="Chaos - Iron Golems" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4913-fc55-6c2b-c796" name="Iron Golem Leaders" hidden="false"/>
     <categoryEntry id="210a-8997-4c97-5525" name="Iron Golems" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="1e44-6174-d49f-a4d6" name="Dominar" hidden="true" collective="false" import="true" targetId="7876-4740-b001-6d38" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4913-fc55-6c2b-c796" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="9223-fa8f-e2a4-1f5c" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="0a4f-ab5a-b8a2-a450" name="Dominar" hidden="false" collective="false" import="true" targetId="7876-4740-b001-6d38" type="selectionEntry">
+    <entryLink id="0a4f-ab5a-b8a2-a450" name=" Dominar" hidden="false" collective="false" import="true" targetId="7876-4740-b001-6d38" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -417,7 +405,11 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8bca-5266-d20d-0789" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="8bca-5266-d20d-0789" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="c36b-00cf-e70c-8231" name="Special Abilities" hidden="false">

@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="16fa-f517-7f33-f908" name="Corvus Leaders" hidden="false"/>
     <categoryEntry id="53c1-4321-81c5-6ee8" name="Corvus Cabal" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="1b2d-a780-20fe-ca5f" name="Shadow Piercer" hidden="true" collective="false" import="true" targetId="354c-adb1-51d9-3f38" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="16fa-f517-7f33-f908" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="94a5-91d7-5a89-6894" name="New CategoryLink" hidden="false" targetId="5ed1-bb68-7a31-b173" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="880b-a35c-cc08-1847" name="Shadow Piercer" hidden="false" collective="false" import="true" targetId="354c-adb1-51d9-3f38" type="selectionEntry">
+    <entryLink id="880b-a35c-cc08-1847" name=" Shadow Piercer" hidden="false" collective="false" import="true" targetId="354c-adb1-51d9-3f38" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -290,7 +278,11 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="80a7-2fe3-ff7a-06fe" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="80a7-2fe3-ff7a-06fe" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="6668-669f-3946-2ad4" name="Special Abilities" hidden="false">
