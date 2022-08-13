@@ -167,13 +167,6 @@
         <forceEntry id="472c-cc4c-3c46-a7d2" name="Allies" hidden="false">
           <categoryLinks>
             <categoryLink id="6cff-4bfc-b8ee-be19" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
-              <modifiers>
-                <modifier type="increment" field="38ae-8bfd-d301-796a" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0bf-d5a3-41fb-9817" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>underworlds relationship</comment>
@@ -210,6 +203,20 @@
                     </modifier>
                   </modifiers>
                 </modifierGroup>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="set" field="38ae-8bfd-d301-796a" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="38ae-8bfd-d301-796a" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
               </modifierGroups>
               <constraints>
                 <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38ae-8bfd-d301-796a" type="max"/>
@@ -234,7 +241,23 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c32a-38a0-0681-0ef8" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="5ff4-8541-ecbd-b97f" name="Leaders" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+        <categoryLink id="5ff4-8541-ecbd-b97f" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8b96-7179-f4be-926a" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8b96-7179-f4be-926a" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca02-49fa-9a8e-4ebe" type="min"/>
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b96-7179-f4be-926a" type="max"/>
@@ -253,7 +276,6 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink id="ed2c-9cfa-a5ac-1b50" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
@@ -625,31 +647,22 @@
                   </modifiers>
                 </modifierGroup>
                 <modifierGroup>
-                  <comment>ally/hero relationship - set to hidden when heroes selected</comment>
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5ed1-bb68-7a31-b173" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="set" field="4c1f-5a81-f0ed-5bb3" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" childId="5ed1-bb68-7a31-b173" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="set" field="4c1f-5a81-f0ed-5bb3" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
+                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="7989-e5fa-4eea-0df6" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -672,6 +685,22 @@
           </constraints>
         </categoryLink>
         <categoryLink id="e236-6bab-45e7-dadd" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8d25-9dd2-1047-5dcc" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d25-9dd2-1047-5dcc" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c17-c507-690d-a3a5" type="min"/>
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d25-9dd2-1047-5dcc" type="max"/>
@@ -692,11 +721,6 @@
               </conditions>
             </modifier>
           </modifiers>
-        </categoryLink>
-        <categoryLink id="b021-7fa8-daf2-b17d" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cfa0-1bc3-38f1-b286" type="max"/>
-          </constraints>
         </categoryLink>
         <categoryLink id="cd0c-dfa1-c64c-5f85" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
       </categoryLinks>
@@ -737,14 +761,31 @@
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="7bef-8541-1068-f6c1" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5988-6dd4-f405-8ce2" type="min"/>
+        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7bef-8541-1068-f6c1" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5988-6dd4-f405-8ce2" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="54fc-61ae-71eb-ca9d" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="22b7-1439-9736-8056" type="max"/>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36ac-843c-baf0-5fc6" type="min"/>
       </constraints>
       <forceEntries>
         <forceEntry id="63d2-7c13-32e7-9c61" name="Allies" hidden="false">
           <categoryLinks>
             <categoryLink id="65b8-c7f4-1c50-97d1" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+              <modifierGroups>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="set" field="2754-4fcb-e4e8-05bd" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="2754-4fcb-e4e8-05bd" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <constraints>
                 <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
               </constraints>
@@ -774,6 +815,22 @@
           </modifiers>
         </categoryLink>
         <categoryLink id="c5d2-95ec-5b7d-32c2" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="9306-d299-2f5c-7e39" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9306-d299-2f5c-7e39" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9306-d299-2f5c-7e39" type="max"/>
@@ -788,11 +845,6 @@
         <categoryLink id="37d9-ea6a-34ca-6010" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-0268-4131-b04c" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="f1ba-36f7-c185-5746" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1d-5c15-e2f5-2ecd" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="26ad-7a72-52a2-60b0" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
