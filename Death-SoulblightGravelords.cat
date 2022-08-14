@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e18a-14c5-6c36-8d80" name="Death - Soulblight Gravelords" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e18a-14c5-6c36-8d80" name="Death - Soulblight Gravelords" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="023b-175d-21c0-1b46" name="Soulblight Leaders" hidden="false"/>
     <categoryEntry id="7304-52df-8e95-78ca" name="Underworlds Sepulchral" hidden="false"/>
@@ -1817,6 +1817,10 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="95fc-59ab-ebf4-1988" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b56-4e7f-adf6-9587">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d2e-1393-e013-e1e7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cb9-b4e3-241d-b8cf" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="0b56-4e7f-adf6-9587" name="with Mace" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>

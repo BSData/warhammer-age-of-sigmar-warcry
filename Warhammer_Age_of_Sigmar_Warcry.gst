@@ -159,8 +159,8 @@
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2a28-06a6-cbd3-84f6" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="851c-980c-8c57-7c5e" type="min"/>
+        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2a28-06a6-cbd3-84f6" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="851c-980c-8c57-7c5e" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c181-c1de-6c1f-e780" type="max"/>
       </constraints>
       <forceEntries>
@@ -219,7 +219,7 @@
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38ae-8bfd-d301-796a" type="max"/>
+                <constraint field="selections" scope="472c-cc4c-3c46-a7d2" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38ae-8bfd-d301-796a" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="ae35-2cf4-c82d-79c8" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -617,8 +617,8 @@
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1eab-7954-84eb-7178" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a612-cfde-504b-b8d6" type="min"/>
+        <constraint field="selections" scope="roster" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="1eab-7954-84eb-7178" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="a612-cfde-504b-b8d6" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="00fd-8510-5cfd-67a0" type="max"/>
       </constraints>
       <forceEntries>
@@ -662,7 +662,7 @@
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
+                <constraint field="selections" scope="39d0-d6f7-c416-26a7" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="7989-e5fa-4eea-0df6" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -761,10 +761,9 @@
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7bef-8541-1068-f6c1" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5988-6dd4-f405-8ce2" type="min"/>
+        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="7bef-8541-1068-f6c1" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5988-6dd4-f405-8ce2" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="54fc-61ae-71eb-ca9d" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="22b7-1439-9736-8056" type="max"/>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36ac-843c-baf0-5fc6" type="min"/>
       </constraints>
       <forceEntries>
         <forceEntry id="63d2-7c13-32e7-9c61" name="Allies" hidden="false">
@@ -787,7 +786,7 @@
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
+                <constraint field="selections" scope="63d2-7c13-32e7-9c61" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="8077-6f1c-cde4-8898" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -832,19 +831,19 @@
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9306-d299-2f5c-7e39" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9306-d299-2f5c-7e39" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
         <categoryLink id="b1fc-6ef9-f273-6f4a" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ec-61fe-bd81-2c7c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ec-61fe-bd81-2c7c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="37d9-ea6a-34ca-6010" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-0268-4131-b04c" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-0268-4131-b04c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="26ad-7a72-52a2-60b0" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
@@ -2559,6 +2558,28 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
       </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup id="cb05-fb8b-8fa4-fca2" name="Leader Options" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8d4c-ea74-97f4-d6ac" name=" Is this Hero the Leader of your warband?" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="3a3f-4a68-9fd1-41c2" name="Leader" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f939-f9ce-9aff-b38b" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c31-b63d-ed44-4a12" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="73a1-eafb-76e2-4d47" name="Battle Groups" hidden="false" collective="false" import="true" targetId="12f7-2c49-ad72-65d5" type="selectionEntryGroup"/>
         <entryLink id="a052-a8b5-abbf-abae" name="Campaign Options" hidden="false" collective="false" import="true" targetId="0641-ca29-0b13-4b1c" type="selectionEntryGroup"/>
