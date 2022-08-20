@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e3df-fd4c-d88e-5ff1" name="Chaos - Chaos Legionnaires" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e3df-fd4c-d88e-5ff1" name="Chaos - Chaos Legionnaires" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="95fd-abcd-a818-54cd" name="Chaos Legionnaires" hidden="false"/>
     <categoryEntry id="99e1-0d2d-7683-3984" name="Legionnaire Leaders" hidden="false"/>
@@ -72,24 +72,22 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="with Mace">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e76f-1c22-d04c-458d" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Axe">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19c5-c156-3d0c-2500" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Sword">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5f8-1f79-1213-79eb" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
-      <profiles>
-        <profile id="5dd9-fabb-0183-b180" name="Hornshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b146-4bee-32cf-dba0" name="Chaos Sword and Horned Shield" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="17ee-3a96-4fdd-d5ae" name="Special Abilities" hidden="false" targetId="2b68-764e-5fca-f481" type="infoGroup"/>
       </infoLinks>
@@ -98,6 +96,103 @@
         <categoryLink id="cd90-4aca-3280-a03f" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
         <categoryLink id="a51e-b6a2-dd53-d342" name="Chaos Legionnaires" hidden="false" targetId="95fd-abcd-a818-54cd" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3b2a-4b80-c4c1-11b6" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5f8-1f79-1213-79eb">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2265-6d42-b487-ce9d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a05d-6069-be78-2ea2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e76f-1c22-d04c-458d" name="with Mace" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="4bf3-1ac2-41cb-7022" name="with Mace" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="5760-9685-50ec-5a48" name="Hornshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a5f8-1f79-1213-79eb" name="with Sword" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="cd3a-6384-37ae-4e7d" name="with Sword" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="a0ec-8a98-ea55-cd84" name="Hornshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="19c5-c156-3d0c-2500" name="with Axe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0c81-91cd-cccc-0393" name="with Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="6766-cdee-86f4-1826" name="Hornshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="3228-5709-3146-c4a3" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
@@ -105,13 +200,8 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4304-82de-8217-9654" name="DEFAULT FIGHTER" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="4304-82de-8217-9654" name="Mutandor" hidden="true" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="append" field="name" value="with Sword and Horned Shield">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba10-563f-7685-dc48" type="atLeast"/>
-          </conditions>
-        </modifier>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
@@ -119,19 +209,19 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="0f50-42f7-d120-11e3" name="Hornshield" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="0f50-42f7-d120-11e3" name="Mutandor" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
           </characteristics>
         </profile>
-        <profile id="da89-c0c0-523e-94d8" name="Chaos Sword and Horned Shield" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="da89-c0c0-523e-94d8" name="Beast Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -141,15 +231,49 @@
       <categoryLinks>
         <categoryLink id="5fff-bf54-950f-02b4" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="cfdc-549d-4624-2c77" name="Chaos Legionnaires" hidden="false" targetId="95fd-abcd-a818-54cd" primary="false"/>
+        <categoryLink id="5d99-b95a-5b52-87da" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dd66-7123-66e7-afd1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="145.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d710-6355-3948-0e5a" name="Hornhelm" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Darkiron Mace">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91af-b3d1-5737-4ad0" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Steelbite Axe">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73f0-2045-862c-7081" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="1c32-3395-afcb-c66b" name="Special Abilities" hidden="false" targetId="2b68-764e-5fca-f481" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="efe3-d657-9b6d-d0a0" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="ef48-5c18-3c24-27d3" name="Chaos Legionnaires" hidden="false" targetId="95fd-abcd-a818-54cd" primary="false"/>
+        <categoryLink id="a20c-ca32-b7a9-1be4" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d52c-2722-818d-92ae" name="Profile" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2158-554e-fb3b-f057" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="73f0-2045-862c-7081">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4da-aacb-b5a3-d8d1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f4-a09b-54ce-c697" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5865-1128-73c7-9338" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17d4-ffd5-c98b-4c67" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ba10-563f-7685-dc48" name="with Bullgor Axe and Bullshield" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="91af-b3d1-5737-4ad0" name="with Darkiron Mace" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
                   <conditions>
@@ -157,15 +281,61 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile id="8562-88d4-d147-424a" name="with Darkiron Mace" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d152-3868-f8a0-efdd" name="Hornhelm" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="73f0-2045-862c-7081" name="with Steelbite Axe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="93a8-6efb-48dd-26ee" name="with Steelbite Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/6</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="803c-9ef0-d0fd-70fb" name="Hornhelm" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="dd66-7123-66e7-afd1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+        <entryLink id="f16a-5cc5-2522-9076" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
@@ -190,35 +360,30 @@
           </modifiers>
           <description>Pick a visible enemy fighter within 12&quot; of this fighter.  Roll a number of dice equal to the value of this ability.  For each 3+, allocate 1 damage point to that fighter.  After all of the dice have been rolled, allocate D3 damage points to this fighter.</description>
         </rule>
-        <rule id="f384-1de8-631c-de26" name="⚂ [Triple] Lethal Injection" hidden="true">
+        <rule id="f384-1de8-631c-de26" name="⚂ [Triple] Headlong Charge" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3f5-3905-6ef9-4bee" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to the value of this ability.  For each roll that exceeds the Toughness characteristic of that fighter, allocate 5 damage points to them.</description>
+          <description>A fighter can use this ability only if they are within 2&quot; of an enemy fighter and have made 2 move actions this activation.  This fighter makes a bonus attack action with its spear.</description>
         </rule>
-        <rule id="76e9-8c70-be25-ee86" name="⚃ [Quad] Ensnaring Strike" hidden="true">
+        <rule id="76e9-8c70-be25-ee86" name="⚃ [Quad] Wrath of the First Prince" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
-          <description>This fighter makes a bonus attack action.  In addition, if that attack action scores any critical hits, the target fighter cannot make move actions or disengage actions for the rest of the battle round.</description>
+          <description>This fighter makes a bonus attack action.  In addition, a number of hits scored by that attack action equal to half the value of this ability (rounding up) become critical hits instead.  For example, if the value of the ability was 6, 3 hits scored by that attack action would become critical hits instead.</description>
         </rule>
         <rule id="29d8-3f22-e12b-38de" name="[Reaction] Call to Arms" hidden="true">
           <modifiers>
@@ -244,6 +409,36 @@
             </modifier>
           </modifiers>
           <description>Until the end of this fighter&apos;s activation, the next time this fighter finishes a move action within 1&quot; of this fighter and roll a dice.  On a 4-5, allocate 1 damage point to that fighter.  On a 6, allocate a number of damage points to that fighter equal to the value of this ability.</description>
+        </rule>
+        <rule id="e72b-548f-f45e-6702" name="⚁ [Double] Brutal Swing" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Add half the value of this ability (rounding up) to the damage points allocated by each critical hit from the next attack action made by this fighter this activation.</description>
+        </rule>
+        <rule id="0066-a546-a1d8-0ef0" name="⚂ [Triple] The True Master&apos;s Favour" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fd-abcd-a818-54cd" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation.  Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by friendly fighters while they are within 9&quot; of this fighter.</description>
         </rule>
       </rules>
     </infoGroup>
