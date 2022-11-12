@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="64d3-5a0b-9fc3-5b1a" name="Chaos - Slaves to Darkness" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="64d3-5a0b-9fc3-5b1a" name="Chaos - Slaves to Darkness" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="720c-2a49-1400-8e2d" name="Slaves Leaders" hidden="false"/>
     <categoryEntry id="c781-8602-05b2-f7a2" name="Underworlds Khagra" hidden="false"/>
@@ -1990,17 +1990,25 @@
       <profiles>
         <profile id="16a1-4f2f-ee9b-3e65" name="Sarrakkar Blackwing" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">6</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">22</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
           </characteristics>
         </profile>
-        <profile id="5ae1-ded5-9121-d807" name=" Wildstaff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="5ae1-ded5-9121-d807" name="Wildstaff" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
             <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d852-87ba-3fef-d8dc" name="Arcane Bolt" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/6</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2011,10 +2019,14 @@
         <categoryLink id="45e1-28b8-ebd5-6b68" name="Slaves to Darkness" hidden="false" targetId="9f8e-6dd7-a9af-54b8" primary="false"/>
         <categoryLink id="dbe7-7311-9e83-cc2e" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="9e73-5f4d-4a00-54d9" name="Gnarlspirit Pack" hidden="false" targetId="822b-a214-fe52-ef91" primary="false"/>
+        <categoryLink id="6431-f611-01d0-1a74" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="25e5-f1a9-eea4-ed96" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="185.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="211f-6f64-1473-b915" name="Gorl Spinehammer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -2028,16 +2040,16 @@
         <profile id="63f0-c8cf-bdbd-81e1" name="Spinehammer" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
           </characteristics>
         </profile>
         <profile id="1870-9ce2-c5ff-af01" name="Gorl Spinehammer" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2054,7 +2066,7 @@
         <entryLink id="c48b-e7f1-9f02-6027" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="135.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cd58-c9f4-bb10-1d29" name="Crimson Kheira" hidden="false" collective="false" import="true" type="model">
@@ -2069,16 +2081,16 @@
         <profile id="c1fa-47a9-8fcf-daf1" name="Clawed Axes" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
         <profile id="2374-a0d0-7c40-2955" name="Crimson Kheira" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2095,7 +2107,7 @@
         <entryLink id="8bd9-8b87-2727-bf57" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="76c7-c725-d782-8352" name="Lupan Longcut" hidden="false" collective="false" import="true" type="model">
@@ -2107,19 +2119,27 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="6f2a-bf7c-3da6-c4f1" name="Longcut Spear and Silent Knife" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+        <profile id="6f2a-bf7c-3da6-c4f1" name="Bow" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
             <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
         <profile id="a2e0-889b-ad65-11e6" name="Lupan Longcut" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a787-7cce-af28-1b15" name="Longcut Spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2136,7 +2156,7 @@
         <entryLink id="da5a-29d5-238b-528d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="140.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2267,21 +2287,20 @@
           </modifiers>
           <description>A fighter can use this ability only if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action. Then, they can make a bonus attack action.</description>
         </rule>
-        <rule id="a4dd-4925-7701-e8c3" name="⚂ [Triple] Gnarlspirit Ability 2" hidden="true">
+        <rule id="a4dd-4925-7701-e8c3" name="⚂ [Triple] Self-Command" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f8e-6dd7-a9af-54b8" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="822b-a214-fe52-ef91" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick an enemy fighter within 12&quot; of this fighter and roll a die. Until the end of the battle round, subtract the value of the roll from the Toughness characteristic of that fighter (to a minimum of 1).</description>
+          <description>Until the end of the battle round, add 1 to the Toughness characteristic of this fighter and add 1 to the damage points allocated to enemy fighters by each hit and critical hit from melee attack actions made by this fighter.</description>
         </rule>
         <rule id="fa72-dde6-f20f-3fbc" name="⚂ [Triple] Knights of Chaos" hidden="true">
           <modifiers>
@@ -2417,21 +2436,20 @@
           </modifiers>
           <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. Remove 3 damage points allocated to this fighter.</description>
         </rule>
-        <rule id="6517-021e-8151-30df" name="⚁ [Double] Gnarlspirit Ability 1" hidden="true">
+        <rule id="6517-021e-8151-30df" name="⚁ [Double] Unleash" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f8e-6dd7-a9af-54b8" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad7e-e1dc-6545-1969" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="822b-a214-fe52-ef91" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible friendly fighter with both the Godsworn Hunt and the Beast runemark within 6&quot; of this fighter. That fighter takes a bonus move action.</description>
+          <description>Until the end of the battle round, add 1 to this fighter&apos;s Move characteristic, add 1 to the Attacks characteristic of melee attack actions made by this fighter, and this fighter has the Beast runemark.</description>
         </rule>
         <rule id="bed1-c2ec-7a29-3988" name="⚂ [Triple] Enfeeble" hidden="true">
           <modifiers>
@@ -2449,7 +2467,7 @@
           </modifiers>
           <description>Pick an enemy fighter within 12&quot; of this fighter and roll a die. Until the end of the battle round, subtract the value of the roll from the Toughness characteristic of that fighter (to a minimum of 1).</description>
         </rule>
-        <rule id="8ddd-5c02-fd4c-8ad1" name="⚃ [Quad] Gnarlspirit Ability 3" hidden="true">
+        <rule id="8ddd-5c02-fd4c-8ad1" name="⚃ [Quad] In Control" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -2462,17 +2480,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>This fighter makes a bonus attack action. Additionally, if this fighter is within 3&quot; of any objective markers, add half the value of this ability (rounding up) to the Attacks and Strength characteristics of that bonus attack action.</description>
-        </rule>
-        <rule id="da25-0cf2-1476-edbc" name="[Reaction] Gnarlspirit Reaction" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f8e-6dd7-a9af-54b8" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. Remove 3 damage points allocated to this fighter.</description>
+          <description>Each other friendly fighter with the Gnarlspirit Pack runemark can make a bonus move action or a bonus attack action (some can make a bonus move action and others can make a bonus attack action).</description>
         </rule>
       </rules>
     </infoGroup>
