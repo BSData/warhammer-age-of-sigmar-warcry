@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9611-51f0-a495-c299" name="Chaos - Jade Obelisk" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9611-51f0-a495-c299" name="Chaos - Jade Obelisk" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="e555-7abf-0067-c984" name="Jade Leaders" hidden="false"/>
     <categoryEntry id="7a98-d2ae-54c9-86b0" name="Jade Obelisk" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="c501-bdb4-bffa-a720" name=" Nephrite Priestess" hidden="false" collective="false" import="true" targetId="4d24-5999-3f25-1bbc" type="selectionEntry">
+    <entryLink id="c501-bdb4-bffa-a720" name=" Nephrite Priestess" hidden="true" collective="false" import="true" targetId="4d24-5999-3f25-1bbc" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="42a5-0cbe-4943-3ec5" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="46b5-69b8-1e46-6c91" name=" Nephrite Priestess" hidden="false" collective="false" import="true" targetId="4d24-5999-3f25-1bbc" type="selectionEntry">
+    <entryLink id="46b5-69b8-1e46-6c91" name=" Nephrite Priestess" hidden="true" collective="false" import="true" targetId="4d24-5999-3f25-1bbc" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d0ad-e9cb-0fb1-2fa0" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
         <categoryLink id="81e1-ff62-77a1-10cc" name="Jade Leaders" hidden="false" targetId="e555-7abf-0067-c984" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1f6a-6e8c-f30e-0fcb" name="Idolarc" hidden="false" collective="false" import="true" targetId="3ef7-2406-e303-2f42" type="selectionEntry"/>
-    <entryLink id="dd47-8ab7-1d0e-ab55" name="Obelisk Bearer" hidden="false" collective="false" import="true" targetId="1c2f-f29e-5218-f26d" type="selectionEntry"/>
+    <entryLink id="1f6a-6e8c-f30e-0fcb" name="Idolarc" hidden="true" collective="false" import="true" targetId="3ef7-2406-e303-2f42" type="selectionEntry"/>
+    <entryLink id="dd47-8ab7-1d0e-ab55" name="Obelisk Bearer" hidden="true" collective="false" import="true" targetId="1c2f-f29e-5218-f26d" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="4d24-5999-3f25-1bbc" name=" Nephrite Priestess" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4d24-5999-3f25-1bbc" name=" Nephrite Priestess" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
@@ -58,17 +58,21 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="757a-e56e-dcff-daf4" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="b774-46f8-a592-461e" name="Jade Obelisk" hidden="false" targetId="7a98-d2ae-54c9-86b0" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f99a-0d56-eee7-5db0" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c5e8-1891-4668-fb40" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c2f-f29e-5218-f26d" name="Obelisk Bearer" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="1c2f-f29e-5218-f26d" name="Obelisk Bearer" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Doomfire Ring">
           <conditions>
@@ -95,7 +99,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="da2f-1a25-64b0-0073" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="98ff-8a75-1501-ec36" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="d92f-bc90-c1e8-8760" name="Jade Obelisk" hidden="false" targetId="7a98-d2ae-54c9-86b0" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3b1f-9096-f6f0-2acc" name="Profiles" hidden="false" collective="false" import="true">
@@ -166,7 +170,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3ef7-2406-e303-2f42" name="Idolarc" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3ef7-2406-e303-2f42" name="Idolarc" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Doomfire Ring">
           <conditions>
@@ -193,7 +197,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1886-a094-e0da-fdff" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
-        <categoryLink id="4d59-b48b-ff4c-2529" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="babf-a2ac-21ad-0cea" name="Jade Obelisk" hidden="false" targetId="7a98-d2ae-54c9-86b0" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="40f9-a7ff-c913-2aed" name="Profiles" hidden="false" collective="false" import="true">
