@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="58" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="59" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Cost Limits: 1000
 
 click on the force you add, then click Add Force to add another force as Allies.</readme>
@@ -912,7 +912,11 @@ click on the force you add, then click Add Force to add another force as Allies.
           </conditions>
         </modifier>
       </modifiers>
-      <description>A fighter that is within 1&quot; of a rope bridge but not on it can attempt to destroy it as an action.  If they do so, roll 3 dice and add 1 to the score of each roll if the fighter is a monster or has any melee weapons with a Strength characterisitc of 5 or greater.  if 1 roll scores 6+, the rope bridge is damaged.  If 2 or more rolls score 6+, the rope bridge is destroyed.</description>
+      <description>A fighter that is within 1&quot; of a rope bridge but not on it can attempt to destroy it as an action.  If they do so, roll 3 dice and add 1 to the score of each roll if the fighter is a monster or has any melee weapons with a Strength characterisitc of 5 or greater.  if 1 roll scores 6+, the rope bridge is damaged.  If 2 or more rolls score 6+, the rope bridge is destroyed.
+
+The first time a rope bridge is damaged, it is weakened.  This has no immediate effect, but players should be wary of sending their fighters across it from that point on.  The second time a rope bridge is damaged, it is destroyed.
+
+When a rope bridge is destroyed, every fighter that has the centre of their base on that rope bridge falls one after the other, in an order chosen by the player whose turn is taking place.  When a fighter falls, if there is nowhere vertically lower that they can be placed, they are taken down.  Otherwise, when a fighter falls in this manner, roll 3 dice for impact damage instead of 1.  Once each fighter on the rope bridge has fallen, the rope bridge is removed.</description>
     </rule>
     <rule id="bbaf-62e3-6c9e-c576" name="[Reaction] Counter" hidden="false">
       <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made.  For each hit roll from that attack action that misses, allocate 1 damage point to the attacking fighter.  For each hit roll of 1, allocate 2 damage points to the attacking fighter instead.</description>
@@ -947,6 +951,39 @@ click on the force you add, then click Add Force to add another force as Allies.
         </modifier>
       </modifiers>
       <description>If a fighter is within 1&quot; of the watchtower&apos;s war-horn, they can use the Sound the Alarm ability as a Triple to call in reserves to the battle.</description>
+    </rule>
+    <rule id="e222-45f7-5242-d559" name="⚅⚃  Hollow Refuge - Safe Haven ⚃⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fe5-d938-419f-3e6c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>A fighter on the bone-strewn floor or lowest bamboo floor can make the &quot;Take Cover&quot; reaction without forfeiting one of their actions in that battle round.</description>
+    </rule>
+    <rule id="4618-5149-7c84-47ed" name="⚅⚂  Sundered Fate Special Rules ⚂⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fe5-d938-419f-3e6c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule id="5436-8c6e-e41a-f213" name="⚅⚄ Cutting the Ropes ⚄⚅" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>A fighter that is within 1&quot; of a rope bridge but not on it can attempt to destroy it as an action.  If they do so, roll 3 dice and add 1 to the score of each roll if the fighter is a monster or has any melee weapons with a Strength characterisitc of 5 or greater.  if 1 roll scores 6+, the rope bridge is damaged.  If 2 or more rolls score 6+, the rope bridge is destroyed.
+
+The first time a rope bridge is damaged, it is weakened.  This has no immediate effect, but players should be wary of sending their fighters across it from that point on.  The second time a rope bridge is damaged, it is destroyed.
+
+When a rope bridge is destroyed, every fighter that has the centre of their base on that rope bridge falls one after the other, in an order chosen by the player whose turn is taking place.  When a fighter falls, if there is nowhere vertically lower that they can be placed, they are taken down.  Otherwise, when a fighter falls in this manner, roll 3 dice for impact damage instead of 1.  Once each fighter on the rope bridge has fallen, the rope bridge is removed.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -2226,6 +2263,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <selectionEntry id="77de-f41a-3164-1be1" name="Show Heart of Ghur Abilities" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f7-5622-85dc-9880" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7fe5-d938-419f-3e6c" name="Show Sundered Fate Special Rules" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9100-46d1-db32-3203" type="max"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>

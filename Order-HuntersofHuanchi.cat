@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9df4-cd38-7d71-583d" name="Order - Hunters of Huanchi" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9df4-cd38-7d71-583d" name="Order - Hunters of Huanchi" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c5a1-8d05-f3ef-9ab8" name="Haunchi Leaders" hidden="false"/>
     <categoryEntry id="82eb-8f6a-fc69-9fce" name="Hunters of Huanchi" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="f9e3-1929-4ba7-fe88" name=" Leader" hidden="true" collective="false" import="true" targetId="aac0-471a-5693-a13a" type="selectionEntry">
+    <entryLink id="f9e3-1929-4ba7-fe88" name=" Chameleon Skink Alpha" hidden="false" collective="false" import="true" targetId="aac0-471a-5693-a13a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="14d7-8113-13a0-975b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
         <categoryLink id="8461-24d6-0c5e-80e9" name="Haunchi Leaders" hidden="false" targetId="c5a1-8d05-f3ef-9ab8" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="08a4-b675-f8c5-558e" name=" Leader" hidden="true" collective="false" import="true" targetId="aac0-471a-5693-a13a" type="selectionEntry">
+    <entryLink id="08a4-b675-f8c5-558e" name=" Chameleon Skink Alpha" hidden="false" collective="false" import="true" targetId="aac0-471a-5693-a13a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="dfcf-3502-c21c-e4b6" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e9fc-5c7e-6350-ef80" name="Chameleon Skink" hidden="false" collective="false" import="true" targetId="be2c-a37e-d14a-8e2e" type="selectionEntry"/>
-    <entryLink id="7431-d324-bc7d-a86f" name="Huanchi&apos;s Claw" hidden="true" collective="false" import="true" targetId="416e-c7ee-6653-4181" type="selectionEntry"/>
-    <entryLink id="6245-8e85-71e8-2a85" name="Terrawing" hidden="true" collective="false" import="true" targetId="070b-0d5a-e0da-df7d" type="selectionEntry"/>
+    <entryLink id="7431-d324-bc7d-a86f" name="Huanchi&apos;s Claw" hidden="false" collective="false" import="true" targetId="416e-c7ee-6653-4181" type="selectionEntry"/>
+    <entryLink id="6245-8e85-71e8-2a85" name="Terrawing" hidden="false" collective="false" import="true" targetId="070b-0d5a-e0da-df7d" type="selectionEntry"/>
+    <entryLink id="a0c6-f6ad-6104-9a8b" name="Chameleon Skink Hornblower" hidden="false" collective="false" import="true" targetId="1f42-21d8-7fb5-1580" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5d71-ae05-38ec-ad51" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
@@ -26,72 +27,122 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aac0-471a-5693-a13a" name=" Leader" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="aac0-471a-5693-a13a" name=" Chameleon Skink Alpha" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="with Moonstone Club">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b157-9eed-7e89-1c7e" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Dartpipe">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6517-1670-e440-cd29" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
-      <profiles>
-        <profile id="9d73-c3cf-666b-0a40" name=" " hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b2cd-7feb-1fc2-6384" name="  " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d98b-50de-8351-6466" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="8494-b45c-7a6f-1544" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="aa77-f09c-d54c-78c4" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="4149-ea06-36b7-057f" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
+        <categoryLink id="e119-3c36-4999-858a" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ae34-38b4-f31c-b900" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="6517-1670-e440-cd29">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55b-14ed-c448-df91" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df60-2d5a-7f73-0851" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6517-1670-e440-cd29" name="with Dartpipe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="da34-a96a-7b25-5de4" name="Dartpipe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">1</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0a7c-2851-b8ba-1d7b" name="Chameleon Skink Alpha" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b157-9eed-7e89-1c7e" name="with Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d623-b1df-d2af-bf9e" name="Moonstone Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="9cbb-8bff-9da6-d087" name="Chameleon Skink Alpha" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="0420-f6cd-5cc9-bc9d" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fe89-076d-6656-01f6" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="210.0"/>
-      </costs>
     </selectionEntry>
-    <selectionEntry id="416e-c7ee-6653-4181" name="Huanchi&apos;s Claw" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="append" field="name" value="with Doomfire Ring">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5ae-1064-00de-6529" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" field="name" value="with Repeater Crossbows">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7ba-e71d-e810-c0a1" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="416e-c7ee-6653-4181" name="Huanchi&apos;s Claw" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="f93a-e760-70b1-e1e5" name=" Huanchi&apos;s Claw" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a87a-2f77-5119-5254" name="Harpoon" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -102,94 +153,28 @@
         <categoryLink id="3b84-48c0-b206-fc90" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="16fb-a8e2-4222-f570" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="d76e-8266-8b6b-9f9f" name=" Icon Bearer" hidden="false" targetId="2bf9-3f3e-ea63-1f26" primary="false"/>
+        <categoryLink id="f1e1-9fb5-6d34-670d" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5c59-c87a-9484-9881" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5ae-1064-00de-6529">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a99-ab7d-ade3-ef54" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3465-3f46-e610-de6b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="f5ae-1064-00de-6529" name=" " hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="0878-6b75-f071-54bb" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="0216-b3c7-d24a-76ad" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b7ba-e71d-e810-c0a1" name=" " hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="4d04-5e27-50fd-3985" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e82b-498e-4f40-fe0d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be2c-a37e-d14a-8e2e" name="Chameleon Skink" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="fed9-4691-dbf2-3de9" name=" Chameleon Skink" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6f48-aafc-edc6-2414" name="Blowpipe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">1</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <modifiers>
+        <modifier type="append" field="name" value="with Dartpipe">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec93-e5d8-8f56-fee0" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Moonstone Club">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5fb-1721-e28f-7227" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="7693-5c7e-61fb-26ca" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
       </infoLinks>
@@ -198,32 +183,96 @@
         <categoryLink id="d078-d9fa-6740-9351" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="5c92-ebc6-84ee-b23f" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3914-05d4-63b5-faf2" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec93-e5d8-8f56-fee0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d77a-1d68-15ed-2959" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b91d-fad4-bf2a-98c9" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c5fb-1721-e28f-7227" name="with Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9712-c838-f62e-8c75" name="Moonstone Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="19b6-4e4d-6773-3b80" name="Chameleon Skink" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="20a9-853a-126e-28f1" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ec93-e5d8-8f56-fee0" name="with Dartpipe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5a5a-3493-2892-1039" name="Dartpipe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">1</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="2f7c-3a95-7c8c-ddd2" name="Chameleon Skink" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6c27-8a61-7b6a-034a" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
-      </costs>
     </selectionEntry>
-    <selectionEntry id="070b-0d5a-e0da-df7d" name="Terrawing" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="append" field="name" value="with Doomfire Ring">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5ae-1064-00de-6529" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" field="name" value="with Repeater Crossbows">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7ba-e71d-e810-c0a1" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="070b-0d5a-e0da-df7d" name="Terrawing" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="d5b0-11b7-18f9-2e17" name="Terrawing" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">128</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="52f7-ea95-99ec-b7b8" name="Beak and Talons" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -236,93 +285,26 @@
         <categoryLink id="4ff2-3487-1cfc-bc36" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
         <categoryLink id="1b6f-7402-9eca-5c27" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5d4d-37c6-afe0-0038" name="Profiles" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1735-1a65-e2c9-eb2f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6002-62a3-1dee-829b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="3c98-7a71-95ac-429d" name=" " hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="c1cc-46e7-3714-d0c4" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="c9ce-0482-d218-1563" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9a92-6c8b-5101-d885" name=" " hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="59b8-60b2-ae80-2b28" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="02bc-f2af-6cd9-f801" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1f42-21d8-7fb5-1580" name="Chameleon Skink Dooter" hidden="true" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="b758-48ee-bea5-ec7a" name=" Chameleon Skink Dooter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
-          <characteristics>
-            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8991-1617-d50c-d33c" name="Doot Machine" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6</characteristic>
-            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">1</characteristic>
-            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="1f42-21d8-7fb5-1580" name="Chameleon Skink Hornblower" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Dartpipe">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7a9-995f-495b-a4b9" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Moonstone Club">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62d0-aaa1-2479-2476" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="c540-de6a-a4d1-852c" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
       </infoLinks>
@@ -330,13 +312,79 @@
         <categoryLink id="49ce-5802-dff0-90ad" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="de80-0f8f-f77c-b322" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="9536-d1ac-a100-d107" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+        <categoryLink id="e8b2-f546-a554-c2c9" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6d48-93e9-b8aa-b08f" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7a9-995f-495b-a4b9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca8a-da1a-0d71-bc95" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d01-72d7-b630-4877" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="62d0-aaa1-2479-2476" name="with Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6e4b-b56d-09cf-0d25" name="Moonstone Club" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="6014-23be-6c8b-afef" name="Chameleon Skink Hornblower" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b7a9-995f-495b-a4b9" name="with Dartpipe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b043-ecf6-d70b-a83c" name="Dartpipe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">1</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="2690-d473-017d-3793" name="Chameleon Skink Hornblower" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1345-f91f-e1e3-0772" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
@@ -347,39 +395,50 @@
     </infoGroup>
     <infoGroup id="6458-0405-87f2-851b" name="Hunters of Huanchi Abilities" hidden="false">
       <rules>
-        <rule id="fe2f-4e61-a74e-40b2" name="⚁ [Double] Cursed Darts" hidden="true">
+        <rule id="fe2f-4e61-a74e-40b2" name="⚁ [Double] Agile Climbers" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d93c-b171-eecc-ef6d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 9&quot; of this fighter and roll 2 dice. For each roll of 4+, allocate 2 damage points to that fighter. In addition, if either dice rolls a 6, until the end of the battle round, halve the Move characteristic of that fighter (rounding up).</description>
+          <description>Until the end of this fighter&apos;s activation, do not count the vertical distance moved when this fighter is climbing.</description>
         </rule>
-        <rule id="52f6-0337-75c7-b75e" name="⚁ [Double] Instrument of Khaine" hidden="true">
+        <rule id="52f6-0337-75c7-b75e" name="⚁ [Double] Envenomed Weapons" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3f5-3905-6ef9-4bee" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
+          <description>Add 1 to the damage points allocated by each hit and critical hit from the next attack action made by this fighter this activation.</description>
         </rule>
-        <rule id="7b6f-1c44-42e4-6661" name="⚁ [Double] Shadow Leap" hidden="true">
+        <rule id="7b6f-1c44-42e4-6661" name="⚁ [Double] Hurled Bolas" hidden="true">
           <modifiers>
-            <modifier type="set" field="hidden" value="false"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad7e-e1dc-6545-1969" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
-          <description>Until the end of this fighter’s activation, this fighter can fly when making move actions.</description>
+          <description>Pick a visible enemy fighter within 8&quot; of this fighter and roll a number of dice equal to the value of this ability.  If 1 of the dice scores a 6, that fighter makes 1 fewer action in this battle round (to a minimum of 0).  If a fighter is reduced to 0 actions in this way, that fighter cannot be activated in this battle round.</description>
         </rule>
         <rule id="18a2-cd8a-2f65-4175" name="⚁ [Triple] Bellow of the Carnosaur" hidden="true">
           <modifiers>
@@ -411,19 +470,20 @@
           </modifiers>
           <description>Pick a friendly fighter with the Hunters of Huanchi and Beast runemarks within 9&quot; of this fighter.  That fighter makes a bonus move action.  Then pick a visible enemy fighter within 1&quot; of the fighter that made the bonus move action and allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
-        <rule id="01ce-56e5-fc6e-bcac" name="⚃ [Quad] Ensnaring Darkness" hidden="true">
+        <rule id="01ce-56e5-fc6e-bcac" name="⚃ [Quad] Hit and Run" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Either allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter, or allocate 3 damage points to this fighter and a number of damage points equal to the value of this ability to all visible enemy fighters within 6&quot; of this fighter. </description>
+          <description>This fighter makes a bonus move action or a bonus disengage action, then this fighter makes a bonus attack action or a bonus move action.</description>
         </rule>
         <rule id="ea4d-29d9-5011-d76e" name="[Reaction] Slippery" hidden="true">
           <modifiers>
