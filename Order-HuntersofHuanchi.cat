@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9df4-cd38-7d71-583d" name="Order - Hunters of Huanchi" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9df4-cd38-7d71-583d" name="Order - Hunters of Huanchi" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c5a1-8d05-f3ef-9ab8" name="Haunchi Leaders" hidden="false"/>
     <categoryEntry id="82eb-8f6a-fc69-9fce" name="Hunters of Huanchi" hidden="false"/>
@@ -16,7 +16,7 @@
         <categoryLink id="dfcf-3502-c21c-e4b6" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e9fc-5c7e-6350-ef80" name="Chameleon Skink" hidden="true" collective="false" import="true" targetId="be2c-a37e-d14a-8e2e" type="selectionEntry"/>
+    <entryLink id="e9fc-5c7e-6350-ef80" name="Chameleon Skink" hidden="false" collective="false" import="true" targetId="be2c-a37e-d14a-8e2e" type="selectionEntry"/>
     <entryLink id="7431-d324-bc7d-a86f" name="Huanchi&apos;s Claw" hidden="true" collective="false" import="true" targetId="416e-c7ee-6653-4181" type="selectionEntry"/>
     <entryLink id="6245-8e85-71e8-2a85" name="Terrawing" hidden="true" collective="false" import="true" targetId="070b-0d5a-e0da-df7d" type="selectionEntry"/>
   </entryLinks>
@@ -101,6 +101,7 @@
       <categoryLinks>
         <categoryLink id="3b84-48c0-b206-fc90" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="16fb-a8e2-4222-f570" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
+        <categoryLink id="d76e-8266-8b6b-9f9f" name=" Icon Bearer" hidden="false" targetId="2bf9-3f3e-ea63-1f26" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5c59-c87a-9484-9881" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5ae-1064-00de-6529">
@@ -171,25 +172,21 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="be2c-a37e-d14a-8e2e" name="Chameleon Skink" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="append" field="name" value="with Doomfire Ring">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5ae-1064-00de-6529" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" field="name" value="with Repeater Crossbows">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7ba-e71d-e810-c0a1" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="be2c-a37e-d14a-8e2e" name="Chameleon Skink" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="fed9-4691-dbf2-3de9" name=" Chameleon Skink" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
-            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6f48-aafc-edc6-2414" name="Blowpipe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">1</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -199,74 +196,13 @@
       <categoryLinks>
         <categoryLink id="4432-ce31-46d6-e6b4" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="d078-d9fa-6740-9351" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
+        <categoryLink id="5c92-ebc6-84ee-b23f" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4f49-3c22-c4dd-79ba" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="5625-ff3c-329c-7b06">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a2e-b328-ee6e-d1d9" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5fb-abab-9281-d3ba" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="5625-ff3c-329c-7b06" name=" " hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="1889-a986-9155-5906" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="5d9f-d939-fa09-2907" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3-7</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b86d-2a7a-90a3-100d" name=" " hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile id="e085-bc3a-e121-1a57" name=" " hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
-                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
-                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
-                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1c57-8d22-db20-4582" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+        <entryLink id="6c27-8a61-7b6a-034a" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="070b-0d5a-e0da-df7d" name="Terrawing" hidden="true" collective="false" import="true" type="model">
@@ -297,6 +233,8 @@
       <categoryLinks>
         <categoryLink id="c7aa-256e-c770-af45" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="0f29-5263-7cb1-6415" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
+        <categoryLink id="4ff2-3487-1cfc-bc36" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="1b6f-7402-9eca-5c27" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5d4d-37c6-afe0-0038" name="Profiles" hidden="false" collective="false" import="true">
@@ -367,6 +305,39 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1f42-21d8-7fb5-1580" name="Chameleon Skink Dooter" hidden="true" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b758-48ee-bea5-ec7a" name=" Chameleon Skink Dooter" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">2</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8991-1617-d50c-d33c" name="Doot Machine" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">6</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">1</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c540-de6a-a4d1-852c" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="49ce-5802-dff0-90ad" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="de80-0f8f-f77c-b322" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
+        <categoryLink id="9536-d1ac-a100-d107" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1345-f91f-e1e3-0772" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup id="d640-2601-e484-4ec7" name="Special Abilities" hidden="false">
@@ -410,25 +381,35 @@
           </modifiers>
           <description>Until the end of this fighter’s activation, this fighter can fly when making move actions.</description>
         </rule>
-        <rule id="18a2-cd8a-2f65-4175" name="⚁ [Triple] Dance of Death" hidden="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false"/>
-          </modifiers>
-          <description>Until the end of this fighter’s activation, this fighter can finish disengage actions within 1&quot; of enemy fighters.</description>
-        </rule>
-        <rule id="eca3-c559-ce81-d7d0" name="⚁ [Triple] Harness Shadow" hidden="true">
+        <rule id="18a2-cd8a-2f65-4175" name="⚁ [Triple] Bellow of the Carnosaur" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7622-abbe-a6f9-0bc6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bf9-3f3e-ea63-1f26" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Until the end of the battle round, subtract 1 from the Attacks characteristic (to a minimum of 1) of attack actions made by enemy fighters while they target a fighter within 3&quot; of this fighter.</description>
+          <description>Pick an enemy fighter within 6&quot; of this fighter.  Until the end of the battle round, subtract 1 from the Move characteristic of that fighter (to a minimum of 1) and subtract 1 from the damage points allocated by each hit and critical hit from attack actions made by that fighter (to a minimum of 1).</description>
+        </rule>
+        <rule id="eca3-c559-ce81-d7d0" name="⚁ [Triple] Call of the Hunt" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dce8-a536-db85-d856" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a friendly fighter with the Hunters of Huanchi and Beast runemarks within 9&quot; of this fighter.  That fighter makes a bonus move action.  Then pick a visible enemy fighter within 1&quot; of the fighter that made the bonus move action and allocate a number of damage points to that fighter equal to the value of this ability.</description>
         </rule>
         <rule id="01ce-56e5-fc6e-bcac" name="⚃ [Quad] Ensnaring Darkness" hidden="true">
           <modifiers>
@@ -444,11 +425,20 @@
           </modifiers>
           <description>Either allocate a number of damage points equal to the value of this ability to all visible enemy fighters within 3&quot; of this fighter, or allocate 3 damage points to this fighter and a number of damage points equal to the value of this ability to all visible enemy fighters within 6&quot; of this fighter. </description>
         </rule>
-        <rule id="ea4d-29d9-5011-d76e" name="[Reaction] Slip Between Shadows" hidden="true">
+        <rule id="ea4d-29d9-5011-d76e" name="[Reaction] Slippery" hidden="true">
           <modifiers>
-            <modifier type="set" field="hidden" value="false"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
-          <description>A fighter can make this reaction when an enemy fighter finishes a move action within 3&quot; of them. Note the distance between this fighter and the enemy fighter that made the move action. Remove this fighter from the battlefield and then set this fighter up on a platform or the battlefield floor no further from the enemy fighter that made the move action.</description>
+          <description>A fighter can make this reaction after they have been allocated damage points by a melee attack action.  This fighter makes a disengage action.</description>
         </rule>
       </rules>
     </infoGroup>
