@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0312-6eb9-dc4a-0fb7" name="Order - Sylvaneth" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0312-6eb9-dc4a-0fb7" name="Order - Sylvaneth" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="60" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="45c1-72e4-01a6-333c" name="Sylvaneth Leaders" hidden="false"/>
     <categoryEntry id="83de-8306-6f8a-d280" name="Underworlds Ylthari" hidden="false"/>
     <categoryEntry id="a58a-afe6-783b-88d7" name="Underworlds Skaeth" hidden="false"/>
     <categoryEntry id="e96f-b5d8-31c0-7973" name="Sylvaneth" hidden="false"/>
@@ -10,48 +9,111 @@
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc93-532e-1b4e-db43" name=" Ylthari" hidden="false" collective="false" import="true" targetId="c418-b2b4-2bd7-9d5a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
-        <categoryLink id="f22d-1daa-db25-6eed" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
         <categoryLink id="f5ab-dd29-3962-b6d6" name="Underworlds Ylthari" hidden="false" targetId="83de-8306-6f8a-d280" primary="false"/>
+        <categoryLink id="8215-4fbc-5e98-3fd1" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dfb6-40b8-0545-731c" name=" Skaeth the Huntsman" hidden="false" collective="false" import="true" targetId="d5b1-8bba-407e-a719" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
-        <categoryLink id="f1ad-bc1a-aeca-dbf9" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
         <categoryLink id="6ec7-da68-a3be-9298" name="Underworlds Skaeth" hidden="false" targetId="a58a-afe6-783b-88d7" primary="false"/>
+        <categoryLink id="8ad5-db4a-91ba-e075" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b4ff-4454-d565-9d29" name=" Shadestalker" hidden="false" collective="false" import="true" targetId="bb74-4de4-b10b-a674" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0408-5b8e-1f4f-57a8" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="afb5-9e1b-4d70-a00c" name=" Tree-Revenant Scion" hidden="false" collective="false" import="true" targetId="eb7d-1e49-34da-a534" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9be9-153e-0edd-3d6d" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c470-c961-5864-1d88" name=" Kurnoth Huntmaster" hidden="false" collective="false" import="true" targetId="c8c4-96e7-fea1-3c28" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="5129-8826-363e-3e11" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8952-88e5-331d-1ece" name=" Branchwych" hidden="false" collective="false" import="true" targetId="2b11-052e-8a4e-d9e3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7d6b-878e-b4e7-5196" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b86a-7b7c-a878-fd8b" name=" Branchwraith" hidden="false" collective="false" import="true" targetId="2122-4eb8-c2b8-31de" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="dd48-e83f-bebf-fe33" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0f3a-0771-49e4-2ce0" name=" Branch Nymph" hidden="false" collective="false" import="true" targetId="2e53-f1a6-3cf1-c7ac" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0fa5-650e-71b7-8e73" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6f45-813c-3792-b7da" name=" Arch-Revenant" hidden="false" collective="false" import="true" targetId="5ce8-22eb-9827-a4ab" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="3e52-3bbe-5aee-1c72" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -61,6 +123,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a58a-afe6-783b-88d7" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -78,6 +145,11 @@
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83de-8306-6f8a-d280" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b15-b11b-b7a0-e72e" type="max"/>
@@ -91,6 +163,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83de-8306-6f8a-d280" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -108,6 +185,11 @@
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a58a-afe6-783b-88d7" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b38-683b-0b7d-0dfc" type="max"/>
@@ -121,6 +203,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a58a-afe6-783b-88d7" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -138,6 +225,11 @@
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a58a-afe6-783b-88d7" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cc5c-dbb2-3083-cb14" type="max"/>
@@ -153,6 +245,11 @@
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83de-8306-6f8a-d280" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3189-2092-f81b-a867" type="max"/>
@@ -164,27 +261,38 @@
     <entryLink id="eba0-fc7d-f9c2-ced3" name=" Spiterider Scion" hidden="false" collective="false" import="true" targetId="f20b-7531-eaac-59bd" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e3d5-7d3c-5e6e-f371" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="78b4-6e8f-6d97-fb8e" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="825b-4a35-fb55-55b7" name=" Flitwing Scion" hidden="false" collective="false" import="true" targetId="e0ac-f220-e012-03f4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="17e5-896c-414a-7f0e" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="a876-41fd-f891-4f2f" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bae2-c978-0c85-6679" name=" Revenant Soulwarden" hidden="false" collective="false" import="true" targetId="d949-9bb2-50b5-bc6d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b474-d4dd-9388-b535" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="38f7-ea36-7d4f-dc81" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="da09-ca78-ba5e-ac5d" name=" Revenant Soulwarden" hidden="false" collective="false" import="true" targetId="d949-9bb2-50b5-bc6d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="1f2f-6951-e5a2-697c" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fce8-c66d-1d63-8f21" name=" Flitwing Scion" hidden="false" collective="false" import="true" targetId="e0ac-f220-e012-03f4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c9e9-2577-74a6-6d17" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -194,25 +302,21 @@
     <entryLink id="cecc-abf7-aaf1-cbec" name=" Arch-Revenant" hidden="false" collective="false" import="true" targetId="5ce8-22eb-9827-a4ab" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c4dc-1be6-033b-da3a" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="aa49-7856-960c-48c9" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a5b7-5a26-8b68-fbcd" name=" Branch Nymph" hidden="false" collective="false" import="true" targetId="2e53-f1a6-3cf1-c7ac" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fe0e-116c-08f1-3e7b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="595b-0782-25f8-aa6e" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="786e-01ae-eac0-8497" name=" Branchwraith" hidden="false" collective="false" import="true" targetId="2122-4eb8-c2b8-31de" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="2428-a177-8e33-eddb" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="2515-e59c-11cf-2c6c" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2ec0-9eff-8a97-5025" name=" Branchwych" hidden="false" collective="false" import="true" targetId="2b11-052e-8a4e-d9e3" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="16bc-62ca-6060-1065" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="7572-474a-a357-d532" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8f62-7127-1488-0149" name="Tree-Revenant" hidden="false" collective="false" import="true" targetId="34f5-4c83-8597-7702" type="selectionEntry"/>
@@ -223,7 +327,6 @@
     <entryLink id="8bb6-fa48-e180-da00" name=" Kurnoth Huntmaster" hidden="false" collective="false" import="true" targetId="c8c4-96e7-fea1-3c28" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="42e0-4376-c3a2-991c" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="27a5-48f1-5300-54a8" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9e56-fb2c-c02a-ba7b" name="Lighaen" hidden="false" collective="false" import="true" targetId="3bab-ead6-bd64-1a90" type="selectionEntry"/>
@@ -231,14 +334,12 @@
     <entryLink id="dac2-d11e-4a13-5d9b" name=" Shadestalker" hidden="false" collective="false" import="true" targetId="bb74-4de4-b10b-a674" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5d18-7695-3da7-2ce8" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="b67c-ada0-f00c-fa06" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f8cb-ff89-ffe8-973f" name="Sheoch" hidden="false" collective="false" import="true" targetId="8c38-1894-c944-e51c" type="selectionEntry"/>
     <entryLink id="9ef5-7d3b-50d4-3804" name=" Skaeth the Huntsman" hidden="false" collective="false" import="true" targetId="d5b1-8bba-407e-a719" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d50c-2e0a-1799-2ea5" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="b9a0-cad6-9efe-c987" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e3d9-89b4-0a98-09c1" name="Skhathael" hidden="false" collective="false" import="true" targetId="6daf-0492-efa8-faab" type="selectionEntry"/>
@@ -248,16 +349,21 @@
     <entryLink id="5b32-4c4c-5742-c644" name=" Tree-Revenant Scion" hidden="false" collective="false" import="true" targetId="eb7d-1e49-34da-a534" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ae56-f0d6-b5c1-e33e" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="b0a6-7872-14d2-e402" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bb4f-f4e7-fa4b-25b3" name=" Ylthari" hidden="false" collective="false" import="true" targetId="c418-b2b4-2bd7-9d5a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="af60-7385-d799-124c" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="f06e-c12a-4225-5d2b" name="Sylvaneth Leaders" hidden="false" targetId="45c1-72e4-01a6-333c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6817-5389-2b0b-11b4" name=" Spiterider Scion" hidden="false" collective="false" import="true" targetId="f20b-7531-eaac-59bd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2045-7e4b-394d-3c12" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -297,6 +403,7 @@
         <categoryLink id="2685-d533-2e50-5034" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="b45f-544b-8632-ba65" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
         <categoryLink id="c073-845b-f88a-78dd" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="b30e-1ce4-8b9a-cb20" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e31a-222c-ca4f-9899" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -339,6 +446,7 @@
         <categoryLink id="1276-3d5c-2b6a-88f2" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="ca16-e85e-3c2a-2e98" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="8eab-595f-3fac-6f1e" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
+        <categoryLink id="48c6-0a47-3830-d0a2" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7fd2-d63a-1b52-4074" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb6e-0603-aa86-3997">
@@ -464,6 +572,7 @@
         <categoryLink id="4d39-39e1-ea0c-3f7b" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="ba0e-9975-e5a0-4c4c" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="53e4-9a7f-b5df-0051" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+        <categoryLink id="9f1e-1e32-65a8-eb51" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="220d-d5fb-e949-bfaa" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -505,6 +614,7 @@
         <categoryLink id="d2ca-8d93-5151-2432" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="bbd7-4d4b-b326-cc9a" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="b015-8b2e-75dc-3ba1" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="82b9-83fe-5789-f556" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="db93-3f18-3065-7c76" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -547,6 +657,7 @@
         <categoryLink id="6a7e-6fd4-4569-7339" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="122a-0848-0ad7-8ca5" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="6b52-4040-5ca8-a315" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="2277-65d5-2279-c980" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="4f6e-c473-03b8-c794" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1bc-43c4-eb8e-3993">
@@ -641,6 +752,7 @@
         <categoryLink id="9b04-bf93-f204-632c" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="20ac-acfd-792e-e0c6" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="bf25-a4d5-8098-db50" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
+        <categoryLink id="f9e4-ccc1-839b-9699" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="35e2-7a0e-cd6a-af7b" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -681,6 +793,7 @@
         <categoryLink id="4703-06cc-a5ff-3a9b" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="bff3-1dae-5646-ebb2" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="8464-90bd-1329-f345" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+        <categoryLink id="aa17-10a1-d036-957a" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f4e2-4974-ee24-b3f7" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -729,6 +842,7 @@
         <categoryLink id="47b7-14e6-9780-a7d2" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="28bb-003d-70eb-6ad6" name="Ylthari&apos;s Guardians" hidden="false" targetId="9a3a-75ef-cf09-c9bf" primary="false"/>
         <categoryLink id="68f5-ae15-132c-1680" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="f10c-7520-5a02-92ff" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6328-cf20-7ef2-9bdf" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -770,6 +884,7 @@
         <categoryLink id="ef8f-7cd1-3a0b-f411" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="eddb-cf76-4c47-d0fc" name="Skaeth&apos;s Wild Hunt" hidden="false" targetId="7943-9d76-c87c-9548" primary="false"/>
         <categoryLink id="131e-cc00-0f53-10af" name=" Mount" hidden="false" targetId="85e4-2bbc-e2a5-c551" primary="false"/>
+        <categoryLink id="e997-4ec1-5442-9c96" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="fd97-6707-4fd3-b133" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -812,6 +927,7 @@
         <categoryLink id="6f23-850c-15ec-d99d" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="a723-e4fe-0906-df7b" name="Skaeth&apos;s Wild Hunt" hidden="false" targetId="7943-9d76-c87c-9548" primary="false"/>
         <categoryLink id="52a7-aa55-5d3c-8975" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+        <categoryLink id="496b-bf97-995f-38a9" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ba32-5f7e-524b-ad2e" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -852,6 +968,7 @@
         <categoryLink id="3503-41ed-e111-74d5" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="c52c-5f06-b4f6-0bd9" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="e01e-0072-c250-9519" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
+        <categoryLink id="7a5a-dc28-487f-e556" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8c44-101a-e964-62d1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -901,6 +1018,7 @@
         <categoryLink id="36dc-e616-fae0-e16c" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="5a66-db10-0855-9cbe" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="5a0d-e771-a803-6d73" name="Ylthari&apos;s Guardians" hidden="false" targetId="9a3a-75ef-cf09-c9bf" primary="false"/>
+        <categoryLink id="877c-b3ed-7b3c-9667" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="001e-e04b-4be2-6bb4" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -942,6 +1060,7 @@
         <categoryLink id="5419-4ac4-d740-6d7c" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="8616-a321-65b8-b335" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="ce7b-09c4-e2cc-6446" name="Ylthari&apos;s Guardians" hidden="false" targetId="9a3a-75ef-cf09-c9bf" primary="false"/>
+        <categoryLink id="1123-f6bd-cd62-0906" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f67b-794c-1dd8-c50c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -983,6 +1102,7 @@
         <categoryLink id="cd27-6b6f-f893-3300" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="218b-a5f7-e3f0-1b7d" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="cc63-12d6-759a-1211" name="Skaeth&apos;s Wild Hunt" hidden="false" targetId="7943-9d76-c87c-9548" primary="false"/>
+        <categoryLink id="c12b-c792-d8ee-528a" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4b11-09f9-df72-0f61" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1032,6 +1152,7 @@
         <categoryLink id="8e06-0b57-81f3-26ed" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="b06e-d4f1-901c-e1f9" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="9d56-1231-e56a-f79a" name="Skaeth&apos;s Wild Hunt" hidden="false" targetId="7943-9d76-c87c-9548" primary="false"/>
+        <categoryLink id="bae6-633c-d359-b403" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="804f-c65f-e09f-8493" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1074,6 +1195,7 @@
         <categoryLink id="d4f3-af10-d3c2-fe3b" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="cf8c-c385-9d93-1093" name="Skaeth&apos;s Wild Hunt" hidden="false" targetId="7943-9d76-c87c-9548" primary="false"/>
         <categoryLink id="62fe-63b3-57fa-d137" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="bdbd-2d9c-fc03-81c2" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4410-6ef9-c0af-a4e2" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1123,6 +1245,7 @@
         <categoryLink id="8917-91f8-8770-6845" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="2124-f8ee-bb48-6e86" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="176a-4f30-029e-ba9e" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+        <categoryLink id="545e-438d-0270-9ad3" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c2ff-1829-ddb0-8c45" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -1164,6 +1287,7 @@
         <categoryLink id="954b-901f-3cc8-8433" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="e1f7-5a99-229d-7da9" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="b86b-3f7c-b4c8-51ec" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+        <categoryLink id="2a4f-50f6-1a44-58d4" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5d1b-cbd2-cf38-a3f0" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -1205,6 +1329,7 @@
         <categoryLink id="ac9e-8e3b-76b0-0260" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="d68f-7675-e236-eccb" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
         <categoryLink id="606a-9f96-07f0-6b6c" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="3703-7417-e409-5d6f" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a53a-a377-80c9-8214" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -1250,6 +1375,7 @@
         <categoryLink id="b584-648d-cddd-4e07" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="659f-d611-8ceb-1c2c" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="c695-8aff-9907-229e" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+        <categoryLink id="31b7-a532-f139-5dba" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5226-6a90-e5c8-b62f" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1299,6 +1425,7 @@
         <categoryLink id="f0b0-54c6-5ea8-1ca5" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="711c-0ce8-bd66-440f" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="7c0c-b342-e3f2-60b0" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+        <categoryLink id="f124-b0a5-3477-1189" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a0a9-9d1f-3fe5-9096" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1341,6 +1468,7 @@
         <categoryLink id="0926-a0b0-e6eb-b38b" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="1bb3-5abd-91a0-ebc8" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="ab3a-00dc-048f-c52d" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
+        <categoryLink id="a56f-53dc-9d3c-dce9" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="cfd6-baf7-d2c9-d183" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="cef0-71a6-34b7-6f99">
@@ -1466,6 +1594,7 @@
         <categoryLink id="861c-ac8f-4e01-1aa5" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="32b5-2720-2aae-36c9" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="394b-298e-eb76-4840" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+        <categoryLink id="6b7b-b806-ebd6-a425" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8b3a-e240-14aa-8ef5" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1506,6 +1635,7 @@
         <categoryLink id="1153-5117-776f-3561" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="c4d1-4a02-6427-edc7" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="29ef-184c-f4f7-6112" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
+        <categoryLink id="2b13-8dd0-a8d6-78c7" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5dea-5e55-d0b6-cbfc" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1547,6 +1677,7 @@
         <categoryLink id="52ff-eea5-29b1-21e4" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
         <categoryLink id="2796-4ca4-53aa-2e72" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="34e1-21ac-6cb7-6c56" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+        <categoryLink id="d760-d1b9-e53c-b08d" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5b82-ff87-2d65-9825" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1586,6 +1717,7 @@
       <categoryLinks>
         <categoryLink id="0db3-1364-df43-3842" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="66f0-ec51-6913-379e" name="Sylvaneth" hidden="false" targetId="e96f-b5d8-31c0-7973" primary="false"/>
+        <categoryLink id="a193-c2a1-08f7-89cd" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3e5c-1084-2135-656d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>

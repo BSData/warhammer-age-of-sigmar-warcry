@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d42d-d99c-e2b6-315b" name="Chaos - Rotmire Creed" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d42d-d99c-e2b6-315b" name="Chaos - Rotmire Creed" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="c0a9-fab2-661f-197d" name="Rotmire Leaders" hidden="false"/>
     <categoryEntry id="57a2-e12e-7d85-c55b" name="Rotmire Creed" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="98d8-3572-6c29-7e0e" name=" Witherlord" hidden="false" collective="false" import="true" targetId="84c3-5e5c-423d-98be" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="b1fb-f900-c03b-6484" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -13,7 +19,6 @@
     <entryLink id="8355-8f71-40bd-c6ce" name="Witherlord" hidden="false" collective="false" import="true" targetId="84c3-5e5c-423d-98be" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="dba1-5972-80e2-9e61" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="df74-4f1d-b957-2977" name="Rotmire Leaders" hidden="false" targetId="c0a9-fab2-661f-197d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4bca-5b78-98b7-aab8" name="Bloated One" hidden="false" collective="false" import="true" targetId="f798-8a71-8948-2abc" type="selectionEntry"/>
@@ -53,6 +58,7 @@
         <categoryLink id="8169-4219-48ff-2b3e" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="7215-1938-b61b-b47e" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
         <categoryLink id="30c8-5235-da71-487f" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+        <categoryLink id="a08e-02c9-b197-1c1a" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="47c8-2eb1-712e-bcd9" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -66,6 +72,7 @@
         <categoryLink id="3ddc-3935-81f5-616b" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="1f9f-7a15-aae4-c0f8" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
         <categoryLink id="a14c-ec1e-a511-790f" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="a190-0327-aac2-65f4" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="8cc9-03c5-b9d5-caf2" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d90-c662-44a8-6661">
@@ -180,6 +187,7 @@
         <categoryLink id="ccd5-29f6-85f5-e378" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="6101-7692-5516-4c66" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
         <categoryLink id="5bc3-4981-96c1-cc30" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+        <categoryLink id="aa0d-6b8f-2375-4b42" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="85fb-e22f-f7d8-5672" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ef3-114a-8c1f-4c45">
@@ -282,6 +290,7 @@
         <categoryLink id="2067-b436-f8da-338b" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="b4c4-ccd8-9b56-51ae" name="Rotmire Creed" hidden="false" targetId="57a2-e12e-7d85-c55b" primary="false"/>
         <categoryLink id="3a44-13c8-8fdf-1ba0" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+        <categoryLink id="edab-6065-b9c0-ce2d" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a020-af4c-48c8-05e6" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="b777-f8db-36d3-6e50">

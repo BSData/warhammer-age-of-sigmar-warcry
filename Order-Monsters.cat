@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fdcb-ae8a-c33d-e1d3" name="Order - Monsters" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fdcb-ae8a-c33d-e1d3" name="Order - Monsters" revision="15" battleScribeVersion="2.03" library="true" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="68e1-2c92-4a0d-b537" name="Monsters of Order" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fca1-c751-e211-0dd7" name="Kharibdyss" hidden="false" collective="false" import="true" targetId="294b-ca80-45c3-470c" type="selectionEntry"/>
     <entryLink id="b27e-f0a8-86a8-5339" name="War Hydra" hidden="false" collective="false" import="true" targetId="da66-9b31-c014-89b0" type="selectionEntry"/>
+    <entryLink id="b912-9f32-b1e6-d940" name="Not an Allied faction" hidden="true" collective="false" import="true" targetId="d370-c811-5cff-4964" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e62d-3867-a149-1ffa" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="da66-9b31-c014-89b0" name="War Hydra" hidden="false" collective="false" import="true" type="model">
@@ -160,6 +175,14 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="320.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d370-c811-5cff-4964" name="Not an Allied faction" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="2790-ceb3-0f3b-8763" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

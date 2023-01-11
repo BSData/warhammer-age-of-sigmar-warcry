@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f444-4e67-b4f9-c9f0" name="Chaos - Horns of Hashut" revision="3" battleScribeVersion="2.03" authorName="Hood" authorContact="discord hood#3264" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f444-4e67-b4f9-c9f0" name="Chaos - Horns of Hashut" revision="4" battleScribeVersion="2.03" authorName="Hood" authorContact="discord hood#3264" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="8104-5a90-b4c7-8087" name="Hashut Leaders" hidden="false"/>
     <categoryEntry id="57fc-63ea-dd2b-6127" name="Horns of Hashut" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="a912-8752-f2f8-6e07" name="Ruinator Alpha" hidden="false" collective="false" import="true" targetId="5cec-ac2e-d820-0f99" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="cf33-1c39-42c3-0838" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -13,7 +19,6 @@
     <entryLink id="e7c6-a727-4404-f746" name="Ruinator Alpha" hidden="false" collective="false" import="true" targetId="5cec-ac2e-d820-0f99" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="aa98-0843-847a-61fc" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="3f9d-2f7f-1ffa-81da" name="Hashut Leaders" hidden="false" targetId="8104-5a90-b4c7-8087" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="943e-298c-351a-2bb7" name="Demolisher" hidden="false" collective="false" import="true" targetId="647e-f496-1f87-407a" type="selectionEntry"/>
@@ -44,11 +49,11 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="43d0-f7ea-be5e-6bd0" name="Hashut Leaders" hidden="false" targetId="8104-5a90-b4c7-8087" primary="false"/>
         <categoryLink id="79c3-7b2c-b10f-e285" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
         <categoryLink id="ff7b-7058-7c4b-e497" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="c05e-9e0b-33b6-3958" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
         <categoryLink id="195b-8282-1116-c4c7" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="fa4f-71f4-f43a-2bbc" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="118d-d20f-e8d5-bc9a" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="243a-828e-8531-9b95">
@@ -151,6 +156,7 @@
         <categoryLink id="886b-882c-fcb2-5272" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="16d4-3f63-428f-9359" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
         <categoryLink id="cfbb-800e-7d06-1747" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="073d-9fbd-2e40-8aba" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0ea8-8035-8039-334d" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="7745-86dc-f21d-6a72">
@@ -312,6 +318,7 @@
         <categoryLink id="8183-d74b-3d72-ae04" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
         <categoryLink id="9f83-fa12-3fb4-6dbc" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
         <categoryLink id="7313-dc17-fb3d-0d1d" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="fd0f-2edd-96e7-44b3" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="66e5-4db6-7b05-edc1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -351,6 +358,7 @@
       <categoryLinks>
         <categoryLink id="ece2-889a-c25b-a16f" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="cdde-f707-af4b-cc35" name="Horns of Hashut" hidden="false" targetId="57fc-63ea-dd2b-6127" primary="false"/>
+        <categoryLink id="685e-2bd3-d987-965e" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7436-879e-5f1d-3daf" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>

@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9df4-cd38-7d71-583d" name="Order - Hunters of Huanchi" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9df4-cd38-7d71-583d" name="Order - Hunters of Huanchi" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="c5a1-8d05-f3ef-9ab8" name="Haunchi Leaders" hidden="false"/>
     <categoryEntry id="82eb-8f6a-fc69-9fce" name="Hunters of Huanchi" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="f9e3-1929-4ba7-fe88" name=" Chameleon Skink Alpha" hidden="false" collective="false" import="true" targetId="aac0-471a-5693-a13a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="14d7-8113-13a0-975b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="8461-24d6-0c5e-80e9" name="Haunchi Leaders" hidden="false" targetId="c5a1-8d05-f3ef-9ab8" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="08a4-b675-f8c5-558e" name=" Chameleon Skink Alpha" hidden="false" collective="false" import="true" targetId="aac0-471a-5693-a13a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="dfcf-3502-c21c-e4b6" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -52,6 +57,7 @@
         <categoryLink id="aa77-f09c-d54c-78c4" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="4149-ea06-36b7-057f" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="e119-3c36-4999-858a" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="69d7-706d-b4a9-45c3" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ae34-38b4-f31c-b900" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="6517-1670-e440-cd29">
@@ -157,6 +163,7 @@
         <categoryLink id="16fb-a8e2-4222-f570" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="d76e-8266-8b6b-9f9f" name=" Icon Bearer" hidden="false" targetId="2bf9-3f3e-ea63-1f26" primary="false"/>
         <categoryLink id="f1e1-9fb5-6d34-670d" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="b3a3-ff9c-c01e-1f8a" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e82b-498e-4f40-fe0d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -185,6 +192,7 @@
         <categoryLink id="4432-ce31-46d6-e6b4" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="d078-d9fa-6740-9351" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="5c92-ebc6-84ee-b23f" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="5a62-6c9a-7306-a0e3" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3914-05d4-63b5-faf2" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec93-e5d8-8f56-fee0">
@@ -270,7 +278,7 @@
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">10</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
-            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">128</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
           </characteristics>
         </profile>
         <profile id="52f7-ea95-99ec-b7b8" name="Snapping Beak" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
@@ -290,6 +298,7 @@
         <categoryLink id="0f29-5263-7cb1-6415" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="4ff2-3487-1cfc-bc36" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
         <categoryLink id="1b6f-7402-9eca-5c27" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="8363-b8e5-02bd-a66b" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="02bc-f2af-6cd9-f801" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -319,6 +328,7 @@
         <categoryLink id="de80-0f8f-f77c-b322" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="9536-d1ac-a100-d107" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
         <categoryLink id="e8b2-f546-a554-c2c9" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="490c-8a86-527e-1b82" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6d48-93e9-b8aa-b08f" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7a9-995f-495b-a4b9">

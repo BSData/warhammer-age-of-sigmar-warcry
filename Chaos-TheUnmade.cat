@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade" revision="13" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1c3f-637b-13e2-28aa" name="Chaos - The Unmade" revision="14" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="870a-4170-6d8d-e282" name="Unmade Leaders" hidden="false"/>
     <categoryEntry id="74b9-be1e-a283-6b91" name="The Unmade" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="f9e9-9432-68b0-c23c" name=" Blissful One" hidden="false" collective="false" import="true" targetId="46b1-88e8-371e-e832" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="bf9f-3589-f64f-4618" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -15,7 +21,6 @@
     <entryLink id="63c0-98d0-0b78-f760" name="Blissful One" hidden="false" collective="false" import="true" targetId="46b1-88e8-371e-e832" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b164-e1e1-73df-a4d8" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="0f38-5af7-76cf-1398" name="Unmade Leaders" hidden="false" targetId="870a-4170-6d8d-e282" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d10b-a2d3-d59c-1b26" name="Awakened One" hidden="false" collective="false" import="true" targetId="0f30-e28e-4c9c-5ecb" type="selectionEntry"/>
@@ -52,6 +57,7 @@
       <categoryLinks>
         <categoryLink id="c4b8-2f62-f4b5-1d69" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="a939-64be-b220-8158" name="The Unmade" hidden="false" targetId="74b9-be1e-a283-6b91" primary="false"/>
+        <categoryLink id="6c78-814f-d165-feae" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7b5c-551b-82ac-6d74" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -92,6 +98,7 @@
         <categoryLink id="7c3e-035b-d2a0-0aa0" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="4a37-c884-d545-64c8" name="The Unmade" hidden="false" targetId="74b9-be1e-a283-6b91" primary="false"/>
         <categoryLink id="f329-8340-cceb-c18e" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="e355-2068-958a-73bb" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2d10-77ab-cc8e-06d9" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -128,6 +135,7 @@
       <categoryLinks>
         <categoryLink id="8633-ec63-9c6e-4367" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="8cc8-8de2-2a06-6148" name="The Unmade" hidden="false" targetId="74b9-be1e-a283-6b91" primary="false"/>
+        <categoryLink id="c27e-7d19-4027-d4de" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="15a8-bceb-8fc5-273f" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea18-dedb-7694-1c6a">
@@ -230,6 +238,7 @@
         <categoryLink id="b684-1268-ceb7-e842" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="4ef5-c3be-8da1-3c7d" name="The Unmade" hidden="false" targetId="74b9-be1e-a283-6b91" primary="false"/>
         <categoryLink id="261f-48ab-e3f4-c156" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+        <categoryLink id="d0fd-46d0-62f2-b327" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="45e2-6605-5048-c2a3" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>

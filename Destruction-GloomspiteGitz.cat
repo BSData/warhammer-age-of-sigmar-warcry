@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9551-9b76-5ee4-5caa" name="Destruction - Gloomspite Gitz" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9551-9b76-5ee4-5caa" name="Destruction - Gloomspite Gitz" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="60" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="7add-738c-9b26-a074" name="Gitz Leaders" hidden="false"/>
     <categoryEntry id="26ac-b856-360f-e933" name="Underworlds Zarbag" hidden="false"/>
     <categoryEntry id="5860-76cd-4619-db46" name="Underworlds Mollog" hidden="false"/>
     <categoryEntry id="86fe-4c16-d007-4ba5" name="Underworlds Rippa" hidden="false"/>
@@ -12,9 +11,16 @@
   </categoryEntries>
   <entryLinks>
     <entryLink id="b2c2-0ac8-c0cb-682f" name=" Zarbag" hidden="false" collective="false" import="true" targetId="6dae-d8e7-4643-023b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
-        <categoryLink id="1bd0-37f4-f710-f138" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
         <categoryLink id="5f3c-9532-1ffb-2e7a" name="Underworlds Zarbag" hidden="false" targetId="26ac-b856-360f-e933" primary="false"/>
+        <categoryLink id="930e-7f95-2b77-a96b" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="cc4a-8c7a-b910-e6aa" name="Zarbag&apos;s Gitz Shoota" hidden="true" collective="false" import="true" targetId="8e84-ff2d-354c-6bbb" type="selectionEntry">
@@ -22,6 +28,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26ac-b856-360f-e933" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -39,6 +50,11 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26ac-b856-360f-e933" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a8c7-f90a-158e-09c8" type="max"/>
@@ -48,16 +64,37 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="e59a-3678-7a5b-5142" name=" Webspinner Shaman" hidden="false" collective="false" import="true" targetId="3661-3980-6358-9941" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9a23-bfe1-6316-7be9" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e833-fdaa-5fcf-e9d2" name=" Squig Hopper Boss" hidden="false" collective="false" import="true" targetId="306d-8cda-2ef0-7cf8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="6850-d016-e2ee-64af" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a890-b0ca-13f6-ec6a" name=" Spider Rider Boss" hidden="false" collective="false" import="true" targetId="7624-b783-3aa8-852f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="cc4c-909d-08dd-9bc6" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -69,6 +106,11 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26ac-b856-360f-e933" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71c0-77c1-be87-531d" type="max"/>
@@ -78,6 +120,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="b9f9-2935-cce2-b9a5" name=" Scuttleboss" hidden="false" collective="false" import="true" targetId="b937-ba9c-5f9f-0ce8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0b3f-51ef-720c-cd57" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -87,6 +136,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86fe-4c16-d007-4ba5" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -101,7 +155,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7add-738c-9b26-a074" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -113,7 +167,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7add-738c-9b26-a074" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -125,7 +179,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7add-738c-9b26-a074" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -134,9 +188,16 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="d406-7fb1-e23e-5f66" name=" Rippa Narkbad" hidden="false" collective="false" import="true" targetId="edad-3366-e92a-e71a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
-        <categoryLink id="d879-42e7-7256-790f" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
         <categoryLink id="9ceb-e078-fb8c-2b2e" name="Underworlds Rippa" hidden="false" targetId="86fe-4c16-d007-4ba5" primary="false"/>
+        <categoryLink id="23c0-2c51-8900-4afb" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7845-a917-78c5-1f53" name="Prog da Netter" hidden="true" collective="false" import="true" targetId="ea8b-a71b-714a-78e4" type="selectionEntry">
@@ -144,6 +205,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26ac-b856-360f-e933" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -155,32 +221,74 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="334a-eea9-639e-c35f" name=" Moonclan Boss" hidden="false" collective="false" import="true" targetId="9092-2924-6ee0-a4ab" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7865-1c98-24e8-458d" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bd1c-6048-8747-43f1" name=" Mollog the Mighty" hidden="false" collective="false" import="true" targetId="5093-8489-c29a-f7cc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
-        <categoryLink id="0dae-ee63-f40f-de83" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
         <categoryLink id="25d8-9247-ed03-e9f3" name="Underworlds Mollog" hidden="false" targetId="5860-76cd-4619-db46" primary="false"/>
+        <categoryLink id="f3ae-42d8-2887-fd36" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b82e-38cb-41cf-a566" name=" Loonboss on Giant Cave Squig" hidden="false" collective="false" import="true" targetId="1900-6065-e61b-0e85" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e669-0e67-c030-8502" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="96fb-6b27-1416-72b2" name=" Loonboss" hidden="false" collective="false" import="true" targetId="7cb6-b38d-eefc-651d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c0d3-3655-0b17-1281" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3b29-9eef-fe0a-128c" name=" Fungoid Cave-Shaman" hidden="false" collective="false" import="true" targetId="f708-5755-9195-1518" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="4022-dba7-83d8-ba8b" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c801-7d20-8da8-8ff4" name=" Bounder Boss" hidden="false" collective="false" import="true" targetId="5afa-3ad6-559e-7d82" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="4393-2dc1-9153-afe6" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -190,6 +298,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5860-76cd-4619-db46" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -204,7 +317,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7add-738c-9b26-a074" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -219,6 +332,11 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26ac-b856-360f-e933" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2adf-9aeb-071c-a6cf" type="max"/>
@@ -231,7 +349,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7add-738c-9b26-a074" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -244,6 +362,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86fe-4c16-d007-4ba5" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -260,7 +383,6 @@
     <entryLink id="89ab-fdc0-4598-bbbf" name=" Bounder Boss" hidden="false" collective="false" import="true" targetId="5afa-3ad6-559e-7d82" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d6cf-5283-070b-be7d" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="f9a7-2f5e-27de-0993" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a241-efdc-9cea-875b" name="Brewgit" hidden="false" collective="false" import="true" targetId="5852-f0a5-039c-9b41" type="selectionEntry"/>
@@ -269,19 +391,16 @@
     <entryLink id="9ffb-42d8-a584-0dc3" name=" Fungoid Cave-Shaman" hidden="false" collective="false" import="true" targetId="f708-5755-9195-1518" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="19bb-87df-898a-1edc" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="71be-d685-027f-8e25" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="60f1-4c1a-4c2f-1863" name=" Loonboss" hidden="false" collective="false" import="true" targetId="7cb6-b38d-eefc-651d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6e2c-2464-0f1d-2f40" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="307c-d713-efad-38cb" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="75da-9c18-6eb3-d1fb" name=" Loonboss on Giant Cave Squig" hidden="false" collective="false" import="true" targetId="1900-6065-e61b-0e85" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d7da-9195-a5a7-bd3f" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="b08f-5d9d-f2b2-3ace" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="23d8-4675-1e2b-1566" name="Squig Herder" hidden="false" collective="false" import="true" targetId="4695-5c2e-48c2-fc1f" type="selectionEntry"/>
@@ -289,19 +408,16 @@
     <entryLink id="33f2-5538-6e74-d8ec" name=" Mollog the Mighty" hidden="false" collective="false" import="true" targetId="5093-8489-c29a-f7cc" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fa6f-67a4-d400-94b2" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="1e12-3e81-e35b-4be3" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="929d-a503-7f43-6120" name=" Moonclan Boss" hidden="false" collective="false" import="true" targetId="9092-2924-6ee0-a4ab" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="18d6-16f2-9345-1b05" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="5427-56d2-74d9-9e8e" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f1de-917e-72a0-5714" name="Prog da Netter" hidden="false" collective="false" import="true" targetId="ea8b-a71b-714a-78e4" type="selectionEntry"/>
     <entryLink id="7225-0887-7f68-30fe" name=" Rippa Narkbad" hidden="false" collective="false" import="true" targetId="edad-3366-e92a-e71a" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="0ade-be51-452b-9cdf" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
         <categoryLink id="779c-1831-4607-8ea2" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
       </categoryLinks>
     </entryLink>
@@ -309,7 +425,6 @@
     <entryLink id="5635-560a-3761-7185" name=" Scuttleboss" hidden="false" collective="false" import="true" targetId="b937-ba9c-5f9f-0ce8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0ad5-3338-4497-71f7" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="580a-39b4-0595-d972" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0a2a-8f38-8e58-3f0f" name="Sporesplatta Fanatic" hidden="false" collective="false" import="true" targetId="e797-bb1f-5d4b-ce0b" type="selectionEntry"/>
@@ -320,7 +435,6 @@
     <entryLink id="2e43-3978-62a6-4c96" name=" Spider Rider Boss" hidden="false" collective="false" import="true" targetId="7624-b783-3aa8-852f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e6fe-508c-97e9-1e68" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="a170-7e48-2659-4b42" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b268-dcd9-6a5b-21c5" name="Spiker" hidden="false" collective="false" import="true" targetId="8170-5b50-ba72-8061" type="selectionEntry"/>
@@ -330,7 +444,6 @@
     <entryLink id="3980-f1f6-ca30-b6d1" name=" Squig Hopper Boss" hidden="false" collective="false" import="true" targetId="306d-8cda-2ef0-7cf8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5a36-9dd1-4288-7148" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="71d9-b959-d41c-adbe" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5698-e564-e01a-0a82" name="Boingrot Bounder" hidden="false" collective="false" import="true" targetId="cc85-a413-ef33-396b" type="selectionEntry"/>
@@ -338,12 +451,10 @@
     <entryLink id="6278-18bc-06e4-ce2d" name=" Webspinner Shaman" hidden="false" collective="false" import="true" targetId="3661-3980-6358-9941" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5503-2b11-cfc3-96cc" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="bdbc-076a-3d38-f450" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="28ff-a2a2-af92-abc9" name=" Zarbag" hidden="false" collective="false" import="true" targetId="6dae-d8e7-4643-023b" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="a81f-daa3-87c5-023d" name="Gitz Leaders" hidden="false" targetId="7add-738c-9b26-a074" primary="false"/>
         <categoryLink id="6bc6-1842-8eb4-ccb1" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
       </categoryLinks>
     </entryLink>
@@ -384,6 +495,7 @@
         <categoryLink id="4032-c517-71f7-cff0" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="28bc-5bd5-fe53-2588" name=" Ally" hidden="false" targetId="65b3-6aac-769e-b8bd" primary="false"/>
         <categoryLink id="7449-0773-8c2a-aa9a" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+        <categoryLink id="57a8-9d04-0666-86aa" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0e30-2f07-fb86-7b69" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -425,6 +537,7 @@
         <categoryLink id="9ba7-02d4-0006-a10f" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
         <categoryLink id="5f69-2867-c851-9f09" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="5dd4-7edd-4624-fe43" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="e2ba-fea0-6e5f-8c64" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0984-e79e-8d4f-1455" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -466,6 +579,7 @@
         <categoryLink id="44d9-5213-8983-5a9f" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="db80-be22-a0ad-331d" name=" Ally" hidden="false" targetId="65b3-6aac-769e-b8bd" primary="false"/>
         <categoryLink id="23c9-5802-587d-de48" name=" Bulwark" hidden="false" targetId="0f0b-3883-05ea-e379" primary="false"/>
+        <categoryLink id="9ec0-8375-aa18-395b" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f5e2-f49e-8fc3-29e2" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -514,6 +628,7 @@
         <categoryLink id="68b3-d2dc-e0e0-67b7" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="50f1-d76e-5395-a250" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="0322-c252-76c7-8a94" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="b2b7-c049-39a9-bfab" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="01f5-15c9-26f2-a55a" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -554,6 +669,7 @@
         <categoryLink id="d94b-b106-3588-d66a" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="24e9-8602-0767-131d" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
         <categoryLink id="5bd5-a50e-c6ea-b03e" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="1d87-4138-98fb-0fec" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="89e6-b918-1987-082e" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -595,6 +711,7 @@
         <categoryLink id="adeb-901b-9a36-d020" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
         <categoryLink id="cc3e-0d25-39e5-bd11" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="fca8-7d8d-0ecf-bc5c" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="5114-3c48-8c01-f275" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2ad5-7750-f07e-dac1" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -634,6 +751,7 @@
       <categoryLinks>
         <categoryLink id="99e9-b1bc-e19b-6895" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="8534-6af1-2592-2847" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="f71b-4d6a-93ee-5f07" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="78a7-23d8-a1dc-1f7e" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -675,6 +793,7 @@
         <categoryLink id="05a4-cbe9-9106-7fbc" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="fb1a-5589-375e-75eb" name=" Ally" hidden="false" targetId="65b3-6aac-769e-b8bd" primary="false"/>
         <categoryLink id="1172-4115-a395-4ace" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
+        <categoryLink id="11fa-20ae-7a37-7435" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7f7e-a4b2-f58f-1b3f" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -715,6 +834,7 @@
         <categoryLink id="ed2d-15e9-0b0f-a6a3" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="3a25-f404-77ed-8118" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="425c-cdeb-530d-d9cd" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+        <categoryLink id="f6aa-e76f-7510-dbbc" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="935f-7ccd-3b64-ff5f" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -756,6 +876,7 @@
         <categoryLink id="86dd-df6a-692c-f380" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="4d2a-d184-8531-598e" name=" Ally" hidden="false" targetId="65b3-6aac-769e-b8bd" primary="false"/>
         <categoryLink id="c670-005c-ec7b-93eb" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
+        <categoryLink id="d7f7-5351-1ad4-312e" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="89d7-4e3a-50d2-f91e" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -804,6 +925,7 @@
         <categoryLink id="5100-8209-5fa4-93d8" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="4970-2174-f9e6-2e09" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
         <categoryLink id="e7f8-686c-aa9b-1b5e" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="7efa-c051-ad24-c7d0" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="38d0-1846-aafe-4eae" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -845,6 +967,7 @@
         <categoryLink id="b51b-79a9-f43f-e204" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="4472-c364-9393-b32c" name=" Ally" hidden="false" targetId="65b3-6aac-769e-b8bd" primary="false"/>
         <categoryLink id="3796-ce20-7211-edd6" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+        <categoryLink id="b366-8bac-dc96-f64c" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6071-c96a-ebdb-2d27" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -886,6 +1009,7 @@
         <categoryLink id="4a47-2256-4ccb-834e" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
         <categoryLink id="0480-f4ab-ffcf-43e8" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="d5fa-fe7c-3a0f-13b4" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="7fd3-53be-9c98-810b" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8966-7105-6fdc-7225" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -934,6 +1058,7 @@
         <categoryLink id="849e-3441-db91-57b1" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="2fb2-dcf1-1095-9344" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="c8c5-08d3-1b9c-a2ee" name=" Priest" hidden="false" targetId="cfc3-b159-c796-fdce" primary="false"/>
+        <categoryLink id="f285-3107-d852-1df5" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0175-5d8c-9925-7b3b" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -985,6 +1110,7 @@
         <categoryLink id="b8df-7f32-6fb2-5a4f" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="313d-b103-d276-7202" name="Zarbag&apos;s Gitz" hidden="false" targetId="3d81-a7fc-d551-c514" primary="false"/>
         <categoryLink id="d7f0-b09c-1e2c-0ce1" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="b9d9-f652-fa56-fa9e" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5e0e-09c4-e817-6b81" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -1030,6 +1156,7 @@
         <categoryLink id="f109-0b20-2567-96c7" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="68a2-8b2f-247b-1df6" name="Zarbag&apos;s Gitz" hidden="false" targetId="3d81-a7fc-d551-c514" primary="false"/>
         <categoryLink id="52e3-f329-ded4-0f09" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="119b-831b-8720-4951" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d5a6-0625-e084-54a1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1075,6 +1202,7 @@
         <categoryLink id="8e20-af06-7f4b-8aee" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="48fb-e4b2-e267-4268" name="Zarbag&apos;s Gitz" hidden="false" targetId="3d81-a7fc-d551-c514" primary="false"/>
         <categoryLink id="e53a-2cdf-9c77-1608" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+        <categoryLink id="c26e-6d72-c418-511e" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb89-8c66-d488-755a" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1127,6 +1255,7 @@
         <categoryLink id="9d9e-d0d3-0d40-2137" name="Bladeborn Fighters" hidden="false" targetId="82fd-8251-2413-feb8" primary="false"/>
         <categoryLink id="8ae2-dde9-2b08-f541" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="de08-79d2-5dd4-07ca" name="Zarbag&apos;s Gitz" hidden="false" targetId="3d81-a7fc-d551-c514" primary="false"/>
+        <categoryLink id="6174-922d-6c87-6079" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3116-2955-0d10-5565" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1172,6 +1301,7 @@
         <categoryLink id="5d6c-b93c-f2c6-47ec" name="Zarbag&apos;s Gitz" hidden="false" targetId="3d81-a7fc-d551-c514" primary="false"/>
         <categoryLink id="6a2a-fb2e-695f-dddf" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="766d-4ea5-350c-6f5b" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="d0ba-e571-7689-6fe5" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7b70-be42-86f3-cf9c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1217,6 +1347,7 @@
         <categoryLink id="af89-61b5-098a-609b" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="09e8-7cff-7c8f-c9f2" name="Zarbag&apos;s Gitz" hidden="false" targetId="3d81-a7fc-d551-c514" primary="false"/>
         <categoryLink id="503e-f3df-1172-838e" name=" Frenzied" hidden="false" targetId="12a9-d7b7-2309-fde6" primary="false"/>
+        <categoryLink id="7dd5-3264-aa69-1259" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9a34-03d3-e107-d0f4" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1260,6 +1391,7 @@
         <categoryLink id="dd42-dcb1-40de-43ef" name="Mollog&apos;s Mob" hidden="false" targetId="c7ab-400d-acf4-974c" primary="false"/>
         <categoryLink id="ee8c-1b05-d90c-6418" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="ca66-12ee-fa47-e76f" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="eda6-5e3f-8c28-4432" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e5b7-40fb-985d-2f0f" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -1306,6 +1438,7 @@
         <categoryLink id="8452-a2d2-f187-0ac5" name="Mollog&apos;s Mob" hidden="false" targetId="c7ab-400d-acf4-974c" primary="false"/>
         <categoryLink id="947c-5269-19be-0a45" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
         <categoryLink id="9cba-2e36-b676-fd89" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="4709-14f3-ce6c-55a3" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ea0e-677b-41b9-3a93" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1350,6 +1483,7 @@
         <categoryLink id="f952-f9e7-70b6-23cf" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="3582-9bc7-2245-f21b" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="b42e-66e4-6fff-c8b0" name=" Mount" hidden="false" targetId="85e4-2bbc-e2a5-c551" primary="false"/>
+        <categoryLink id="ed79-04d6-3e1b-fdd0" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a4bb-b64b-11d0-32e8" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -1403,6 +1537,7 @@
         <categoryLink id="1672-113d-3aa4-4b99" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="4ccc-4743-605c-8ebe" name="Rippa&apos;s Snarlfangs" hidden="false" targetId="1531-e47d-c6c3-80c6" primary="false"/>
         <categoryLink id="374b-262c-c636-c63c" name=" Mount" hidden="false" targetId="85e4-2bbc-e2a5-c551" primary="false"/>
+        <categoryLink id="3105-9c0e-c424-018b" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0a4b-59a2-4fc0-c9d8" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1448,6 +1583,7 @@
         <categoryLink id="d9be-99a5-c33e-53d7" name="Rippa&apos;s Snarlfangs" hidden="false" targetId="1531-e47d-c6c3-80c6" primary="false"/>
         <categoryLink id="4bb3-c3f1-90ed-cf89" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="2309-ba25-39e9-59ac" name=" Mount" hidden="false" targetId="85e4-2bbc-e2a5-c551" primary="false"/>
+        <categoryLink id="4c11-7a17-f78e-43a6" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="af38-910b-4e6d-ad43" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1489,6 +1625,7 @@
         <categoryLink id="c679-d912-5edb-7e8b" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="6bfd-4a31-70e2-184f" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
         <categoryLink id="ab1b-f3e8-134a-2289" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
+        <categoryLink id="b06b-7a9d-c2d3-627c" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="eda4-c08e-3059-5172" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1529,6 +1666,7 @@
         <categoryLink id="1f75-eaaf-dd71-1d72" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="f5d0-2060-7252-b5fe" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="c01d-4d77-559a-25e9" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="2714-7245-b81b-5f35" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b18a-e7fe-d7cb-9cf9" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1569,6 +1707,7 @@
         <categoryLink id="ff85-620d-7216-a3a1" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="23c9-1938-6be4-1d20" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="ff46-6c57-1e44-9329" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
+        <categoryLink id="e1f4-7253-b870-a63d" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c8f0-83fc-3b99-60bb" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1616,6 +1755,7 @@
       <categoryLinks>
         <categoryLink id="a8dd-39cb-9e07-1f9e" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="e84c-05a7-ace8-a310" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
+        <categoryLink id="6808-49e6-96a4-28d2" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="24e5-4f41-1659-be16" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1655,6 +1795,7 @@
       <categoryLinks>
         <categoryLink id="f048-8ccb-eef0-25d2" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="28a3-bd6d-efa9-df6a" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
+        <categoryLink id="d7be-0308-23a1-6c63" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a846-68dc-b5c3-b53a" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1703,6 +1844,7 @@
         <categoryLink id="ac41-30d8-1b71-c81b" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="f373-88c4-18df-b4db" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="3d69-d1f1-4cf5-fa98" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+        <categoryLink id="6162-3ef0-33de-568e" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="079b-32ec-e41a-211f" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1744,6 +1886,7 @@
         <categoryLink id="d77e-8ddd-6a8e-ee17" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="ffbe-bc9e-3ed2-88f8" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
         <categoryLink id="ee66-b02f-941f-6a7a" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+        <categoryLink id="b998-84d7-778f-a6e6" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b9da-963a-7d63-f601" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1784,6 +1927,7 @@
         <categoryLink id="86e8-a13c-b318-e76f" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="0ee1-b883-5528-5782" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="438b-e011-97ec-610e" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="31d3-f5af-0b68-e646" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3d96-dad6-d71c-89a3" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1825,6 +1969,7 @@
         <categoryLink id="24b8-3e61-0987-a43b" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
         <categoryLink id="b31e-99a4-1a6a-cbf3" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
         <categoryLink id="2c75-9717-648c-6209" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
+        <categoryLink id="dbec-c8a9-a211-c16a" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e54a-325d-8dbe-b7ef" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -1854,6 +1999,7 @@
       <categoryLinks>
         <categoryLink id="6371-0a6c-77b9-bc27" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="fbc4-c69d-fca4-d3e6" name="Gloomspite Gitz" hidden="false" targetId="db32-65fb-6439-b33c" primary="false"/>
+        <categoryLink id="ad82-3311-6bd9-9a6b" name="  Destruction" hidden="false" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="4d2a-0647-2490-4287" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="4d76-9c4e-beeb-ffd4">

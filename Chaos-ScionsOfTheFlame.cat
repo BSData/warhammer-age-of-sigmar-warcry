@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cacd-96e0-fd5f-f570" name="Chaos - Scions of the Flame" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cacd-96e0-fd5f-f570" name="Chaos - Scions of the Flame" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="292d-178d-95e4-a460" name="Scion Leaders" hidden="false"/>
     <categoryEntry id="f460-2c25-50bf-9a1f" name="Scions of the Flame" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="a7e1-2c1a-7013-6de6" name=" Blazing Lord" hidden="false" collective="false" import="true" targetId="6f5e-e759-b0fe-ddf3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c446-9aae-f3c7-9af7" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -13,7 +19,6 @@
     <entryLink id="6de3-2e55-897b-5438" name=" Blazing Lord" hidden="false" collective="false" import="true" targetId="6f5e-e759-b0fe-ddf3" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1580-2049-e0f2-1bf4" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="ee69-41da-6d62-957d" name="Scion Leaders" hidden="false" targetId="292d-178d-95e4-a460" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d844-8d75-5440-110b" name="Initiate" hidden="false" collective="false" import="true" targetId="01b0-80c0-1c9d-1aa9" type="selectionEntry"/>
@@ -55,6 +60,7 @@
         <categoryLink id="89c5-68f4-d8dd-5239" name="Scions of the Flame" hidden="false" targetId="f460-2c25-50bf-9a1f" primary="false"/>
         <categoryLink id="d7a9-dc94-7afe-d455" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
         <categoryLink id="495e-af43-3102-f4fe" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="a7aa-163d-23ce-3de0" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0a1a-dd46-4c4d-23cf" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -100,6 +106,7 @@
         <categoryLink id="cf28-f42b-8b5d-a664" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="a022-d333-227c-da30" name="Scions of the Flame" hidden="false" targetId="f460-2c25-50bf-9a1f" primary="false"/>
         <categoryLink id="8577-e116-ace1-f7fa" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="9867-ff69-a146-b6f3" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="218b-a906-11a5-a7c1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -138,6 +145,7 @@
       <categoryLinks>
         <categoryLink id="0443-2b5a-0aad-50c6" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="b107-0daa-33e8-bb7e" name="Scions of the Flame" hidden="false" targetId="f460-2c25-50bf-9a1f" primary="false"/>
+        <categoryLink id="0169-1ead-3417-826f" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a857-8826-a04c-6099" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="4b75-6dcb-9d6b-2165">
@@ -266,6 +274,7 @@
         <categoryLink id="2d3c-2f39-d984-6c3c" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="584e-f568-f120-3409" name="Scions of the Flame" hidden="false" targetId="f460-2c25-50bf-9a1f" primary="false"/>
         <categoryLink id="3861-49bc-cb4f-5faf" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+        <categoryLink id="1e00-e896-b841-b46d" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9d29-61d1-4a7b-b74b" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -314,6 +323,7 @@
         <categoryLink id="7711-7b5f-5735-3071" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="d845-a408-b523-01ca" name="Scions of the Flame" hidden="false" targetId="f460-2c25-50bf-9a1f" primary="false"/>
         <categoryLink id="e02a-7206-3d35-d84e" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="b8f5-5414-0ded-c767" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d211-c91f-63a9-c842" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -357,6 +367,7 @@
       <categoryLinks>
         <categoryLink id="d43f-ddb5-f5fd-ddbc" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="b5ce-436b-d1fc-463b" name="Scions of the Flame" hidden="false" targetId="f460-2c25-50bf-9a1f" primary="false"/>
+        <categoryLink id="d39b-203c-e712-43f5" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d768-2390-53ab-a1ef" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d8f-735c-c72a-fe87">

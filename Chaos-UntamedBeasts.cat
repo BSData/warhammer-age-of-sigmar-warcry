@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3f1a-da04-77d6-5aec" name="Chaos - Untamed Beasts" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="90d1-298b-309f-13b2" name="Untamed Leaders" hidden="false"/>
     <categoryEntry id="5e8b-afc8-1311-4158" name="Untamed Beasts" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5985-6c52-fb86-0674" name=" Heart-eater" hidden="false" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c3b7-1fb8-5283-28d3" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -15,7 +21,6 @@
     <entryLink id="3011-68d3-8720-b466" name="Heart-eater" hidden="false" collective="false" import="true" targetId="ce06-d39d-9e4d-655f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a063-2bbb-e264-f340" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="0313-6fc6-0137-047b" name="Untamed Leaders" hidden="false" targetId="90d1-298b-309f-13b2" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3af1-e0e0-535d-d19b" name="Plains-runner" hidden="false" collective="false" import="true" targetId="3880-07dd-6ae7-22e5" type="selectionEntry"/>
@@ -54,6 +59,7 @@
       <categoryLinks>
         <categoryLink id="d2fb-c8b4-cc73-8382" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
         <categoryLink id="97f8-43c3-ac87-88fb" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="8f0c-b4f1-3186-1773" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b01a-12aa-fef2-17f0" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -102,6 +108,7 @@
         <categoryLink id="8f4c-7924-0c72-74a5" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="2f04-6cd9-6ee1-7972" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
         <categoryLink id="de7d-84bf-2ea2-d451" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="8536-1987-7489-0ffb" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="161f-a487-243b-760d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -150,6 +157,7 @@
         <categoryLink id="5609-2c4b-649e-e9d7" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="15c9-87fa-54c7-0a13" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
         <categoryLink id="f583-bd58-0430-d590" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="2850-f31c-9371-af85" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9abb-5f7f-48ea-3ca9" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -189,6 +197,7 @@
       <categoryLinks>
         <categoryLink id="b1bf-eff9-3a19-41b8" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="883c-0eed-3ced-4c31" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
+        <categoryLink id="68ca-14cc-836d-7c90" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="97f7-e4f5-6c64-dcd4" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -225,6 +234,7 @@
       <categoryLinks>
         <categoryLink id="c984-580a-32f7-eed5" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="e257-3da1-3b32-d425" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
+        <categoryLink id="8fc7-e87a-cf0f-cfd7" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="eb3e-a864-cd53-9681" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="12fa-7be6-a9e7-60f5">
@@ -319,6 +329,7 @@
         <categoryLink id="2519-9d97-1bf3-5e83" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="37a4-eb53-75b0-1bd1" name="Untamed Beasts" hidden="false" targetId="5e8b-afc8-1311-4158" primary="false"/>
         <categoryLink id="4d21-4e53-a8cf-b50e" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="00ad-18d3-e5ba-509b" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5d3f-1245-1bf3-1037" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>

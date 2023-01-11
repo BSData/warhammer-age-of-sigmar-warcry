@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="59" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="60" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Cost Limits: 1000
 
 click on the force you add, then click Add Force to add another force as Allies.</readme>
@@ -31,7 +31,7 @@ click on the force you add, then click Add Force to add another force as Allies.
         <characteristicType id="9b71-a24e-4046-7a28" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="05da-eba7-8ed2-ba43" name="Hidden Agenda">
+    <profileType id="05da-eba7-8ed2-ba43" name="Tournament Quest">
       <characteristicTypes>
         <characteristicType id="0ec8-ef3e-72d9-8b62" name="Description"/>
       </characteristicTypes>
@@ -68,8 +68,8 @@ click on the force you add, then click Add Force to add another force as Allies.
     <categoryEntry id="e4b3-72a5-ca73-8c72" name="Narrative Options" hidden="false"/>
     <categoryEntry id="82fd-8251-2413-feb8" name="Bladeborn Fighters" hidden="false"/>
     <categoryEntry id="15bb-04f5-5313-58a5" name="Open Play Options" hidden="false"/>
-    <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Bladeborn Allies" hidden="false"/>
-    <categoryEntry id="fba5-9730-9be1-8ee9" name="Hidden Agendas" hidden="false"/>
+    <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Bladeborn Allies (Legacy)" hidden="false"/>
+    <categoryEntry id="fba5-9730-9be1-8ee9" name="Tournament Quests" hidden="false"/>
     <categoryEntry id="e663-95d1-d351-f200" name="Allegiances" hidden="false"/>
     <categoryEntry id="c1d9-ad54-d2e9-6849" name=" Agile" hidden="false"/>
     <categoryEntry id="a333-9146-42e8-421a" name=" Beast" hidden="false"/>
@@ -104,6 +104,8 @@ click on the force you add, then click Add Force to add another force as Allies.
     <categoryEntry id="530f-47bb-d668-1ca6" name="  Order" hidden="false"/>
     <categoryEntry id="52ee-0c94-262c-9a8e" name=" -Universal Runemarks-" hidden="true"/>
     <categoryEntry id="8134-f759-d667-7eb1" name="Cities of Sigmar" hidden="false"/>
+    <categoryEntry id="0b93-1073-1ad5-7829" name="Tournament Options" hidden="false"/>
+    <categoryEntry id="579c-d66e-db83-2a02" name="Bladeborn Allies (White Dwarf)" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -214,6 +216,7 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b996-2594-f3b5-dfeb" type="max"/>
               </constraints>
             </categoryLink>
+            <categoryLink id="809d-cc47-072d-cade" name="White Dwarf Bladeborn Allies" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -262,6 +265,7 @@ click on the force you add, then click Add Force to add another force as Allies.
           </constraints>
         </categoryLink>
         <categoryLink id="8075-d807-594c-9d18" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
+        <categoryLink id="84b3-6839-33bc-64ac" name="White Dwarf Bladeborn Allies" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
@@ -289,7 +293,6 @@ click on the force you add, then click Add Force to add another force as Allies.
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e4b-ec37-4927-c2bb" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="name" value="0.0"/>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -602,7 +605,7 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="db3d-f1d8-082e-bac2" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
               </constraints>
             </categoryLink>
-            <categoryLink id="7989-e5fa-4eea-0df6" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
+            <categoryLink id="7989-e5fa-4eea-0df6" name="Bladeborn Allied Fighters (Legacy)" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
             <categoryLink id="2c63-1889-107e-958a" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -615,6 +618,7 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f76-f5eb-cf0f-72e7" type="max"/>
               </constraints>
             </categoryLink>
+            <categoryLink id="726f-a360-57dc-b797" name="White Dwarf Bladeborn Allies" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -665,8 +669,9 @@ click on the force you add, then click Add Force to add another force as Allies.
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a012-3e48-2c2d-52a4" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="cd0c-dfa1-c64c-5f85" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
+        <categoryLink id="cd0c-dfa1-c64c-5f85" name="Bladeborn Allied Fighters (Legacy)" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="503a-5433-1955-41b0" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
+        <categoryLink id="82bc-570d-a7ab-f852" name="Bladeborn Allied Fighters (White Dwarf)" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
@@ -679,7 +684,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       </modifiers>
       <modifierGroups>
         <modifierGroup>
-          <comment>Hidden Agendas &amp; Allegiances Relationship</comment>
+          <comment>Tournament Quests &amp; Allegiances Relationship</comment>
           <modifiers>
             <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
               <conditions>
@@ -703,6 +708,21 @@ click on the force you add, then click Add Force to add another force as Allies.
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup>
+          <comment>Tournament Options Relationship</comment>
+          <modifiers>
+            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f766-7a4e-7bb2-6d98" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f766-7a4e-7bb2-6d98" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <constraints>
         <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="7bef-8541-1068-f6c1" type="max"/>
@@ -713,6 +733,13 @@ click on the force you add, then click Add Force to add another force as Allies.
         <forceEntry id="63d2-7c13-32e7-9c61" name="Allies" hidden="false">
           <categoryLinks>
             <categoryLink id="65b8-c7f4-1c50-97d1" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="false">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f84f-d042-56a7-a517" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
@@ -733,7 +760,15 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="65b8-c7f4-1c50-97d1" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
               </constraints>
             </categoryLink>
-            <categoryLink id="8077-6f1c-cde4-8898" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
+            <categoryLink id="8077-6f1c-cde4-8898" name="Bladeborn Allies (Legacy)" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
             <categoryLink id="b874-baa6-e8b6-d153" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -746,11 +781,20 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="786e-1c52-d9d6-beac" type="max"/>
               </constraints>
             </categoryLink>
+            <categoryLink id="76be-9124-b484-944b" name="Bladeborn Allies (White Dwarf)" hidden="false" targetId="579c-d66e-db83-2a02" primary="false">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3af3-9a49-512c-ae3e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
       <categoryLinks>
-        <categoryLink id="ca4a-4448-2312-8339" name="Hidden Agendas" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="false"/>
+        <categoryLink id="ca4a-4448-2312-8339" name="Tournament Quests" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="false"/>
         <categoryLink id="9849-411e-15d4-9c6a" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -787,17 +831,37 @@ click on the force you add, then click Add Force to add another force as Allies.
         </categoryLink>
         <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
         <categoryLink id="b1fc-6ef9-f273-6f4a" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e4bc-6685-bc60-c2b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ec-61fe-bd81-2c7c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="37d9-ea6a-34ca-6010" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbf7-db38-2f3a-fcfa" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-0268-4131-b04c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="26ad-7a72-52a2-60b0" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
+        <categoryLink id="26ad-7a72-52a2-60b0" name="Bladeborn Allies (Legacy)" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="91f6-2c67-552c-6714" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
+        <categoryLink id="4af0-81b1-f0dc-02e5" name="Tournament Options" hidden="false" targetId="0b93-1073-1ad5-7829" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="af73-91a3-74be-2104" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b763-121a-7bf2-6ddf" name="Bladeborn Allies (White Dwarf)" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -805,6 +869,7 @@ click on the force you add, then click Add Force to add another force as Allies.
     <entryLink id="9a52-a063-a6ab-0338" name="Narrative Options (Required)" hidden="false" collective="false" import="true" targetId="578d-e141-c905-4efe" type="selectionEntry"/>
     <entryLink id="5720-d2b7-19d9-a904" name="Open Play Options" hidden="false" collective="false" import="true" targetId="cc30-51a5-1bac-cdfd" type="selectionEntry"/>
     <entryLink id="88ba-c39d-e9b8-f2c3" name="Hidden Agendas" hidden="false" collective="false" import="true" targetId="6913-b466-755d-9581" type="selectionEntry"/>
+    <entryLink id="ffb0-e79e-2fe4-f7cb" name="Tournament Options" hidden="false" collective="false" import="true" targetId="f766-7a4e-7bb2-6d98" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="f574-01e8-a7f3-ef39" name=" ⚁ [Double] Rush" hidden="false">
@@ -2028,7 +2093,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6913-b466-755d-9581" name="Hidden Agendas" publicationId="df3a-f424-e7ea-5f69" page="100" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6913-b466-755d-9581" name="Tournament Quests" publicationId="2c2f-d4c8-7730-6c82" page="100" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="54fc-61ae-71eb-ca9d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="379c-622b-93a7-78bc" type="max"/>
       </constraints>
@@ -2036,19 +2101,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <categoryLink id="cbbf-8539-b7fe-e928" name="Hidden Agendas" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c8ce-9b0d-36c9-40b6" name="Choices" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c8ce-9b0d-36c9-40b6" name="Choices" hidden="false" collective="false" import="true" defaultSelectionEntryId="064d-adea-145e-56c5">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c50e-900e-22f2-2e3d" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="064d-adea-145e-56c5" name="Concealed Artifact" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="064d-adea-145e-56c5" name="The Champion" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2af0-133a-4dcb-b122" type="max"/>
               </constraints>
               <profiles>
-                <profile id="1ac6-31b0-0ea1-6174" name="Concealed Artifact" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+                <profile id="1ac6-31b0-0ea1-6174" name="The Champion" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
                   <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">Secretly note down one of your fighters to be the bearer of the concealed artefact.  The fighter must be on the battlefield.  At the start of the combat phase of the third battle round, reveal which of your fighters bears the concealed artefact.  At the end of the battle, you complete this Hidden Agenda if the bearer has not been taken down.</characteristic>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this tournament quest if the enemy leader has been taken down but your leader has not.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2056,14 +2121,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="078a-5814-b3a5-3b9c" name="Dominate" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="078a-5814-b3a5-3b9c" name="Far and Wide" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3370-911b-ee64-a9c1" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5767-11ec-7717-4824" name="Dominate" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+                <profile id="5767-11ec-7717-4824" name="Far and Wide" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
                   <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if you control more objectives than your opponent.</characteristic>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this tournament quest if you have 1 or more fighters within 3&quot; of each battlefield edge.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2071,14 +2136,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b9bf-fef8-b59f-c01d" name="Flaunt" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b9bf-fef8-b59f-c01d" name="Hold the Centre" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="844b-3ee2-362c-5a69" type="max"/>
               </constraints>
               <profiles>
-                <profile id="dc06-8f3e-781e-5f54" name="Flaunt" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+                <profile id="dc06-8f3e-781e-5f54" name="Hold the Centre" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
                   <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda immediately if you use a [quad] for an ability that requires a [double].</characteristic>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this tournament quest if 1 or more friendly fighters are within 6&quot; horizontally of the centre of the battlefield and no enemy fighters are within 6&quot; horizontally of the centre of the battlefield.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2086,14 +2151,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a3c2-5a9d-ebdb-9804" name="Fortune-favoured" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a3c2-5a9d-ebdb-9804" name="Overrun" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b802-edba-a95d-f4d6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2011-91c0-531f-6a73" name="Fortune-favoured" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+                <profile id="2011-91c0-531f-6a73" name="Overrun" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
                   <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda immediately if you seize the initiative and 2 or more wild dice have been added to your number of singles.</characteristic>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this tournament quest if you have 1 or more fighters wholly within each quarter of the battlefield.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2101,104 +2166,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f7ab-ef51-a1e0-bf64" name="Goliath Slayer" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f7ab-ef51-a1e0-bf64" name="Blunt" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49be-8fa6-8c3a-1765" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4ffe-ab05-d2fd-2e5e" name="Goliath Slayer" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+                <profile id="4ffe-ab05-d2fd-2e5e" name="Blunt" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
                   <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda immediately if an enemy fighter with a Wounds characteristic of 30 or more is taken down by an attack action made by a friendly fighter with a Wounds characteristic of 10 or less.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="685b-fc29-c71e-2345" name="Hold the Centre" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f16e-8326-5a24-7927" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4593-ee87-5455-3306" name="Hold the Centre" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if 1 or more friendly fighters are within 6&quot; horizontally of the centre of the battlefield and no enemy fighters are within 6&quot; horizontally of the centre of the battlefield.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6231-6a56-e716-1b5b" name="Inglorious Demise" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d99e-71a4-a3ca-eba3" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="6a9a-bb4f-32a2-ffcf" name="Inglorious Demise" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda immediately if the enemy leader is taken down by a damage point allocated to them that did not result from an attack action.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b493-b53c-6758-fed4" name="Overrun" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b431-2d95-95d9-a9a1" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="fc4b-aecc-4505-2de9" name="Overrun" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">You complete this Hidden Agenda at the end of the battle round if you have 1 or more fighters wholly within each quarter of the battlefield.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7c40-cc79-abc3-97ba" name="Prudent Warrior" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5aca-bc3b-4336-8cd0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="42fa-5917-4a18-7497" name="Prudent Warrior" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if you have 3 or more wild dice that have not been used in the battle.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0553-518f-5f61-b8b4" name="The Architect" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b084-2b44-8779-6140" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="18ab-da34-8dfc-06c1" name="The Architect" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if your opponent&apos;s warband has had half or more of its fighters taken down, but your warband has had less than half of its fighters taken down.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0179-7884-f831-cfad" name="The Champion" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e32f-bda3-b8a6-e8ea" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="2cb0-e387-c47e-ee16" name="The Champion" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if the enemy leader has been taken down but your leader has not.</characteristic>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this tournament quest if your opponent&apos;s warband has had half or more of its fighters taken down, but your warband has had less than half of its fighters taken down.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2211,9 +2186,9 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9c67-59be-bdde-99e3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="e072-4227-5b86-9a0d" name="The High Ground" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Hidden Agenda">
+                <profile id="e072-4227-5b86-9a0d" name="The High Ground" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
                   <characteristics>
-                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this Hidden Agenda if 1 or mroe friendly fighters are vertically 3&quot; above the battlefield floor and no enemy fighters are vertically 3&quot; above the battlefield floor.</characteristic>
+                    <characteristic name="Description" typeId="0ec8-ef3e-72d9-8b62">At the end of the battle, you complete this tournament quest if 1 or more friendly fighters are vertically 3&quot; above the battlefield floor and no enemy fighters are vertically 3&quot; above the battlefield floor.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2224,6 +2199,59 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f766-7a4e-7bb2-6d98" name="Tournament Options" hidden="false" collective="true" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="54fc-61ae-71eb-ca9d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d42-1e4d-1cfd-ab1f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8361-7a91-af34-e7f7" name="New CategoryLink" hidden="false" targetId="0b93-1073-1ad5-7829" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cbf7-db38-2f3a-fcfa" name="Disable Thralls" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d1-77a9-902e-0700" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3af3-9a49-512c-ae3e" name=" Disable White Dwarf Bladeborn warbands" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d2-0caa-2026-8c08" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f185-d4ef-4760-a7e3" name=" Disable Legacy Bladeborn warbands" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15b5-4a1e-ddc0-a3a9" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e4bc-6685-bc60-c2b4" name="Disable Monsters" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c57-ed0f-e499-83d1" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f84f-d042-56a7-a517" name="Disable Allies" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e376-17e9-42c8-c3b5" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>

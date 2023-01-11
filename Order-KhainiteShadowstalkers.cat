@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3da7-5571-9064-9a44" name="Order - Khainite Shadowstalkers" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3da7-5571-9064-9a44" name="Order - Khainite Shadowstalkers" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="0ca7-5274-4d0b-8de7" name="Khainite Leaders" hidden="false"/>
     <categoryEntry id="98e8-329c-385d-8a02" name="Khainite Shadowstalkers" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d326-1865-0bbc-1889" name=" Shroud Queen" hidden="false" collective="false" import="true" targetId="a2b1-27bd-fff6-7dfb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="bf0f-e096-ab11-cce4" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -13,10 +19,9 @@
     <entryLink id="f425-224e-8f7c-5a4d" name="Shroudblade" hidden="false" collective="false" import="true" targetId="28d6-1e22-e538-1fc9" type="selectionEntry"/>
     <entryLink id="ab70-8e64-1c7d-5c60" name="Darkflame Warlock" hidden="false" collective="false" import="true" targetId="67e4-bf46-0333-475c" type="selectionEntry"/>
     <entryLink id="f427-f736-43de-e407" name="Slaughtershade" hidden="false" collective="false" import="true" targetId="40e4-c629-b8e5-9548" type="selectionEntry"/>
-    <entryLink id="d95b-0d91-ffce-2735" name="Shroud Queen" hidden="false" collective="false" import="true" targetId="a2b1-27bd-fff6-7dfb" type="selectionEntry">
+    <entryLink id="d95b-0d91-ffce-2735" name=" Shroud Queen" hidden="false" collective="false" import="true" targetId="a2b1-27bd-fff6-7dfb" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="580c-aeb1-ee19-7ed4" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="7ab5-de81-90a9-6dae" name="Khainite Leaders" hidden="false" targetId="0ca7-5274-4d0b-8de7" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -60,6 +65,7 @@
       <categoryLinks>
         <categoryLink id="1f0b-fe6a-f5fb-67e1" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
         <categoryLink id="8dd8-54b0-faeb-2f8f" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="9825-b65e-4e08-1a59" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b538-7312-4064-2c4d" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -97,6 +103,7 @@
         <categoryLink id="25bc-64dd-d235-6e77" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="27c5-24be-55c2-689f" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
         <categoryLink id="9f58-c113-f2b3-b10b" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="65a0-ad05-0117-ac12" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b631-392c-3758-ce95" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="3e88-8799-1bbb-1514">
@@ -201,6 +208,7 @@
         <categoryLink id="21ee-d7ad-74e7-ac15" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="cfde-20d9-0050-69f9" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
         <categoryLink id="412d-1e20-f49f-facf" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="2dcc-d4d6-d679-583a" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9318-34d9-de0b-7220" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="bd8c-c437-b58a-584a">
@@ -284,6 +292,7 @@
         <categoryLink id="1135-5c74-8733-4fa4" name="Khainite Shadowstalkers" hidden="false" targetId="98e8-329c-385d-8a02" primary="false"/>
         <categoryLink id="096a-a830-0d67-f851" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
         <categoryLink id="069c-f6fe-65d0-1a76" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+        <categoryLink id="3f39-9b06-95ec-5d74" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="500d-6593-dd80-4e99" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="2cd7-d208-b430-4180">

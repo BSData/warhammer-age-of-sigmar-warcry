@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2b2-b639-6904-7f45" name="Chaos - Spire Tyrants" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2b2-b639-6904-7f45" name="Chaos - Spire Tyrants" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="dc68-472e-9a89-970e" name="Spire Leaders" hidden="false"/>
     <categoryEntry id="b386-b2d9-fed7-4798" name="Spire Tyrants" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="4b3c-63aa-117f-a71e" name=" Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="13f6-06e8-82b6-6b04" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -15,7 +21,6 @@
     <entryLink id="17d4-da04-6cef-dcd0" name="Pit Champion" hidden="false" collective="false" import="true" targetId="bad5-b298-a63e-84ef" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d0f1-2fac-3231-371b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="c2be-ab7e-d080-8621" name="Spire Leaders" hidden="false" targetId="dc68-472e-9a89-970e" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d429-9351-c6f8-b0c6" name="Headclaimer" hidden="false" collective="false" import="true" targetId="0c45-aab7-1ad8-ee37" type="selectionEntry"/>
@@ -62,6 +67,7 @@
       <categoryLinks>
         <categoryLink id="a69f-331f-1ad9-bd3b" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
         <categoryLink id="fb93-bb80-aaa6-c7d3" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="37a6-4979-1c94-1e7b" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c258-8756-93c6-c868" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -102,6 +108,7 @@
         <categoryLink id="30cb-9e3d-b82c-56e7" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="f33c-88b0-b7a1-523c" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
         <categoryLink id="85cd-664a-b1e4-ec34" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="b2cd-2fa4-6384-d9bf" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a4b8-7051-0045-5005" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -142,6 +149,7 @@
         <categoryLink id="654d-2160-16b0-c464" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="bc65-4b48-87f7-65dd" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
         <categoryLink id="4218-aa03-27b6-157b" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="81ad-0c2d-cac2-b7fc" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4f2c-7e7f-c3f4-4a45" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -182,6 +190,7 @@
         <categoryLink id="0bcd-306b-a595-006c" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="9356-a999-921c-e2ea" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
         <categoryLink id="b7ff-f973-4485-eb9b" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="bf4f-ea5d-b52b-e338" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b01f-c5c1-2e59-e62b" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -220,6 +229,7 @@
       <categoryLinks>
         <categoryLink id="3a8c-f732-b010-1d6f" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="dd4e-238b-00a7-cf1b" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
+        <categoryLink id="6a2c-aaf1-16e1-61ea" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="529f-d9cb-da4c-ec68" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="8f78-5376-c973-f300">
@@ -339,6 +349,7 @@
         <categoryLink id="5650-9167-5c58-a405" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="b6ff-3083-6a3e-16ac" name="Spire Tyrants" hidden="false" targetId="b386-b2d9-fed7-4798" primary="false"/>
         <categoryLink id="e77a-60aa-9617-c356" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+        <categoryLink id="982c-f3d4-88ec-e9b8" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="239a-d8e6-e4ac-a5be" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="fcb3-fcc4-5229-75ac">

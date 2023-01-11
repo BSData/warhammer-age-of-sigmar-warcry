@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="49a7-ef44-c8e4-6908" name="Chaos - Splintered Fang" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="b475-490a-59ff-4abe" name="Splintered Leaders" hidden="false"/>
     <categoryEntry id="f03c-f314-5dde-e380" name="Splintered Fang" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="76b7-4446-0482-cf34" name=" Trueblood" hidden="false" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="1cae-a1c1-da0c-0aca" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -17,7 +23,6 @@
     <entryLink id="7a56-51a8-0680-3d4c" name="Trueblood" hidden="false" collective="false" import="true" targetId="e1ee-3979-d517-cd72" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e9c3-bb9c-9bf7-e60b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="d3fb-7e02-ebc9-9318" name="Splintered Leaders" hidden="false" targetId="b475-490a-59ff-4abe" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a25f-7167-bf3f-b9d7" name="Pureblood" hidden="false" collective="false" import="true" targetId="7021-0200-98d9-f3b2" type="selectionEntry"/>
@@ -54,6 +59,7 @@
       <categoryLinks>
         <categoryLink id="5afc-02d8-c2af-d2ef" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
         <categoryLink id="bc34-4ab7-f435-ce5e" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="560e-5004-84eb-c093" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7a0c-07f9-46fb-b07f" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -88,6 +94,7 @@
       <categoryLinks>
         <categoryLink id="557b-a3e9-e8f7-7f06" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="f581-0838-3536-8f88" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
+        <categoryLink id="bf3a-78e4-68a1-8ab4" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2f41-6fc8-6fd8-4f84" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="a01d-d262-146f-9cf2">
@@ -198,6 +205,7 @@
         <categoryLink id="18ec-4a0b-7d1e-0847" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="a836-f0ae-49a7-761a" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
         <categoryLink id="13e7-c819-1ac8-a65c" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+        <categoryLink id="06ea-c859-dfd6-a5d3" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3b2d-0ea2-4fd1-b9d1" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -246,6 +254,7 @@
         <categoryLink id="acd8-6dc7-0176-f63c" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="6a91-1fdc-b15c-16da" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
         <categoryLink id="be64-e363-824f-006b" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="b6fd-e48b-5845-2092" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3073-924a-0053-4499" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -286,6 +295,7 @@
         <categoryLink id="ba08-207b-036b-4add" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="3858-fbfc-079b-6d31" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
         <categoryLink id="8d08-3db5-8f30-adb0" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="8ff1-54b8-e788-0245" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="23af-db39-9d5a-eaf5" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -320,6 +330,7 @@
       <categoryLinks>
         <categoryLink id="f585-b27d-a085-d8ed" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="e46f-a78e-dcfa-55d5" name="Splintered Fang" hidden="false" targetId="f03c-f314-5dde-e380" primary="false"/>
+        <categoryLink id="94b0-2114-ce6d-7ef5" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3dcc-4453-d0a2-e4f4" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="5f19-0c9d-2eab-d020">

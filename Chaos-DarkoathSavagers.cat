@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f760-2739-c7ed-01a1" name="Chaos - Darkoath Savagers" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f760-2739-c7ed-01a1" name="Chaos - Darkoath Savagers" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="b2ba-f779-903f-c9b0" name="Darkoath Leaders" hidden="false"/>
     <categoryEntry id="77ef-4180-cb59-d294" name="Darkoath Savagers" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="b3da-a6e2-191d-7a04" name=" Slaughterborn" hidden="false" collective="false" import="true" targetId="3644-47ec-f98c-ebce" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="a647-b38a-c1e9-c615" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -13,7 +19,6 @@
     <entryLink id="7a80-0f78-0834-356d" name="Slaughterborn" hidden="false" collective="false" import="true" targetId="3644-47ec-f98c-ebce" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="50eb-995d-0429-1fdb" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="e180-d808-5a66-fbd9" name="Darkoath Leaders" hidden="false" targetId="b2ba-f779-903f-c9b0" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8664-adaa-d935-9faf" name="Wrathtouched" hidden="false" collective="false" import="true" targetId="439e-f533-368c-d265" type="selectionEntry"/>
@@ -50,6 +55,7 @@
       <categoryLinks>
         <categoryLink id="756a-75b8-bc01-3195" name="Darkoath Savagers" hidden="false" targetId="77ef-4180-cb59-d294" primary="false"/>
         <categoryLink id="ecb7-21d0-600d-0fe1" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="5867-10d3-0aa2-4f8f" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="257b-2fbc-a565-afc8" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="5461-73e8-6370-d2ae">
@@ -141,6 +147,7 @@
       <categoryLinks>
         <categoryLink id="71a4-a1c7-d8d0-61b5" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="86d0-8091-96a6-2251" name="Darkoath Savagers" hidden="false" targetId="77ef-4180-cb59-d294" primary="false"/>
+        <categoryLink id="fa58-f2b1-9e15-d667" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="faa4-d047-2c58-686d" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="1fcf-99c1-5dd5-6e82">
@@ -315,6 +322,7 @@
         <categoryLink id="3550-f154-e4a4-8e43" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="d893-4587-4b34-b58d" name="Darkoath Savagers" hidden="false" targetId="77ef-4180-cb59-d294" primary="false"/>
         <categoryLink id="23f2-0983-baa8-57a9" name=" Mystic" hidden="false" targetId="7622-abbe-a6f9-0bc6" primary="false"/>
+        <categoryLink id="c246-54f4-7fe6-21c2" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="90c2-3841-613c-b24e" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -361,6 +369,7 @@
       <categoryLinks>
         <categoryLink id="63a6-fec2-c2ad-2e9b" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="0de8-70ec-02bb-c382" name="Darkoath Savagers" hidden="false" targetId="77ef-4180-cb59-d294" primary="false"/>
+        <categoryLink id="194d-ab47-cd04-a960" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a5aa-e5f3-868a-554b" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="fe16-6e7d-ccf3-7b24">
@@ -499,6 +508,7 @@
         <categoryLink id="f238-0754-fc23-79b2" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="a412-ca9c-23fc-8360" name="Darkoath Savagers" hidden="false" targetId="77ef-4180-cb59-d294" primary="false"/>
         <categoryLink id="7b20-42a1-91ef-2981" name=" Berserker" hidden="false" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+        <categoryLink id="4077-7455-f3ee-ba23" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b8af-fc73-f1d3-9b60" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>

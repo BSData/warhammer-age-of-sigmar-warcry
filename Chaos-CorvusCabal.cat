@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d806-0966-02c8-4c6b" name="Chaos - Corvus Cabal" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="16fa-f517-7f33-f908" name="Corvus Leaders" hidden="false"/>
     <categoryEntry id="53c1-4321-81c5-6ee8" name="Corvus Cabal" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="880b-a35c-cc08-1847" name=" Shadow Piercer" hidden="false" collective="false" import="true" targetId="354c-adb1-51d9-3f38" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0999-c09c-bbb3-f0c7" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -14,7 +20,6 @@
     <entryLink id="26d2-b402-3989-77a1" name="Shadow Piercer" hidden="false" collective="false" import="true" targetId="354c-adb1-51d9-3f38" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="49e0-ed0b-f817-20a1" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="b5d4-b40d-12f0-d49b" name="Corvus Leaders" hidden="false" targetId="16fa-f517-7f33-f908" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ca07-d8d3-9bde-ef1b" name="Shrike Talon" hidden="false" collective="false" import="true" targetId="a135-30f5-a696-a476" type="selectionEntry"/>
@@ -53,6 +58,7 @@
         <categoryLink id="69af-11b7-cc51-41b9" name="Corvus Cabal" hidden="false" targetId="53c1-4321-81c5-6ee8" primary="false"/>
         <categoryLink id="a074-a777-71b5-a13c" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="a16f-e83d-3e47-fcfa" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+        <categoryLink id="89b4-66e7-8138-428f" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f1e4-b64b-3e38-6058" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -94,6 +100,7 @@
       <categoryLinks>
         <categoryLink id="00e1-2811-cc7c-24e8" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="7b04-16e0-1dd7-7dc4" name="Corvus Cabal" hidden="false" targetId="53c1-4321-81c5-6ee8" primary="false"/>
+        <categoryLink id="0f75-0ada-273c-ba00" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ace0-454e-217d-11f8" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="b238-fb27-95ae-6242">
@@ -217,6 +224,7 @@
         <categoryLink id="767e-63aa-62e7-99b1" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="21ef-e72c-b731-3b57" name="Corvus Cabal" hidden="false" targetId="53c1-4321-81c5-6ee8" primary="false"/>
         <categoryLink id="dcbe-7a92-eef9-d751" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="7ade-569f-d0ef-e1eb" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6a91-6010-92fa-0807" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
@@ -257,6 +265,7 @@
         <categoryLink id="841f-4d13-d890-a405" name="Fighter" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="2046-90f9-7fa8-bd27" name="Corvus Cabal" hidden="false" targetId="53c1-4321-81c5-6ee8" primary="false"/>
         <categoryLink id="9ca3-2f93-2202-934b" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
+        <categoryLink id="7103-fbc4-8d96-65c0" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="753d-f350-e9f1-ba27" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>

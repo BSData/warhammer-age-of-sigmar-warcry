@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="680d-90e5-7442-0ee4" name="Chaos - Tarantulos Brood" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="680d-90e5-7442-0ee4" name="Chaos - Tarantulos Brood" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="5164-33cd-375a-2859" name="Tarantulos Leaders" hidden="false"/>
     <categoryEntry id="8895-9ffb-1ffd-effb" name="Tarantulos Brood" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="2221-4c8c-28a9-1935" name=" Broodmaster" hidden="false" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="b553-ebb6-0970-3039" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
@@ -14,7 +20,6 @@
     <entryLink id="7c0f-cd27-897d-7e91" name="Broodmaster" hidden="false" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6c9b-6975-d951-4cab" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
-        <categoryLink id="7733-8f08-8884-8131" name="Tarantulos Leaders" hidden="false" targetId="5164-33cd-375a-2859" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d3b1-bc7f-1c2c-70c1" name="Doomweaver" hidden="false" collective="false" import="true" targetId="283a-5214-1938-8b86" type="selectionEntry"/>
@@ -54,6 +59,7 @@
         <categoryLink id="53fb-7ff6-d6ef-8fb1" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
         <categoryLink id="7550-8b9c-253a-5582" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="27d7-660e-899f-6132" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+        <categoryLink id="934d-123e-c2db-7798" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="54f4-1d92-bc57-628c" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
@@ -102,6 +108,7 @@
         <categoryLink id="6ff4-5248-6453-421b" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
         <categoryLink id="25da-7545-fdb9-76b8" name="Tarantulos Brood" hidden="false" targetId="8895-9ffb-1ffd-effb" primary="false"/>
         <categoryLink id="16be-c5ba-d8bf-3831" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+        <categoryLink id="910a-349b-83e7-14ee" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="1e5f-ae39-102c-826c" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b15-95e9-9883-d526">
@@ -221,6 +228,7 @@
         <categoryLink id="6dda-214a-44ca-6677" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
         <categoryLink id="83aa-4f5d-b697-0bf9" name="Tarantulos Brood" hidden="false" targetId="8895-9ffb-1ffd-effb" primary="false"/>
         <categoryLink id="fa15-2806-72c0-ac61" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
+        <categoryLink id="e3a3-a5ee-b699-c572" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c655-633f-a2df-ee2d" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="9c7a-3724-537c-7068">
@@ -333,6 +341,7 @@
         <categoryLink id="1f36-40d9-6bb2-3fac" name="Tarantulos Brood" hidden="false" targetId="8895-9ffb-1ffd-effb" primary="false"/>
         <categoryLink id="76b4-15fe-5aea-01f7" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
         <categoryLink id="60ef-3897-934d-9e23" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="7026-5104-c3b6-aa8f" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2ee3-10d1-0bf0-8dd2" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
