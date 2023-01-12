@@ -766,6 +766,11 @@ click on the force you add, then click Add Force to add another force as Allies.
         </forceEntry>
       </forceEntries>
       <categoryLinks>
+        <categoryLink id="4af0-81b1-f0dc-02e5" name="Tournament Options" hidden="false" targetId="0b93-1073-1ad5-7829" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="af73-91a3-74be-2104" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="ca4a-4448-2312-8339" name="Tournament Quests" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="false"/>
         <categoryLink id="9849-411e-15d4-9c6a" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
           <modifiers>
@@ -827,11 +832,6 @@ click on the force you add, then click Add Force to add another force as Allies.
           </constraints>
         </categoryLink>
         <categoryLink id="91f6-2c67-552c-6714" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
-        <categoryLink id="4af0-81b1-f0dc-02e5" name="Tournament Options" hidden="false" targetId="0b93-1073-1ad5-7829" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="af73-91a3-74be-2104" type="max"/>
-          </constraints>
-        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
