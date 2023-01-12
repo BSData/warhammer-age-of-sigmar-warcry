@@ -100,7 +100,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="0ad8-a54e-a7e2-271d" name="Underworlds Miyari" hidden="false" targetId="586f-89fb-18eb-df7d" primary="false"/>
-        <categoryLink id="e9dd-e994-7c4c-f3ed" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="53cb-e568-ad3b-33ec" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="72b0-c29b-08c4-80da" name=" Hurakan Windmage" hidden="false" collective="false" import="true" targetId="ac4b-45d4-f487-6b5e" type="selectionEntry">
@@ -180,7 +180,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e068-4a7c-0693-1fb4" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="c4e5-3043-fbee-f44c" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="e60a-3d2b-ebc6-7abe" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b3f8-a9a1-5888-ee92" name="Bahannar" hidden="true" collective="false" import="true" targetId="4e0c-0c7f-fff9-0b11" type="selectionEntry">
@@ -200,7 +200,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f146-451a-0841-8e43" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="2620-c086-4a11-3f4e" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="ffd3-4ef3-f97c-e151" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="95cc-6ef9-33a7-706d" name="Ailenn, The Mind&apos;s Edge" hidden="true" collective="false" import="true" targetId="5e9e-ddba-073a-cdf4" type="selectionEntry">
@@ -220,7 +220,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86c9-a37d-2b0a-ed19" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="4822-6d16-c41e-0395" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="df36-2375-075e-617b" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e3b6-9fb8-a73e-6e6a" name=" Scinari Enlightener" hidden="false" collective="false" import="true" targetId="8887-375b-b680-e9f7" type="selectionEntry">
@@ -879,6 +879,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0723-b494-37d8-64ad" type="max"/>
@@ -932,6 +937,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd9-45d6-fb14-71bf" type="max"/>
@@ -976,6 +986,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1023,6 +1038,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

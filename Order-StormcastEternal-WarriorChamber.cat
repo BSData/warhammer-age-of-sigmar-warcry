@@ -16,7 +16,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="e6e1-7c56-01a5-7013" name="Underworlds Steelheart" hidden="false" targetId="9297-9a6f-ad14-f574" primary="false"/>
-        <categoryLink id="434f-a746-cd83-480e" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="d9f2-6ddd-50f2-bf0c" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a447-b736-4701-42fc" name=" Retributor-Prime" hidden="false" collective="false" import="true" targetId="36d7-32f8-8f2d-ed7b" type="selectionEntry">
@@ -192,7 +192,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cff8-148c-66de-4ee0" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="0d1d-1ceb-9c95-d7f2" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="81c2-8c6c-178e-fb8e" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2415-b436-d4c5-efdd" name="Angharad Brightshield" hidden="true" collective="false" import="true" targetId="6454-1357-17ad-15b5" type="selectionEntry">
@@ -212,7 +212,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0904-8f4c-d331-c446" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="f641-f174-bc2c-ca9e" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="fa09-3146-8a71-c420" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5174-32aa-62ab-6214" name="Angharad Brightshield" hidden="false" collective="false" import="true" targetId="6454-1357-17ad-15b5" type="selectionEntry"/>
@@ -1131,6 +1131,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="322b-37e4-8d17-a1cb" name="Obryn the Bold" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1174,6 +1179,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="d636-0a26-5d54-fa71" name="Severin Steelheart" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1214,6 +1224,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

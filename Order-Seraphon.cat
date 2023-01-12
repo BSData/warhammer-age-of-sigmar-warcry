@@ -220,7 +220,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="308a-c748-264b-2b3f" name="Underworlds Kixi-Taka" hidden="false" targetId="67bb-ac4b-a519-41f9" primary="false"/>
-        <categoryLink id="0b7e-7a75-b2a4-3439" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="b84d-b363-5bf6-d73f" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="539c-6248-4c40-f298" name="Xepic" hidden="true" collective="false" import="true" targetId="f5f4-1e4c-36cb-6761" type="selectionEntry">
@@ -240,7 +240,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="828b-7d98-0570-6ecc" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="c338-67a4-9089-801a" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="a44b-f4ab-0dc3-8f01" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="88f0-6bec-218c-a2f5" name="Tok" hidden="true" collective="false" import="true" targetId="f86c-0707-fc6a-70a9" type="selectionEntry">
@@ -260,7 +260,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cf41-c98b-1519-bdeb" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="5f0a-ac8d-0b48-5538" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="cd5d-fef5-a5f7-0956" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="37e7-ff76-6954-b185" name="Otapatl" hidden="true" collective="false" import="true" targetId="5be9-88d8-1718-9e8f" type="selectionEntry">
@@ -280,7 +280,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2261-48f7-b47b-133f" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="3193-d20b-28c4-781d" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="6c45-aabc-b270-4b7a" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7e70-888a-18c8-3064" name="Klaq-Trok" hidden="true" collective="false" import="true" targetId="7699-e72e-7b12-d662" type="selectionEntry">
@@ -300,7 +300,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de43-5f1b-2461-0c2c" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="d70c-4606-cb2b-0225" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="7b4c-0760-c2f0-e784" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d9aa-8ebd-b1d6-079f" name="Huachi" hidden="true" collective="false" import="true" targetId="e126-2be8-4647-f931" type="selectionEntry">
@@ -320,7 +320,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="871d-b201-4ef4-b254" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="e599-b855-720e-e102" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="8974-7bf5-c2c8-7c30" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a622-0c93-55cd-99c0" name="Huachi" hidden="false" collective="false" import="true" targetId="e126-2be8-4647-f931" type="selectionEntry"/>
@@ -1295,6 +1295,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="12cd-9f03-e1bc-dca0" name="Kixi-Taka, The Diviner" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1345,6 +1350,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="3dfe-bc51-621a-c5ed" name="Klaq-Trok" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1386,6 +1396,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1440,6 +1455,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="c7a4-f291-ed9f-6d60" name="Huachi" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1491,6 +1511,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="d07b-32bf-c2ae-255c" name="Xepic" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1532,6 +1557,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

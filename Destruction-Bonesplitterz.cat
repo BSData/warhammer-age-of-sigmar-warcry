@@ -124,7 +124,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="fedf-4900-0fdd-e2fe" name="Underworlds Hedkrakka" hidden="false" targetId="0230-246b-8b7c-1bdd" primary="false"/>
-        <categoryLink id="8ecc-eea2-8ccb-4fa7" name="Legacy Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="8f71-0bce-7691-b89a" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2b4e-9db4-c25d-eafd" name="Toofdagga" hidden="true" collective="false" import="true" targetId="1db1-c110-b642-9b23" type="selectionEntry">
@@ -144,7 +144,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9459-5826-0969-0c6d" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="6851-9606-7274-8f6c" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="be53-1b12-e694-70c8" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f5fc-01e9-0b4c-8315" name="Wollop Da Skul" hidden="true" collective="false" import="true" targetId="8cd4-43a4-186f-da74" type="selectionEntry">
@@ -164,7 +164,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9955-4b46-e84c-0b3d" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="cb71-2e2b-b78c-2bac" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="429a-387f-6166-77a6" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c265-7563-cea2-14a0" name="Dakko Sharp-stikka" hidden="false" collective="false" import="true" targetId="0e25-7280-5b16-eae0" type="selectionEntry"/>
@@ -224,6 +224,26 @@
     <entryLink id="d427-368d-e524-110c" name=" Wurrgog Prophet" hidden="false" collective="false" import="true" targetId="bcd3-81c7-960d-6d76" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="359d-464c-b3d9-7492" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="83da-bd3f-21ea-d0a2" name="Dakko Sharp-stikka" hidden="true" collective="false" import="true" targetId="0e25-7280-5b16-eae0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0230-246b-8b7c-1bdd" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c12-f3a7-3b3c-30f1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1bec-6c0c-894d-5c84" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0539-55b4-272a-1abb" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -635,6 +655,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="5449-e4b8-c146-71f9" name="Hedkrakka, Gob of Gork" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -685,6 +710,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c2b-0203-e189-a04c" type="max"/>
@@ -730,6 +760,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6951-4274-8aca-da16" type="max"/>
@@ -773,6 +808,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

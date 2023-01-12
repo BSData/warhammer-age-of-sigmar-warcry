@@ -136,7 +136,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="977f-0f08-65cf-ed9b" name="Underworlds Spiteclaw" hidden="false" targetId="cc4e-b8a8-a60b-25c1" primary="false"/>
-        <categoryLink id="2cf0-e1e5-fe0f-ec1c" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="c830-c9bb-6cca-1071" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5886-7a1a-5ee1-ec57" name=" Warlock Bombardier" hidden="false" collective="false" import="true" targetId="e1d0-866a-65ab-22a6" type="selectionEntry">
@@ -180,7 +180,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7667-d178-d005-fb9e" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="b432-f994-fb23-9e7c" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="67d9-38db-3754-bd73" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="04d5-15e7-599a-016b" name="The Hungering Skaven" hidden="true" collective="false" import="true" targetId="cf09-99a3-0a70-1f78" type="selectionEntry">
@@ -200,7 +200,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2635-c9a8-a832-2ec6" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="69f3-8537-3d7d-ed35" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="09bc-12ae-3995-59b9" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="37db-6f5a-b77c-0cda" name="The Lurking Skaven" hidden="true" collective="false" import="true" targetId="52b8-f500-6d63-83b8" type="selectionEntry">
@@ -220,7 +220,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7110-a970-efeb-1eb5" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="baaa-a0b3-349b-6939" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="f886-3265-5fe1-7d3c" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d4bd-54f8-4672-2e83" name="Krrk the Almost-trusted" hidden="true" collective="false" import="true" targetId="1cbc-7eee-792d-08b5" type="selectionEntry">
@@ -240,7 +240,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c12f-31b7-3626-0031" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="5404-3c9b-ebde-2e90" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="aeec-0c56-e0ff-8951" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="84d7-16ce-a449-36dd" name=" Arch-Warlock" hidden="false" collective="false" import="true" targetId="7242-f947-54dc-1ba5" type="selectionEntry">
@@ -876,6 +876,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="c321-ed9b-edb5-48d5" name="Skritch Spiteclaw" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -916,6 +921,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -959,6 +969,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1005,6 +1020,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="3826-d460-e3f5-b0ed" name="The Festering Skaven" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1047,6 +1067,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

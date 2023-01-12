@@ -52,7 +52,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="f803-4b61-d1ba-d4f3" name="Underworld Morgwaeth" hidden="false" targetId="66bd-937c-0f5d-30d2" primary="false"/>
-        <categoryLink id="4d4e-90e4-1c43-7064" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="1810-d1ed-98bb-9e71" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f5e7-b7c2-9cf5-c5ff" name=" Melusai Ironscale" hidden="false" collective="false" import="true" targetId="2e52-1cd2-63b7-b264" type="selectionEntry">
@@ -180,7 +180,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fad5-e8a4-95d5-d79c" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="8455-8ce5-f285-b52a" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="831e-378d-1d67-ea01" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a5ae-9333-7a4b-9267" name="Kyrae" hidden="true" collective="false" import="true" targetId="2285-9bed-0e77-aa3f" type="selectionEntry">
@@ -200,7 +200,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8a7f-9c98-268a-c45e" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="7d41-c960-510c-27be" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="17dd-dc6b-f926-0e72" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="370a-e215-ae0c-e385" name="Kyrssa" hidden="true" collective="false" import="true" targetId="8d62-1f83-8fa2-a52d" type="selectionEntry">
@@ -220,7 +220,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6819-c654-be62-982e" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="6764-d078-317b-781d" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="325d-3b2b-b232-898f" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9fd5-06b1-4890-f609" name="Lethyr" hidden="true" collective="false" import="true" targetId="6dfe-64f4-dc25-7732" type="selectionEntry">
@@ -240,7 +240,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="13d8-f9f7-6c99-c402" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="665d-6660-3383-f952" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="ec1a-db59-2fb9-1015" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b060-8bd3-356d-c21a" name="Doomfire Warlock" hidden="false" collective="false" import="true" targetId="8b92-46ab-2e63-c4b9" type="selectionEntry"/>
@@ -299,7 +299,7 @@
     </entryLink>
     <entryLink id="73e5-a23c-3f2d-42fc" name=" Morgwaeth the Bloodied" hidden="false" collective="false" import="true" targetId="6657-d311-9197-56fa" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="f6a1-4bcd-e782-587c" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="901d-1a67-19da-ee16" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="93e5-82ca-4001-5e4d" name="Witch Aelf" hidden="false" collective="false" import="true" targetId="a3ff-9b18-e47a-1a49" type="selectionEntry"/>
@@ -796,6 +796,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22ee-819a-86d8-5a30" type="max"/>
@@ -839,6 +844,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -895,6 +905,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b4-f18a-f0a9-358f" type="max"/>
@@ -940,6 +955,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a03-f4d7-e702-4922" type="max"/>
@@ -983,6 +1003,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

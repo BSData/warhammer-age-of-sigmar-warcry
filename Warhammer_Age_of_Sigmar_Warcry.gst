@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="60" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="62" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Cost Limits: 1000
 
 click on the force you add, then click Add Force to add another force as Allies.</readme>
@@ -68,7 +68,6 @@ click on the force you add, then click Add Force to add another force as Allies.
     <categoryEntry id="e4b3-72a5-ca73-8c72" name="Narrative Options" hidden="false"/>
     <categoryEntry id="82fd-8251-2413-feb8" name="Bladeborn Fighters" hidden="false"/>
     <categoryEntry id="15bb-04f5-5313-58a5" name="Open Play Options" hidden="false"/>
-    <categoryEntry id="7c78-a6fb-8e90-7f9b" name="Bladeborn Allies (Legacy)" hidden="false"/>
     <categoryEntry id="fba5-9730-9be1-8ee9" name="Tournament Quests" hidden="false"/>
     <categoryEntry id="e663-95d1-d351-f200" name="Allegiances" hidden="false"/>
     <categoryEntry id="c1d9-ad54-d2e9-6849" name=" Agile" hidden="false"/>
@@ -105,7 +104,6 @@ click on the force you add, then click Add Force to add another force as Allies.
     <categoryEntry id="52ee-0c94-262c-9a8e" name=" -Universal Runemarks-" hidden="true"/>
     <categoryEntry id="8134-f759-d667-7eb1" name="Cities of Sigmar" hidden="false"/>
     <categoryEntry id="0b93-1073-1ad5-7829" name="Tournament Options" hidden="false"/>
-    <categoryEntry id="579c-d66e-db83-2a02" name="Bladeborn Allies (White Dwarf)" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -113,7 +111,7 @@ click on the force you add, then click Add Force to add another force as Allies.
         <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1.0">
           <comment>bladeborn allies roster max alteration</comment>
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c78-a6fb-8e90-7f9b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -203,7 +201,6 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="6cff-4bfc-b8ee-be19" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38ae-8bfd-d301-796a" type="max"/>
               </constraints>
             </categoryLink>
-            <categoryLink id="ae35-2cf4-c82d-79c8" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
             <categoryLink id="ba05-c495-d0e5-7c5d" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -216,7 +213,6 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b996-2594-f3b5-dfeb" type="max"/>
               </constraints>
             </categoryLink>
-            <categoryLink id="809d-cc47-072d-cade" name="White Dwarf Bladeborn Allies" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -249,7 +245,6 @@ click on the force you add, then click Add Force to add another force as Allies.
           </constraints>
         </categoryLink>
         <categoryLink id="cc09-a311-7013-6e59" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
-        <categoryLink id="bb9f-23ef-1c1d-5c51" name="Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="e96a-4ba9-a4f3-9277" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
         <categoryLink id="6a6a-fcf5-2a74-ef67" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false"/>
         <categoryLink id="8999-2018-4ce5-b7e7" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
@@ -265,7 +260,6 @@ click on the force you add, then click Add Force to add another force as Allies.
           </constraints>
         </categoryLink>
         <categoryLink id="8075-d807-594c-9d18" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
-        <categoryLink id="84b3-6839-33bc-64ac" name="White Dwarf Bladeborn Allies" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
@@ -273,7 +267,7 @@ click on the force you add, then click Add Force to add another force as Allies.
         <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
           <comment>bladeborn allies</comment>
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c78-a6fb-8e90-7f9b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
         <modifier type="increment" field="a612-cfde-504b-b8d6" value="1.0">
@@ -605,7 +599,6 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="db3d-f1d8-082e-bac2" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
               </constraints>
             </categoryLink>
-            <categoryLink id="7989-e5fa-4eea-0df6" name="Bladeborn Allied Fighters (Legacy)" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
             <categoryLink id="2c63-1889-107e-958a" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -618,7 +611,6 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f76-f5eb-cf0f-72e7" type="max"/>
               </constraints>
             </categoryLink>
-            <categoryLink id="726f-a360-57dc-b797" name="White Dwarf Bladeborn Allies" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -669,16 +661,14 @@ click on the force you add, then click Add Force to add another force as Allies.
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a012-3e48-2c2d-52a4" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="cd0c-dfa1-c64c-5f85" name="Bladeborn Allied Fighters (Legacy)" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="503a-5433-1955-41b0" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
-        <categoryLink id="82bc-570d-a7ab-f852" name="Bladeborn Allied Fighters (White Dwarf)" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
       <modifiers>
         <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c78-a6fb-8e90-7f9b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -760,15 +750,6 @@ click on the force you add, then click Add Force to add another force as Allies.
                 <constraint field="selections" scope="65b8-c7f4-1c50-97d1" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
               </constraints>
             </categoryLink>
-            <categoryLink id="8077-6f1c-cde4-8898" name="Bladeborn Allies (Legacy)" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
             <categoryLink id="b874-baa6-e8b6-d153" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -780,15 +761,6 @@ click on the force you add, then click Add Force to add another force as Allies.
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="786e-1c52-d9d6-beac" type="max"/>
               </constraints>
-            </categoryLink>
-            <categoryLink id="76be-9124-b484-944b" name="Bladeborn Allies (White Dwarf)" hidden="false" targetId="579c-d66e-db83-2a02" primary="false">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3af3-9a49-512c-ae3e" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </categoryLink>
           </categoryLinks>
         </forceEntry>
@@ -854,14 +826,12 @@ click on the force you add, then click Add Force to add another force as Allies.
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-0268-4131-b04c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="26ad-7a72-52a2-60b0" name="Bladeborn Allies (Legacy)" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="false"/>
         <categoryLink id="91f6-2c67-552c-6714" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
         <categoryLink id="4af0-81b1-f0dc-02e5" name="Tournament Options" hidden="false" targetId="0b93-1073-1ad5-7829" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="af73-91a3-74be-2104" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b763-121a-7bf2-6ddf" name="Bladeborn Allies (White Dwarf)" hidden="false" targetId="579c-d66e-db83-2a02" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>

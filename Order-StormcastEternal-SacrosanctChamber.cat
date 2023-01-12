@@ -136,7 +136,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="3c23-a808-4f6a-b7dc" name="Underworlds Stormsire" hidden="false" targetId="bad7-8f5a-fdd5-8309" primary="false"/>
-        <categoryLink id="b379-c89a-fcc7-dfd2" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="1045-bd36-bd5d-7127" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="683a-69f8-8286-9c17" name="Rastus the Charmed" hidden="true" collective="false" import="true" targetId="18ec-6dc9-78ee-b8ba" type="selectionEntry">
@@ -156,7 +156,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e2e-2a98-549a-ab96" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="0546-51ea-3ff4-f4ff" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="d553-f48b-61ab-6817" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="060e-0b5d-4fb1-4eb1" name="Ammis Dawnguard" hidden="true" collective="false" import="true" targetId="1cca-c26b-90a8-31e8" type="selectionEntry">
@@ -176,7 +176,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="32e0-c01c-8495-03ef" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="9df0-a970-8654-dc30" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="03f3-ca9c-b270-3510" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bc81-1a28-898d-e65a" name="Ammis Dawnguard" hidden="false" collective="false" import="true" targetId="1cca-c26b-90a8-31e8" type="selectionEntry"/>
@@ -952,6 +952,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="56c1-0872-b69f-3350" name="Averon Stormsire" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1002,6 +1007,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="23b1-cdf4-14f7-57ad" name="Ammis Dawnguard" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -1043,6 +1053,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

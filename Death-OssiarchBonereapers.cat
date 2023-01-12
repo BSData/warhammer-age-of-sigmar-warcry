@@ -64,7 +64,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="b385-ae62-dade-c3c3" name="Bladeborn Kainan" hidden="false" targetId="4d85-2ae1-6124-5613" primary="false"/>
-        <categoryLink id="af15-a363-4dae-28ac" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="e343-a0ef-4e98-b8ed" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="29f8-6c86-1c3e-f74e" name=" Liege-Kavalos" hidden="false" collective="false" import="true" targetId="2d51-01e0-8b03-da86" type="selectionEntry">
@@ -108,7 +108,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="43c6-5f3a-5431-025a" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="e6cc-8a85-8523-463e" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="0df8-18aa-e3d8-35d5" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3320-a7eb-4579-f85d" name="Hakor" hidden="true" collective="false" import="true" targetId="5f3c-f456-cc48-519b" type="selectionEntry">
@@ -128,7 +128,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f749-f9d2-14cf-5db8" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="7c9d-8ce7-3404-f8b6" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="3d0e-383f-5cdd-02fc" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bbc5-f976-3db9-60c3" name="Karu" hidden="true" collective="false" import="true" targetId="caf2-12e6-053e-a91e" type="selectionEntry">
@@ -148,7 +148,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f86d-5db9-66b9-454b" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="44e9-a62c-d397-dab0" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="7730-ce72-6d13-c083" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="70b3-4e75-1e25-d4b2" name="Nohem" hidden="true" collective="false" import="true" targetId="cbfc-5b90-885a-d237" type="selectionEntry">
@@ -168,7 +168,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d3f-401f-6f74-cdac" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="e152-d5b5-0233-1107" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="0ac6-7393-25c4-a74d" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e67d-a604-4196-a7f2" name="Senha" hidden="true" collective="false" import="true" targetId="c01e-57f6-89e9-0535" type="selectionEntry">
@@ -188,7 +188,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8cc7-fd6b-5aca-ed74" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="c7f8-8fb9-0ea9-f15a" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="61d4-5edc-ad08-c8d1" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bbc3-e1d9-880a-d164" name="Binar Khenta" hidden="false" collective="false" import="true" targetId="e955-e286-da88-e5d1" type="selectionEntry"/>
@@ -519,6 +519,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2bc-403f-54fd-3c2c" type="max"/>
@@ -617,6 +622,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec29-9a5c-e5ec-17e5" type="max"/>
@@ -661,6 +671,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -709,6 +724,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e241-c41c-8b30-8484" type="max"/>
@@ -753,6 +773,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -847,7 +872,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a982-10d9-314e-033b" name="Kavalos Deathriders" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a982-10d9-314e-033b" name="Kavalos Deathrider" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Nadirite Spear">
           <conditions>
@@ -861,7 +886,7 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="25ea-f9b9-80cf-cfca" name="Kavalos Deathriders" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="25ea-f9b9-80cf-cfca" name="Kavalos Deathrider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">8</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">5</characteristic>
@@ -1267,7 +1292,7 @@
         <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4887-e475-8cb4-c0cf" name="Necropolis Stalkers" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4887-e475-8cb4-c0cf" name="Necropolis Stalker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Spirit Blades">
           <conditions>
@@ -1281,7 +1306,7 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="1184-c783-8e3e-dd51" name="Necropolis Stalkers" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+        <profile id="1184-c783-8e3e-dd51" name="Necropolis Stalker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
           <characteristics>
             <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
             <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>

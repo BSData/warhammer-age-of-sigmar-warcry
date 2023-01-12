@@ -124,7 +124,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="43a3-d960-043c-79e0" name="Underworlds Xandire" hidden="false" targetId="f488-f879-c9b7-b6b4" primary="false"/>
-        <categoryLink id="efaf-cbb8-3106-4871" name="New CategoryLink" hidden="false" targetId="579c-d66e-db83-2a02" primary="true"/>
+        <categoryLink id="6614-b3fe-5832-6b7b" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3eb5-e1ec-3fa4-503e" name=" Annihilator-Prime" hidden="false" collective="false" import="true" targetId="c5ce-4ed5-e348-5cb7" type="selectionEntry">
@@ -156,7 +156,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c57b-8a9b-27b8-6753" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="ff55-4e56-2d5e-823d" name="New CategoryLink" hidden="false" targetId="579c-d66e-db83-2a02" primary="true"/>
+        <categoryLink id="e658-d261-479a-3a36" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8f6d-90b1-589f-ecb8" name="Luxa Stormrider" hidden="true" collective="false" import="true" targetId="b647-c6aa-a276-f64d" type="selectionEntry">
@@ -176,7 +176,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c1cf-9ace-0bd3-d3c1" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="78e2-dff4-28ca-ae45" name="New CategoryLink" hidden="false" targetId="579c-d66e-db83-2a02" primary="true"/>
+        <categoryLink id="f8d5-9310-7131-37b2" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="06d8-ed7d-274b-127b" name="Taros" hidden="true" collective="false" import="true" targetId="0557-ffe0-06fe-04fb" type="selectionEntry">
@@ -196,7 +196,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4295-d516-b5a3-36b7" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="c7e7-7800-c6ce-8ddc" name="New CategoryLink" hidden="false" targetId="579c-d66e-db83-2a02" primary="true"/>
+        <categoryLink id="913f-1a22-1c4b-3a27" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="87cd-8340-11e7-4ade" name="Gryph-hound" hidden="false" collective="false" import="true" targetId="89eb-dacf-f970-348d" type="selectionEntry"/>
@@ -769,6 +769,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3af3-9a49-512c-ae3e" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="cc58-7afd-1df3-695e" name="Dhoraz Giant-fell" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -812,6 +817,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3af3-9a49-512c-ae3e" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="0e45-6489-a65f-8de6" name="Calthia Xandire" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -852,6 +862,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3af3-9a49-512c-ae3e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -903,6 +918,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3af3-9a49-512c-ae3e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

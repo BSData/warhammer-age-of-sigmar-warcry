@@ -124,7 +124,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="96fc-dba1-b6a5-0c4d" name="Bladeborn Vasillac" hidden="false" targetId="ab72-6c3b-28fa-1959" primary="false"/>
-        <categoryLink id="20ba-130e-e531-d8b9" name="Legacy Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="ee2e-c43b-cea9-77a9" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d1a5-325a-c5bd-a8b3" name="Glissete" hidden="true" collective="false" import="true" targetId="a4e3-4b9c-f0cc-1b46" type="selectionEntry">
@@ -144,7 +144,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e70-5798-0f1a-07bd" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="5a49-5dc9-919d-32b5" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="a3e0-77de-b421-64fe" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f91f-6e82-8b4b-3f95" name="Hadzu" hidden="true" collective="false" import="true" targetId="f1fa-3c9c-d40b-cfda" type="selectionEntry">
@@ -164,7 +164,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b872-4d79-d17f-12f3" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="f691-7e13-54af-9599" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="65f8-edfa-39b7-924c" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="888f-b20a-f605-e329" name="Slakeslash" hidden="true" collective="false" import="true" targetId="d954-f42a-98f0-266b" type="selectionEntry">
@@ -184,7 +184,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8327-0cad-4c4e-b8de" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="d422-ebcb-0e3a-1253" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="b66b-ad3c-359d-c04a" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5351-32c1-e22f-c32d" name="Blissbarb Archer" hidden="false" collective="false" import="true" targetId="e93d-c6d6-faf1-8389" type="selectionEntry"/>
@@ -646,6 +646,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="0a20-30ad-effc-c04c" name="Vasillac the Gifted" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -686,6 +691,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -729,6 +739,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -780,6 +795,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

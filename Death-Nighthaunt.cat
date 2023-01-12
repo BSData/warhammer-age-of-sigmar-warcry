@@ -28,7 +28,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="e649-310b-25c4-ffb4" name="Bladeborn Briar" hidden="false" targetId="011e-91df-f669-9595" primary="false"/>
-        <categoryLink id="1a7a-c1cf-791f-e17d" name="Legacy Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="779f-b96c-7cd6-3786" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2ec8-e271-314b-9727" name=" Spirit Torment" hidden="false" collective="false" import="true" targetId="f374-fd1c-faa7-6185" type="selectionEntry">
@@ -204,7 +204,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ebdf-2e25-c6a7-a56e" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="6d22-e73e-e956-0ada" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="0c2f-d1c1-be06-91c1" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9a9e-e885-122a-b29e" name="Thorns of the Briar Queen Chainrasp" hidden="true" collective="false" import="true" targetId="ad58-bd6d-1846-6772" type="selectionEntry">
@@ -224,7 +224,7 @@
         <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6709-2cad-0513-90f9" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="eb08-e701-ed53-8d6a" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="bc27-e138-0b45-974a" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="881d-e42a-3766-7a52" name="Varclav the Cruel" hidden="true" collective="false" import="true" targetId="cec6-0f83-2713-a2f4" type="selectionEntry">
@@ -244,7 +244,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ccd4-49be-f93f-fc17" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="3c40-8b9b-2313-b380" name="New CategoryLink" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="3ddd-7519-fe48-94ef" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="68b8-583a-7366-b027" name=" Krulghast Cruciator" hidden="false" collective="false" import="true" targetId="4736-2782-98d0-6d64" type="selectionEntry">
@@ -879,6 +879,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="131e-0849-58a1-5d33" type="max"/>
@@ -932,6 +937,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="426b-566b-b303-aabb" type="max"/>
@@ -979,6 +989,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c6-6548-19af-1135" type="max"/>
@@ -1024,6 +1039,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

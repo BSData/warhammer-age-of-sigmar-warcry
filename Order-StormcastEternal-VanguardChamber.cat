@@ -16,7 +16,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="7037-4fc2-b076-6033" name="Underworlds Farstrider" hidden="false" targetId="2687-6b11-6f11-8dc9" primary="false"/>
-        <categoryLink id="5899-ec1a-7d7c-fe07" name="Legacy Bladeborn Allies" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="e947-db3b-39d4-9aa3" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="69f4-8199-9748-124d" name=" Raptor-Prime" hidden="false" collective="false" import="true" targetId="f0da-7b4f-11aa-c9d7" type="selectionEntry">
@@ -120,7 +120,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fab2-7f44-13a2-7944" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="cd11-ca3b-6db1-3e2b" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="037a-f660-b769-cf87" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="00fa-c754-da0e-e105" name="Almeric Eagle-Eye" hidden="true" collective="false" import="true" targetId="407c-6d3e-9cba-246f" type="selectionEntry">
@@ -140,7 +140,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e24a-9122-f79b-c605" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="f034-8bc4-e02b-6f63" name="BB Ally Fighters" hidden="false" targetId="7c78-a6fb-8e90-7f9b" primary="true"/>
+        <categoryLink id="8544-7ea7-342c-fb3f" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="854e-b2b9-fb99-8d61" name="Aetherwing" hidden="false" collective="false" import="true" targetId="a876-406e-dc1f-66e4" type="selectionEntry"/>
@@ -668,6 +668,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="1008-45dd-ca6a-3e77" name="Sanson Farstrider" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -718,6 +723,11 @@
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="a703-1edb-27cb-6d46" name="Almeric Eagle-Eye" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
@@ -766,6 +776,11 @@
         <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
           <conditions>
             <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f185-d4ef-4760-a7e3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
