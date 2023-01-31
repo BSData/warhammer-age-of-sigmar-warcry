@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="62" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="63" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Cost Limits: 1000
 
 click on the force you add, then click Add Force to add another force as Allies.</readme>
@@ -2189,15 +2189,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3af3-9a49-512c-ae3e" name=" Disable White Dwarf Bladeborn warbands" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d2-0caa-2026-8c08" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f185-d4ef-4760-a7e3" name=" Disable Legacy Bladeborn warbands" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f185-d4ef-4760-a7e3" name="Disable Bladeborn warbands" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15b5-4a1e-ddc0-a3a9" type="max"/>
           </constraints>
