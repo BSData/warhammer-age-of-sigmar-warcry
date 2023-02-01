@@ -3,6 +3,416 @@
   <categoryEntries>
     <categoryEntry id="0be6-4dde-966a-c9c5" name="Askurgan Trueblades" hidden="false"/>
   </categoryEntries>
+  <entryLinks>
+    <entryLink id="283c-1759-df61-9beb" name=" Nephrite Priestess" hidden="false" collective="false" import="true" targetId="72ac-b782-cc5b-fc86" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="86da-538a-aa74-9462" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4226-6980-b0c6-44c7" name=" Nephrite Priestess" hidden="false" collective="false" import="true" targetId="72ac-b782-cc5b-fc86" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b5a9-2745-f161-3ee5" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5f44-b145-b054-088d" name="Askurgan Acolyte" hidden="false" collective="false" import="true" targetId="4e31-5a7c-4a42-844f" type="selectionEntry"/>
+    <entryLink id="706c-6a03-7c55-5124" name="Askurgan Aesthetic" hidden="false" collective="false" import="true" targetId="d4f9-98f7-9ad2-b2f5" type="selectionEntry"/>
+    <entryLink id="22c7-5a9e-3c91-cd87" name="Askurgan Pariah" hidden="false" collective="false" import="true" targetId="c02a-1ab9-33a4-a84f" type="selectionEntry"/>
+    <entryLink id="dcb3-edc6-8e9b-806d" name="Curseblood" hidden="false" collective="false" import="true" targetId="1385-58a4-da4c-168a" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="72ac-b782-cc5b-fc86" name=" Askurgan Exemplar" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1216-cd12-99fd-5e34" name="Askurgan Exemplar" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="453c-4bef-761f-99eb" name="Charnel Mace" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">4/6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7e8b-10c4-1ce5-f4b8" name="Special Abilities" hidden="false" targetId="e42f-3e11-8400-2b7b" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8a8c-a4de-9a1d-d95a" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="ddf6-822e-f9e5-ff1f" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="9258-f1ef-f88f-ecab" name="Askurgan Trueblades" hidden="false" targetId="0be6-4dde-966a-c9c5" primary="false"/>
+        <categoryLink id="8a97-009e-94cf-4992" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
+        <categoryLink id="9b52-6fbc-a6d2-c339" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="79c3-5470-4397-e4cd" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f37-bdee-0223-f438" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d4f9-98f7-9ad2-b2f5" name="Askurgan Aesthetic" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Howling Glaive">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="969b-a36b-fc27-e4a2" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Charnel Mace">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="832d-d139-d0fc-b2ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="807b-32f0-b888-e8bd" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="d87f-7e19-13fb-da01" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="dccf-0272-29bd-931d" name="Askurgan Trueblades" hidden="false" targetId="0be6-4dde-966a-c9c5" primary="false"/>
+        <categoryLink id="0d8f-caf2-8cb9-ec42" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
+        <categoryLink id="f91e-80d5-7aee-4054" name=" Destroyer" hidden="false" targetId="4a55-52e5-0611-9983" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cce7-4e9f-8bf2-649b" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="832d-d139-d0fc-b2ea">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23c0-8b32-c77e-b006" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd39-c04e-7683-dc30" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="832d-d139-d0fc-b2ea" name=" with Charnel Mace" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="eabf-601c-3e21-47b2" name="Charnel Mace" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">3/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="fda5-a079-433c-53df" name="Askurgan Aesthetic" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="6558-8892-0f44-c7b5" name="Special Abilities" hidden="false" targetId="e42f-3e11-8400-2b7b" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="969b-a36b-fc27-e4a2" name=" with Howling Glaive" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d866-9b13-0c55-c85c" name="Howling Glaive" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="4eae-b3df-ac56-e120" name="Askurgan Aesthetic" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="c67f-ba1d-b49c-b1ae" name="Special Abilities" hidden="false" targetId="e42f-3e11-8400-2b7b" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="bff6-ee5b-dba9-4201" name=" Warrior" hidden="false" targetId="d93c-b171-eecc-ef6d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1939-0ed0-ddb2-a58c" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c02a-1ab9-33a4-a84f" name="Askurgan Pariah" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="af66-fe0b-7abf-9230" name="Askurgan Pariah" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="544f-5a37-90a2-6697" name="Bonehilt Falchion" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="11a9-508d-1138-6d07" name="Special Abilities" hidden="false" targetId="e42f-3e11-8400-2b7b" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8b0d-d60f-0552-b145" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="8bdd-b189-7a1d-b7a9" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="7e65-1e7c-30bc-9f3d" name="Askurgan Trueblades" hidden="false" targetId="0be6-4dde-966a-c9c5" primary="false"/>
+        <categoryLink id="bd1f-b41e-1383-e8b9" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dbcb-83f0-fce9-a8da" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e31-5a7c-4a42-844f" name="Askurgan Acolyte" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Bonehilt Falchion">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a5e-6b96-977c-0bbc" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Throat-taker">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009d-9f88-18de-4d2b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d00d-8c74-c87c-b3ac" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="6f11-968e-1d2e-1037" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="41ed-92a8-b8cd-c6de" name="Askurgan Trueblades" hidden="false" targetId="0be6-4dde-966a-c9c5" primary="false"/>
+        <categoryLink id="385e-4c56-a904-7f7d" name=" Elite" hidden="false" targetId="fcb1-dbed-6277-4fda" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d958-132f-3705-bd7c" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="009d-9f88-18de-4d2b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1820-1f6d-3568-c37c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65db-b083-e60f-ed08" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="009d-9f88-18de-4d2b" name=" with Throat-taker" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="a474-9d81-0e7a-b007" name="Throat-taker" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="03e5-33cc-d4c4-43ad" name="Askurgan Acolyte" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="62f8-7977-14cd-3277" name="Special Abilities" hidden="false" targetId="e42f-3e11-8400-2b7b" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3a5e-6b96-977c-0bbc" name=" with Bonehilt Falchion" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="85e1-f4fb-ae4b-7376" name="Bonehilt Falchion" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="85e6-dbdc-16d3-4f4c" name="Askurgan Acolyte" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8d00-6b28-2ac0-324c" name="Special Abilities" hidden="false" targetId="e42f-3e11-8400-2b7b" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="562f-efa2-af10-f88f" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1385-58a4-da4c-168a" name="Curseblood" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7d19-1121-6c60-f5d8" name="Curseblood" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3ae-846f-a47e-1aae" name="Tooth and Claw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d551-f1ad-c7e8-c4ad" name="Special Abilities" hidden="false" targetId="e42f-3e11-8400-2b7b" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d7fa-02ba-c90c-e52b" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="223d-9ee8-17c4-bb88" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="be6b-3edc-07b0-7a1c" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="9b63-f7bb-460d-6ea5" name="Askurgan Trueblades" hidden="false" targetId="0be6-4dde-966a-c9c5" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3b56-46eb-d6f5-8fec" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="5c2e-6024-9c1d-2724" name="Askurgan Trueblades Abilities" hidden="false">
+      <rules>
+        <rule id="e6fd-32e6-7fb4-fb56" name="⚁ [Double] Moment of Savagery" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0be6-4dde-966a-c9c5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can only use this ability if an enemy fighter has been allocated damage points by an attack action made by them this activation.  This fighter makes a bonus move action or a bonus attack action.</description>
+        </rule>
+        <rule id="2545-90e3-0f07-2afc" name="⚁ [Triple] Perfect Strike" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0be6-4dde-966a-c9c5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a55-52e5-0611-9983" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, attack actions made by this fighter score a critical hit on a 5+.</description>
+        </rule>
+        <rule id="26f8-1ea2-ef96-3649" name="⚃ [Quad] Worthy Foes" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcb1-dbed-6277-4fda" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0be6-4dde-966a-c9c5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, add 2 to this fighter&apos;s Move characteristic and the Attacks characteristic of melee attack actions made by this fighter.</description>
+        </rule>
+        <rule id="4d86-5b7d-95b4-dd34" name="[Reaction] Lofty Disdain" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0be6-4dde-966a-c9c5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcb1-dbed-6277-4fda" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction when they are targeted by a melee attack action but before the hit rolls are made.  Add 1 to this fighter&apos;s Toughness characteristic during that attack action.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+    <infoGroup id="e42f-3e11-8400-2b7b" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="7a36-eae7-407f-2b87" name="Jade Obelisks Abilities" hidden="false" targetId="5c2e-6024-9c1d-2724" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
   <catalogueLinks>
     <catalogueLink id="5ba9-05a8-5b3d-9925" name="Death - Monsters and Thrall" targetId="cd90-6863-ac10-6491" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>

@@ -3,6 +3,395 @@
   <categoryEntries>
     <categoryEntry id="1465-bdba-c901-43be" name="Claws of Karanak" hidden="false"/>
   </categoryEntries>
+  <entryLinks>
+    <entryLink id="e6b7-165d-3476-4a01" name=" Nephrite Priestess" hidden="false" collective="false" import="true" targetId="d64b-f755-f1c6-66d5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c88a-2c26-4a0c-0de8" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="41f9-2ad8-fa6f-05d2" name=" Nephrite Priestess" hidden="false" collective="false" import="true" targetId="d64b-f755-f1c6-66d5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="85bf-ea6c-a60e-ae24" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7ad7-15a8-41bc-6dd8" name="Blood Whelp" hidden="false" collective="false" import="true" targetId="5c21-4ea4-1c79-cb46" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4854-860b-342e-7c1a" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4408-9759-b44f-07ba" name="Brutaliser" hidden="false" collective="false" import="true" targetId="089c-40d5-a972-76e2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d885-09c3-9ab0-e2d2" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b9cc-9e0b-d740-1afc" name="Hound of Wrath" hidden="false" collective="false" import="true" targetId="a0b4-acc4-12f1-454f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="359c-6623-57f9-8bec" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="d64b-f755-f1c6-66d5" name=" Packlord" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8e89-1a40-cb23-e5fa" name="Packlord" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8430-d1f4-a657-5411" name="Shredder Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d308-9c4b-44cb-8d57" name="Special Abilities" hidden="false" targetId="934e-a421-b3b8-10ee" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0694-d67e-87e4-9b0f" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="6b71-fd40-53c3-66ef" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="9398-de4d-7d5d-96f2" name="Claws of Karanak" hidden="false" targetId="1465-bdba-c901-43be" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d89e-fa48-6c40-6908" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="205.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f94-7c02-33bf-85e3" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5c21-4ea4-1c79-cb46" name="Blood Whelp" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Claw-flail">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d88d-d09c-ac5a-cb7b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Barb-spear">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e4f-fec5-97e3-d8c2" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7bcb-6c30-22fc-1b8c" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="a1eb-d6fc-a640-df80" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="c142-d87b-700e-799a" name="Claws of Karanak" hidden="false" targetId="1465-bdba-c901-43be" primary="false"/>
+        <categoryLink id="c38c-48e9-c1cd-6173" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9614-489b-0fd7-fa55" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="d88d-d09c-ac5a-cb7b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="520c-c8b5-f888-0b4c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9af0-8e69-52e0-6cec" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d88d-d09c-ac5a-cb7b" name=" with Claw-flail" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="47f1-0387-80d0-d4a5" name="Claw-flail" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="4fa6-be8f-bcf4-02e9" name="Blood Whelp" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="b2e2-daf4-baa0-2dc4" name="Special Abilities" hidden="false" targetId="934e-a421-b3b8-10ee" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3e4f-fec5-97e3-d8c2" name=" with Barb-spear" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="8514-078f-6581-605d" name="Barb-spear" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="268d-1811-7041-942f" name="Blood Whelp" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="0bd2-7371-3eae-064d" name="Special Abilities" hidden="false" targetId="934e-a421-b3b8-10ee" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b96c-3d7c-ad73-1c36" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0b4-acc4-12f1-454f" name="Hound of Wrath" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="30d7-6ca2-1af2-96ea" name="Hound of Wrath" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">7</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d846-dd85-59c3-95de" name="Tooth and Claw" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b12e-7701-2e9c-7949" name="Special Abilities" hidden="false" targetId="934e-a421-b3b8-10ee" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e60f-3af9-f33b-3010" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="9b21-7274-84b4-53af" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+        <categoryLink id="98f9-6feb-0602-3578" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="d747-0361-c122-530b" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
+        <categoryLink id="d4cd-1415-e7a8-948f" name="Claws of Karanak" hidden="false" targetId="1465-bdba-c901-43be" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aa6b-c759-e36a-b4ff" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="190.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="089c-40d5-a972-76e2" name="Brutaliser" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value="with Shredder Blades">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b632-1818-d89f-fea2" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="with Shredder Blade and Meat Hook">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa4b-f431-2f81-c64a" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="751e-33f7-2022-cfaf" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="39f1-896c-020d-16c9" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
+        <categoryLink id="83a7-c507-c38a-3849" name="Claws of Karanak" hidden="false" targetId="1465-bdba-c901-43be" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="098f-56d6-1e78-0669" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa4b-f431-2f81-c64a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d023-923e-9fe6-0781" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad97-ddca-a3a0-ab9b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fa4b-f431-2f81-c64a" name=" with Shredder Blade and Meat Hook" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6cbf-dc6a-8bf4-ccb3" name="Shredder Blade and Meat Hook" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="dc0e-2794-b8ca-cda5" name="Brutaliser" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="3e2e-5217-7f07-1319" name="Special Abilities" hidden="false" targetId="934e-a421-b3b8-10ee" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b632-1818-d89f-fea2" name=" with Shredder Blades" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="d10e-e355-2579-d54e" name="Shredder Blades" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+                    <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+                    <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+                    <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b151-12d1-5844-0713" name="Brutaliser" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+                  <characteristics>
+                    <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+                    <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+                    <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="fe76-680e-316b-98af" name="Special Abilities" hidden="false" targetId="934e-a421-b3b8-10ee" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="42df-ba4e-710b-9cf8" name=" Terrifying" hidden="false" targetId="9a13-b45c-d217-fc43" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ebc2-6196-3520-e5c8" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="934e-a421-b3b8-10ee" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="59f2-48d5-f1ac-a48d" name="Jade Obelisks Abilities" hidden="false" targetId="d760-f111-05b4-a4ca" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="d760-f111-05b4-a4ca" name="Claws of Karanak Abilities" hidden="false">
+      <rules>
+        <rule id="b6bb-32dc-b812-b98b" name="⚁ [Double] Pack Hunters" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1465-bdba-c901-43be" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible friendly fighter within 6&quot; of this fighter that has both the Claws of Karanak runemark and the Agile runemark and has not activated yet this battle round.  You can activate that fighter immediately after this fighter&apos;s activation ends.</description>
+        </rule>
+        <rule id="e7de-2c68-a5c4-fe83" name="⚁ [Double] Blood for the Blood God" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1465-bdba-c901-43be" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation. This fighter makes a bonus move action or a bonus attack action.</description>
+        </rule>
+        <rule id="9aee-446d-5caf-eefa" name="⚃ [Quad] Savage Mauling" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1465-bdba-c901-43be" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter within 1&quot; of this fighter that has a Wounds characteristic of 20 or less.  Remove that fighter from the battlefield and set them up within 1&quot; of this fighter.  Then, this fighter makes a bonus attack action against that fighter.</description>
+        </rule>
+        <rule id="82fe-e631-840f-388b" name="⚁ [Triple] Gaze of the Idolarc PLACEHOLDER" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1465-bdba-c901-43be" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a333-9146-42e8-421a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 9&quot; of this fighter.  Subtract half the value of this ability (rounding up) from either the Move characteristic or the Toughness characteristic of that fighter (to a minimum of 1) until the end of the battle round.</description>
+        </rule>
+        <rule id="68c8-05a4-c51d-79ca" name="[Reaction] Bay for Coward&apos;s Blood" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1465-bdba-c901-43be" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can make this reaction after a visible enemy fighter within 1&quot; of them makes a disengage action.  Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by friendly fighters that target that enemy fighter.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
   <catalogueLinks>
     <catalogueLink id="7df2-e98d-d894-998e" name="Chaos - Chaotic Beasts" targetId="6f6f-a348-e87b-3017" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
