@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a0b3-c9b2-b050-7efe" name="Chaos - Claws Of Karanak" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a0b3-c9b2-b050-7efe" name="Chaos - Claws Of Karanak" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1465-bdba-c901-43be" name="Claws of Karanak" hidden="false"/>
   </categoryEntries>
@@ -352,20 +352,20 @@
           </modifiers>
           <description>Pick an enemy fighter within 1&quot; of this fighter that has a Wounds characteristic of 20 or less.  Remove that fighter from the battlefield and set them up within 1&quot; of this fighter.  Then, this fighter makes a bonus attack action against that fighter.</description>
         </rule>
-        <rule id="82fe-e631-840f-388b" name="⚁ [Triple] Gaze of the Idolarc PLACEHOLDER" hidden="true">
+        <rule id="82fe-e631-840f-388b" name="⚂ [Triple] Horrifying Trophies" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1465-bdba-c901-43be" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3f5-3905-6ef9-4bee" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a13-b45c-d217-fc43" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>Pick a visible enemy fighter within 9&quot; of this fighter.  Subtract half the value of this ability (rounding up) from either the Move characteristic or the Toughness characteristic of that fighter (to a minimum of 1) until the end of the battle round.</description>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation.  Until the end of the battle round, visible enemy fighters within 6&quot; of this fighter cannot use abilities.</description>
         </rule>
         <rule id="68c8-05a4-c51d-79ca" name="[Reaction] Bay for Coward&apos;s Blood" hidden="true">
           <modifiers>
@@ -376,6 +376,36 @@
             </modifier>
           </modifiers>
           <description>A fighter can make this reaction after a visible enemy fighter within 1&quot; of them makes a disengage action.  Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by friendly fighters that target that enemy fighter.</description>
+        </rule>
+        <rule id="f8c3-56ad-5b3a-3f8f" name="⚂ [Triple] Scent of Weakness" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1465-bdba-c901-43be" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A fighter can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation.  Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 8&quot; of this fighter.</description>
+        </rule>
+        <rule id="ac2e-b6b0-965e-2c3f" name="⚁ [Double] Flaming Breath" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1465-bdba-c901-43be" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a333-9146-42e8-421a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Roll a dice for each visible enemy figther within 1&quot; of this fighter.  On a roll of 4+, allocate 3 damage points to the fighter being rolled for.</description>
         </rule>
       </rules>
     </infoGroup>

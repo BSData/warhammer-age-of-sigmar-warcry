@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1f68-ca59-2e89-b7a2" name="Death - Askurgan Trueblades" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1f68-ca59-2e89-b7a2" name="Death - Askurgan Trueblades" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0be6-4dde-966a-c9c5" name="Askurgan Trueblades" hidden="false"/>
   </categoryEntries>
@@ -360,7 +360,7 @@
           </modifiers>
           <description>A fighter can only use this ability if an enemy fighter has been allocated damage points by an attack action made by them this activation.  This fighter makes a bonus move action or a bonus attack action.</description>
         </rule>
-        <rule id="2545-90e3-0f07-2afc" name="⚁ [Triple] Perfect Strike" hidden="true">
+        <rule id="2545-90e3-0f07-2afc" name="⚂ [Triple] Perfect Strike" hidden="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -404,6 +404,51 @@
             </modifier>
           </modifiers>
           <description>A fighter can make this reaction when they are targeted by a melee attack action but before the hit rolls are made.  Add 1 to this fighter&apos;s Toughness characteristic during that attack action.</description>
+        </rule>
+        <rule id="10af-31b7-e2b4-5522" name="⚁ [Double] Beast Familiar" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0be6-4dde-966a-c9c5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dce8-a536-db85-d856" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter within 20&quot; of this fighter.  Until the end of the battle round, that fighter cannot make disengage actions.</description>
+        </rule>
+        <rule id="c618-5145-f869-f11b" name="⚁ [Double] Terrifying Howl" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0be6-4dde-966a-c9c5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a333-9146-42e8-421a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, enemy fighters within 3&quot; of this fighter cannot make reactions.</description>
+        </rule>
+        <rule id="3fb1-2215-be01-8467" name="⚂ [Triple] Magisterial Poise" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0be6-4dde-966a-c9c5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A figther can only use this ability if an enemy fighter has been taken down by an attack action made by them this activation.  Until the end of the battle round, add 1 to the Attacks characteristic of melee attack actions made by visible friendly fighters while they are within 8&quot; of this fighter.</description>
         </rule>
       </rules>
     </infoGroup>
