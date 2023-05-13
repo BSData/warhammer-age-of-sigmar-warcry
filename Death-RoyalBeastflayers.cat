@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b7f9-4935-5681-0abb" name="Death - Royal Beastflayers" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="af7f-1bd4-d551-eeec" name="Royal Beastflayers" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="5638-fcdb-4a11-3a41" name=" Royal Flaymaster" hidden="false" collective="false" import="true" targetId="be90-9047-2470-da38" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8ad2-acf0-7e69-59ea" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f86f-c97c-ff75-55f1" name=" Royal Flaymaster" hidden="false" collective="false" import="true" targetId="be90-9047-2470-da38" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a6c6-c369-5472-9a26" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d682-4b84-29e7-79ca" name="Beastflayer Baron" hidden="false" collective="false" import="true" targetId="489e-b92b-f02c-2bf3" type="selectionEntry"/>
+    <entryLink id="a77e-97b8-7e3a-e169" name="Ghoul Gore-Squire" hidden="false" collective="false" import="true" targetId="1e62-3ff8-9975-c089" type="selectionEntry"/>
+    <entryLink id="48d2-1c35-42cb-9d9c" name="Ghoul Tracker" hidden="false" collective="false" import="true" targetId="bc95-868a-f859-5fac" type="selectionEntry"/>
+    <entryLink id="ddd3-5c3c-2c5e-921f" name="Offal Hound" hidden="false" collective="false" import="true" targetId="2259-2ae9-d909-4350" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="be90-9047-2470-da38" name=" Royal Flaymaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="6510-d12e-9536-3f1a" name="Royal Flaymaster" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f8de-4d00-6f0b-3fdd" name="Axe" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a945-122a-4af4-1112" name="Special Abilities" hidden="false" targetId="5174-6d32-d362-2e12" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7245-61ba-8cd6-5871" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="51e5-fd09-67e3-1457" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
+        <categoryLink id="2bd2-7f2c-ccdf-2c1c" name="Royal Beastflayers" hidden="false" targetId="af7f-1bd4-d551-eeec" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="011b-ff6c-b760-d865" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="175.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e594-75c9-80c9-6fca" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="489e-b92b-f02c-2bf3" name="Beastflayer Baron" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3f05-2aac-c120-59af" name="Beastflayer Baron" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">16</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="72cf-e3d2-a26a-2472" name="Hunched Back" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e004-4918-6e0e-3013" name="Special Abilities" hidden="false" targetId="5174-6d32-d362-2e12" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3cd3-a536-c52b-822d" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="2b50-e4fa-a050-a1b5" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
+        <categoryLink id="2201-2705-4c57-e674" name="Royal Beastflayers" hidden="false" targetId="af7f-1bd4-d551-eeec" primary="false"/>
+        <categoryLink id="5847-50bf-5f6e-3e3d" name=" Brute" hidden="false" targetId="1482-0037-1879-7409" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7422-f3c8-39e0-8b5e" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2259-2ae9-d909-4350" name="Offal Hound" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e01d-2524-de3f-85d0" name="Offal Hound" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">7</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2f55-e756-eff9-271d" name="Buck Teeth" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="39e0-0c81-40c7-8caa" name="Special Abilities" hidden="false" targetId="5174-6d32-d362-2e12" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="80ba-ac86-d068-695e" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="1947-3d90-8151-a1dd" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
+        <categoryLink id="8a4d-f570-5807-a793" name="Royal Beastflayers" hidden="false" targetId="af7f-1bd4-d551-eeec" primary="false"/>
+        <categoryLink id="363b-58b1-2994-cffa" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cc1e-941f-9f56-be73" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="130.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc95-868a-f859-5fac" name="Ghoul Tracker" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="34b1-ee29-0211-c762" name="Ghoul Tracker" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b496-20bf-6312-f08e" name="Long Fingernails" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a659-6832-6667-c97a" name="Special Abilities" hidden="false" targetId="5174-6d32-d362-2e12" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bc80-6251-a4ba-e890" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="0b09-8ed3-4949-429f" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
+        <categoryLink id="73b7-e2df-ec92-96c6" name="Royal Beastflayers" hidden="false" targetId="af7f-1bd4-d551-eeec" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="84b2-e5a9-45f5-5f14" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1e62-3ff8-9975-c089" name="Ghoul Gore-Squire" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c703-3911-1c92-cbb4" name="Ghoul Gore-Squire" hidden="false" typeId="7bf1-ad0a-0d19-6565" typeName="Model">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">5</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2854-18fe-c156-75e9" name="Dull Slicing Object" hidden="false" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ecb5-bb37-1ca1-81c0" name="Special Abilities" hidden="false" targetId="5174-6d32-d362-2e12" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="393a-038e-199a-934f" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="f1ff-0411-e854-ef3a" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
+        <categoryLink id="ecb1-769b-c8b5-40f4" name="Royal Beastflayers" hidden="false" targetId="af7f-1bd4-d551-eeec" primary="false"/>
+        <categoryLink id="3920-868c-88c8-f5fa" name=" Champion" hidden="false" targetId="3c8f-bdce-f950-c13e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f3e4-1677-882b-9a89" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="95.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedInfoGroups>
+    <infoGroup id="5174-6d32-d362-2e12" name="Special Abilities" hidden="false">
+      <infoLinks>
+        <infoLink id="a33c-0d94-b3f6-722b" name="Royal Beastflayers Abilities" hidden="false" targetId="6e35-0a3b-cc67-0d52" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="6e35-0a3b-cc67-0d52" name="Royal Beastflayers Abilities" hidden="false">
+      <rules>
+        <rule id="e2f8-b2ca-0be2-b046" name="⚁ [Double] Feed the Hounds" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af7f-1bd4-d551-eeec" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A fighter can only use this ability if an enemy fighter was taken down by an attack action made by them this activation.  Remove a number of damage points from each other friendly fighter within 3&quot; of this fighter, up  to the value of this ability.</description>
+        </rule>
+        <rule id="1ad6-63c7-c9d1-1ea2" name="⚁ [Double] Sound the Hunt" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af7f-1bd4-d551-eeec" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1482-0037-1879-7409" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a number of visible friendly fighters equal to half the value of this ability (rounding up) that are within 3&quot; of this fighter.  Those fighters can each make a bonus move action of a number of inches equal to the value of this ability.</description>
+        </rule>
+        <rule id="dcdb-dad0-08ad-1a2d" name="⚂ [Triple] Pack Tactics" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af7f-1bd4-d551-eeec" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter that is visible to  this fighter.  Allocate a number of damage points to that enemy fighter equal to twice the number of friendly fighters within 3&quot; of that enemy fighter.</description>
+        </rule>
+        <rule id="b2d9-57ca-7857-dbd3" name="⚂ [Triple] Unleash the Hounds" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af7f-1bd4-d551-eeec" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c8f-bdce-f950-c13e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, add half the value of this ability (rounding up)  to the move characteristic of friendly fighters with the Royal Beastflayers runemark while they make a move action that starts wtihin 3&quot; of this fighter.</description>
+        </rule>
+        <rule id="e93a-187c-25a4-a834" name="⚁ [Double] Clambering Horrors" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af7f-1bd4-d551-eeec" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a333-9146-42e8-421a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, do not count the vertical distance moved when this fighter is climbing.</description>
+        </rule>
+        <rule id="3a45-8a22-9bdd-3913" name="⚃ [Quad] No rest till our Quest is Done" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af7f-1bd4-d551-eeec" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, add 2 to the Strength characteric of melee attack actions made by visible friendly fighters while the yare within 6&quot; of this fighter.</description>
+        </rule>
+        <rule id="bdca-8c07-8cc0-63bd" name="[Reaction] Tenacious Hunters" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af7f-1bd4-d551-eeec" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>After a visible enemy fighter within 1&quot; of this fighter makes a disengage action, allocate D3 damage points to that fighter.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
+  <catalogueLinks>
+    <catalogueLink id="fcda-3705-8fe0-7ae8" name="Death - Monsters and Thrall" targetId="cd90-6863-ac10-6491" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>

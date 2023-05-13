@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="63" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="64" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Cost Limits: 1000
 
 click on the force you add, then click Add Force to add another force as Allies.</readme>
@@ -1019,6 +1019,16 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
 The first time a rope bridge is damaged, it is weakened.  This has no immediate effect, but players should be wary of sending their fighters across it from that point on.  The second time a rope bridge is damaged, it is destroyed.
 
 When a rope bridge is destroyed, every fighter that has the centre of their base on that rope bridge falls one after the other, in an order chosen by the player whose turn is taking place.  When a fighter falls, if there is nowhere vertically lower that they can be placed, they are taken down.  Otherwise, when a fighter falls in this manner, roll 3 dice for impact damage instead of 1.  Once each fighter on the rope bridge has fallen, the rope bridge is removed.</description>
+    </rule>
+    <rule id="53b7-fdbb-e719-91b9" name="⚄ ⚂ [Triple]Power Unleashed ⚄" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93ef-3198-b25f-294f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Pick a terrain feature visible to this fighter.  Allocate D6 damage points to each fighter within 1&quot; of that terrain feature.  Then allocate D6 damage points to this fighter.  If this fighter has the Seraphon or Hunters of Huanchi runemark, allocate D3 damage points to this fighter instead.  If this fighter has the Seraphon or Hunters of Huanchi runemark and the Priest or Mystic runemark, do not allocate damage points to this fighter.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -2261,6 +2271,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
         <selectionEntry id="7fe5-d938-419f-3e6c" name="Show Sundered Fate Special Rules" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9100-46d1-db32-3203" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="93ef-3198-b25f-294f" name="Show Nightmare Quest Special Rules" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b7-fc1d-5c0a-c972" type="max"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
