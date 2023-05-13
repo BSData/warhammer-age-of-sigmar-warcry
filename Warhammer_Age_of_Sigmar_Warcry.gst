@@ -104,6 +104,7 @@ click on the force you add, then click Add Force to add another force as Allies.
     <categoryEntry id="52ee-0c94-262c-9a8e" name=" -Universal Runemarks-" hidden="true"/>
     <categoryEntry id="8134-f759-d667-7eb1" name="Cities of Sigmar" hidden="false"/>
     <categoryEntry id="0b93-1073-1ad5-7829" name="Tournament Options" hidden="false"/>
+    <categoryEntry id="0a5f-6d68-eb33-4002" name="QS Heroes" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
@@ -235,6 +236,11 @@ click on the force you add, then click Add Force to add another force as Allies.
                   <conditions>
                     <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
                   </conditions>
+                </modifier>
+                <modifier type="increment" field="8b96-7179-f4be-926a" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </modifierGroup>
@@ -621,6 +627,13 @@ click on the force you add, then click Add Force to add another force as Allies.
           </constraints>
         </categoryLink>
         <categoryLink id="e236-6bab-45e7-dadd" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
+          <modifiers>
+            <modifier type="increment" field="8d25-9dd2-1047-5dcc" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -797,6 +810,11 @@ click on the force you add, then click Add Force to add another force as Allies.
                   <conditions>
                     <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
                   </conditions>
+                </modifier>
+                <modifier type="increment" field="9306-d299-2f5c-7e39" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </modifierGroup>
