@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="680d-90e5-7442-0ee4" name="Chaos - Tarantulos Brood" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="680d-90e5-7442-0ee4" name="Chaos - Tarantulos Brood" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="8895-9ffb-1ffd-effb" name="Tarantulos Brood" hidden="false"/>
   </categoryEntries>
@@ -8,18 +8,18 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a069-63a6-a6b4-742b" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b553-ebb6-0970-3039" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="b553-ebb6-0970-3039" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e6e4-2398-fc6d-ba47" name="Spider Swarm" hidden="false" collective="false" import="true" targetId="4290-4431-bf17-4438" type="selectionEntry"/>
-    <entryLink id="7c0f-cd27-897d-7e91" name="Broodmaster" hidden="false" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
+    <entryLink id="7c0f-cd27-897d-7e91" name=" Broodmaster" hidden="false" collective="false" import="true" targetId="3ed4-7b08-014d-bdac" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="6c9b-6975-d951-4cab" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="6c9b-6975-d951-4cab" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d3b1-bc7f-1c2c-70c1" name="Doomweaver" hidden="false" collective="false" import="true" targetId="283a-5214-1938-8b86" type="selectionEntry"/>
@@ -28,9 +28,9 @@
   <sharedSelectionEntries>
     <selectionEntry id="3ed4-7b08-014d-bdac" name=" Broodmaster" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -57,7 +57,7 @@
       <categoryLinks>
         <categoryLink id="a585-973e-7164-195e" name="Tarantulos Brood" hidden="false" targetId="8895-9ffb-1ffd-effb" primary="false"/>
         <categoryLink id="53fb-7ff6-d6ef-8fb1" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
-        <categoryLink id="7550-8b9c-253a-5582" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="7550-8b9c-253a-5582" name=" Hero" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="27d7-660e-899f-6132" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
         <categoryLink id="934d-123e-c2db-7798" name="  Chaos" hidden="false" targetId="a069-63a6-a6b4-742b" primary="false"/>
       </categoryLinks>
@@ -65,29 +65,29 @@
         <entryLink id="54f4-1d92-bc57-628c" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="180"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="23ba-6901-9fc4-8400" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1178-05ee-c5dd-f316" name="Broodkin" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Scythe and Spider Claw">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f01-6ccf-1465-7e5e" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f01-6ccf-1465-7e5e" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="append" field="name" value="with Sai">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b15-95e9-9883-d526" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b15-95e9-9883-d526" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="name" value="Broodkin">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f486-9d15-0cc3-c39a" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f486-9d15-0cc3-c39a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -104,7 +104,7 @@
         <infoLink id="986c-f17e-9ac6-c28f" name="Special Abilities" hidden="false" targetId="0203-ebc7-dd22-25e0" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c01e-1044-793a-7038" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="c01e-1044-793a-7038" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="6ff4-5248-6453-421b" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
         <categoryLink id="25da-7545-fdb9-76b8" name="Tarantulos Brood" hidden="false" targetId="8895-9ffb-1ffd-effb" primary="false"/>
         <categoryLink id="16be-c5ba-d8bf-3831" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
@@ -113,15 +113,15 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="1e5f-ae39-102c-826c" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b15-95e9-9883-d526">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4955-3d10-09e7-6729" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9117-7d97-d550-9b16" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4955-3d10-09e7-6729" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9117-7d97-d550-9b16" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="7b15-95e9-9883-d526" name="with Sai" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -136,14 +136,14 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6f01-6ccf-1465-7e5e" name="with Scythe and Spider Claw" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -166,14 +166,14 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f486-9d15-0cc3-c39a" name="Broodkin" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -188,7 +188,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -198,19 +198,19 @@
         <entryLink id="7c15-a8db-cc58-713f" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="283a-5214-1938-8b86" name="Doomweaver" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Trident and Net">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e19-da13-8503-c43c" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e19-da13-8503-c43c" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="append" field="name" value="with Flail and Goad">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c7a-3724-537c-7068" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c7a-3724-537c-7068" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -224,7 +224,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="618d-d841-3a50-beb6" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="618d-d841-3a50-beb6" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="6dda-214a-44ca-6677" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
         <categoryLink id="83aa-4f5d-b697-0bf9" name="Tarantulos Brood" hidden="false" targetId="8895-9ffb-1ffd-effb" primary="false"/>
         <categoryLink id="fa15-2806-72c0-ac61" name=" Sentience" hidden="false" targetId="5452-a013-9d01-fd29" primary="false"/>
@@ -233,15 +233,15 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="c655-633f-a2df-ee2d" name="Profile" hidden="false" collective="false" import="true" defaultSelectionEntryId="9c7a-3724-537c-7068">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f90-7527-83e9-9ad7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c3f-843d-10b9-463f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f90-7527-83e9-9ad7" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c3f-843d-10b9-463f" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="6e19-da13-8503-c43c" name="with Trident and Net" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -262,14 +262,14 @@
                 <categoryLink id="ad6d-ba83-7e80-0f10" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9c7a-3724-537c-7068" name="with Flail and Goad" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -295,7 +295,7 @@
                 <infoLink id="7971-31f7-0224-081c" name="Special Abilities" hidden="false" targetId="0203-ebc7-dd22-25e0" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="105"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -305,14 +305,14 @@
         <entryLink id="a6c5-50b0-074d-404d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4290-4431-bf17-4438" name="Spider Swarm" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -337,7 +337,7 @@
         <infoLink id="51fa-3a1a-510e-0f23" name="Special Abilities" hidden="false" targetId="0203-ebc7-dd22-25e0" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="e1a4-34fa-9593-0c3a" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="e1a4-34fa-9593-0c3a" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="1f36-40d9-6bb2-3fac" name="Tarantulos Brood" hidden="false" targetId="8895-9ffb-1ffd-effb" primary="false"/>
         <categoryLink id="76b4-15fe-5aea-01f7" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
         <categoryLink id="60ef-3897-934d-9e23" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
@@ -347,7 +347,7 @@
         <entryLink id="2ee3-10d1-0bf0-8dd2" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="50.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="50"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -365,8 +365,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5452-a013-9d01-fd29" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5452-a013-9d01-fd29" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -380,8 +380,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ad7e-e1dc-6545-1969" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ad7e-e1dc-6545-1969" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -395,8 +395,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -410,8 +410,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e5fd-f9f1-938d-dc5b" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -425,8 +425,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dce8-a536-db85-d856" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dce8-a536-db85-d856" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -440,8 +440,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a333-9146-42e8-421a" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a333-9146-42e8-421a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -453,7 +453,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8895-9ffb-1ffd-effb" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
