@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="64" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e5fe-db52-95ba-6b62" name="Warhammer Age of Sigmar: Warcry" revision="65" battleScribeVersion="2.03" authorName="Hood" authorContact="discord: hood#3264" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Cost Limits: 1000
 
 click on the force you add, then click Add Force to add another force as Allies.</readme>
@@ -8,7 +8,7 @@ click on the force you add, then click Add Force to add another force as Allies.
     <publication id="2c2f-d4c8-7730-6c82" name="Warcry Heart of Ghur Core Rule Book" shortName="HoG Core Book" publisher="2022" publicationDate="~~~2022"/>
   </publications>
   <costTypes>
-    <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="820d-9f65-fcb1-d476" name="pts" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="7bf1-ad0a-0d19-6565" name="Model">
@@ -109,10 +109,10 @@ click on the force you add, then click Add Force to add another force as Allies.
   <forceEntries>
     <forceEntry id="b12a-e361-2540-1376" name="Open Play" hidden="false">
       <modifiers>
-        <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1.0">
+        <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1">
           <comment>bladeborn allies roster max alteration</comment>
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -120,14 +120,14 @@ click on the force you add, then click Add Force to add another force as Allies.
         <modifierGroup>
           <comment>Open Play Options Relationship</comment>
           <modifiers>
-            <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1.0">
+            <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cc30-51a5-1bac-cdfd" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cc30-51a5-1bac-cdfd" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="851c-980c-8c57-7c5e" value="1.0">
+            <modifier type="increment" field="851c-980c-8c57-7c5e" value="1">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cc30-51a5-1bac-cdfd" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cc30-51a5-1bac-cdfd" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -135,14 +135,14 @@ click on the force you add, then click Add Force to add another force as Allies.
         <modifierGroup>
           <comment>allegiances</comment>
           <modifiers>
-            <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1.0">
+            <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e663-95d1-d351-f200" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e663-95d1-d351-f200" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="851c-980c-8c57-7c5e" value="1.0">
+            <modifier type="increment" field="851c-980c-8c57-7c5e" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e663-95d1-d351-f200" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e663-95d1-d351-f200" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -150,33 +150,33 @@ click on the force you add, then click Add Force to add another force as Allies.
         <modifierGroup>
           <comment>open play roster alterations</comment>
           <modifiers>
-            <modifier type="increment" field="c181-c1de-6c1f-e780" value="250.0">
+            <modifier type="increment" field="c181-c1de-6c1f-e780" value="250">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d010-27a4-3b09-70d3" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d010-27a4-3b09-70d3" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="c181-c1de-6c1f-e780" value="100.0">
+            <modifier type="increment" field="c181-c1de-6c1f-e780" value="100">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dba-ff8c-a264-a495" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dba-ff8c-a264-a495" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="c181-c1de-6c1f-e780" value="500.0">
+            <modifier type="increment" field="c181-c1de-6c1f-e780" value="500">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c03f-195d-9d4b-68f0" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c03f-195d-9d4b-68f0" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1.0">
+            <modifier type="increment" field="2a28-06a6-cbd3-84f6" value="1">
               <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9032-694a-3205-3338" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9032-694a-3205-3338" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2a28-06a6-cbd3-84f6" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="851c-980c-8c57-7c5e" type="min"/>
-        <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="c181-c1de-6c1f-e780" type="max"/>
+        <constraint field="selections" scope="roster" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2a28-06a6-cbd3-84f6" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="851c-980c-8c57-7c5e" type="min"/>
+        <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="c181-c1de-6c1f-e780" type="max"/>
       </constraints>
       <forceEntries>
         <forceEntry id="472c-cc4c-3c46-a7d2" name="Allies" hidden="false">
@@ -185,33 +185,33 @@ click on the force you add, then click Add Force to add another force as Allies.
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
-                    <modifier type="set" field="38ae-8bfd-d301-796a" value="1.0">
+                    <modifier type="set" field="38ae-8bfd-d301-796a" value="1">
                       <conditions>
-                        <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="38ae-8bfd-d301-796a" value="0.0">
+                    <modifier type="set" field="38ae-8bfd-d301-796a" value="0">
                       <conditions>
-                        <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="6cff-4bfc-b8ee-be19" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38ae-8bfd-d301-796a" type="max"/>
+                <constraint field="selections" scope="6cff-4bfc-b8ee-be19" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38ae-8bfd-d301-796a" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="ba05-c495-d0e5-7c5d" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b996-2594-f3b5-dfeb" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b996-2594-f3b5-dfeb" type="max"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -220,34 +220,34 @@ click on the force you add, then click Add Force to add another force as Allies.
       <categoryLinks>
         <categoryLink id="c5fd-11e3-587d-22ca" name="Open Play Options" hidden="false" targetId="15bb-04f5-5313-58a5" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c32a-38a0-0681-0ef8" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c32a-38a0-0681-0ef8" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="5ff4-8541-ecbd-b97f" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="decrement" field="8b96-7179-f4be-926a" value="1.0">
+                <modifier type="decrement" field="8b96-7179-f4be-926a" value="1">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="decrement" field="8b96-7179-f4be-926a" value="2.0">
+                <modifier type="decrement" field="8b96-7179-f4be-926a" value="2">
                   <conditions>
-                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="8b96-7179-f4be-926a" value="1.0">
+                <modifier type="increment" field="8b96-7179-f4be-926a" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca02-49fa-9a8e-4ebe" type="min"/>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b96-7179-f4be-926a" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca02-49fa-9a8e-4ebe" type="min"/>
+            <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b96-7179-f4be-926a" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="cc09-a311-7013-6e59" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
@@ -257,12 +257,12 @@ click on the force you add, then click Add Force to add another force as Allies.
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81b0-ce4c-88f7-0c2b" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81b0-ce4c-88f7-0c2b" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8075-d807-594c-9d18" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
@@ -270,27 +270,27 @@ click on the force you add, then click Add Force to add another force as Allies.
     </forceEntry>
     <forceEntry id="2109-44c1-8c46-ea4f" name="Narrative Play" hidden="false">
       <modifiers>
-        <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
+        <modifier type="increment" field="1eab-7954-84eb-7178" value="1">
           <comment>bladeborn allies</comment>
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" field="a612-cfde-504b-b8d6" value="1.0">
+        <modifier type="increment" field="a612-cfde-504b-b8d6" value="1">
           <comment>allegiances</comment>
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
+        <modifier type="increment" field="1eab-7954-84eb-7178" value="1">
           <comment>allegiances</comment>
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="00fd-8510-5cfd-67a0" value="950.0">
+        <modifier type="set" field="00fd-8510-5cfd-67a0" value="950">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e4b-ec37-4927-c2bb" type="equalTo"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e4b-ec37-4927-c2bb" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -298,14 +298,14 @@ click on the force you add, then click Add Force to add another force as Allies.
         <modifierGroup>
           <comment>Narrative Options Relationship</comment>
           <modifiers>
-            <modifier type="increment" field="a612-cfde-504b-b8d6" value="1.0">
+            <modifier type="increment" field="a612-cfde-504b-b8d6" value="1">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="578d-e141-c905-4efe" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="578d-e141-c905-4efe" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="1eab-7954-84eb-7178" value="1.0">
+            <modifier type="increment" field="1eab-7954-84eb-7178" value="1">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="578d-e141-c905-4efe" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="578d-e141-c905-4efe" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -316,9 +316,9 @@ click on the force you add, then click Add Force to add another force as Allies.
             <modifierGroup>
               <comment>increase roster max 50</comment>
               <modifiers>
-                <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed3b-f3ff-7285-d37a" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -326,9 +326,9 @@ click on the force you add, then click Add Force to add another force as Allies.
             <modifierGroup>
               <comment>increase roster max 100</comment>
               <modifiers>
-                <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100.0">
+                <modifier type="increment" field="00fd-8510-5cfd-67a0" value="100">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10ff-25f8-d133-5fc1" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -342,14 +342,14 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>desolate ruins and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e791-f37d-0901-c258" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e791-f37d-0901-c258" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a39-4861-5908-73e9" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a39-4861-5908-73e9" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -357,9 +357,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Forgotten Spire, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0751-a5d4-8329-7bd3" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0751-a5d4-8329-7bd3" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -367,9 +367,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Hidden Catacombs, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2830-089f-c858-3bd8" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2830-089f-c858-3bd8" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -377,9 +377,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Ruined Stronghold, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -387,9 +387,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Sealed Tomb, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4304-5379-cd34-5cd6" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4304-5379-cd34-5cd6" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -397,9 +397,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Abandoned Foundry, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fd7-181b-f6ff-42a1" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -407,14 +407,14 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Eerie Quarter and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3999-bef4-d36c-c23d" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3999-bef4-d36c-c23d" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="25">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75aa-4c5f-cc29-440d" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75aa-4c5f-cc29-440d" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -422,9 +422,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Gore Pit, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -432,9 +432,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Steelwrought Shrine, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c425-a590-56bf-5127" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c425-a590-56bf-5127" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -442,9 +442,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Surgical Complex, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75e7-f48f-6295-2560" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75e7-f48f-6295-2560" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -452,14 +452,14 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Ancient Palace and upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa99-272d-6ec2-fd80" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa99-272d-6ec2-fd80" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e43a-4345-69ec-a227" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e43a-4345-69ec-a227" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -467,9 +467,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Cultic Sanctuary, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b42a-580f-7cde-7257" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -477,9 +477,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Entrance to the Deep Dark, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d91-9377-5504-e7ed" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d91-9377-5504-e7ed" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -487,9 +487,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Sage&apos;s Lair, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba98-cabd-a00d-885c" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba98-cabd-a00d-885c" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -497,9 +497,9 @@ click on the force you add, then click Add Force to add another force as Allies.
                     <modifierGroup>
                       <comment>Silent Marketplace, no upgrade</comment>
                       <modifiers>
-                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                        <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                           <repeats>
-                            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c6-828a-fac4-e1f5" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c6-828a-fac4-e1f5" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -511,9 +511,9 @@ click on the force you add, then click Add Force to add another force as Allies.
             <modifierGroup>
               <comment>dominated territories</comment>
               <modifiers>
-                <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50.0">
+                <modifier type="increment" field="00fd-8510-5cfd-67a0" value="50">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7579-db4e-0dd6-4537" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -526,49 +526,49 @@ click on the force you add, then click Add Force to add another force as Allies.
             <modifierGroup>
               <comment>ALL soroth kor territory modifiers</comment>
               <modifiers>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1050.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1050">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="098c-bd55-bf8d-ff94" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="098c-bd55-bf8d-ff94" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1050.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1050">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a362-c2bc-a64b-e83d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a362-c2bc-a64b-e83d" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1100.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1100">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d66c-f25f-0f59-b507" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d66c-f25f-0f59-b507" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5dc5-9f7a-353c-cc4a" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5dc5-9f7a-353c-cc4a" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1250.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1250">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e802-716e-272d-92df" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e802-716e-272d-92df" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0358-e822-ad3a-6aa3" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0358-e822-ad3a-6aa3" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c24-36a1-babe-54c8" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c24-36a1-babe-54c8" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1150">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fdf-60f2-1895-9274" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fdf-60f2-1895-9274" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1200.0">
+                <modifier type="set" field="00fd-8510-5cfd-67a0" value="1200">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6f-9689-e731-772c" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6f-9689-e731-772c" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -577,9 +577,9 @@ click on the force you add, then click Add Force to add another force as Allies.
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="1eab-7954-84eb-7178" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="a612-cfde-504b-b8d6" type="min"/>
-        <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="00fd-8510-5cfd-67a0" type="max"/>
+        <constraint field="selections" scope="roster" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="1eab-7954-84eb-7178" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="a612-cfde-504b-b8d6" type="min"/>
+        <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="00fd-8510-5cfd-67a0" type="max"/>
       </constraints>
       <forceEntries>
         <forceEntry id="39d0-d6f7-c416-26a7" name="Allies" hidden="false">
@@ -588,33 +588,33 @@ click on the force you add, then click Add Force to add another force as Allies.
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
-                    <modifier type="decrement" field="4c1f-5a81-f0ed-5bb3" value="1.0">
+                    <modifier type="decrement" field="4c1f-5a81-f0ed-5bb3" value="1">
                       <conditions>
-                        <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="decrement" field="4c1f-5a81-f0ed-5bb3" value="2.0">
+                    <modifier type="decrement" field="4c1f-5a81-f0ed-5bb3" value="2">
                       <conditions>
-                        <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="db3d-f1d8-082e-bac2" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
+                <constraint field="selections" scope="db3d-f1d8-082e-bac2" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c1f-5a81-f0ed-5bb3" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="2c63-1889-107e-958a" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f76-f5eb-cf0f-72e7" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f76-f5eb-cf0f-72e7" type="max"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -623,42 +623,42 @@ click on the force you add, then click Add Force to add another force as Allies.
       <categoryLinks>
         <categoryLink id="6167-9314-b82b-737d" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3def-010b-811e-64ad" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3def-010b-811e-64ad" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="e236-6bab-45e7-dadd" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <modifiers>
-            <modifier type="increment" field="8d25-9dd2-1047-5dcc" value="1.0">
+            <modifier type="increment" field="8d25-9dd2-1047-5dcc" value="1">
               <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="decrement" field="8d25-9dd2-1047-5dcc" value="1.0">
+                <modifier type="decrement" field="8d25-9dd2-1047-5dcc" value="1">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="decrement" field="8d25-9dd2-1047-5dcc" value="2.0">
+                <modifier type="decrement" field="8d25-9dd2-1047-5dcc" value="2">
                   <conditions>
-                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c17-c507-690d-a3a5" type="min"/>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d25-9dd2-1047-5dcc" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c17-c507-690d-a3a5" type="min"/>
+            <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d25-9dd2-1047-5dcc" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="d991-9f84-0e81-9ea1" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
         <categoryLink id="44f6-b6c0-bcb3-cd03" name="Monsters" hidden="false" targetId="e311-66c4-5d05-cd1e" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4b0-7266-8ff6-5532" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4b0-7266-8ff6-5532" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="2cd0-557e-0202-662d" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false"/>
@@ -666,12 +666,12 @@ click on the force you add, then click Add Force to add another force as Allies.
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a012-3e48-2c2d-52a4" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a012-3e48-2c2d-52a4" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="503a-5433-1955-41b0" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
@@ -679,9 +679,9 @@ click on the force you add, then click Add Force to add another force as Allies.
     </forceEntry>
     <forceEntry id="54fc-61ae-71eb-ca9d" name="Matched Play" hidden="false">
       <modifiers>
-        <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
+        <modifier type="increment" field="7bef-8541-1068-f6c1" value="1">
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fd-8251-2413-feb8" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -689,24 +689,24 @@ click on the force you add, then click Add Force to add another force as Allies.
         <modifierGroup>
           <comment>Tournament Quests &amp; Allegiances Relationship</comment>
           <modifiers>
-            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
+            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e663-95d1-d351-f200" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1.0">
+            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e663-95d1-d351-f200" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e663-95d1-d351-f200" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1.0">
+            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fba5-9730-9be1-8ee9" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fba5-9730-9be1-8ee9" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
+            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fba5-9730-9be1-8ee9" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fba5-9730-9be1-8ee9" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -714,23 +714,23 @@ click on the force you add, then click Add Force to add another force as Allies.
         <modifierGroup>
           <comment>Tournament Options Relationship</comment>
           <modifiers>
-            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1.0">
+            <modifier type="increment" field="7bef-8541-1068-f6c1" value="1">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f766-7a4e-7bb2-6d98" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f766-7a4e-7bb2-6d98" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1.0">
+            <modifier type="increment" field="5988-6dd4-f405-8ce2" value="1">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f766-7a4e-7bb2-6d98" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f766-7a4e-7bb2-6d98" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="7bef-8541-1068-f6c1" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5988-6dd4-f405-8ce2" type="min"/>
-        <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="22b7-1439-9736-8056" type="max"/>
+        <constraint field="selections" scope="roster" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="7bef-8541-1068-f6c1" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5988-6dd4-f405-8ce2" type="min"/>
+        <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="22b7-1439-9736-8056" type="max"/>
       </constraints>
       <forceEntries>
         <forceEntry id="63d2-7c13-32e7-9c61" name="Allies" hidden="false">
@@ -739,40 +739,40 @@ click on the force you add, then click Add Force to add another force as Allies.
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f84f-d042-56a7-a517" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f84f-d042-56a7-a517" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
-                    <modifier type="decrement" field="2754-4fcb-e4e8-05bd" value="1.0">
+                    <modifier type="decrement" field="2754-4fcb-e4e8-05bd" value="1">
                       <conditions>
-                        <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="decrement" field="2754-4fcb-e4e8-05bd" value="2.0">
+                    <modifier type="decrement" field="2754-4fcb-e4e8-05bd" value="2">
                       <conditions>
-                        <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ca4-e66d-9403-64a5" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
               <constraints>
-                <constraint field="selections" scope="65b8-c7f4-1c50-97d1" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
+                <constraint field="selections" scope="65b8-c7f4-1c50-97d1" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2754-4fcb-e4e8-05bd" type="max"/>
               </constraints>
             </categoryLink>
             <categoryLink id="b874-baa6-e8b6-d153" name="Allegiances" hidden="true" targetId="e663-95d1-d351-f200" primary="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                    <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="786e-1c52-d9d6-beac" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="786e-1c52-d9d6-beac" type="max"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -781,7 +781,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <categoryLinks>
         <categoryLink id="4af0-81b1-f0dc-02e5" name="Tournament Options" hidden="false" targetId="0b93-1073-1ad5-7829" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="af73-91a3-74be-2104" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="af73-91a3-74be-2104" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="ca4a-4448-2312-8339" name="Tournament Quests" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="false"/>
@@ -789,39 +789,39 @@ click on the force you add, then click Add Force to add another force as Allies.
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8134-f759-d667-7eb1" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b32-6d5c-ff8a-53d9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b32-6d5c-ff8a-53d9" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="c5d2-95ec-5b7d-32c2" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="false">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="decrement" field="9306-d299-2f5c-7e39" value="1.0">
+                <modifier type="decrement" field="9306-d299-2f5c-7e39" value="1">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="decrement" field="9306-d299-2f5c-7e39" value="2.0">
+                <modifier type="decrement" field="9306-d299-2f5c-7e39" value="2">
                   <conditions>
-                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="45ea-7617-f6a7-7fcb" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="9306-d299-2f5c-7e39" value="1.0">
+                <modifier type="increment" field="9306-d299-2f5c-7e39" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0a5f-6d68-eb33-4002" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9306-d299-2f5c-7e39" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de54-2813-b6c5-75c2" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9306-d299-2f5c-7e39" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="3166-15fd-d6bf-b9c2" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="false"/>
@@ -829,24 +829,24 @@ click on the force you add, then click Add Force to add another force as Allies.
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e4bc-6685-bc60-c2b4" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e4bc-6685-bc60-c2b4" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ec-61fe-bd81-2c7c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ec-61fe-bd81-2c7c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="37d9-ea6a-34ca-6010" name="Thralls" hidden="false" targetId="aadf-5830-72a8-d164" primary="false">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbf7-db38-2f3a-fcfa" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbf7-db38-2f3a-fcfa" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-0268-4131-b04c" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-0268-4131-b04c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="91f6-2c67-552c-6714" name="Allies" hidden="true" targetId="45ea-7617-f6a7-7fcb" primary="false"/>
@@ -856,7 +856,7 @@ click on the force you add, then click Add Force to add another force as Allies.
   <entryLinks>
     <entryLink id="9a52-a063-a6ab-0338" name="Narrative Options (Required)" hidden="false" collective="false" import="true" targetId="578d-e141-c905-4efe" type="selectionEntry"/>
     <entryLink id="5720-d2b7-19d9-a904" name="Open Play Options" hidden="false" collective="false" import="true" targetId="cc30-51a5-1bac-cdfd" type="selectionEntry"/>
-    <entryLink id="88ba-c39d-e9b8-f2c3" name="Hidden Agendas" hidden="false" collective="false" import="true" targetId="6913-b466-755d-9581" type="selectionEntry"/>
+    <entryLink id="88ba-c39d-e9b8-f2c3" name="Tournament Quests" hidden="false" collective="false" import="true" targetId="6913-b466-755d-9581" type="selectionEntry"/>
     <entryLink id="ffb0-e79e-2fe4-f7cb" name="Tournament Options" hidden="false" collective="false" import="true" targetId="f766-7a4e-7bb2-6d98" type="selectionEntry"/>
   </entryLinks>
   <rules>
@@ -869,7 +869,7 @@ click on the force you add, then click Add Force to add another force as Allies.
 ⠀</description>
     </rule>
     <rule id="3ab2-db70-3462-b5f1" name=" ⚃ [Quad] Rampage" hidden="false">
-      <description>This fighter can make a bonus move action. Then, they can make a bonus attack action.
+      <description>This fighter can make a bonus move action up to a number of inches equal to the value of this ability. Then, they can make a bonus attack action.
 ⠀</description>
     </rule>
     <rule id="0a9f-c47f-40d6-66ee" name=" ⚂ [Triple] Inspiring Presence" hidden="false">
@@ -884,7 +884,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -893,7 +893,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -903,7 +903,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -912,7 +912,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -922,7 +922,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -932,7 +932,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c18-3fe6-a00e-8ca4" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -942,7 +942,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2212-4db6-8d91-4d04" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -952,7 +952,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -961,7 +961,7 @@ click on the force you add, then click Add Force to add another force as Allies.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -972,7 +972,7 @@ The first time a rope bridge is damaged, it is weakened.  This has no immediate 
 When a rope bridge is destroyed, every fighter that has the centre of their base on that rope bridge falls one after the other, in an order chosen by the player whose turn is taking place.  When a fighter falls, if there is nowhere vertically lower that they can be placed, they are taken down.  Otherwise, when a fighter falls in this manner, roll 3 dice for impact damage instead of 1.  Once each fighter on the rope bridge has fallen, the rope bridge is removed.</description>
     </rule>
     <rule id="bbaf-62e3-6c9e-c576" name="[Reaction] Counter" hidden="false">
-      <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made.  For each hit roll from that attack action that misses, allocate 1 damage point to the attacking fighter.  For each hit roll of 1, allocate 2 damage points to the attacking fighter instead.</description>
+      <description>A fighter can make this reaction after they are targeted by a melee attack action but before the hit rolls are made. If there are any unmodified hit rolls of 1, allocate 2 damage points to the attacking fighter. In addition, if there are 2 or more hit rolls from that attack action that miss, allocate 1 damage point to the attacking fighter.</description>
     </rule>
     <rule id="7b34-8342-cff8-30db" name=" ⚁ [Double] Onslaught" hidden="false">
       <description>Add 1 to the Attacks characteristic of melee attack actions made by this fighter until the end of their activation.
@@ -989,7 +989,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -999,7 +999,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1009,7 +1009,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fe5-d938-419f-3e6c" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fe5-d938-419f-3e6c" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1019,7 +1019,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fe5-d938-419f-3e6c" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fe5-d938-419f-3e6c" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1028,7 +1028,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77de-f41a-3164-1be1" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1042,7 +1042,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93ef-3198-b25f-294f" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93ef-3198-b25f-294f" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1060,13 +1060,13 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
         <rule id="52b5-c252-48a9-7980" name="⚃ [Quad] Taunt - WIP" hidden="true"/>
       </rules>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="578d-e141-c905-4efe" name="Narrative Options (Required)" hidden="false" collective="true" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="2109-44c1-8c46-ea4f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b6-ba89-23ee-b63f" type="min"/>
-        <constraint field="selections" scope="2109-44c1-8c46-ea4f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e038-5dad-f92e-0392" type="max"/>
+        <constraint field="selections" scope="2109-44c1-8c46-ea4f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b6-ba89-23ee-b63f" type="min"/>
+        <constraint field="selections" scope="2109-44c1-8c46-ea4f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e038-5dad-f92e-0392" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="25a3-9457-dfda-611d" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="true"/>
@@ -1076,171 +1076,171 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f63-c4dc-4ebf-2dc9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f63-c4dc-4ebf-2dc9" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="f97d-9d95-b1d7-89a0" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b188-f905-02be-fd21" name="+1 Ally/Hero" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0f9-75f3-bf1c-f588" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0f9-75f3-bf1c-f588" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="e2b0-70d8-1039-78a2" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ed3b-f3ff-7285-d37a" name="Increase Roster max by 50pts" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f1d-a7f9-8e05-a878" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f1d-a7f9-8e05-a878" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="c5a7-d389-597f-c8a0" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7579-db4e-0dd6-4537" name="Dominated Territories" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="a8e5-1b07-c226-925c" value="15.0">
+            <modifier type="set" field="a8e5-1b07-c226-925c" value="15">
               <comment>soroth kor territory limit</comment>
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e5-1b07-c226-925c" type="max"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e5-1b07-c226-925c" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="f247-d9b6-8d80-2985" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cfd6-0f01-303f-8736" name="Accumulated Glory" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="100.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4c3-79e8-7e1e-f8a2" type="max"/>
+            <constraint field="selections" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4c3-79e8-7e1e-f8a2" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="2605-430c-5abd-7700" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5ef2-3a00-53cf-6f5c" name="Show Narrative Battles options" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2218-aff7-33c9-5e54" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2218-aff7-33c9-5e54" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="065d-4b53-874f-0d72" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9bb9-c7fc-02e5-0f92" name="Show Soroth Kor options" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02e3-9806-9dcf-41a2" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02e3-9806-9dcf-41a2" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="f729-a503-c87c-2680" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="081b-bfbe-08c1-f915" name="Current Reputation Modifier" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="100.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-50d6-b90b-8b67" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f56a-56a4-848c-fddb" type="min"/>
+            <constraint field="selections" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-50d6-b90b-8b67" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f56a-56a4-848c-fddb" type="min"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="2483-8e94-9f25-5ceb" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7e5c-a6a5-144a-97e7" name="Show Gnarlwood options" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7842-3d05-af91-d5b6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7842-3d05-af91-d5b6" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="a19b-f8dc-ca6f-abcf" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4be2-7238-74b9-92ed" name="Show Warcry1.0 Narrative Options" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f522-a031-f151-715e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f522-a031-f151-715e" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1249,12 +1249,12 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ef2-3a00-53cf-6f5c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ef2-3a00-53cf-6f5c" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5ce-59fb-b141-38e4" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5ce-59fb-b141-38e4" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="5f2b-15d7-2b16-01a6" name="Blood War" hidden="false" collective="false" import="true" type="upgrade">
@@ -1265,7 +1265,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f2b-15d7-2b16-01a6" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f2b-15d7-2b16-01a6" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1275,7 +1275,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2329-f1c3-38ec-1b1b" name="Desperate Scavengers" hidden="false" collective="false" import="true" type="upgrade">
@@ -1286,7 +1286,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2329-f1c3-38ec-1b1b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2329-f1c3-38ec-1b1b" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1296,7 +1296,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4095-fef0-31a7-0801" name="Marked for Death" hidden="false" collective="false" import="true" type="upgrade">
@@ -1307,7 +1307,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4095-fef0-31a7-0801" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4095-fef0-31a7-0801" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1317,7 +1317,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0901-22dd-663e-7bac" name="Ambush from the Shadows" hidden="false" collective="false" import="true" type="upgrade">
@@ -1328,7 +1328,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0901-22dd-663e-7bac" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0901-22dd-663e-7bac" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1338,7 +1338,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f76d-eeb4-823c-1fbb" name="Storm the Encampment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1349,7 +1349,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f76d-eeb4-823c-1fbb" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f76d-eeb4-823c-1fbb" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1359,7 +1359,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7f46-48e2-fdc2-7aca" name="The Arcane Ritual" hidden="false" collective="false" import="true" type="upgrade">
@@ -1370,7 +1370,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f46-48e2-fdc2-7aca" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f46-48e2-fdc2-7aca" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1380,7 +1380,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1389,12 +1389,12 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c10-156c-65ec-6d76" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c10-156c-65ec-6d76" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="4c06-936f-c206-12ac" name="Crossing the Scourge (Abilities)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1407,8 +1407,8 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="equalTo"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c06-936f-c206-12ac" type="equalTo"/>
+                                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="equalTo"/>
+                                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c06-936f-c206-12ac" type="equalTo"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -1420,7 +1420,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c06-936f-c206-12ac" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c06-936f-c206-12ac" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1430,7 +1430,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2e88-5ceb-33f5-9c2b" name="The Dread Engines (Abilities)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1443,8 +1443,8 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="equalTo"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e88-5ceb-33f5-9c2b" type="equalTo"/>
+                                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="equalTo"/>
+                                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e88-5ceb-33f5-9c2b" type="equalTo"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -1456,7 +1456,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e88-5ceb-33f5-9c2b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e88-5ceb-33f5-9c2b" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1466,7 +1466,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1238-104f-c204-d5c4" name="The Heart of Silence (Abilities)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1477,7 +1477,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                       <modifiers>
                         <modifier type="set" field="hidden" value="false">
                           <conditions>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1238-104f-c204-d5c4" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1238-104f-c204-d5c4" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1489,8 +1489,8 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="equalTo"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1238-104f-c204-d5c4" type="equalTo"/>
+                                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5fd-f9f1-938d-dc5b" type="equalTo"/>
+                                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1238-104f-c204-d5c4" type="equalTo"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -1502,7 +1502,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                 </infoGroup>
               </infoGroups>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1511,7 +1511,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1520,7 +1520,7 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
               <selectionEntries>
                 <selectionEntry id="d497-7eb6-b2a1-2578" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6ab-fd81-8c7c-b5c0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6ab-fd81-8c7c-b5c0" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="5902-0643-3088-95a4" name="(1st Phase) Hidden Catacombs Entrance" hidden="false" typeId="3f17-da96-b02a-c0ef" typeName="Injury">
@@ -1530,19 +1530,19 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6fd7-181b-f6ff-42a1" name="(1st Phase) Ruined Stronghold" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="a124-e3f1-11a6-b732" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63fa-f571-2e8b-716a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63fa-f571-2e8b-716a" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="53b8-69d7-8f36-3c26" name="(1st Phase) Ruined Stronghold" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1552,12 +1552,12 @@ When a rope bridge is destroyed, every fighter that has the centre of their base
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e791-f37d-0901-c258" name="(1st Phase) Desolate Ruins" hidden="false" collective="false" import="true" type="upgrade">
@@ -1575,22 +1575,22 @@ You can spend 2 glory points to upgrade this territory.
               <selectionEntries>
                 <selectionEntry id="2a39-4861-5908-73e9" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d9-e1cc-1f99-bd5e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d9-e1cc-1f99-bd5e" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0751-a5d4-8329-7bd3" name="(1st Phase) Forgotten Spire" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="e780-b5c8-21d4-1bd8" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e0-c7f5-00dc-99b8" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e0-c7f5-00dc-99b8" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="0c9f-eaea-610e-7e17" name="(1st Phase) Forgotten Spire" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1600,19 +1600,19 @@ You can spend 2 glory points to upgrade this territory.
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4304-5379-cd34-5cd6" name="(1st Phase) Sealed Tomb" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="014a-76c2-b7d1-932f" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0053-836e-db3c-d7ed" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0053-836e-db3c-d7ed" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="097b-5bd1-80a9-c029" name="(1st Phase) Sealed Tomb" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1626,19 +1626,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ae29-bfa1-a88a-58ec" name="(2nd Phase) Abandoned Foundry " hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="0cb0-2e54-ab54-111c" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4a8-060f-7d56-4438" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4a8-060f-7d56-4438" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="f978-fa95-8072-d05e" name="(2nd Phase) Abandoned Foundry " hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1648,19 +1648,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="75e7-f48f-6295-2560" name="(2nd Phase) Surgical Complex" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="e9bd-d5ed-6d49-9850" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf55-4e55-e90a-723e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf55-4e55-e90a-723e" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="aade-f377-bf3e-3bbd" name="(2nd Phase) Surgical Complex" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1670,19 +1670,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3999-bef4-d36c-c23d" name="(2nd Phase) Eerie Quarter" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="75aa-4c5f-cc29-440d" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efc8-dda5-9153-49f8" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efc8-dda5-9153-49f8" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="bf1a-4b23-987d-fe6d" name="(2nd Phase) Eerie Quarter" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1692,19 +1692,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b42a-580f-7cde-7257" name="(2nd Phase) Gore Pit" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="2aa7-e59f-5e13-a8e2" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6431-711a-8611-55c8" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6431-711a-8611-55c8" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="03dc-dea6-ee53-4094" name="(2nd Phase) Gore Pit" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1714,19 +1714,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c425-a590-56bf-5127" name="(2nd Phase) Steelwrought Shrine" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="8ac5-b67b-b72a-63ad" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb90-76f1-7aae-2320" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb90-76f1-7aae-2320" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="2de8-e40a-e04a-054a" name="(2nd Phase) Steelwrought Shrine" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1736,19 +1736,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4d91-9377-5504-e7ed" name="(3rd Phase) Entrance to the Deep Dark" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="9201-6008-9eb5-b1ec" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aab5-7ea9-43a8-8cb2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aab5-7ea9-43a8-8cb2" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="d3e5-899a-988d-0efa" name="(3rd Phase) Entrance to the Deep Dark" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1763,41 +1763,41 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f9c6-828a-fac4-e1f5" name="(3rd Phase) Silent Marketplace " hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="09da-502a-d1f6-2ac2" name="(3rd Phase) Silent Marketplace " hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">[Upgrade] Treasure Hoard: During the aftermath sequence, you can make 1 additional search roll on a lesser artefacts table. </characteristic>
+                    <characteristic name="Description" typeId="9b19-df09-3efb-e317">[Upgrade] Treasure Hoard: During the aftermath sequence, you can make 1 additional search roll on a lesser artefacts table.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <selectionEntries>
                 <selectionEntry id="ea0d-309d-3538-f08e" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1359-dd35-fa2b-08ec" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1359-dd35-fa2b-08ec" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fa99-272d-6ec2-fd80" name="(3rd Phase) Ancient Palaces" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="e43a-4345-69ec-a227" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e608-ef19-f5ad-703d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e608-ef19-f5ad-703d" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="e388-f9a7-094e-fce4" name="(3rd Phase) Ancient Palaces" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1807,19 +1807,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ba98-cabd-a00d-885c" name="(3rd Phase) Sage&apos;s Lair" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="bd4d-5a86-b3e2-2f00" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d543-ccea-0eac-2ad4" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d543-ccea-0eac-2ad4" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="3e9c-80de-3563-7c75" name="(3rd Phase) Sage&apos;s Lair" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1829,19 +1829,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4adf-5b5f-ccdf-14c6" name="(3rd Phase) Cultic Sanctuary" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="b3f3-ed5f-2dc6-41fc" name="Upgraded" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af21-3535-aa16-cbb5" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af21-3535-aa16-cbb5" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="cc74-25ee-aea8-132b" name="(3rd Phase) Cultic Sanctuary" hidden="false" typeId="52f5-a5b7-52cc-4459" typeName="Territory">
@@ -1851,12 +1851,12 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1865,49 +1865,49 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4be2-7238-74b9-92ed" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aab3-b162-fb6b-9d13" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aab3-b162-fb6b-9d13" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="833d-9d17-f6c2-4e5c" name="Convergence #1 completed" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1928-bcd4-32cc-3801" name="Convergence #2 completed" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1cc0-9a89-1a61-bdef" name="Convergence #3 completed" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="875c-f90b-cf2b-7dde" name="Current State of Encampment" hidden="false" collective="false" import="true" defaultSelectionEntryId="c628-3ee6-3db7-007f">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dce-d172-b047-1a5a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dce-d172-b047-1a5a" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="c628-3ee6-3db7-007f" name="Secure" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3e4b-ec37-4927-c2bb" name="Compromised" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6632-ec63-9fd9-8f05" name="Threatened" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1916,7 +1916,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e5c-a6a5-144a-97e7" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e5c-a6a5-144a-97e7" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1930,7 +1930,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5dc5-9f7a-353c-cc4a" name="Dead Gnarloak Grove" hidden="false" collective="false" import="true" type="upgrade">
@@ -1942,7 +1942,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="80b3-a8d3-8414-8d9c" name="Outskirts of the Gnarlwood" hidden="false" collective="false" import="true" type="upgrade">
@@ -1954,7 +1954,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a362-c2bc-a64b-e83d" name="Stranglegrove Swamp" hidden="false" collective="false" import="true" type="upgrade">
@@ -1966,7 +1966,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d66c-f25f-0f59-b507" name="Timeworn Ruin" hidden="false" collective="false" import="true" type="upgrade">
@@ -1978,7 +1978,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0358-e822-ad3a-6aa3" name="Scorpid Hive" hidden="false" collective="false" import="true" type="upgrade">
@@ -1990,7 +1990,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3c6f-9689-e731-772c" name="Shard of Talaxis" hidden="false" collective="false" import="true" type="upgrade">
@@ -2002,7 +2002,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e802-716e-272d-92df" name="Hidden Cavern" hidden="false" collective="false" import="true" type="upgrade">
@@ -2014,7 +2014,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8c24-36a1-babe-54c8" name="Ley Line Nexus" hidden="false" collective="false" import="true" type="upgrade">
@@ -2026,7 +2026,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3fdf-60f2-1895-9274" name="Wellspring" hidden="false" collective="false" import="true" type="upgrade">
@@ -2038,19 +2038,19 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cc30-51a5-1bac-cdfd" name="Open Play Options" hidden="false" collective="true" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="b12a-e361-2540-1376" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c02b-0ee0-e89f-8465" type="max"/>
+        <constraint field="selections" scope="b12a-e361-2540-1376" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c02b-0ee0-e89f-8465" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="faca-c178-d563-cc18" name="Open Play Options" hidden="false" targetId="15bb-04f5-5313-58a5" primary="true"/>
@@ -2058,55 +2058,55 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
       <selectionEntries>
         <selectionEntry id="d010-27a4-3b09-70d3" name="+ 250 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c0bf-d5a3-41fb-9817" name="+1 Ally" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b014-8825-a869-c3f2" name="+1 Hero" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8dba-ff8c-a264-a495" name="+ 100 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c03f-195d-9d4b-68f0" name="+ 500 max Roster pts" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9032-694a-3205-3338" name="+1 max Unit" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6913-b466-755d-9581" name="Tournament Quests" publicationId="2c2f-d4c8-7730-6c82" page="100" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="54fc-61ae-71eb-ca9d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="379c-622b-93a7-78bc" type="max"/>
+        <constraint field="selections" scope="54fc-61ae-71eb-ca9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="379c-622b-93a7-78bc" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="cbbf-8539-b7fe-e928" name="Hidden Agendas" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="true"/>
+        <categoryLink id="cbbf-8539-b7fe-e928" name="Tournament Quests" hidden="false" targetId="fba5-9730-9be1-8ee9" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c8ce-9b0d-36c9-40b6" name="Choices" hidden="false" collective="false" import="true" defaultSelectionEntryId="064d-adea-145e-56c5">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c50e-900e-22f2-2e3d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c50e-900e-22f2-2e3d" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="064d-adea-145e-56c5" name="The Champion" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2af0-133a-4dcb-b122" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2af0-133a-4dcb-b122" type="max"/>
               </constraints>
               <profiles>
                 <profile id="1ac6-31b0-0ea1-6174" name="The Champion" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
@@ -2116,12 +2116,12 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="078a-5814-b3a5-3b9c" name="Far and Wide" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3370-911b-ee64-a9c1" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3370-911b-ee64-a9c1" type="max"/>
               </constraints>
               <profiles>
                 <profile id="5767-11ec-7717-4824" name="Far and Wide" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
@@ -2131,12 +2131,12 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b9bf-fef8-b59f-c01d" name="Hold the Centre" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="844b-3ee2-362c-5a69" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="844b-3ee2-362c-5a69" type="max"/>
               </constraints>
               <profiles>
                 <profile id="dc06-8f3e-781e-5f54" name="Hold the Centre" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
@@ -2146,12 +2146,12 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a3c2-5a9d-ebdb-9804" name="Overrun" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b802-edba-a95d-f4d6" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b802-edba-a95d-f4d6" type="max"/>
               </constraints>
               <profiles>
                 <profile id="2011-91c0-531f-6a73" name="Overrun" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
@@ -2161,12 +2161,12 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f7ab-ef51-a1e0-bf64" name="Blunt" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49be-8fa6-8c3a-1765" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49be-8fa6-8c3a-1765" type="max"/>
               </constraints>
               <profiles>
                 <profile id="4ffe-ab05-d2fd-2e5e" name="Blunt" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
@@ -2176,12 +2176,12 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="59b8-e676-2dd6-e7cc" name="The High Ground" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9c67-59be-bdde-99e3" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9c67-59be-bdde-99e3" type="max"/>
               </constraints>
               <profiles>
                 <profile id="e072-4227-5b86-9a0d" name="The High Ground" hidden="false" typeId="05da-eba7-8ed2-ba43" typeName="Tournament Quest">
@@ -2191,59 +2191,59 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f766-7a4e-7bb2-6d98" name="Tournament Options" hidden="false" collective="true" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="54fc-61ae-71eb-ca9d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d42-1e4d-1cfd-ab1f" type="max"/>
+        <constraint field="selections" scope="54fc-61ae-71eb-ca9d" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d42-1e4d-1cfd-ab1f" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="8361-7a91-af34-e7f7" name="New CategoryLink" hidden="false" targetId="0b93-1073-1ad5-7829" primary="true"/>
+        <categoryLink id="8361-7a91-af34-e7f7" name="Tournament Options" hidden="false" targetId="0b93-1073-1ad5-7829" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="cbf7-db38-2f3a-fcfa" name="Disable Thralls" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d1-77a9-902e-0700" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d1-77a9-902e-0700" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f185-d4ef-4760-a7e3" name="Disable Bladeborn warbands" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15b5-4a1e-ddc0-a3a9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15b5-4a1e-ddc0-a3a9" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e4bc-6685-bc60-c2b4" name="Disable Monsters" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c57-ed0f-e499-83d1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c57-ed0f-e499-83d1" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f84f-d042-56a7-a517" name="Disable Allies" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e376-17e9-42c8-c3b5" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e376-17e9-42c8-c3b5" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2254,8 +2254,8 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ca4-e66d-9403-64a5" type="instanceOf"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ca4-e66d-9403-64a5" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2264,89 +2264,89 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
       <selectionEntries>
         <selectionEntry id="8c18-3fe6-a00e-8ca4" name="Show Catacombs Abilities" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd9-1c3f-10be-aa99" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd9-1c3f-10be-aa99" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2212-4db6-8d91-4d04" name="Show Red Harvest Abilities" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cadc-b2d5-3215-849a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cadc-b2d5-3215-849a" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="77de-f41a-3164-1be1" name="Show Heart of Ghur Abilities" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f7-5622-85dc-9880" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f7-5622-85dc-9880" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7fe5-d938-419f-3e6c" name="Show Sundered Fate Special Rules" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9100-46d1-db32-3203" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9100-46d1-db32-3203" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="93ef-3198-b25f-294f" name="Show Nightmare Quest Special Rules" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b7-fc1d-5c0a-c972" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b7-fc1d-5c0a-c972" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="12f7-2c49-ad72-65d5" name="Battle Groups" hidden="false" collective="false" import="true" defaultSelectionEntryId="7e7b-3a8b-c198-7ef2">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b88-24fb-4151-ba4e" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c98-d3c6-f3c1-b112" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b88-24fb-4151-ba4e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c98-d3c6-f3c1-b112" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="7e7b-3a8b-c198-7ef2" name="Dagger" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1874-9f1a-b3ef-b135" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1874-9f1a-b3ef-b135" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2a02-64ba-a525-e21d" name="Inactive (removes cost)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2109-44c1-8c46-ea4f" type="atLeast"/>
+                <condition field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2109-44c1-8c46-ea4f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ec2-b632-3017-70f8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ec2-b632-3017-70f8" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bbe8-2033-e724-fe67" name=" Shield" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d88-1294-330f-2a35" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d88-1294-330f-2a35" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0e05-0cfd-1086-d37c" name="Hammer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab1b-847b-b0a9-3ae4" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab1b-847b-b0a9-3ae4" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+            <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2355,7 +2355,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2109-44c1-8c46-ea4f" type="atLeast"/>
+            <condition field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2109-44c1-8c46-ea4f" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2367,12 +2367,12 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb9-c7fc-02e5-0f92" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b280-d982-75fb-b35e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b280-d982-75fb-b35e" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="2bc3-bf70-b258-3ef3" name="Killed" hidden="false" collective="false" import="true" type="upgrade">
@@ -2384,7 +2384,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dd9c-98b8-beb8-d9ee" name="Gut Wound" hidden="false" collective="false" import="true" type="upgrade">
@@ -2396,7 +2396,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="003e-0abb-1a16-31b0" name="Cracked Rib" hidden="false" collective="false" import="true" type="upgrade">
@@ -2408,7 +2408,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4178-496a-fb24-e753" name="Blinded in One Eye" hidden="false" collective="false" import="true" type="upgrade">
@@ -2420,7 +2420,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5a3c-e913-5a05-43f3" name="Fractured Arm" hidden="false" collective="false" import="true" type="upgrade">
@@ -2432,7 +2432,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cff2-d7a9-4b5e-2423" name="Broken Leg" hidden="false" collective="false" import="true" type="upgrade">
@@ -2444,7 +2444,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dba3-b7b6-27fc-9e87" name="Concussion" hidden="false" collective="false" import="true" type="upgrade">
@@ -2456,7 +2456,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="376a-f980-e3de-be42" name="Lost Renown" hidden="false" collective="false" import="true" type="upgrade">
@@ -2468,7 +2468,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6ede-562c-cd98-6301" name="Flesh Wound" hidden="false" collective="false" import="true" type="upgrade">
@@ -2480,7 +2480,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="735f-3fef-4d58-f9c4" name="Survive Against the Odds" hidden="false" collective="false" import="true" type="upgrade">
@@ -2492,14 +2492,14 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="a18c-718b-210f-4abf" name="Level of Renown" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="465c-7021-ff16-3d12" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="465c-7021-ff16-3d12" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="193a-06ac-017d-09eb" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
@@ -2507,17 +2507,17 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           <selectionEntries>
             <selectionEntry id="a156-0aae-eee6-59e0" name="Level 1" page="" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="45b3-6df0-9225-3129" name="Level 2" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9dc1-7354-b18e-0f33" name="Level 3" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2526,54 +2526,54 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           <selectionEntries>
             <selectionEntry id="1e48-6c1b-0b77-950c" name="Artifact" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0270-e331-9c44-065a" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0270-e331-9c44-065a" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d61a-178d-68a4-e0e4" name="Heroic Trait" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="14db-81dd-b399-e0f0" value="3.0">
+                <modifier type="set" field="14db-81dd-b399-e0f0" value="3">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ca4-e66d-9403-64a5" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ed1-bb68-7a31-b173" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ca4-e66d-9403-64a5" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ed1-bb68-7a31-b173" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14db-81dd-b399-e0f0" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14db-81dd-b399-e0f0" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="f3f2-35d5-cb8c-d79e" name="Lesser Artifact" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a95-b8df-23b5-62dc">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd38-e1bd-2eb5-e708" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd38-e1bd-2eb5-e708" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="4a95-b8df-23b5-62dc" name="Consumable" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d037-b416-7f80-fe4b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d037-b416-7f80-fe4b" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0491-74b3-dc03-56d5" name="Perishable" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1927-73c5-f6b1-6f37" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1927-73c5-f6b1-6f37" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                    <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2588,18 +2588,18 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45ea-7617-f6a7-7fcb" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <selectionEntries>
             <selectionEntry id="3a3f-4a68-9fd1-41c2" name="Leader" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f939-f9ce-9aff-b38b" type="max"/>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c31-b63d-ed44-4a12" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f939-f9ce-9aff-b38b" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c31-b63d-ed44-4a12" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
