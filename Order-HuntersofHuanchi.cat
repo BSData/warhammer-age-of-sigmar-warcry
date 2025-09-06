@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9df4-cd38-7d71-583d" name="Order - Hunters of Huanchi" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9df4-cd38-7d71-583d" name="Order - Hunters of Huanchi" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="82eb-8f6a-fc69-9fce" name="Hunters of Huanchi" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="f9e3-1929-4ba7-fe88" name=" Chameleon Skink Alpha" hidden="false" collective="false" import="true" targetId="aac0-471a-5693-a13a" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="14d7-8113-13a0-975b" name="New CategoryLink" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+        <categoryLink id="14d7-8113-13a0-975b" name="Heroes (1 to 3)" hidden="false" targetId="0ca4-e66d-9403-64a5" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="08a4-b675-f8c5-558e" name=" Chameleon Skink Alpha" hidden="false" collective="false" import="true" targetId="aac0-471a-5693-a13a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="530f-47bb-d668-1ca6" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="dfcf-3502-c21c-e4b6" name="New CategoryLink" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+        <categoryLink id="dfcf-3502-c21c-e4b6" name="Allies" hidden="false" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e9fc-5c7e-6350-ef80" name="Chameleon Skink" hidden="false" collective="false" import="true" targetId="be2c-a37e-d14a-8e2e" type="selectionEntry"/>
@@ -29,29 +29,29 @@
   <sharedSelectionEntries>
     <selectionEntry id="5d71-ae05-38ec-ad51" name="-Fighters" hidden="true" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aac0-471a-5693-a13a" name=" Chameleon Skink Alpha" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+        <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="append" field="name" value="with Moonstone Club">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b157-9eed-7e89-1c7e" type="atLeast"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b157-9eed-7e89-1c7e" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="append" field="name" value="with Dartpipe">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6517-1670-e440-cd29" type="atLeast"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6517-1670-e440-cd29" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="aa77-f09c-d54c-78c4" name=" Leader" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink id="aa77-f09c-d54c-78c4" name=" Hero" hidden="false" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
         <categoryLink id="4149-ea06-36b7-057f" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="e119-3c36-4999-858a" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
         <categoryLink id="69d7-706d-b4a9-45c3" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
@@ -59,15 +59,15 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="ae34-38b4-f31c-b900" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="6517-1670-e440-cd29">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55b-14ed-c448-df91" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df60-2d5a-7f73-0851" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55b-14ed-c448-df91" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df60-2d5a-7f73-0851" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="6517-1670-e440-cd29" name="with Dartpipe" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -92,14 +92,14 @@
                 <infoLink id="13f3-c7c6-6aeb-658b" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="80"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b157-9eed-7e89-1c7e" name="with Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -127,7 +127,7 @@
                 <categoryLink id="0420-f6cd-5cc9-bc9d" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -137,7 +137,7 @@
         <entryLink id="fe89-076d-6656-01f6" name="Leader Options" hidden="false" collective="false" import="true" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="416e-c7ee-6653-4181" name="Huanchi&apos;s Claw" hidden="false" collective="false" import="true" type="model">
@@ -162,7 +162,7 @@
         <infoLink id="acc8-d465-f4d3-3187" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="3b84-48c0-b206-fc90" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="3b84-48c0-b206-fc90" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="16fb-a8e2-4222-f570" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="d76e-8266-8b6b-9f9f" name=" Icon Bearer" hidden="false" targetId="2bf9-3f3e-ea63-1f26" primary="false"/>
         <categoryLink id="f1e1-9fb5-6d34-670d" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
@@ -172,24 +172,24 @@
         <entryLink id="e82b-498e-4f40-fe0d" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be2c-a37e-d14a-8e2e" name="Chameleon Skink" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Dartpipe">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec93-e5d8-8f56-fee0" type="atLeast"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec93-e5d8-8f56-fee0" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="append" field="name" value="with Moonstone Club">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5fb-1721-e28f-7227" type="atLeast"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5fb-1721-e28f-7227" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="4432-ce31-46d6-e6b4" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="4432-ce31-46d6-e6b4" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="d078-d9fa-6740-9351" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="5c92-ebc6-84ee-b23f" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
         <categoryLink id="5a62-6c9a-7306-a0e3" name="  Order" hidden="false" targetId="530f-47bb-d668-1ca6" primary="false"/>
@@ -197,15 +197,15 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="3914-05d4-63b5-faf2" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec93-e5d8-8f56-fee0">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d77a-1d68-15ed-2959" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b91d-fad4-bf2a-98c9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d77a-1d68-15ed-2959" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b91d-fad4-bf2a-98c9" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="c5fb-1721-e28f-7227" name="with Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -233,14 +233,14 @@
                 <categoryLink id="20a9-853a-126e-28f1" name=" Trapper" hidden="false" targetId="ad7e-e1dc-6545-1969" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ec93-e5d8-8f56-fee0" name="with Dartpipe" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -265,7 +265,7 @@
                 <infoLink id="1211-d8d4-303f-9945" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -275,7 +275,7 @@
         <entryLink id="6c27-8a61-7b6a-034a" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="070b-0d5a-e0da-df7d" name="Terrawing" hidden="false" collective="false" import="true" type="model">
@@ -300,7 +300,7 @@
         <infoLink id="2f39-b2ec-d6c0-fa68" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c7aa-256e-c770-af45" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="c7aa-256e-c770-af45" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="0f29-5263-7cb1-6415" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="4ff2-3487-1cfc-bc36" name=" Beast" hidden="false" targetId="a333-9146-42e8-421a" primary="false"/>
         <categoryLink id="1b6f-7402-9eca-5c27" name=" Fly" hidden="false" targetId="6840-bddb-4164-6ebe" primary="false"/>
@@ -310,19 +310,19 @@
         <entryLink id="02bc-f2af-6cd9-f801" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="90"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f42-21d8-7fb5-1580" name="Chameleon Skink Hornblower" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="with Dartpipe">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7a9-995f-495b-a4b9" type="atLeast"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7a9-995f-495b-a4b9" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="append" field="name" value="with Moonstone Club">
           <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62d0-aaa1-2479-2476" type="atLeast"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62d0-aaa1-2479-2476" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -330,7 +330,7 @@
         <infoLink id="c540-de6a-a4d1-852c" name="Special Abilities" hidden="false" targetId="d640-2601-e484-4ec7" type="infoGroup"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="49ce-5802-dff0-90ad" name="New CategoryLink" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink id="49ce-5802-dff0-90ad" name="Fighters" hidden="false" targetId="f2ce-030d-9971-73f0" primary="true"/>
         <categoryLink id="de80-0f8f-f77c-b322" name="Hunters of Huanchi" hidden="false" targetId="82eb-8f6a-fc69-9fce" primary="false"/>
         <categoryLink id="9536-d1ac-a100-d107" name=" Scout" hidden="false" targetId="dce8-a536-db85-d856" primary="false"/>
         <categoryLink id="e8b2-f546-a554-c2c9" name=" Agile" hidden="false" targetId="c1d9-ad54-d2e9-6849" primary="false"/>
@@ -339,15 +339,15 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="6d48-93e9-b8aa-b08f" name="Profiles" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7a9-995f-495b-a4b9">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca8a-da1a-0d71-bc95" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d01-72d7-b630-4877" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca8a-da1a-0d71-bc95" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d01-72d7-b630-4877" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="62d0-aaa1-2479-2476" name="with Moonstone Club" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -369,14 +369,14 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="70.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b7a9-995f-495b-a4b9" name="with Dartpipe" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="820d-9f65-fcb1-d476" value="0.0">
+                <modifier type="set" field="820d-9f65-fcb1-d476" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a02-64ba-a525-e21d" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -398,7 +398,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="75.0"/>
+                <cost name="pts" typeId="820d-9f65-fcb1-d476" value="65"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -408,7 +408,7 @@
         <entryLink id="1345-f91f-e1e3-0772" name="Fighter Options" hidden="false" collective="false" import="true" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0.0"/>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -426,8 +426,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -441,8 +441,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -456,8 +456,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad7e-e1dc-6545-1969" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad7e-e1dc-6545-1969" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -471,8 +471,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bf9-3f3e-ea63-1f26" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bf9-3f3e-ea63-1f26" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -486,8 +486,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dce8-a536-db85-d856" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dce8-a536-db85-d856" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -501,8 +501,8 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -516,14 +516,15 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1d9-ad54-d2e9-6849" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82eb-8f6a-fc69-9fce" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>A fighter can make this reaction after they have been allocated damage points by a melee attack action. This fighter makes a bonus disengage action.</description>
+          <description>A fighter can make this reaction after they have been
+allocated the total damage points by a melee attack action. This fighter makes a bonus disengage action.</description>
         </rule>
       </rules>
     </infoGroup>
