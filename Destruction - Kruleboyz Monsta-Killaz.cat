@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="747b-90bc-f055-7000" name="Destruction - Kruleboyz Monsta-Killaz" gameSystemId="e5fe-db52-95ba-6b62" gameSystemRevision="65" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Kruleboyz Monsta-Killaz" id="09e4-0f60-c425-be31" hidden="false"/>
+  </categoryEntries>
+  <sharedInfoGroups>
+    <infoGroup name="Kruleboyz Monsta-Killaz Abilities" id="ae9a-59ab-ba28-182d" hidden="false">
+      <rules>
+        <rule name="[Trait] &apos;Orrible Trap" id="49ab-f1ff-01e8-b15b" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <localConditionGroups>
+                <localConditionGroup type="lessThan" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="45ea-7617-f6a7-7fcb" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
+          <description>When a friendly fighter with this battle trait uses the Krule Trap reaction, if the enemy fighter has the Monster () runemark, add 2 to the roll.</description>
+        </rule>
+        <rule name="⚁ [Double] Krule Taunt" id="1300-5788-7d6b-5252" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <localConditionGroups>
+                <localConditionGroup type="atLeast" value="1" scope="self" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="09e4-0f60-c425-be31" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="e5fd-f9f1-938d-dc5b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter that is within a number of inches of this fighter equal to the value of this ability. Until the end of the battle round, subtract 2 from the damage points allocated by each hit and critical hit (to a minimum of 1) from attack actions made by the chosen fighter, unless those attack actions target this fighter.</description>
+        </rule>
+        <rule name="⚁ [Double] Rip It Out" id="9b1d-ffa4-a26c-7ee8" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <localConditionGroups>
+                <localConditionGroup type="atLeast" value="1" scope="self" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="09e4-0f60-c425-be31" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="4a55-52e5-0611-9983" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 1&quot; of this fighter and roll a number of dice equal to half the value of this ability (rounding up). For each roll of 3+, allocate 3 damage points to that fighter.</description>
+        </rule>
+        <rule name="⚁ [Double] Krule Stabbin&apos;" id="f8d3-7b76-d024-0dc8" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <localConditionGroups>
+                <localConditionGroup type="atLeast" value="1" scope="self" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="09e4-0f60-c425-be31" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="ad7e-e1dc-6545-1969" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of this fighter&apos;s activation, add 1 to the damage points allocated by each hit and critical hit from melee attack actions made by this fighter that target an enemy fighter that has 5 or more damage points allocated to them.</description>
+        </rule>
+        <rule name="⚂ [Triple] Saw &apos;Em Up" id="6a88-879c-17b0-cb13" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <localConditionGroups>
+                <localConditionGroup type="atLeast" value="1" scope="self" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="09e4-0f60-c425-be31" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="c3f5-3905-6ef9-4bee" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick a visible enemy fighter within 2&quot; of this fighter and roll a number of dice equal to the value of this ability (to a minimum of 2). Make a single group of 2 or more dice in consecutive numerical order (e.g. 2, 3, 4), excluding duplicates. Then allocate 3 damage points to the chosen f ighter for each dice in that group.</description>
+        </rule>
+        <rule name="⚂ [Triple] Drum and Holler" id="f711-4cc8-270c-52fe" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <localConditionGroups>
+                <localConditionGroup type="atLeast" value="1" scope="self" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="09e4-0f60-c425-be31" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="2bf9-3f3e-ea63-1f26" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Until the end of the battle round, enemy fighters within 6&quot; of this fighter cannot make reactions.</description>
+        </rule>
+        <rule name="⚃ [Quad] Nasty Muggin&apos;" id="5e5c-07ce-c38c-0bb9" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <localConditionGroups>
+                <localConditionGroup type="atLeast" value="1" scope="self" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="09e4-0f60-c425-be31" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="ad7e-e1dc-6545-1969" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pick an enemy fighter within 1&quot; of this fighter. Each friendly fighter with the Kruleboyz Monsta-killaz runemark within 3&quot; of that enemy fighter can make one bonus attack action that must target that enemy fighter.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+    <infoGroup name="Special Abilities" id="d5ec-68bd-2dab-5bf0" hidden="false">
+      <infoLinks>
+        <infoLink name="Kruleboyz Monsta-Killaz Abilities" id="bea6-08ed-fa62-f46f" hidden="false" type="infoGroup" targetId="ae9a-59ab-ba28-182d"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Destruction - Monsters and Thrall" id="32e7-c0c1-db3a-744a" targetId="cfcb-75c3-fbab-5305" importRootEntries="true"/>
+  </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Beastnob" hidden="false" id="d2ea-0b0d-4c13-9816" collective="false">
+      <modifiers>
+        <modifier type="set" value="0" field="820d-9f65-fcb1-d476">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="2a02-64ba-a525-e21d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Beastnob" typeId="7bf1-ad0a-0d19-6565" typeName="Model" hidden="false" id="53f9-5128-1e0f-22f2">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mace" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="e37f-8363-f8fe-024b">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">6</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">3/5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ranged" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="a53a-c268-6737-bba8">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Special Abilities" id="e546-45cb-05e1-f4a4" hidden="false" targetId="d5ec-68bd-2dab-5bf0" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name=" Hero" hidden="false" id="c0da-0be4-a376-98f9" targetId="e5fd-f9f1-938d-dc5b" primary="false"/>
+        <categoryLink name=" Trapper" hidden="false" id="4431-c027-af7f-cefe" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+        <categoryLink name="  Destruction" hidden="false" id="408f-75ec-87f7-7a1a" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink name="Kruleboyz Monsta-Killaz" hidden="false" id="cb15-d7a5-47db-76b6" targetId="09e4-0f60-c425-be31" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Leader Options" hidden="false" id="51ca-eca3-766b-a415" collective="false" targetId="cb05-fb8b-8fa4-fca2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="200"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gnarlwood Howla" hidden="false" id="dd97-a3db-4ac3-5ac3" collective="false">
+      <modifiers>
+        <modifier type="set" value="0" field="820d-9f65-fcb1-d476">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="2a02-64ba-a525-e21d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Gnarlwood Howla" typeId="7bf1-ad0a-0d19-6565" typeName="Model" hidden="false" id="e8e1-4f02-7e77-2738">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">6</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Claws" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="8f45-2bb9-1296-a19f">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Special Abilities" id="c6fe-4347-f40d-7168" hidden="false" targetId="d5ec-68bd-2dab-5bf0" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Fighters" hidden="false" id="402e-7258-afc4-bfea" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink name="  Destruction" hidden="false" id="287c-5676-2c1a-ad64" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink name="Kruleboyz Monsta-Killaz" hidden="false" id="74f6-2d4f-ff19-38e9" targetId="09e4-0f60-c425-be31" primary="false"/>
+        <categoryLink name=" Beast" hidden="false" id="7a25-8943-5599-33f7" targetId="a333-9146-42e8-421a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fighter Options" hidden="false" id="621e-1634-6772-4bca" collective="false" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="125"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Neckslicer with Bonehakka" hidden="false" id="939d-aee0-f8cc-2e5a" collective="false">
+      <modifiers>
+        <modifier type="set" value="0" field="820d-9f65-fcb1-d476">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="2a02-64ba-a525-e21d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Bonehakka" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="286d-47c4-a4af-1a80">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">2</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">5</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Neckslicer with Bonehakka" typeId="7bf1-ad0a-0d19-6565" typeName="Model" hidden="false" id="af72-ccef-7365-c729">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Special Abilities" id="461a-3ad5-b5af-fd9a" hidden="false" targetId="d5ec-68bd-2dab-5bf0" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Fighters" hidden="false" id="24c3-9fab-4e6a-0abc" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink name="  Destruction" hidden="false" id="eb66-12a5-2f94-1cc5" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink name="Kruleboyz Monsta-Killaz" hidden="false" id="fe15-2537-2841-2b74" targetId="09e4-0f60-c425-be31" primary="false"/>
+        <categoryLink name=" Trapper" hidden="false" id="78a6-484a-a13b-e1bd" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+        <categoryLink name=" Berserker" hidden="false" id="27b4-19f7-d8f5-d782" targetId="c3f5-3905-6ef9-4bee" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fighter Options" hidden="false" id="7b0f-7298-ad50-4796" collective="false" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="120"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Neckslicer with Beaststikka Harpoon" hidden="false" id="0590-42b3-bba8-4b66" collective="false">
+      <modifiers>
+        <modifier type="set" value="0" field="820d-9f65-fcb1-d476">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="2a02-64ba-a525-e21d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Melee" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="8b0e-ff7c-a970-f06d">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Neckslicer with Beaststikka Harpoon" typeId="7bf1-ad0a-0d19-6565" typeName="Model" hidden="false" id="8cc3-bec1-593d-1e09">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ranged" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="20cd-6a87-e4d7-fff7">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">8</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">2</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Special Abilities" id="19ca-e7e1-5e21-8761" hidden="false" targetId="d5ec-68bd-2dab-5bf0" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Fighters" hidden="false" id="3006-7a27-303b-1c35" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink name="  Destruction" hidden="false" id="9f8c-72ef-5113-c4c5" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink name="Kruleboyz Monsta-Killaz" hidden="false" id="2d62-fe61-8bc5-885b" targetId="09e4-0f60-c425-be31" primary="false"/>
+        <categoryLink name=" Trapper" hidden="false" id="7664-9b32-fc9f-a05b" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+        <categoryLink name=" Destroyer" hidden="false" id="84ff-d209-8faa-7f3a" targetId="4a55-52e5-0611-9983" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fighter Options" hidden="false" id="869d-3faf-6877-a084" collective="false" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="115"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Neckslicer with Smasha" hidden="false" id="83af-f66b-777d-ba56" collective="false">
+      <modifiers>
+        <modifier type="set" value="0" field="820d-9f65-fcb1-d476">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="2a02-64ba-a525-e21d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Smasha" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="cb56-5d7b-35c8-a24f">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Neckslicer with Smasha" typeId="7bf1-ad0a-0d19-6565" typeName="Model" hidden="false" id="6ba0-7bfd-5ad8-c31b">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Special Abilities" id="9d91-ae8f-9fcf-c6c3" hidden="false" targetId="d5ec-68bd-2dab-5bf0" type="infoGroup"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Fighters" hidden="false" id="df9b-5180-6fdf-d460" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink name="  Destruction" hidden="false" id="ea90-ece1-c4ac-49d6" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink name="Kruleboyz Monsta-Killaz" hidden="false" id="262f-16c0-57db-3942" targetId="09e4-0f60-c425-be31" primary="false"/>
+        <categoryLink name=" Trapper" hidden="false" id="d0d4-bd91-bdca-6bee" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fighter Options" hidden="false" id="4694-0c9d-7427-40bd" collective="false" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bawla Boy with Stabba" hidden="false" id="a308-edca-9524-d70a">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Fighters" hidden="false" id="01fb-bfcf-021a-6cfd" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink name="  Destruction" hidden="false" id="5b71-01ba-c114-46d4" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink name="Kruleboyz Monsta-Killaz" hidden="false" id="85df-fcb3-0a68-d0da" targetId="09e4-0f60-c425-be31" primary="false"/>
+        <categoryLink name=" Trapper" hidden="false" id="db28-0827-b96c-bcbc" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+        <categoryLink name=" Icon Bearer" hidden="false" id="2b1e-a31b-9f95-3f22" targetId="2bf9-3f3e-ea63-1f26" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fighter Options" hidden="false" id="0eb9-2e09-2142-9048" collective="false" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Stabba" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="9e36-96f3-cb9e-89bc">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">4</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">4</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bawla Boy with Stabba" typeId="7bf1-ad0a-0d19-6565" typeName="Model" hidden="false" id="98d0-5970-cc4d-2255">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Special Abilities" id="9072-b95a-ead4-999d" hidden="false" type="infoGroup" targetId="d5ec-68bd-2dab-5bf0"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="820d-9f65-fcb1-d476">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="2a02-64ba-a525-e21d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bawla Boy with Flogga" hidden="false" id="b8ec-d162-13a9-bc96">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="110"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Fighters" hidden="false" id="b40b-d4aa-f477-f6b4" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink name="  Destruction" hidden="false" id="4ed5-cafc-c270-f379" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink name="Kruleboyz Monsta-Killaz" hidden="false" id="5ac0-34b9-b6e0-79c8" targetId="09e4-0f60-c425-be31" primary="false"/>
+        <categoryLink name=" Trapper" hidden="false" id="e53a-721b-2485-ebd8" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+        <categoryLink name=" Icon Bearer" hidden="false" id="748c-6b97-5cc2-4a4d" targetId="2bf9-3f3e-ea63-1f26" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fighter Options" hidden="false" id="27bc-a6a4-27d0-eb6a" collective="false" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Flogga" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="741b-9dd7-5edc-ebc1">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">3</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">5</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">3</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">1/4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bawla Boy with Flogga" typeId="7bf1-ad0a-0d19-6565" typeName="Model" hidden="false" id="a8b1-607c-a3ac-b23e">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">3</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Special Abilities" id="a12e-fdc3-a731-603c" hidden="false" type="infoGroup" targetId="d5ec-68bd-2dab-5bf0"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="820d-9f65-fcb1-d476">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="2a02-64ba-a525-e21d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Klutcha-Grot" hidden="false" id="7f30-eae0-2897-6e34">
+      <costs>
+        <cost name="pts" typeId="820d-9f65-fcb1-d476" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Fighters" hidden="false" id="9a0e-c9e3-cd8e-de35" targetId="f2ce-030d-9971-73f0" primary="true"/>
+        <categoryLink name="  Destruction" hidden="false" id="f327-4193-f302-9c5a" targetId="7c12-f3a7-3b3c-30f1" primary="false"/>
+        <categoryLink name="Kruleboyz Monsta-Killaz" hidden="false" id="dabe-0c94-9381-2216" targetId="09e4-0f60-c425-be31" primary="false"/>
+        <categoryLink name=" Trapper" hidden="false" id="78ab-58c1-cc0b-39df" targetId="ad7e-e1dc-6545-1969" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fighter Options" hidden="false" id="8111-f8f0-ab53-c45c" collective="false" targetId="48e0-6cce-1680-dc73" type="selectionEntryGroup"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Claws" typeId="d83c-f0e3-af8e-b6b0" typeName="Weapon" hidden="false" id="3872-5ccf-b8b9-4ceb">
+          <characteristics>
+            <characteristic name="Range" typeId="e85b-c9e0-0d39-7786">1</characteristic>
+            <characteristic name="Attacks" typeId="60cf-9920-ff5d-032d">3</characteristic>
+            <characteristic name="Strength" typeId="4591-7140-62c7-f2f1">2</characteristic>
+            <characteristic name="Damage" typeId="446b-a910-1596-123b">2/3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Klutcha-Grot" typeId="7bf1-ad0a-0d19-6565" typeName="Model" hidden="false" id="b838-6306-243b-8610">
+          <characteristics>
+            <characteristic name="Move" typeId="c652-026b-c19b-fb1a">4</characteristic>
+            <characteristic name="Toughness" typeId="68cf-bb2c-bce1-e83e">4</characteristic>
+            <characteristic name="Wounds" typeId="585d-de0f-f39b-3633">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Special Abilities" id="2169-bd88-ae67-8f65" hidden="false" type="infoGroup" targetId="d5ec-68bd-2dab-5bf0"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="820d-9f65-fcb1-d476">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="2a02-64ba-a525-e21d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Beastnob" hidden="false" id="f68b-d4f6-7cb5-bb80" type="selectionEntry" targetId="d2ea-0b0d-4c13-9816">
+      <categoryLinks>
+        <categoryLink name="Heroes (1 to 3)" hidden="false" id="165c-8e3d-0c4c-93e2" targetId="0ca4-e66d-9403-64a5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Beastnob" hidden="false" id="b872-ac4b-b812-cca5" type="selectionEntry" targetId="d2ea-0b0d-4c13-9816">
+      <categoryLinks>
+        <categoryLink name="Allies" hidden="false" id="26b1-6981-96f2-2545" targetId="45ea-7617-f6a7-7fcb" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="7c12-f3a7-3b3c-30f1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Gnarlwood Howla" hidden="false" id="7e5e-722f-d9d8-f4bb" type="selectionEntry" targetId="dd97-a3db-4ac3-5ac3"/>
+    <entryLink import="true" name="Neckslicer with Bonehakka" hidden="false" id="19a6-ef29-201c-d270" type="selectionEntry" targetId="939d-aee0-f8cc-2e5a"/>
+    <entryLink import="true" name="Neckslicer with Beaststikka Harpoon" hidden="false" id="fb08-9f0c-c423-5039" type="selectionEntry" targetId="0590-42b3-bba8-4b66"/>
+    <entryLink import="true" name="Neckslicer with Smasha" hidden="false" id="d21f-0e06-e60b-7f22" type="selectionEntry" targetId="83af-f66b-777d-ba56"/>
+    <entryLink import="true" name="Bawla Boy with Stabba" hidden="false" id="d3f8-4fc8-40f5-fb6a" type="selectionEntry" targetId="a308-edca-9524-d70a"/>
+    <entryLink import="true" name="Bawla Boy with Flogga" hidden="false" id="6337-439f-fb59-6f9d" type="selectionEntry" targetId="b8ec-d162-13a9-bc96"/>
+    <entryLink import="true" name="Klutcha-Grot" hidden="false" id="1cff-df70-eefe-f6dd" type="selectionEntry" targetId="7f30-eae0-2897-6e34"/>
+  </entryLinks>
+</catalogue>
