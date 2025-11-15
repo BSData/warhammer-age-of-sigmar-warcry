@@ -174,8 +174,6 @@ click on the force you add, then click Add Force to add another force as Allies.
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2a28-06a6-cbd3-84f6" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="851c-980c-8c57-7c5e" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="c181-c1de-6c1f-e780" type="max"/>
       </constraints>
       <forceEntries>
@@ -577,8 +575,6 @@ click on the force you add, then click Add Force to add another force as Allies.
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="1eab-7954-84eb-7178" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="a612-cfde-504b-b8d6" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="00fd-8510-5cfd-67a0" type="max"/>
       </constraints>
       <forceEntries>
@@ -728,8 +724,6 @@ click on the force you add, then click Add Force to add another force as Allies.
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="7bef-8541-1068-f6c1" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5988-6dd4-f405-8ce2" type="min"/>
         <constraint field="820d-9f65-fcb1-d476" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="22b7-1439-9736-8056" type="max"/>
       </constraints>
       <forceEntries>
@@ -2505,7 +2499,7 @@ Once this territory has been upgraded, if it is stolen, the fighter that bears t
             <categoryLink id="193a-06ac-017d-09eb" name="Narrative Options" hidden="false" targetId="e4b3-72a5-ca73-8c72" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="a156-0aae-eee6-59e0" name="Level 1" page="" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a156-0aae-eee6-59e0" name="Level 1" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="820d-9f65-fcb1-d476" value="0"/>
               </costs>
